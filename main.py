@@ -4,19 +4,17 @@ import os
 import sys
 
 # --- Configuration ---
-# OIIX (FIR) is often restricted in free APIs. 
-# We monitor OIIE (Tehran Imam Khomeini) which captures major FIR NOTAMs.
-STATION = "OIIE" 
-API_URL = f"https://avwx.rest/api/notam/{STATION}"
+# We query the main Tehran airports (OIIE, OIII) using the US Gov API.
+# This works without a key and captures most FIR-level warnings.
+URL = "https://aviationweather.gov/api/data/notam?ids=OIIE,OIII&format=json"
 STATE_FILE = "state.json"
 
 # Secrets
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
-AVWX_TOKEN = os.environ.get("AVWX_TOKEN")
 
-if not TELEGRAM_TOKEN or not CHAT_ID or not AVWX_TOKEN:
-    print("Error: One or more secrets are missing.")
+if not TELEGRAM_TOKEN or not CHAT_ID:
+    print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
 def send_telegram(message):
@@ -30,12 +28,12 @@ def send_telegram(message):
     requests.post(url, json=payload)
 
 def get_notams():
+    # AWC requires a User-Agent to look like a browser/app
     headers = {
-        "Authorization": f"Bearer {AVWX_TOKEN}",
-        "User-Agent": "OIIX-Student-Bot/1.0"  # Important to avoid blocks
+        "User-Agent": "Student-Notam-Bot/1.0 (educational use)"
     }
     try:
-        response = requests.get(API_URL, headers=headers, timeout=20)
+        response = requests.get(URL, headers=headers, timeout=30)
         response.raise_for_status()
         return response.json()
     except Exception as e:
@@ -43,7 +41,7 @@ def get_notams():
         return []
 
 def main():
-    print(f"Fetching NOTAMs for {STATION}...")
+    print("Fetching data from AviationWeather.gov...")
     
     # 1. Load state
     if os.path.exists(STATE_FILE):
@@ -59,10 +57,10 @@ def main():
     current_notams = get_notams()
     
     if not current_notams:
-        print("No data received.")
-        # Create empty state file if it doesn't exist so git doesn't error
+        print("No data received (or empty list).")
+        # Create empty state file if needed
         if not os.path.exists(STATE_FILE):
-            with open(STATE_FILE, "w") as f:
+             with open(STATE_FILE, "w") as f:
                 json.dump([], f)
         return
 
@@ -71,23 +69,33 @@ def main():
 
     # 3. Process
     for notam in current_notams:
-        # Use the raw text as a unique key since IDs can be inconsistent
-        raw_text = notam.get("raw") or notam.get("body")
-        unique_key = raw_text[:50] # First 50 chars as signature
+        # AWC API structure:
+        # [{"id": "A1234/26", "rawText": "..."}]
         
-        if unique_key not in seen_ids:
-            msg = f"🚨 **New Tehran NOTAM (via {STATION})**\n\n{raw_text}"
+        # Use the ID provided by the API (e.g., 'A0023/26')
+        notam_id = notam.get("id")
+        raw_text = notam.get("rawText") or str(notam)
+
+        if not notam_id:
+            continue
+
+        # Check if new
+        if notam_id not in seen_ids:
+            # Clean up text for Telegram
+            msg = f"🚨 **NOTAM: {notam_id}**\n\n`{raw_text}`"
+            
             send_telegram(msg)
             
-            seen_ids.append(unique_key)
-            new_ids.append(unique_key)
+            seen_ids.append(notam_id)
+            new_ids.append(notam_id)
             sent_count += 1
 
     # 4. Save state
+    # Keep file size small
     with open(STATE_FILE, "w") as f:
         json.dump(seen_ids[-200:], f)
 
-    print(f"Success. Sent {sent_count} new notifications.")
+    print(f"Success. Sent {sent_count} notifications.")
 
 if __name__ == "__main__":
     main()
