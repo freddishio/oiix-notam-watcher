@@ -2,14 +2,14 @@ name: Check OIIX NOTAMs
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Runs every 15 minutes
-  workflow_dispatch:        # Allows you to click "Run now" manually
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
     permissions:
-      contents: write       # Allows the bot to save the 'state.json' file
+      contents: write
     
     steps:
       - name: Checkout code
@@ -20,7 +20,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install libraries
+      - name: Install requests
         run: pip install requests
 
       - name: Run bot script
@@ -30,10 +30,12 @@ jobs:
           AVWX_TOKEN: ${{ secrets.AVWX_TOKEN }}
         run: python main.py
 
-      - name: Save state (if changed)
+      - name: Save state
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add state.json
-          # Only commit and push if the file actually changed
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update state" && git push)
+          # Only add if file exists
+          if [ -f state.json ]; then
+            git add state.json
+            git diff --quiet && git diff --staged --quiet || (git commit -m "Update state" && git push)
+          fi
