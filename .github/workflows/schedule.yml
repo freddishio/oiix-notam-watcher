@@ -27,6 +27,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+          AVWX_TOKEN: ${{ secrets.AVWX_TOKEN }}
         run: python main.py
 
       - name: Save state (if changed)
