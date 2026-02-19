@@ -186,7 +186,8 @@ def main():
         notam["last_seen_utc"] = current_time_str
         current_raw_dict[full_id] = notam
 
-        if full_id in active_notams_decoded:
+        # The Cache Fix: Only reuse saved data if it does not contain an error
+        if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
             decoded_obj = active_notams_decoded[full_id]
             decoded_obj["last_seen_utc"] = current_time_str
             current_decoded_dict[full_id] = decoded_obj
