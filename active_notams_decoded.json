@@ -1,210 +1,3672 @@
 {
   "OIIX A3627/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3627/25",
+      "series": "A",
+      "number": "3627",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2559/25"
+    },
+    "qualification": {
+      "line": "OIIX/QNVAS/IV/BO/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "NVAS",
+        "entity": "NV",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Terminal and en-route Navigation Facilities",
+        "subject": "VOR",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-02T07:00:00.000Z",
+      "validityEnd": "2026-04-02T23:59:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "VOR ANK FREQ 112.700 MHZ U/S, \nAND SUBSEQUENTLY REQUIRED FLTCK."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3707/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3707/25",
+      "series": "A",
+      "number": "3707",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2618/25"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-10T08:32:00.000Z",
+      "validityEnd": "2026-04-10T11:00:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "AIRWAY N39 BTN DEMBA AND OBRIX CLSD.\n- ALTN TOS FOR WESTBOUND:\n      RADAL DCT IMKER DCT ULDUS, \n      MNM FLT LVL: FL 275, \n- ALTN TOS FOR EASTBOUND:\n      ULDUS DCT ALKUP DCT IMLIM DCT OXADU M715 OBRIX,\n      MNM FLT LVL: FL 285."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3708/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3708/25",
+      "series": "A",
+      "number": "3708",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2840/25"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-10T08:32:00.000Z",
+      "validityEnd": "2026-04-10T11:00:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "AWY G208/L125 BTN RADAL AND IKA DVOR/DME CLSD, \nFLT INTENDING TO USE THIS AWY SHALL FILE FPL\nVIA ROVAD DCT IKA DVOR/DME,\nRADAL AVBL FOR OIII/OIIE/OIIP ARR."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3714/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3714/25",
+      "series": "A",
+      "number": "3714",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2667/25"
+    },
+    "qualification": {
+      "line": "OIIX/QXXXX/ / / /000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "XXXX",
+        "entity": "XX",
+        "status": "XX",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-11T07:13:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\nFM IRANIAN AIRPORTS ARE REQUIRED\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \nINTL INBOUND TFC TO IRANIAN AIRPORTS\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3715/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3715/25",
+      "series": "A",
+      "number": "3715",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2662/25"
+    },
+    "qualification": {
+      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CAAS",
+        "entity": "CA",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "Air/ground facility (specify service and frequency)",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-11T07:45:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 2.1-1 TEHRAN FIR, TEHRAN INFO, \nHF FREQ 5658 KHZ, 5667 KHZ, 6925 KHZ, 8091 KHZ, 8918 KHZ,\n10018 KHZ, 13288 KHZ AND 13312 KHZ U/S."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3716/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3716/25",
+      "series": "A",
+      "number": "3716",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2663/25"
+    },
+    "qualification": {
+      "line": "OIIX/QAECA/IV/NBO/E/195/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AECA",
+        "entity": "AE",
+        "status": "CA",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Control area (CTA)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "195",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-11T07:45:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "NEW CTA ESTABLISHED AT SOUTH OF TEHRAN FIR WI AREA\nWITH FLW SPECIFICATIONS:\n282731N 0520543E, KATAG, KUPTO, KASOL, \n283811N 0532523E, 282300N 0533600E, 275700N 0535300E, \nLAR VOR/DME, 271545N 0542844E, SERDU, DAPER, MIDSI, \n264600N 0514158E, DEPSU,\nTO THE POINT OF ORIGIN. \nLOWER LIMIT:    FL195\nUPPER LIMIT:     UNL\nCLASS OF AIRSPACE:      AT FL200 CLASS D, ABOVE FL200 CLASS A,\nUNIT PROVIDING SERVICE: TEHRAN ACC,\nCALL SIGN:        TEHRAN RADAR, \nLANGUAGES:      ENGLISH - PERSIAN,\nHOURS OF SER:  H24,\nFREQ:       133.400 MHZ.",
+      "area": [
+        [
+          28.450833,
+          52.095278
+        ],
+        [
+          28.633611,
+          53.423056
+        ],
+        [
+          28.383333,
+          53.6
+        ],
+        [
+          27.95,
+          53.883333
+        ],
+        [
+          27.251111,
+          54.478889
+        ],
+        [
+          26.766667,
+          51.699444
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "FL195",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3717/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3717/25",
+      "series": "A",
+      "number": "3717",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2664/25"
+    },
+    "qualification": {
+      "line": "OIIX/QCACF/IV/B/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CACF",
+        "entity": "CA",
+        "status": "CF",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "Air/ground facility (specify service and frequency)",
+        "condition": "Changes",
+        "modifier": "Operating frequency(ies) changed to"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-11T07:50:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 2.1, \nFREQ 316.800 MHZ SECTOR 1 NORTH/EAST/WEST, \nFREQ 351.900 MHZ SECTOR 2 EAST/WEST, \nFREQ 326.400 MHZ SECTOR 3 NORTH/SOUTH, \nFREQ 291.700 MHZ SECTOR 4 EAST/WEST/SOUTH, \nFREQ 309.100 MHZ SECTOR 5 EAST/WEST, \nFREQ 284.900 MHZ SECTOR 6 EAST/WEST AND \nFREQ 302.400 MHZ SECTOR 7 \nCHANGE TO   FREQ 258.400 MHZ."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3718/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3718/25",
+      "series": "A",
+      "number": "3718",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2665/25"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-11T07:50:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "THE SPECIFICATION OF THE FLW ATS ROUTES\nSIMULTANEOUSLY AVBL AS RNAV5 FM \nMNM SAFE LVL OF RELATED ATS ROUTES:\nR659, R654, G666, G669, W10, W143, A788 AND G452."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A3810/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A3810/25",
+      "series": "A",
+      "number": "3810",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2729/25"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-16T07:09:00.000Z",
+      "validityEnd": "2026-04-16T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1 ATS SURVEILLANCE SERVICES AND PROCEDURES, \nKUSHK MSSR RADAR DERIVED INFORMATION FOR EN-ROUTE NOT AVBL \nDUE KUSHK MSSR RADAR U/S,\nRADAR SER IN SOME PARTS OF THE ACC\nSECTOR 1 (FREQ 132.500 MHZ) AND\nSECTOR 2 (FREQ 125.700 MHZ) AND\nSECTOR 7 (FREQ 120.700 MHZ)\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0995/25": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0995/25",
+      "series": "B",
+      "number": "0995",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0776/25"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-01-28T15:12:00.000Z",
+      "validityEnd": "2026-04-28T23:59:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF SUP 10/25 TRAFFIC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nITEM 3-DOMESTIC FLIGHT TOS,\nTHE FOLLOWING STANDARD AND MANDATORY TRAFFIC ORIENTATION SCHEME\nBTN OIII AND OIMD ARE APPLICABLE:\n1. TRN DHN B411 GIBAB L333 TASLU,\n2. TRN DHN B411 GIBAB B411 MUSEG N567 TASLU."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0064/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0064/26",
+      "series": "A",
+      "number": "0064",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3396/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-05T08:11:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0430-1830"
+      ]
+    },
+    "content": {
+      "text": "OID125 ACTIVATED, REF AIP PAGE ENR 5.1.3-12."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "18000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0066/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0066/26",
+      "series": "A",
+      "number": "0066",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3613/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/120/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "120"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-05T08:20:00.000Z",
+      "validityEnd": "2026-04-20T19:30:00.000Z",
+      "elements": [
+        "0330 - 1930"
+      ]
+    },
+    "content": {
+      "text": "OID127 ACTIVATED, REF AIP PAGE ENR 5.1.3-12"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "12000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0070/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0070/26",
+      "series": "A",
+      "number": "0070",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3397/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/160/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "160"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-05T08:31:00.000Z",
+      "validityEnd": "2026-04-19T20:30:00.000Z",
+      "elements": [
+        "0230-2030"
+      ]
+    },
+    "content": {
+      "text": "OID122 ACTIVATED, REF AIP PAGE ENR 5.1.3-12"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "16000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0072/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0072/26",
+      "series": "A",
+      "number": "0072",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3393/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-05T08:39:00.000Z",
+      "validityEnd": "2026-04-19T20:30:00.000Z",
+      "elements": [
+        "0230-2030"
+      ]
+    },
+    "content": {
+      "text": "OID123 ACTIVATED, REF AIP PAGE ENR 5.1.3-12."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "18000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0065/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0065/26",
+      "series": "A",
+      "number": "0065",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-08T11:30:00.000Z",
+      "validityEnd": "2026-04-19T14:30:00.000Z",
+      "elements": [
+        "SAT THU 1130-1430"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\n352500N 0465100E\n352500N 0470000E\n351500N 0465100E\n352000N 0464500E\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          35.416667,
+          46.85
+        ],
+        [
+          35.416667,
+          47
+        ],
+        [
+          35.25,
+          46.85
+        ],
+        [
+          35.333333,
+          46.75
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "18000FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0080/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0080/26",
+      "series": "A",
+      "number": "0080",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-08T11:30:00.000Z",
+      "validityEnd": "2026-04-19T14:30:00.000Z",
+      "elements": [
+        "SAT THU 1130-1430"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A0065/26, MNM SAFE LVL ON \nAWY M434/Z740 BTN ASLAX AND NOLTO \nRAISED TO FL190."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0031/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0031/26",
+      "series": "B",
+      "number": "0031",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0881/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/130/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "130"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-12T06:43:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0330-1830"
+      ]
+    },
+    "content": {
+      "text": "OID124 ACT, REF AIP PAGE ENR 5.1.3-12."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "13000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0198/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0198/26",
+      "series": "A",
+      "number": "0198",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3064/25"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-02-12T09:35:00.000Z",
+      "validityEnd": "2026-05-12T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF AIP SUP 10/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 3 DOM FLT TOS,\nCHANGE AS FLW:\n- NR 5 DOM FLT FM OIBK TO OIMM (PAGE 28)\n - RELEVANT SID PURNA A418 SOKEV W143 LAR Z5 LOSAN RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICC (PAGE 37)\n - RELEVANT SID KAVOT R659 ISNG202 KRD W158 BUBAV RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICK (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 NOTSARELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICI (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 ALTET RELEVANT STAR"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0038/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0038/26",
+      "series": "B",
+      "number": "0038",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0872/25"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/140/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "140"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T05:56:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0330-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD: \n353320N  0611313E \n353207N  0611527E \n352905N  0611359E \n353107N  0611143E \nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          35.550556,
+          61.220278
+        ],
+        [
+          35.533333,
+          61.2575
+        ],
+        [
+          35.483333,
+          61.233056
+        ],
+        [
+          35.516667,
+          61.195278
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "14000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0205/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0205/26",
+      "series": "A",
+      "number": "0205",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3392/25"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/200/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "200"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T05:58:00.000Z",
+      "validityEnd": "2026-04-19T19:30:00.000Z",
+      "elements": [
+        "0330-1930"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA:\n314529N 0604632E\n313656N 0604632E\n313656N 0604036E \n314529N 0604036E \nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          31.750556,
+          60.775556
+        ],
+        [
+          31.601389,
+          60.775556
+        ],
+        [
+          31.601389,
+          60.676667
+        ],
+        [
+          31.750556,
+          60.676667
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "20000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0039/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0039/26",
+      "series": "B",
+      "number": "0039",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0871/25"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/130/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "130"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T06:13:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0330-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\n332300N  0604400E \n332200N  0604400E \n332200N  0604300E \n332300N  0604300E \nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          33.383333,
+          60.733333
+        ],
+        [
+          33.366667,
+          60.733333
+        ],
+        [
+          33.366667,
+          60.716667
+        ],
+        [
+          33.383333,
+          60.716667
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "13000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0206/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0206/26",
+      "series": "A",
+      "number": "0206",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3394/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/130/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "130"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T06:18:00.000Z",
+      "validityEnd": "2026-04-19T11:30:00.000Z",
+      "elements": [
+        "0530-1130"
+      ]
+    },
+    "content": {
+      "text": "OID130 ACTIVATED, REF AIP PAGE ENR 5.1.3-13."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "13000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0040/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0040/26",
+      "series": "B",
+      "number": "0040",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0869/25"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/150/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "150"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T06:21:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0330 - 1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\n370500N 0454500E \n370000N 0453000E \n370000N 0450500E \n371000N 0453000E \nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          37.083333,
+          45.75
+        ],
+        [
+          37,
+          45.5
+        ],
+        [
+          37,
+          45.083333
+        ],
+        [
+          37.166667,
+          45.5
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "15000FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0207/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0207/26",
+      "series": "A",
+      "number": "0207",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3385/25"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/200/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "200"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T06:21:00.000Z",
+      "validityEnd": "2026-04-19T20:30:00.000Z",
+      "elements": [
+        "0330-2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\n311300N 0593100E\n310300N 0593600E\n310100N 0592400E\n311200N 0591900E\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          31.216667,
+          59.516667
+        ],
+        [
+          31.05,
+          59.6
+        ],
+        [
+          31.016667,
+          59.4
+        ],
+        [
+          31.2,
+          59.316667
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "20000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0208/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0208/26",
+      "series": "A",
+      "number": "0208",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3398/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/150/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "150"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T06:24:00.000Z",
+      "validityEnd": "2026-04-19T16:30:00.000Z",
+      "elements": [
+        "0230-1630"
+      ]
+    },
+    "content": {
+      "text": "OID128 ACTIVATED, REF AIP PAGE ENR 5.1.3-13."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "15000FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0041/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0041/26",
+      "series": "B",
+      "number": "0041",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0870/25"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/110/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "110"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-13T06:25:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0330-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\n345700N 0591300E \n345400N 0591300E \n345500N 0591200E \n345700N 0591200E\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          34.95,
+          59.216667
+        ],
+        [
+          34.9,
+          59.216667
+        ],
+        [
+          34.916667,
+          59.2
+        ],
+        [
+          34.95,
+          59.2
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "11000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0229/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0229/26",
+      "series": "A",
+      "number": "0229",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3184/25"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/300/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "300"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-15T08:42:00.000Z",
+      "validityEnd": "2026-04-19T19:30:00.000Z",
+      "elements": [
+        "0330-1930"
+      ]
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 5.1.3-12, OID121 ACTIVATED."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "30000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0054/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0054/26",
+      "series": "B",
+      "number": "0054",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0010/26"
+    },
+    "qualification": {
+      "line": "OIIX/QWULW/IV/BO/W/000/100/",
+      "location": "OIIX",
+      "code": {
+        "code": "WULW",
+        "entity": "WU",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Unmanned aircraft",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "100"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-20T09:28:00.000Z",
+      "validityEnd": "2026-03-19T20:30:00.000Z"
+    },
+    "content": {
+      "text": "RPA ACT WILL TAKE PLACE WI AREA WITH FLW COORD: \n382400N 0485200E \n382000N 0492500E \n375500N 0491100E \nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          38.4,
+          48.866667
+        ],
+        [
+          38.333333,
+          49.416667
+        ],
+        [
+          37.916667,
+          49.183333
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0062/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0062/26",
+      "series": "B",
+      "number": "0062",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0825/25"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-25T05:24:00.000Z",
+      "validityEnd": "2026-05-25T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "OPERATION OF ALL VFR FLT AND GENERAL AVIATION FLT SUSPENDED\nEXCEPT THOSE FLT OPERATING WITHIN ATZ OR ENGAGE IN HOSP, SAR,\nSTATE, MILITARY AND NIOC (NATIONAL IRANIAN OIL CO) HELICOPTER\nFLT BY PRIOR COORDINATION WITH APPROPRIATE ATS AUTHORITY."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0068/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0068/26",
+      "series": "B",
+      "number": "0068",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/095/3541N06110E004",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          35.683333,
+          61.166667
+        ],
+        {
+          "radius": 4
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "095"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-26T03:30:00.000Z",
+      "validityEnd": "2026-03-25T13:30:00.000Z",
+      "elements": [
+        "0330-1330"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 4 NM CENTERED AT:\n354100N  0610947E .",
+      "area": [
+        [
+          35.683333,
+          61.163056
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "9500 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0065/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0065/26",
+      "series": "B",
+      "number": "0065",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/110/3554N04703E003",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          35.9,
+          47.05
+        ],
+        {
+          "radius": 3
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "110"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-26T04:30:00.000Z",
+      "validityEnd": "2026-03-25T10:30:00.000Z",
+      "elements": [
+        "0430-1030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 3 NM CENTERED AT:\n355423N 0470232E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "11000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0067/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0067/26",
+      "series": "B",
+      "number": "0067",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/100/3518N04622E003",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          35.3,
+          46.366667
+        ],
+        {
+          "radius": 3
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "100"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-26T04:30:00.000Z",
+      "validityEnd": "2026-03-25T10:30:00.000Z",
+      "elements": [
+        "0430-1030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE\nRADIUS 3 NM CENTERED AT:\n351827.8N  0462205.5E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0069/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0069/26",
+      "series": "B",
+      "number": "0069",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/105/3647N04656E001",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          36.783333,
+          46.933333
+        ],
+        {
+          "radius": 1
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "105"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-26T04:30:00.000Z",
+      "validityEnd": "2026-03-25T10:30:00.000Z",
+      "elements": [
+        "0430-1030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE\nRADIUS 1 NM CENTERED AT:\n364659.3N 0465606.7E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10500 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0070/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0070/26",
+      "series": "B",
+      "number": "0070",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/105/3519N04622E001",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          35.316667,
+          46.366667
+        ],
+        {
+          "radius": 1
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "105"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-26T04:30:00.000Z",
+      "validityEnd": "2026-03-25T10:30:00.000Z",
+      "elements": [
+        "0430-1030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 1 NM CENTERED AT:\n351837.8N 0462205.5E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10500 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0081/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0081/26",
+      "series": "B",
+      "number": "0081",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/140/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "140"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-27T06:38:00.000Z",
+      "validityEnd": "2026-04-19T18:30:00.000Z",
+      "elements": [
+        "0330-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\n345907N  0610125E\n345842N  0605850E\n345634N  0605925E\n345700N  0610159E\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          34.983333,
+          61.023611
+        ],
+        [
+          34.967778,
+          60.980556
+        ],
+        [
+          34.934167,
+          60.990278
+        ],
+        [
+          34.95,
+          61.033056
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "14000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0083/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0083/26",
+      "series": "B",
+      "number": "0083",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/080/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "080"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-27T07:42:00.000Z",
+      "validityEnd": "2026-03-19T20:30:00.000Z"
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI LATERAL LIMIT OF OID126 \n(REF AIP PAGE ENR 5.1.3-3)."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "8000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0367/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0367/26",
+      "series": "A",
+      "number": "0367",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/115/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "115"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-02-27T16:00:00.000Z",
+      "validityEnd": "2026-04-20T19:30:00.000Z",
+      "elements": [
+        "0330 - 1930"
+      ]
+    },
+    "content": {
+      "text": "OID73 ACTIVATED, REF AIP PAGE ENR 5.1.3-7 ."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "11500 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0386/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0386/26",
+      "series": "A",
+      "number": "0386",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/130/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "130"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-03T03:30:00.000Z",
+      "validityEnd": "2026-04-19T19:30:00.000Z",
+      "elements": [
+        "0330-1930"
+      ]
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 5.1.3-8, OID84 ACTIVATED."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "13000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0072/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0072/26",
+      "series": "B",
+      "number": "0072",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/110/3113N05924E007",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          31.216667,
+          59.4
+        ],
+        {
+          "radius": 7
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "110"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-03-23T15:30:00.000Z",
+      "elements": [
+        "0330-1530"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 7NM CENTERED AT:\n311257.3N 0592427.2E ."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "11000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0090/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0090/26",
+      "series": "B",
+      "number": "0090",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/095/3129N06047E004",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          31.483333,
+          60.783333
+        ],
+        {
+          "radius": 4
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "095"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "elements": [
+        "0330 - 2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE RADIUS 4 NM CENTERED AT: \n312851N  0604721E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "9500FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0091/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0091/26",
+      "series": "B",
+      "number": "0091",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/090/3321N06044E003",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          33.35,
+          60.733333
+        ],
+        {
+          "radius": 3
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "090"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "elements": [
+        "0330 - 2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE RADIUS 3 NM CENTERED AT:\n332058N 0604409E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "9000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0092/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0092/26",
+      "series": "B",
+      "number": "0092",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/110/3344N06032E002",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          33.733333,
+          60.533333
+        ],
+        {
+          "radius": 2
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "110"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "elements": [
+        "0330 - 2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE, RADIUS 2 NM CENTERED AT:\n334354N 0603223E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "11000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0093/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0093/26",
+      "series": "B",
+      "number": "0093",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/105/3148N06048E004",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          31.8,
+          60.8
+        ],
+        {
+          "radius": 4
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "105"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "elements": [
+        "0330 - 2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 4 NM CENTERED AT:\n314829N 0604749E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10500 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0095/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0095/26",
+      "series": "B",
+      "number": "0095",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/100/3235N05944E003",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          32.583333,
+          59.733333
+        ],
+        {
+          "radius": 3
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "100"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-01T10:30:00.000Z",
+      "elements": [
+        "0330 - 1030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE RADIUS 3 NM \nCENTERED AT: 323450N  0594338E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0102/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0102/26",
+      "series": "B",
+      "number": "0102",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/090/3223N06050E004",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          32.383333,
+          60.833333
+        ],
+        {
+          "radius": 4
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "090"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "elements": [
+        "0330 - 2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 4 NM CENTERED AT:\n322255N  0604938E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "9000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0106/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0106/26",
+      "series": "B",
+      "number": "0106",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/080/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "080"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-18T04:30:00.000Z",
+      "validityEnd": "2026-03-23T20:30:00.000Z",
+      "elements": [
+        "18 19 22 23 0430-2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA: \n364804N  0491558E,\n364730N  0491618E,\n364730N  0491615E,\n364725N  0491558E,\n364725N  0491531E\nTO THE POINT OF ORIGIN",
+      "area": [
+        [
+          36.8,
+          49.266111
+        ],
+        [
+          36.784167,
+          49.271667
+        ],
+        [
+          36.784167,
+          49.270833
+        ],
+        [
+          36.783889,
+          49.266111
+        ],
+        [
+          36.783889,
+          49.258611
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "8000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX B0132/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "B0132/26",
+      "series": "B",
+      "number": "0132",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0130/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-18T07:30:00.000Z",
+      "validityEnd": "2026-03-26T07:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CHECKLIST:\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \n YEAR=2025 0895 0896 0903 0921 0922 0923 0924 0925 0926 0927 0928 \n0929 0930 0931 0932 0933 0934 0935 0936 0937 0938 0939 \n0940 0941 0942 0943 0944 0945 0946 0947 0948 0949 0991 \n0992 0993 0995 1002 \n YEAR=2026 0001 0002 0024 0025 0031 0034 0038 0039 0040 0041 0054 \n0060 0061 0062 0063 0064 0065 0067 0068 0069 0070 0072 \n0081 0083 0090 0091 0092 0093 0095 0102 0106 0115 0116 \n0117 0118 0121 0122 0123 0125 0126 0127 0128 0129 0131 \nLATEST AIP AMENDMENTS \nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \nAIP AMDT 1/20 01 JAN 2020 \nCHECKLIST OF AIP SUP AND AIC \nAIRAC AIP SUP: 94/15 95/15 96/15 97/15 98/15 99/15 \n100/15 101/15 102/15 103/15 104/15 105/15 \n6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 10/25 11/25 12/25\nAIP SUP: 2/23 9/25 \nAIC: 2/08 3/08 4/08 5/08 9/08 \n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n19 MAR 2026\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0614/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "",
+      "type": "A0614/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-18T07:30:00.000Z",
+      "validityEnd": "2026-03-26T07:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CHECKLIST:\n YEAR=2022 0253 1415 1416 1417 1418 1892 \n YEAR=2023 1718 1719 1720 1721 2113 2496 \n YEAR=2024 1456 3358 4458 4459 4460 4461 \n YEAR=2025 2322 2549 2572 2715 2776 2871 3242 3313 3460 3524 3526 \n3546 3551 3578 3599 3607 3608 3616 3617 3623 3625 3626 \n3627 3628 3629 3630 3631 3633 3634 3635 3637 3638 3639 \n3640 3641 3661 3675 3676 3677 3678 3697 3701 3702 3707 \n3708 3714 3715 3716 3717 3718 3720 3721 3722 3793 3795 \n3806 3810 3811 3831 3832 3833 3834 3835 3888 3889 3899 \n3901 3903 3926 3942 3943 3945 3946 3947 3949 3950 3951 \n3952 3953 4009 \n YEAR=2026 0058 0062 0063 0064 0065 0066 0069 0070 0072 0073 0076 \n0080 0086 0105 0113 0137 0140 0174 0192 0198 0199 0203 \n0204 0205 0206 0207 0208 0229 0231 0233 0234 0237 0242 \n0249 0257 0258 0260 0263 0265 0275 0276 0289 0310 0314 \n0322 0341 0357 0367 0380 0382 0385 0386 0388 0389 0390 \n0392 0397 0399 0415 0421 0426 0427 0430 0431 0433 0434 \n0436 0477 0480 0483 0484 0487 0488 0489 0490 0511 0516 \n0519 0529 0530 0541 0542 0543 0544 0546 0547 0548 0549 \n0550 0552 0561 0564 0566 0568 0569 0580 0582 0585 0588 \n0589 0591 0593 0595 0601 0605 0607 0608 0609 0610 0612 \n0613 \nEND PART 1 OF 2\r\nA0614/26 NOTAMR A0567/26\nQ) OIIX/QKKKK/K/K/K/000/999/\nA) OIIX PART 2 OF 2 B) 2602180730 C) 2602260730 EST\nE) LATEST AIP AMENDMENTS \nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \nAIP AMDT 1/20 01 JAN 2020 \nCHECKLIST OF AIP SUP AND AIC \nAIRAC AIP SUP: 94/15 95/15 96/15 97/15 98/15 99/15 \n100/15 101/15 102/15 103/15 104/15 105/15 \n6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 10/25 11/25 12/25\nAIP SUP: 2/23 9/25 \nAIC: 2/08 3/08 4/08 5/08 9/08 \n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n19 MAR 2026\n\u0002NOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID.\nEND PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0249/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "",
+      "type": "A0249/26"
+    },
+    "qualification": {
+      "line": "OIIX/QOATT/IV/BO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "OATT",
+        "entity": "OA",
+        "status": "TT",
+        "area": "Other Information",
+        "subject": "Aeronautical information service",
+        "condition": "Trigger",
+        "modifier": "Trigger"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-19T00:00:00.000Z",
+      "validityEnd": "2026-04-04T23:59:00.000Z"
+    },
+    "content": {
+      "text": "TRIGGER NOTAM-PERM AIRAC AIP AMDT 1/26 WEF 19 FEB 2026\nWILL BE IN FORCE AND FLW INFO MENTIONED:\nTHE AIP SUP 13/25 PUBLISHED AND SUPERSEDES AIP SUP 10/25 AND \nAIP SUP 94-105/15, 11/25 WILL BE CANCELED,\nSOME CHANGES IN PART GEN: 0.2, 0.3, 0.4, 2.3, \nSOME CHANGES IN PART ENR: 2.1, 3.1, 3.3, 4.1, 5.1.3, 6.1,\nSOME CHANGES IN PART AD: \nOIBA: ALL IAC,\nOIMB: ATS COM FAC, CHART RELATED TO AD, ADC, ALL SID,STAR AND IAC,\nOICC: AD GEO AND ADMINISTRATIVE DATA, HANDLING SERVICES AND FAC,\n APRONS, TWYS, SFC MOV GUIDENCE AND CTL SYSTEM AND MARKINGS,\n OBST, MET INFO, RWY PHYSICAL CHARACTERISTICS, DECLARED DISTANCES,\n APCH AND RWY LGT, RADIO NAV AND LDG AIDS, LOC TFC REGULATIONS\n CHART RELATED TO AD, ADC, ALL SID, STAR AND IAC,\nOIBK: APCH AND RWY LGT, RADIO NAV AND LDG AIDS, IAC 1-1, IAC 1-2\nOIMM: FLT PROC,\nOIGG: RADIO NAV AND LDG AIDS, CHART RELATED TO AD, SID 2-1, \n SID 2-2, STAR 2-1, IAC 1-1, IAC 1-2, IAC 4-1, IAC 4-2, IAC 4-3,\n  IAC 4-4,\r\nA0249/26 NOTAMN\nQ) OIIX/QOATT/IV/BO/A/000/999/\nA) OIIX PART 2 OF 2 B) 2602190000 C) 2603042359\nE)\nOICS: IAC 1-1, IAC 2-1,\nOIKY: AD GEO AND ADMINISTRATIVE DATA, APRONS,TWYS, OBST, MET INFO,\n  RADIO NAV AND LDG AIDS, ALL IAC,\nOIMT: APRONS, TWYS, MET INFO, OTHER LGT AND SRY PWR SUPPLY, ADC\nOITT: AD GEO AND ADMINISTRATIVE DATA, OBST, ALL IAC,\nOIIE: STAR 1-1, STAR 1-3,\nOIII: RESCUE AND FIRE FIGHTING SER, SEASONAL AVILIBILITY, \n APRONS, TWYS, SFC MOV GUIDENCE AND CTL SYSTEM AND MARKINGS,\n RWY PHYSICAL CHARACTERISTICS, ADC, APDC,\nOITR: AD GEO AND ADMINISTRATIVE DATA, APRONS, TWYS, OBST, MET INFO,\n RWY PHYSICAL CHARACTERISTICS, RADIO NAV AND LDG AIDS, \n CHART RELATED TO AD, ADC, ALL SID, STAR AND IAC\nOIYY: APRONS, TWYS, OBST, ADDN INFO, ALL IAC,\nOIIO: HELIPORT GEO AND ADMINISTRATIVE DATA, APRONS, TWYS\n AND CHECK LOCATIONS/POSITIONS DATA, HELIPORT DATA,\n DECLARED DISTANCES, ADDN INFO."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0516/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0516/26",
+      "series": "A",
+      "number": "0516",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/140/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "140"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-19T03:30:00.000Z",
+      "validityEnd": "2026-04-19T16:30:00.000Z",
+      "elements": [
+        "0330-1630"
+      ]
+    },
+    "content": {
+      "text": "OID126 ACTIVATED, REF AIP PAGE ENR 5.1.3-12."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "14000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0589/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0589/26",
+      "series": "A",
+      "number": "0589",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/120/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "120"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-25T03:30:00.000Z",
+      "validityEnd": "2026-04-18T06:30:00.000Z",
+      "elements": [
+        "WED 0330-0630"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH FLW COORD: \n332400N   0475900E\n332200N   0480300E\n332100N   0480200E\n332300N   0475800E\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          33.4,
+          47.983333
+        ],
+        [
+          33.366667,
+          48.05
+        ],
+        [
+          33.35,
+          48.033333
+        ],
+        [
+          33.383333,
+          47.966667
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "12000 FT AMSL"
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   },
   "OIIX A0357/26": {
-    "error": "Expecting value: line 1 column 1 (char 0)",
-    "last_seen_utc": "2026-02-19 15:55:21"
+    "header": {
+      "id": "A0357/26",
+      "series": "A",
+      "number": "0357",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QOAXX/A/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-04-19T00:00:00.000Z",
+      "validityEnd": "2026-05-01T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n DATE 19 MAR 2026."
+    },
+    "last_seen_utc": "2026-02-19 15:58:55"
   }
 }
