@@ -176,7 +176,6 @@ def main():
         notam["last_seen_utc"] = current_time_str
         current_raw_dict[full_id] = notam
 
-        # Force fresh evaluation if previous run had an error
         if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
             decoded_obj = active_notams_decoded[full_id]
             decoded_obj["last_seen_utc"] = current_time_str
@@ -191,21 +190,14 @@ def main():
             subject_text = "Unknown Subject"
             condition_text = "Unknown Condition"
             
+            # This is the exact fix for the Javascript nested JSON structure
             if decoded_obj and "qualification" in decoded_obj:
-                qual = decoded_obj["qualification"]
-                if isinstance(qual, dict):
-                    subj = qual.get("subject")
-                    cond = qual.get("condition")
-                    
-                    if isinstance(subj, dict):
-                        subject_text = subj.get("subject", subject_text)
-                    elif isinstance(subj, str):
-                        subject_text = subj
-                        
-                    if isinstance(cond, dict):
-                        condition_text = cond.get("condition", condition_text)
-                    elif isinstance(cond, str):
-                        condition_text = cond
+                qual_block = decoded_obj.get("qualification", {})
+                if isinstance(qual_block, dict):
+                    code_block = qual_block.get("code", {})
+                    if isinstance(code_block, dict):
+                        subject_text = code_block.get("subject", subject_text)
+                        condition_text = code_block.get("modifier", condition_text)
             
             if decoded_obj and "error" in decoded_obj:
                 error_msg = decoded_obj.get("error", "Failed to parse")
