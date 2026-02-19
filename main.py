@@ -3,14 +3,20 @@ import json
 import os
 import sys
 import time
+import subprocess
+import tempfile
 from datetime import datetime
 
 # Configuration
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 HISTORY_FILE = "run_history.json"
-ACTIVE_FILE = "active_notams.json"
-EXPIRED_FILE = "expired_notams.json"
+
+# Separate databases for your future expansion
+ACTIVE_RAW_FILE = "active_notams_raw.json"
+ACTIVE_DECODED_FILE = "active_notams_decoded.json"
+EXPIRED_RAW_FILE = "expired_notams_raw.json"
+EXPIRED_DECODED_FILE = "expired_notams_decoded.json"
 
 # Secrets
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
@@ -32,6 +38,21 @@ def send_telegram(message):
         requests.post(url, json=payload, timeout=10)
     except Exception as e:
         print(f"Telegram Error: {e}")
+
+def decode_notam(raw_text):
+    # This creates a temporary file to safely pass the text to JavaScript
+    with tempfile.NamedTemporaryFile(mode='w', delete=False, encoding='utf-8') as f:
+        f.write(raw_text)
+        temp_path = f.name
+        
+    try:
+        result = subprocess.run(['node', 'wrapper.js', temp_path], capture_output=True, text=True, check=True)
+        return json.loads(result.stdout)
+    except Exception as e:
+        print(f"Decoding failed: {e}")
+        return {}
+    finally:
+        os.remove(temp_path)
 
 def get_all_notams():
     headers = {
@@ -89,11 +110,14 @@ def save_json(filepath, data):
 def main():
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
-    # Load all our databases
     seen_ids = load_json(STATE_FILE, {})
     run_history = load_json(HISTORY_FILE, [])
-    active_notams = load_json(ACTIVE_FILE, {})
-    expired_notams = load_json(EXPIRED_FILE, {})
+    
+    active_notams_raw = load_json(ACTIVE_RAW_FILE, {})
+    active_notams_decoded = load_json(ACTIVE_DECODED_FILE, {})
+    
+    expired_notams_raw = load_json(EXPIRED_RAW_FILE, {})
+    expired_notams_decoded = load_json(EXPIRED_DECODED_FILE, {})
     
     notam_list = get_all_notams()
     
@@ -102,10 +126,10 @@ def main():
         return
 
     current_time_str = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
-    current_dict = {}
+    current_raw_dict = {}
+    current_decoded_dict = {}
     new_count = 0
 
-    # Process the fresh NOTAMs
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
@@ -116,54 +140,81 @@ def main():
             
         full_id = f"{icao_id} {notam_id}"
         
-        # Save the complete raw JSON data for future bot features
+        # Save the raw data
         notam["last_seen_utc"] = current_time_str
-        current_dict[full_id] = notam
+        current_raw_dict[full_id] = notam
+
+        # Decode or copy the existing decoded data
+        if full_id in active_notams_decoded:
+            decoded_obj = active_notams_decoded[full_id]
+            decoded_obj["last_seen_utc"] = current_time_str
+            current_decoded_dict[full_id] = decoded_obj
+        else:
+            decoded_obj = decode_notam(raw_text)
+            if decoded_obj:
+                decoded_obj["last_seen_utc"] = current_time_str
+                current_decoded_dict[full_id] = decoded_obj
 
         # Alert if we have never seen this ID before
         if full_id not in seen_ids:
-            msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n{raw_text}"
+            subject_text = "Unknown Subject"
+            condition_text = "Unknown Condition"
+            
+            # Extract plain English descriptions from the JavaScript output
+            if decoded_obj and "qualification" in decoded_obj:
+                qual = decoded_obj["qualification"]
+                if isinstance(qual, dict):
+                    if "subject" in qual and isinstance(qual["subject"], dict):
+                        subject_text = qual["subject"].get("subject", subject_text)
+                    if "condition" in qual and isinstance(qual["condition"], dict):
+                        condition_text = qual["condition"].get("condition", condition_text)
+
+            msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Subject:** {subject_text}\n**Condition:** {condition_text}\n\n**Raw Text:**\n`{raw_text}`"
             send_telegram(msg)
             seen_ids[full_id] = current_time_str
             new_count += 1
 
-    # Detect expired NOTAMs and place them at the top of the file
+    # Detect expired items and place them at the top of the archive files
     removed_count = 0
-    newly_expired = {}
+    newly_expired_raw = {}
+    newly_expired_decoded = {}
     
-    for old_id, old_data in active_notams.items():
-        if old_id not in current_dict:
-            # It vanished from the FAA feed so we archive it
+    for old_id, old_data in active_notams_raw.items():
+        if old_id not in current_raw_dict:
             old_data["archived_utc"] = current_time_str
-            newly_expired[old_id] = old_data
+            newly_expired_raw[old_id] = old_data
+            
+            if old_id in active_notams_decoded:
+                dec_data = active_notams_decoded[old_id]
+                dec_data["archived_utc"] = current_time_str
+                newly_expired_decoded[old_id] = dec_data
+                
             removed_count += 1
             
-    # Merge the new ones first followed by the older ones
-    expired_notams = {**newly_expired, **expired_notams}
+    expired_notams_raw = {**newly_expired_raw, **expired_notams_raw}
+    expired_notams_decoded = {**newly_expired_decoded, **expired_notams_decoded}
 
-    # Clean the state dictionary to only hold active IDs
     new_state = {}
-    for cid in current_dict.keys():
+    for cid in current_raw_dict.keys():
         new_state[cid] = seen_ids.get(cid, current_time_str)
 
-    # Save all our files
     save_json(STATE_FILE, new_state)
-    save_json(ACTIVE_FILE, current_dict)
-    save_json(EXPIRED_FILE, expired_notams)
+    save_json(ACTIVE_RAW_FILE, current_raw_dict)
+    save_json(ACTIVE_DECODED_FILE, current_decoded_dict)
+    save_json(EXPIRED_RAW_FILE, expired_notams_raw)
+    save_json(EXPIRED_DECODED_FILE, expired_notams_decoded)
 
-    # Update run history
     run_record = {
         "time_utc": current_time_str,
-        "total_active": len(current_dict),
+        "total_active": len(current_raw_dict),
         "new_added": new_count,
         "removed": removed_count
     }
     
-    # Insert new record at the very beginning of the list
     run_history.insert(0, run_record)
     save_json(HISTORY_FILE, run_history[:250])
     
-    print(f"Stats: Total {len(current_dict)}, New {new_count}, Removed {removed_count}")
+    print(f"Stats: Total {len(current_raw_dict)}, New {new_count}, Removed {removed_count}")
 
 if __name__ == "__main__":
     main()
