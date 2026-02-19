@@ -9,7 +9,8 @@ from datetime import datetime
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 HISTORY_FILE = "run_history.json"
-LOG_FILE = "notam_log.txt"
+ACTIVE_FILE = "active_notams.json"
+EXPIRED_FILE = "expired_notams.json"
 
 # Secrets
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
@@ -31,12 +32,6 @@ def send_telegram(message):
         requests.post(url, json=payload, timeout=10)
     except Exception as e:
         print(f"Telegram Error: {e}")
-
-def log_notam_to_file(notam_id, text):
-    timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
-    entry = f"\n{'='*40}\nDATE: {timestamp}\nID: {notam_id}\n\n{text}\n{'='*40}\n"
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(entry)
 
 def get_all_notams():
     headers = {
@@ -81,35 +76,36 @@ def get_all_notams():
 def load_json(filepath, default_value):
     if not os.path.exists(filepath):
         return default_value
-    with open(filepath, "r") as f:
+    with open(filepath, "r", encoding="utf-8") as f:
         try:
             return json.load(f)
         except:
             return default_value
 
 def save_json(filepath, data):
-    with open(filepath, "w") as f:
+    with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
 def main():
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
-    # Load previously seen active NOTAMs and run history
+    # Load all our databases
     seen_ids = load_json(STATE_FILE, {})
     run_history = load_json(HISTORY_FILE, [])
+    active_notams = load_json(ACTIVE_FILE, {})
+    expired_notams = load_json(EXPIRED_FILE, {})
     
     notam_list = get_all_notams()
     
-    # Network failure protection
     if not notam_list:
         print("No valid data received. Skipping processing to protect state.")
         return
 
     current_time_str = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
-    current_ids = []
+    current_dict = {}
     new_count = 0
 
-    # Process fetched NOTAMs
+    # Process the fresh NOTAMs
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
@@ -119,42 +115,48 @@ def main():
             continue
             
         full_id = f"{icao_id} {notam_id}"
-        current_ids.append(full_id)
+        
+        # Save the complete raw JSON data for future bot features
+        notam["last_seen_utc"] = current_time_str
+        current_dict[full_id] = notam
 
+        # Alert if we have never seen this ID before
         if full_id not in seen_ids:
             msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n{raw_text}"
             send_telegram(msg)
-            log_notam_to_file(full_id, raw_text)
             seen_ids[full_id] = current_time_str
             new_count += 1
 
-    # Calculate statistics
-    current_id_set = set(current_ids)
-    previously_seen_set = set(seen_ids.keys())
-    removed_ids = previously_seen_set.difference(current_id_set)
-    removed_count = len(removed_ids)
+    # Detect expired NOTAMs by comparing old active list to new active list
+    removed_count = 0
+    for old_id, old_data in active_notams.items():
+        if old_id not in current_dict:
+            # It vanished from the FAA feed so we archive it
+            old_data["archived_utc"] = current_time_str
+            expired_notams[old_id] = old_data
+            removed_count += 1
 
-    # Rebuild state to only contain currently active NOTAMs
+    # Clean the state dictionary to only hold active IDs
     new_state = {}
-    for cid in current_ids:
+    for cid in current_dict.keys():
         new_state[cid] = seen_ids.get(cid, current_time_str)
 
+    # Save all our files
     save_json(STATE_FILE, new_state)
+    save_json(ACTIVE_FILE, current_dict)
+    save_json(EXPIRED_FILE, expired_notams)
 
-    # Build and save run history record
+    # Update run history
     run_record = {
         "time_utc": current_time_str,
-        "total_active": len(current_ids),
+        "total_active": len(current_dict),
         "new_added": new_count,
         "removed": removed_count
     }
     run_history.append(run_record)
-    
-    # At 6 minute intervals, 24 hours equals 240 runs
-    # We keep the last 250 records to be safe
     save_json(HISTORY_FILE, run_history[-250:])
     
-    print(f"Stats: Total {len(current_ids)}, New {new_count}, Removed {removed_count}")
+    print(f"Stats: Total {len(current_dict)}, New {new_count}, Removed {removed_count}")
 
 if __name__ == "__main__":
     main()
