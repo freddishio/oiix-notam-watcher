@@ -5,9 +5,10 @@ import sys
 import time
 from datetime import datetime
 
-# --- Configuration ---
+# Configuration
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
+HISTORY_FILE = "run_history.json"
 LOG_FILE = "notam_log.txt"
 
 # Secrets
@@ -39,15 +40,12 @@ def log_notam_to_file(notam_id, text):
 
 def get_all_notams():
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
-    
     all_notams = []
     offset = 0
     batch_size = 30
-    
-    print("Starting fetch loop...")
     
     while True:
         payload = {
@@ -57,7 +55,6 @@ def get_all_notams():
             "notamsOnly": False,
             "radius": 10
         }
-        
         try:
             response = requests.post(URL, data=payload, headers=headers, timeout=30)
             response.raise_for_status()
@@ -71,85 +68,48 @@ def get_all_notams():
                 break
                 
             all_notams.extend(current_batch)
-            print(f"  Fetched {len(current_batch)} NOTAMs (Offset: {offset})")
-            
             offset += len(current_batch)
             if len(current_batch) < batch_size:
                 break
-            
             time.sleep(1)
-            
         except Exception as e:
             print(f"Error fetching page at offset {offset}: {e}")
             break
             
     return all_notams
 
-def load_state():
-    """
-    Loads state. Handles migration from:
-    1. Old List format: ["ID1", "ID2"]
-    2. Dict with List: {"seen_ids": ["ID1"]}
-    3. New Dict format: {"seen_ids": {"ID1": "Time1"}}
-    """
-    if not os.path.exists(STATE_FILE):
-        return {}
-        
-    with open(STATE_FILE, "r") as f:
+def load_json(filepath, default_value):
+    if not os.path.exists(filepath):
+        return default_value
+    with open(filepath, "r") as f:
         try:
-            data = json.load(f)
-            
-            # Case 1: Extremely old format (Just a list)
-            if isinstance(data, list):
-                # Convert to dict with dummy timestamp
-                return {pid: "Legacy (Pre-Timestamp)" for pid in data}
-            
-            # Case 2: Dict format
-            raw_seen = data.get("seen_ids", [])
-            
-            # Sub-case: seen_ids is a List (Previous version)
-            if isinstance(raw_seen, list):
-                return {pid: "Legacy (Pre-Timestamp)" for pid in raw_seen}
-                
-            # Sub-case: seen_ids is already a Dict (Target)
-            if isinstance(raw_seen, dict):
-                return raw_seen
-                
-            return {}
+            return json.load(f)
         except:
-            return {}
+            return default_value
 
-def save_state(seen_ids_dict):
-    """Saves state with timestamps and header info."""
-    
-    # Prune: Keep only the last 1000 entries to prevent file from getting huge
-    # In Python 3.7+, dictionaries preserve insertion order, so this keeps the newest.
-    if len(seen_ids_dict) > 1000:
-        seen_ids_dict = dict(list(seen_ids_dict.items())[-1000:])
-        
-    state_data = {
-        "last_run_utc": datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S'),
-        "seen_ids": seen_ids_dict
-    }
-    with open(STATE_FILE, "w") as f:
-        json.dump(state_data, f, indent=2)
+def save_json(filepath, data):
+    with open(filepath, "w") as f:
+        json.dump(data, f, indent=2)
 
 def main():
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
-    # seen_ids is now a DICTIONARY: {"ID": "Timestamp"}
-    seen_ids = load_state()
-    notam_list = get_all_notams()
-    print(f"Total NOTAMs retrieved: {len(notam_list)}")
+    # Load previously seen active NOTAMs and run history
+    seen_ids = load_json(STATE_FILE, {})
+    run_history = load_json(HISTORY_FILE, [])
     
+    notam_list = get_all_notams()
+    
+    # Network failure protection
     if not notam_list:
-        print("No valid data received.")
-        save_state(seen_ids) # Update last_run_utc anyway
+        print("No valid data received. Skipping processing to protect state.")
         return
 
-    new_count = 0
     current_time_str = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+    current_ids = []
+    new_count = 0
 
+    # Process fetched NOTAMs
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
@@ -159,19 +119,42 @@ def main():
             continue
             
         full_id = f"{icao_id} {notam_id}"
+        current_ids.append(full_id)
 
-        # Check if ID is in the keys of the dictionary
         if full_id not in seen_ids:
             msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n{raw_text}"
             send_telegram(msg)
             log_notam_to_file(full_id, raw_text)
-            
-            # Add to dict with current timestamp
             seen_ids[full_id] = current_time_str
             new_count += 1
 
-    save_state(seen_ids)
-    print(f"Success. Sent {new_count} notifications. Stats updated.")
+    # Calculate statistics
+    current_id_set = set(current_ids)
+    previously_seen_set = set(seen_ids.keys())
+    removed_ids = previously_seen_set.difference(current_id_set)
+    removed_count = len(removed_ids)
+
+    # Rebuild state to only contain currently active NOTAMs
+    new_state = {}
+    for cid in current_ids:
+        new_state[cid] = seen_ids.get(cid, current_time_str)
+
+    save_json(STATE_FILE, new_state)
+
+    # Build and save run history record
+    run_record = {
+        "time_utc": current_time_str,
+        "total_active": len(current_ids),
+        "new_added": new_count,
+        "removed": removed_count
+    }
+    run_history.append(run_record)
+    
+    # At 6 minute intervals, 24 hours equals 240 runs
+    # We keep the last 250 records to be safe
+    save_json(HISTORY_FILE, run_history[-250:])
+    
+    print(f"Stats: Total {len(current_ids)}, New {new_count}, Removed {removed_count}")
 
 if __name__ == "__main__":
     main()
