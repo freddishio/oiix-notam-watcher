@@ -25,7 +25,6 @@ if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
-# Massive expansion of the aviation dictionary
 ICAO_DICT = {
     "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
     "APCH": "Approach", "APP": "Approach Control", "ARR": "Arrival", "ATC": "Air Traffic Control",
@@ -55,7 +54,6 @@ ICAO_DICT = {
     "WI": "Within", "WIP": "Work In Progress", "WX": "Weather"
 }
 
-# Fallbacks for broken formatting
 FALLBACK_SUBJECTS = {
     "AF": "Flight information region", "AR": "ATS route", "RD": "Danger area",
     "WM": "Missile, gun or rocket firing", "NV": "VOR", "OA": "Aeronautical information service",
@@ -338,48 +336,36 @@ def main():
                             lat = coords[0][0]
                             lng = coords[0][1]
                             rad = coords[1].get("radius", 0)
-                            map_links.append(f"📍 [View Center Pin on Google Maps (Radius: {rad} NM)](https://www.google.com/maps?q={lat},{lng}&ll={lat},{lng}&z=5)")
+                            map_links.append(f"📍 [View Center Pin on Google Maps (Radius: {rad} NM)](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},5z)")
+                            map_links.append(f"✈️ [View on SkyVector Aviation Map](https://skyvector.com/?ll={lat},{lng}&chart=301&zoom=5)")
                         elif isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
                             lat = coords[0]
                             lng = coords[1]
-                            map_links.append(f"📍 [View Location on Google Maps](https://www.google.com/maps?q={lat},{lng}&ll={lat},{lng}&z=5)")
+                            map_links.append(f"📍 [View Location on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},5z)")
+                            map_links.append(f"✈️ [View on SkyVector Aviation Map](https://skyvector.com/?ll={lat},{lng}&chart=301&zoom=5)")
 
             if decoded_obj and "content" in decoded_obj:
                 content_block = decoded_obj.get("content", {})
                 if isinstance(content_block, dict):
                     area = content_block.get("area")
                     if isinstance(area, list) and len(area) > 2:
-                        coords_lng_lat = []
+                        coords_lat_lng = []
                         for pt in area:
                             if isinstance(pt, list) and len(pt) == 2:
-                                coords_lng_lat.append([pt[1], pt[0]])
+                                coords_lat_lng.append([pt[0], pt[1]])
                                 
-                        if len(coords_lng_lat) > 2:
-                            if coords_lng_lat[0] != coords_lng_lat[-1]:
-                                coords_lng_lat.append(coords_lng_lat[0])
+                        if len(coords_lat_lng) > 2:
+                            if coords_lat_lng[0] != coords_lat_lng[-1]:
+                                coords_lat_lng.append(coords_lat_lng[0])
                                 
-                            geojson = {
-                                "type": "FeatureCollection",
-                                "features": [{
-                                    "type": "Feature",
-                                    "geometry": {
-                                        "type": "Polygon",
-                                        "coordinates": [coords_lng_lat]
-                                    },
-                                    "properties": {
-                                        "stroke": "#ff0000",
-                                        "stroke-width": 2,
-                                        "fill": "#ff0000",
-                                        "fill-opacity": 0.5
-                                    }
-                                }]
-                            }
+                            center_lat = sum(pt[0] for pt in coords_lat_lng) / len(coords_lat_lng)
+                            center_lng = sum(pt[1] for pt in coords_lat_lng) / len(coords_lat_lng)
                             
-                            encoded_geo = urllib.parse.quote(json.dumps(geojson, separators=(',', ':')))
-                            geojson_url = f"http://geojson.io/#data=data:application/json,{encoded_geo}"
-                            map_links.append(f"🗺️ [View Highlighted Polygon Region on Interactive Map]({geojson_url})")
+                            plan_str = ":".join([f"{pt[0]:.4f},{pt[1]:.4f}" for pt in coords_lat_lng])
+                            skyvector_url = f"https://skyvector.com/?ll={center_lat:.4f},{center_lng:.4f}&chart=301&zoom=5&plan={plan_str}"
+                            
+                            map_links = [f"🗺️ [View Highlighted Polygon Region on SkyVector Map]({skyvector_url})"]
 
-            # Python Safety Net for unknown codes
             if "Unknown" in subject_text or "Unknown" in condition_text:
                 q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
                 if q_match:
@@ -390,7 +376,6 @@ def main():
                     if "Unknown" in condition_text:
                         condition_text = FALLBACK_CONDITIONS.get(mod_code, f"Code {mod_code}")
 
-            # Parenthesis Cleaner
             subject_text = re.sub(r'\s*\(.*?\)', '', subject_text).strip()
             condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
 
