@@ -6,20 +6,18 @@ import time
 import subprocess
 import tempfile
 import re
-from datetime import datetime
+import urllib.parse
+from datetime import datetime, timezone, timedelta
 
-# Configuration
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 HISTORY_FILE = "run_history.json"
 
-# Separate databases for your future expansion
 ACTIVE_RAW_FILE = "active_notams_raw.json"
 ACTIVE_DECODED_FILE = "active_notams_decoded.json"
 EXPIRED_RAW_FILE = "expired_notams_raw.json"
 EXPIRED_DECODED_FILE = "expired_notams_decoded.json"
 
-# Secrets
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 
@@ -27,7 +25,6 @@ if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
-# Custom Dictionary for translating the E Section
 ICAO_DICT = {
     "CLSD": "Closed",
     "BTN": "Between",
@@ -89,8 +86,48 @@ ICAO_DICT = {
     "SR": "Sunrise",
     "SS": "Sunset",
     "HR": "Hours",
-    "DLY": "Daily"
+    "DLY": "Daily",
+    "NM": "Nautical Miles"
 }
+
+tehran_tz = timezone(timedelta(hours=3, minutes=30))
+
+def parse_and_convert_time(time_str):
+    if len(time_str) >= 10 and time_str[:10].isdigit():
+        y = int("20" + time_str[0:2])
+        m = int(time_str[2:4])
+        d = int(time_str[4:6])
+        h = int(time_str[6:8])
+        minute = int(time_str[8:10])
+        try:
+            dt_utc = datetime(y, m, d, h, minute, tzinfo=timezone.utc)
+            dt_teh = dt_utc.astimezone(tehran_tz)
+            return dt_utc, dt_teh
+        except ValueError:
+            return None, None
+    return None, None
+
+def get_relative_string(dt_utc):
+    now = datetime.now(timezone.utc)
+    diff = dt_utc - now
+    secs = diff.total_seconds()
+    future = secs > 0
+    secs = abs(secs)
+    
+    days = int(secs // 86400)
+    hours = int((secs % 86400) // 3600)
+    mins = int((secs % 3600) // 60)
+    
+    parts = []
+    if days > 0: parts.append(f"{days}d")
+    if hours > 0: parts.append(f"{hours}h")
+    if mins > 0 or len(parts) == 0: parts.append(f"{mins}m")
+    
+    time_string = " ".join(parts)
+    if future:
+        return f"in {time_string}"
+    else:
+        return f"{time_string} ago"
 
 def translate_e_section(text):
     e_section = text
@@ -107,11 +144,6 @@ def translate_e_section(text):
         e_section = re.sub(rf'\b{abbr}\b', full, e_section)
         
     return e_section
-
-def parse_time(time_str):
-    if len(time_str) >= 10 and time_str[:10].isdigit():
-        return f"20{time_str[0:2]}-{time_str[2:4]}-{time_str[4:6]} {time_str[6:8]}:{time_str[8:10]} UTC"
-    return time_str
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -245,7 +277,7 @@ def main():
         print("No valid data received. Skipping processing to protect state.")
         return
 
-    current_time_str = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+    current_time_str = datetime.utcnow().strftime('%Y/%m/%d %H:%M:%S')
     current_raw_dict = {}
     current_decoded_dict = {}
     new_count = 0
@@ -278,23 +310,32 @@ def main():
             condition_text = "Unknown Condition"
             notam_type = "New NOTAM"
             traffic_list = "Unknown"
+            map_links = []
             
-            valid_from = "Unknown"
-            valid_to = "Unknown"
+            valid_from_str = "Unknown"
+            valid_to_str = "Unknown"
             
             b_match = re.search(r'B\)\s*(\d{10})', raw_text)
             c_match = re.search(r'C\)\s*(\d{10}|PERM)(.*?)(\n|D\)|E\)|F\)|G\))', raw_text)
             
             if b_match:
-                valid_from = parse_time(b_match.group(1))
+                dt_utc, dt_teh = parse_and_convert_time(b_match.group(1))
+                if dt_utc:
+                    rel = get_relative_string(dt_utc)
+                    status = "Starts" if (dt_utc > datetime.now(timezone.utc)) else "Started"
+                    valid_from_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel})"
+
             if c_match:
                 val_c = c_match.group(1)
                 if val_c == "PERM":
-                    valid_to = "Permanent"
+                    valid_to_str = "Permanent"
                 else:
-                    valid_to = parse_time(val_c)
-                    if "EST" in c_match.group(2):
-                        valid_to += " (Estimated)"
+                    dt_utc, dt_teh = parse_and_convert_time(val_c)
+                    if dt_utc:
+                        rel = get_relative_string(dt_utc)
+                        status = "Expires" if (dt_utc > datetime.now(timezone.utc)) else "Expired"
+                        est_tag = " (Estimated)" if "EST" in c_match.group(2) else ""
+                        valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel}){est_tag}"
 
             if decoded_obj and "qualification" in decoded_obj:
                 header = decoded_obj.get("header", {})
@@ -311,7 +352,57 @@ def main():
                     if isinstance(code_block, dict):
                         subject_text = code_block.get("subject", subject_text)
                         condition_text = code_block.get("modifier", condition_text)
-            
+                        
+                    # Extract the simple center coordinate and radius if they exist
+                    coords = qual_block.get("coordinates")
+                    if coords:
+                        if isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
+                            lat = coords[0][0]
+                            lng = coords[0][1]
+                            rad = coords[1].get("radius", 0)
+                            # Google Maps link with z=5 to show the entire country initially
+                            map_links.append(f"📍 [View Center Pin on Google Maps (Radius: {rad} NM)](https://www.google.com/maps?q={lat},{lng}&z=5)")
+                        elif isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
+                            lat = coords[0]
+                            lng = coords[1]
+                            map_links.append(f"📍 [View Location on Google Maps](https://www.google.com/maps?q={lat},{lng}&z=5)")
+
+            # Extract the complex polygon boundaries from the E section
+            if decoded_obj and "content" in decoded_obj:
+                content_block = decoded_obj.get("content", {})
+                if isinstance(content_block, dict):
+                    area = content_block.get("area")
+                    if isinstance(area, list) and len(area) > 2:
+                        coords_lng_lat = []
+                        for pt in area:
+                            if isinstance(pt, list) and len(pt) == 2:
+                                coords_lng_lat.append([pt[1], pt[0]])
+                                
+                        if len(coords_lng_lat) > 2:
+                            if coords_lng_lat[0] != coords_lng_lat[-1]:
+                                coords_lng_lat.append(coords_lng_lat[0])
+                                
+                            geojson = {
+                                "type": "FeatureCollection",
+                                "features": [{
+                                    "type": "Feature",
+                                    "geometry": {
+                                        "type": "Polygon",
+                                        "coordinates": [coords_lng_lat]
+                                    },
+                                    "properties": {
+                                        "stroke": "#ff0000",
+                                        "stroke-width": 2,
+                                        "fill": "#ff0000",
+                                        "fill-opacity": 0.5
+                                    }
+                                }]
+                            }
+                            
+                            encoded_geo = urllib.parse.quote(json.dumps(geojson, separators=(',', ':')))
+                            geojson_url = f"http://geojson.io/#data=data:application/json,{encoded_geo}"
+                            map_links.append(f"🗺️ [View Highlighted Polygon Region on Interactive Map]({geojson_url})")
+
             translated_e = translate_e_section(raw_text)
             
             if decoded_obj and "error" in decoded_obj:
@@ -321,17 +412,24 @@ def main():
                 error_list = ", ".join(decoded_obj["errors"])
                 msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Decoder Alert:** {error_list}\n\n**Raw Text:**\n`{raw_text}`"
             else:
-                msg = (
-                    f"🚀 **TEHRAN FIR ALERT (OIIX)**\n"
-                    f"`{notam_id}` • {notam_type}\n\n"
-                    f"📅 **From:** {valid_from}\n"
-                    f"📅 **To:** {valid_to}\n\n"
-                    f"🏷️ **Subject:** {subject_text}\n"
-                    f"⚠️ **Condition:** {condition_text}\n"
-                    f"✈️ **Traffic:** {traffic_list}\n\n"
-                    f"📝 **Translated Message:**\n{translated_e}\n\n"
-                    f"**Raw Text:**\n`{raw_text}`"
-                )
+                msg_parts = [
+                    f"🚀 **TEHRAN FIR ALERT (OIIX)**",
+                    f"`{notam_id}` • {notam_type}\n",
+                    f"📅 **From:** {valid_from_str}",
+                    f"📅 **To:** {valid_to_str}\n",
+                    f"🏷️ **Subject:** {subject_text}",
+                    f"⚠️ **Condition:** {condition_text}",
+                    f"✈️ **Traffic:** {traffic_list}\n"
+                ]
+                
+                if map_links:
+                    msg_parts.extend(map_links)
+                    msg_parts.append("")
+                    
+                msg_parts.append(f"📝 **Translated Message:**\n{translated_e}\n")
+                msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+                
+                msg = "\n".join(msg_parts)
             
             send_telegram(msg)
             seen_ids[full_id] = current_time_str
