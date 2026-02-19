@@ -5,9 +5,12 @@ import sys
 from datetime import datetime
 
 # --- Configuration ---
+# SOURCE: FAA AIM (Official US Data)
+# LOCATION: OIIX ONLY (Tehran Flight Information Region)
+# This captures "Big Picture" risks: Missiles, Guns, Airway Closures.
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
-LOG_FILE = "notam_log.txt"  # <--- New file for history
+LOG_FILE = "notam_log.txt"
 
 # Secrets
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
@@ -32,16 +35,14 @@ def log_notam_to_file(notam_id, text):
     timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
     entry = f"\n{'='*40}\nDATE: {timestamp}\nID: {notam_id}\n\n{text}\n{'='*40}\n"
     
-    # Append to file (create if doesn't exist)
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(entry)
 
 def get_notams():
     # FAA AIM API Request
-    url = "https://notams.aim.faa.gov/notamSearch/search"
     payload = {
         "searchType": 0,
-        "designatorsForLocation": "OIIE,OIII",
+        "designatorsForLocation": "OIIX",  # <--- ONLY OIIX
         "offset": 0,
         "notamsOnly": False,
         "radius": 10
@@ -52,7 +53,7 @@ def get_notams():
     }
 
     try:
-        response = requests.post(url, data=payload, headers=headers, timeout=30)
+        response = requests.post(URL, data=payload, headers=headers, timeout=30)
         response.raise_for_status()
         return response.json()
     except Exception as e:
@@ -60,7 +61,7 @@ def get_notams():
         return None
 
 def main():
-    print("Fetching data from FAA AIM...")
+    print("Fetching data from FAA AIM (OIIX Only)...")
     
     # 1. Load state
     if os.path.exists(STATE_FILE):
@@ -100,12 +101,11 @@ def main():
         full_id = f"{icao_id} {notam_id}"
 
         if full_id not in seen_ids:
-            msg = f"🚨 **NOTAM: {full_id}**\n\n`{raw_text}`"
+            # Alert Icon for OIIX
+            msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n{raw_text}"
             
-            # 1. Send to Telegram
+            # Send & Log
             send_telegram(msg)
-            
-            # 2. Save to Log File
             log_notam_to_file(full_id, raw_text)
             
             seen_ids.append(full_id)
@@ -116,7 +116,7 @@ def main():
     if new_ids:
         updated_list = seen_ids + new_ids
         with open(STATE_FILE, "w") as f:
-            json.dump(updated_list[-300:], f)
+            json.dump(updated_list[-500:], f)
             
     print(f"Success. Sent and logged {sent_count} notifications.")
 
