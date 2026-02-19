@@ -39,18 +39,35 @@ def send_telegram(message):
     except Exception as e:
         print(f"Telegram Error: {e}")
 
+def create_wrapper():
+    """Automatically generates the Javascript bridge file so you do not have to!"""
+    wrapper_code = """const fs = require('fs');
+try {
+    const notamDecoder = require('./notam-decoder.js');
+    const inputPath = process.argv[2];
+    const rawNotam = fs.readFileSync(inputPath, 'utf8');
+    const decoded = notamDecoder.decode(rawNotam);
+    console.log(JSON.stringify(decoded));
+} catch (e) {
+    console.log(JSON.stringify({error: e.toString()}));
+}"""
+    if not os.path.exists("wrapper.js"):
+        with open("wrapper.js", "w", encoding="utf-8") as f:
+            f.write(wrapper_code)
+
 def decode_notam(raw_text):
-    # This creates a temporary file to safely pass the text to JavaScript
+    create_wrapper()
     with tempfile.NamedTemporaryFile(mode='w', delete=False, encoding='utf-8') as f:
         f.write(raw_text)
         temp_path = f.name
         
     try:
         result = subprocess.run(['node', 'wrapper.js', temp_path], capture_output=True, text=True, check=True)
+        if not result.stdout.strip():
+            return {"error": "Empty output from Node", "details": result.stderr}
         return json.loads(result.stdout)
     except Exception as e:
-        print(f"Decoding failed: {e}")
-        return {}
+        return {"error": str(e)}
     finally:
         os.remove(temp_path)
 
@@ -140,11 +157,9 @@ def main():
             
         full_id = f"{icao_id} {notam_id}"
         
-        # Save the raw data
         notam["last_seen_utc"] = current_time_str
         current_raw_dict[full_id] = notam
 
-        # Decode or copy the existing decoded data
         if full_id in active_notams_decoded:
             decoded_obj = active_notams_decoded[full_id]
             decoded_obj["last_seen_utc"] = current_time_str
@@ -155,12 +170,10 @@ def main():
                 decoded_obj["last_seen_utc"] = current_time_str
                 current_decoded_dict[full_id] = decoded_obj
 
-        # Alert if we have never seen this ID before
         if full_id not in seen_ids:
             subject_text = "Unknown Subject"
             condition_text = "Unknown Condition"
             
-            # Extract plain English descriptions from the JavaScript output
             if decoded_obj and "qualification" in decoded_obj:
                 qual = decoded_obj["qualification"]
                 if isinstance(qual, dict):
@@ -168,13 +181,17 @@ def main():
                         subject_text = qual["subject"].get("subject", subject_text)
                     if "condition" in qual and isinstance(qual["condition"], dict):
                         condition_text = qual["condition"].get("condition", condition_text)
-
-            msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Subject:** {subject_text}\n**Condition:** {condition_text}\n\n**Raw Text:**\n`{raw_text}`"
+            
+            if decoded_obj and "error" in decoded_obj:
+                error_msg = decoded_obj.get("error", "Failed to parse")
+                msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Decoder Error:** {error_msg}\n\n**Raw Text:**\n`{raw_text}`"
+            else:
+                msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Subject:** {subject_text}\n**Condition:** {condition_text}\n\n**Raw Text:**\n`{raw_text}`"
+            
             send_telegram(msg)
             seen_ids[full_id] = current_time_str
             new_count += 1
 
-    # Detect expired items and place them at the top of the archive files
     removed_count = 0
     newly_expired_raw = {}
     newly_expired_decoded = {}
