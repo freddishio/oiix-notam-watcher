@@ -2,12 +2,10 @@ import requests
 import json
 import os
 import sys
+import time
 from datetime import datetime
 
 # --- Configuration ---
-# SOURCE: FAA AIM (Official US Data)
-# LOCATION: OIIX ONLY (Tehran Flight Information Region)
-# This captures "Big Picture" risks: Missiles, Guns, Airway Closures.
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 LOG_FILE = "notam_log.txt"
@@ -38,30 +36,61 @@ def log_notam_to_file(notam_id, text):
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write(entry)
 
-def get_notams():
-    # FAA AIM API Request
-    payload = {
-        "searchType": 0,
-        "designatorsForLocation": "OIIX",  # <--- ONLY OIIX
-        "offset": 0,
-        "notamsOnly": False,
-        "radius": 10
-    }
+def get_all_notams():
+    """Fetches ALL pages of NOTAMs, not just the first 30."""
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
-
-    try:
-        response = requests.post(URL, data=payload, headers=headers, timeout=30)
-        response.raise_for_status()
-        return response.json()
-    except Exception as e:
-        print(f"FAA API Error: {e}")
-        return None
+    
+    all_notams = []
+    offset = 0
+    batch_size = 30  # FAA default page size
+    
+    print("Starting fetch loop...")
+    
+    while True:
+        payload = {
+            "searchType": 0,
+            "designatorsForLocation": "OIIX",
+            "offset": offset,
+            "notamsOnly": False,
+            "radius": 10
+        }
+        
+        try:
+            response = requests.post(URL, data=payload, headers=headers, timeout=30)
+            response.raise_for_status()
+            data = response.json()
+            
+            if not data or "notamList" not in data:
+                break
+                
+            current_batch = data["notamList"]
+            if not current_batch:
+                break
+                
+            all_notams.extend(current_batch)
+            print(f"  Fetched {len(current_batch)} NOTAMs (Offset: {offset})")
+            
+            # Prepare for next page
+            offset += len(current_batch)
+            
+            # If we got fewer than 30, we reached the end
+            if len(current_batch) < batch_size:
+                break
+                
+            # Short sleep to be polite to the server
+            time.sleep(1)
+            
+        except Exception as e:
+            print(f"Error fetching page at offset {offset}: {e}")
+            break
+            
+    return all_notams
 
 def main():
-    print("Fetching data from FAA AIM (OIIX Only)...")
+    print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
     # 1. Load state
     if os.path.exists(STATE_FILE):
@@ -74,17 +103,15 @@ def main():
         seen_ids = []
 
     # 2. Fetch
-    data = get_notams()
+    notam_list = get_all_notams()
+    print(f"Total NOTAMs retrieved: {len(notam_list)}")
     
-    if not data or "notamList" not in data:
+    if not notam_list:
         print("No valid data received.")
         if not os.path.exists(STATE_FILE):
             with open(STATE_FILE, "w") as f:
                 json.dump([], f)
         return
-
-    notam_list = data["notamList"]
-    print(f"Received {len(notam_list)} NOTAMs from FAA.")
 
     new_ids = []
     sent_count = 0
@@ -116,7 +143,8 @@ def main():
     if new_ids:
         updated_list = seen_ids + new_ids
         with open(STATE_FILE, "w") as f:
-            json.dump(updated_list[-500:], f)
+            # Increase history size to ensure we don't re-alert on large lists
+            json.dump(updated_list[-1000:], f)
             
     print(f"Success. Sent and logged {sent_count} notifications.")
 
