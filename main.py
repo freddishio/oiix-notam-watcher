@@ -427,7 +427,7 @@ def main():
                     msg_parts.append("")
                     
                 msg_parts.append(f"📝 **Translated Message:**\n{translated_e}\n")
-                msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+                msg_parts.append(f"**NOTAM Raw Text:**\n`{raw_text}`")
                 
                 msg = "\n".join(msg_parts)
             
