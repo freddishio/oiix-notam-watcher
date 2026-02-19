@@ -127,14 +127,19 @@ def main():
             seen_ids[full_id] = current_time_str
             new_count += 1
 
-    # Detect expired NOTAMs by comparing old active list to new active list
+    # Detect expired NOTAMs and place them at the top of the file
     removed_count = 0
+    newly_expired = {}
+    
     for old_id, old_data in active_notams.items():
         if old_id not in current_dict:
             # It vanished from the FAA feed so we archive it
             old_data["archived_utc"] = current_time_str
-            expired_notams[old_id] = old_data
+            newly_expired[old_id] = old_data
             removed_count += 1
+            
+    # Merge the new ones first followed by the older ones
+    expired_notams = {**newly_expired, **expired_notams}
 
     # Clean the state dictionary to only hold active IDs
     new_state = {}
@@ -153,8 +158,10 @@ def main():
         "new_added": new_count,
         "removed": removed_count
     }
-    run_history.append(run_record)
-    save_json(HISTORY_FILE, run_history[-250:])
+    
+    # Insert new record at the very beginning of the list
+    run_history.insert(0, run_record)
+    save_json(HISTORY_FILE, run_history[:250])
     
     print(f"Stats: Total {len(current_dict)}, New {new_count}, Removed {removed_count}")
 
