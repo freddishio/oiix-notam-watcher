@@ -25,69 +25,48 @@ if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
+# Massive expansion of the aviation dictionary
 ICAO_DICT = {
-    "CLSD": "Closed",
-    "BTN": "Between",
-    "ALTN": "Alternate",
-    "MNM": "Minimum",
-    "FLT": "Flight",
-    "LVL": "Level",
-    "FL": "Flight Level",
-    "DCT": "Direct",
-    "U/S": "Unserviceable",
-    "WIP": "Work In Progress",
-    "AWY": "Airway",
-    "EST": "Estimated",
-    "AVBL": "Available",
-    "REF": "Reference",
-    "WI": "Within",
-    "FLW": "Following",
-    "GND": "Ground",
-    "AMSL": "Above Mean Sea Level",
-    "RWY": "Runway",
-    "TWY": "Taxiway",
-    "APCH": "Approach",
-    "FREQ": "Frequency",
-    "APP": "Approach",
-    "ARR": "Arrival",
-    "DEP": "Departure",
-    "AUTH": "Authorized",
-    "BFR": "Before",
-    "BLW": "Below",
-    "CAT": "Category",
-    "DEG": "Degrees",
-    "ELEV": "Elevation",
-    "EXC": "Except",
-    "FCST": "Forecast",
-    "FM": "From",
-    "INFO": "Information",
-    "INOP": "Inoperative",
-    "INT": "Intersection",
-    "MAINT": "Maintenance",
-    "OBSC": "Obscured",
-    "OBST": "Obstacle",
-    "OPR": "Operating",
-    "OVR": "Over",
-    "REQ": "Required",
-    "SFC": "Surface",
-    "TFC": "Traffic",
-    "VFR": "Visual Flight Rules",
-    "IFR": "Instrument Flight Rules",
-    "NAVD": "Navigation Device",
-    "SVC": "Service",
-    "UNL": "Unlimited",
-    "AD": "Aerodrome",
-    "COORD": "Coordinates",
-    "OP": "Operation",
-    "OPS": "Operations",
-    "TEMPO": "Temporary",
-    "LDG": "Landing",
-    "TKOF": "Takeoff",
-    "SR": "Sunrise",
-    "SS": "Sunset",
-    "HR": "Hours",
-    "DLY": "Daily",
-    "NM": "Nautical Miles"
+    "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
+    "APCH": "Approach", "APP": "Approach Control", "ARR": "Arrival", "ATC": "Air Traffic Control",
+    "AUTH": "Authorized", "AVBL": "Available", "AWY": "Airway", "BCN": "Beacon",
+    "BFR": "Before", "BLW": "Below", "BTN": "Between", "CAT": "Category",
+    "CLSD": "Closed", "COORD": "Coordinates", "CTC": "Contact", "CTR": "Control Zone",
+    "DCT": "Direct", "DEG": "Degrees", "DEP": "Departure", "DLY": "Daily",
+    "DTHR": "Displaced Threshold", "ELEV": "Elevation", "EST": "Estimated",
+    "ETA": "Estimated Time of Arrival", "ETD": "Estimated Time of Departure",
+    "EXC": "Except", "FCST": "Forecast", "FIR": "Flight Information Region",
+    "FL": "Flight Level", "FLT": "Flight", "FLW": "Following", "FM": "From",
+    "FREQ": "Frequency", "GND": "Ground", "HEL": "Helicopter", "HR": "Hours",
+    "IAP": "Instrument Approach Procedure", "ICAO": "International Civil Aviation Organization",
+    "IFR": "Instrument Flight Rules", "INFO": "Information", "INOP": "Inoperative",
+    "INT": "Intersection", "LDG": "Landing", "LLZ": "Localizer", "LOC": "Localizer",
+    "LVL": "Level", "MAINT": "Maintenance", "MAX": "Maximum", "MIN": "Minimum",
+    "MNM": "Minimum", "NAVD": "Navigation Device", "NM": "Nautical Miles",
+    "NOTAM": "Notice to Airmen", "OBSC": "Obscured", "OBST": "Obstacle",
+    "OP": "Operation", "OPR": "Operating", "OPS": "Operations", "OVR": "Over",
+    "PAPI": "Precision Approach Path Indicator", "RDO": "Radio", "REF": "Reference",
+    "REQ": "Required", "RTF": "Radiotelephone", "RWY": "Runway", "SFC": "Surface",
+    "SID": "Standard Instrument Departure", "SR": "Sunrise", "SS": "Sunset",
+    "STAR": "Standard Terminal Arrival", "SVC": "Service", "TEMPO": "Temporary",
+    "TFC": "Traffic", "TKOF": "Takeoff", "TWR": "Tower", "TWY": "Taxiway",
+    "U/S": "Unserviceable", "UNL": "Unlimited", "VFR": "Visual Flight Rules",
+    "VIP": "Very Important Person", "VOR": "VHF Omnidirectional Radio Range",
+    "WI": "Within", "WIP": "Work In Progress", "WX": "Weather"
+}
+
+# Fallbacks for broken formatting
+FALLBACK_SUBJECTS = {
+    "AF": "Flight information region", "AR": "ATS route", "RD": "Danger area",
+    "WM": "Missile, gun or rocket firing", "NV": "VOR", "OA": "Aeronautical information service",
+    "ML": "Military operating area", "RT": "Temporary restricted area",
+    "WE": "Exercises", "RO": "Overflying", "RM": "Terminal control area"
+}
+
+FALLBACK_CONDITIONS = {
+    "XX": "Plain language", "CA": "Activated", "LC": "Closed", "CH": "Changed",
+    "AS": "Unserviceable", "AH": "Hours of service are now", "CD": "Deactivated",
+    "CN": "Cancelled", "CS": "Installed", "CT": "On test"
 }
 
 tehran_tz = timezone(timedelta(hours=3, minutes=30))
@@ -353,21 +332,18 @@ def main():
                         subject_text = code_block.get("subject", subject_text)
                         condition_text = code_block.get("modifier", condition_text)
                         
-                    # Extract the simple center coordinate and radius if they exist
                     coords = qual_block.get("coordinates")
                     if coords:
                         if isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
                             lat = coords[0][0]
                             lng = coords[0][1]
                             rad = coords[1].get("radius", 0)
-                            # Google Maps link with z=5 to show the entire country initially
-                            map_links.append(f"📍 [View Center Pin on Google Maps (Radius: {rad} NM)](https://www.google.com/maps?q={lat},{lng}&z=5)")
+                            map_links.append(f"📍 [View Center Pin on Google Maps (Radius: {rad} NM)](https://www.google.com/maps?q={lat},{lng}&ll={lat},{lng}&z=5)")
                         elif isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
                             lat = coords[0]
                             lng = coords[1]
-                            map_links.append(f"📍 [View Location on Google Maps](https://www.google.com/maps?q={lat},{lng}&z=5)")
+                            map_links.append(f"📍 [View Location on Google Maps](https://www.google.com/maps?q={lat},{lng}&ll={lat},{lng}&z=5)")
 
-            # Extract the complex polygon boundaries from the E section
             if decoded_obj and "content" in decoded_obj:
                 content_block = decoded_obj.get("content", {})
                 if isinstance(content_block, dict):
@@ -403,6 +379,21 @@ def main():
                             geojson_url = f"http://geojson.io/#data=data:application/json,{encoded_geo}"
                             map_links.append(f"🗺️ [View Highlighted Polygon Region on Interactive Map]({geojson_url})")
 
+            # Python Safety Net for unknown codes
+            if "Unknown" in subject_text or "Unknown" in condition_text:
+                q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
+                if q_match:
+                    sub_code = q_match.group(1)
+                    mod_code = q_match.group(2)
+                    if "Unknown" in subject_text:
+                        subject_text = FALLBACK_SUBJECTS.get(sub_code, f"Code {sub_code}")
+                    if "Unknown" in condition_text:
+                        condition_text = FALLBACK_CONDITIONS.get(mod_code, f"Code {mod_code}")
+
+            # Parenthesis Cleaner
+            subject_text = re.sub(r'\s*\(.*?\)', '', subject_text).strip()
+            condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
+
             translated_e = translate_e_section(raw_text)
             
             if decoded_obj and "error" in decoded_obj:
@@ -427,7 +418,7 @@ def main():
                     msg_parts.append("")
                     
                 msg_parts.append(f"📝 **Translated Message:**\n{translated_e}\n")
-                msg_parts.append(f"**NOTAM Raw Text:**\n`{raw_text}`")
+                msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
                 
                 msg = "\n".join(msg_parts)
             
