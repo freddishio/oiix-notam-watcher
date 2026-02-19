@@ -236,6 +236,89 @@ def save_json(filepath, data):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
+def generate_map_html(decoded_dict):
+    features_js = "var markers = {};\n"
+    for full_id, data in decoded_dict.items():
+        if "error" in data: continue
+            
+        qual = data.get("qualification", {})
+        coords = qual.get("coordinates")
+        content = data.get("content", {})
+        area = content.get("area")
+        
+        notam_id_only = full_id.split()[-1]
+        
+        subject = qual.get('code', {}).get('subject', 'Unknown Subject')
+        subject = subject.replace("'", "\\'")
+        popup_text = f"<b>{notam_id_only}</b><br>{subject}"
+        
+        if area and isinstance(area, list) and len(area) > 2:
+            js_coords = []
+            for pt in area:
+                if isinstance(pt, list) and len(pt) == 2:
+                    js_coords.append([pt[0], pt[1]])
+            if js_coords:
+                features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\n"
+                
+        elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
+            lat, lng = coords[0][0], coords[0][1]
+            rad_nm = coords[1].get("radius", 0)
+            if rad_nm:
+                rad_meters = rad_nm * 1852
+                features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\n"
+                
+        elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
+            lat, lng = coords[0], coords[1]
+            features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\n"
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>OIIX NOTAM Live Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {{ padding: 0; margin: 0; }}
+        #map {{ height: 100vh; width: 100vw; }}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([32.4279, 53.6880], 5);
+        L.tileLayer('http://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{
+            maxZoom: 20,
+            subdomains:['mt0','mt1','mt2','mt3'],
+            attribution: 'Map data © Google'
+        }}).addTo(map);
+        
+        {features_js}
+        
+        setTimeout(function() {{
+            var hash = window.location.hash.substring(1);
+            if (hash && markers[hash]) {{
+                var layer = markers[hash];
+                if (layer.getBounds) {{
+                    map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});
+                }} else {{
+                    map.setView(layer.getLatLng(), 8);
+                }}
+                layer.openPopup();
+            }}
+        }}, 500);
+    </script>
+</body>
+</html>"""
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+        
+    try:
+        subprocess.run(["git", "add", "index.html"])
+    except:
+        pass
+
 def main():
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
@@ -331,41 +414,20 @@ def main():
                         condition_text = code_block.get("modifier", condition_text)
                         
                     coords = qual_block.get("coordinates")
-                    if coords:
-                        if isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
-                            lat = coords[0][0]
-                            lng = coords[0][1]
-                            rad = coords[1].get("radius", 0)
-                            map_links.append(f"📍 [View Center Pin on Google Maps (Radius: {rad} NM)](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},5z)")
-                            map_links.append(f"✈️ [View on SkyVector Aviation Map](https://skyvector.com/?ll={lat},{lng}&chart=301&zoom=5)")
-                        elif isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
-                            lat = coords[0]
-                            lng = coords[1]
-                            map_links.append(f"📍 [View Location on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},5z)")
-                            map_links.append(f"✈️ [View on SkyVector Aviation Map](https://skyvector.com/?ll={lat},{lng}&chart=301&zoom=5)")
-
-            if decoded_obj and "content" in decoded_obj:
-                content_block = decoded_obj.get("content", {})
-                if isinstance(content_block, dict):
+                    content_block = decoded_obj.get("content", {})
                     area = content_block.get("area")
-                    if isinstance(area, list) and len(area) > 2:
-                        coords_lat_lng = []
-                        for pt in area:
-                            if isinstance(pt, list) and len(pt) == 2:
-                                coords_lat_lng.append([pt[0], pt[1]])
-                                
-                        if len(coords_lat_lng) > 2:
-                            if coords_lat_lng[0] != coords_lat_lng[-1]:
-                                coords_lat_lng.append(coords_lat_lng[0])
-                                
-                            center_lat = sum(pt[0] for pt in coords_lat_lng) / len(coords_lat_lng)
-                            center_lng = sum(pt[1] for pt in coords_lat_lng) / len(coords_lat_lng)
-                            
-                            plan_str = ":".join([f"{pt[0]:.4f},{pt[1]:.4f}" for pt in coords_lat_lng])
-                            skyvector_url = f"https://skyvector.com/?ll={center_lat:.4f},{center_lng:.4f}&chart=301&zoom=5&plan={plan_str}"
-                            
-                            map_links = [f"🗺️ [View Highlighted Polygon Region on SkyVector Map]({skyvector_url})"]
+                    
+                    if area and isinstance(area, list) and len(area) > 2:
+                        map_links.append(f"🗺️ [View Highlighted Region on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+                    elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
+                        map_links.append(f"🗺️ [View Circular Area on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+                    elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
+                        lat = coords[0]
+                        lng = coords[1]
+                        map_links.append(f"📍 [View Pin on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},6z)")
+                        map_links.append(f"🗺️ [View Location on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
 
+            # Fallback Safety Net
             if "Unknown" in subject_text or "Unknown" in condition_text:
                 q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
                 if q_match:
@@ -439,6 +501,8 @@ def main():
     save_json(ACTIVE_DECODED_FILE, current_decoded_dict)
     save_json(EXPIRED_RAW_FILE, expired_notams_raw)
     save_json(EXPIRED_DECODED_FILE, expired_notams_decoded)
+
+    generate_map_html(current_decoded_dict)
 
     run_record = {
         "time_utc": current_time_str,
