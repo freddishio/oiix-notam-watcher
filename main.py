@@ -2,12 +2,12 @@ import requests
 import json
 import os
 import sys
+from datetime import datetime
 
 # --- Configuration ---
-# Source: FAA AIM (Aeronautical Information Management) - The official source.
-# We monitor OIIE and OIII (Tehran Airports) which capture FIR notifications.
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
+LOG_FILE = "notam_log.txt"  # <--- New file for history
 
 # Secrets
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
@@ -27,24 +27,32 @@ def send_telegram(message):
     }
     requests.post(url, json=payload)
 
+def log_notam_to_file(notam_id, text):
+    """Appends the NOTAM text to a log file with a timestamp."""
+    timestamp = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+    entry = f"\n{'='*40}\nDATE: {timestamp}\nID: {notam_id}\n\n{text}\n{'='*40}\n"
+    
+    # Append to file (create if doesn't exist)
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(entry)
+
 def get_notams():
-    # The FAA AIM API expects a Form-Encoded POST request
+    # FAA AIM API Request
+    url = "https://notams.aim.faa.gov/notamSearch/search"
     payload = {
         "searchType": 0,
-        "designatorsForLocation": "OIIE,OIII",  # Monitoring both major airports
+        "designatorsForLocation": "OIIE,OIII",
         "offset": 0,
         "notamsOnly": False,
         "radius": 10
     }
-    
-    # We must look like a real browser
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
 
     try:
-        response = requests.post(URL, data=payload, headers=headers, timeout=30)
+        response = requests.post(url, data=payload, headers=headers, timeout=30)
         response.raise_for_status()
         return response.json()
     except Exception as e:
@@ -69,7 +77,6 @@ def main():
     
     if not data or "notamList" not in data:
         print("No valid data received.")
-        # Create empty file if needed
         if not os.path.exists(STATE_FILE):
             with open(STATE_FILE, "w") as f:
                 json.dump([], f)
@@ -83,9 +90,6 @@ def main():
 
     # 3. Process
     for notam in notam_list:
-        # FAA AIM JSON Structure:
-        # { "notamNumber": "A1234/26", "icaoId": "OIIE", "icaoMessage": "..." }
-        
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
         raw_text = notam.get("icaoMessage") or "No text"
@@ -93,29 +97,28 @@ def main():
         if not notam_id:
             continue
             
-        # Combine ICAO + ID to ensure uniqueness (e.g. OIIE A0001/26)
         full_id = f"{icao_id} {notam_id}"
 
         if full_id not in seen_ids:
-            # Clean up the message
-            msg = f"🚨 **NOTAM: {icao_id} {notam_id}**\n\n`{raw_text}`"
+            msg = f"🚨 **NOTAM: {full_id}**\n\n`{raw_text}`"
             
-            # Send (Short pause to avoid hitting Telegram limits if many)
+            # 1. Send to Telegram
             send_telegram(msg)
+            
+            # 2. Save to Log File
+            log_notam_to_file(full_id, raw_text)
             
             seen_ids.append(full_id)
             new_ids.append(full_id)
             sent_count += 1
 
     # 4. Save state
-    # Update the seen list with new ones
     if new_ids:
-        # Keep only the last 300 to save space
         updated_list = seen_ids + new_ids
         with open(STATE_FILE, "w") as f:
             json.dump(updated_list[-300:], f)
             
-    print(f"Success. Sent {sent_count} notifications.")
+    print(f"Success. Sent and logged {sent_count} notifications.")
 
 if __name__ == "__main__":
     main()
