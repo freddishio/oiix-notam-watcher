@@ -5,6 +5,7 @@ import sys
 import time
 import subprocess
 import tempfile
+import re
 from datetime import datetime
 
 # Configuration
@@ -25,6 +26,92 @@ CHAT_ID = os.environ.get("CHAT_ID")
 if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
+
+# Custom Dictionary for translating the E Section
+ICAO_DICT = {
+    "CLSD": "Closed",
+    "BTN": "Between",
+    "ALTN": "Alternate",
+    "MNM": "Minimum",
+    "FLT": "Flight",
+    "LVL": "Level",
+    "FL": "Flight Level",
+    "DCT": "Direct",
+    "U/S": "Unserviceable",
+    "WIP": "Work In Progress",
+    "AWY": "Airway",
+    "EST": "Estimated",
+    "AVBL": "Available",
+    "REF": "Reference",
+    "WI": "Within",
+    "FLW": "Following",
+    "GND": "Ground",
+    "AMSL": "Above Mean Sea Level",
+    "RWY": "Runway",
+    "TWY": "Taxiway",
+    "APCH": "Approach",
+    "FREQ": "Frequency",
+    "APP": "Approach",
+    "ARR": "Arrival",
+    "DEP": "Departure",
+    "AUTH": "Authorized",
+    "BFR": "Before",
+    "BLW": "Below",
+    "CAT": "Category",
+    "DEG": "Degrees",
+    "ELEV": "Elevation",
+    "EXC": "Except",
+    "FCST": "Forecast",
+    "FM": "From",
+    "INFO": "Information",
+    "INOP": "Inoperative",
+    "INT": "Intersection",
+    "MAINT": "Maintenance",
+    "OBSC": "Obscured",
+    "OBST": "Obstacle",
+    "OPR": "Operating",
+    "OVR": "Over",
+    "REQ": "Required",
+    "SFC": "Surface",
+    "TFC": "Traffic",
+    "VFR": "Visual Flight Rules",
+    "IFR": "Instrument Flight Rules",
+    "NAVD": "Navigation Device",
+    "SVC": "Service",
+    "UNL": "Unlimited",
+    "AD": "Aerodrome",
+    "COORD": "Coordinates",
+    "OP": "Operation",
+    "OPS": "Operations",
+    "TEMPO": "Temporary",
+    "LDG": "Landing",
+    "TKOF": "Takeoff",
+    "SR": "Sunrise",
+    "SS": "Sunset",
+    "HR": "Hours",
+    "DLY": "Daily"
+}
+
+def translate_e_section(text):
+    e_section = text
+    if "E)" in text:
+        parts = text.split("E)")
+        raw_e = parts[1]
+        if "F)" in raw_e:
+            raw_e = raw_e.split("F)")[0]
+        elif "G)" in raw_e:
+            raw_e = raw_e.split("G)")[0]
+        e_section = raw_e.strip()
+    
+    for abbr, full in ICAO_DICT.items():
+        e_section = re.sub(rf'\b{abbr}\b', full, e_section)
+        
+    return e_section
+
+def parse_time(time_str):
+    if len(time_str) >= 10 and time_str[:10].isdigit():
+        return f"20{time_str[0:2]}-{time_str[2:4]}-{time_str[4:6]} {time_str[6:8]}:{time_str[8:10]} UTC"
+    return time_str
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -189,15 +276,43 @@ def main():
         if full_id not in seen_ids:
             subject_text = "Unknown Subject"
             condition_text = "Unknown Condition"
+            notam_type = "New NOTAM"
+            traffic_list = "Unknown"
             
-            # This is the exact fix for the Javascript nested JSON structure
+            valid_from = "Unknown"
+            valid_to = "Unknown"
+            
+            b_match = re.search(r'B\)\s*(\d{10})', raw_text)
+            c_match = re.search(r'C\)\s*(\d{10}|PERM)(.*?)(\n|D\)|E\)|F\)|G\))', raw_text)
+            
+            if b_match:
+                valid_from = parse_time(b_match.group(1))
+            if c_match:
+                val_c = c_match.group(1)
+                if val_c == "PERM":
+                    valid_to = "Permanent"
+                else:
+                    valid_to = parse_time(val_c)
+                    if "EST" in c_match.group(2):
+                        valid_to += " (Estimated)"
+
             if decoded_obj and "qualification" in decoded_obj:
+                header = decoded_obj.get("header", {})
+                if isinstance(header, dict):
+                    notam_type = header.get("typeDesc", notam_type)
+                    
                 qual_block = decoded_obj.get("qualification", {})
                 if isinstance(qual_block, dict):
+                    t_data = qual_block.get("traffic", [])
+                    if isinstance(t_data, list) and len(t_data) > 0:
+                        traffic_list = ", ".join([t.get("description", "") for t in t_data if isinstance(t, dict)])
+                        
                     code_block = qual_block.get("code", {})
                     if isinstance(code_block, dict):
                         subject_text = code_block.get("subject", subject_text)
                         condition_text = code_block.get("modifier", condition_text)
+            
+            translated_e = translate_e_section(raw_text)
             
             if decoded_obj and "error" in decoded_obj:
                 error_msg = decoded_obj.get("error", "Failed to parse")
@@ -206,7 +321,17 @@ def main():
                 error_list = ", ".join(decoded_obj["errors"])
                 msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Decoder Alert:** {error_list}\n\n**Raw Text:**\n`{raw_text}`"
             else:
-                msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Subject:** {subject_text}\n**Condition:** {condition_text}\n\n**Raw Text:**\n`{raw_text}`"
+                msg = (
+                    f"🚀 **TEHRAN FIR ALERT (OIIX)**\n"
+                    f"`{notam_id}` • {notam_type}\n\n"
+                    f"📅 **From:** {valid_from}\n"
+                    f"📅 **To:** {valid_to}\n\n"
+                    f"🏷️ **Subject:** {subject_text}\n"
+                    f"⚠️ **Condition:** {condition_text}\n"
+                    f"✈️ **Traffic:** {traffic_list}\n\n"
+                    f"📝 **Translated Message:**\n{translated_e}\n\n"
+                    f"**Raw Text:**\n`{raw_text}`"
+                )
             
             send_telegram(msg)
             seen_ids[full_id] = current_time_str
