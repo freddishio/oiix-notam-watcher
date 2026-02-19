@@ -4,9 +4,9 @@ import os
 import sys
 
 # --- Configuration ---
-# We query the main Tehran airports (OIIE, OIII) using the US Gov API.
-# This works without a key and captures most FIR-level warnings.
-URL = "https://aviationweather.gov/api/data/notam?ids=OIIE,OIII&format=json"
+# Source: FAA AIM (Aeronautical Information Management) - The official source.
+# We monitor OIIE and OIII (Tehran Airports) which capture FIR notifications.
+URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 
 # Secrets
@@ -28,20 +28,31 @@ def send_telegram(message):
     requests.post(url, json=payload)
 
 def get_notams():
-    # AWC requires a User-Agent to look like a browser/app
-    headers = {
-        "User-Agent": "Student-Notam-Bot/1.0 (educational use)"
+    # The FAA AIM API expects a Form-Encoded POST request
+    payload = {
+        "searchType": 0,
+        "designatorsForLocation": "OIIE,OIII",  # Monitoring both major airports
+        "offset": 0,
+        "notamsOnly": False,
+        "radius": 10
     }
+    
+    # We must look like a real browser
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+    }
+
     try:
-        response = requests.get(URL, headers=headers, timeout=30)
+        response = requests.post(URL, data=payload, headers=headers, timeout=30)
         response.raise_for_status()
         return response.json()
     except Exception as e:
-        print(f"API Error: {e}")
-        return []
+        print(f"FAA API Error: {e}")
+        return None
 
 def main():
-    print("Fetching data from AviationWeather.gov...")
+    print("Fetching data from FAA AIM...")
     
     # 1. Load state
     if os.path.exists(STATE_FILE):
@@ -54,47 +65,56 @@ def main():
         seen_ids = []
 
     # 2. Fetch
-    current_notams = get_notams()
+    data = get_notams()
     
-    if not current_notams:
-        print("No data received (or empty list).")
-        # Create empty state file if needed
+    if not data or "notamList" not in data:
+        print("No valid data received.")
+        # Create empty file if needed
         if not os.path.exists(STATE_FILE):
-             with open(STATE_FILE, "w") as f:
+            with open(STATE_FILE, "w") as f:
                 json.dump([], f)
         return
+
+    notam_list = data["notamList"]
+    print(f"Received {len(notam_list)} NOTAMs from FAA.")
 
     new_ids = []
     sent_count = 0
 
     # 3. Process
-    for notam in current_notams:
-        # AWC API structure:
-        # [{"id": "A1234/26", "rawText": "..."}]
+    for notam in notam_list:
+        # FAA AIM JSON Structure:
+        # { "notamNumber": "A1234/26", "icaoId": "OIIE", "icaoMessage": "..." }
         
-        # Use the ID provided by the API (e.g., 'A0023/26')
-        notam_id = notam.get("id")
-        raw_text = notam.get("rawText") or str(notam)
+        notam_id = notam.get("notamNumber")
+        icao_id = notam.get("icaoId")
+        raw_text = notam.get("icaoMessage") or "No text"
 
         if not notam_id:
             continue
-
-        # Check if new
-        if notam_id not in seen_ids:
-            # Clean up text for Telegram
-            msg = f"🚨 **NOTAM: {notam_id}**\n\n`{raw_text}`"
             
+        # Combine ICAO + ID to ensure uniqueness (e.g. OIIE A0001/26)
+        full_id = f"{icao_id} {notam_id}"
+
+        if full_id not in seen_ids:
+            # Clean up the message
+            msg = f"🚨 **NOTAM: {icao_id} {notam_id}**\n\n`{raw_text}`"
+            
+            # Send (Short pause to avoid hitting Telegram limits if many)
             send_telegram(msg)
             
-            seen_ids.append(notam_id)
-            new_ids.append(notam_id)
+            seen_ids.append(full_id)
+            new_ids.append(full_id)
             sent_count += 1
 
     # 4. Save state
-    # Keep file size small
-    with open(STATE_FILE, "w") as f:
-        json.dump(seen_ids[-200:], f)
-
+    # Update the seen list with new ones
+    if new_ids:
+        # Keep only the last 300 to save space
+        updated_list = seen_ids + new_ids
+        with open(STATE_FILE, "w") as f:
+            json.dump(updated_list[-300:], f)
+            
     print(f"Success. Sent {sent_count} notifications.")
 
 if __name__ == "__main__":
