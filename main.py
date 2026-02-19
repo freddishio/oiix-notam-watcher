@@ -39,29 +39,7 @@ def send_telegram(message):
     except Exception as e:
         print(f"Telegram Error: {e}")
 
-def create_wrapper():
-    """Generates a Javascript bridge that writes directly to a file."""
-    wrapper_code = """const fs = require('fs');
-try {
-    const notamDecoder = require('./notam-decoder.js');
-    const inputPath = process.argv[2];
-    const outputPath = process.argv[3];
-    const rawNotam = fs.readFileSync(inputPath, 'utf8');
-    let decoded = notamDecoder.decode(rawNotam);
-    if (!decoded) { 
-        decoded = {error: "Decoder returned empty result"}; 
-    }
-    fs.writeFileSync(outputPath, JSON.stringify(decoded), 'utf8');
-} catch (e) {
-    const outputPath = process.argv[3];
-    fs.writeFileSync(outputPath, JSON.stringify({error: e.toString()}), 'utf8');
-}"""
-    with open("wrapper.js", "w", encoding="utf-8") as f:
-        f.write(wrapper_code)
-
 def decode_notam(raw_text):
-    create_wrapper()
-    
     fd_in, temp_path_in = tempfile.mkstemp(text=True)
     fd_out, temp_path_out = tempfile.mkstemp(text=True)
     
@@ -72,8 +50,20 @@ def decode_notam(raw_text):
         with open(temp_path_in, 'w', encoding='utf-8') as f:
             f.write(raw_text)
             
+        js_code = """
+        const fs = require('fs');
+        try {
+            const notamDecoder = require('./notam-decoder.js');
+            const raw = fs.readFileSync(process.argv[1], 'utf8');
+            const decoded = notamDecoder.decode(raw);
+            fs.writeFileSync(process.argv[2], JSON.stringify(decoded || {error: "Empty result"}), 'utf8');
+        } catch(e) {
+            fs.writeFileSync(process.argv[2], JSON.stringify({error: e.toString()}), 'utf8');
+        }
+        """
+            
         process = subprocess.run(
-            ['node', 'wrapper.js', temp_path_in, temp_path_out], 
+            ['node', '-e', js_code, temp_path_in, temp_path_out], 
             capture_output=True, 
             text=True
         )
@@ -90,7 +80,7 @@ def decode_notam(raw_text):
             
         return json.loads(output_data)
     except Exception as e:
-        return {"error": f"Python Execution Error: {str(e)}"}
+        return {"error": f"PYTHON CRASH: {str(e)}"}
     finally:
         if os.path.exists(temp_path_in):
             os.remove(temp_path_in)
@@ -186,7 +176,7 @@ def main():
         notam["last_seen_utc"] = current_time_str
         current_raw_dict[full_id] = notam
 
-        # The Cache Fix: Only reuse saved data if it does not contain an error
+        # Force fresh evaluation if previous run had an error
         if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
             decoded_obj = active_notams_decoded[full_id]
             decoded_obj["last_seen_utc"] = current_time_str
