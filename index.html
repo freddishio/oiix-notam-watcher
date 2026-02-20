@@ -1,27 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>OIIX NOTAM Live Map</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        body { padding: 0; margin: 0; }
-        #map { height: 100vh; width: 100vw; }
-    </style>
-</head>
-<body>
-    <div id="map"></div>
-    <script>
-        var map = L.map('map').setView([32.4279, 53.6880], 5);
-        L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-            maxZoom: 20,
-            subdomains:['mt0','mt1','mt2','mt3'],
-            attribution: 'Map data © Google'
-        }).addTo(map);
-        
-        var markers = {};
+<html><head><title>OIIX NOTAM Live Map</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><style>body { padding: 0; margin: 0; } #map { height: 100vh; width: 100vw; }</style></head><body><div id="map"></div><script>var map = L.map('map').setView([32.4279, 53.6880], 5); L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}).addTo(map); var markers = {};
 markers['A3716/25'] = L.polygon([[28.450833, 52.095278], [28.633611, 53.423056], [28.383333, 53.6], [27.95, 53.883333], [27.251111, 54.478889], [26.766667, 51.699444]], {color: '#ff0000', weight: 2, fillOpacity: 0.2}).addTo(map).bindPopup('<b>A3716/25</b><br>Control area (CTA)');
 markers['A0065/26'] = L.polygon([[35.416667, 46.85], [35.416667, 47], [35.25, 46.85], [35.333333, 46.75]], {color: '#ff0000', weight: 2, fillOpacity: 0.2}).addTo(map).bindPopup('<b>A0065/26</b><br>Missile, gun or rocket firing');
 markers['B0038/26'] = L.polygon([[35.550556, 61.220278], [35.533333, 61.2575], [35.483333, 61.233056], [35.516667, 61.195278]], {color: '#ff0000', weight: 2, fillOpacity: 0.2}).addTo(map).bindPopup('<b>B0038/26</b><br>Missile, gun or rocket firing');
@@ -45,20 +23,4 @@ markers['B0095/26'] = L.circle([32.583333, 59.733333], {color: '#ff9900', radius
 markers['B0102/26'] = L.circle([32.383333, 60.833333], {color: '#ff9900', radius: 7408, weight: 2}).addTo(map).bindPopup('<b>B0102/26</b><br>Missile, gun or rocket firing');
 markers['B0106/26'] = L.polygon([[36.8, 49.266111], [36.784167, 49.271667], [36.784167, 49.270833], [36.783889, 49.266111], [36.783889, 49.258611]], {color: '#ff0000', weight: 2, fillOpacity: 0.2}).addTo(map).bindPopup('<b>B0106/26</b><br>Missile, gun or rocket firing');
 markers['A0589/26'] = L.polygon([[33.4, 47.983333], [33.366667, 48.05], [33.35, 48.033333], [33.383333, 47.966667]], {color: '#ff0000', weight: 2, fillOpacity: 0.2}).addTo(map).bindPopup('<b>A0589/26</b><br>Missile, gun or rocket firing');
-
-        
-        setTimeout(function() {
-            var hash = window.location.hash.substring(1);
-            if (hash && markers[hash]) {
-                var layer = markers[hash];
-                if (layer.getBounds) {
-                    map.fitBounds(layer.getBounds(), {padding: [50, 50]});
-                } else {
-                    map.setView(layer.getLatLng(), 8);
-                }
-                layer.openPopup();
-            }
-        }, 500);
-    </script>
-</body>
-</html>
+ setTimeout(function() {var hash = window.location.hash.substring(1); if (hash && markers[hash]) {var layer = markers[hash]; if (layer.getBounds) {map.fitBounds(layer.getBounds(), {padding: [50, 50]});} else {map.setView(layer.getLatLng(), 8);} layer.openPopup();}}, 500);</script></body></html>
