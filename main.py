@@ -30,7 +30,6 @@ if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
-# Global Circuit Breaker for API Limits
 ai_rate_limited = False
 
 ICAO_DICT = {
@@ -259,6 +258,80 @@ def save_json(filepath, data):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
+def extract_notam_details(raw_text, decoded_obj, notam_id):
+    subject_text = "Unknown Subject"
+    condition_text = "Unknown Condition"
+    notam_type = "New NOTAM"
+    traffic_list = "Unknown"
+    map_links = []
+    valid_from_str = "Unknown"
+    valid_to_str = "Unknown"
+    
+    b_match = re.search(r'B\)\s*(\d{10})', raw_text)
+    c_match = re.search(r'C\)\s*(\d{10}|PERM)(.*?)(\n|D\)|E\)|F\)|G\))', raw_text)
+    
+    if b_match:
+        dt_utc, dt_teh = parse_and_convert_time(b_match.group(1))
+        if dt_utc:
+            rel = get_relative_string(dt_utc)
+            status = "Starts" if (dt_utc > datetime.now(timezone.utc)) else "Started"
+            valid_from_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel})"
+
+    if c_match:
+        val_c = c_match.group(1)
+        if val_c == "PERM":
+            valid_to_str = "Permanent"
+        else:
+            dt_utc, dt_teh = parse_and_convert_time(val_c)
+            if dt_utc:
+                rel = get_relative_string(dt_utc)
+                status = "Expires" if (dt_utc > datetime.now(timezone.utc)) else "Expired"
+                est_tag = " (Estimated)" if "EST" in c_match.group(2) else ""
+                valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel}){est_tag}"
+
+    if decoded_obj and "qualification" in decoded_obj:
+        header = decoded_obj.get("header", {})
+        if isinstance(header, dict):
+            notam_type = header.get("typeDesc", notam_type)
+            
+        qual_block = decoded_obj.get("qualification", {})
+        if isinstance(qual_block, dict):
+            t_data = qual_block.get("traffic", [])
+            if isinstance(t_data, list) and len(t_data) > 0:
+                traffic_list = ", ".join([t.get("description", "") for t in t_data if isinstance(t, dict)])
+                
+            code_block = qual_block.get("code", {})
+            if isinstance(code_block, dict):
+                subject_text = code_block.get("subject", subject_text)
+                condition_text = code_block.get("modifier", condition_text)
+                
+            coords = qual_block.get("coordinates")
+            content_block = decoded_obj.get("content", {})
+            area = content_block.get("area")
+            
+            if area and isinstance(area, list) and len(area) > 2:
+                map_links.append(f"🗺️ [View Highlighted Region on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+            elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
+                map_links.append(f"🗺️ [View Circular Area on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+            elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
+                lat = coords[0]
+                lng = coords[1]
+                map_links.append(f"📍 [View Pin on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},6z)")
+                map_links.append(f"🗺️ [View Location on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+
+    if "Unknown" in subject_text or "Unknown" in condition_text:
+        q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
+        if q_match:
+            sub_code = q_match.group(1)
+            mod_code = q_match.group(2)
+            if "Unknown" in subject_text: subject_text = FALLBACK_SUBJECTS.get(sub_code, f"Code {sub_code}")
+            if "Unknown" in condition_text: condition_text = FALLBACK_CONDITIONS.get(mod_code, f"Code {mod_code}")
+
+    subject_text = re.sub(r'\s*\(.*?\)', '', subject_text).strip()
+    condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
+
+    return notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links
+
 def generate_map_html(decoded_dict):
     features_js = "var markers = {};\n"
     for full_id, data in decoded_dict.items():
@@ -288,28 +361,29 @@ def generate_map_html(decoded_dict):
 
 def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False):
     msg_parts = []
+    
     if is_update:
-        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
+        msg_parts.append("⚠️ *This NOTAM is not new and has been sent before. The bot is sending it again because the AI explanation has now been provided.*")
+        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**\n`{notam_id}` • {notam_type}")
     else:
         msg_parts.append(f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}` • {notam_type}")
-        msg_parts.extend([
-            f"",
-            f"📅 **From:** {valid_from_str}",
-            f"📅 **To:** {valid_to_str}\n",
-            f"🏷️ **Subject:** {subject_text}",
-            f"⚠️ **Condition:** {condition_text}",
-            f"✈️ **Traffic:** {traffic_list}\n"
-        ])
+        
+    msg_parts.extend([
+        "",
+        f"📅 **From:** {valid_from_str}",
+        f"📅 **To:** {valid_to_str}\n",
+        f"🏷️ **Subject:** {subject_text}",
+        f"⚠️ **Condition:** {condition_text}",
+        f"✈️ **Traffic:** {traffic_list}\n"
+    ])
     
-    if map_links and not is_update: 
+    if map_links: 
         msg_parts.extend(map_links)
         msg_parts.append("")
         
     msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
     msg_parts.append(f"🤖 {ai_explanation}\n")
-    
-    if not is_update:
-        msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+    msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
         
     return "\n".join(msg_parts)
 
@@ -368,6 +442,12 @@ def main():
             print(f"Retrying AI for buffered NOTAM: {buf_id}")
             ai_data = get_ai_explanation(raw_text)
             
+            if ai_data and ai_data.get("rate_limited"):
+                print("Rate limit hit during buffer processing. Tripping breaker.")
+                ai_rate_limited = True
+                new_ai_buffer.append(buf_id)
+                continue
+            
             if ai_data and "highest_level" in ai_data:
                 ai_data["last_seen_utc"] = current_time_str
                 current_ai_dict[buf_id] = ai_data
@@ -378,7 +458,10 @@ def main():
                 else: pyramid_levels = "Third Level"
                 
                 ai_explanation = "**AI Final Explanation:**\n" + ai_data.get("explanation", "")
-                msg = format_telegram_message(notam_id, "", "", "", "", "", "", [], pyramid_levels, ai_explanation, raw_text, is_update=True)
+                
+                notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(buf_id, {}), notam_id)
+                
+                msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=True)
                 send_telegram(msg)
             else:
                 new_ai_buffer.append(buf_id)
@@ -400,6 +483,10 @@ def main():
             if not ai_rate_limited:
                 print(f"Fetching AI for new NOTAM: {full_id}")
                 ai_data = get_ai_explanation(raw_text)
+                if ai_data and ai_data.get("rate_limited"):
+                    print("Rate limit hit during new NOTAM processing. Tripping breaker.")
+                    ai_rate_limited = True
+                    ai_data = None
             else:
                 ai_data = None
 
@@ -417,79 +504,9 @@ def main():
                 pyramid_levels = "⏳ *Pending AI Analysis*"
                 ai_explanation = f"⏳ **AI Unavailable. Internal Decoder Fallback:**\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
 
-            subject_text = "Unknown Subject"
-            condition_text = "Unknown Condition"
-            notam_type = "New NOTAM"
-            traffic_list = "Unknown"
-            map_links = []
-            valid_from_str = "Unknown"
-            valid_to_str = "Unknown"
-            
-            b_match = re.search(r'B\)\s*(\d{10})', raw_text)
-            c_match = re.search(r'C\)\s*(\d{10}|PERM)(.*?)(\n|D\)|E\)|F\)|G\))', raw_text)
-            
-            if b_match:
-                dt_utc, dt_teh = parse_and_convert_time(b_match.group(1))
-                if dt_utc:
-                    rel = get_relative_string(dt_utc)
-                    status = "Starts" if (dt_utc > datetime.now(timezone.utc)) else "Started"
-                    valid_from_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel})"
+            notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(full_id, {}), notam_id)
 
-            if c_match:
-                val_c = c_match.group(1)
-                if val_c == "PERM":
-                    valid_to_str = "Permanent"
-                else:
-                    dt_utc, dt_teh = parse_and_convert_time(val_c)
-                    if dt_utc:
-                        rel = get_relative_string(dt_utc)
-                        status = "Expires" if (dt_utc > datetime.now(timezone.utc)) else "Expired"
-                        est_tag = " (Estimated)" if "EST" in c_match.group(2) else ""
-                        valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel}){est_tag}"
-
-            decoded_obj = current_decoded_dict.get(full_id, {})
-            if decoded_obj and "qualification" in decoded_obj:
-                header = decoded_obj.get("header", {})
-                if isinstance(header, dict):
-                    notam_type = header.get("typeDesc", notam_type)
-                    
-                qual_block = decoded_obj.get("qualification", {})
-                if isinstance(qual_block, dict):
-                    t_data = qual_block.get("traffic", [])
-                    if isinstance(t_data, list) and len(t_data) > 0:
-                        traffic_list = ", ".join([t.get("description", "") for t in t_data if isinstance(t, dict)])
-                        
-                    code_block = qual_block.get("code", {})
-                    if isinstance(code_block, dict):
-                        subject_text = code_block.get("subject", subject_text)
-                        condition_text = code_block.get("modifier", condition_text)
-                        
-                    coords = qual_block.get("coordinates")
-                    content_block = decoded_obj.get("content", {})
-                    area = content_block.get("area")
-                    
-                    if area and isinstance(area, list) and len(area) > 2:
-                        map_links.append(f"🗺️ [View Highlighted Region on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
-                    elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
-                        map_links.append(f"🗺️ [View Circular Area on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
-                    elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
-                        lat = coords[0]
-                        lng = coords[1]
-                        map_links.append(f"📍 [View Pin on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},6z)")
-                        map_links.append(f"🗺️ [View Location on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
-
-            if "Unknown" in subject_text or "Unknown" in condition_text:
-                q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
-                if q_match:
-                    sub_code = q_match.group(1)
-                    mod_code = q_match.group(2)
-                    if "Unknown" in subject_text: subject_text = FALLBACK_SUBJECTS.get(sub_code, f"Code {sub_code}")
-                    if "Unknown" in condition_text: condition_text = FALLBACK_CONDITIONS.get(mod_code, f"Code {mod_code}")
-
-            subject_text = re.sub(r'\s*\(.*?\)', '', subject_text).strip()
-            condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
-
-            msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text)
+            msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False)
             send_telegram(msg)
             
             seen_ids[full_id] = current_time_str
