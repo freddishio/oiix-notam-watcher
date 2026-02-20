@@ -8,11 +8,11 @@ import tempfile
 import re
 import urllib.parse
 from datetime import datetime, timezone, timedelta
-import google.generativeai as genai
 
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 HISTORY_FILE = "run_history.json"
+AI_BUFFER_FILE = "ai_buffer.json"
 
 ACTIVE_RAW_FILE = "active_notams_raw.json"
 ACTIVE_DECODED_FILE = "active_notams_decoded.json"
@@ -27,11 +27,8 @@ CHAT_ID = os.environ.get("CHAT_ID")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not TELEGRAM_TOKEN or not CHAT_ID:
-    print("Error Telegram secrets are missing.")
+    print("Error: Telegram secrets are missing.")
     sys.exit(1)
-
-if GEMINI_API_KEY:
-    genai.configure(api_key=GEMINI_API_KEY)
 
 ICAO_DICT = {
     "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
@@ -133,28 +130,37 @@ def translate_e_section(text):
 def get_ai_explanation(raw_text):
     if not GEMINI_API_KEY:
         return None
-    try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
-        prompt = f"""Read this aviation NOTAM:
+        
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
+    headers = {'Content-Type': 'application/json'}
+    
+    prompt = f"""Read this aviation NOTAM:
 {raw_text}
 
 Task 1: Explain the NOTAM in very simple words for a general audience.
-Task 2: Assign the highest category. Choices are:
+Task 2: Assign the highest category. Choices are ONLY these exact strings:
 'First Level' (for complete airspace closure or major security events)
 'Second Level' (for military exercises, gun fire, or restricted airspace)
 'Third Level' (for routine aviation changes)
 
-Return ONLY a valid JSON dictionary with no markdown formatting. It must have exactly two keys: "explanation" and "highest_level".
+Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have exactly two keys: "explanation" and "highest_level".
 """
-        response = model.generate_content(prompt)
-        text = response.text.strip()
-        if text.startswith("```json"):
-            text = text[7:-3]
-        elif text.startswith("```"):
-            text = text[3:-3]
+    data = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "response_mime_type": "application/json",
+            "temperature": 0.2
+        }
+    }
+    
+    try:
+        response = requests.post(url, headers=headers, json=data, timeout=30)
+        response.raise_for_status()
+        res_json = response.json()
+        text = res_json['candidates'][0]['content']['parts'][0]['text']
         return json.loads(text.strip())
     except Exception as e:
-        print(f"AI Error {e}")
+        print(f"AI REST API Error: {e}")
         return None
 
 def send_telegram(message):
@@ -168,7 +174,7 @@ def send_telegram(message):
     try:
         requests.post(url, json=payload, timeout=10)
     except Exception as e:
-        print(f"Telegram Error {e}")
+        print(f"Telegram Error: {e}")
 
 def decode_notam(raw_text):
     fd_in, temp_path_in = tempfile.mkstemp(text=True)
@@ -211,7 +217,7 @@ def decode_notam(raw_text):
             
         return json.loads(output_data)
     except Exception as e:
-        return {"error": f"PYTHON CRASH {str(e)}"}
+        return {"error": f"PYTHON CRASH: {str(e)}"}
     finally:
         if os.path.exists(temp_path_in):
             os.remove(temp_path_in)
@@ -253,7 +259,7 @@ def get_all_notams():
                 break
             time.sleep(1)
         except Exception as e:
-            print(f"Error fetching page at offset {offset} {e}")
+            print(f"Error fetching page at offset {offset}: {e}")
             break
             
     return all_notams
@@ -272,7 +278,7 @@ def save_json(filepath, data):
         json.dump(data, f, indent=2)
 
 def generate_map_html(decoded_dict):
-    features_js = "var markers = {};\\n"
+    features_js = "var markers = {};\n"
     for full_id, data in decoded_dict.items():
         if "error" in data: continue
             
@@ -293,18 +299,18 @@ def generate_map_html(decoded_dict):
                 if isinstance(pt, list) and len(pt) == 2:
                     js_coords.append([pt[0], pt[1]])
             if js_coords:
-                features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\\n"
+                features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\n"
                 
         elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
             lat, lng = coords[0][0], coords[0][1]
             rad_nm = coords[1].get("radius", 0)
             if rad_nm:
                 rad_meters = rad_nm * 1852
-                features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\\n"
+                features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\n"
                 
         elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
             lat, lng = coords[0], coords[1]
-            features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\\n"
+            features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\n"
 
     html = f"""<!DOCTYPE html>
 <html>
@@ -349,11 +355,40 @@ def generate_map_html(decoded_dict):
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
 
+def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False):
+    msg_parts = []
+    if is_update:
+        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
+    else:
+        msg_parts.append(f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}` • {notam_type}")
+        
+    msg_parts.extend([
+        f"",
+        f"📅 **From:** {valid_from_str}",
+        f"📅 **To:** {valid_to_str}\n",
+        f"🏷️ **Subject:** {subject_text}",
+        f"⚠️ **Condition:** {condition_text}",
+        f"✈️ **Traffic:** {traffic_list}\n"
+    ])
+    
+    if map_links and not is_update: # To avoid map spam on updates
+        msg_parts.extend(map_links)
+        msg_parts.append("")
+        
+    msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
+    msg_parts.append(f"🤖 **AI Simple Explanation:**\n{ai_explanation}\n")
+    
+    if not is_update:
+        msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+        
+    return "\n".join(msg_parts)
+
 def main():
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
     seen_ids = load_json(STATE_FILE, {})
     run_history = load_json(HISTORY_FILE, [])
+    ai_buffer = load_json(AI_BUFFER_FILE, [])
     
     active_notams_raw = load_json(ACTIVE_RAW_FILE, {})
     active_notams_decoded = load_json(ACTIVE_DECODED_FILE, {})
@@ -374,14 +409,17 @@ def main():
     current_decoded_dict = {}
     current_ai_dict = {}
     new_count = 0
+    
+    # Track the ones that need an AI update later
+    new_ai_buffer = []
 
+    # 1. PROCESS ALL FRESH DATA AND SEND INITIAL MESSAGES
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
         raw_text = notam.get("icaoMessage") or "No text"
 
-        if not notam_id:
-            continue
+        if not notam_id: continue
             
         full_id = f"{icao_id} {notam_id}"
         
@@ -398,24 +436,29 @@ def main():
                 decoded_obj["last_seen_utc"] = current_time_str
                 current_decoded_dict[full_id] = decoded_obj
 
+        # Load existing AI data if we have it
         if full_id in active_notams_ai and "error" not in active_notams_ai[full_id]:
             ai_data = active_notams_ai[full_id]
             ai_data["last_seen_utc"] = current_time_str
             current_ai_dict[full_id] = ai_data
-        else:
-            ai_data = get_ai_explanation(raw_text)
-            if ai_data:
-                ai_data["last_seen_utc"] = current_time_str
-                current_ai_dict[full_id] = ai_data
-                time.sleep(2)
 
         if full_id not in seen_ids:
+            # THIS IS A BRAND NEW NOTAM
+            ai_data = get_ai_explanation(raw_text)
+            
+            if ai_data and "highest_level" in ai_data:
+                ai_data["last_seen_utc"] = current_time_str
+                current_ai_dict[full_id] = ai_data
+            else:
+                # API failed or is busy. Push to buffer.
+                new_ai_buffer.append(full_id)
+            
+            # Formatting Data (Time, maps, subjects, etc.)
             subject_text = "Unknown Subject"
             condition_text = "Unknown Condition"
             notam_type = "New NOTAM"
             traffic_list = "Unknown"
             map_links = []
-            
             valid_from_str = "Unknown"
             valid_to_str = "Unknown"
             
@@ -468,6 +511,7 @@ def main():
                     elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
                         lat = coords[0]
                         lng = coords[1]
+                        map_links.append(f"📍 [View Pin on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},6z)")
                         map_links.append(f"🗺️ [View Location on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
 
             if "Unknown" in subject_text or "Unknown" in condition_text:
@@ -483,10 +527,11 @@ def main():
             subject_text = re.sub(r'\s*\(.*?\)', '', subject_text).strip()
             condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
 
-            pyramid_levels = "Third Level"
-            ai_explanation = translate_e_section(raw_text)
-            
-            if ai_data and "highest_level" in ai_data:
+            # Format the output based on AI success or failure
+            if full_id in new_ai_buffer:
+                pyramid_levels = "⏳ *Pending AI Analysis*"
+                ai_explanation = "⏳ AI is currently unavailable. The system has saved this NOTAM in a buffer and will automatically notify you with the explanation and priority level once the AI becomes available."
+            else:
                 lvl = ai_data.get("highest_level", "Third Level")
                 if "First" in lvl:
                     pyramid_levels = "First Level, Second Level, Third Level"
@@ -495,37 +540,53 @@ def main():
                 else:
                     pyramid_levels = "Third Level"
                 
-                ai_explanation = ai_data.get("explanation", ai_explanation)
+                ai_explanation = ai_data.get("explanation", translate_e_section(raw_text))
 
-            msg_parts = [
-                f"🚀 **TEHRAN FIR ALERT (OIIX)**",
-                f"`{notam_id}` • {notam_type}\n",
-                f"📅 **From:** {valid_from_str}",
-                f"📅 **To:** {valid_to_str}\n",
-                f"🏷️ **Subject:** {subject_text}",
-                f"⚠️ **Condition:** {condition_text}",
-                f"✈️ **Traffic:** {traffic_list}\n"
-            ]
-            
-            if map_links:
-                msg_parts.extend(map_links)
-                msg_parts.append("")
-                
-            msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
-            msg_parts.append(f"🤖 **AI Simple Explanation:**\n{ai_explanation}\n")
-            msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
-            
-            msg = "\n".join(msg_parts)
+            msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text)
             
             send_telegram(msg)
             seen_ids[full_id] = current_time_str
             new_count += 1
+            
+            # Strict 10-second pause to prevent getting blocked by the AI
+            time.sleep(10)
 
+    # 2. PROCESS THE BUFFER FOR ANY MISSED AI ANALYSES
+    for buf_id in ai_buffer:
+        if buf_id in current_raw_dict and buf_id not in current_ai_dict:
+            # It's still active and we still don't have AI info for it
+            raw_text = current_raw_dict[buf_id].get("icaoMessage", "")
+            notam_id = current_raw_dict[buf_id].get("notamNumber")
+            
+            print(f"Retrying AI for buffered NOTAM: {buf_id}")
+            ai_data = get_ai_explanation(raw_text)
+            
+            if ai_data and "highest_level" in ai_data:
+                ai_data["last_seen_utc"] = current_time_str
+                current_ai_dict[buf_id] = ai_data
+                
+                lvl = ai_data.get("highest_level", "Third Level")
+                if "First" in lvl:
+                    pyramid_levels = "First Level, Second Level, Third Level"
+                elif "Second" in lvl:
+                    pyramid_levels = "Second Level, Third Level"
+                else:
+                    pyramid_levels = "Third Level"
+                
+                ai_explanation = ai_data.get("explanation", "")
+                
+                # Send the update to Telegram
+                msg = format_telegram_message(notam_id, "", "", "", "", "", "", [], pyramid_levels, ai_explanation, raw_text, is_update=True)
+                send_telegram(msg)
+                
+                time.sleep(10)
+            else:
+                # Failed again, put it back in the queue for next time
+                new_ai_buffer.append(buf_id)
+                time.sleep(10)
+
+    # 3. CLEANUP EXPIRED ITEMS
     removed_count = 0
-    newly_expired_raw = {}
-    newly_expired_decoded = {}
-    newly_expired_ai = {}
-    
     for old_id, old_data in active_notams_raw.items():
         if old_id not in current_raw_dict:
             old_data["archived_utc"] = current_time_str
@@ -551,6 +612,7 @@ def main():
     for cid in current_raw_dict.keys():
         new_state[cid] = seen_ids.get(cid, current_time_str)
 
+    # Save all databases
     save_json(STATE_FILE, new_state)
     save_json(ACTIVE_RAW_FILE, current_raw_dict)
     save_json(ACTIVE_DECODED_FILE, current_decoded_dict)
@@ -558,6 +620,9 @@ def main():
     save_json(EXPIRED_RAW_FILE, expired_notams_raw)
     save_json(EXPIRED_DECODED_FILE, expired_notams_decoded)
     save_json(EXPIRED_AI_FILE, expired_notams_ai)
+    
+    # Save the new buffer queue
+    save_json(AI_BUFFER_FILE, new_ai_buffer)
 
     generate_map_html(current_decoded_dict)
 
@@ -571,7 +636,7 @@ def main():
     run_history.insert(0, run_record)
     save_json(HISTORY_FILE, run_history[:250])
     
-    print(f"Stats Total {len(current_raw_dict)}, New {new_count}, Removed {removed_count}")
+    print(f"Stats: Total {len(current_raw_dict)}, New {new_count}, Removed {removed_count}, Buffered {len(new_ai_buffer)}")
 
 if __name__ == "__main__":
     main()
