@@ -135,47 +135,49 @@ def get_ai_explanation(raw_text):
     if ai_rate_limited or not GEMINI_API_KEY:
         return None
         
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    models = [
+        "gemini-3.0-flash", 
+        "gemini-3.0-flash-latest", 
+        "gemini-2.5-flash", 
+        "gemini-2.0-flash", 
+        "gemini-2.0-pro-exp"
+    ]
+    
     headers = {'Content-Type': 'application/json'}
+    prompt = f"Read this aviation NOTAM:\n{raw_text}\n\nTask 1: Explain the NOTAM in very simple words for a general audience.\nTask 2: Assign the highest category. Choices are ONLY these exact strings:\n'First Level' (for complete airspace closure or major security events)\n'Second Level' (for military exercises, gun fire, or restricted airspace)\n'Third Level' (for routine aviation changes)\n\nReturn ONLY a valid JSON dictionary. No markdown, no code blocks. It must have exactly two keys: \"explanation\" and \"highest_level\"."
+    data = {"contents": [{"parts": [{"text": prompt}]}]}
     
-    prompt = f"""Read this aviation NOTAM:
-{raw_text}
-
-Task 1: Explain the NOTAM in very simple words for a general audience.
-Task 2: Assign the highest category. Choices are ONLY these exact strings:
-'First Level' (for complete airspace closure or major security events)
-'Second Level' (for military exercises, gun fire, or restricted airspace)
-'Third Level' (for routine aviation changes)
-
-Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have exactly two keys: "explanation" and "highest_level".
-"""
-    data = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "response_mime_type": "application/json",
-            "temperature": 0.2
-        }
-    }
-    
-    try:
-        response = requests.post(url, headers=headers, json=data, timeout=30)
-        if response.status_code == 429:
-            print("AI Rate Limit Hit. Tripping circuit breaker for this run.")
-            ai_rate_limited = True
-            time.sleep(15)
-            return None
+    for model in models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
+        try:
+            response = requests.post(url, headers=headers, json=data, timeout=30)
             
-        response.raise_for_status()
-        res_json = response.json()
-        text = res_json['candidates'][0]['content']['parts'][0]['text']
-        time.sleep(15)
-        return json.loads(text.strip())
-    except Exception as e:
-        print(f"AI REST API Error: {e}")
-        if "429" in str(e):
-            ai_rate_limited = True
-        time.sleep(15)
-        return None
+            if response.status_code == 404:
+                print(f"Model {model} not found. Trying next...")
+                continue
+                
+            if response.status_code == 429:
+                print(f"Model {model} rate limited (429). Trying next...")
+                continue
+                
+            response.raise_for_status()
+            res_json = response.json()
+            text = res_json['candidates'][0]['content']['parts'][0]['text'].strip()
+            
+            if text.startswith("```json"): text = text[7:-3]
+            elif text.startswith("```"): text = text[3:-3]
+            
+            time.sleep(15)
+            return json.loads(text.strip())
+            
+        except Exception as e:
+            print(f"Error with model {model}: {e}")
+            continue
+            
+    print("All AI models hit rate limits or 404s. Tripping circuit breaker for this run.")
+    ai_rate_limited = True
+    time.sleep(15)
+    return None
 
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -395,7 +397,11 @@ def main():
             notam_id = notam.get("notamNumber")
             internal_translation = translate_e_section(raw_text)
             
-            ai_data = get_ai_explanation(raw_text)
+            if not ai_rate_limited:
+                print(f"Fetching AI for new NOTAM: {full_id}")
+                ai_data = get_ai_explanation(raw_text)
+            else:
+                ai_data = None
 
             if ai_data and "highest_level" in ai_data:
                 ai_data["last_seen_utc"] = current_time_str
@@ -408,7 +414,7 @@ def main():
                 ai_explanation = "**AI Simple Explanation:**\n" + ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
-                pyramid_levels = "⏳ Pending AI Analysis"
+                pyramid_levels = "⏳ *Pending AI Analysis*"
                 ai_explanation = f"⏳ **AI Unavailable. Internal Decoder Fallback:**\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
 
             subject_text = "Unknown Subject"
