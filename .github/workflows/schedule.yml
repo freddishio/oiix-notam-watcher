@@ -23,13 +23,15 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install requests
-        run: pip install requests
+      - name: Install dependencies
+        run: |
+          pip install requests google-generativeai
 
       - name: Run bot script
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python main.py
 
       - name: Save state
@@ -38,5 +40,6 @@ jobs:
           git config --global user.email 'action@github.com'
           
           git add *.json || true
+          git add index.html || true
           
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update state and logs" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update state, AI logs, and maps" && git push)
