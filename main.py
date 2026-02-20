@@ -30,6 +30,9 @@ if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
+# Global Circuit Breaker for API Limits
+ai_rate_limited = False
+
 ICAO_DICT = {
     "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
     "APCH": "Approach", "APP": "Approach Control", "ARR": "Arrival", "ATC": "Air Traffic Control",
@@ -128,10 +131,11 @@ def translate_e_section(text):
     return e_section
 
 def get_ai_explanation(raw_text):
-    if not GEMINI_API_KEY:
+    global ai_rate_limited
+    if ai_rate_limited or not GEMINI_API_KEY:
         return None
         
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.0-flash:generateContent?key={GEMINI_API_KEY}"
     headers = {'Content-Type': 'application/json'}
     
     prompt = f"""Read this aviation NOTAM:
@@ -155,14 +159,20 @@ Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have e
     
     try:
         response = requests.post(url, headers=headers, json=data, timeout=30)
+        if response.status_code == 429:
+            print("AI Rate Limit Hit. Tripping circuit breaker for this run.")
+            ai_rate_limited = True
+            return None
+            
         response.raise_for_status()
         res_json = response.json()
         text = res_json['candidates'][0]['content']['parts'][0]['text']
-        time.sleep(12)  # Strict pause forced on success
+        time.sleep(15)  # Strict 15 second delay (max 4 per minute)
         return json.loads(text.strip())
     except Exception as e:
         print(f"AI REST API Error: {e}")
-        time.sleep(12)  # Strict pause forced on failure to prevent rate limits
+        if "429" in str(e):
+            ai_rate_limited = True
         return None
 
 def send_telegram(message):
@@ -181,14 +191,11 @@ def send_telegram(message):
 def decode_notam(raw_text):
     fd_in, temp_path_in = tempfile.mkstemp(text=True)
     fd_out, temp_path_out = tempfile.mkstemp(text=True)
-    
     os.close(fd_in)
     os.close(fd_out)
-    
     try:
         with open(temp_path_in, 'w', encoding='utf-8') as f:
             f.write(raw_text)
-            
         js_code = """
         const fs = require('fs');
         try {
@@ -200,31 +207,17 @@ def decode_notam(raw_text):
             fs.writeFileSync(process.argv[2], JSON.stringify({error: e.toString()}), 'utf8');
         }
         """
-            
-        process = subprocess.run(
-            ['node', '-e', js_code, temp_path_in, temp_path_out], 
-            capture_output=True, 
-            text=True
-        )
-        
+        process = subprocess.run(['node', '-e', js_code, temp_path_in, temp_path_out], capture_output=True, text=True)
         with open(temp_path_out, 'r', encoding='utf-8') as f:
             output_data = f.read()
-            
         if not output_data.strip():
-            return {
-                "error": "Empty output file from Node", 
-                "stdout": process.stdout.strip(), 
-                "stderr": process.stderr.strip()
-            }
-            
+            return {"error": "Empty output", "stdout": process.stdout.strip(), "stderr": process.stderr.strip()}
         return json.loads(output_data)
     except Exception as e:
         return {"error": f"PYTHON CRASH: {str(e)}"}
     finally:
-        if os.path.exists(temp_path_in):
-            os.remove(temp_path_in)
-        if os.path.exists(temp_path_out):
-            os.remove(temp_path_out)
+        if os.path.exists(temp_path_in): os.remove(temp_path_in)
+        if os.path.exists(temp_path_out): os.remove(temp_path_out)
 
 def get_all_notams():
     headers = {
@@ -234,46 +227,29 @@ def get_all_notams():
     all_notams = []
     offset = 0
     batch_size = 30
-    
     while True:
-        payload = {
-            "searchType": 0,
-            "designatorsForLocation": "OIIX",
-            "offset": offset,
-            "notamsOnly": False,
-            "radius": 10
-        }
+        payload = {"searchType": 0, "designatorsForLocation": "OIIX", "offset": offset, "notamsOnly": False, "radius": 10}
         try:
             response = requests.post(URL, data=payload, headers=headers, timeout=30)
             response.raise_for_status()
             data = response.json()
-            
-            if not data or "notamList" not in data:
-                break
-                
+            if not data or "notamList" not in data: break
             current_batch = data["notamList"]
-            if not current_batch:
-                break
-                
+            if not current_batch: break
             all_notams.extend(current_batch)
             offset += len(current_batch)
-            if len(current_batch) < batch_size:
-                break
+            if len(current_batch) < batch_size: break
             time.sleep(1)
         except Exception as e:
             print(f"Error fetching page at offset {offset}: {e}")
             break
-            
     return all_notams
 
 def load_json(filepath, default_value):
-    if not os.path.exists(filepath):
-        return default_value
+    if not os.path.exists(filepath): return default_value
     with open(filepath, "r", encoding="utf-8") as f:
-        try:
-            return json.load(f)
-        except:
-            return default_value
+        try: return json.load(f)
+        except: return default_value
 
 def save_json(filepath, data):
     with open(filepath, "w", encoding="utf-8") as f:
@@ -283,79 +259,28 @@ def generate_map_html(decoded_dict):
     features_js = "var markers = {};\n"
     for full_id, data in decoded_dict.items():
         if "error" in data: continue
-            
         qual = data.get("qualification", {})
         coords = qual.get("coordinates")
         content = data.get("content", {})
         area = content.get("area")
-        
         notam_id_only = full_id.split()[-1]
-        
-        subject = qual.get('code', {}).get('subject', 'Unknown Subject')
-        subject = subject.replace("'", "\\'")
+        subject = qual.get('code', {}).get('subject', 'Unknown Subject').replace("'", "\\'")
         popup_text = f"<b>{notam_id_only}</b><br>{subject}"
         
         if area and isinstance(area, list) and len(area) > 2:
-            js_coords = []
-            for pt in area:
-                if isinstance(pt, list) and len(pt) == 2:
-                    js_coords.append([pt[0], pt[1]])
-            if js_coords:
-                features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\n"
-                
+            js_coords = [[pt[0], pt[1]] for pt in area if isinstance(pt, list) and len(pt) == 2]
+            if js_coords: features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\n"
         elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
             lat, lng = coords[0][0], coords[0][1]
-            rad_nm = coords[1].get("radius", 0)
-            if rad_nm:
-                rad_meters = rad_nm * 1852
-                features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\n"
-                
+            rad_meters = coords[1].get("radius", 0) * 1852
+            if rad_meters: features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\n"
         elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
             lat, lng = coords[0], coords[1]
             features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\n"
 
     html = f"""<!DOCTYPE html>
-<html>
-<head>
-    <title>OIIX NOTAM Live Map</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <style>
-        body {{ padding: 0; margin: 0; }}
-        #map {{ height: 100vh; width: 100vw; }}
-    </style>
-</head>
-<body>
-    <div id="map"></div>
-    <script>
-        var map = L.map('map').setView([32.4279, 53.6880], 5);
-        L.tileLayer('http://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{
-            maxZoom: 20,
-            subdomains:['mt0','mt1','mt2','mt3'],
-            attribution: 'Map data © Google'
-        }}).addTo(map);
-        
-        {features_js}
-        
-        setTimeout(function() {{
-            var hash = window.location.hash.substring(1);
-            if (hash && markers[hash]) {{
-                var layer = markers[hash];
-                if (layer.getBounds) {{
-                    map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});
-                }} else {{
-                    map.setView(layer.getLatLng(), 8);
-                }}
-                layer.openPopup();
-            }}
-        }}, 500);
-    </script>
-</body>
-</html>"""
-    with open("index.html", "w", encoding="utf-8") as f:
-        f.write(html)
+<html><head><title>OIIX NOTAM Live Map</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><style>body {{ padding: 0; margin: 0; }} #map {{ height: 100vh; width: 100vw; }}</style></head><body><div id="map"></div><script>var map = L.map('map').setView([32.4279, 53.6880], 5); L.tileLayer('http://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}}).addTo(map); {features_js} setTimeout(function() {{var hash = window.location.hash.substring(1); if (hash && markers[hash]) {{var layer = markers[hash]; if (layer.getBounds) {{map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});}} else {{map.setView(layer.getLatLng(), 8);}} layer.openPopup();}}}}, 500);</script></body></html>"""
+    with open("index.html", "w", encoding="utf-8") as f: f.write(html)
 
 def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False):
     msg_parts = []
@@ -363,8 +288,6 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
         msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
     else:
         msg_parts.append(f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}` • {notam_type}")
-        
-    if not is_update:
         msg_parts.extend([
             f"",
             f"📅 **From:** {valid_from_str}",
@@ -379,7 +302,7 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
         msg_parts.append("")
         
     msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
-    msg_parts.append(f"🤖 **AI Explanation:**\n{ai_explanation}\n")
+    msg_parts.append(f"🤖 {ai_explanation}\n")
     
     if not is_update:
         msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
@@ -387,6 +310,7 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
     return "\n".join(msg_parts)
 
 def main():
+    global ai_rate_limited
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
     seen_ids = load_json(STATE_FILE, {})
@@ -412,10 +336,8 @@ def main():
     current_decoded_dict = {}
     current_ai_dict = {}
     new_count = 0
-    
     new_ai_buffer = []
 
-    # Map the current active items instantly to memory
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
@@ -424,16 +346,18 @@ def main():
         notam["last_seen_utc"] = current_time_str
         current_raw_dict[full_id] = notam
 
-        # Maintain caches
         if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
             current_decoded_dict[full_id] = active_notams_decoded[full_id]
         if full_id in active_notams_ai and "error" not in active_notams_ai[full_id]:
             current_ai_dict[full_id] = active_notams_ai[full_id]
 
-    # 1. PROCESS THE BUFFER FIRST (Only process if it's still active)
-    # Using a set avoids duplicate IDs in the buffer array
+    # 1. PROCESS THE BUFFER FIRST
     for buf_id in list(set(ai_buffer)):
         if buf_id in current_raw_dict and buf_id not in current_ai_dict:
+            if ai_rate_limited:
+                new_ai_buffer.append(buf_id)
+                continue
+                
             raw_text = current_raw_dict[buf_id].get("icaoMessage", "")
             notam_id = current_raw_dict[buf_id].get("notamNumber")
             
@@ -449,7 +373,7 @@ def main():
                 elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
                 else: pyramid_levels = "Third Level"
                 
-                ai_explanation = ai_data.get("explanation", "")
+                ai_explanation = "**AI Final Explanation:**\n" + ai_data.get("explanation", "")
                 msg = format_telegram_message(notam_id, "", "", "", "", "", "", [], pyramid_levels, ai_explanation, raw_text, is_update=True)
                 send_telegram(msg)
             else:
@@ -457,7 +381,6 @@ def main():
 
     # 2. PROCESS NEW NOTAMS
     for full_id, notam in current_raw_dict.items():
-        # Process the internal decode if missing
         if full_id not in current_decoded_dict:
             raw_text = notam.get("icaoMessage", "")
             decoded_obj = decode_notam(raw_text)
@@ -465,15 +388,12 @@ def main():
                 decoded_obj["last_seen_utc"] = current_time_str
                 current_decoded_dict[full_id] = decoded_obj
 
-        # If it is totally new to the system
         if full_id not in seen_ids:
             raw_text = notam.get("icaoMessage", "")
             notam_id = notam.get("notamNumber")
-            
-            print(f"Fetching AI for new NOTAM: {full_id}")
-            ai_data = get_ai_explanation(raw_text)
-            
             internal_translation = translate_e_section(raw_text)
+            
+            ai_data = get_ai_explanation(raw_text)
 
             if ai_data and "highest_level" in ai_data:
                 ai_data["last_seen_utc"] = current_time_str
@@ -483,13 +403,12 @@ def main():
                 if "First" in lvl: pyramid_levels = "First Level, Second Level, Third Level"
                 elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
                 else: pyramid_levels = "Third Level"
-                ai_explanation = ai_data.get("explanation", internal_translation)
+                ai_explanation = "**AI Simple Explanation:**\n" + ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
                 pyramid_levels = "⏳ *Pending AI Analysis*"
-                ai_explanation = f"⏳ *AI is currently unavailable. Using internal decoder:*\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
+                ai_explanation = f"⏳ **AI Unavailable. Internal Decoder Fallback:**\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
 
-            # Setup Map Formatting
             subject_text = "Unknown Subject"
             condition_text = "Unknown Condition"
             notam_type = "New NOTAM"
@@ -563,10 +482,8 @@ def main():
             condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
 
             msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text)
-            
             send_telegram(msg)
             
-            # Lock the ID instantly so it never double sends as new
             seen_ids[full_id] = current_time_str
             new_count += 1
 
@@ -580,29 +497,24 @@ def main():
         if old_id not in current_raw_dict:
             old_data["archived_utc"] = current_time_str
             newly_expired_raw[old_id] = old_data
-            
             if old_id in active_notams_decoded:
                 dec_data = active_notams_decoded[old_id]
                 dec_data["archived_utc"] = current_time_str
                 newly_expired_decoded[old_id] = dec_data
-                
             if old_id in active_notams_ai:
                 ai_ex_data = active_notams_ai[old_id]
                 ai_ex_data["archived_utc"] = current_time_str
                 newly_expired_ai[old_id] = ai_ex_data
-                
             removed_count += 1
             
     expired_notams_raw = {**newly_expired_raw, **expired_notams_raw}
     expired_notams_decoded = {**newly_expired_decoded, **expired_notams_decoded}
     expired_notams_ai = {**newly_expired_ai, **expired_notams_ai}
 
-    # Clean state dictionary
     new_state = {}
     for cid in current_raw_dict.keys():
         new_state[cid] = seen_ids.get(cid, current_time_str)
 
-    # 4. SAVE EVERYTHING IMMEDIATELY
     save_json(STATE_FILE, new_state)
     save_json(AI_BUFFER_FILE, new_ai_buffer)
     save_json(ACTIVE_RAW_FILE, current_raw_dict)
