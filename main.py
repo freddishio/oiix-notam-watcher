@@ -135,7 +135,7 @@ def get_ai_explanation(raw_text):
     if ai_rate_limited or not GEMINI_API_KEY:
         return None
         
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3.0-flash:generateContent?key={GEMINI_API_KEY}"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     headers = {'Content-Type': 'application/json'}
     
     prompt = f"""Read this aviation NOTAM:
@@ -162,17 +162,19 @@ Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have e
         if response.status_code == 429:
             print("AI Rate Limit Hit. Tripping circuit breaker for this run.")
             ai_rate_limited = True
+            time.sleep(15)
             return None
             
         response.raise_for_status()
         res_json = response.json()
         text = res_json['candidates'][0]['content']['parts'][0]['text']
-        time.sleep(15)  # Strict 15 second delay (max 4 per minute)
+        time.sleep(15)
         return json.loads(text.strip())
     except Exception as e:
         print(f"AI REST API Error: {e}")
         if "429" in str(e):
             ai_rate_limited = True
+        time.sleep(15)
         return None
 
 def send_telegram(message):
@@ -406,7 +408,7 @@ def main():
                 ai_explanation = "**AI Simple Explanation:**\n" + ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
-                pyramid_levels = "⏳ *Pending AI Analysis*"
+                pyramid_levels = "⏳ Pending AI Analysis"
                 ai_explanation = f"⏳ **AI Unavailable. Internal Decoder Fallback:**\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
 
             subject_text = "Unknown Subject"
