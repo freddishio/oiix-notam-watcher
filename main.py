@@ -131,7 +131,6 @@ def get_ai_explanation(raw_text):
     if not GEMINI_API_KEY:
         return None
         
-    # Updated to gemini-2.0-flash to resolve the 404 deprecation error
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     headers = {'Content-Type': 'application/json'}
     
@@ -159,9 +158,11 @@ Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have e
         response.raise_for_status()
         res_json = response.json()
         text = res_json['candidates'][0]['content']['parts'][0]['text']
+        time.sleep(12)  # Strict pause forced on success
         return json.loads(text.strip())
     except Exception as e:
         print(f"AI REST API Error: {e}")
+        time.sleep(12)  # Strict pause forced on failure to prevent rate limits
         return None
 
 def send_telegram(message):
@@ -378,7 +379,7 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
         msg_parts.append("")
         
     msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
-    msg_parts.append(f"🤖 **AI Simple Explanation:**\n{ai_explanation}\n")
+    msg_parts.append(f"🤖 **AI Explanation:**\n{ai_explanation}\n")
     
     if not is_update:
         msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
@@ -411,8 +412,10 @@ def main():
     current_decoded_dict = {}
     current_ai_dict = {}
     new_count = 0
+    
     new_ai_buffer = []
 
+    # Map the current active items instantly to memory
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
@@ -421,9 +424,16 @@ def main():
         notam["last_seen_utc"] = current_time_str
         current_raw_dict[full_id] = notam
 
-    # 1. PROCESS THE BUFFER FIRST (Wait for AI responses)
-    for buf_id in ai_buffer:
-        if buf_id in current_raw_dict:
+        # Maintain caches
+        if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
+            current_decoded_dict[full_id] = active_notams_decoded[full_id]
+        if full_id in active_notams_ai and "error" not in active_notams_ai[full_id]:
+            current_ai_dict[full_id] = active_notams_ai[full_id]
+
+    # 1. PROCESS THE BUFFER FIRST (Only process if it's still active)
+    # Using a set avoids duplicate IDs in the buffer array
+    for buf_id in list(set(ai_buffer)):
+        if buf_id in current_raw_dict and buf_id not in current_ai_dict:
             raw_text = current_raw_dict[buf_id].get("icaoMessage", "")
             notam_id = current_raw_dict[buf_id].get("notamNumber")
             
@@ -440,40 +450,31 @@ def main():
                 else: pyramid_levels = "Third Level"
                 
                 ai_explanation = ai_data.get("explanation", "")
-                
                 msg = format_telegram_message(notam_id, "", "", "", "", "", "", [], pyramid_levels, ai_explanation, raw_text, is_update=True)
                 send_telegram(msg)
-                time.sleep(10) # 10 second pause between AI calls
             else:
                 new_ai_buffer.append(buf_id)
-                time.sleep(10)
 
-    # 2. PROCESS NEW AND EXISTING NOTAMS
+    # 2. PROCESS NEW NOTAMS
     for full_id, notam in current_raw_dict.items():
-        raw_text = notam.get("icaoMessage", "")
-        notam_id = notam.get("notamNumber")
-        
-        # Restore existing cached decodes
-        if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
-            decoded_obj = active_notams_decoded[full_id]
-            decoded_obj["last_seen_utc"] = current_time_str
-            current_decoded_dict[full_id] = decoded_obj
-        else:
+        # Process the internal decode if missing
+        if full_id not in current_decoded_dict:
+            raw_text = notam.get("icaoMessage", "")
             decoded_obj = decode_notam(raw_text)
             if decoded_obj:
                 decoded_obj["last_seen_utc"] = current_time_str
                 current_decoded_dict[full_id] = decoded_obj
 
-        # Restore existing cached AI explanations
-        if full_id in active_notams_ai and "error" not in active_notams_ai[full_id]:
-            ai_data = active_notams_ai[full_id]
-            ai_data["last_seen_utc"] = current_time_str
-            current_ai_dict[full_id] = ai_data
-
+        # If it is totally new to the system
         if full_id not in seen_ids:
-            # BRAND NEW NOTAM
+            raw_text = notam.get("icaoMessage", "")
+            notam_id = notam.get("notamNumber")
+            
+            print(f"Fetching AI for new NOTAM: {full_id}")
             ai_data = get_ai_explanation(raw_text)
             
+            internal_translation = translate_e_section(raw_text)
+
             if ai_data and "highest_level" in ai_data:
                 ai_data["last_seen_utc"] = current_time_str
                 current_ai_dict[full_id] = ai_data
@@ -482,13 +483,13 @@ def main():
                 if "First" in lvl: pyramid_levels = "First Level, Second Level, Third Level"
                 elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
                 else: pyramid_levels = "Third Level"
-                ai_explanation = ai_data.get("explanation", "")
+                ai_explanation = ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
                 pyramid_levels = "⏳ *Pending AI Analysis*"
-                ai_explanation = "⏳ AI is currently unavailable. The system has saved this NOTAM in a buffer and will automatically notify you with the explanation and priority level once the AI becomes available."
+                ai_explanation = f"⏳ *AI is currently unavailable. Using internal decoder:*\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
 
-            # Formatting
+            # Setup Map Formatting
             subject_text = "Unknown Subject"
             condition_text = "Unknown Condition"
             notam_type = "New NOTAM"
@@ -519,6 +520,7 @@ def main():
                         est_tag = " (Estimated)" if "EST" in c_match.group(2) else ""
                         valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel}){est_tag}"
 
+            decoded_obj = current_decoded_dict.get(full_id, {})
             if decoded_obj and "qualification" in decoded_obj:
                 header = decoded_obj.get("header", {})
                 if isinstance(header, dict):
@@ -563,11 +565,10 @@ def main():
             msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text)
             
             send_telegram(msg)
-            # CRITICAL: We instantly mark this NOTAM as "seen" so it never sends as a New NOTAM again.
+            
+            # Lock the ID instantly so it never double sends as new
             seen_ids[full_id] = current_time_str
             new_count += 1
-            
-            time.sleep(10)
 
     # 3. CLEANUP EXPIRED ITEMS
     removed_count = 0
