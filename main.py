@@ -8,6 +8,7 @@ import tempfile
 import re
 import urllib.parse
 from datetime import datetime, timezone, timedelta
+import google.generativeai as genai
 
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
@@ -15,15 +16,22 @@ HISTORY_FILE = "run_history.json"
 
 ACTIVE_RAW_FILE = "active_notams_raw.json"
 ACTIVE_DECODED_FILE = "active_notams_decoded.json"
+ACTIVE_AI_FILE = "active_notams_ai_decoded.json"
+
 EXPIRED_RAW_FILE = "expired_notams_raw.json"
 EXPIRED_DECODED_FILE = "expired_notams_decoded.json"
+EXPIRED_AI_FILE = "expired_notams_ai_decoded.json"
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not TELEGRAM_TOKEN or not CHAT_ID:
-    print("Error: Telegram secrets are missing.")
+    print("Error Telegram secrets are missing.")
     sys.exit(1)
+
+if GEMINI_API_KEY:
+    genai.configure(api_key=GEMINI_API_KEY)
 
 ICAO_DICT = {
     "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
@@ -122,6 +130,33 @@ def translate_e_section(text):
         
     return e_section
 
+def get_ai_explanation(raw_text):
+    if not GEMINI_API_KEY:
+        return None
+    try:
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        prompt = f"""Read this aviation NOTAM:
+{raw_text}
+
+Task 1: Explain the NOTAM in very simple words for a general audience.
+Task 2: Assign the highest category. Choices are:
+'First Level' (for complete airspace closure or major security events)
+'Second Level' (for military exercises, gun fire, or restricted airspace)
+'Third Level' (for routine aviation changes)
+
+Return ONLY a valid JSON dictionary with no markdown formatting. It must have exactly two keys: "explanation" and "highest_level".
+"""
+        response = model.generate_content(prompt)
+        text = response.text.strip()
+        if text.startswith("```json"):
+            text = text[7:-3]
+        elif text.startswith("```"):
+            text = text[3:-3]
+        return json.loads(text.strip())
+    except Exception as e:
+        print(f"AI Error {e}")
+        return None
+
 def send_telegram(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     payload = {
@@ -133,7 +168,7 @@ def send_telegram(message):
     try:
         requests.post(url, json=payload, timeout=10)
     except Exception as e:
-        print(f"Telegram Error: {e}")
+        print(f"Telegram Error {e}")
 
 def decode_notam(raw_text):
     fd_in, temp_path_in = tempfile.mkstemp(text=True)
@@ -176,7 +211,7 @@ def decode_notam(raw_text):
             
         return json.loads(output_data)
     except Exception as e:
-        return {"error": f"PYTHON CRASH: {str(e)}"}
+        return {"error": f"PYTHON CRASH {str(e)}"}
     finally:
         if os.path.exists(temp_path_in):
             os.remove(temp_path_in)
@@ -218,7 +253,7 @@ def get_all_notams():
                 break
             time.sleep(1)
         except Exception as e:
-            print(f"Error fetching page at offset {offset}: {e}")
+            print(f"Error fetching page at offset {offset} {e}")
             break
             
     return all_notams
@@ -237,7 +272,7 @@ def save_json(filepath, data):
         json.dump(data, f, indent=2)
 
 def generate_map_html(decoded_dict):
-    features_js = "var markers = {};\n"
+    features_js = "var markers = {};\\n"
     for full_id, data in decoded_dict.items():
         if "error" in data: continue
             
@@ -258,18 +293,18 @@ def generate_map_html(decoded_dict):
                 if isinstance(pt, list) and len(pt) == 2:
                     js_coords.append([pt[0], pt[1]])
             if js_coords:
-                features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\n"
+                features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\\n"
                 
         elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
             lat, lng = coords[0][0], coords[0][1]
             rad_nm = coords[1].get("radius", 0)
             if rad_nm:
                 rad_meters = rad_nm * 1852
-                features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\n"
+                features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\\n"
                 
         elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
             lat, lng = coords[0], coords[1]
-            features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\n"
+            features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\\n"
 
     html = f"""<!DOCTYPE html>
 <html>
@@ -313,11 +348,6 @@ def generate_map_html(decoded_dict):
 </html>"""
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
-        
-    try:
-        subprocess.run(["git", "add", "index.html"])
-    except:
-        pass
 
 def main():
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
@@ -327,9 +357,11 @@ def main():
     
     active_notams_raw = load_json(ACTIVE_RAW_FILE, {})
     active_notams_decoded = load_json(ACTIVE_DECODED_FILE, {})
+    active_notams_ai = load_json(ACTIVE_AI_FILE, {})
     
     expired_notams_raw = load_json(EXPIRED_RAW_FILE, {})
     expired_notams_decoded = load_json(EXPIRED_DECODED_FILE, {})
+    expired_notams_ai = load_json(EXPIRED_AI_FILE, {})
     
     notam_list = get_all_notams()
     
@@ -340,6 +372,7 @@ def main():
     current_time_str = datetime.utcnow().strftime('%Y/%m/%d %H:%M:%S')
     current_raw_dict = {}
     current_decoded_dict = {}
+    current_ai_dict = {}
     new_count = 0
 
     for notam in notam_list:
@@ -364,6 +397,17 @@ def main():
             if decoded_obj:
                 decoded_obj["last_seen_utc"] = current_time_str
                 current_decoded_dict[full_id] = decoded_obj
+
+        if full_id in active_notams_ai and "error" not in active_notams_ai[full_id]:
+            ai_data = active_notams_ai[full_id]
+            ai_data["last_seen_utc"] = current_time_str
+            current_ai_dict[full_id] = ai_data
+        else:
+            ai_data = get_ai_explanation(raw_text)
+            if ai_data:
+                ai_data["last_seen_utc"] = current_time_str
+                current_ai_dict[full_id] = ai_data
+                time.sleep(2)
 
         if full_id not in seen_ids:
             subject_text = "Unknown Subject"
@@ -424,10 +468,8 @@ def main():
                     elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
                         lat = coords[0]
                         lng = coords[1]
-                        map_links.append(f"📍 [View Pin on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},6z)")
                         map_links.append(f"🗺️ [View Location on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
 
-            # Fallback Safety Net
             if "Unknown" in subject_text or "Unknown" in condition_text:
                 q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
                 if q_match:
@@ -441,33 +483,39 @@ def main():
             subject_text = re.sub(r'\s*\(.*?\)', '', subject_text).strip()
             condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
 
-            translated_e = translate_e_section(raw_text)
+            pyramid_levels = "Third Level"
+            ai_explanation = translate_e_section(raw_text)
             
-            if decoded_obj and "error" in decoded_obj:
-                error_msg = decoded_obj.get("error", "Failed to parse")
-                msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**System Error:** {error_msg}\n\n**Raw Text:**\n`{raw_text}`"
-            elif decoded_obj and "errors" in decoded_obj:
-                error_list = ", ".join(decoded_obj["errors"])
-                msg = f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}`\n\n**Decoder Alert:** {error_list}\n\n**Raw Text:**\n`{raw_text}`"
-            else:
-                msg_parts = [
-                    f"🚀 **TEHRAN FIR ALERT (OIIX)**",
-                    f"`{notam_id}` • {notam_type}\n",
-                    f"📅 **From:** {valid_from_str}",
-                    f"📅 **To:** {valid_to_str}\n",
-                    f"🏷️ **Subject:** {subject_text}",
-                    f"⚠️ **Condition:** {condition_text}",
-                    f"✈️ **Traffic:** {traffic_list}\n"
-                ]
+            if ai_data and "highest_level" in ai_data:
+                lvl = ai_data.get("highest_level", "Third Level")
+                if "First" in lvl:
+                    pyramid_levels = "First Level, Second Level, Third Level"
+                elif "Second" in lvl:
+                    pyramid_levels = "Second Level, Third Level"
+                else:
+                    pyramid_levels = "Third Level"
                 
-                if map_links:
-                    msg_parts.extend(map_links)
-                    msg_parts.append("")
-                    
-                msg_parts.append(f"📝 **Translated Message:**\n{translated_e}\n")
-                msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+                ai_explanation = ai_data.get("explanation", ai_explanation)
+
+            msg_parts = [
+                f"🚀 **TEHRAN FIR ALERT (OIIX)**",
+                f"`{notam_id}` • {notam_type}\n",
+                f"📅 **From:** {valid_from_str}",
+                f"📅 **To:** {valid_to_str}\n",
+                f"🏷️ **Subject:** {subject_text}",
+                f"⚠️ **Condition:** {condition_text}",
+                f"✈️ **Traffic:** {traffic_list}\n"
+            ]
+            
+            if map_links:
+                msg_parts.extend(map_links)
+                msg_parts.append("")
                 
-                msg = "\n".join(msg_parts)
+            msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
+            msg_parts.append(f"🤖 **AI Simple Explanation:**\n{ai_explanation}\n")
+            msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+            
+            msg = "\n".join(msg_parts)
             
             send_telegram(msg)
             seen_ids[full_id] = current_time_str
@@ -476,6 +524,7 @@ def main():
     removed_count = 0
     newly_expired_raw = {}
     newly_expired_decoded = {}
+    newly_expired_ai = {}
     
     for old_id, old_data in active_notams_raw.items():
         if old_id not in current_raw_dict:
@@ -487,10 +536,16 @@ def main():
                 dec_data["archived_utc"] = current_time_str
                 newly_expired_decoded[old_id] = dec_data
                 
+            if old_id in active_notams_ai:
+                ai_ex_data = active_notams_ai[old_id]
+                ai_ex_data["archived_utc"] = current_time_str
+                newly_expired_ai[old_id] = ai_ex_data
+                
             removed_count += 1
             
     expired_notams_raw = {**newly_expired_raw, **expired_notams_raw}
     expired_notams_decoded = {**newly_expired_decoded, **expired_notams_decoded}
+    expired_notams_ai = {**newly_expired_ai, **expired_notams_ai}
 
     new_state = {}
     for cid in current_raw_dict.keys():
@@ -499,8 +554,10 @@ def main():
     save_json(STATE_FILE, new_state)
     save_json(ACTIVE_RAW_FILE, current_raw_dict)
     save_json(ACTIVE_DECODED_FILE, current_decoded_dict)
+    save_json(ACTIVE_AI_FILE, current_ai_dict)
     save_json(EXPIRED_RAW_FILE, expired_notams_raw)
     save_json(EXPIRED_DECODED_FILE, expired_notams_decoded)
+    save_json(EXPIRED_AI_FILE, expired_notams_ai)
 
     generate_map_html(current_decoded_dict)
 
@@ -514,7 +571,7 @@ def main():
     run_history.insert(0, run_record)
     save_json(HISTORY_FILE, run_history[:250])
     
-    print(f"Stats: Total {len(current_raw_dict)}, New {new_count}, Removed {removed_count}")
+    print(f"Stats Total {len(current_raw_dict)}, New {new_count}, Removed {removed_count}")
 
 if __name__ == "__main__":
     main()
