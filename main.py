@@ -451,15 +451,22 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
             left: 50%;
             transform: translate(-50%, -50%);
             background: white;
-            padding: 30px;
+            padding: 20px;
             border: 3px solid #ff3333;
             border-radius: 12px;
             z-index: 9999;
             text-align: center;
             box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-            font-size: 17px;
-            width: 80%;
+            font-size: 15px;
+            width: 85%;
             max-width: 400px;
+        }}
+        @media (min-width: 768px) {{
+            #error-modal {{
+                font-size: 18px;
+                max-width: 600px;
+                padding: 30px;
+            }}
         }}
         #error-modal img {{
             max-width: 100%;
@@ -555,9 +562,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 7}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 6.5);
+                        map.setView(layer.getLatLng(), 7);
                     }}
                     layer.openPopup();
                 }} else {{
@@ -585,19 +592,15 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
     
     if is_update:
         msg_parts.append("⚠️ *This NOTAM is not new and has been sent before. The bot is sending it again because the AI explanation has now been provided.*")
-        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
-    else:
-        msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
-        
-    msg_parts.extend([
-        f"NOTAM Number: {notam_id} • {notam_type}",
-        f"🚨 Importance level: {importance_str}",
-        "------------------------------------",
-        f"🏷️ Subject: {subject_text}",
-        f"⚠️ Condition: {condition_text}",
-        f"✈️ Traffic: {traffic_list}",
-        "------------------------------------"
-    ])
+    
+    msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
+    msg_parts.append(f"NOTAM Number: {notam_id} • {notam_type}")
+    msg_parts.append(f"🚨 Importance level: {importance_str}")
+    msg_parts.append("------------------------------------")
+    msg_parts.append(f"🏷️ Subject: {subject_text}")
+    msg_parts.append(f"⚠️ Condition: {condition_text}")
+    msg_parts.append(f"✈️ Traffic: {traffic_list}")
+    msg_parts.append("------------------------------------")
     
     if pyramid_levels == "Pending" or pyramid_levels == "⏳ Pending" or "⏳" in pyramid_levels:
         msg_parts.append("🤖 NOTAM Explanation (Internal Decoder Fallback):")
