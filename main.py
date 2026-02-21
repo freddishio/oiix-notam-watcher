@@ -372,28 +372,66 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
 
     return notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links
 
-def generate_map_html(decoded_dict):
+def generate_map_html(decoded_dict, ai_dict, raw_dict):
     features_js = "var markers = {};\n"
     for full_id, data in decoded_dict.items():
         if "error" in data: continue
+        
+        raw_text = raw_dict.get(full_id, {}).get("icaoMessage", "")
+        ai_data = ai_dict.get(full_id, {})
+        
         qual = data.get("qualification", {})
         coords = qual.get("coordinates")
         content = data.get("content", {})
         area = content.get("area")
         notam_id_only = full_id.split()[-1]
+        
         subject = qual.get('code', {}).get('subject', 'Unknown Subject').replace("'", "\\'")
-        popup_text = f"<b>{notam_id_only}</b><br>{subject}"
+        
+        lvl = ai_data.get("highest_level", "Third Level")
+        if not lvl or "Third" in lvl:
+            color = "#00ff00"
+            lvl_str = "3️⃣ Third"
+        elif "Second" in lvl:
+            color = "#ffa500"
+            lvl_str = "2️⃣ Second"
+        elif "First" in lvl:
+            color = "#ff0000"
+            lvl_str = "1️⃣ First"
+        else:
+            color = "#00ff00"
+            lvl_str = "⏳ Pending"
+            
+        b_match = re.search(r'B\)\s*(\d{10})', raw_text)
+        c_match = re.search(r'C\)\s*(\d{10}|PERM)(.*?)(\n|D\)|E\)|F\)|G\))', raw_text)
+        valid_from_str = "Unknown"
+        valid_to_str = "Unknown"
+        if b_match:
+            dt_utc, dt_teh = parse_and_convert_time(b_match.group(1))
+            if dt_teh: valid_from_str = dt_teh.strftime('%Y/%m/%d %H:%M')
+        if c_match:
+            val_c = c_match.group(1)
+            if val_c == "PERM":
+                valid_to_str = "Permanent"
+            else:
+                dt_utc, dt_teh = parse_and_convert_time(val_c)
+                if dt_teh: valid_to_str = dt_teh.strftime('%Y/%m/%d %H:%M')
+                
+        popup_text = f"<b>NOTAM Number:</b> {notam_id_only}<br>"
+        popup_text += f"<b>NOTAM Subject:</b> {subject}<br>"
+        popup_text += f"<b>Importance level:</b> {lvl_str}<br>"
+        popup_text += f"<b>NOTAM time:</b> {valid_from_str} to {valid_to_str}"
         
         if area and isinstance(area, list) and len(area) > 2:
             js_coords = [[pt[0], pt[1]] for pt in area if isinstance(pt, list) and len(pt) == 2]
-            if js_coords: features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '#ff0000', weight: 2, fillOpacity: 0.2}}).addTo(map).bindPopup('{popup_text}');\n"
+            if js_coords: features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '{color}', weight: 2, fillOpacity: 0.3}}).addTo(map).bindPopup('{popup_text}');\n"
         elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
             lat, lng = coords[0][0], coords[0][1]
             rad_meters = coords[1].get("radius", 0) * 1852
-            if rad_meters: features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '#ff9900', radius: {rad_meters}, weight: 2}}).addTo(map).bindPopup('{popup_text}');\n"
+            if rad_meters: features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '{color}', radius: {rad_meters}, weight: 2, fillOpacity: 0.3}}).addTo(map).bindPopup('{popup_text}');\n"
         elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
             lat, lng = coords[0], coords[1]
-            features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\n"
+            features_js += f"markers['{notam_id_only}'] = L.circleMarker([{lat}, {lng}], {{color: '{color}', radius: 8, weight: 2, fillOpacity: 0.8}}).addTo(map).bindPopup('{popup_text}');\n"
 
     html = f"""<!DOCTYPE html>
 <html>
@@ -431,7 +469,19 @@ def generate_map_html(decoded_dict):
         
         var firLayer = L.geoJSON(null, {{
             style: function(feature) {{
-                return {{color: "#0055ff", weight: 2, fillOpacity: 0.05}};
+                var isIran = false;
+                if (feature.properties) {{
+                    var id = feature.properties.id || "";
+                    var name = feature.properties.FIRname || "";
+                    if (id === "OIIX" || name.indexOf("Tehran") !== -1) {{
+                        isIran = true;
+                    }}
+                }}
+                return {{
+                    color: "#0055ff", 
+                    weight: 2, 
+                    fillOpacity: isIran ? 0.15 : 0.0
+                }};
             }},
             onEachFeature: function(feature, layer) {{
                 if (feature.properties && feature.properties.id) {{
@@ -458,14 +508,18 @@ def generate_map_html(decoded_dict):
         
         setTimeout(function() {{
             var hash = window.location.hash.substring(1);
-            if (hash && markers[hash]) {{
-                var layer = markers[hash];
-                if (layer.getBounds) {{
-                    map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});
+            if (hash) {{
+                if (markers[hash]) {{
+                    var layer = markers[hash];
+                    if (layer.getBounds) {{
+                        map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});
+                    }} else if (layer.getLatLng) {{
+                        map.setView(layer.getLatLng(), 8);
+                    }}
+                    layer.openPopup();
                 }} else {{
-                    map.setView(layer.getLatLng(), 8);
+                    alert("The region for NOTAM " + hash + " is not loaded yet. GitHub takes a few minutes to update the map. Please try refreshing the page in about 3 minutes.");
                 }}
-                layer.openPopup();
             }}
         }}, 500);
     </script>
@@ -487,17 +541,21 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
     
     if is_update:
         msg_parts.append("⚠️ *This NOTAM is not new and has been sent before. The bot is sending it again because the AI explanation has now been provided.*")
+        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
+    else:
+        msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
+        
+    msg_parts.extend([
+        f"NOTAM Number: {notam_id} • {notam_type}",
+        f"🚨 Importance level: {importance_str}",
+        "------------------------------------",
+        f"🏷️ Subject: {subject_text}",
+        f"⚠️ Condition: {condition_text}",
+        f"✈️ Traffic: {traffic_list}",
+        "------------------------------------"
+    ])
     
-    msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
-    msg_parts.append(f"NOTAM Number: {notam_id} • {notam_type}")
-    msg_parts.append(f"🚨 Importance level: {importance_str}")
-    msg_parts.append("------------------------------------")
-    msg_parts.append(f"🏷️ Subject: {subject_text}")
-    msg_parts.append(f"⚠️ Condition: {condition_text}")
-    msg_parts.append(f"✈️ Traffic: {traffic_list}")
-    msg_parts.append("------------------------------------")
-    
-    if pyramid_levels == "Pending":
+    if pyramid_levels == "Pending" or pyramid_levels == "⏳ Pending" or "⏳" in pyramid_levels:
         msg_parts.append("🤖 NOTAM Explanation (Internal Decoder Fallback):")
     else:
         msg_parts.append("🤖 NOTAM Explanation (Generated by AI):")
@@ -512,9 +570,11 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
         for link in map_links:
             msg_parts.append(link)
         
-    msg_parts.append("------------------------------------")
-    msg_parts.append("NOTAM Raw Text:")
-    msg_parts.append(f"`{raw_text}`")
+    msg_parts.extend([
+        "------------------------------------",
+        "NOTAM Raw Text:",
+        f"`{raw_text}`"
+    ])
         
     return "\n".join(msg_parts)
 
@@ -654,7 +714,7 @@ def main():
     save_json(EXPIRED_DECODED_FILE, expired_notams_decoded)
     save_json(EXPIRED_AI_FILE, expired_notams_ai)
 
-    generate_map_html(current_decoded_dict)
+    generate_map_html(current_decoded_dict, current_ai_dict, current_raw_dict)
 
     run_record = {
         "time_utc": current_time_str,
