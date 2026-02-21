@@ -3576,6 +3576,90 @@
     },
     "last_seen_utc": "2026/02/21 10:20:25"
   },
+  "OIIX B0140/26": {
+    "header": {
+      "id": "B0140/26",
+      "series": "B",
+      "number": "0140",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/110/3329N04607E004",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          33.483333,
+          46.116667
+        ],
+        {
+          "radius": 4
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "110"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-24T09:30:00.000Z",
+      "validityEnd": "2026-04-05T18:30:00.000Z",
+      "elements": [
+        "0930-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 4 NM CENTERED AT:\n332831N 0460656E.",
+      "area": [
+        [
+          33.4675,
+          46.115556
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "11000 FT AMSL"
+    },
+    "last_seen_utc": "2026/02/21 10:30:15"
+  },
   "OIIX A0589/26": {
     "header": {
       "id": "A0589/26",
@@ -3761,89 +3845,5 @@
       "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n DATE 19 MAR 2026."
     },
     "last_seen_utc": "2026/02/20 04:55:03"
-  },
-  "OIIX B0140/26": {
-    "header": {
-      "id": "B0140/26",
-      "series": "B",
-      "number": "0140",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/110/3329N04607E004",
-      "location": "OIIX",
-      "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "coordinates": [
-        [
-          33.483333,
-          46.116667
-        ],
-        {
-          "radius": 4
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "110"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-03-24T09:30:00.000Z",
-      "validityEnd": "2026-04-05T18:30:00.000Z",
-      "elements": [
-        "0930-1830"
-      ]
-    },
-    "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 4 NM CENTERED AT:\n332831N 0460656E.",
-      "area": [
-        [
-          33.4675,
-          46.115556
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "11000 FT AMSL"
-    },
-    "last_seen_utc": "2026/02/21 10:30:15"
   }
 }
