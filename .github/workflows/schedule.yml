@@ -31,7 +31,13 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY_F92: ${{ secrets.GEMINI_API_KEY_F92 }}
+          GEMINI_API_KEY_F1: ${{ secrets.GEMINI_API_KEY_F1 }}
+          GEMINI_API_KEY_FRED: ${{ secrets.GEMINI_API_KEY_FRED }}
+          GEMINI_API_KEY_APHR: ${{ secrets.GEMINI_API_KEY_APHR }}
+          GEMINI_API_KEY_MARZI: ${{ secrets.GEMINI_API_KEY_MARZI }}
+          GEMINI_API_KEY_REZA: ${{ secrets.GEMINI_API_KEY_REZA }}
+          GEMINI_API_KEY_MARY: ${{ secrets.GEMINI_API_KEY_MARY }}
         run: python main.py
 
       - name: Save state
