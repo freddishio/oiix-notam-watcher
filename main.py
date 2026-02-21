@@ -442,11 +442,42 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        body {{ padding: 0; margin: 0; }}
+        body {{ padding: 0; margin: 0; font-family: Arial, sans-serif; }}
         #map {{ height: 100vh; width: 100vw; }}
+        #error-modal {{
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border: 3px solid #ff3333;
+            border-radius: 12px;
+            z-index: 9999;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            font-size: 18px;
+        }}
+        #error-modal button {{
+            margin-top: 20px;
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }}
     </style>
 </head>
 <body>
+    <div id="error-modal">
+        ❌ The region for NOTAM <span id="error-notam" style="font-weight:bold;"></span> is not loaded yet ❌<br><br>
+        🖥️ The server takes a few minutes to update the map 🖥️<br><br>
+        <b>⌛ Please try refreshing the page after 3 minutes ⌛</b><br>
+        <button onclick="document.getElementById('error-modal').style.display='none'">Close</button>
+    </div>
     <div id="map"></div>
     <script>
         var googleStreets = L.tileLayer('https://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
@@ -512,13 +543,14 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 8);
+                        map.setView(layer.getLatLng(), 6);
                     }}
                     layer.openPopup();
                 }} else {{
-                    alert("The region for NOTAM " + hash + " is not loaded yet. GitHub takes a few minutes to update the map. Please try refreshing the page in about 3 minutes.");
+                    document.getElementById('error-notam').innerText = hash;
+                    document.getElementById('error-modal').style.display = 'block';
                 }}
             }}
         }}, 500);
@@ -541,19 +573,15 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
     
     if is_update:
         msg_parts.append("⚠️ *This NOTAM is not new and has been sent before. The bot is sending it again because the AI explanation has now been provided.*")
-        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
-    else:
-        msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
-        
-    msg_parts.extend([
-        f"NOTAM Number: {notam_id} • {notam_type}",
-        f"🚨 Importance level: {importance_str}",
-        "------------------------------------",
-        f"🏷️ Subject: {subject_text}",
-        f"⚠️ Condition: {condition_text}",
-        f"✈️ Traffic: {traffic_list}",
-        "------------------------------------"
-    ])
+    
+    msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
+    msg_parts.append(f"NOTAM Number: {notam_id} • {notam_type}")
+    msg_parts.append(f"🚨 Importance level: {importance_str}")
+    msg_parts.append("------------------------------------")
+    msg_parts.append(f"🏷️ Subject: {subject_text}")
+    msg_parts.append(f"⚠️ Condition: {condition_text}")
+    msg_parts.append(f"✈️ Traffic: {traffic_list}")
+    msg_parts.append("------------------------------------")
     
     if pyramid_levels == "Pending" or pyramid_levels == "⏳ Pending" or "⏳" in pyramid_levels:
         msg_parts.append("🤖 NOTAM Explanation (Internal Decoder Fallback):")
