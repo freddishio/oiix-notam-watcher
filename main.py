@@ -422,7 +422,27 @@ def generate_map_html(decoded_dict):
             "Terrain": googleTerrain
         }};
         
-        L.control.layers(baseMaps).addTo(map);
+        var firLayer = L.geoJSON(null, {{
+            style: function(feature) {{
+                return {{color: "#0055ff", weight: 2, fillOpacity: 0.05}};
+            }},
+            onEachFeature: function(feature, layer) {{
+                if (feature.properties && feature.properties.FIRname) {{
+                    layer.bindPopup("<b>FIR Airspace:</b> " + feature.properties.FIRname);
+                }}
+            }}
+        }});
+
+        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/main/FIR_Boundaries.geojson')
+            .then(res => res.json())
+            .then(data => firLayer.addData(data))
+            .catch(err => console.error("Could not load FIR boundaries:", err));
+
+        var overlayMaps = {{
+            "Show Airspace Boundaries (FIR)": firLayer
+        }};
+        
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
         
         {features_js}
         
