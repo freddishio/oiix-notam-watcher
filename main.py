@@ -307,8 +307,12 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
         dt_utc, dt_teh = parse_and_convert_time(b_match.group(1))
         if dt_utc:
             rel = get_relative_string(dt_utc)
-            status = "Starts" if (dt_utc > datetime.now(timezone.utc)) else "Started"
-            valid_from_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel})"
+            status = "Started" if (dt_utc < datetime.now(timezone.utc)) else "Starts in"
+            # Adjust the text slightly for grammar based on Starts/Started
+            if "ago" in rel:
+                valid_from_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time (Started {rel})"
+            else:
+                valid_from_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel.replace('in ', '')})"
 
     if c_match:
         val_c = c_match.group(1)
@@ -318,9 +322,12 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
             dt_utc, dt_teh = parse_and_convert_time(val_c)
             if dt_utc:
                 rel = get_relative_string(dt_utc)
-                status = "Expires" if (dt_utc > datetime.now(timezone.utc)) else "Expired"
+                status = "Expired" if (dt_utc < datetime.now(timezone.utc)) else "Expires in"
                 est_tag = " (Estimated)" if "EST" in c_match.group(2) else ""
-                valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel}){est_tag}"
+                if "ago" in rel:
+                    valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time (Expired {rel}){est_tag}"
+                else:
+                    valid_to_str = f"{dt_teh.strftime('%Y/%m/%d %H:%M')} Tehran Time ({status} {rel.replace('in ', '')}){est_tag}"
 
     if decoded_obj and "qualification" in decoded_obj:
         header = decoded_obj.get("header", {})
@@ -343,14 +350,11 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
             area = content_block.get("area")
             
             if area and isinstance(area, list) and len(area) > 2:
-                map_links.append(f"🗺️ [View Highlighted Region on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+                map_links.append(f"🗺️ [Click to View Area on Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
             elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
-                map_links.append(f"🗺️ [View Circular Area on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+                map_links.append(f"🗺️ [Click to View Area on Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
             elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
-                lat = coords[0]
-                lng = coords[1]
-                map_links.append(f"📍 [View Pin on Google Maps](https://www.google.com/maps/place/{lat},{lng}/@{lat},{lng},6z)")
-                map_links.append(f"🗺️ [View Location on Custom Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
+                map_links.append(f"🗺️ [Click to View Area on Map](https://raw.githack.com/freddishio/oiix-notam-watcher/main/index.html#{notam_id})")
 
     if "Unknown" in subject_text or "Unknown" in condition_text:
         q_match = re.search(r'Q\)\s*[A-Z]{4}/Q([A-Z]{2})([A-Z]{2})', raw_text)
@@ -433,8 +437,11 @@ def generate_map_html(decoded_dict):
             }}
         }});
 
-        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/main/FIR_Boundaries.geojson')
-            .then(res => res.json())
+        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/master/FIR_Boundaries.geojson')
+            .then(res => {{
+                if (!res.ok) throw new Error("Network response was not ok");
+                return res.json();
+            }})
             .then(data => firLayer.addData(data))
             .catch(err => console.error("Could not load FIR boundaries:", err));
 
@@ -464,30 +471,47 @@ def generate_map_html(decoded_dict):
     with open("index.html", "w", encoding="utf-8") as f: f.write(html)
 
 def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False):
+    
+    importance_str = "⏳ Pending"
+    if "First" in pyramid_levels:
+        importance_str = "1️⃣ First"
+    elif "Second" in pyramid_levels:
+        importance_str = "2️⃣ Second"
+    elif "Third" in pyramid_levels:
+        importance_str = "3️⃣ Third"
+
     msg_parts = []
     
     if is_update:
         msg_parts.append("⚠️ *This NOTAM is not new and has been sent before. The bot is sending it again because the AI explanation has now been provided.*")
-        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**\n`{notam_id}` • {notam_type}")
+        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
     else:
-        msg_parts.append(f"🚀 **TEHRAN FIR ALERT (OIIX)**\n`{notam_id}` • {notam_type}")
+        msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
         
     msg_parts.extend([
-        "",
-        f"📅 **From:** {valid_from_str}",
-        f"📅 **To:** {valid_to_str}\n",
-        f"🏷️ **Subject:** {subject_text}",
-        f"⚠️ **Condition:** {condition_text}",
-        f"✈️ **Traffic:** {traffic_list}\n"
+        f"NOTAM Number: {notam_id} • {notam_type}",
+        f"🚨 Importance level: {importance_str}",
+        "------------------------------------",
+        f"🏷️ Subject: {subject_text}",
+        f"⚠️ Condition: {condition_text}",
+        f"✈️ Traffic: {traffic_list}",
+        "------------------------------------",
+        "🤖 NOTAM Explanation (Generated by AI):",
+        f"{ai_explanation}",
+        "------------------------------------",
+        f"📅 From: {valid_from_str}",
+        f"📅 To: {valid_to_str}"
     ])
     
-    if map_links: 
+    if map_links and not is_update: 
+        msg_parts.append("------------------------------------")
         msg_parts.extend(map_links)
-        msg_parts.append("")
         
-    msg_parts.append(f"📊 **Category:** {pyramid_levels}")
-    msg_parts.append(f"🤖 {ai_explanation}\n")
-    msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
+    msg_parts.extend([
+        "------------------------------------",
+        "NOTAM Raw Text:",
+        f"`{raw_text}`"
+    ])
         
     return "\n".join(msg_parts)
 
@@ -545,11 +569,8 @@ def main():
                 current_ai_dict[buf_id] = ai_data
                 
                 lvl = ai_data.get("highest_level", "Third Level")
-                if "First" in lvl: pyramid_levels = "First Level"
-                elif "Second" in lvl: pyramid_levels = "Second Level"
-                else: pyramid_levels = "Third Level"
-                
-                ai_explanation = "**AI Final Explanation:**\n" + ai_data.get("explanation", "")
+                pyramid_levels = lvl
+                ai_explanation = ai_data.get("explanation", "")
                 
                 notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(buf_id, {}), notam_id)
                 
@@ -579,14 +600,12 @@ def main():
                 current_ai_dict[full_id] = ai_data
                 
                 lvl = ai_data.get("highest_level", "Third Level")
-                if "First" in lvl: pyramid_levels = "First Level"
-                elif "Second" in lvl: pyramid_levels = "Second Level"
-                else: pyramid_levels = "Third Level"
-                ai_explanation = "**AI Simple Explanation:**\n" + ai_data.get("explanation", internal_translation)
+                pyramid_levels = lvl
+                ai_explanation = ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
-                pyramid_levels = "⏳ *Pending AI Analysis*"
-                ai_explanation = f"⏳ **AI Unavailable. Internal Decoder Fallback:**\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
+                pyramid_levels = "Pending"
+                ai_explanation = f"⏳ AI is currently unavailable. Using internal decoder fallback:\n\n{internal_translation}\n\n*(Will automatically update when AI is available)*"
 
             notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(full_id, {}), notam_id)
 
