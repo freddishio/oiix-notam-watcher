@@ -22,7 +22,16 @@
             z-index: 9999;
             text-align: center;
             box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-            font-size: 18px;
+            font-size: 17px;
+            width: 80%;
+            max-width: 400px;
+        }
+        #error-modal img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            border-radius: 8px;
+            margin-bottom: 15px;
         }
         #error-modal button {
             margin-top: 20px;
@@ -38,6 +47,8 @@
 </head>
 <body>
     <div id="error-modal">
+        <img src="Panda.gif" alt="Waiting Panda">
+        <br>
         ❌ The region for NOTAM <span id="error-notam" style="font-weight:bold;"></span> is not loaded yet ❌<br><br>
         🖥️ The server takes a few minutes to update the map 🖥️<br><br>
         <b>⌛ Please try refreshing the page after 3 minutes ⌛</b><br>
@@ -53,6 +64,7 @@
         var map = L.map('map', {
             center: [32.4279, 53.6880],
             zoom: 5,
+            zoomSnap: 0.5,
             layers: [googleStreets]
         });
         
@@ -138,9 +150,9 @@ markers['B0139/26'] = L.circle([32.533333, 55.233333], {color: '#ffa500', radius
                 if (markers[hash]) {
                     var layer = markers[hash];
                     if (layer.getBounds) {
-                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 6});
+                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 6.5});
                     } else if (layer.getLatLng) {
-                        map.setView(layer.getLatLng(), 6);
+                        map.setView(layer.getLatLng(), 6.5);
                     }
                     layer.openPopup();
                 } else {
