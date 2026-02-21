@@ -7,11 +7,42 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        body { padding: 0; margin: 0; }
+        body { padding: 0; margin: 0; font-family: Arial, sans-serif; }
         #map { height: 100vh; width: 100vw; }
+        #error-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border: 3px solid #ff3333;
+            border-radius: 12px;
+            z-index: 9999;
+            text-align: center;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            font-size: 18px;
+        }
+        #error-modal button {
+            margin-top: 20px;
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
+    <div id="error-modal">
+        ❌ The region for NOTAM <span id="error-notam" style="font-weight:bold;"></span> is not loaded yet ❌<br><br>
+        🖥️ The server takes a few minutes to update the map 🖥️<br><br>
+        <b>⌛ Please try refreshing the page after 3 minutes ⌛</b><br>
+        <button onclick="document.getElementById('error-modal').style.display='none'">Close</button>
+    </div>
     <div id="map"></div>
     <script>
         var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'});
@@ -97,8 +128,8 @@ markers['B0138/26'] = L.circle([33.2, 46.25], {color: '#ffa500', radius: 7408, w
 markers['B0140/26'] = L.circle([33.483333, 46.116667], {color: '#ffa500', radius: 7408, weight: 2, fillOpacity: 0.3}).addTo(map).bindPopup('<b>NOTAM Number:</b> B0140/26<br><b>NOTAM Subject:</b> Missile, gun or rocket firing<br><b>Importance level:</b> 2️⃣ Second<br><b>NOTAM time:</b> 2026/02/24 13:00 to 2026/03/05 22:00');
 markers['A0589/26'] = L.polygon([[33.4, 47.983333], [33.366667, 48.05], [33.35, 48.033333], [33.383333, 47.966667]], {color: '#ffa500', weight: 2, fillOpacity: 0.3}).addTo(map).bindPopup('<b>NOTAM Number:</b> A0589/26<br><b>NOTAM Subject:</b> Missile, gun or rocket firing<br><b>Importance level:</b> 2️⃣ Second<br><b>NOTAM time:</b> 2026/02/25 07:00 to 2026/03/18 10:00');
 markers['B0141/26'] = L.circle([32.733333, 47.266667], {color: '#ffa500', radius: 7408, weight: 2, fillOpacity: 0.3}).addTo(map).bindPopup('<b>NOTAM Number:</b> B0141/26<br><b>NOTAM Subject:</b> Missile, gun or rocket firing<br><b>Importance level:</b> 2️⃣ Second<br><b>NOTAM time:</b> 2026/02/28 07:00 to 2026/03/18 00:00');
-markers['B0139/26'] = L.circle([32.533333, 55.233333], {color: '#ffa500', radius: 5556, weight: 2, fillOpacity: 0.3}).addTo(map).bindPopup('<b>NOTAM Number:</b> B0139/26<br><b>NOTAM Subject:</b> Missile, gun or rocket firing<br><b>Importance level:</b> 2️⃣ Second<br><b>NOTAM time:</b> 2026/03/06 07:00 to 2026/03/16 17:00');
 markers['B0142/26'] = L.polygon([[36.8, 49.266111], [36.784167, 49.271667], [36.784167, 49.270833], [36.783889, 49.266111], [36.783889, 49.258611]], {color: '#ffa500', weight: 2, fillOpacity: 0.3}).addTo(map).bindPopup('<b>NOTAM Number:</b> B0142/26<br><b>NOTAM Subject:</b> Missile, gun or rocket firing<br><b>Importance level:</b> 2️⃣ Second<br><b>NOTAM time:</b> 2026/03/03 08:00 to 2026/03/10 00:00');
+markers['B0139/26'] = L.circle([32.533333, 55.233333], {color: '#ffa500', radius: 5556, weight: 2, fillOpacity: 0.3}).addTo(map).bindPopup('<b>NOTAM Number:</b> B0139/26<br><b>NOTAM Subject:</b> Missile, gun or rocket firing<br><b>Importance level:</b> 2️⃣ Second<br><b>NOTAM time:</b> 2026/03/06 07:00 to 2026/03/16 17:00');
 
         
         setTimeout(function() {
@@ -107,13 +138,14 @@ markers['B0142/26'] = L.polygon([[36.8, 49.266111], [36.784167, 49.271667], [36.
                 if (markers[hash]) {
                     var layer = markers[hash];
                     if (layer.getBounds) {
-                        map.fitBounds(layer.getBounds(), {padding: [50, 50]});
+                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 6});
                     } else if (layer.getLatLng) {
-                        map.setView(layer.getLatLng(), 8);
+                        map.setView(layer.getLatLng(), 6);
                     }
                     layer.openPopup();
                 } else {
-                    alert("The region for NOTAM " + hash + " is not loaded yet. GitHub takes a few minutes to update the map. Please try refreshing the page in about 3 minutes.");
+                    document.getElementById('error-notam').innerText = hash;
+                    document.getElementById('error-modal').style.display = 'block';
                 }
             }
         }, 500);

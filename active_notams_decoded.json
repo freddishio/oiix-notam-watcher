@@ -3825,6 +3825,97 @@
     },
     "last_seen_utc": "2026/02/21 10:50:16"
   },
+  "OIIX B0142/26": {
+    "header": {
+      "id": "B0142/26",
+      "series": "B",
+      "number": "0142",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/150/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "150"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-04-03T04:30:00.000Z",
+      "validityEnd": "2026-04-09T20:30:00.000Z",
+      "elements": [
+        "MAR 03 04 08 09 0430-2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA: \n364804N  0491558E\n364730N  0491618E\n364730N  0491615E\n364725N  0491558E\n364725N  0491531E\nTO THE POINT OF ORIGIN",
+      "area": [
+        [
+          36.8,
+          49.266111
+        ],
+        [
+          36.784167,
+          49.271667
+        ],
+        [
+          36.784167,
+          49.270833
+        ],
+        [
+          36.783889,
+          49.266111
+        ],
+        [
+          36.783889,
+          49.258611
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "15000 FT AMSL"
+    },
+    "last_seen_utc": "2026/02/21 11:06:29"
+  },
   "OIIX B0139/26": {
     "header": {
       "id": "B0139/26",
@@ -3923,96 +4014,5 @@
       "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n DATE 19 MAR 2026."
     },
     "last_seen_utc": "2026/02/20 04:55:03"
-  },
-  "OIIX B0142/26": {
-    "header": {
-      "id": "B0142/26",
-      "series": "B",
-      "number": "0142",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/150/",
-      "location": "OIIX",
-      "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "150"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-04-03T04:30:00.000Z",
-      "validityEnd": "2026-04-09T20:30:00.000Z",
-      "elements": [
-        "MAR 03 04 08 09 0430-2030"
-      ]
-    },
-    "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA: \n364804N  0491558E\n364730N  0491618E\n364730N  0491615E\n364725N  0491558E\n364725N  0491531E\nTO THE POINT OF ORIGIN",
-      "area": [
-        [
-          36.8,
-          49.266111
-        ],
-        [
-          36.784167,
-          49.271667
-        ],
-        [
-          36.784167,
-          49.270833
-        ],
-        [
-          36.783889,
-          49.266111
-        ],
-        [
-          36.783889,
-          49.258611
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "15000 FT AMSL"
-    },
-    "last_seen_utc": "2026/02/21 11:06:29"
   }
 }
