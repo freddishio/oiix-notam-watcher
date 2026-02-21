@@ -24,13 +24,34 @@ EXPIRED_AI_FILE = "expired_notams_ai_decoded.json"
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
+# Load Balancer Array
+API_KEYS = [
+    os.environ.get("GEMINI_API_KEY_F92"),
+    os.environ.get("GEMINI_API_KEY_F1"),
+    os.environ.get("GEMINI_API_KEY_FRED"),
+    os.environ.get("GEMINI_API_KEY_APHR"),
+    os.environ.get("GEMINI_API_KEY_MARZI"),
+    os.environ.get("GEMINI_API_KEY_REZA"),
+    os.environ.get("GEMINI_API_KEY_MARY")
+]
+# Remove any missing keys from the rotation
+API_KEYS = [k for k in API_KEYS if k and k.strip()]
+
+key_index = 0
 ai_rate_limited = False
+
+def get_next_key():
+    global key_index
+    if not API_KEYS:
+        return None
+    key = API_KEYS[key_index]
+    key_index = (key_index + 1) % len(API_KEYS)
+    return key
 
 ICAO_DICT = {
     "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
@@ -131,51 +152,69 @@ def translate_e_section(text):
 
 def get_ai_explanation(raw_text):
     global ai_rate_limited
-    if ai_rate_limited or not GEMINI_API_KEY:
+    if ai_rate_limited or not API_KEYS:
         return None
         
+    # High availability fallback cascade. 2.0 Flash is currently Google's active flagship.
     models = [
-        "gemini-3.0-flash", 
-        "gemini-3.0-flash-latest", 
-        "gemini-2.5-flash", 
         "gemini-2.0-flash", 
-        "gemini-2.0-pro-exp"
+        "gemini-2.5-flash",
+        "gemini-1.5-flash"
     ]
     
     headers = {'Content-Type': 'application/json'}
-    prompt = f"Read this aviation NOTAM:\n{raw_text}\n\nTask 1: Explain the NOTAM in very simple words for a general audience.\nTask 2: Assign the highest category. Choices are ONLY these exact strings:\n'First Level' (for complete airspace closure or major security events)\n'Second Level' (for military exercises, gun fire, or restricted airspace)\n'Third Level' (for routine aviation changes)\n\nReturn ONLY a valid JSON dictionary. No markdown, no code blocks. It must have exactly two keys: \"explanation\" and \"highest_level\"."
-    data = {"contents": [{"parts": [{"text": prompt}]}]}
+    prompt = f"""Read this aviation NOTAM:
+{raw_text}
+
+Task 1: Explain the NOTAM in very simple words for a general audience.
+Task 2: Assign the highest category. Choices are ONLY these exact strings:
+'First Level' (for complete airspace closure or major security events)
+'Second Level' (for military exercises, gun fire, or restricted airspace)
+'Third Level' (for routine aviation changes)
+
+Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have exactly two keys: "explanation" and "highest_level".
+"""
+    data = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "response_mime_type": "application/json",
+            "temperature": 0.2
+        }
+    }
     
-    for model in models:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={GEMINI_API_KEY}"
-        try:
-            response = requests.post(url, headers=headers, json=data, timeout=30)
-            
-            if response.status_code == 404:
-                print(f"Model {model} not found. Trying next...")
+    # Try multiple keys to bypass rate limits
+    for _ in range(len(API_KEYS)):
+        current_key = get_next_key()
+        
+        for model in models:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={current_key}"
+            try:
+                response = requests.post(url, headers=headers, json=data, timeout=30)
+                
+                if response.status_code == 404:
+                    continue # Model not available, try next model
+                    
+                if response.status_code == 429:
+                    print(f"Key rate limited. Rotating to next key...")
+                    break # Break model loop, proceed to next API Key in rotation
+                    
+                response.raise_for_status()
+                res_json = response.json()
+                text = res_json['candidates'][0]['content']['parts'][0]['text'].strip()
+                
+                if text.startswith("```json"): text = text[7:-3]
+                elif text.startswith("```"): text = text[3:-3]
+                
+                time.sleep(3) # Short sleep because load is spread across 7 accounts
+                return json.loads(text.strip())
+                
+            except Exception as e:
+                print(f"Error with {model}: {e}")
                 continue
                 
-            if response.status_code == 429:
-                print(f"Model {model} rate limited (429). Trying next...")
-                continue
-                
-            response.raise_for_status()
-            res_json = response.json()
-            text = res_json['candidates'][0]['content']['parts'][0]['text'].strip()
-            
-            if text.startswith("```json"): text = text[7:-3]
-            elif text.startswith("```"): text = text[3:-3]
-            
-            time.sleep(15)
-            return json.loads(text.strip())
-            
-        except Exception as e:
-            print(f"Error with model {model}: {e}")
-            continue
-            
-    print("All AI models hit rate limits or 404s. Tripping circuit breaker for this run.")
+    print("All 7 API keys hit rate limits or failed. Tripping global circuit breaker.")
     ai_rate_limited = True
-    time.sleep(15)
+    time.sleep(5)
     return None
 
 def send_telegram(message):
@@ -382,7 +421,7 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
         msg_parts.append("")
         
     msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
-    msg_parts.append(f"🤖 {ai_explanation}\n")
+    msg_parts.append(f"🤖 **AI Explanation:**\n{ai_explanation}\n")
     msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
         
     return "\n".join(msg_parts)
@@ -442,12 +481,6 @@ def main():
             print(f"Retrying AI for buffered NOTAM: {buf_id}")
             ai_data = get_ai_explanation(raw_text)
             
-            if ai_data and ai_data.get("rate_limited"):
-                print("Rate limit hit during buffer processing. Tripping breaker.")
-                ai_rate_limited = True
-                new_ai_buffer.append(buf_id)
-                continue
-            
             if ai_data and "highest_level" in ai_data:
                 ai_data["last_seen_utc"] = current_time_str
                 current_ai_dict[buf_id] = ai_data
@@ -457,8 +490,9 @@ def main():
                 elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
                 else: pyramid_levels = "Third Level"
                 
-                ai_explanation = "**AI Final Explanation:**\n" + ai_data.get("explanation", "")
+                ai_explanation = ai_data.get("explanation", "")
                 
+                # Reconstruct full data for the buffer update
                 notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(buf_id, {}), notam_id)
                 
                 msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=True)
@@ -483,10 +517,6 @@ def main():
             if not ai_rate_limited:
                 print(f"Fetching AI for new NOTAM: {full_id}")
                 ai_data = get_ai_explanation(raw_text)
-                if ai_data and ai_data.get("rate_limited"):
-                    print("Rate limit hit during new NOTAM processing. Tripping breaker.")
-                    ai_rate_limited = True
-                    ai_data = None
             else:
                 ai_data = None
 
@@ -498,7 +528,7 @@ def main():
                 if "First" in lvl: pyramid_levels = "First Level, Second Level, Third Level"
                 elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
                 else: pyramid_levels = "Third Level"
-                ai_explanation = "**AI Simple Explanation:**\n" + ai_data.get("explanation", internal_translation)
+                ai_explanation = ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
                 pyramid_levels = "⏳ *Pending AI Analysis*"
