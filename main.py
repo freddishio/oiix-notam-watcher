@@ -7,6 +7,7 @@ import subprocess
 import tempfile
 import re
 import urllib.parse
+from collections import deque
 from datetime import datetime, timezone, timedelta
 
 URL = "https://notams.aim.faa.gov/notamSearch/search"
@@ -29,7 +30,6 @@ if not TELEGRAM_TOKEN or not CHAT_ID:
     print("Error: Telegram secrets are missing.")
     sys.exit(1)
 
-# Load Balancer Array
 API_KEYS = [
     os.environ.get("GEMINI_API_KEY_F92"),
     os.environ.get("GEMINI_API_KEY_F1"),
@@ -39,19 +39,8 @@ API_KEYS = [
     os.environ.get("GEMINI_API_KEY_REZA"),
     os.environ.get("GEMINI_API_KEY_MARY")
 ]
-# Remove any missing keys from the rotation
-API_KEYS = [k for k in API_KEYS if k and k.strip()]
 
-key_index = 0
-ai_rate_limited = False
-
-def get_next_key():
-    global key_index
-    if not API_KEYS:
-        return None
-    key = API_KEYS[key_index]
-    key_index = (key_index + 1) % len(API_KEYS)
-    return key
+ACTIVE_KEYS = deque([k for k in API_KEYS if k and k.strip()])
 
 ICAO_DICT = {
     "ACFT": "Aircraft", "AD": "Aerodrome", "ALTN": "Alternate", "AMSL": "Above Mean Sea Level",
@@ -151,18 +140,13 @@ def translate_e_section(text):
     return e_section
 
 def get_ai_explanation(raw_text):
-    global ai_rate_limited
-    if ai_rate_limited or not API_KEYS:
+    global ACTIVE_KEYS
+    if not ACTIVE_KEYS:
         return None
         
-    # High availability fallback cascade. 2.0 Flash is currently Google's active flagship.
-    models = [
-        "gemini-2.0-flash", 
-        "gemini-2.5-flash",
-        "gemini-1.5-flash"
-    ]
-    
+    models = ["gemini-2.5-flash", "gemini-2.0-flash"]
     headers = {'Content-Type': 'application/json'}
+    
     prompt = f"""Read this aviation NOTAM:
 {raw_text}
 
@@ -182,9 +166,15 @@ Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have e
         }
     }
     
-    # Try multiple keys to bypass rate limits
-    for _ in range(len(API_KEYS)):
-        current_key = get_next_key()
+    keys_tried = 0
+    initial_key_count = len(ACTIVE_KEYS)
+    
+    while keys_tried < initial_key_count and ACTIVE_KEYS:
+        current_key = ACTIVE_KEYS.popleft()
+        ACTIVE_KEYS.append(current_key)
+        keys_tried += 1
+        
+        key_failed_429 = False
         
         for model in models:
             url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={current_key}"
@@ -192,11 +182,12 @@ Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have e
                 response = requests.post(url, headers=headers, json=data, timeout=30)
                 
                 if response.status_code == 404:
-                    continue # Model not available, try next model
+                    continue
                     
                 if response.status_code == 429:
-                    print(f"Key rate limited. Rotating to next key...")
-                    break # Break model loop, proceed to next API Key in rotation
+                    print("Key rate limited. Ejecting from rotation...")
+                    key_failed_429 = True
+                    break
                     
                 response.raise_for_status()
                 res_json = response.json()
@@ -205,16 +196,19 @@ Return ONLY a valid JSON dictionary. No markdown, no code blocks. It must have e
                 if text.startswith("```json"): text = text[7:-3]
                 elif text.startswith("```"): text = text[3:-3]
                 
-                time.sleep(3) # Short sleep because load is spread across 7 accounts
+                time.sleep(3)
                 return json.loads(text.strip())
                 
             except Exception as e:
                 print(f"Error with {model}: {e}")
-                continue
+                if "429" in str(e):
+                    key_failed_429 = True
+                break
                 
-    print("All 7 API keys hit rate limits or failed. Tripping global circuit breaker.")
-    ai_rate_limited = True
-    time.sleep(5)
+        if key_failed_429:
+            ACTIVE_KEYS.pop()
+            
+    time.sleep(3)
     return None
 
 def send_telegram(message):
@@ -420,14 +414,13 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
         msg_parts.extend(map_links)
         msg_parts.append("")
         
-    msg_parts.append(f"📊 **Categories:** {pyramid_levels}")
-    msg_parts.append(f"🤖 **AI Explanation:**\n{ai_explanation}\n")
+    msg_parts.append(f"📊 **Category:** {pyramid_levels}")
+    msg_parts.append(f"🤖 {ai_explanation}\n")
     msg_parts.append(f"**Raw Text:**\n`{raw_text}`")
         
     return "\n".join(msg_parts)
 
 def main():
-    global ai_rate_limited
     print("Fetching FULL data from FAA AIM (OIIX Only)...")
     
     seen_ids = load_json(STATE_FILE, {})
@@ -468,13 +461,8 @@ def main():
         if full_id in active_notams_ai and "error" not in active_notams_ai[full_id]:
             current_ai_dict[full_id] = active_notams_ai[full_id]
 
-    # 1. PROCESS THE BUFFER FIRST
     for buf_id in list(set(ai_buffer)):
         if buf_id in current_raw_dict and buf_id not in current_ai_dict:
-            if ai_rate_limited:
-                new_ai_buffer.append(buf_id)
-                continue
-                
             raw_text = current_raw_dict[buf_id].get("icaoMessage", "")
             notam_id = current_raw_dict[buf_id].get("notamNumber")
             
@@ -486,13 +474,12 @@ def main():
                 current_ai_dict[buf_id] = ai_data
                 
                 lvl = ai_data.get("highest_level", "Third Level")
-                if "First" in lvl: pyramid_levels = "First Level, Second Level, Third Level"
-                elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
+                if "First" in lvl: pyramid_levels = "First Level"
+                elif "Second" in lvl: pyramid_levels = "Second Level"
                 else: pyramid_levels = "Third Level"
                 
-                ai_explanation = ai_data.get("explanation", "")
+                ai_explanation = "**AI Final Explanation:**\n" + ai_data.get("explanation", "")
                 
-                # Reconstruct full data for the buffer update
                 notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(buf_id, {}), notam_id)
                 
                 msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=True)
@@ -500,7 +487,6 @@ def main():
             else:
                 new_ai_buffer.append(buf_id)
 
-    # 2. PROCESS NEW NOTAMS
     for full_id, notam in current_raw_dict.items():
         if full_id not in current_decoded_dict:
             raw_text = notam.get("icaoMessage", "")
@@ -514,21 +500,18 @@ def main():
             notam_id = notam.get("notamNumber")
             internal_translation = translate_e_section(raw_text)
             
-            if not ai_rate_limited:
-                print(f"Fetching AI for new NOTAM: {full_id}")
-                ai_data = get_ai_explanation(raw_text)
-            else:
-                ai_data = None
+            print(f"Fetching AI for new NOTAM: {full_id}")
+            ai_data = get_ai_explanation(raw_text)
 
             if ai_data and "highest_level" in ai_data:
                 ai_data["last_seen_utc"] = current_time_str
                 current_ai_dict[full_id] = ai_data
                 
                 lvl = ai_data.get("highest_level", "Third Level")
-                if "First" in lvl: pyramid_levels = "First Level, Second Level, Third Level"
-                elif "Second" in lvl: pyramid_levels = "Second Level, Third Level"
+                if "First" in lvl: pyramid_levels = "First Level"
+                elif "Second" in lvl: pyramid_levels = "Second Level"
                 else: pyramid_levels = "Third Level"
-                ai_explanation = ai_data.get("explanation", internal_translation)
+                ai_explanation = "**AI Simple Explanation:**\n" + ai_data.get("explanation", internal_translation)
             else:
                 new_ai_buffer.append(full_id)
                 pyramid_levels = "⏳ *Pending AI Analysis*"
@@ -542,7 +525,6 @@ def main():
             seen_ids[full_id] = current_time_str
             new_count += 1
 
-    # 3. CLEANUP EXPIRED ITEMS
     removed_count = 0
     newly_expired_raw = {}
     newly_expired_decoded = {}
