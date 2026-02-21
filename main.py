@@ -389,7 +389,58 @@ def generate_map_html(decoded_dict):
             features_js += f"markers['{notam_id_only}'] = L.marker([{lat}, {lng}]).addTo(map).bindPopup('{popup_text}');\n"
 
     html = f"""<!DOCTYPE html>
-<html><head><title>OIIX NOTAM Live Map</title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><style>body {{ padding: 0; margin: 0; }} #map {{ height: 100vh; width: 100vw; }}</style></head><body><div id="map"></div><script>var map = L.map('map').setView([32.4279, 53.6880], 5); L.tileLayer('http://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}}).addTo(map); {features_js} setTimeout(function() {{var hash = window.location.hash.substring(1); if (hash && markers[hash]) {{var layer = markers[hash]; if (layer.getBounds) {{map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});}} else {{map.setView(layer.getLatLng(), 8);}} layer.openPopup();}}}}, 500);</script></body></html>"""
+<html>
+<head>
+    <title>OIIX NOTAM Live Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {{ padding: 0; margin: 0; }}
+        #map {{ height: 100vh; width: 100vw; }}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var googleStreets = L.tileLayer('https://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
+        var googleHybrid = L.tileLayer('https://{{s}}.google.com/vt/lyrs=y&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
+        var googleSat = L.tileLayer('https://{{s}}.google.com/vt/lyrs=s&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
+        var googleTerrain = L.tileLayer('https://{{s}}.google.com/vt/lyrs=p&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
+        
+        var map = L.map('map', {{
+            center: [32.4279, 53.6880],
+            zoom: 5,
+            layers: [googleStreets]
+        }});
+        
+        var baseMaps = {{
+            "Standard Map": googleStreets,
+            "Satellite": googleSat,
+            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
+            "Terrain": googleTerrain
+        }};
+        
+        L.control.layers(baseMaps).addTo(map);
+        
+        {features_js}
+        
+        setTimeout(function() {{
+            var hash = window.location.hash.substring(1);
+            if (hash && markers[hash]) {{
+                var layer = markers[hash];
+                if (layer.getBounds) {{
+                    map.fitBounds(layer.getBounds(), {{padding: [50, 50]}});
+                }} else {{
+                    map.setView(layer.getLatLng(), 8);
+                }}
+                layer.openPopup();
+            }}
+        }}, 500);
+    </script>
+</body>
+</html>"""
     with open("index.html", "w", encoding="utf-8") as f: f.write(html)
 
 def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False):
