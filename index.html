@@ -37,13 +37,13 @@
                 return {color: "#0055ff", weight: 2, fillOpacity: 0.05};
             },
             onEachFeature: function(feature, layer) {
-                if (feature.properties && feature.properties.FIRname) {
-                    layer.bindPopup("<b>FIR Airspace:</b> " + feature.properties.FIRname);
+                if (feature.properties && feature.properties.id) {
+                    layer.bindPopup("<b>FIR Airspace:</b> " + feature.properties.id);
                 }
             }
         });
 
-        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/master/FIR_Boundaries.geojson')
+        fetch('https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson')
             .then(res => {
                 if (!res.ok) throw new Error("Network response was not ok");
                 return res.json();
