@@ -3492,6 +3492,90 @@
     },
     "last_seen_utc": "2026/02/21 10:10:13"
   },
+  "OIIX B0138/26": {
+    "header": {
+      "id": "B0138/26",
+      "series": "B",
+      "number": "0138",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/105/3312N04615E004",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          33.2,
+          46.25
+        ],
+        {
+          "radius": 4
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "105"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-24T03:30:00.000Z",
+      "validityEnd": "2026-04-05T19:30:00.000Z",
+      "elements": [
+        "0330-1930"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 4 NM CENTERED AT :\n331134N 0461437E.",
+      "area": [
+        [
+          33.184167,
+          46.243611
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10500 FT AMSL"
+    },
+    "last_seen_utc": "2026/02/21 10:20:25"
+  },
   "OIIX A0589/26": {
     "header": {
       "id": "A0589/26",
@@ -3600,17 +3684,17 @@
     },
     "last_seen_utc": "2026/02/20 04:55:03"
   },
-  "OIIX B0138/26": {
+  "OIIX B0139/26": {
     "header": {
-      "id": "B0138/26",
+      "id": "B0139/26",
       "series": "B",
-      "number": "0138",
+      "number": "0139",
       "year": "26",
       "type": "NOTAMN",
       "typeDesc": "New NOTAM"
     },
     "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/105/3312N04615E004",
+      "line": "OIIX/QWMLW/IV/BO/W/000/095/3232N05514E003",
       "location": "OIIX",
       "code": {
         "code": "WMLW",
@@ -3650,38 +3734,32 @@
       ],
       "coordinates": [
         [
-          33.2,
-          46.25
+          32.533333,
+          55.233333
         ],
         {
-          "radius": 4
+          "radius": 3
         }
       ],
       "limits": {
         "lower": "000",
-        "upper": "105"
+        "upper": "095"
       }
     },
     "schedule": {
-      "activityStart": "2026-03-24T03:30:00.000Z",
-      "validityEnd": "2026-04-05T19:30:00.000Z",
+      "activityStart": "2026-04-06T03:30:00.000Z",
+      "validityEnd": "2026-04-16T13:30:00.000Z",
       "elements": [
-        "0330-1930"
+        "0330-1330"
       ]
     },
     "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 4 NM CENTERED AT :\n331134N 0461437E.",
-      "area": [
-        [
-          33.184167,
-          46.243611
-        ]
-      ]
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 3 NM CENTERED AT :\n323149.6N 0551410.3E"
     },
     "limits": {
       "lower": "GND",
-      "upper": "10500 FT AMSL"
+      "upper": "9500 FT AMSL"
     },
-    "last_seen_utc": "2026/02/21 10:20:25"
+    "last_seen_utc": "2026/02/21 10:25:15"
   }
 }
