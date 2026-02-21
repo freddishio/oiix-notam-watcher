@@ -43,8 +43,11 @@
             }
         });
 
-        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/main/FIR_Boundaries.geojson')
-            .then(res => res.json())
+        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/master/FIR_Boundaries.geojson')
+            .then(res => {
+                if (!res.ok) throw new Error("Network response was not ok");
+                return res.json();
+            })
             .then(data => firLayer.addData(data))
             .catch(err => console.error("Could not load FIR boundaries:", err));
 
