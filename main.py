@@ -457,7 +457,16 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
             z-index: 9999;
             text-align: center;
             box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-            font-size: 18px;
+            font-size: 17px;
+            width: 80%;
+            max-width: 400px;
+        }}
+        #error-modal img {{
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            border-radius: 8px;
+            margin-bottom: 15px;
         }}
         #error-modal button {{
             margin-top: 20px;
@@ -473,6 +482,8 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
 </head>
 <body>
     <div id="error-modal">
+        <img src="Panda.gif" alt="Waiting Panda">
+        <br>
         ❌ The region for NOTAM <span id="error-notam" style="font-weight:bold;"></span> is not loaded yet ❌<br><br>
         🖥️ The server takes a few minutes to update the map 🖥️<br><br>
         <b>⌛ Please try refreshing the page after 3 minutes ⌛</b><br>
@@ -488,6 +499,7 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
         var map = L.map('map', {{
             center: [32.4279, 53.6880],
             zoom: 5,
+            zoomSnap: 0.5,
             layers: [googleStreets]
         }});
         
@@ -543,9 +555,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 6);
+                        map.setView(layer.getLatLng(), 6.5);
                     }}
                     layer.openPopup();
                 }} else {{
@@ -573,15 +585,19 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
     
     if is_update:
         msg_parts.append("⚠️ *This NOTAM is not new and has been sent before. The bot is sending it again because the AI explanation has now been provided.*")
-    
-    msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
-    msg_parts.append(f"NOTAM Number: {notam_id} • {notam_type}")
-    msg_parts.append(f"🚨 Importance level: {importance_str}")
-    msg_parts.append("------------------------------------")
-    msg_parts.append(f"🏷️ Subject: {subject_text}")
-    msg_parts.append(f"⚠️ Condition: {condition_text}")
-    msg_parts.append(f"✈️ Traffic: {traffic_list}")
-    msg_parts.append("------------------------------------")
+        msg_parts.append(f"🔄 **AI UPDATE FOR NOTAM {notam_id}**")
+    else:
+        msg_parts.append(f"🚀 **TEHRAN FIR NOTAM ALERT (OIIX)**")
+        
+    msg_parts.extend([
+        f"NOTAM Number: {notam_id} • {notam_type}",
+        f"🚨 Importance level: {importance_str}",
+        "------------------------------------",
+        f"🏷️ Subject: {subject_text}",
+        f"⚠️ Condition: {condition_text}",
+        f"✈️ Traffic: {traffic_list}",
+        "------------------------------------"
+    ])
     
     if pyramid_levels == "Pending" or pyramid_levels == "⏳ Pending" or "⏳" in pyramid_levels:
         msg_parts.append("🤖 NOTAM Explanation (Internal Decoder Fallback):")
