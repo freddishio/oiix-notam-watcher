@@ -32,7 +32,27 @@
             "Terrain": googleTerrain
         };
         
-        L.control.layers(baseMaps).addTo(map);
+        var firLayer = L.geoJSON(null, {
+            style: function(feature) {
+                return {color: "#0055ff", weight: 2, fillOpacity: 0.05};
+            },
+            onEachFeature: function(feature, layer) {
+                if (feature.properties && feature.properties.FIRname) {
+                    layer.bindPopup("<b>FIR Airspace:</b> " + feature.properties.FIRname);
+                }
+            }
+        });
+
+        fetch('https://raw.githubusercontent.com/vvatsec/FIR-Boundaries/main/FIR_Boundaries.geojson')
+            .then(res => res.json())
+            .then(data => firLayer.addData(data))
+            .catch(err => console.error("Could not load FIR boundaries:", err));
+
+        var overlayMaps = {
+            "Show Airspace Boundaries (FIR)": firLayer
+        };
+        
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
         
         var markers = {};
 markers['A3716/25'] = L.polygon([[28.450833, 52.095278], [28.633611, 53.423056], [28.383333, 53.6], [27.95, 53.883333], [27.251111, 54.478889], [26.766667, 51.699444]], {color: '#ff0000', weight: 2, fillOpacity: 0.2}).addTo(map).bindPopup('<b>A3716/25</b><br>Control area (CTA)');
