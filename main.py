@@ -457,7 +457,7 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
             z-index: 9999;
             text-align: center;
             box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
-            font-size: 15px;
+            font-size: 14px;
             width: 85%;
             max-width: 400px;
         }}
@@ -562,9 +562,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 7}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 7);
+                        map.setView(layer.getLatLng(), 6.5);
                     }}
                     layer.openPopup();
                 }} else {{
