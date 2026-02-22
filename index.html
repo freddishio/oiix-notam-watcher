@@ -76,20 +76,20 @@
         map.createPane('notamPane');
         map.getPane('notamPane').style.zIndex = 450; // Above everything
 
-        var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}).addTo(map);
-        var googleHybrid = L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'});
+        var googleStreets = L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'});
+        var googleHybrid = L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}).addTo(map);
         var googleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'});
         var googleTerrain = L.tileLayer('https://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'});
         
         var baseMaps = {
+            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
             "Standard Map": googleStreets,
             "Satellite": googleSat,
-            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
             "Terrain": googleTerrain
         };
         
         var firLayer = L.geoJSON(null, {
-            pane: 'firPane', // ASSIGN TO LOWER Z-INDEX PANE
+            pane: 'firPane',
             style: function(feature) {
                 var isIran = false;
                 if (feature.properties) {
