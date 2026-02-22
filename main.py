@@ -424,16 +424,13 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
         
         if area and isinstance(area, list) and len(area) > 2:
             js_coords = [[pt[0], pt[1]] for pt in area if isinstance(pt, list) and len(pt) == 2]
-            # ADDED pane: 'notamPane' here
             if js_coords: features_js += f"markers['{notam_id_only}'] = L.polygon({js_coords}, {{color: '{color}', weight: 2, fillOpacity: 0.3, pane: 'notamPane'}}).addTo(map).bindPopup('{popup_text}');\n"
         elif coords and isinstance(coords, list) and len(coords) == 2 and isinstance(coords[0], list):
             lat, lng = coords[0][0], coords[0][1]
             rad_meters = coords[1].get("radius", 0) * 1852
-            # ADDED pane: 'notamPane' here
             if rad_meters: features_js += f"markers['{notam_id_only}'] = L.circle([{lat}, {lng}], {{color: '{color}', radius: {rad_meters}, weight: 2, fillOpacity: 0.3, pane: 'notamPane'}}).addTo(map).bindPopup('{popup_text}');\n"
         elif coords and isinstance(coords, list) and len(coords) >= 2 and isinstance(coords[0], (int, float)):
             lat, lng = coords[0], coords[1]
-            # ADDED pane: 'notamPane' here
             features_js += f"markers['{notam_id_only}'] = L.circleMarker([{lat}, {lng}], {{color: '{color}', radius: 8, weight: 2, fillOpacity: 0.8, pane: 'notamPane'}}).addTo(map).bindPopup('{popup_text}');\n"
 
     html = f"""<!DOCTYPE html>
@@ -514,20 +511,20 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
         map.createPane('notamPane');
         map.getPane('notamPane').style.zIndex = 450; // Above everything
 
-        var googleStreets = L.tileLayer('https://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}}).addTo(map);
-        var googleHybrid = L.tileLayer('https://{{s}}.google.com/vt/lyrs=y&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
+        var googleStreets = L.tileLayer('https://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
+        var googleHybrid = L.tileLayer('https://{{s}}.google.com/vt/lyrs=y&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}}).addTo(map);
         var googleSat = L.tileLayer('https://{{s}}.google.com/vt/lyrs=s&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
         var googleTerrain = L.tileLayer('https://{{s}}.google.com/vt/lyrs=p&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
         
         var baseMaps = {{
+            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
             "Standard Map": googleStreets,
             "Satellite": googleSat,
-            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
             "Terrain": googleTerrain
         }};
         
         var firLayer = L.geoJSON(null, {{
-            pane: 'firPane', // ASSIGN TO LOWER Z-INDEX PANE
+            pane: 'firPane',
             style: function(feature) {{
                 var isIran = false;
                 if (feature.properties) {{
