@@ -152,7 +152,7 @@ def get_ai_explanation(raw_text):
 
 Task 1: Explain the NOTAM in very simple words for a general audience.
 Task 2: Assign the highest category. Choices are ONLY these exact strings:
-'First Level' (for complete airspace closure or major security events)
+'First Level' (for United States international warnings, complete airspace closure, or major security events)
 'Second Level' (for military exercises, gun fire, or restricted airspace)
 'Third Level' (for routine aviation changes)
 
@@ -261,24 +261,36 @@ def get_all_notams():
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
     all_notams = []
-    offset = 0
-    batch_size = 30
-    while True:
-        payload = {"searchType": 0, "designatorsForLocation": "OIIX", "offset": offset, "notamsOnly": False, "radius": 10}
-        try:
-            response = requests.post(URL, data=payload, headers=headers, timeout=30)
-            response.raise_for_status()
-            data = response.json()
-            if not data or "notamList" not in data: break
-            current_batch = data["notamList"]
-            if not current_batch: break
-            all_notams.extend(current_batch)
-            offset += len(current_batch)
-            if len(current_batch) < batch_size: break
-            time.sleep(1)
-        except Exception as e:
-            print(f"Error fetching page at offset {offset}: {e}")
-            break
+    targets = ["OIIX", "KICZ"]
+    
+    for target in targets:
+        offset = 0
+        batch_size = 30
+        while True:
+            payload = {"searchType": 0, "designatorsForLocation": target, "offset": offset, "notamsOnly": False, "radius": 10}
+            try:
+                response = requests.post(URL, data=payload, headers=headers, timeout=30)
+                response.raise_for_status()
+                data = response.json()
+                if not data or "notamList" not in data: break
+                current_batch = data["notamList"]
+                if not current_batch: break
+                
+                if target == "KICZ":
+                    for n in current_batch:
+                        msg_text = (n.get("icaoMessage") or "").upper()
+                        if "IRAN" in msg_text or "OIIX" in msg_text or "TEHRAN" in msg_text:
+                            all_notams.append(n)
+                else:
+                    all_notams.extend(current_batch)
+                    
+                offset += len(current_batch)
+                if len(current_batch) < batch_size: break
+                time.sleep(1)
+            except Exception as e:
+                print(f"Error fetching page at offset {offset} for {target}: {e}")
+                break
+                
     return all_notams
 
 def load_json(filepath, default_value):
@@ -504,12 +516,11 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
             zoomSnap: 0.5
         }});
 
-        // Create PANES to control stacking order
         map.createPane('firPane');
-        map.getPane('firPane').style.zIndex = 390; // Below standard overlays (400)
+        map.getPane('firPane').style.zIndex = 390; 
         
         map.createPane('notamPane');
-        map.getPane('notamPane').style.zIndex = 450; // Above everything
+        map.getPane('notamPane').style.zIndex = 450;
 
         var googleStreets = L.tileLayer('https://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
         var googleHybrid = L.tileLayer('https://{{s}}.google.com/vt/lyrs=y&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}}).addTo(map);
