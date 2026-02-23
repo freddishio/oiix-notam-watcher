@@ -1,4 +1,96 @@
 {
+  "OIIX B0106/26": {
+    "header": {
+      "id": "B0106/26",
+      "series": "B",
+      "number": "0106",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/080/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "080"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-18T04:30:00.000Z",
+      "validityEnd": "2026-03-23T20:30:00.000Z",
+      "elements": [
+        "18 19 22 23 0430-2030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA: \n364804N  0491558E,\n364730N  0491618E,\n364730N  0491615E,\n364725N  0491558E,\n364725N  0491531E\nTO THE POINT OF ORIGIN",
+      "area": [
+        [
+          36.8,
+          49.266111
+        ],
+        [
+          36.784167,
+          49.271667
+        ],
+        [
+          36.784167,
+          49.270833
+        ],
+        [
+          36.783889,
+          49.266111
+        ],
+        [
+          36.783889,
+          49.258611
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "8000 FT AMSL"
+    },
+    "last_seen_utc": "2026/02/20 04:55:03",
+    "archived_utc": "2026/02/23 20:30:29"
+  },
   "OIIX B0072/26": {
     "header": {
       "id": "B0072/26",
