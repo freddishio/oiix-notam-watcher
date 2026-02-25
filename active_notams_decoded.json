@@ -3583,6 +3583,86 @@
     },
     "last_seen_utc": "2026/02/20 04:55:03"
   },
+  "OIIX B0173/26": {
+    "header": {
+      "id": "B0173/26",
+      "series": "B",
+      "number": "0173",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWULW/IV/BO/W/000/100/",
+      "location": "OIIX",
+      "code": {
+        "code": "WULW",
+        "entity": "WU",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Unmanned aircraft",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "100"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-25T06:06:00.000Z",
+      "validityEnd": "2026-04-20T23:59:00.000Z"
+    },
+    "content": {
+      "text": "RPA ACT WILL TAKE PLACE WI AREA WITH FLW COORD: \n382400N 0485200E \n382000N 0492500E \n375500N 0491100E \nTO THE POINT OF ORIGIN",
+      "area": [
+        [
+          38.4,
+          48.866667
+        ],
+        [
+          38.333333,
+          49.416667
+        ],
+        [
+          37.916667,
+          49.183333
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10000 FT AMSL"
+    },
+    "last_seen_utc": "2026/02/25 06:15:15"
+  },
   "OIIX B0141/26": {
     "header": {
       "id": "B0141/26",
@@ -3996,85 +4076,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/23 20:30:29"
-  },
-  "OIIX B0173/26": {
-    "header": {
-      "id": "B0173/26",
-      "series": "B",
-      "number": "0173",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QWULW/IV/BO/W/000/100/",
-      "location": "OIIX",
-      "code": {
-        "code": "WULW",
-        "entity": "WU",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Unmanned aircraft",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "100"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-03-25T06:06:00.000Z",
-      "validityEnd": "2026-04-20T23:59:00.000Z"
-    },
-    "content": {
-      "text": "RPA ACT WILL TAKE PLACE WI AREA WITH FLW COORD: \n382400N 0485200E \n382000N 0492500E \n375500N 0491100E \nTO THE POINT OF ORIGIN",
-      "area": [
-        [
-          38.4,
-          48.866667
-        ],
-        [
-          38.333333,
-          49.416667
-        ],
-        [
-          37.916667,
-          49.183333
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "10000 FT AMSL"
-    },
-    "last_seen_utc": "2026/02/25 06:15:15"
   }
 }
