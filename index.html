@@ -157,9 +157,9 @@ markers['B0139/26'] = L.circle([32.533333, 55.233333], {color: '#ffa500', radius
                 if (markers[hash]) {
                     var layer = markers[hash];
                     if (layer.getBounds) {
-                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 7});
+                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 6.5});
                     } else if (layer.getLatLng) {
-                        map.setView(layer.getLatLng(), 7);
+                        map.setView(layer.getLatLng(), 6.5);
                     }
                     layer.openPopup();
                 } else {
