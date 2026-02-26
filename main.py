@@ -9,11 +9,13 @@ import re
 import urllib.parse
 from collections import deque
 from datetime import datetime, timezone, timedelta
+from shapely.geometry import Point, shape
 
 URL = "https://notams.aim.faa.gov/notamSearch/search"
 STATE_FILE = "state.json"
 HISTORY_FILE = "run_history.json"
 AI_BUFFER_FILE = "ai_buffer.json"
+PLANE_STATE_FILE = "plane_state.json"
 
 ACTIVE_RAW_FILE = "active_notams_raw.json"
 ACTIVE_DECODED_FILE = "active_notams_decoded.json"
@@ -152,7 +154,7 @@ def get_ai_explanation(raw_text):
 
 Task 1: Explain the NOTAM in very simple words for a general audience.
 Task 2: Assign the highest category. Choices are ONLY these exact strings:
-'First Level' (for complete airspace closure or major security events)
+'First Level' (for United States international warnings, complete airspace closure, or major security events)
 'Second Level' (for military exercises, gun fire, or restricted airspace)
 'Third Level' (for routine aviation changes)
 
@@ -261,24 +263,36 @@ def get_all_notams():
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
     all_notams = []
-    offset = 0
-    batch_size = 30
-    while True:
-        payload = {"searchType": 0, "designatorsForLocation": "OIIX", "offset": offset, "notamsOnly": False, "radius": 10}
-        try:
-            response = requests.post(URL, data=payload, headers=headers, timeout=30)
-            response.raise_for_status()
-            data = response.json()
-            if not data or "notamList" not in data: break
-            current_batch = data["notamList"]
-            if not current_batch: break
-            all_notams.extend(current_batch)
-            offset += len(current_batch)
-            if len(current_batch) < batch_size: break
-            time.sleep(1)
-        except Exception as e:
-            print(f"Error fetching page at offset {offset}: {e}")
-            break
+    targets = ["OIIX", "KICZ"]
+    
+    for target in targets:
+        offset = 0
+        batch_size = 30
+        while True:
+            payload = {"searchType": 0, "designatorsForLocation": target, "offset": offset, "notamsOnly": False, "radius": 10}
+            try:
+                response = requests.post(URL, data=payload, headers=headers, timeout=30)
+                response.raise_for_status()
+                data = response.json()
+                if not data or "notamList" not in data: break
+                current_batch = data["notamList"]
+                if not current_batch: break
+                
+                if target == "KICZ":
+                    for n in current_batch:
+                        msg_text = (n.get("icaoMessage") or "").upper()
+                        if "IRAN" in msg_text or "OIIX" in msg_text or "TEHRAN" in msg_text:
+                            all_notams.append(n)
+                else:
+                    all_notams.extend(current_batch)
+                    
+                offset += len(current_batch)
+                if len(current_batch) < batch_size: break
+                time.sleep(1)
+            except Exception as e:
+                print(f"Error fetching page at offset {offset} for {target}: {e}")
+                break
+                
     return all_notams
 
 def load_json(filepath, default_value):
@@ -371,6 +385,127 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
     condition_text = re.sub(r'\s*\(.*?\)', '', condition_text).strip()
 
     return notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links
+
+def fetch_iran_planes():
+    print("Fetching active aircraft locations over Middle East from Flightradar24...")
+    fr24_url = "https://data-cloud.flightradar24.com/zones/fcgi/feed.js?bounds=41.00,24.00,43.00,64.00"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json",
+        "Referer": "https://www.flightradar24.com/"
+    }
+    
+    try:
+        response = requests.get(fr24_url, headers=headers, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+    except Exception as e:
+        print(f"Error fetching FR24 data: {e}")
+        return []
+
+    print("Fetching VATSIM FIR GeoJSON for surgical boundary filtering...")
+    geo_url = "https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson"
+    oiix_polygon = None
+    
+    try:
+        geo_resp = requests.get(geo_url, timeout=15)
+        geo_resp.raise_for_status()
+        geo_data = geo_resp.json()
+        for feature in geo_data.get("features", []):
+            props = feature.get("properties", {})
+            if props.get("id") == "OIIX" or "Tehran" in props.get("FIRname", ""):
+                oiix_polygon = shape(feature["geometry"])
+                break
+    except Exception as e:
+        print(f"Error loading FIR geometry: {e}")
+        return []
+
+    if not oiix_polygon:
+        print("Could not find OIIX geometry in dataset.")
+        return []
+
+    iran_planes = []
+    
+    for key, value in data.items():
+        if key in ["full_count", "version", "stats"]:
+            continue
+        if isinstance(value, list) and len(value) > 2:
+            lat = float(value[1])
+            lon = float(value[2])
+            flight_id = value[13] if len(value) > 13 and value[13] else "Unknown Flight"
+            
+            plane_point = Point(lon, lat)
+            
+            if oiix_polygon.contains(plane_point):
+                iran_planes.append({
+                    "id": key,
+                    "flight": flight_id,
+                    "lat": lat,
+                    "lon": lon
+                })
+                
+    return iran_planes
+
+def generate_planes_html(planes):
+    features_js = ""
+    for p in planes:
+        lat = p["lat"]
+        lon = p["lon"]
+        flight = p["flight"]
+        popup = f"<b>Flight:</b> {flight}"
+        features_js += f"L.marker([{lat}, {lng}], {{icon: L.divIcon({{className: 'custom-div-icon', html: \"<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>\"}})}}).addTo(map).bindPopup('{popup}');\n"
+
+    html = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>Active Aircraft Over OIIX</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body {{ padding: 0; margin: 0; }}
+        #map {{ height: 100vh; width: 100vw; }}
+        .leaflet-container {{ background: #000; }}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([32.4279, 53.6880], 5);
+        var CartoDB_DarkMatter = L.tileLayer('https://{{s}}.basemaps.cartocdn.com/dark_all/{{z}}/{{x}}/{{y}}{{r}}.png', {{
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }}).addTo(map);
+        
+        var firLayer = L.geoJSON(null, {{
+            style: function(feature) {{
+                var isIran = false;
+                if (feature.properties) {{
+                    var id = feature.properties.id || "";
+                    var name = feature.properties.FIRname || "";
+                    if (id === "OIIX" || name.indexOf("Tehran") !== -1) {{
+                        isIran = true;
+                    }}
+                }}
+                return {{
+                    color: "#0055ff", 
+                    weight: 2, 
+                    fillOpacity: isIran ? 0.1 : 0.0
+                }};
+            }}
+        }}).addTo(map);
+
+        fetch('https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson')
+            .then(res => res.json())
+            .then(data => firLayer.addData(data));
+            
+        {features_js}
+    </script>
+</body>
+</html>"""
+    with open("planes.html", "w", encoding="utf-8") as f: f.write(html)
 
 def generate_map_html(decoded_dict, ai_dict, raw_dict):
     features_js = "var markers = {};\n"
@@ -568,9 +703,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 7}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 7);
+                        map.setView(layer.getLatLng(), 6.5);
                     }}
                     layer.openPopup();
                 }} else {{
@@ -646,7 +781,21 @@ def main():
     expired_notams_decoded = load_json(EXPIRED_DECODED_FILE, {})
     expired_notams_ai = load_json(EXPIRED_AI_FILE, {})
     
+    plane_state = load_json(PLANE_STATE_FILE, {"previous_count": -1})
+    
     notam_list = get_all_notams()
+    
+    current_planes = fetch_iran_planes()
+    current_count = len(current_planes)
+    generate_planes_html(current_planes)
+    
+    if current_count == 0 and plane_state["previous_count"] > 0:
+        send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is actively clearing. Current commercial planes detected inside the OIIX FIR boundary: 0.")
+    elif 0 < current_count <= 3 and plane_state["previous_count"] > 3:
+        send_telegram(f"⚠️ **AIRSPACE ALERT:** Extreme drop in commercial traffic detected. Only {current_count} planes currently inside the OIIX FIR boundary.")
+        
+    plane_state["previous_count"] = current_count
+    save_json(PLANE_STATE_FILE, plane_state)
     
     if not notam_list:
         print("No valid data received. Skipping processing to protect state.")
