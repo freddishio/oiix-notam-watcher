@@ -453,7 +453,7 @@ def generate_planes_html(planes):
         lon = p["lon"]
         flight = p["flight"]
         popup = f"<b>Flight:</b> {flight}"
-        features_js += f"L.marker([{lat}, {lng}], {{icon: L.divIcon({{className: 'custom-div-icon', html: \"<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>\"}})}}).addTo(map).bindPopup('{popup}');\n"
+        features_js += f"L.marker([{lat}, {lon}], {{icon: L.divIcon({{className: 'custom-div-icon', html: \"<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>\"}})}}).addTo(map).bindPopup('{popup}');\n"
 
     html = f"""<!DOCTYPE html>
 <html>
@@ -703,9 +703,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 7}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 6.5);
+                        map.setView(layer.getLatLng(), 7);
                     }}
                     layer.openPopup();
                 }} else {{
