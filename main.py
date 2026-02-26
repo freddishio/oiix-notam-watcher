@@ -19,6 +19,7 @@ AI_BUFFER_FILE = "ai_buffer.json"
 PLANE_STATE_FILE = "plane_state.json"
 PLANE_HISTORY_FILE = "plane_history.json"
 PLANE_ARCHIVE_FILE = "plane_archive.json"
+ICAO_AIRLINES_FILE = "icao_airlines.json"
 
 ACTIVE_RAW_FILE = "active_notams_raw.json"
 ACTIVE_DECODED_FILE = "active_notams_decoded.json"
@@ -308,6 +309,41 @@ def save_json(filepath, data):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
+def get_icao_airlines():
+    now = time.time()
+    if os.path.exists(ICAO_AIRLINES_FILE):
+        if now - os.path.getmtime(ICAO_AIRLINES_FILE) < 86400:
+            return load_json(ICAO_AIRLINES_FILE, {})
+            
+    print("Updating FAA ICAO Airline registry...")
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+    url = "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_3.html"
+    
+    airline_dict = {}
+    try:
+        resp = requests.get(url, headers=headers, timeout=20)
+        resp.raise_for_status()
+        html_content = resp.text
+        
+        rows = re.split(r'<tr[^>]*>', html_content, flags=re.IGNORECASE)[1:]
+        for row in rows:
+            cols = re.findall(r'<td[^>]*>(.*?)</td>', row, flags=re.IGNORECASE | re.DOTALL)
+            if len(cols) >= 3:
+                code = re.sub(r'<[^>]+>', '', cols[0]).strip()
+                company = re.sub(r'<[^>]+>', '', cols[1]).strip()
+                country = re.sub(r'<[^>]+>', '', cols[2]).strip()
+                
+                if len(code) == 3 and code.isalpha():
+                    airline_dict[code] = {"name": company, "country": country}
+                    
+        if airline_dict:
+            save_json(ICAO_AIRLINES_FILE, airline_dict)
+            return airline_dict
+    except Exception as e:
+        print(f"FAA Registry fetch failed: {e}")
+        
+    return load_json(ICAO_AIRLINES_FILE, {})
+
 def extract_notam_details(raw_text, decoded_obj, notam_id):
     subject_text = "Unknown Subject"
     condition_text = "Unknown Condition"
@@ -390,14 +426,16 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
     return notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links
 
 def fetch_iran_planes():
-    print("Fetching active aircraft locations over 4 precise quadrants from Flightradar24...")
+    print("Fetching active aircraft locations over 16 high resolution quadrants from Flightradar24...")
     
-    bounds_list = [
-        "41.00,32.00,40.00,51.00", 
-        "41.00,32.00,50.00,65.00", 
-        "34.00,24.00,43.00,55.00", 
-        "33.00,24.00,50.00,65.00"  
+    centers = [
+        (37.94, 45.71), (37.94, 50.71), (37.94, 55.71), (37.94, 60.71),
+        (34.34, 45.71), (34.34, 50.71), (34.34, 55.71), (34.34, 60.71),
+        (30.74, 45.71), (30.74, 50.71), (30.74, 55.71), (30.74, 60.71),
+        (27.14, 45.71), (27.14, 50.71), (27.14, 55.71), (27.14, 60.71)
     ]
+    
+    bounds_list = [f"{lat+2.5:.2f},{lat-2.5:.2f},{lon-3.2:.2f},{lon+3.2:.2f}" for lat, lon in centers]
     
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -441,6 +479,7 @@ def fetch_iran_planes():
         return []
 
     iran_planes = []
+    icao_airlines = get_icao_airlines()
     
     for key, value in all_fr24_data.items():
         if isinstance(value, list) and len(value) > 2:
@@ -453,7 +492,12 @@ def fetch_iran_planes():
             reg = value[9] if len(value) > 9 and value[9] else "Unknown Reg"
             flight_id = value[13] if len(value) > 13 and value[13] else "Unknown Flight"
             callsign = value[16] if len(value) > 16 and value[16] else "Unknown Callsign"
-            airline = value[18] if len(value) > 18 and value[18] else (callsign[:3] if callsign != "Unknown Callsign" else "Unknown")
+            
+            airline_code = callsign[:3] if callsign != "Unknown Callsign" else ""
+            airline_info = icao_airlines.get(airline_code, {"name": airline_code, "country": "Unknown Location"})
+            airline_name = airline_info["name"] if airline_info["name"] else airline_code
+            if not airline_name: airline_name = "Unknown Airline"
+            airline_country = airline_info["country"] if airline_info["country"] else "Unknown Location"
             
             plane_point = Point(lon, lat)
             
@@ -468,7 +512,8 @@ def fetch_iran_planes():
                     "alt": alt,
                     "track": track,
                     "speed": speed,
-                    "airline": airline,
+                    "airline": airline_name,
+                    "country": airline_country,
                     "lat": lat,
                     "lon": lon
                 })
@@ -487,7 +532,7 @@ def generate_planes_html(history_24h):
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        body {{ padding: 0; margin: 0; font-family: Arial, sans-serif; }}
+        body {{ padding: 0; margin: 0; font-family: Arial, sans-serif; overflow-x: hidden; }}
         #map {{ height: 100vh; width: 100vw; }}
         .leaflet-container {{ background: #000; }}
         
@@ -521,11 +566,26 @@ def generate_planes_html(history_24h):
             white-space: nowrap;
         }}
 
-        #left-panel {{
+        #panel-toggle {{
             position: absolute;
             top: 70px;
             left: 15px;
-            width: 250px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1100;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            border: 1px solid #555;
+        }}
+
+        #left-panel {{
+            position: absolute;
+            top: 120px;
+            left: 15px;
+            width: 280px;
             max-height: 60vh;
             background: rgba(0, 0, 0, 0.85);
             color: #fff;
@@ -534,11 +594,13 @@ def generate_planes_html(history_24h):
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             overflow-y: auto;
+            transition: transform 0.3s ease;
         }}
         
         #left-panel h3 {{ margin: 0 0 10px 0; font-size: 18px; border-bottom: 1px solid #555; padding-bottom: 5px; }}
+        #left-panel h4 {{ margin: 15px 0 5px 0; font-size: 15px; color: #ffcc00; }}
         #left-panel p {{ margin: 5px 0; font-size: 14px; }}
-        #left-panel ul {{ margin: 10px 0 0 0; padding-left: 20px; font-size: 13px; color: #ddd; }}
+        #left-panel ul {{ margin: 5px 0 0 0; padding-left: 20px; font-size: 13px; color: #ddd; }}
 
         #bottom-controls {{
             position: absolute;
@@ -580,11 +642,11 @@ def generate_planes_html(history_24h):
             padding: 25px;
             border-radius: 12px;
             border: 2px solid #555;
-            min-width: 280px;
+            min-width: 300px;
             text-align: center;
         }}
         
-        .modal-content select {{
+        .modal-content select, .modal-content input[type=range] {{
             width: 100%;
             padding: 8px;
             margin: 10px 0;
@@ -593,14 +655,13 @@ def generate_planes_html(history_24h):
             border: 1px solid #777;
             border-radius: 4px;
             font-size: 16px;
+            box-sizing: border-box;
         }}
         
         .modal-btn {{
             padding: 8px 15px; margin: 5px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;
+            background: #555; color: white;
         }}
-        
-        #applyTimeBtn {{ background: #ffcc00; color: black; }}
-        #cancelTimeBtn {{ background: #555; color: white; }}
         
         .plane-tooltip {{
             background: rgba(0, 0, 0, 0.8);
@@ -611,16 +672,32 @@ def generate_planes_html(history_24h):
             font-size: 12px;
         }}
         .leaflet-popup-content {{ font-size: 14px; line-height: 1.5; }}
+
+        @media (max-width: 767px) {{
+            #top-banner {{ font-size: 13px; padding: 8px 15px; }}
+            #left-panel {{
+                transform: translateX(-120%);
+            }}
+            #left-panel.open {{
+                transform: translateX(0);
+            }}
+        }}
     </style>
 </head>
 <body>
     <div id="loading">Updating temporal data...</div>
-    <div id="top-banner">Loading Data...</div>
+    <div id="top-banner">Data Captured: Loading...</div>
     
+    <div id="panel-toggle" onclick="document.getElementById('left-panel').classList.toggle('open')">☰ Analytics</div>
+
     <div id="left-panel">
         <h3>Airspace Analytics</h3>
         <p><b>Total Commercial Planes:</b> <span id="plane-count">0</span></p>
-        <p><b>Active Airlines:</b></p>
+        
+        <h4>Active Countries</h4>
+        <ul id="country-list"></ul>
+
+        <h4>Active Airlines</h4>
         <ul id="airline-list"></ul>
     </div>
 
@@ -630,15 +707,17 @@ def generate_planes_html(history_24h):
 
     <div id="time-modal" class="modal-overlay">
         <div class="modal-content">
-            <h3>Select Historic Time</h3>
+            <h3>🕰️ Time Shift</h3>
             <label>Date & Hour:</label>
             <select id="dateHourSelect"></select>
-            <br>
+            
             <label>Exact Minute:</label>
             <select id="minuteSelect"></select>
+            
+            <br>
+            <input type="range" id="modalSlider" min="0" max="0" value="0">
             <br><br>
-            <button id="applyTimeBtn" class="modal-btn">Apply</button>
-            <button id="cancelTimeBtn" class="modal-btn" onclick="document.getElementById('time-modal').style.display='none'">Cancel</button>
+            <button class="modal-btn" onclick="document.getElementById('time-modal').style.display='none'">Close Dashboard</button>
         </div>
     </div>
 
@@ -709,13 +788,14 @@ def generate_planes_html(history_24h):
         const banner = document.getElementById("top-banner");
         const countDisplay = document.getElementById("plane-count");
         const airlineList = document.getElementById("airline-list");
+        const countryList = document.getElementById("country-list");
         const loading = document.getElementById("loading");
         
         const timeShiftBtn = document.getElementById("time-shift-btn");
         const timeModal = document.getElementById("time-modal");
-        const applyTimeBtn = document.getElementById("applyTimeBtn");
         const dhSelect = document.getElementById("dateHourSelect");
         const mSelect = document.getElementById("minuteSelect");
+        const modalSlider = document.getElementById("modalSlider");
         
         timeShiftBtn.onclick = function() {{
             timeModal.style.display = "block";
@@ -727,16 +807,20 @@ def generate_planes_html(history_24h):
             setTimeout(() => {{
                 planeLayerGroup.clearLayers();
                 const record = flightHistory[index];
-                banner.innerText = "Displaying Time: " + record.time_str;
+                banner.innerText = "Data Captured: " + record.time_str;
                 countDisplay.innerText = record.count;
                 
                 const airlines = new Set();
+                const countries = new Set();
                 
                 record.planes.forEach(plane => {{
                     airlines.add(plane.airline);
+                    countries.add(plane.country);
                     
                     let popup = `<b>Callsign:</b> ${{plane.callsign}}<br>`;
                     popup += `<b>Flight Number:</b> ${{plane.flight}}<br>`;
+                    popup += `<b>Airline:</b> ${{plane.airline}}<br>`;
+                    popup += `<b>Registration Country:</b> ${{plane.country}}<br>`;
                     popup += `<b>Aircraft Type:</b> ${{plane.type}}<br>`;
                     popup += `<b>Registration:</b> ${{plane.reg}}<br>`;
                     popup += `<b>Aircraft Category:</b> ${{plane.category}}<br>`;
@@ -758,10 +842,19 @@ def generate_planes_html(history_24h):
                 
                 airlineList.innerHTML = "";
                 Array.from(airlines).sort().forEach(airline => {{
-                    if(airline && airline !== "Unknown") {{
+                    if(airline && airline !== "Unknown Airline") {{
                         let li = document.createElement("li");
                         li.innerText = airline;
                         airlineList.appendChild(li);
+                    }}
+                }});
+
+                countryList.innerHTML = "";
+                Array.from(countries).sort().forEach(country => {{
+                    if(country && country !== "Unknown Location") {{
+                        let li = document.createElement("li");
+                        li.innerText = country;
+                        countryList.appendChild(li);
                     }}
                 }});
                 
@@ -770,6 +863,8 @@ def generate_planes_html(history_24h):
         }}
 
         if (flightHistory.length > 0) {{
+            modalSlider.max = flightHistory.length - 1;
+            
             const timeMap = {{}};
             flightHistory.forEach((record, index) => {{
                 let parts = record.time_str.split(':');
@@ -788,6 +883,24 @@ def generate_planes_html(history_24h):
                 dhSelect.appendChild(opt);
             }});
             
+            function syncSelectsToIndex(idx) {{
+                let record = flightHistory[idx];
+                let parts = record.time_str.split(':');
+                if (parts.length >= 2) {{
+                    let dh = parts[0];
+                    dhSelect.value = dh;
+                    
+                    mSelect.innerHTML = "";
+                    timeMap[dh].forEach(item => {{
+                        let opt = document.createElement("option");
+                        opt.value = item.index;
+                        opt.innerText = item.minute;
+                        mSelect.appendChild(opt);
+                    }});
+                    mSelect.value = idx;
+                }}
+            }}
+
             dhSelect.addEventListener('change', function() {{
                 mSelect.innerHTML = "";
                 timeMap[this.value].forEach(item => {{
@@ -796,23 +909,28 @@ def generate_planes_html(history_24h):
                     opt.innerText = item.minute;
                     mSelect.appendChild(opt);
                 }});
+                
+                let firstIdx = mSelect.options[0].value;
+                modalSlider.value = firstIdx;
+                renderPlanes(firstIdx);
+            }});
+
+            mSelect.addEventListener('change', function() {{
+                modalSlider.value = this.value;
+                renderPlanes(this.value);
+            }});
+
+            modalSlider.addEventListener("input", function() {{
+                syncSelectsToIndex(this.value);
+                renderPlanes(this.value);
             }});
             
             if(dhSelect.options.length > 0) {{
-                dhSelect.selectedIndex = dhSelect.options.length - 1;
-                dhSelect.dispatchEvent(new Event('change'));
-                mSelect.selectedIndex = mSelect.options.length - 1;
+                let lastIdx = flightHistory.length - 1;
+                modalSlider.value = lastIdx;
+                syncSelectsToIndex(lastIdx);
+                renderPlanes(lastIdx);
             }}
-            
-            applyTimeBtn.onclick = function() {{
-                let selectedIndex = mSelect.value;
-                if(selectedIndex !== "") {{
-                    renderPlanes(selectedIndex);
-                }}
-                timeModal.style.display = "none";
-            }}
-            
-            renderPlanes(flightHistory.length - 1);
         }} else {{
             banner.innerText = "No temporal data available yet.";
             loading.style.display = "none";
@@ -1020,9 +1138,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 6);
+                        map.setView(layer.getLatLng(), 6.5);
                     }}
                     layer.openPopup();
                 }} else {{
