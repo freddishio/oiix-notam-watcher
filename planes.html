@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Active Aircraft Over OIIX</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { padding: 0; margin: 0; }
+        #map { height: 100vh; width: 100vw; }
+        .leaflet-container { background: #000; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([32.4279, 53.6880], 5);
+        var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
+        
+        var firLayer = L.geoJSON(null, {
+            style: function(feature) {
+                var isIran = false;
+                if (feature.properties) {
+                    var id = feature.properties.id || "";
+                    var name = feature.properties.FIRname || "";
+                    if (id === "OIIX" || name.indexOf("Tehran") !== -1) {
+                        isIran = true;
+                    }
+                }
+                return {
+                    color: "#0055ff", 
+                    weight: 2, 
+                    fillOpacity: isIran ? 0.1 : 0.0
+                };
+            }
+        }).addTo(map);
+
+        fetch('https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson')
+            .then(res => res.json())
+            .then(data => firLayer.addData(data));
+            
+        L.marker([39.28, 44.21], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> TK54');
+L.marker([39.23, 44.37], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> TK70');
+L.marker([36.75, 46.14], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9749');
+L.marker([35.14, 47.62], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9228');
+L.marker([33.49, 48.91], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9777');
+L.marker([37.4, 49.33], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> TK323');
+L.marker([31.86, 50.12], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9859');
+L.marker([36.13, 50.39], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9806');
+L.marker([34.44, 50.62], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> A45087');
+L.marker([36.84, 51.07], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9831');
+L.marker([35.42, 51.07], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> ZF111');
+L.marker([32.36, 51.48], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9945');
+L.marker([29.97, 51.63], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9284');
+L.marker([37.5, 51.65], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> Unknown Flight');
+L.marker([29.49, 51.71], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> J91654');
+L.marker([27.88, 53.05], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9923');
+L.marker([26.81, 53.69], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> QR807');
+L.marker([26.64, 53.85], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> WY118');
+L.marker([26.38, 54.1], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> WY184');
+L.marker([26.06, 54.4], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> SU320');
+L.marker([37.39, 54.56], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK221');
+L.marker([36.66, 54.7], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EY844');
+L.marker([36.46, 54.76], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EY841');
+L.marker([35.61, 55.01], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EY853');
+L.marker([34.78, 55.82], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK176');
+L.marker([27.86, 56.04], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK129');
+L.marker([28.2, 56.09], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK241');
+L.marker([27.6, 56.44], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EY827');
+L.marker([28.15, 56.54], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> G9932');
+L.marker([27.86, 57.62], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> QR858');
+L.marker([37.11, 57.99], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK213');
+L.marker([26.59, 58.02], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> QR859');
+L.marker([28.29, 58.49], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK322');
+L.marker([25.19, 59.58], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK394');
+L.marker([26.91, 59.95], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> EK636');
+L.marker([26.7, 60.22], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> QR579');
+L.marker([26.93, 60.56], {icon: L.divIcon({className: 'custom-div-icon', html: "<div style='background-color:#ffcc00;width:12px;height:12px;border-radius:50%;border:2px solid #000;'></div>"})}).addTo(map).bindPopup('<b>Flight:</b> QR570');
+
+    </script>
+</body>
+</html>
