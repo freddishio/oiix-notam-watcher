@@ -155,21 +155,17 @@ def save_json(filepath, data):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
 
-def get_icao_airlines():
-    global ACTIVE_KEYS
+def update_faa_registry():
     now = time.time()
     airlines_data = load_json(ICAO_AIRLINES_FILE, {})
-    
     last_check = airlines_data.get("_last_check", 0)
     
     if now - last_check < 86400 and len(airlines_data) > 1:
         return airlines_data
         
-    print("Updating FAA ICAO Airline registry...")
+    print("Updating FAA ICAO Airline registry (No AI calls here)...")
     headers = {"User-Agent": "Mozilla/5.0"}
     url = "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_3.html"
-    
-    new_or_changed = {}
     
     try:
         resp = requests.get(url, headers=headers, timeout=20)
@@ -188,66 +184,81 @@ def get_icao_airlines():
                     country = "Iran"
                     
                 if len(code) == 3 and code.isalpha():
-                    existing = airlines_data.get(code)
-                    if not existing or existing.get("formal_name") != company:
-                        new_or_changed[code] = company
+                    if code not in airlines_data:
                         airlines_data[code] = {
                             "formal_name": company, 
                             "country": country,
-                            "common_name": company
+                            "common_name": ""
                         }
+                    else:
+                        airlines_data[code]["formal_name"] = company
+                        airlines_data[code]["country"] = country
+                        
     except Exception as e:
         print(f"FAA Registry fetch failed: {e}")
         
-    if new_or_changed and ACTIVE_KEYS:
-        codes = list(new_or_changed.keys())
-        batch_size = 200
-        for i in range(0, len(codes), batch_size):
-            batch_codes = codes[i:i+batch_size]
-            batch_dict = {c: new_or_changed[c] for c in batch_codes}
-            
-            prompt = "Here is a JSON dictionary of airline ICAO codes and their formal registered names. Return a JSON dictionary mapping the exact same ICAO codes to their most common everyday spoken airline name. For example 'IRAN NATIONAL AIRLINES CORP. (IRAN AIR)' becomes 'Iran Air'. Return ONLY valid JSON and nothing else.\n\n" + json.dumps(batch_dict)
-            
-            data = {
-                "contents": [{"parts": [{"text": prompt}]}],
-                "generationConfig": {"response_mime_type": "application/json", "temperature": 0.1}
-            }
-            
-            success = False
-            keys_tried = 0
-            initial_key_count = len(ACTIVE_KEYS)
-            
-            while keys_tried < initial_key_count and ACTIVE_KEYS and not success:
-                current_key = ACTIVE_KEYS.popleft()
-                ACTIVE_KEYS.append(current_key)
-                keys_tried += 1
-                
-                ai_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={current_key}"
-                try:
-                    ai_resp = requests.post(ai_url, headers={'Content-Type': 'application/json'}, json=data, timeout=30)
-                    if ai_resp.status_code == 429:
-                        ACTIVE_KEYS.pop()
-                        continue
-                        
-                    ai_resp.raise_for_status()
-                    res_json = ai_resp.json()
-                    text = res_json['candidates'][0]['content']['parts'][0]['text'].strip()
-                    
-                    if text.startswith("```json"): text = text[7:-3]
-                    elif text.startswith("```"): text = text[3:-3]
-                    
-                    common_names = json.loads(text.strip())
-                    for c, common in common_names.items():
-                        if c in airlines_data:
-                            airlines_data[c]["common_name"] = common
-                    success = True
-                    time.sleep(20)
-                except Exception as e:
-                    print(f"AI Airline processing error: {e}")
-                    continue
-                    
     airlines_data["_last_check"] = time.time()
     save_json(ICAO_AIRLINES_FILE, airlines_data)
+    return airlines_data
+
+def translate_active_airlines(active_codes, airlines_data):
+    global ACTIVE_KEYS
+    to_translate = {}
+    
+    for code in active_codes:
+        info = airlines_data.get(code)
+        if info and not info.get("common_name"):
+            to_translate[code] = info["formal_name"]
+            
+    if not to_translate or not ACTIVE_KEYS:
+        return airlines_data
+        
+    print(f"On-Demand AI Translation: Checking {len(to_translate)} active airlines...")
+    prompt = "Here is a JSON dictionary of airline ICAO codes and their formal registered names. Return a JSON dictionary mapping the exact same ICAO codes to their most common everyday spoken airline name. For example 'IRAN NATIONAL AIRLINES CORP. (IRAN AIR)' becomes 'Iran Air'. Return ONLY valid JSON and nothing else.\n\n" + json.dumps(to_translate)
+    
+    data = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"response_mime_type": "application/json", "temperature": 0.1}
+    }
+    
+    keys_tried = 0
+    initial_key_count = len(ACTIVE_KEYS)
+    success = False
+    
+    while keys_tried < initial_key_count and ACTIVE_KEYS and not success:
+        current_key = ACTIVE_KEYS.popleft()
+        ACTIVE_KEYS.append(current_key)
+        keys_tried += 1
+        
+        try:
+            ai_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={current_key}"
+            resp = requests.post(ai_url, headers={'Content-Type': 'application/json'}, json=data, timeout=20)
+            
+            if resp.status_code == 429:
+                print("Key rate limited during airline check. Dropping key.")
+                ACTIVE_KEYS.pop()
+                continue
+                
+            resp.raise_for_status()
+            text = resp.json()['candidates'][0]['content']['parts'][0]['text'].strip()
+            
+            if text.startswith("```json"): text = text[7:-3]
+            elif text.startswith("```"): text = text[3:-3]
+            
+            common_names = json.loads(text.strip())
+            for c, common in common_names.items():
+                if c in airlines_data:
+                    airlines_data[c]["common_name"] = common
+                    
+            success = True
+            save_json(ICAO_AIRLINES_FILE, airlines_data)
+            time.sleep(3)
+        except Exception as e:
+            print(f"AI On-Demand translation error: {e}")
+            if "429" in str(e):
+                ACTIVE_KEYS.pop()
+            continue
+            
     return airlines_data
 
 def get_ai_explanation(raw_text):
@@ -368,7 +379,8 @@ def decode_notam(raw_text):
 
 def get_all_notams():
     headers = {
-        "User-Agent": "Mozilla/5.0"
+        "User-Agent": "Mozilla/5.0",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
     all_notams = []
     targets = ["OIIX", "KICZ"]
@@ -541,8 +553,9 @@ def fetch_iran_planes():
         print("Could not find OIIX geometry in dataset.")
         return []
 
-    iran_planes = []
-    icao_airlines = get_icao_airlines()
+    icao_airlines = update_faa_registry()
+    temp_planes = []
+    active_codes = set()
     
     for key, value in all_fr24_data.items():
         if isinstance(value, list) and len(value) > 2:
@@ -556,19 +569,17 @@ def fetch_iran_planes():
             flight_id = value[13] if len(value) > 13 and value[13] else "Unknown Flight"
             callsign = value[16] if len(value) > 16 and value[16] else "Unknown Callsign"
             
-            airline_code = callsign[:3] if callsign != "Unknown Callsign" else ""
-            airline_info = icao_airlines.get(airline_code, {"common_name": airline_code, "country": "Unknown Location"})
-            airline_name = airline_info.get("common_name", airline_code)
-            if not airline_name: airline_name = "Unknown Airline"
-            
-            airline_country = airline_info.get("country", "Unknown Location")
-            
             plane_point = Point(lon, lat)
             
             if oiix_polygon.contains(plane_point):
-                iran_planes.append({
+                code = callsign[:3] if callsign != "Unknown Callsign" else ""
+                if len(code) == 3 and code.isalpha():
+                    active_codes.add(code)
+                
+                temp_planes.append({
                     "id": key,
                     "callsign": callsign,
+                    "code": code,
                     "flight": flight_id,
                     "type": ac_type,
                     "reg": reg,
@@ -576,11 +587,28 @@ def fetch_iran_planes():
                     "alt": alt,
                     "track": track,
                     "speed": speed,
-                    "airline": airline_name,
-                    "country": airline_country,
                     "lat": lat,
                     "lon": lon
                 })
+                
+    # On-Demand translation limits AI calls strictly to current active flights
+    icao_airlines = translate_active_airlines(list(active_codes), icao_airlines)
+    
+    iran_planes = []
+    for p in temp_planes:
+        code = p.pop("code")
+        info = icao_airlines.get(code, {})
+        common = info.get("common_name")
+        formal = info.get("formal_name", code)
+        
+        airline_name = common if common else formal
+        if not airline_name: airline_name = "Unknown Airline"
+        
+        airline_country = info.get("country", "Unknown Location")
+        
+        p["airline"] = airline_name
+        p["country"] = airline_country
+        iran_planes.append(p)
                 
     return iran_planes
 
@@ -772,8 +800,13 @@ def generate_planes_html(history_24h):
         .leaflet-popup-content {{ font-size: 13px; line-height: 1.4; }}
 
         @media (max-width: 767px) {{
-            #left-panel {{ transform: translateX(-100%); }}
-            #left-panel.open {{ transform: translateX(0); }}
+            #top-banner {{ font-size: 13px; padding: 8px 15px; }}
+            #left-panel {{
+                transform: translateX(-100%);
+            }}
+            #left-panel.open {{
+                transform: translateX(0);
+            }}
         }}
         @media (min-width: 768px) {{
             #left-panel {{ transform: translateX(0); }}
@@ -842,7 +875,7 @@ def generate_planes_html(history_24h):
         var baseMaps = {{
             "Dark Tracker (Default)": CartoDB_DarkMatter,
             "Standard Map": googleStreets,
-            "Hybrid (Satellite + Borders)": googleHybrid,
+            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
             "Satellite": googleSat,
             "Terrain": googleTerrain
         }};
@@ -1085,6 +1118,7 @@ def generate_planes_html(history_24h):
             banner.innerText = "No temporal data available yet.";
             loading.style.display = "none";
         }}
+
     </script>
 </body>
 </html>"""
