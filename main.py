@@ -605,13 +605,11 @@ def generate_planes_html(history_24h):
         
         timeShiftBtn.onclick = function() {{ timeShiftBtn.style.display = "none"; timeDock.style.display = "block"; }}
         closeDockBtn.onclick = function() {{ timeDock.style.display = "none"; timeShiftBtn.style.display = "block"; }}
-
-        const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (window.matchMedia("(pointer: coarse)").matches);
         
         function getTwemojiUrl(iso) {{
             if (!iso) return '';
             const codePoints = [...iso.toUpperCase()].map(c => (c.codePointAt(0) + 127397).toString(16));
-            return `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${{codePoints.join('-')}}.svg`;
+            return `https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/${{codePoints.join('-')}}.svg`;
         }}
 
         const countriesMap = {{
@@ -630,10 +628,9 @@ def generate_planes_html(history_24h):
 
         function getFlagHTML(country) {{
             const c = country.toLowerCase();
-            if (c === "iran" || c.includes("iran")) {{
-                return `<img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/State_flag_of_Iran_%281964%E2%80%931980%29.svg" style="width:26px; height:auto; vertical-align:middle; margin-right:12px; border-radius:3px; border:1px solid rgba(255,255,255,0.15);">`;
-            }}
             let iso = countriesMap[c];
+            if (c === "iran" || c.includes("iran")) iso = "IR";
+            
             if(iso) return `<img src="${{getTwemojiUrl(iso)}}" style="width:26px; height:auto; vertical-align:middle; margin-right:12px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">`;
             return `<span style="font-size:22px; margin-right:12px; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🏳️</span>`;
         }}
@@ -654,26 +651,7 @@ def generate_planes_html(history_24h):
                     let marker = L.circleMarker([plane.lat, plane.lon], {{ color: '#ffcc00', radius: 6, weight: 2, fillOpacity: 0.8 }});
                     
                     marker.bindPopup(popupHTML, {{minWidth: 300, maxWidth: 300, className: 'custom-popup-wrapper'}});
-
-                    if(!isTouchDevice) {{
-                        marker.on('mouseover', function(e) {{
-                            this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', offset: [0, -10]}}).openTooltip();
-                        }});
-                        marker.on('mouseout', function(e) {{
-                            this.closeTooltip();
-                            this.unbindTooltip();
-                        }});
-                    }} else {{
-                        let touchTimer;
-                        marker.on('touchstart', function(e) {{
-                            touchTimer = setTimeout(() => {{ this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', permanent: true, offset: [0, -10]}}).openTooltip(); }}, 400);
-                        }});
-                        marker.on('touchend touchmove', function(e) {{
-                            clearTimeout(touchTimer);
-                            this.closeTooltip();
-                            this.unbindTooltip();
-                        }});
-                    }}
+                    marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', offset: [0, -10]}});
                     marker.addTo(planeLayerGroup);
                 }});
                 
