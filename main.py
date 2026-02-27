@@ -178,9 +178,9 @@ def update_faa_registry():
             if len(cols) >= 3:
                 code = re.sub(r'<[^>]+>', '', cols[0]).strip()
                 company = re.sub(r'<[^>]+>', '', cols[1]).strip()
-                country = re.sub(r'<[^>]+>', '', cols[2]).strip()
+                country = re.sub(r'<[^>]+>', '', cols[2]).strip().title()
                 
-                if "ISLAMIC REPUBLIC OF IRAN" in country.upper() or "IRAN" in country.upper():
+                if "Islamic Republic Of Iran" in country.upper() or "Iran" in country:
                     country = "Iran"
                     
                 if len(code) == 3 and code.isalpha():
@@ -591,7 +591,6 @@ def fetch_iran_planes():
                     "lon": lon
                 })
                 
-    # On-Demand translation limits AI calls strictly to current active flights
     icao_airlines = translate_active_airlines(list(active_codes), icao_airlines)
     
     iran_planes = []
@@ -622,22 +621,32 @@ def generate_planes_html(history_24h):
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        body {{ padding: 0; margin: 0; font-family: Arial, sans-serif; overflow-x: hidden; }}
+        body {{ padding: 0; margin: 0; font-family: 'Inter', sans-serif; overflow-x: hidden; }}
         #map {{ height: 100vh; width: 100vw; }}
         .leaflet-container {{ background: #000; }}
+        
+        .glass-panel {{
+            background: rgba(15, 15, 20, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }}
         
         #loading {{
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            color: #ffcc00;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            font-weight: bold;
+            font-size: 22px;
+            font-weight: 800;
             z-index: 2000;
             transition: opacity 0.3s;
         }}
@@ -647,181 +656,207 @@ def generate_planes_html(history_24h):
             top: 15px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.75);
             color: #fff;
-            padding: 8px 18px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: bold;
+            padding: 10px 24px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 600;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             white-space: nowrap;
         }}
 
         #left-panel {{
             position: absolute;
-            top: 70px;
-            left: 0;
-            width: 250px;
-            max-height: 60vh;
-            background: rgba(0, 0, 0, 0.85);
+            top: 80px;
+            left: 20px;
+            width: 320px;
+            max-height: calc(100vh - 120px);
             color: #fff;
-            padding: 15px;
-            border-radius: 0 8px 8px 0;
+            padding: 20px;
+            border-radius: 12px;
             z-index: 1000;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             overflow-y: auto;
-            transition: transform 0.3s ease;
+            transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
         }}
 
         #panel-toggle {{
             position: absolute;
-            right: -32px;
+            right: -40px;
             top: 20px;
-            background: rgba(0, 0, 0, 0.85);
-            color: white;
-            padding: 8px 5px;
-            border-radius: 0 6px 6px 0;
+            width: 40px;
+            height: 44px;
+            background: rgba(15, 15, 20, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: none;
+            color: #ffcc00;
+            border-radius: 0 8px 8px 0;
             cursor: pointer;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            font-weight: 800;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(12px);
         }}
         
-        #left-panel h3 {{ margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #555; padding-bottom: 5px; }}
-        #left-panel h4 {{ margin: 15px 0 5px 0; font-size: 14px; color: #ffcc00; }}
-        #left-panel p {{ margin: 5px 0; font-size: 13px; }}
-        #left-panel ul {{ margin: 5px 0 0 0; padding-left: 20px; font-size: 12px; color: #ddd; line-height: 1.4; }}
+        #left-panel h3 {{ margin: 0 0 15px 0; font-size: 20px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; }}
+        #left-panel h4 {{ margin: 20px 0 8px 0; font-size: 16px; color: #ffcc00; text-transform: uppercase; letter-spacing: 1px; }}
+        #left-panel p {{ margin: 8px 0; font-size: 15px; }}
+        #left-panel ul {{ margin: 8px 0 0 0; padding-left: 0; list-style: none; font-size: 14px; color: #ddd; line-height: 1.6; }}
+        #left-panel ul li {{ margin-bottom: 6px; display: flex; align-items: center; }}
 
         #time-shift-btn {{
             position: absolute;
-            bottom: 30px;
+            bottom: 40px;
             left: 50%;
             transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.85);
             color: white;
-            font-weight: bold;
-            padding: 10px 20px;
+            font-weight: 800;
+            padding: 14px 28px;
             border: 2px solid #ffcc00;
-            border-radius: 8px;
+            border-radius: 30px;
             cursor: pointer;
-            font-size: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+            font-size: 16px;
             z-index: 1000;
+            transition: all 0.2s;
         }}
+        
+        #time-shift-btn:hover {{ background: #ffcc00; color: #000; }}
 
         #bottom-banner {{
             display: none;
             position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(20, 20, 20, 0.95);
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 700px;
             color: white;
-            padding: 15px 20px;
+            padding: 20px 30px;
+            border-radius: 16px;
             box-sizing: border-box;
             z-index: 1100;
-            box-shadow: 0 -4px 10px rgba(0,0,0,0.5);
-            border-top: 2px solid #555;
+            display: none;
+            flex-direction: column;
+            align-items: center;
         }}
 
         .banner-header {{
+            width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            margin-bottom: 15px;
+            position: relative;
+            margin-bottom: 20px;
         }}
 
-        .banner-header h3 {{ margin: 0; font-size: 16px; color: #ffcc00; }}
+        .banner-header h3 {{ margin: 0; font-size: 18px; color: #ffcc00; font-weight: 800; }}
         
         .close-btn {{
+            position: absolute;
+            right: 0;
             background: none;
             border: none;
-            color: white;
-            font-size: 24px;
+            color: rgba(255,255,255,0.6);
+            font-size: 28px;
             font-weight: bold;
             cursor: pointer;
             padding: 0;
             line-height: 1;
+            transition: color 0.2s;
         }}
+        .close-btn:hover {{ color: white; }}
 
         .controls-row {{
             display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            align-items: center;
-            margin-bottom: 15px;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+            width: 100%;
         }}
 
         .controls-row select {{
-            background: #333;
+            background: rgba(0,0,0,0.5);
             color: white;
-            border: 1px solid #777;
-            border-radius: 4px;
-            padding: 8px;
-            font-size: 14px;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 10px 15px;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            cursor: pointer;
         }}
 
         .slider-wrapper {{
             position: relative;
-            width: 100%;
+            width: 95%;
             margin-top: 10px;
         }}
 
         input[type=range] {{
             width: 100%;
             cursor: pointer;
+            accent-color: #ffcc00;
         }}
         
         #slider-tooltip {{
             position: absolute;
-            top: -25px;
+            top: -35px;
             background: #ffcc00;
             color: black;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 800;
             transform: translateX(-50%);
             pointer-events: none;
             display: none;
             white-space: nowrap;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         }}
 
         .plane-tooltip {{
-            background: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            border: 1px solid #fff;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 12px;
+            background: rgba(15, 15, 20, 0.9) !important;
+            backdrop-filter: blur(4px);
+            color: #fff !important;
+            border: 1px solid rgba(255,255,255,0.2) !important;
+            border-radius: 6px !important;
+            font-weight: 800;
+            font-size: 13px;
+            font-family: 'Inter', sans-serif;
         }}
         
-        .leaflet-popup-content {{ font-size: 13px; line-height: 1.4; }}
-
-        @media (max-width: 767px) {{
-            #top-banner {{ font-size: 13px; padding: 8px 15px; }}
-            #left-panel {{
-                transform: translateX(-100%);
-            }}
-            #left-panel.open {{
-                transform: translateX(0);
-            }}
+        .leaflet-popup-content-wrapper {{
+            background: rgba(15, 15, 20, 0.95);
+            backdrop-filter: blur(8px);
+            color: white;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
         }}
-        @media (min-width: 768px) {{
-            #left-panel {{ transform: translateX(0); }}
-            #left-panel.retracted {{ transform: translateX(-100%); }}
+        .leaflet-popup-tip {{ background: rgba(15, 15, 20, 0.95); }}
+        .leaflet-popup-content {{ font-size: 14px; line-height: 1.6; font-family: 'Inter', sans-serif; }}
+
+        /* Retraction Logic */
+        .retracted {{ transform: translateX(calc(-100% - 20px)); }}
+        
+        @media (max-width: 767px) {{
+            #top-banner {{ font-size: 12px; padding: 8px 16px; top: 10px; }}
+            #left-panel {{ top: 60px; left: 10px; width: 280px; }}
+            .retracted {{ transform: translateX(calc(-100% - 10px)); }}
+            .controls-row {{ flex-direction: column; gap: 10px; }}
+            #bottom-banner {{ width: 95%; padding: 20px 15px; bottom: 20px; }}
+            #time-shift-btn {{ bottom: 20px; }}
         }}
     </style>
 </head>
 <body>
-    <div id="loading">Updating temporal data...</div>
-    <div id="top-banner">Data Captured: Loading...</div>
+    <div id="loading">Syncing Radar...</div>
+    <div id="top-banner" class="glass-panel">Radar Snapshot: Loading...</div>
     
-    <div id="left-panel">
+    <div id="left-panel" class="glass-panel retracted">
         <div id="panel-toggle">>></div>
         <h3>Airspace Analytics</h3>
-        <p><b>Total Commercial Planes:</b> <span id="plane-count">0</span></p>
+        <p><b>Commercial Planes:</b> <span id="plane-count" style="color:#ffcc00; font-weight:bold;">0</span></p>
         
         <h4>Active Countries</h4>
         <ul id="country-list"></ul>
@@ -830,9 +865,9 @@ def generate_planes_html(history_24h):
         <ul id="airline-list"></ul>
     </div>
 
-    <button id="time-shift-btn">🕰️ Time Shift</button>
+    <button id="time-shift-btn" class="glass-panel">🕰️ Time Shift</button>
 
-    <div id="bottom-banner">
+    <div id="bottom-banner" class="glass-panel">
         <div class="banner-header">
             <h3>🕰️ Time Shift Controls</h3>
             <button class="close-btn" id="close-banner-btn">&times;</button>
@@ -867,7 +902,7 @@ def generate_planes_html(history_24h):
         var googleTerrain = L.tileLayer('https://{{s}}.google.com/vt/lyrs=p&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
         
         var CartoDB_DarkMatter = L.tileLayer('https://{{s}}.basemaps.cartocdn.com/dark_all/{{z}}/{{x}}/{{y}}{{r}}.png', {{
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            attribution: '&copy; OpenStreetMap &copy; CARTO',
             subdomains: 'abcd',
             maxZoom: 20
         }}).addTo(map);
@@ -875,7 +910,7 @@ def generate_planes_html(history_24h):
         var baseMaps = {{
             "Dark Tracker (Default)": CartoDB_DarkMatter,
             "Standard Map": googleStreets,
-            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
+            "Hybrid (Satellite + Borders)": googleHybrid,
             "Satellite": googleSat,
             "Terrain": googleTerrain
         }};
@@ -919,19 +954,15 @@ def generate_planes_html(history_24h):
         const toggleBtn = document.getElementById("panel-toggle");
         const leftPanel = document.getElementById("left-panel");
         
-        toggleBtn.onclick = function() {{
-            if (window.innerWidth < 768) {{
-                leftPanel.classList.toggle("open");
-                toggleBtn.innerText = leftPanel.classList.contains("open") ? "<<" : ">>";
-            }} else {{
-                leftPanel.classList.toggle("retracted");
-                toggleBtn.innerText = leftPanel.classList.contains("retracted") ? ">>" : "<<";
-            }}
-        }};
-
         if (window.innerWidth >= 768) {{
+            leftPanel.classList.remove("retracted");
             toggleBtn.innerText = "<<";
         }}
+        
+        toggleBtn.onclick = function() {{
+            leftPanel.classList.toggle("retracted");
+            toggleBtn.innerText = leftPanel.classList.contains("retracted") ? ">>" : "<<";
+        }};
         
         const timeShiftBtn = document.getElementById("time-shift-btn");
         const bottomBanner = document.getElementById("bottom-banner");
@@ -943,7 +974,7 @@ def generate_planes_html(history_24h):
         
         timeShiftBtn.onclick = function() {{
             timeShiftBtn.style.display = "none";
-            bottomBanner.style.display = "block";
+            bottomBanner.style.display = "flex";
         }}
         
         closeBannerBtn.onclick = function() {{
@@ -953,13 +984,29 @@ def generate_planes_html(history_24h):
 
         const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
         
+        function getFlagHTML(country) {{
+            const c = country.toLowerCase();
+            if (c.includes("iran")) {{
+                return `<img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/State_flag_of_Iran_%281964%E2%80%931980%29.svg" style="width:20px; height:auto; vertical-align:middle; margin-right:8px; border-radius:2px;">`;
+            }}
+            const flagMap = {{
+                "united arab emirates": "🇦🇪", "qatar": "🇶🇦", "turkey": "🇹🇷", "saudi arabia": "🇸🇦",
+                "kuwait": "🇰🇼", "oman": "🇴🇲", "bahrain": "🇧🇭", "iraq": "🇮🇶", "pakistan": "🇵🇰",
+                "india": "🇮🇳", "afghanistan": "🇦🇫", "germany": "🇩🇪", "france": "🇫🇷", "united kingdom": "🇬🇧",
+                "russia": "🇷🇺", "china": "🇨🇳", "united states": "🇺🇸", "switzerland": "🇨🇭", "netherlands": "🇳🇱",
+                "italy": "🇮🇹", "spain": "🇪🇸", "egypt": "🇪🇬", "jordan": "🇯🇴", "lebanon": "🇱🇧", "syria": "🇸🇾"
+            }};
+            if(flagMap[c]) return `<span style="font-size:18px; margin-right:8px; vertical-align:middle;">${{flagMap[c]}}</span>`;
+            return `<span style="font-size:18px; margin-right:8px; vertical-align:middle;">🏳️</span>`;
+        }}
+
         function renderPlanes(index) {{
             loading.style.display = "flex";
             
             setTimeout(() => {{
                 planeLayerGroup.clearLayers();
                 const record = flightHistory[index];
-                banner.innerText = "Data Captured: " + record.time_str;
+                banner.innerText = "Radar Snapshot: " + record.time_str;
                 countDisplay.innerText = record.count;
                 
                 const airlines = new Set();
@@ -994,10 +1041,14 @@ def generate_planes_html(history_24h):
                     marker.bindPopup(popup);
 
                     if(isTouchDevice) {{
-                        marker.on('mousedown touchstart', function() {{
-                            this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', permanent: true}}).openTooltip();
+                        let touchTimer;
+                        marker.on('touchstart', function() {{
+                            touchTimer = setTimeout(() => {{
+                                this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', permanent: true}}).openTooltip();
+                            }}, 100);
                         }});
-                        marker.on('mouseup touchend', function() {{
+                        marker.on('touchend', function() {{
+                            clearTimeout(touchTimer);
                             this.closeTooltip();
                             this.unbindTooltip();
                         }});
@@ -1019,7 +1070,7 @@ def generate_planes_html(history_24h):
                 Array.from(countries).sort().forEach(country => {{
                     if(country && country !== "Unknown Location") {{
                         let li = document.createElement("li");
-                        li.innerText = country;
+                        li.innerHTML = getFlagHTML(country) + country;
                         countryList.appendChild(li);
                     }}
                 }});
@@ -1097,7 +1148,10 @@ def generate_planes_html(history_24h):
                 const val = this.value;
                 const min = this.min ? this.min : 0;
                 const max = this.max ? this.max : 100;
-                const newVal = Number(((val - min) * 100) / (max - min));
+                let newVal = 0;
+                if (max > min) {{
+                    newVal = Number(((val - min) * 100) / (max - min));
+                }}
                 sliderTooltip.style.left = `calc(${{newVal}}% + (${{8 - newVal * 0.15}}px))`;
                 
                 syncSelectsToIndex(this.value);
@@ -1118,7 +1172,6 @@ def generate_planes_html(history_24h):
             banner.innerText = "No temporal data available yet.";
             loading.style.display = "none";
         }}
-
     </script>
 </body>
 </html>"""
