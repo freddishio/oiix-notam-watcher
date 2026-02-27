@@ -94,12 +94,12 @@
                 if (feature.properties) {
                     var id = feature.properties.id || "";
                     var name = feature.properties.FIRname || "";
-                    if (id === "OIIX" || name.indexOf("Tehran") !== -1) {
+                    if (id === "OIIX" || name.indexOf("Tehran") !== -1 || name.indexOf("Iran") !== -1) {
                         isIran = true;
                     }
                 }
                 return {
-                    color: "#0055ff", 
+                    color: isIran ? "#0055ff" : "#00ff00", 
                     weight: 2, 
                     fillOpacity: isIran ? 0.15 : 0.0
                 };
@@ -120,7 +120,7 @@
             .catch(err => console.error("Could not load FIR boundaries:", err));
 
         var overlayMaps = {
-            "Show Airspace Boundaries (FIR)": firLayer
+            "Show Airspace Boundaries": firLayer
         };
         
         L.control.layers(baseMaps, overlayMaps).addTo(map);
@@ -157,9 +157,9 @@ markers['B0139/26'] = L.circle([32.533333, 55.233333], {color: '#ffa500', radius
                 if (markers[hash]) {
                     var layer = markers[hash];
                     if (layer.getBounds) {
-                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 6.5});
+                        map.fitBounds(layer.getBounds(), {padding: [150, 150], maxZoom: 6});
                     } else if (layer.getLatLng) {
-                        map.setView(layer.getLatLng(), 6.5);
+                        map.setView(layer.getLatLng(), 6);
                     }
                     layer.openPopup();
                 } else {
