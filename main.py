@@ -145,6 +145,111 @@ def translate_e_section(text):
         
     return e_section
 
+def load_json(filepath, default_value):
+    if not os.path.exists(filepath): return default_value
+    with open(filepath, "r", encoding="utf-8") as f:
+        try: return json.load(f)
+        except: return default_value
+
+def save_json(filepath, data):
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+def get_icao_airlines():
+    global ACTIVE_KEYS
+    now = time.time()
+    airlines_data = load_json(ICAO_AIRLINES_FILE, {})
+    
+    last_check = airlines_data.get("_last_check", 0)
+    
+    if now - last_check < 86400 and len(airlines_data) > 1:
+        return airlines_data
+        
+    print("Updating FAA ICAO Airline registry...")
+    headers = {"User-Agent": "Mozilla/5.0"}
+    url = "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_3.html"
+    
+    new_or_changed = {}
+    
+    try:
+        resp = requests.get(url, headers=headers, timeout=20)
+        resp.raise_for_status()
+        html_content = resp.text
+        
+        rows = re.split(r'<tr[^>]*>', html_content, flags=re.IGNORECASE)[1:]
+        for row in rows:
+            cols = re.findall(r'<td[^>]*>(.*?)</td>', row, flags=re.IGNORECASE | re.DOTALL)
+            if len(cols) >= 3:
+                code = re.sub(r'<[^>]+>', '', cols[0]).strip()
+                company = re.sub(r'<[^>]+>', '', cols[1]).strip()
+                country = re.sub(r'<[^>]+>', '', cols[2]).strip()
+                
+                if "ISLAMIC REPUBLIC OF IRAN" in country.upper() or "IRAN" in country.upper():
+                    country = "Iran"
+                    
+                if len(code) == 3 and code.isalpha():
+                    existing = airlines_data.get(code)
+                    if not existing or existing.get("formal_name") != company:
+                        new_or_changed[code] = company
+                        airlines_data[code] = {
+                            "formal_name": company, 
+                            "country": country,
+                            "common_name": company
+                        }
+    except Exception as e:
+        print(f"FAA Registry fetch failed: {e}")
+        
+    if new_or_changed and ACTIVE_KEYS:
+        codes = list(new_or_changed.keys())
+        batch_size = 200
+        for i in range(0, len(codes), batch_size):
+            batch_codes = codes[i:i+batch_size]
+            batch_dict = {c: new_or_changed[c] for c in batch_codes}
+            
+            prompt = "Here is a JSON dictionary of airline ICAO codes and their formal registered names. Return a JSON dictionary mapping the exact same ICAO codes to their most common everyday spoken airline name. For example 'IRAN NATIONAL AIRLINES CORP. (IRAN AIR)' becomes 'Iran Air'. Return ONLY valid JSON and nothing else.\n\n" + json.dumps(batch_dict)
+            
+            data = {
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {"response_mime_type": "application/json", "temperature": 0.1}
+            }
+            
+            success = False
+            keys_tried = 0
+            initial_key_count = len(ACTIVE_KEYS)
+            
+            while keys_tried < initial_key_count and ACTIVE_KEYS and not success:
+                current_key = ACTIVE_KEYS.popleft()
+                ACTIVE_KEYS.append(current_key)
+                keys_tried += 1
+                
+                ai_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={current_key}"
+                try:
+                    ai_resp = requests.post(ai_url, headers={'Content-Type': 'application/json'}, json=data, timeout=30)
+                    if ai_resp.status_code == 429:
+                        ACTIVE_KEYS.pop()
+                        continue
+                        
+                    ai_resp.raise_for_status()
+                    res_json = ai_resp.json()
+                    text = res_json['candidates'][0]['content']['parts'][0]['text'].strip()
+                    
+                    if text.startswith("```json"): text = text[7:-3]
+                    elif text.startswith("```"): text = text[3:-3]
+                    
+                    common_names = json.loads(text.strip())
+                    for c, common in common_names.items():
+                        if c in airlines_data:
+                            airlines_data[c]["common_name"] = common
+                    success = True
+                    time.sleep(20)
+                except Exception as e:
+                    print(f"AI Airline processing error: {e}")
+                    continue
+                    
+    airlines_data["_last_check"] = time.time()
+    save_json(ICAO_AIRLINES_FILE, airlines_data)
+    return airlines_data
+
 def get_ai_explanation(raw_text):
     global ACTIVE_KEYS
     if not ACTIVE_KEYS:
@@ -263,8 +368,7 @@ def decode_notam(raw_text):
 
 def get_all_notams():
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+        "User-Agent": "Mozilla/5.0"
     }
     all_notams = []
     targets = ["OIIX", "KICZ"]
@@ -298,51 +402,6 @@ def get_all_notams():
                 break
                 
     return all_notams
-
-def load_json(filepath, default_value):
-    if not os.path.exists(filepath): return default_value
-    with open(filepath, "r", encoding="utf-8") as f:
-        try: return json.load(f)
-        except: return default_value
-
-def save_json(filepath, data):
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2)
-
-def get_icao_airlines():
-    now = time.time()
-    if os.path.exists(ICAO_AIRLINES_FILE):
-        if now - os.path.getmtime(ICAO_AIRLINES_FILE) < 86400:
-            return load_json(ICAO_AIRLINES_FILE, {})
-            
-    print("Updating FAA ICAO Airline registry...")
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
-    url = "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_3.html"
-    
-    airline_dict = {}
-    try:
-        resp = requests.get(url, headers=headers, timeout=20)
-        resp.raise_for_status()
-        html_content = resp.text
-        
-        rows = re.split(r'<tr[^>]*>', html_content, flags=re.IGNORECASE)[1:]
-        for row in rows:
-            cols = re.findall(r'<td[^>]*>(.*?)</td>', row, flags=re.IGNORECASE | re.DOTALL)
-            if len(cols) >= 3:
-                code = re.sub(r'<[^>]+>', '', cols[0]).strip()
-                company = re.sub(r'<[^>]+>', '', cols[1]).strip()
-                country = re.sub(r'<[^>]+>', '', cols[2]).strip()
-                
-                if len(code) == 3 and code.isalpha():
-                    airline_dict[code] = {"name": company, "country": country}
-                    
-        if airline_dict:
-            save_json(ICAO_AIRLINES_FILE, airline_dict)
-            return airline_dict
-    except Exception as e:
-        print(f"FAA Registry fetch failed: {e}")
-        
-    return load_json(ICAO_AIRLINES_FILE, {})
 
 def extract_notam_details(raw_text, decoded_obj, notam_id):
     subject_text = "Unknown Subject"
@@ -428,24 +487,29 @@ def extract_notam_details(raw_text, decoded_obj, notam_id):
 def fetch_iran_planes():
     print("Fetching active aircraft locations over 16 high resolution quadrants from Flightradar24...")
     
-    centers = [
-        (37.94, 45.71), (37.94, 50.71), (37.94, 55.71), (37.94, 60.71),
-        (34.34, 45.71), (34.34, 50.71), (34.34, 55.71), (34.34, 60.71),
-        (30.74, 45.71), (30.74, 50.71), (30.74, 55.71), (30.74, 60.71),
-        (27.14, 45.71), (27.14, 50.71), (27.14, 55.71), (27.14, 60.71)
+    bounds_list = [
+        "37.94,45.71/8", "37.94,50.71/8", "37.94,55.71/8", "37.94,60.71/8",
+        "34.34,45.71/8", "34.34,50.71/8", "34.34,55.71/8", "34.34,60.71/8",
+        "30.74,45.71/8", "30.74,50.71/8", "30.74,55.71/8", "30.74,60.71/8",
+        "27.14,45.71/8", "27.14,50.71/8", "27.14,55.71/8", "27.14,60.71/8"
     ]
     
-    bounds_list = [f"{lat+2.5:.2f},{lat-2.5:.2f},{lon-3.2:.2f},{lon+3.2:.2f}" for lat, lon in centers]
+    api_bounds = []
+    for coord_str in bounds_list:
+        parts = coord_str.replace("/8","").split(",")
+        lat = float(parts[0])
+        lon = float(parts[1])
+        api_bounds.append(f"{lat+2.5:.2f},{lat-2.5:.2f},{lon-3.2:.2f},{lon+3.2:.2f}")
     
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0",
         "Accept": "application/json",
         "Referer": "https://www.flightradar24.com/"
     }
     
     all_fr24_data = {}
     
-    for b in bounds_list:
+    for b in api_bounds:
         fr24_url = f"https://data-cloud.flightradar24.com/zones/fcgi/feed.js?bounds={b}"
         try:
             response = requests.get(fr24_url, headers=headers, timeout=15)
@@ -457,7 +521,6 @@ def fetch_iran_planes():
         except Exception as e:
             print(f"Error fetching FR24 data for bounds {b}: {e}")
 
-    print("Fetching VATSIM FIR GeoJSON for surgical boundary filtering...")
     geo_url = "https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson"
     oiix_polygon = None
     
@@ -494,10 +557,11 @@ def fetch_iran_planes():
             callsign = value[16] if len(value) > 16 and value[16] else "Unknown Callsign"
             
             airline_code = callsign[:3] if callsign != "Unknown Callsign" else ""
-            airline_info = icao_airlines.get(airline_code, {"name": airline_code, "country": "Unknown Location"})
-            airline_name = airline_info["name"] if airline_info["name"] else airline_code
+            airline_info = icao_airlines.get(airline_code, {"common_name": airline_code, "country": "Unknown Location"})
+            airline_name = airline_info.get("common_name", airline_code)
             if not airline_name: airline_name = "Unknown Airline"
-            airline_country = airline_info["country"] if airline_info["country"] else "Unknown Location"
+            
+            airline_country = airline_info.get("country", "Unknown Location")
             
             plane_point = Point(lon, lat)
             
@@ -528,7 +592,7 @@ def generate_planes_html(history_24h):
 <head>
     <title>Active Aircraft Over OIIX</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
@@ -544,7 +608,7 @@ def generate_planes_html(history_24h):
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
             z-index: 2000;
             transition: opacity 0.3s;
@@ -557,112 +621,145 @@ def generate_planes_html(history_24h):
             transform: translateX(-50%);
             background: rgba(0, 0, 0, 0.75);
             color: #fff;
-            padding: 10px 25px;
+            padding: 8px 18px;
             border-radius: 8px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: bold;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             white-space: nowrap;
         }}
 
-        #panel-toggle {{
-            position: absolute;
-            top: 70px;
-            left: 15px;
-            background: rgba(0, 0, 0, 0.85);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 6px;
-            cursor: pointer;
-            z-index: 1100;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            border: 1px solid #555;
-        }}
-
         #left-panel {{
             position: absolute;
-            top: 120px;
-            left: 15px;
-            width: 280px;
+            top: 70px;
+            left: 0;
+            width: 250px;
             max-height: 60vh;
             background: rgba(0, 0, 0, 0.85);
             color: #fff;
             padding: 15px;
-            border-radius: 8px;
+            border-radius: 0 8px 8px 0;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0,0,0,0.3);
             overflow-y: auto;
             transition: transform 0.3s ease;
         }}
-        
-        #left-panel h3 {{ margin: 0 0 10px 0; font-size: 18px; border-bottom: 1px solid #555; padding-bottom: 5px; }}
-        #left-panel h4 {{ margin: 15px 0 5px 0; font-size: 15px; color: #ffcc00; }}
-        #left-panel p {{ margin: 5px 0; font-size: 14px; }}
-        #left-panel ul {{ margin: 5px 0 0 0; padding-left: 20px; font-size: 13px; color: #ddd; }}
 
-        #bottom-controls {{
+        #panel-toggle {{
+            position: absolute;
+            right: -32px;
+            top: 20px;
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            padding: 8px 5px;
+            border-radius: 0 6px 6px 0;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }}
+        
+        #left-panel h3 {{ margin: 0 0 10px 0; font-size: 16px; border-bottom: 1px solid #555; padding-bottom: 5px; }}
+        #left-panel h4 {{ margin: 15px 0 5px 0; font-size: 14px; color: #ffcc00; }}
+        #left-panel p {{ margin: 5px 0; font-size: 13px; }}
+        #left-panel ul {{ margin: 5px 0 0 0; padding-left: 20px; font-size: 12px; color: #ddd; line-height: 1.4; }}
+
+        #time-shift-btn {{
             position: absolute;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
-            z-index: 1000;
-        }}
-        
-        #time-shift-btn {{
             background: rgba(0, 0, 0, 0.85);
             color: white;
             font-weight: bold;
-            padding: 12px 24px;
+            padding: 10px 20px;
             border: 2px solid #ffcc00;
             border-radius: 8px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+            z-index: 1000;
         }}
-        
-        #time-shift-btn:hover {{ background: #ffcc00; color: #000; }}
-        
-        .modal-overlay {{
+
+        #bottom-banner {{
             display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-            z-index: 3000;
-        }}
-        
-        .modal-content {{
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: #222;
-            color: white;
-            padding: 25px;
-            border-radius: 12px;
-            border: 2px solid #555;
-            min-width: 300px;
-            text-align: center;
-        }}
-        
-        .modal-content select, .modal-content input[type=range] {{
+            bottom: 0;
+            left: 0;
             width: 100%;
-            padding: 8px;
-            margin: 10px 0;
+            background: rgba(20, 20, 20, 0.95);
+            color: white;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            z-index: 1100;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.5);
+            border-top: 2px solid #555;
+        }}
+
+        .banner-header {{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }}
+
+        .banner-header h3 {{ margin: 0; font-size: 16px; color: #ffcc00; }}
+        
+        .close-btn {{
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0;
+            line-height: 1;
+        }}
+
+        .controls-row {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+        }}
+
+        .controls-row select {{
             background: #333;
             color: white;
             border: 1px solid #777;
             border-radius: 4px;
-            font-size: 16px;
-            box-sizing: border-box;
+            padding: 8px;
+            font-size: 14px;
+        }}
+
+        .slider-wrapper {{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }}
+
+        input[type=range] {{
+            width: 100%;
+            cursor: pointer;
         }}
         
-        .modal-btn {{
-            padding: 8px 15px; margin: 5px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;
-            background: #555; color: white;
+        #slider-tooltip {{
+            position: absolute;
+            top: -25px;
+            background: #ffcc00;
+            color: black;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            transform: translateX(-50%);
+            pointer-events: none;
+            display: none;
+            white-space: nowrap;
         }}
-        
+
         .plane-tooltip {{
             background: rgba(0, 0, 0, 0.8);
             color: #fff;
@@ -671,16 +768,16 @@ def generate_planes_html(history_24h):
             font-weight: bold;
             font-size: 12px;
         }}
-        .leaflet-popup-content {{ font-size: 14px; line-height: 1.5; }}
+        
+        .leaflet-popup-content {{ font-size: 13px; line-height: 1.4; }}
 
         @media (max-width: 767px) {{
-            #top-banner {{ font-size: 13px; padding: 8px 15px; }}
-            #left-panel {{
-                transform: translateX(-120%);
-            }}
-            #left-panel.open {{
-                transform: translateX(0);
-            }}
+            #left-panel {{ transform: translateX(-100%); }}
+            #left-panel.open {{ transform: translateX(0); }}
+        }}
+        @media (min-width: 768px) {{
+            #left-panel {{ transform: translateX(0); }}
+            #left-panel.retracted {{ transform: translateX(-100%); }}
         }}
     </style>
 </head>
@@ -688,9 +785,8 @@ def generate_planes_html(history_24h):
     <div id="loading">Updating temporal data...</div>
     <div id="top-banner">Data Captured: Loading...</div>
     
-    <div id="panel-toggle" onclick="document.getElementById('left-panel').classList.toggle('open')">☰ Analytics</div>
-
     <div id="left-panel">
+        <div id="panel-toggle">>></div>
         <h3>Airspace Analytics</h3>
         <p><b>Total Commercial Planes:</b> <span id="plane-count">0</span></p>
         
@@ -701,23 +797,20 @@ def generate_planes_html(history_24h):
         <ul id="airline-list"></ul>
     </div>
 
-    <div id="bottom-controls">
-        <button id="time-shift-btn">🕰️ Time Shift</button>
-    </div>
+    <button id="time-shift-btn">🕰️ Time Shift</button>
 
-    <div id="time-modal" class="modal-overlay">
-        <div class="modal-content">
-            <h3>🕰️ Time Shift</h3>
-            <label>Date & Hour:</label>
-            <select id="dateHourSelect"></select>
-            
-            <label>Exact Minute:</label>
+    <div id="bottom-banner">
+        <div class="banner-header">
+            <h3>🕰️ Time Shift Controls</h3>
+            <button class="close-btn" id="close-banner-btn">&times;</button>
+        </div>
+        <div class="controls-row">
+            <select id="hourSelect"></select>
             <select id="minuteSelect"></select>
-            
-            <br>
+        </div>
+        <div class="slider-wrapper">
+            <div id="slider-tooltip"></div>
             <input type="range" id="modalSlider" min="0" max="0" value="0">
-            <br><br>
-            <button class="modal-btn" onclick="document.getElementById('time-modal').style.display='none'">Close Dashboard</button>
         </div>
     </div>
 
@@ -741,7 +834,7 @@ def generate_planes_html(history_24h):
         var googleTerrain = L.tileLayer('https://{{s}}.google.com/vt/lyrs=p&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3'], attribution: 'Map data © Google'}});
         
         var CartoDB_DarkMatter = L.tileLayer('https://{{s}}.basemaps.cartocdn.com/dark_all/{{z}}/{{x}}/{{y}}{{r}}.png', {{
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             subdomains: 'abcd',
             maxZoom: 20
         }}).addTo(map);
@@ -749,7 +842,7 @@ def generate_planes_html(history_24h):
         var baseMaps = {{
             "Dark Tracker (Default)": CartoDB_DarkMatter,
             "Standard Map": googleStreets,
-            "Hybrid (Satellite + Borders/Roads)": googleHybrid,
+            "Hybrid (Satellite + Borders)": googleHybrid,
             "Satellite": googleSat,
             "Terrain": googleTerrain
         }};
@@ -761,14 +854,14 @@ def generate_planes_html(history_24h):
                 if (feature.properties) {{
                     var id = feature.properties.id || "";
                     var name = feature.properties.FIRname || "";
-                    if (id === "OIIX" || name.indexOf("Tehran") !== -1) {{
+                    if (id === "OIIX" || name.indexOf("Tehran") !== -1 || name.indexOf("Iran") !== -1) {{
                         isIran = true;
                     }}
                 }}
                 return {{
-                    color: "#0055ff", 
+                    color: isIran ? "#0055ff" : "#00ff00", 
                     weight: 2, 
-                    fillOpacity: isIran ? 0.1 : 0.0
+                    fillOpacity: isIran ? 0.15 : 0.0
                 }};
             }}
         }}).addTo(map);
@@ -778,7 +871,7 @@ def generate_planes_html(history_24h):
             .then(data => firLayer.addData(data));
             
         var overlayMaps = {{
-            "Show Airspace Boundaries (FIR)": firLayer
+            "Show Airspace Boundaries": firLayer
         }};
         
         L.control.layers(baseMaps, overlayMaps).addTo(map);
@@ -790,16 +883,42 @@ def generate_planes_html(history_24h):
         const airlineList = document.getElementById("airline-list");
         const countryList = document.getElementById("country-list");
         const loading = document.getElementById("loading");
+        const toggleBtn = document.getElementById("panel-toggle");
+        const leftPanel = document.getElementById("left-panel");
+        
+        toggleBtn.onclick = function() {{
+            if (window.innerWidth < 768) {{
+                leftPanel.classList.toggle("open");
+                toggleBtn.innerText = leftPanel.classList.contains("open") ? "<<" : ">>";
+            }} else {{
+                leftPanel.classList.toggle("retracted");
+                toggleBtn.innerText = leftPanel.classList.contains("retracted") ? ">>" : "<<";
+            }}
+        }};
+
+        if (window.innerWidth >= 768) {{
+            toggleBtn.innerText = "<<";
+        }}
         
         const timeShiftBtn = document.getElementById("time-shift-btn");
-        const timeModal = document.getElementById("time-modal");
-        const dhSelect = document.getElementById("dateHourSelect");
+        const bottomBanner = document.getElementById("bottom-banner");
+        const closeBannerBtn = document.getElementById("close-banner-btn");
+        const hSelect = document.getElementById("hourSelect");
         const mSelect = document.getElementById("minuteSelect");
         const modalSlider = document.getElementById("modalSlider");
+        const sliderTooltip = document.getElementById("slider-tooltip");
         
         timeShiftBtn.onclick = function() {{
-            timeModal.style.display = "block";
+            timeShiftBtn.style.display = "none";
+            bottomBanner.style.display = "block";
         }}
+        
+        closeBannerBtn.onclick = function() {{
+            bottomBanner.style.display = "none";
+            timeShiftBtn.style.display = "block";
+        }}
+
+        const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
         
         function renderPlanes(index) {{
             loading.style.display = "flex";
@@ -835,8 +954,22 @@ def generate_planes_html(history_24h):
                         fillOpacity: 0.8
                     }});
                     
-                    marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip'}});
+                    if(!isTouchDevice) {{
+                        marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip'}});
+                    }}
+                    
                     marker.bindPopup(popup);
+
+                    if(isTouchDevice) {{
+                        marker.on('mousedown touchstart', function() {{
+                            this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', permanent: true}}).openTooltip();
+                        }});
+                        marker.on('mouseup touchend', function() {{
+                            this.closeTooltip();
+                            this.unbindTooltip();
+                        }});
+                    }}
+                    
                     marker.addTo(planeLayerGroup);
                 }});
                 
@@ -866,66 +999,83 @@ def generate_planes_html(history_24h):
             modalSlider.max = flightHistory.length - 1;
             
             const timeMap = {{}};
+            const latestTime = flightHistory[flightHistory.length - 1].timestamp;
+            
             flightHistory.forEach((record, index) => {{
-                let parts = record.time_str.split(':');
-                if (parts.length >= 2) {{
-                    let dateHour = parts[0]; 
-                    let minute = parts[1];   
-                    if(!timeMap[dateHour]) timeMap[dateHour] = [];
-                    timeMap[dateHour].push({{minute: minute, index: index}});
-                }}
+                let diffSecs = latestTime - record.timestamp;
+                let h = Math.floor(diffSecs / 3600);
+                let m = Math.floor((diffSecs % 3600) / 60);
+                
+                if(!timeMap[h]) timeMap[h] = [];
+                timeMap[h].push({{m: m, index: index}});
             }});
             
-            Object.keys(timeMap).forEach(dh => {{
+            Object.keys(timeMap).sort((a,b) => a-b).forEach(h => {{
                 let opt = document.createElement("option");
-                opt.value = dh;
-                opt.innerText = dh + " UTC";
-                dhSelect.appendChild(opt);
+                opt.value = h;
+                opt.innerText = h + " hours ago";
+                hSelect.appendChild(opt);
             }});
             
             function syncSelectsToIndex(idx) {{
                 let record = flightHistory[idx];
-                let parts = record.time_str.split(':');
-                if (parts.length >= 2) {{
-                    let dh = parts[0];
-                    dhSelect.value = dh;
-                    
-                    mSelect.innerHTML = "";
-                    timeMap[dh].forEach(item => {{
-                        let opt = document.createElement("option");
-                        opt.value = item.index;
-                        opt.innerText = item.minute;
-                        mSelect.appendChild(opt);
-                    }});
-                    mSelect.value = idx;
-                }}
-            }}
-
-            dhSelect.addEventListener('change', function() {{
+                let diffSecs = latestTime - record.timestamp;
+                let h = Math.floor(diffSecs / 3600);
+                
+                hSelect.value = h;
                 mSelect.innerHTML = "";
-                timeMap[this.value].forEach(item => {{
+                
+                timeMap[h].sort((a,b) => a.m - b.m).forEach(item => {{
                     let opt = document.createElement("option");
                     opt.value = item.index;
-                    opt.innerText = item.minute;
+                    opt.innerText = item.m + " minutes ago";
+                    mSelect.appendChild(opt);
+                }});
+                mSelect.value = idx;
+                
+                let mVal = Math.floor((diffSecs % 3600) / 60);
+                sliderTooltip.innerText = h + "h " + mVal + "m ago";
+            }}
+
+            hSelect.addEventListener('change', function() {{
+                mSelect.innerHTML = "";
+                timeMap[this.value].sort((a,b) => a.m - b.m).forEach(item => {{
+                    let opt = document.createElement("option");
+                    opt.value = item.index;
+                    opt.innerText = item.m + " minutes ago";
                     mSelect.appendChild(opt);
                 }});
                 
                 let firstIdx = mSelect.options[0].value;
                 modalSlider.value = firstIdx;
+                syncSelectsToIndex(firstIdx);
                 renderPlanes(firstIdx);
             }});
 
             mSelect.addEventListener('change', function() {{
                 modalSlider.value = this.value;
+                syncSelectsToIndex(this.value);
                 renderPlanes(this.value);
             }});
 
             modalSlider.addEventListener("input", function() {{
+                sliderTooltip.style.display = "block";
+                
+                const val = this.value;
+                const min = this.min ? this.min : 0;
+                const max = this.max ? this.max : 100;
+                const newVal = Number(((val - min) * 100) / (max - min));
+                sliderTooltip.style.left = `calc(${{newVal}}% + (${{8 - newVal * 0.15}}px))`;
+                
                 syncSelectsToIndex(this.value);
+            }});
+            
+            modalSlider.addEventListener("change", function() {{
+                sliderTooltip.style.display = "none";
                 renderPlanes(this.value);
             }});
             
-            if(dhSelect.options.length > 0) {{
+            if(hSelect.options.length > 0) {{
                 let lastIdx = flightHistory.length - 1;
                 modalSlider.value = lastIdx;
                 syncSelectsToIndex(lastIdx);
@@ -935,7 +1085,6 @@ def generate_planes_html(history_24h):
             banner.innerText = "No temporal data available yet.";
             loading.style.display = "none";
         }}
-
     </script>
 </body>
 </html>"""
@@ -1099,12 +1248,12 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (feature.properties) {{
                     var id = feature.properties.id || "";
                     var name = feature.properties.FIRname || "";
-                    if (id === "OIIX" || name.indexOf("Tehran") !== -1) {{
+                    if (id === "OIIX" || name.indexOf("Tehran") !== -1 || name.indexOf("Iran") !== -1) {{
                         isIran = true;
                     }}
                 }}
                 return {{
-                    color: "#0055ff", 
+                    color: isIran ? "#0055ff" : "#00ff00", 
                     weight: 2, 
                     fillOpacity: isIran ? 0.15 : 0.0
                 }};
@@ -1125,7 +1274,7 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
             .catch(err => console.error("Could not load FIR boundaries:", err));
 
         var overlayMaps = {{
-            "Show Airspace Boundaries (FIR)": firLayer
+            "Show Airspace Boundaries": firLayer
         }};
         
         L.control.layers(baseMaps, overlayMaps).addTo(map);
@@ -1138,9 +1287,9 @@ def generate_map_html(decoded_dict, ai_dict, raw_dict):
                 if (markers[hash]) {{
                     var layer = markers[hash];
                     if (layer.getBounds) {{
-                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6.5}});
+                        map.fitBounds(layer.getBounds(), {{padding: [150, 150], maxZoom: 6}});
                     }} else if (layer.getLatLng) {{
-                        map.setView(layer.getLatLng(), 6.5);
+                        map.setView(layer.getLatLng(), 6);
                     }}
                     layer.openPopup();
                 }} else {{
@@ -1224,7 +1373,9 @@ def main():
     current_count = len(current_planes)
     
     current_timestamp = int(time.time())
-    current_time_str = datetime.utcnow().strftime('%Y/%m/%d %H:%M:%S UTC')
+    
+    dt_teh = datetime.now(timezone.utc).astimezone(tehran_tz)
+    current_time_str = dt_teh.strftime('%Y/%m/%d %H:%M:%S Tehran Time')
     
     new_record = {
         "timestamp": current_timestamp,
