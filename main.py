@@ -136,6 +136,7 @@ def clean_iran_name(text):
     if not text: return text
     cleaned = re.sub(r'islamic\s+republic\s+of\s+iran', 'Iran', text, flags=re.IGNORECASE)
     cleaned = re.sub(r'iran\s+\(islamic\s+republic\s+of\)', 'Iran', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'islamic\s+republic\s+iran', 'Iran', cleaned, flags=re.IGNORECASE)
     return cleaned
 
 def update_faa_registry():
@@ -445,66 +446,77 @@ def generate_planes_html(history_24h):
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        :root {{ --primary: #ffcc00; --bg-glass: rgba(18, 20, 26, 0.85); --bg-solid: #12141a; --border: rgba(255, 255, 255, 0.15); --text-main: #f8f9fa; --text-muted: #a0aab2; }}
+        :root {{ --primary: #ffcc00; --bg-glass: rgba(15, 18, 25, 0.85); --bg-solid: #0f1219; --border: rgba(255, 255, 255, 0.12); --text-main: #f8f9fa; --text-muted: #9aa5b1; }}
         body {{ padding: 0; margin: 0; font-family: 'Inter', sans-serif; overflow: hidden; background: #000; }}
         #map {{ height: 100vh; width: 100vw; z-index: 1; }}
-        .glass-panel {{ background: var(--bg-glass); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid var(--border); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6); color: var(--text-main); }}
         
-        #loading {{ position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; letter-spacing: 1px; z-index: 9999; transition: opacity 0.3s ease; }}
+        .glass-panel {{ background: var(--bg-glass); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8); color: var(--text-main); }}
+        
+        #loading {{ position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; letter-spacing: 1px; z-index: 9999; transition: opacity 0.3s ease; }}
         
         #top-banner {{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 28px; border-radius: 30px; font-size: 15px; font-weight: 700; z-index: 1000; white-space: nowrap; display: flex; align-items: center; gap: 10px; }}
-        #top-banner span.indicator {{ display: inline-block; width: 10px; height: 10px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 10px #00ff00; }}
+        #top-banner span.indicator {{ display: inline-block; width: 10px; height: 10px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 12px #00ff00; }}
 
-        #sidebar-container {{ position: absolute; top: 80px; left: 0; height: calc(100vh - 140px); z-index: 1000; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-340px); display: flex; align-items: flex-start; }}
-        #sidebar-content {{ width: 340px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; }}
+        #sidebar-wrapper {{ position: absolute; top: 80px; left: 0; z-index: 1000; display: flex; align-items: flex-start; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-340px); height: calc(100vh - 140px); }}
+        #sidebar-content {{ width: 340px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; flex-shrink: 0; }}
         #sidebar-content::-webkit-scrollbar {{ width: 6px; }} #sidebar-content::-webkit-scrollbar-thumb {{ background: rgba(255,255,255,0.2); border-radius: 4px; }}
         
-        #sidebar-toggle {{ position: absolute; right: -44px; top: 20px; width: 44px; height: 60px; background: var(--bg-glass); backdrop-filter: blur(16px); border: 1px solid var(--border); border-left: none; border-radius: 0 12px 12px 0; color: var(--primary); cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; box-shadow: 4px 0 15px rgba(0,0,0,0.4); user-select: none; }}
+        #sidebar-toggle {{ width: 44px; height: 64px; margin-top: 20px; background: var(--bg-glass); backdrop-filter: blur(20px); border: 1px solid var(--border); border-left: none; border-radius: 0 12px 12px 0; color: var(--primary); cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; box-shadow: 6px 0 20px rgba(0,0,0,0.5); user-select: none; flex-shrink: 0; }}
         .expanded {{ transform: translateX(0) !important; }}
 
-        .panel-title {{ margin: 0 0 20px 0; font-size: 20px; font-weight: 800; border-bottom: 1px solid var(--border); padding-bottom: 12px; }}
-        .stat-box {{ background: rgba(0,0,0,0.4); padding: 15px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05); }}
-        .stat-num {{ font-size: 36px; font-weight: 800; color: var(--primary); font-family: 'Roboto Mono', monospace; line-height: 1; margin-top: 8px; }}
-        .section-title {{ font-size: 14px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin: 25px 0 10px 0; font-weight: 700; }}
+        .panel-title {{ margin: 0 0 24px 0; font-size: 22px; font-weight: 800; border-bottom: 1px solid var(--border); padding-bottom: 12px; letter-spacing: -0.5px; }}
+        .stat-box {{ background: rgba(0,0,0,0.5); padding: 18px; border-radius: 12px; margin-bottom: 24px; text-align: center; border: 1px solid rgba(255,255,255,0.06); }}
+        .stat-num {{ font-size: 42px; font-weight: 800; color: var(--primary); font-family: 'Roboto Mono', monospace; line-height: 1; margin-top: 10px; text-shadow: 0 2px 10px rgba(255,204,0,0.3); }}
+        .section-title {{ font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin: 30px 0 12px 0; font-weight: 800; }}
         
         .data-list {{ list-style: none; padding: 0; margin: 0; }}
-        .data-list li {{ padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.05); display: flex; align-items: center; font-size: 14px; font-weight: 500; }}
+        .data-list li {{ padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; font-size: 14px; font-weight: 600; color: #e2e8f0; }}
+        .data-list li img {{ filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }}
 
-        #time-shift-btn {{ position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 14px 32px; border-radius: 30px; cursor: pointer; font-size: 16px; font-weight: 800; z-index: 1000; border: 2px solid var(--primary); color: white; transition: all 0.2s ease; }}
-        #time-shift-btn:hover {{ background: var(--primary); color: #000; }}
+        #time-shift-btn {{ position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 16px 36px; border-radius: 40px; cursor: pointer; font-size: 16px; font-weight: 800; z-index: 1000; border: 2px solid var(--primary); color: white; transition: all 0.2s ease; letter-spacing: 0.5px; }}
+        #time-shift-btn:hover {{ background: var(--primary); color: #000; box-shadow: 0 0 20px rgba(255,204,0,0.4); }}
 
-        #time-dock {{ display: none; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 600px; border-radius: 20px; padding: 24px; box-sizing: border-box; z-index: 1100; text-align: center; }}
-        .dock-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; }}
-        .dock-header h3 {{ margin: 0; font-size: 18px; font-weight: 800; color: var(--primary); width: 100%; text-align: center; }}
+        #time-dock {{ display: none; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 92%; max-width: 650px; border-radius: 20px; padding: 28px; box-sizing: border-box; z-index: 1100; text-align: center; }}
+        .dock-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; position: relative; }}
+        .dock-header h3 {{ margin: 0; font-size: 18px; font-weight: 800; color: var(--primary); width: 100%; text-align: center; text-transform: uppercase; letter-spacing: 1px; }}
         .close-btn {{ position: absolute; right: 0; background: none; border: none; color: var(--text-muted); font-size: 28px; cursor: pointer; padding: 0; line-height: 1; transition: color 0.2s; }} .close-btn:hover {{ color: white; }}
         
-        .dock-controls {{ display: flex; justify-content: center; gap: 15px; margin-bottom: 25px; }}
-        .dock-controls select {{ background: rgba(0,0,0,0.5); color: white; border: 1px solid var(--border); border-radius: 8px; padding: 12px 20px; font-size: 15px; font-family: 'Inter', sans-serif; font-weight: 600; outline: none; cursor: pointer; }}
+        .dock-controls {{ display: flex; justify-content: center; gap: 20px; margin-bottom: 30px; }}
+        .dock-controls select {{ background: rgba(0,0,0,0.6); color: white; border: 1px solid var(--border); border-radius: 10px; padding: 12px 24px; font-size: 15px; font-family: 'Inter', sans-serif; font-weight: 700; outline: none; cursor: pointer; transition: border-color 0.2s; appearance: none; }}
+        .dock-controls select:hover {{ border-color: var(--primary); }}
 
-        .slider-container {{ position: relative; width: 100%; }}
-        input[type=range] {{ width: 100%; accent-color: var(--primary); cursor: pointer; }}
-        #slider-tooltip {{ position: absolute; top: -40px; background: var(--primary); color: #000; padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: 800; transform: translateX(-50%); pointer-events: none; display: none; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }}
-        #slider-tooltip::after {{ content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); border-width: 5px 5px 0; border-style: solid; border-color: var(--primary) transparent transparent transparent; }}
+        .slider-container {{ position: relative; width: 100%; margin-top: 10px; }}
+        input[type=range] {{ width: 100%; height: 6px; background: rgba(255,255,255,0.2); border-radius: 3px; outline: none; -webkit-appearance: none; accent-color: var(--primary); cursor: pointer; }}
+        input[type=range]::-webkit-slider-thumb {{ -webkit-appearance: none; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; cursor: pointer; box-shadow: 0 0 10px rgba(255,204,0,0.6); }}
+        
+        #slider-tooltip {{ position: absolute; top: -45px; background: var(--primary); color: #000; padding: 6px 14px; border-radius: 8px; font-size: 14px; font-weight: 800; transform: translateX(-50%); pointer-events: none; display: none; white-space: nowrap; box-shadow: 0 6px 15px rgba(0,0,0,0.4); font-family: 'Roboto Mono', monospace; }}
+        #slider-tooltip::after {{ content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); border-width: 6px 6px 0; border-style: solid; border-color: var(--primary) transparent transparent transparent; }}
 
-        .leaflet-tooltip.plane-tooltip {{ background: var(--bg-solid) !important; border: 1px solid var(--border) !important; color: #fff !important; font-family: 'Roboto Mono', monospace; font-weight: 700; font-size: 13px; border-radius: 6px; padding: 4px 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }}
-        .leaflet-tooltip-top:before {{ border-top-color: var(--border) !important; }}
-        .leaflet-popup-content-wrapper {{ background: var(--bg-solid); color: var(--text-main); border: 1px solid var(--border); border-radius: 12px; padding: 0; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.7); }}
-        .leaflet-popup-tip {{ background: var(--bg-solid); }} .leaflet-popup-content {{ margin: 0; width: 280px !important; }}
-        .popup-header {{ background: rgba(255, 204, 0, 0.1); padding: 15px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }}
-        .popup-callsign {{ font-size: 20px; font-weight: 800; font-family: 'Roboto Mono', monospace; color: var(--primary); letter-spacing: 1px; }}
-        .popup-airline {{ font-size: 14px; color: var(--text-muted); font-weight: 600; margin-top: 4px; }}
-        .popup-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 15px; }}
-        .popup-stat {{ display: flex; flex-direction: column; }} .popup-stat label {{ font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }} .popup-stat span {{ font-size: 14px; font-weight: 600; font-family: 'Roboto Mono', monospace; }}
-        .leaflet-control-zoom {{ border: none !important; margin-right: 20px !important; margin-bottom: 20px !important; }} .leaflet-control-zoom a {{ background: var(--bg-glass) !important; color: var(--text-main) !important; border: 1px solid var(--border) !important; }} .leaflet-control-zoom a:hover {{ background: var(--primary) !important; color: #000 !important; }}
+        .leaflet-tooltip.plane-tooltip {{ background: var(--bg-solid) !important; border: 1px solid var(--border) !important; color: var(--primary) !important; font-family: 'Roboto Mono', monospace; font-weight: 800; font-size: 14px; border-radius: 8px; padding: 6px 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.6); }}
+        .leaflet-tooltip-top:before {{ border-top-color: var(--border) !important; bottom: -6px !important; border-width: 6px 6px 0 !important; }}
+        
+        .leaflet-popup-content-wrapper {{ background: var(--bg-solid); color: var(--text-main); border: 1px solid var(--border); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.8); }}
+        .leaflet-popup-tip {{ background: var(--bg-solid); width: 20px; height: 20px; margin: -10px auto 0; }}
+        .leaflet-popup-content {{ margin: 0 !important; width: 300px !important; }}
+        
+        .popup-header {{ background: rgba(255, 204, 0, 0.08); padding: 18px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }}
+        .popup-callsign {{ font-size: 22px; font-weight: 800; font-family: 'Roboto Mono', monospace; color: var(--primary); letter-spacing: 1px; line-height: 1.2; }}
+        .popup-airline {{ font-size: 14px; color: var(--text-muted); font-weight: 600; margin-top: 5px; }}
+        .popup-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 20px; }}
+        .popup-stat {{ display: flex; flex-direction: column; }} .popup-stat label {{ font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.5px; }} .popup-stat span {{ font-size: 15px; font-weight: 700; font-family: 'Roboto Mono', monospace; color: #fff; }}
+        
+        .leaflet-control-zoom {{ border: none !important; margin-right: 20px !important; margin-bottom: 20px !important; box-shadow: 0 6px 15px rgba(0,0,0,0.5) !important; }} .leaflet-control-zoom a {{ background: var(--bg-glass) !important; color: var(--primary) !important; border: 1px solid var(--border) !important; font-weight: 800 !important; }} .leaflet-control-zoom a:hover {{ background: var(--primary) !important; color: #000 !important; }}
 
         @media (max-width: 768px) {{
-            #top-banner {{ font-size: 12px; padding: 8px 16px; top: 10px; width: 85%; justify-content: center; }}
-            #sidebar-container {{ transform: translateX(-300px); }}
-            #sidebar-content {{ width: 300px; padding: 15px; }}
-            #time-dock {{ width: 95%; padding: 20px 15px; }} .dock-controls {{ flex-direction: column; gap: 10px; }} .dock-controls select {{ width: 100%; }}
+            #top-banner {{ font-size: 13px; padding: 10px 18px; top: 10px; width: 85%; justify-content: center; }}
+            #sidebar-wrapper {{ transform: translateX(-300px); }}
+            #sidebar-content {{ width: 300px; padding: 18px; }}
+            .expanded {{ transform: translateX(0) !important; }}
+            #time-dock {{ width: 95%; padding: 20px 15px; }} .dock-controls {{ flex-direction: column; gap: 12px; }} .dock-controls select {{ width: 100%; text-align: center; }}
+            #time-shift-btn {{ bottom: 20px; width: 60%; }}
         }}
     </style>
 </head>
@@ -512,10 +524,10 @@ def generate_planes_html(history_24h):
     <div id="loading">Syncing Radar Data...</div>
     <div id="top-banner" class="glass-panel"><span class="indicator"></span> <span id="banner-text">Radar Snapshot: Loading...</span></div>
     
-    <div id="sidebar-container">
+    <div id="sidebar-wrapper">
         <div id="sidebar-content" class="glass-panel">
             <h3 class="panel-title">Airspace Analytics</h3>
-            <div class="stat-box"><div style="font-size: 13px; font-weight: 700; color: #a0aab2; text-transform: uppercase;">Active Commercial Traffic</div><div class="stat-num" id="plane-count">0</div></div>
+            <div class="stat-box"><div style="font-size: 12px; font-weight: 800; color: #a0aab2; text-transform: uppercase; letter-spacing: 1px;">Active Commercial Traffic</div><div class="stat-num" id="plane-count">0</div></div>
             <div class="section-title">Registration Countries</div>
             <ul id="country-list" class="data-list"></ul>
             <div class="section-title">Operating Airlines</div>
@@ -574,13 +586,13 @@ def generate_planes_html(history_24h):
         const countryList = document.getElementById("country-list");
         const loading = document.getElementById("loading");
         
-        const sidebarContainer = document.getElementById("sidebar-container");
+        const sidebarWrapper = document.getElementById("sidebar-wrapper");
         const sidebarToggle = document.getElementById("sidebar-toggle");
         
-        if (window.innerWidth >= 768) {{ sidebarContainer.classList.add("expanded"); sidebarToggle.innerText = "<<"; }}
+        if (window.innerWidth >= 768) {{ sidebarWrapper.classList.add("expanded"); sidebarToggle.innerText = "<<"; }}
         sidebarToggle.onclick = function() {{
-            sidebarContainer.classList.toggle("expanded");
-            sidebarToggle.innerText = sidebarContainer.classList.contains("expanded") ? "<<" : ">>";
+            sidebarWrapper.classList.toggle("expanded");
+            sidebarToggle.innerText = sidebarWrapper.classList.contains("expanded") ? "<<" : ">>";
         }};
         
         const timeShiftBtn = document.getElementById("time-shift-btn");
@@ -594,27 +606,36 @@ def generate_planes_html(history_24h):
         timeShiftBtn.onclick = function() {{ timeShiftBtn.style.display = "none"; timeDock.style.display = "block"; }}
         closeDockBtn.onclick = function() {{ timeDock.style.display = "none"; timeShiftBtn.style.display = "block"; }}
 
-        const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+        const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (window.matchMedia("(pointer: coarse)").matches);
         
+        function getTwemojiUrl(iso) {{
+            if (!iso) return '';
+            const codePoints = [...iso.toUpperCase()].map(c => (c.codePointAt(0) + 127397).toString(16));
+            return `https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${{codePoints.join('-')}}.svg`;
+        }}
+
         const countriesMap = {{
             "united arab emirates": "AE", "qatar": "QA", "turkey": "TR", "saudi arabia": "SA", "kuwait": "KW", "oman": "OM",
             "bahrain": "BH", "iraq": "IQ", "pakistan": "PK", "india": "IN", "afghanistan": "AF", "germany": "DE",
             "france": "FR", "united kingdom": "GB", "russia": "RU", "china": "CN", "united states": "US", "switzerland": "CH",
             "netherlands": "NL", "italy": "IT", "spain": "ES", "egypt": "EG", "jordan": "JO", "lebanon": "LB", "syria": "SY",
             "belgium": "BE", "austria": "AT", "sweden": "SE", "norway": "NO", "denmark": "DK", "finland": "FI", "poland": "PL",
-            "greece": "GR", "ireland": "IE", "portugal": "PT", "canada": "CA", "australia": "CA", "japan": "JP", "south korea": "KR",
-            "singapore": "KR", "malaysia": "SG", "indonesia": "MY", "thailand": "ID", "vietnam": "TH", "philippines": "PH",
-            "azerbaijan": "AZ", "armenia": "AM", "georgia": "GE", "kazakhstan": "KZ", "uzbekistan": "KZ", "turkmenistan": "UZ"
+            "greece": "GR", "ireland": "IE", "portugal": "PT", "canada": "CA", "australia": "AU", "japan": "JP", "south korea": "KR",
+            "singapore": "SG", "malaysia": "MY", "indonesia": "ID", "thailand": "TH", "vietnam": "VN", "philippines": "PH",
+            "azerbaijan": "AZ", "armenia": "AM", "georgia": "GE", "kazakhstan": "KZ", "uzbekistan": "UZ", "turkmenistan": "TM",
+            "tajikistan": "TM", "kyrgyzstan": "KG", "sri lanka": "LK", "bangladesh": "LK", "nepal": "NP", "maldives": "MV",
+            "yemen": "YE", "israel": "IL", "cyprus": "IL", "morocco": "MA", "algeria": "MA", "tunisia": "TN", "libya": "LY",
+            "sudan": "SD", "ethiopia": "SD", "kenya": "KE", "somalia": "SO", "djibouti": "SO", "eritrea": "DJ", "rwanda": "ER"
         }};
 
         function getFlagHTML(country) {{
             const c = country.toLowerCase();
             if (c === "iran" || c.includes("iran")) {{
-                return `<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/State_flag_of_Iran_%281964%E2%80%931980%29.svg/320px-State_flag_of_Iran_%281964%E2%80%931980%29.svg.png" style="width:24px; height:auto; vertical-align:middle; margin-right:10px; border-radius:3px; border:1px solid rgba(255,255,255,0.2);">`;
+                return `<img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/State_flag_of_Iran_%281964%E2%80%931980%29.svg" style="width:26px; height:auto; vertical-align:middle; margin-right:12px; border-radius:3px; border:1px solid rgba(255,255,255,0.15);">`;
             }}
             let iso = countriesMap[c];
-            if(iso) return `<img src="https://flagcdn.com/24x18/${{iso.toLowerCase()}}.png" style="width:24px; height:auto; vertical-align:middle; margin-right:10px; border-radius:3px; border:1px solid rgba(255,255,255,0.2);">`;
-            return `<span style="font-size:20px; margin-right:10px; vertical-align:middle;">🏳️</span>`;
+            if(iso) return `<img src="${{getTwemojiUrl(iso)}}" style="width:26px; height:auto; vertical-align:middle; margin-right:12px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">`;
+            return `<span style="font-size:22px; margin-right:12px; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🏳️</span>`;
         }}
 
         function renderPlanes(index) {{
@@ -622,7 +643,7 @@ def generate_planes_html(history_24h):
             setTimeout(() => {{
                 planeLayerGroup.clearLayers();
                 const record = flightHistory[index];
-                bannerText.innerText = "Radar Snapshot: " + record.time_str;
+                bannerText.innerText = record.time_str;
                 countDisplay.innerText = record.count;
                 const airlines = new Set(), countries = new Set();
                 
@@ -632,13 +653,26 @@ def generate_planes_html(history_24h):
                     
                     let marker = L.circleMarker([plane.lat, plane.lon], {{ color: '#ffcc00', radius: 6, weight: 2, fillOpacity: 0.8 }});
                     
-                    if(!isTouchDevice) {{ marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip'}}); }}
-                    marker.bindPopup(popupHTML, {{minWidth: 280}});
+                    marker.bindPopup(popupHTML, {{minWidth: 300, maxWidth: 300, className: 'custom-popup-wrapper'}});
 
-                    if(isTouchDevice) {{
+                    if(!isTouchDevice) {{
+                        marker.on('mouseover', function(e) {{
+                            this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', offset: [0, -10]}}).openTooltip();
+                        }});
+                        marker.on('mouseout', function(e) {{
+                            this.closeTooltip();
+                            this.unbindTooltip();
+                        }});
+                    }} else {{
                         let touchTimer;
-                        marker.on('touchstart', function() {{ touchTimer = setTimeout(() => {{ this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', permanent: true}}).openTooltip(); }}, 300); }});
-                        marker.on('touchend mouseup', function() {{ clearTimeout(touchTimer); this.closeTooltip(); this.unbindTooltip(); }});
+                        marker.on('touchstart', function(e) {{
+                            touchTimer = setTimeout(() => {{ this.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', permanent: true, offset: [0, -10]}}).openTooltip(); }}, 400);
+                        }});
+                        marker.on('touchend touchmove', function(e) {{
+                            clearTimeout(touchTimer);
+                            this.closeTooltip();
+                            this.unbindTooltip();
+                        }});
                     }}
                     marker.addTo(planeLayerGroup);
                 }});
@@ -697,7 +731,7 @@ def generate_planes_html(history_24h):
                 sliderTooltip.style.display = "block";
                 const val = this.value, min = this.min ? this.min : 0, max = this.max ? this.max : 100;
                 let newVal = max > min ? Number(((val - min) * 100) / (max - min)) : 0;
-                sliderTooltip.style.left = `calc(${{newVal}}% + (${{8 - newVal * 0.15}}px))`;
+                sliderTooltip.style.left = `calc(${{newVal}}% + (${{10 - newVal * 0.2}}px))`;
                 syncSelectsToIndex(this.value);
             }});
             
