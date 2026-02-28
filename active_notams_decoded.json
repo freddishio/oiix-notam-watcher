@@ -1,72 +1,4 @@
 {
-  "OIIX A3707/25": {
-    "header": {
-      "id": "A3707/25",
-      "series": "A",
-      "number": "3707",
-      "year": "25",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A2618/25"
-    },
-    "qualification": {
-      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARLC",
-        "entity": "AR",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-01-10T08:32:00.000Z",
-      "validityEnd": "2026-04-10T11:00:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "AIRWAY N39 BTN DEMBA AND OBRIX CLSD.\n- ALTN TOS FOR WESTBOUND:\n      RADAL DCT IMKER DCT ULDUS, \n      MNM FLT LVL: FL 275, \n- ALTN TOS FOR EASTBOUND:\n      ULDUS DCT ALKUP DCT IMLIM DCT OXADU M715 OBRIX,\n      MNM FLT LVL: FL 285."
-    },
-    "last_seen_utc": "2026/02/20 04:55:03"
-  },
   "OIIX A3708/25": {
     "header": {
       "id": "A3708/25",
@@ -3681,5 +3613,73 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0712/26": {
+    "header": {
+      "id": "A0712/26",
+      "series": "A",
+      "number": "0712",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3707/25"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-28T05:51:00.000Z",
+      "validityEnd": "2026-06-29T11:00:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "AIRWAY N39 BTN DEMBA AND OBRIX CLSD FOR \nTRANSITING TEHRAN FIR FLIGHTS\n- ALTN TOS FOR WESTBOUND:\n      RADAL DCT IMKER DCT ULDUS, \n      MNM FLT LVL: FL 275, \n- ALTN TOS FOR EASTBOUND:\n      ULDUS DCT ALKUP DCT IMLIM DCT OXADU M715 OBRIX,\n      MNM FLT LVL: FL 285."
+    },
+    "last_seen_utc": "2026/02/28 09:30:20 Tehran Time"
   }
 }
