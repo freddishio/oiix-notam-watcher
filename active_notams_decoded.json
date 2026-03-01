@@ -3346,6 +3346,97 @@
     },
     "last_seen_utc": "2026/02/28 09:40:19 Tehran Time"
   },
+  "OIIX A0718/26": {
+    "header": {
+      "id": "A0718/26",
+      "series": "A",
+      "number": "0718",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0716/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-04-01T05:45:00.000Z",
+      "validityEnd": "2026-04-03T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, AREA OF CONFLICT MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND OMAN SEA\nAS THE RESULT OF SECURITY REASON"
+    },
+    "last_seen_utc": "2026/03/01 09:20:24 Tehran Time"
+  },
+  "OIIX A0719/26": {
+    "header": {
+      "id": "A0719/26",
+      "series": "A",
+      "number": "0719",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0717/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLC",
+        "entity": "AF",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-04-01T05:47:00.000Z",
+      "validityEnd": "2026-04-03T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "TEHRAN FIR CLSD"
+    },
+    "last_seen_utc": "2026/03/01 09:20:24 Tehran Time"
+  },
   "OIIX B0142/26": {
     "header": {
       "id": "B0142/26",
@@ -3681,96 +3772,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0718/26": {
-    "header": {
-      "id": "A0718/26",
-      "series": "A",
-      "number": "0718",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0716/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-04-01T05:45:00.000Z",
-      "validityEnd": "2026-04-03T08:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "CAUTION TO ALL FLIGHTS, AREA OF CONFLICT MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND OMAN SEA\nAS THE RESULT OF SECURITY REASON"
-    },
-    "last_seen_utc": "2026/03/01 09:20:24 Tehran Time"
-  },
-  "OIIX A0719/26": {
-    "header": {
-      "id": "A0719/26",
-      "series": "A",
-      "number": "0719",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0717/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLC",
-        "entity": "AF",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-04-01T05:47:00.000Z",
-      "validityEnd": "2026-04-03T08:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "TEHRAN FIR CLSD"
-    },
-    "last_seen_utc": "2026/03/01 09:20:24 Tehran Time"
   }
 }
