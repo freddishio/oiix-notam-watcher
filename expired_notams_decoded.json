@@ -1,4 +1,83 @@
 {
+  "OIIX B0095/26": {
+    "header": {
+      "id": "B0095/26",
+      "series": "B",
+      "number": "0095",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/100/3235N05944E003",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          32.583333,
+          59.733333
+        ],
+        {
+          "radius": 3
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "100"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-09T03:30:00.000Z",
+      "validityEnd": "2026-04-01T10:30:00.000Z",
+      "elements": [
+        "0330 - 1030"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI CIRCLE RADIUS 3 NM \nCENTERED AT: 323450N  0594338E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10000 FT AMSL"
+    },
+    "last_seen_utc": "2026/02/20 04:55:03",
+    "archived_utc": "2026/03/01 14:00:23 Tehran Time"
+  },
   "OIIX A0716/26": {
     "header": {
       "id": "A0716/26",
