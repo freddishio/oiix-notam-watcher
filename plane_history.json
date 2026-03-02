@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1772307023,
-    "time_str": "2026/02/28 23:00:23 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1772307319,
-    "time_str": "2026/02/28 23:05:19 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772307623,
     "time_str": "2026/02/28 23:10:23 Tehran Time",
     "count": 0,
@@ -3603,5 +3591,27 @@
     "time_str": "2026/03/02 23:00:21 Tehran Time",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1772480122,
+    "time_str": "2026/03/02 23:05:22 Tehran Time",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3e914812",
+        "callsign": "FDB8081",
+        "flight": "FZ8081",
+        "type": "B38M",
+        "reg": "A6-FPG",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 58,
+        "speed": 580,
+        "lat": 24.823,
+        "lon": 60.523,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
