@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772285422,
-    "time_str": "2026/02/28 17:00:22 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772285721,
     "time_str": "2026/02/28 17:05:21 Tehran Time",
     "count": 0,
@@ -3581,5 +3575,27 @@
     "time_str": "2026/03/02 16:55:25 Tehran Time",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1772458228,
+    "time_str": "2026/03/02 17:00:28 Tehran Time",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3e900848",
+        "callsign": "ETD7VB",
+        "flight": "EY713",
+        "type": "B789",
+        "reg": "A6-BLH",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 217,
+        "speed": 446,
+        "lat": 29.222,
+        "lon": 52.581,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
