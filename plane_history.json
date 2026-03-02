@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1772282120,
-    "time_str": "2026/02/28 16:05:20 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1772282419,
-    "time_str": "2026/02/28 16:10:19 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772282722,
     "time_str": "2026/02/28 16:15:22 Tehran Time",
     "count": 0,
@@ -3572,5 +3560,42 @@
     "time_str": "2026/03/02 16:05:20 Tehran Time",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1772455222,
+    "time_str": "2026/03/02 16:10:22 Tehran Time",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3e8f67eb",
+        "callsign": "AFL1266",
+        "flight": "SU1266",
+        "type": "A320",
+        "reg": "RA-73777",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 211,
+        "speed": 920,
+        "lat": 39.058,
+        "lon": 48.316,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "3e8ff9a9",
+        "callsign": "E35L",
+        "flight": "Unknown Flight",
+        "type": "E35L",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 11650,
+        "track": 61,
+        "speed": 48,
+        "lat": 25.163,
+        "lon": 57.672,
+        "airline": "E35",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
