@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772325920,
-    "time_str": "2026/03/01 04:15:20 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772326217,
     "time_str": "2026/03/01 04:20:17 Tehran Time",
     "count": 0,
@@ -3623,5 +3617,27 @@
     "time_str": "2026/03/03 04:10:44 Tehran Time",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1772498730,
+    "time_str": "2026/03/03 04:15:30 Tehran Time",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3e91b8e9",
+        "callsign": "FJL711",
+        "flight": "9P711",
+        "type": "A320",
+        "reg": "AP-BPL",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 47,
+        "speed": 528,
+        "lat": 24.735,
+        "lon": 61.418,
+        "airline": "Fly Jinnah",
+        "country": "Pakistan"
+      }
+    ]
   }
 ]
