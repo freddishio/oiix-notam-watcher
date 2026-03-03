@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1772394622,
-    "time_str": "2026/03/01 23:20:22 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1772394920,
-    "time_str": "2026/03/01 23:25:20 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772395220,
     "time_str": "2026/03/01 23:30:20 Tehran Time",
     "count": 0,
@@ -3567,5 +3555,27 @@
     "time_str": "2026/03/03 23:20:22 Tehran Time",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1772567730,
+    "time_str": "2026/03/03 23:25:30 Tehran Time",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3e9542bb",
+        "callsign": "WMT956",
+        "flight": "W4956",
+        "type": "A21N",
+        "reg": "9H-WNG",
+        "category": "Commercial",
+        "alt": 2625,
+        "track": 234,
+        "speed": 183,
+        "lat": 39.401,
+        "lon": 48.31,
+        "airline": "Wizz Air Malta",
+        "country": "Malta"
+      }
+    ]
   }
 ]
