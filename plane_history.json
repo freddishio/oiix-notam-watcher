@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772455820,
-    "time_str": "2026/03/02 16:20:20 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772456122,
     "time_str": "2026/03/02 16:25:22 Tehran Time",
     "count": 0,
@@ -3877,6 +3871,28 @@
         "speed": 256,
         "lat": 29.095,
         "lon": 50.033,
+        "airline": "XXX",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1772628622,
+    "time_str": "2026/03/04 16:20:22 Tehran Time",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3e96a6f7",
+        "callsign": "XXXXXXXX",
+        "flight": "Unknown Flight",
+        "type": "Q4",
+        "reg": "169804",
+        "category": "Commercial",
+        "alt": 46975,
+        "track": 226,
+        "speed": 194,
+        "lat": 29.013,
+        "lon": 49.799,
         "airline": "XXX",
         "country": "Unknown Location"
       }
