@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772432718,
-    "time_str": "2026/03/02 09:55:18 Tehran Time",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772433021,
     "time_str": "2026/03/02 10:00:21 Tehran Time",
     "count": 0,
@@ -3561,5 +3555,27 @@
     "time_str": "2026/03/04 09:50:27 Tehran Time",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1772605524,
+    "time_str": "2026/03/04 09:55:24 Tehran Time",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3e96b75d",
+        "callsign": "FDB969A",
+        "flight": "Unknown Flight",
+        "type": "B38M",
+        "reg": "A6-FMR",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 65,
+        "speed": 522,
+        "lat": 24.725,
+        "lon": 60.794,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
