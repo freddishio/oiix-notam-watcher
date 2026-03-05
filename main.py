@@ -371,7 +371,7 @@ def fetch_iran_planes():
     headers = {"User-Agent": "Mozilla/5.0", "Accept": "application/json", "Referer": "https://www.flightradar24.com/"}
     all_fr24_data = {}
     for b in api_bounds:
-        fr24_url = f"https://data-cloud.flightradar24.com/zones/fcgi/feed.js?bounds={b}"
+        fr24_url = f"https://data-cloud.flightradar24.com/zones/fcgi/feed.js?bounds={b}&estimated=1"
         try:
             response = requests.get(fr24_url, headers=headers, timeout=15)
             response.raise_for_status()
@@ -437,8 +437,8 @@ def fetch_iran_planes():
         iran_planes.append(p)
     return iran_planes
 
-def generate_planes_html(history_24h):
-    json_data_string = json.dumps(history_24h)
+def generate_planes_html(history_rendered):
+    json_data_string = json.dumps(history_rendered)
     html = f"""<!DOCTYPE html>
 <html>
 <head>
@@ -449,78 +449,112 @@ def generate_planes_html(history_24h):
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
-        :root {{ --primary: #ffcc00; --bg-glass: rgba(15, 18, 25, 0.85); --bg-solid: #0f1219; --border: rgba(255, 255, 255, 0.12); --text-main: #f8f9fa; --text-muted: #9aa5b1; }}
+        :root {{ --primary: #ffcc00; --bg-glass: rgba(15, 18, 25, 0.85); --bg-solid: #0f1219; --border: rgba(255, 255, 255, 0.15); --text-main: #f8f9fa; --text-muted: #9aa5b1; }}
         body {{ padding: 0; margin: 0; font-family: 'Inter', sans-serif; overflow: hidden; background: #000; }}
         #map {{ height: 100vh; width: 100vw; z-index: 1; }}
         
-        .glass-panel {{ background: var(--bg-glass); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8); color: var(--text-main); }}
+        .glass-panel {{ background: var(--bg-glass); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8); color: var(--text-main); }}
         
+        #clocks-container {{ position: absolute; top: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 1000; pointer-events: none; }}
+        .clock-box {{ background: var(--bg-glass); backdrop-filter: blur(20px); border: 1px solid var(--border); padding: 10px 18px; border-radius: 12px; font-family: 'Roboto Mono', monospace; font-size: 14px; font-weight: 700; color: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.6); display: flex; justify-content: space-between; gap: 20px; align-items: center; }}
+        .clock-box span:first-child {{ color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; }}
+
         #loading {{ position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; letter-spacing: 1px; z-index: 9999; transition: opacity 0.3s ease; }}
         
-        #top-banner {{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 28px; border-radius: 30px; font-size: 15px; font-weight: 700; z-index: 1000; white-space: nowrap; display: flex; align-items: center; gap: 10px; }}
+        #top-banner {{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 28px; border-radius: 30px; font-size: 15px; font-weight: 700; z-index: 1000; white-space: nowrap; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }}
         #top-banner span.indicator {{ display: inline-block; width: 10px; height: 10px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 12px #00ff00; }}
 
-        #sidebar-wrapper {{ position: absolute; top: 80px; left: 0; z-index: 1000; display: flex; align-items: flex-start; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-340px); height: calc(100vh - 140px); }}
-        #sidebar-content {{ width: 340px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; flex-shrink: 0; }}
+        #sidebar-wrapper {{ position: absolute; top: 80px; left: 0; z-index: 1000; display: flex; align-items: flex-start; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-360px); height: calc(100vh - 140px); pointer-events: none; }}
+        #sidebar-content {{ width: 360px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; flex-shrink: 0; pointer-events: auto; }}
         #sidebar-content::-webkit-scrollbar {{ width: 6px; }} #sidebar-content::-webkit-scrollbar-thumb {{ background: rgba(255,255,255,0.2); border-radius: 4px; }}
         
-        #sidebar-toggle {{ width: 44px; height: 64px; margin-top: 20px; background: var(--bg-glass); backdrop-filter: blur(20px); border: 1px solid var(--border); border-left: none; border-radius: 0 12px 12px 0; color: var(--primary); cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; box-shadow: 6px 0 20px rgba(0,0,0,0.5); user-select: none; flex-shrink: 0; }}
+        #sidebar-toggle {{ width: 44px; height: 64px; margin-top: 20px; background: var(--bg-glass); backdrop-filter: blur(20px); border: 1px solid var(--border); border-left: none; border-radius: 0 12px 12px 0; color: var(--primary); cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; box-shadow: 6px 0 20px rgba(0,0,0,0.5); user-select: none; flex-shrink: 0; pointer-events: auto; }}
         .expanded {{ transform: translateX(0) !important; }}
 
-        .panel-title {{ margin: 0 0 24px 0; font-size: 22px; font-weight: 800; border-bottom: 1px solid var(--border); padding-bottom: 12px; letter-spacing: -0.5px; }}
-        .stat-box {{ background: rgba(0,0,0,0.5); padding: 18px; border-radius: 12px; margin-bottom: 24px; text-align: center; border: 1px solid rgba(255,255,255,0.06); }}
+        .panel-title {{ margin: 0 0 20px 0; font-size: 22px; font-weight: 800; border-bottom: 1px solid var(--border); padding-bottom: 12px; letter-spacing: -0.5px; }}
+        .stat-box {{ background: rgba(0,0,0,0.5); padding: 18px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.06); }}
         .stat-num {{ font-size: 42px; font-weight: 800; color: var(--primary); font-family: 'Roboto Mono', monospace; line-height: 1; margin-top: 10px; text-shadow: 0 2px 10px rgba(255,204,0,0.3); }}
-        .section-title {{ font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin: 30px 0 12px 0; font-weight: 800; }}
+        .section-title {{ font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin: 25px 0 12px 0; font-weight: 800; }}
         
+        #clear-filter-btn {{ display: none; width: 100%; background: #ff4444; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 800; cursor: pointer; margin-bottom: 15px; font-family: 'Inter', sans-serif; transition: 0.2s; box-shadow: 0 4px 15px rgba(255,68,68,0.3); }}
+        #clear-filter-btn:hover {{ background: #ff2222; transform: translateY(-2px); }}
+
         .data-list {{ list-style: none; padding: 0; margin: 0; }}
-        .data-list li {{ padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; font-size: 14px; font-weight: 600; color: #e2e8f0; }}
+        .data-list li {{ padding: 10px 14px; margin-bottom: 6px; border: 1px solid transparent; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 600; color: #e2e8f0; cursor: pointer; transition: all 0.2s; background: rgba(255,255,255,0.03); }}
+        .data-list li:hover {{ background: rgba(255,204,0,0.1); border-color: rgba(255,204,0,0.3); }}
+        .data-list li.active-filter {{ background: rgba(255,204,0,0.2); border-color: var(--primary); box-shadow: 0 0 10px rgba(255,204,0,0.2); }}
         .data-list li img {{ filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }}
+        .flex-left {{ display: flex; align-items: center; gap: 10px; }}
+        .count-badge {{ background: rgba(0,0,0,0.6); border: 1px solid var(--border); padding: 4px 10px; border-radius: 12px; font-family: 'Roboto Mono', monospace; color: var(--primary); font-weight: 800; font-size: 13px; }}
 
-        #time-shift-btn {{ position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 16px 36px; border-radius: 40px; cursor: pointer; font-size: 16px; font-weight: 800; z-index: 1000; border: 2px solid var(--primary); color: white; transition: all 0.2s ease; letter-spacing: 0.5px; }}
-        #time-shift-btn:hover {{ background: var(--primary); color: #000; box-shadow: 0 0 20px rgba(255,204,0,0.4); }}
+        #time-shift-btn {{ position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 16px 36px; border-radius: 40px; cursor: pointer; font-size: 16px; font-weight: 800; z-index: 1000; border: 2px solid var(--primary); color: white; transition: all 0.2s ease; letter-spacing: 0.5px; box-shadow: 0 8px 25px rgba(0,0,0,0.6); }}
+        #time-shift-btn:hover {{ background: var(--primary); color: #000; box-shadow: 0 0 25px rgba(255,204,0,0.5); }}
 
-        #time-dock {{ display: none; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 92%; max-width: 650px; border-radius: 20px; padding: 28px; box-sizing: border-box; z-index: 1100; text-align: center; }}
-        .dock-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; position: relative; }}
+        #time-dock {{ display: none; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 95%; max-width: 800px; border-radius: 20px; padding: 25px 35px; box-sizing: border-box; z-index: 1100; }}
+        .dock-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; }}
         .dock-header h3 {{ margin: 0; font-size: 18px; font-weight: 800; color: var(--primary); width: 100%; text-align: center; text-transform: uppercase; letter-spacing: 1px; }}
         .close-btn {{ position: absolute; right: 0; background: none; border: none; color: var(--text-muted); font-size: 28px; cursor: pointer; padding: 0; line-height: 1; transition: color 0.2s; }} .close-btn:hover {{ color: white; }}
         
-        .dock-controls {{ display: flex; justify-content: center; gap: 20px; margin-bottom: 30px; }}
-        .dock-controls select {{ background: rgba(0,0,0,0.6); color: white; border: 1px solid var(--border); border-radius: 10px; padding: 12px 24px; font-size: 15px; font-family: 'Inter', sans-serif; font-weight: 700; outline: none; cursor: pointer; transition: border-color 0.2s; appearance: none; }}
-        .dock-controls select:hover {{ border-color: var(--primary); }}
+        .time-grid {{ display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; background: rgba(0,0,0,0.3); padding: 18px; border-radius: 15px; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.05); }}
+        .tz-toggle {{ display: flex; background: rgba(0,0,0,0.6); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }}
+        .tz-toggle button {{ padding: 12px 18px; border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-weight: 800; font-size: 13px; transition: 0.3s; font-family: 'Inter', sans-serif; }}
+        .tz-toggle button.active {{ background: var(--primary); color: #000; }}
+        
+        .time-inputs {{ display: flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }}
+        .dock-controls-select {{ background: rgba(0,0,0,0.6); color: white; border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 700; outline: none; cursor: pointer; transition: 0.2s; }}
+        .dock-controls-select:hover {{ border-color: var(--primary); }}
+        .custom-input {{ background: rgba(0,0,0,0.6); color: var(--primary); border: 1px solid var(--border); border-radius: 10px; padding: 11px 16px; font-size: 14px; font-family: 'Roboto Mono', monospace; font-weight: 700; outline: none; cursor: pointer; }}
+        .custom-input::-webkit-calendar-picker-indicator {{ filter: invert(1) sepia(100%) saturate(10000%) hue-rotate(10deg); cursor: pointer; }}
+        
+        .playback-controls {{ display: flex; gap: 10px; align-items: center; }}
+        .control-btn {{ background: rgba(255,255,255,0.1); border: 1px solid var(--border); color: #fff; padding: 12px 20px; border-radius: 10px; cursor: pointer; font-weight: 800; transition: 0.2s; font-family: 'Inter', sans-serif; width: 100px; text-align: center; }}
+        .control-btn:hover {{ background: rgba(255,255,255,0.2); }}
+        .control-btn.playing {{ background: var(--primary); color: #000; border-color: var(--primary); box-shadow: 0 0 15px rgba(255,204,0,0.4); }}
 
         .slider-container {{ position: relative; width: 100%; margin-top: 10px; }}
-        input[type=range] {{ width: 100%; height: 6px; background: rgba(255,255,255,0.2); border-radius: 3px; outline: none; -webkit-appearance: none; accent-color: var(--primary); cursor: pointer; }}
-        input[type=range]::-webkit-slider-thumb {{ -webkit-appearance: none; width: 20px; height: 20px; background: var(--primary); border-radius: 50%; cursor: pointer; box-shadow: 0 0 10px rgba(255,204,0,0.6); }}
+        input[type=range] {{ width: 100%; height: 8px; background: rgba(255,255,255,0.2); border-radius: 4px; outline: none; -webkit-appearance: none; accent-color: var(--primary); cursor: pointer; }}
+        input[type=range]::-webkit-slider-thumb {{ -webkit-appearance: none; width: 24px; height: 24px; background: var(--primary); border-radius: 50%; cursor: pointer; box-shadow: 0 0 15px rgba(255,204,0,0.8); transition: transform 0.1s; }}
+        input[type=range]::-webkit-slider-thumb:hover {{ transform: scale(1.15); }}
         
-        #slider-tooltip {{ position: absolute; top: -45px; background: var(--primary); color: #000; padding: 6px 14px; border-radius: 8px; font-size: 14px; font-weight: 800; transform: translateX(-50%); pointer-events: none; display: none; white-space: nowrap; box-shadow: 0 6px 15px rgba(0,0,0,0.4); font-family: 'Roboto Mono', monospace; }}
+        #slider-tooltip {{ position: absolute; top: -50px; background: var(--primary); color: #000; padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 800; transform: translateX(-50%); pointer-events: none; display: none; white-space: nowrap; box-shadow: 0 8px 20px rgba(0,0,0,0.5); font-family: 'Roboto Mono', monospace; z-index: 10; }}
         #slider-tooltip::after {{ content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); border-width: 6px 6px 0; border-style: solid; border-color: var(--primary) transparent transparent transparent; }}
 
         .leaflet-tooltip.plane-tooltip {{ background: var(--bg-solid) !important; border: 1px solid var(--border) !important; color: var(--primary) !important; font-family: 'Roboto Mono', monospace; font-weight: 800; font-size: 14px; border-radius: 8px; padding: 6px 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.6); }}
         .leaflet-tooltip-top:before {{ border-top-color: var(--border) !important; bottom: -6px !important; border-width: 6px 6px 0 !important; }}
         
-        .leaflet-popup-content-wrapper {{ background: var(--bg-solid); color: var(--text-main); border: 1px solid var(--border); border-radius: 14px; padding: 0; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.8); }}
+        .leaflet-popup-content-wrapper {{ background: var(--bg-solid); color: var(--text-main); border: 1px solid var(--border); border-radius: 16px; padding: 0; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.9); }}
         .leaflet-popup-tip {{ background: var(--bg-solid); width: 20px; height: 20px; margin: -10px auto 0; }}
-        .leaflet-popup-content {{ margin: 0 !important; width: 300px !important; }}
+        .leaflet-popup-content {{ margin: 0 !important; width: 320px !important; }}
         
-        .popup-header {{ background: rgba(255, 204, 0, 0.08); padding: 18px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }}
-        .popup-callsign {{ font-size: 22px; font-weight: 800; font-family: 'Roboto Mono', monospace; color: var(--primary); letter-spacing: 1px; line-height: 1.2; }}
-        .popup-airline {{ font-size: 14px; color: var(--text-muted); font-weight: 600; margin-top: 5px; }}
-        .popup-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 20px; }}
-        .popup-stat {{ display: flex; flex-direction: column; }} .popup-stat label {{ font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.5px; }} .popup-stat span {{ font-size: 15px; font-weight: 700; font-family: 'Roboto Mono', monospace; color: #fff; }}
+        .popup-header {{ background: rgba(255, 204, 0, 0.08); padding: 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; }}
+        .popup-callsign {{ font-size: 24px; font-weight: 800; font-family: 'Roboto Mono', monospace; color: var(--primary); letter-spacing: 1px; line-height: 1.2; }}
+        .popup-airline {{ font-size: 14px; color: var(--text-muted); font-weight: 600; margin-top: 6px; }}
+        .popup-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 24px; }}
+        .popup-stat {{ display: flex; flex-direction: column; }} .popup-stat label {{ font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.5px; }} .popup-stat span {{ font-size: 16px; font-weight: 700; font-family: 'Roboto Mono', monospace; color: #fff; }}
         
-        .leaflet-control-zoom {{ border: none !important; margin-right: 20px !important; margin-bottom: 20px !important; box-shadow: 0 6px 15px rgba(0,0,0,0.5) !important; }} .leaflet-control-zoom a {{ background: var(--bg-glass) !important; color: var(--primary) !important; border: 1px solid var(--border) !important; font-weight: 800 !important; }} .leaflet-control-zoom a:hover {{ background: var(--primary) !important; color: #000 !important; }}
+        .leaflet-control-zoom {{ border: none !important; margin-right: 20px !important; margin-bottom: 20px !important; box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important; }} .leaflet-control-zoom a {{ background: var(--bg-glass) !important; color: var(--primary) !important; border: 1px solid var(--border) !important; font-weight: 800 !important; backdrop-filter: blur(10px); }} .leaflet-control-zoom a:hover {{ background: var(--primary) !important; color: #000 !important; }}
 
+        @media (max-width: 900px) {{
+            .time-grid {{ grid-template-columns: 1fr; gap: 15px; justify-items: center; }}
+            #clocks-container {{ display: none; }}
+        }}
         @media (max-width: 768px) {{
             #top-banner {{ font-size: 13px; padding: 10px 18px; top: 10px; width: 85%; justify-content: center; }}
-            #sidebar-wrapper {{ transform: translateX(-300px); }}
-            #sidebar-content {{ width: 300px; padding: 18px; }}
+            #sidebar-wrapper {{ transform: translateX(-320px); }}
+            #sidebar-content {{ width: 320px; padding: 18px; }}
             .expanded {{ transform: translateX(0) !important; }}
-            #time-dock {{ width: 95%; padding: 20px 15px; }} .dock-controls {{ flex-direction: column; gap: 12px; }} .dock-controls select {{ width: 100%; text-align: center; }}
+            #time-dock {{ width: 95%; padding: 20px; }}
+            .time-inputs {{ flex-direction: column; width: 100%; }} .dock-controls-select, .custom-input {{ width: 100%; text-align: center; }}
             #time-shift-btn {{ bottom: 20px; width: 60%; }}
         }}
     </style>
 </head>
 <body>
+    <div id="clocks-container">
+        <div class="clock-box"><span>TEHRAN</span><span id="tehran-time">--:--:--</span></div>
+        <div class="clock-box"><span>LOCAL</span><span id="local-time">--:--:--</span></div>
+    </div>
+
     <div id="loading">Syncing Radar Data...</div>
     <div id="top-banner" class="glass-panel"><span class="indicator"></span> <span id="banner-text">Radar Snapshot: Loading...</span></div>
     
@@ -528,6 +562,9 @@ def generate_planes_html(history_24h):
         <div id="sidebar-content" class="glass-panel">
             <h3 class="panel-title">Airspace Analytics</h3>
             <div class="stat-box"><div style="font-size: 12px; font-weight: 800; color: #a0aab2; text-transform: uppercase; letter-spacing: 1px;">Active Commercial Traffic</div><div class="stat-num" id="plane-count">0</div></div>
+            
+            <button id="clear-filter-btn">Clear Filter</button>
+
             <div class="section-title">Registration Countries</div>
             <ul id="country-list" class="data-list"></ul>
             <div class="section-title">Operating Airlines</div>
@@ -543,10 +580,33 @@ def generate_planes_html(history_24h):
             <h3>Time Shift Controls</h3>
             <button class="close-btn" id="close-dock-btn">&times;</button>
         </div>
-        <div class="dock-controls">
-            <select id="hourSelect"></select>
-            <select id="minuteSelect"></select>
+        
+        <div class="time-grid">
+            <div class="tz-toggle">
+                <button id="btn-tz-tehran" class="active">Tehran Time</button>
+                <button id="btn-tz-local">Local Time</button>
+            </div>
+            
+            <div class="time-inputs">
+                <select id="hourSelect" class="dock-controls-select"></select>
+                <select id="minuteSelect" class="dock-controls-select"></select>
+                <span style="color:var(--text-muted); font-weight:800; font-size:12px; margin: 0 10px;">OR</span>
+                <input type="datetime-local" id="exactTimePicker" class="custom-input">
+            </div>
+
+            <div class="playback-controls">
+                <button id="playBtn" class="control-btn">▶ Play</button>
+                <select id="speedSelect" class="dock-controls-select">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1.0x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2.0x</option>
+                    <option value="3">3.0x</option>
+                    <option value="4">4.0x</option>
+                </select>
+            </div>
         </div>
+
         <div class="slider-container">
             <div id="slider-tooltip"></div>
             <input type="range" id="modalSlider" min="0" max="0" value="0">
@@ -585,10 +645,19 @@ def generate_planes_html(history_24h):
         const airlineList = document.getElementById("airline-list");
         const countryList = document.getElementById("country-list");
         const loading = document.getElementById("loading");
+        const clearFilterBtn = document.getElementById("clear-filter-btn");
         
         const sidebarWrapper = document.getElementById("sidebar-wrapper");
         const sidebarToggle = document.getElementById("sidebar-toggle");
         
+        let activeFilter = null; 
+
+        setInterval(() => {{
+            const now = new Date();
+            document.getElementById("local-time").innerText = now.toLocaleTimeString('en-US', {{hour12: false}});
+            document.getElementById("tehran-time").innerText = now.toLocaleTimeString('en-US', {{timeZone: 'Asia/Tehran', hour12: false}});
+        }}, 1000);
+
         if (window.innerWidth >= 768) {{ sidebarWrapper.classList.add("expanded"); sidebarToggle.innerText = "<<"; }}
         sidebarToggle.onclick = function() {{
             sidebarWrapper.classList.toggle("expanded");
@@ -600,8 +669,18 @@ def generate_planes_html(history_24h):
         const closeDockBtn = document.getElementById("close-dock-btn");
         const hSelect = document.getElementById("hourSelect");
         const mSelect = document.getElementById("minuteSelect");
+        const exactPicker = document.getElementById("exactTimePicker");
         const modalSlider = document.getElementById("modalSlider");
         const sliderTooltip = document.getElementById("slider-tooltip");
+        const playBtn = document.getElementById("playBtn");
+        const speedSelect = document.getElementById("speedSelect");
+        
+        const btnTzTehran = document.getElementById("btn-tz-tehran");
+        const btnTzLocal = document.getElementById("btn-tz-local");
+        let tzMode = "tehran";
+
+        btnTzTehran.onclick = () => {{ tzMode = "tehran"; btnTzTehran.classList.add("active"); btnTzLocal.classList.remove("active"); }};
+        btnTzLocal.onclick = () => {{ tzMode = "local"; btnTzLocal.classList.add("active"); btnTzTehran.classList.remove("active"); }};
         
         timeShiftBtn.onclick = function() {{ timeShiftBtn.style.display = "none"; timeDock.style.display = "block"; }}
         closeDockBtn.onclick = function() {{ timeDock.style.display = "none"; timeShiftBtn.style.display = "block"; }}
@@ -630,44 +709,120 @@ def generate_planes_html(history_24h):
             const c = country.toLowerCase();
             let iso = countriesMap[c];
             if (c === "iran" || c.includes("iran")) iso = "IR";
-            
-            if(iso) return `<img src="${{getTwemojiUrl(iso)}}" style="width:26px; height:auto; vertical-align:middle; margin-right:12px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">`;
-            return `<span style="font-size:22px; margin-right:12px; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🏳️</span>`;
+            if(iso) return `<img src="${{getTwemojiUrl(iso)}}" style="width:26px; height:auto; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">`;
+            return `<span style="font-size:22px; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🏳️</span>`;
         }}
 
-        function renderPlanes(index) {{
-            loading.style.opacity = "1"; loading.style.display = "flex";
-            setTimeout(() => {{
-                planeLayerGroup.clearLayers();
-                const record = flightHistory[index];
-                bannerText.innerText = record.time_str;
-                countDisplay.innerText = record.count;
-                const airlines = new Set(), countries = new Set();
-                
-                record.planes.forEach(plane => {{
-                    airlines.add(plane.airline); countries.add(plane.country);
-                    let popupHTML = `<div class="fr24-popup"><div class="popup-header">${{getFlagHTML(plane.country)}}<div><div class="popup-callsign">${{plane.callsign}}</div><div class="popup-airline">${{plane.airline}}</div></div></div><div class="popup-grid"><div class="popup-stat"><label>Flight</label><span>${{plane.flight}}</span></div><div class="popup-stat"><label>Reg</label><span>${{plane.reg}}</span></div><div class="popup-stat"><label>Type</label><span>${{plane.type}}</span></div><div class="popup-stat"><label>Category</label><span>${{plane.category}}</span></div><div class="popup-stat"><label>Altitude</label><span>${{plane.alt}} ft</span></div><div class="popup-stat"><label>Speed</label><span>${{plane.speed}} kts</span></div><div class="popup-stat"><label>Track</label><span>${{plane.track}}°</span></div></div></div>`;
-                    
-                    let marker = L.circleMarker([plane.lat, plane.lon], {{ color: '#ffcc00', radius: 6, weight: 2, fillOpacity: 0.8 }});
-                    
-                    marker.bindPopup(popupHTML, {{minWidth: 300, maxWidth: 300, className: 'custom-popup-wrapper'}});
-                    marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', offset: [0, -10]}});
-                    marker.addTo(planeLayerGroup);
-                }});
-                
-                airlineList.innerHTML = "";
-                Array.from(airlines).sort().forEach(airline => {{ if(airline && airline !== "Unknown Airline") {{ let li = document.createElement("li"); li.innerText = airline; airlineList.appendChild(li); }} }});
-                countryList.innerHTML = "";
-                Array.from(countries).sort().forEach(country => {{ if(country && country !== "Unknown Location") {{ let li = document.createElement("li"); li.innerHTML = getFlagHTML(country) + "<span>" + country + "</span>"; countryList.appendChild(li); }} }});
-                setTimeout(() => {{ loading.style.opacity = "0"; setTimeout(() => {{ loading.style.display = "none"; }}, 300); }}, 100);
-            }}, 50);
+        function setFilter(type, value) {{
+            activeFilter = {{ type, value }};
+            renderPlanes(modalSlider.value);
         }}
+
+        clearFilterBtn.onclick = function() {{
+            activeFilter = null;
+            renderPlanes(modalSlider.value);
+        }};
+
+        function renderPlanes(index) {{
+            planeLayerGroup.clearLayers();
+            const record = flightHistory[index];
+            bannerText.innerText = record.time_str;
+            
+            const airlines = {{}}; const countries = {{}};
+            let filteredCount = 0;
+            
+            record.planes.forEach(plane => {{
+                airlines[plane.airline] = (airlines[plane.airline] || 0) + 1;
+                countries[plane.country] = (countries[plane.country] || 0) + 1;
+                
+                if (activeFilter) {{
+                    if (activeFilter.type === 'country' && plane.country !== activeFilter.value) return;
+                    if (activeFilter.type === 'airline' && plane.airline !== activeFilter.value) return;
+                }}
+                
+                filteredCount++;
+                
+                let popupHTML = `<div class="fr24-popup"><div class="popup-header">${{getFlagHTML(plane.country)}}<div><div class="popup-callsign">${{plane.callsign}}</div><div class="popup-airline">${{plane.airline}}</div></div></div><div class="popup-grid"><div class="popup-stat"><label>Flight</label><span>${{plane.flight}}</span></div><div class="popup-stat"><label>Reg</label><span>${{plane.reg}}</span></div><div class="popup-stat"><label>Type</label><span>${{plane.type}}</span></div><div class="popup-stat"><label>Category</label><span>${{plane.category}}</span></div><div class="popup-stat"><label>Altitude</label><span>${{plane.alt}} ft</span></div><div class="popup-stat"><label>Speed</label><span>${{plane.speed}} kts</span></div><div class="popup-stat"><label>Track</label><span>${{plane.track}}°</span></div></div></div>`;
+                let marker = L.circleMarker([plane.lat, plane.lon], {{ color: '#ffcc00', radius: 6, weight: 2, fillOpacity: 0.8 }});
+                marker.bindPopup(popupHTML, {{minWidth: 320, maxWidth: 320, className: 'custom-popup-wrapper'}});
+                marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', offset: [0, -10]}});
+                marker.addTo(planeLayerGroup);
+            }});
+            
+            if (activeFilter) {{
+                countDisplay.innerText = filteredCount + " / " + record.count;
+                clearFilterBtn.style.display = 'block';
+                clearFilterBtn.innerText = "✖ Clear Filter (" + activeFilter.value + ")";
+            }} else {{
+                countDisplay.innerText = record.count;
+                clearFilterBtn.style.display = 'none';
+            }}
+            
+            airlineList.innerHTML = "";
+            Object.entries(airlines).sort((a,b) => b[1] - a[1]).forEach(([airline, count]) => {{
+                if(airline && airline !== "Unknown Airline") {{
+                    let li = document.createElement("li");
+                    if (activeFilter && activeFilter.type === 'airline' && activeFilter.value === airline) li.classList.add('active-filter');
+                    li.innerHTML = `<div class="flex-left"><span>${{airline}}</span></div><div class="count-badge">${{count}}</div>`;
+                    li.onclick = () => setFilter('airline', airline);
+                    airlineList.appendChild(li);
+                }}
+            }});
+            
+            countryList.innerHTML = "";
+            Object.entries(countries).sort((a,b) => b[1] - a[1]).forEach(([country, count]) => {{
+                if(country && country !== "Unknown Location") {{
+                    let li = document.createElement("li");
+                    if (activeFilter && activeFilter.type === 'country' && activeFilter.value === country) li.classList.add('active-filter');
+                    li.innerHTML = `<div class="flex-left">${{getFlagHTML(country)}} <span>${{country}}</span></div><div class="count-badge">${{count}}</div>`;
+                    li.onclick = () => setFilter('country', country);
+                    countryList.appendChild(li);
+                }}
+            }});
+        }}
+
+        let playInterval;
+        let isPlaying = false;
+
+        function startPlayback() {{
+            if(playInterval) clearInterval(playInterval);
+            let speed = parseFloat(speedSelect.value);
+            let delay = 1000 / speed;
+            
+            playInterval = setInterval(() => {{
+                let val = parseInt(modalSlider.value) + 1;
+                if(val > parseInt(modalSlider.max)) val = parseInt(modalSlider.min);
+                modalSlider.value = val;
+                syncSelectsToIndex(val);
+                renderPlanes(val);
+                
+                let percent = modalSlider.max > 0 ? (val / modalSlider.max) * 100 : 0;
+                sliderTooltip.style.left = `calc(${{percent}}% + (${{10 - percent * 0.2}}px))`;
+            }}, delay);
+            playBtn.innerHTML = "⏸ Pause";
+            playBtn.classList.add("playing");
+            isPlaying = true;
+        }}
+
+        function stopPlayback() {{
+            clearInterval(playInterval);
+            playBtn.innerHTML = "▶ Play";
+            playBtn.classList.remove("playing");
+            isPlaying = false;
+        }}
+
+        playBtn.onclick = () => {{ if(isPlaying) stopPlayback(); else startPlayback(); }};
+        speedSelect.onchange = () => {{ if(isPlaying) startPlayback(); }};
 
         if (flightHistory.length > 0) {{
             modalSlider.max = flightHistory.length - 1;
             const timeMap = {{}};
             const latestTime = flightHistory[flightHistory.length - 1].timestamp;
             
+            const fmt = (d) => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,'0') + "-" + String(d.getDate()).padStart(2,'0') + "T" + String(d.getHours()).padStart(2,'0') + ":" + String(d.getMinutes()).padStart(2,'0');
+            exactPicker.min = fmt(new Date(flightHistory[0].timestamp * 1000));
+            exactPicker.max = fmt(new Date(latestTime * 1000));
+
             flightHistory.forEach((record, index) => {{
                 let diffSecs = latestTime - record.timestamp;
                 let h = Math.floor(diffSecs / 3600);
@@ -692,6 +847,13 @@ def generate_planes_html(history_24h):
                 mSelect.value = idx;
                 let mVal = Math.floor((diffSecs % 3600) / 60);
                 sliderTooltip.innerText = h + "h " + mVal + "m ago";
+                
+                if(tzMode === "local") {{
+                    exactPicker.value = fmt(new Date(record.timestamp * 1000));
+                }} else {{
+                    let d = new Date((record.timestamp + (3.5 * 3600)) * 1000);
+                    exactPicker.value = fmt(d);
+                }}
             }}
 
             hSelect.addEventListener('change', function() {{
@@ -705,18 +867,42 @@ def generate_planes_html(history_24h):
 
             mSelect.addEventListener('change', function() {{ modalSlider.value = this.value; syncSelectsToIndex(this.value); renderPlanes(this.value); }});
 
+            exactPicker.addEventListener('change', (e) => {{
+                if(!e.target.value) return;
+                let selectedUnix = 0;
+                if(tzMode === "local") {{
+                    selectedUnix = new Date(e.target.value).getTime() / 1000;
+                }} else {{
+                    let d = new Date(e.target.value + "Z");
+                    selectedUnix = (d.getTime() / 1000) - (3.5 * 3600);
+                }}
+                
+                let closestIdx = 0;
+                let minDiff = Infinity;
+                flightHistory.forEach((record, idx) => {{
+                    let diff = Math.abs(record.timestamp - selectedUnix);
+                    if(diff < minDiff) {{ minDiff = diff; closestIdx = idx; }}
+                }});
+                modalSlider.value = closestIdx;
+                syncSelectsToIndex(closestIdx);
+                renderPlanes(closestIdx);
+            }});
+
             modalSlider.addEventListener("input", function() {{
                 sliderTooltip.style.display = "block";
                 const val = this.value, min = this.min ? this.min : 0, max = this.max ? this.max : 100;
                 let newVal = max > min ? Number(((val - min) * 100) / (max - min)) : 0;
                 sliderTooltip.style.left = `calc(${{newVal}}% + (${{10 - newVal * 0.2}}px))`;
                 syncSelectsToIndex(this.value);
+                renderPlanes(this.value);
             }});
             
             modalSlider.addEventListener("change", function() {{ sliderTooltip.style.display = "none"; renderPlanes(this.value); }});
             
             if(hSelect.options.length > 0) {{ let lastIdx = flightHistory.length - 1; modalSlider.value = lastIdx; syncSelectsToIndex(lastIdx); renderPlanes(lastIdx); }}
         }} else {{ bannerText.innerText = "No temporal data available."; loading.style.display = "none"; }}
+
+        window.onload = () => {{ setTimeout(() => {{ loading.style.opacity = "0"; setTimeout(() => {{ loading.style.display = "none"; }}, 300); }}, 500); }};
     </script>
 </body>
 </html>"""
@@ -776,10 +962,10 @@ def main():
     plane_history = load_json(PLANE_HISTORY_FILE, [])
     plane_history.append(new_record)
     
-    forty_eight_hours_ago = current_timestamp - 172800
+    three_weeks_ago = current_timestamp - 1814400 
     keep_history, archive_history = [], []
     for record in plane_history:
-        if record["timestamp"] >= forty_eight_hours_ago: keep_history.append(record)
+        if record["timestamp"] >= three_weeks_ago: keep_history.append(record)
         else: archive_history.append(record)
             
     save_json(PLANE_HISTORY_FILE, keep_history)
@@ -788,14 +974,21 @@ def main():
         existing_archive.extend(archive_history)
         save_json(PLANE_ARCHIVE_FILE, existing_archive)
         
-    twenty_four_hours_ago = current_timestamp - 86400
-    history_24h = [r for r in keep_history if r["timestamp"] >= twenty_four_hours_ago]
-    generate_planes_html(history_24h)
+    two_weeks_ago = current_timestamp - 1209600 
+    history_2weeks = [r for r in keep_history if r["timestamp"] >= two_weeks_ago]
+    generate_planes_html(history_2weeks)
     
-    if current_count == 0 and plane_state["previous_count"] > 0:
-        send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is actively clearing. Current commercial planes detected inside the OIIX FIR boundary: 0.")
-    elif 0 < current_count <= 3 and plane_state["previous_count"] > 3:
-        send_telegram(f"⚠️ **AIRSPACE ALERT:** Extreme drop in commercial traffic detected. Only {current_count} planes currently inside the OIIX FIR boundary.")
+    prev_count = plane_state["previous_count"]
+    if prev_count != -1:
+        if prev_count <= 5 and current_count > 5:
+            send_telegram("✅ **AIRSPACE UPDATE:** Iranian Airspace is now OPEN. Normal commercial traffic is resuming.")
+        elif prev_count > 5 and current_count <= 5:
+            if current_count == 0:
+                send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is actively clearing. Current commercial planes detected inside the OIIX FIR boundary: 0.")
+            else:
+                send_telegram(f"⚠️ **AIRSPACE ALERT:** Extreme drop in commercial traffic detected. Only {current_count} planes currently inside the OIIX FIR boundary.")
+        elif prev_count > 0 and current_count == 0:
+            send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is completely CLEARED. Current commercial planes detected inside the OIIX FIR boundary: 0.")
         
     plane_state["previous_count"] = current_count
     save_json(PLANE_STATE_FILE, plane_state)
