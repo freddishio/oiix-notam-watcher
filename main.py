@@ -133,9 +133,11 @@ def save_json(filepath, data):
 
 def clean_iran_name(text):
     if not text: return text
-    cleaned = re.sub(r'islamic\s+republic\s+of\s+iran', 'Iran', text, flags=re.IGNORECASE)
-    cleaned = re.sub(r'iran\s+\(islamic\s+republic\s+of\)', 'Iran', cleaned, flags=re.IGNORECASE)
-    cleaned = re.sub(r'islamic\s+republic\s+iran', 'Iran', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'islamic\s+republic\s+of\s+iran', 'IRAN', text, flags=re.IGNORECASE)
+    cleaned = re.sub(r'iran\s+\(islamic\s+republic\s+of\)', 'IRAN', cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r'islamic\s+republic\s+iran', 'IRAN', cleaned, flags=re.IGNORECASE)
+    if cleaned.strip().lower() == 'iran':
+        return 'IRAN'
     return cleaned
 
 def update_faa_registry():
@@ -693,7 +695,7 @@ def generate_planes_html(history_rendered):
         const countriesMap = {{
             "united arab emirates": "AE", "qatar": "QA", "turkey": "TR", "saudi arabia": "SA", "kuwait": "KW", "oman": "OM",
             "bahrain": "BH", "iraq": "IQ", "pakistan": "PK", "india": "IN", "afghanistan": "AF", "germany": "DE",
-            "france": "FR", "united kingdom": "GB", "russia": "RU", "china": "CN", "united states": "US", "switzerland": "CH",
+            "france": "FR", "united kingdom": "GB", "russia": "RU", "russian federation": "RU", "china": "CN", "united states": "US", "switzerland": "CH",
             "netherlands": "NL", "italy": "IT", "spain": "ES", "egypt": "EG", "jordan": "JO", "lebanon": "LB", "syria": "SY",
             "belgium": "BE", "austria": "AT", "sweden": "SE", "norway": "NO", "denmark": "DK", "finland": "FI", "poland": "PL",
             "greece": "GR", "ireland": "IE", "portugal": "PT", "canada": "CA", "australia": "AU", "japan": "JP", "south korea": "KR",
