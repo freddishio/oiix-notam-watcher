@@ -461,7 +461,7 @@ def generate_planes_html(history_rendered):
         
         .time-display-group {{ display: flex; flex-direction: column; align-items: center; gap: 4px; }}
         #banner-time-tehran {{ font-size: 15px; font-weight: 800; color: #fff; }}
-        #banner-time-local {{ font-size: 12px; font-weight: 600; color: var(--primary); }}
+        #banner-time-local {{ font-size: 12px; font-weight: 600; color: var(--primary); text-transform: uppercase; }}
 
         #sidebar-wrapper {{ position: absolute; top: 80px; left: 0; z-index: 1000; display: flex; align-items: flex-start; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-360px); height: calc(100vh - 140px); pointer-events: none; }}
         #sidebar-content {{ width: 360px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; flex-shrink: 0; pointer-events: auto; }}
@@ -583,7 +583,7 @@ def generate_planes_html(history_rendered):
         <div class="time-grid">
             <div class="tz-toggle">
                 <button id="btn-tz-tehran" class="active">Tehran Time</button>
-                <button id="btn-tz-local">Local Time</button>
+                <button id="btn-tz-local"></button>
             </div>
             
             <div class="time-inputs">
@@ -673,6 +673,11 @@ def generate_planes_html(history_rendered):
         const btnTzLocal = document.getElementById("btn-tz-local");
         let tzMode = "tehran";
 
+        const tzParts = new Intl.DateTimeFormat('en-US', {{ timeZoneName: 'short' }}).formatToParts(new Date());
+        const tzPartObj = tzParts.find(p => p.type === 'timeZoneName');
+        const userTzShort = tzPartObj ? tzPartObj.value : Intl.DateTimeFormat().resolvedOptions().timeZone.split('/').pop().replace(/_/g, ' ');
+        btnTzLocal.innerText = userTzShort + " Time";
+
         btnTzTehran.onclick = () => {{ tzMode = "tehran"; btnTzTehran.classList.add("active"); btnTzLocal.classList.remove("active"); }};
         btnTzLocal.onclick = () => {{ tzMode = "local"; btnTzLocal.classList.add("active"); btnTzTehran.classList.remove("active"); }};
         
@@ -727,7 +732,7 @@ def generate_planes_html(history_rendered):
             const tehranTimeStr = dateUTC.toLocaleString('en-US', {{ ...opts, timeZone: 'Asia/Tehran' }});
 
             bannerTehran.innerText = tehranTimeStr + " Tehran Time";
-            bannerLocal.innerText = localTimeStr + " Local Time";
+            bannerLocal.innerText = localTimeStr + " " + userTzShort;
             
             const airlines = {{}}; const countries = {{}};
             let filteredCount = 0;
