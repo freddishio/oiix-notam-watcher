@@ -6,7 +6,6 @@ import time
 import subprocess
 import tempfile
 import re
-import urllib.parse
 from collections import deque
 from datetime import datetime, timezone, timedelta
 from shapely.geometry import Point, shape
@@ -145,7 +144,7 @@ def update_faa_registry():
     last_check = airlines_data.get("_last_check", 0)
     if now - last_check < 86400 and len(airlines_data) > 1:
         return airlines_data
-    print("Updating FAA ICAO Airline registry (No AI calls here)...")
+    print("Updating FAA ICAO Airline registry no AI calls here...")
     headers = {"User-Agent": "Mozilla/5.0"}
     url = "https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_3.html"
     try:
@@ -180,7 +179,7 @@ def translate_active_airlines(active_codes, airlines_data):
         if info and not info.get("common_name"):
             to_translate[code] = info["formal_name"]
     if not to_translate or not ACTIVE_KEYS: return airlines_data
-    print(f"On-Demand AI Translation: Checking {len(to_translate)} active airlines...")
+    print(f"On Demand AI Translation: Checking {len(to_translate)} active airlines...")
     prompt = "Here is a JSON dictionary of airline ICAO codes and their formal registered names. Return a JSON dictionary mapping the exact same ICAO codes to their most common everyday spoken airline name. For example 'IRAN NATIONAL AIRLINES CORP. (IRAN AIR)' becomes 'Iran Air'. Return ONLY valid JSON and nothing else.\n\n" + json.dumps(to_translate)
     data = {"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"response_mime_type": "application/json", "temperature": 0.1}}
     keys_tried = 0
@@ -454,15 +453,15 @@ def generate_planes_html(history_rendered):
         #map {{ height: 100vh; width: 100vw; z-index: 1; }}
         
         .glass-panel {{ background: var(--bg-glass); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8); color: var(--text-main); }}
-        
-        #clocks-container {{ position: absolute; top: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 1000; pointer-events: none; }}
-        .clock-box {{ background: var(--bg-glass); backdrop-filter: blur(20px); border: 1px solid var(--border); padding: 10px 18px; border-radius: 12px; font-family: 'Roboto Mono', monospace; font-size: 14px; font-weight: 700; color: #fff; box-shadow: 0 8px 25px rgba(0,0,0,0.6); display: flex; justify-content: space-between; gap: 20px; align-items: center; }}
-        .clock-box span:first-child {{ color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; }}
 
         #loading {{ position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; letter-spacing: 1px; z-index: 9999; transition: opacity 0.3s ease; }}
         
-        #top-banner {{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 28px; border-radius: 30px; font-size: 15px; font-weight: 700; z-index: 1000; white-space: nowrap; display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }}
+        #top-banner {{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 28px; border-radius: 30px; z-index: 1000; white-space: nowrap; display: flex; align-items: center; gap: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }}
         #top-banner span.indicator {{ display: inline-block; width: 10px; height: 10px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 12px #00ff00; }}
+        
+        .time-display-group {{ display: flex; flex-direction: column; align-items: center; gap: 4px; }}
+        #banner-time-tehran {{ font-size: 15px; font-weight: 800; color: #fff; }}
+        #banner-time-local {{ font-size: 12px; font-weight: 600; color: var(--primary); }}
 
         #sidebar-wrapper {{ position: absolute; top: 80px; left: 0; z-index: 1000; display: flex; align-items: flex-start; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-360px); height: calc(100vh - 140px); pointer-events: none; }}
         #sidebar-content {{ width: 360px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; flex-shrink: 0; pointer-events: auto; }}
@@ -536,10 +535,9 @@ def generate_planes_html(history_rendered):
 
         @media (max-width: 900px) {{
             .time-grid {{ grid-template-columns: 1fr; gap: 15px; justify-items: center; }}
-            #clocks-container {{ display: none; }}
         }}
         @media (max-width: 768px) {{
-            #top-banner {{ font-size: 13px; padding: 10px 18px; top: 10px; width: 85%; justify-content: center; }}
+            #top-banner {{ padding: 10px 18px; top: 10px; width: 85%; justify-content: center; }}
             #sidebar-wrapper {{ transform: translateX(-320px); }}
             #sidebar-content {{ width: 320px; padding: 18px; }}
             .expanded {{ transform: translateX(0) !important; }}
@@ -550,13 +548,14 @@ def generate_planes_html(history_rendered):
     </style>
 </head>
 <body>
-    <div id="clocks-container">
-        <div class="clock-box"><span>TEHRAN</span><span id="tehran-time">--:--:--</span></div>
-        <div class="clock-box"><span>LOCAL</span><span id="local-time">--:--:--</span></div>
-    </div>
-
     <div id="loading">Syncing Radar Data...</div>
-    <div id="top-banner" class="glass-panel"><span class="indicator"></span> <span id="banner-text">Radar Snapshot: Loading...</span></div>
+    <div id="top-banner" class="glass-panel">
+        <span class="indicator"></span>
+        <div class="time-display-group">
+            <span id="banner-time-tehran">Snapshot Time...</span>
+            <span id="banner-time-local"></span>
+        </div>
+    </div>
     
     <div id="sidebar-wrapper">
         <div id="sidebar-content" class="glass-panel">
@@ -640,7 +639,8 @@ def generate_planes_html(history_rendered):
 
         var planeLayerGroup = L.layerGroup().addTo(map);
         
-        const bannerText = document.getElementById("banner-text");
+        const bannerTehran = document.getElementById("banner-time-tehran");
+        const bannerLocal = document.getElementById("banner-time-local");
         const countDisplay = document.getElementById("plane-count");
         const airlineList = document.getElementById("airline-list");
         const countryList = document.getElementById("country-list");
@@ -651,12 +651,6 @@ def generate_planes_html(history_rendered):
         const sidebarToggle = document.getElementById("sidebar-toggle");
         
         let activeFilter = null; 
-
-        setInterval(() => {{
-            const now = new Date();
-            document.getElementById("local-time").innerText = now.toLocaleTimeString('en-US', {{hour12: false}});
-            document.getElementById("tehran-time").innerText = now.toLocaleTimeString('en-US', {{timeZone: 'Asia/Tehran', hour12: false}});
-        }}, 1000);
 
         if (window.innerWidth >= 768) {{ sidebarWrapper.classList.add("expanded"); sidebarToggle.innerText = "<<"; }}
         sidebarToggle.onclick = function() {{
@@ -726,7 +720,14 @@ def generate_planes_html(history_rendered):
         function renderPlanes(index) {{
             planeLayerGroup.clearLayers();
             const record = flightHistory[index];
-            bannerText.innerText = record.time_str;
+            
+            const dateUTC = new Date(record.timestamp * 1000);
+            const opts = {{ year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
+            const localTimeStr = dateUTC.toLocaleString('en-US', opts);
+            const tehranTimeStr = dateUTC.toLocaleString('en-US', {{ ...opts, timeZone: 'Asia/Tehran' }});
+
+            bannerTehran.innerText = tehranTimeStr + " Tehran Time";
+            bannerLocal.innerText = localTimeStr + " Local Time";
             
             const airlines = {{}}; const countries = {{}};
             let filteredCount = 0;
@@ -900,7 +901,7 @@ def generate_planes_html(history_rendered):
             modalSlider.addEventListener("change", function() {{ sliderTooltip.style.display = "none"; renderPlanes(this.value); }});
             
             if(hSelect.options.length > 0) {{ let lastIdx = flightHistory.length - 1; modalSlider.value = lastIdx; syncSelectsToIndex(lastIdx); renderPlanes(lastIdx); }}
-        }} else {{ bannerText.innerText = "No temporal data available."; loading.style.display = "none"; }}
+        }} else {{ bannerTehran.innerText = "No temporal data available."; loading.style.display = "none"; }}
 
         window.onload = () => {{ setTimeout(() => {{ loading.style.opacity = "0"; setTimeout(() => {{ loading.style.display = "none"; }}, 300); }}, 500); }};
     </script>
@@ -936,7 +937,7 @@ def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, 
     return "\n".join(msg_parts)
 
 def main():
-    print("Fetching FULL data from FAA AIM (OIIX Only)...")
+    print("Fetching FULL data from FAA AIM OIIX Only...")
     seen_ids = load_json(STATE_FILE, {})
     run_history = load_json(HISTORY_FILE, [])
     ai_buffer = load_json(AI_BUFFER_FILE, [])
@@ -954,19 +955,22 @@ def main():
     
     current_planes = fetch_iran_planes()
     current_count = len(current_planes)
-    current_timestamp = int(time.time())
-    dt_teh = datetime.now(timezone.utc).astimezone(tehran_tz)
-    current_time_str = dt_teh.strftime('%Y/%m/%d %H:%M:%S Tehran Time')
     
-    new_record = {"timestamp": current_timestamp, "time_str": current_time_str, "count": current_count, "planes": current_planes}
+    dt_utc = datetime.now(timezone.utc)
+    current_timestamp = int(dt_utc.timestamp())
+    current_time_utc_str = dt_utc.strftime('%Y-%m-%d %H:%M:%S UTC')
+    
+    new_record = {"timestamp": current_timestamp, "time_utc": current_time_utc_str, "count": current_count, "planes": current_planes}
     plane_history = load_json(PLANE_HISTORY_FILE, [])
     plane_history.append(new_record)
     
     three_weeks_ago = current_timestamp - 1814400 
     keep_history, archive_history = [], []
     for record in plane_history:
-        if record["timestamp"] >= three_weeks_ago: keep_history.append(record)
-        else: archive_history.append(record)
+        if record.get("timestamp", 0) >= three_weeks_ago: 
+            keep_history.append(record)
+        else: 
+            archive_history.append(record)
             
     save_json(PLANE_HISTORY_FILE, keep_history)
     if archive_history:
@@ -975,10 +979,10 @@ def main():
         save_json(PLANE_ARCHIVE_FILE, existing_archive)
         
     two_weeks_ago = current_timestamp - 1209600 
-    history_2weeks = [r for r in keep_history if r["timestamp"] >= two_weeks_ago]
+    history_2weeks = [r for r in keep_history if r.get("timestamp", 0) >= two_weeks_ago]
     generate_planes_html(history_2weeks)
     
-    prev_count = plane_state["previous_count"]
+    prev_count = plane_state.get("previous_count", -1)
     if prev_count != -1:
         if prev_count <= 5 and current_count > 5:
             send_telegram("✅ **AIRSPACE UPDATE:** Iranian Airspace is now OPEN. Normal commercial traffic is resuming.")
@@ -1004,9 +1008,10 @@ def main():
     for notam in notam_list:
         notam_id = notam.get("notamNumber")
         icao_id = notam.get("icaoId")
-        if not notam_id: continue
+        if not notam_id: 
+            continue
         full_id = f"{icao_id} {notam_id}"
-        notam["last_seen_utc"] = current_time_str
+        notam["last_seen_utc"] = current_time_utc_str
         current_raw_dict[full_id] = notam
         if full_id in active_notams_decoded and "error" not in active_notams_decoded[full_id]:
             current_decoded_dict[full_id] = active_notams_decoded[full_id]
@@ -1019,7 +1024,7 @@ def main():
             notam_id = current_raw_dict[buf_id].get("notamNumber")
             ai_data = get_ai_explanation(raw_text)
             if ai_data and "highest_level" in ai_data:
-                ai_data["last_seen_utc"] = current_time_str
+                ai_data["last_seen_utc"] = current_time_utc_str
                 current_ai_dict[buf_id] = ai_data
                 lvl = ai_data.get("highest_level", "Third Level")
                 ai_explanation = ai_data.get("explanation", "")
@@ -1034,7 +1039,7 @@ def main():
             raw_text = notam.get("icaoMessage", "")
             decoded_obj = decode_notam(raw_text)
             if decoded_obj:
-                decoded_obj["last_seen_utc"] = current_time_str
+                decoded_obj["last_seen_utc"] = current_time_utc_str
                 current_decoded_dict[full_id] = decoded_obj
 
         if full_id not in seen_ids:
@@ -1043,7 +1048,7 @@ def main():
             internal_translation = translate_e_section(raw_text)
             ai_data = get_ai_explanation(raw_text)
             if ai_data and "highest_level" in ai_data:
-                ai_data["last_seen_utc"] = current_time_str
+                ai_data["last_seen_utc"] = current_time_utc_str
                 current_ai_dict[full_id] = ai_data
                 lvl = ai_data.get("highest_level", "Third Level")
                 ai_explanation = ai_data.get("explanation", internal_translation)
@@ -1055,22 +1060,22 @@ def main():
             notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links = extract_notam_details(raw_text, current_decoded_dict.get(full_id, {}), notam_id)
             msg = format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, lvl, ai_explanation, raw_text, is_update=False)
             send_telegram(msg)
-            seen_ids[full_id] = current_time_str
+            seen_ids[full_id] = current_time_utc_str
             new_count += 1
 
     removed_count = 0
     newly_expired_raw, newly_expired_decoded, newly_expired_ai = {}, {}, {}
     for old_id, old_data in active_notams_raw.items():
         if old_id not in current_raw_dict:
-            old_data["archived_utc"] = current_time_str
+            old_data["archived_utc"] = current_time_utc_str
             newly_expired_raw[old_id] = old_data
             if old_id in active_notams_decoded:
                 dec_data = active_notams_decoded[old_id]
-                dec_data["archived_utc"] = current_time_str
+                dec_data["archived_utc"] = current_time_utc_str
                 newly_expired_decoded[old_id] = dec_data
             if old_id in active_notams_ai:
                 ai_ex_data = active_notams_ai[old_id]
-                ai_ex_data["archived_utc"] = current_time_str
+                ai_ex_data["archived_utc"] = current_time_utc_str
                 newly_expired_ai[old_id] = ai_ex_data
             removed_count += 1
             
@@ -1079,7 +1084,8 @@ def main():
     expired_notams_ai = {**newly_expired_ai, **expired_notams_ai}
 
     new_state = {}
-    for cid in current_raw_dict.keys(): new_state[cid] = seen_ids.get(cid, current_time_str)
+    for cid in current_raw_dict.keys(): 
+        new_state[cid] = seen_ids.get(cid, current_time_utc_str)
 
     save_json(STATE_FILE, new_state)
     save_json(AI_BUFFER_FILE, new_ai_buffer)
@@ -1090,7 +1096,7 @@ def main():
     save_json(EXPIRED_DECODED_FILE, expired_notams_decoded)
     save_json(EXPIRED_AI_FILE, expired_notams_ai)
 
-    run_record = {"time_utc": current_time_str, "total_active": len(current_raw_dict), "new_added": new_count, "removed": removed_count, "buffered_ai": len(new_ai_buffer)}
+    run_record = {"time_utc": current_time_utc_str, "total_active": len(current_raw_dict), "new_added": new_count, "removed": removed_count, "buffered_ai": len(new_ai_buffer)}
     run_history.insert(0, run_record)
     save_json(HISTORY_FILE, run_history[:250])
 
