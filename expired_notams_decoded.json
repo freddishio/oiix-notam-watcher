@@ -1,4 +1,62 @@
 {
+  "OIIX A0249/26": {
+    "header": {
+      "id": "",
+      "type": "A0249/26"
+    },
+    "qualification": {
+      "line": "OIIX/QOATT/IV/BO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "OATT",
+        "entity": "OA",
+        "status": "TT",
+        "area": "Other Information",
+        "subject": "Aeronautical information service",
+        "condition": "Trigger",
+        "modifier": "Trigger"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-19T00:00:00.000Z",
+      "validityEnd": "2026-04-04T23:59:00.000Z"
+    },
+    "content": {
+      "text": "TRIGGER NOTAM-PERM AIRAC AIP AMDT 1/26 WEF 19 FEB 2026\nWILL BE IN FORCE AND FLW INFO MENTIONED:\nTHE AIP SUP 13/25 PUBLISHED AND SUPERSEDES AIP SUP 10/25 AND \nAIP SUP 94-105/15, 11/25 WILL BE CANCELED,\nSOME CHANGES IN PART GEN: 0.2, 0.3, 0.4, 2.3, \nSOME CHANGES IN PART ENR: 2.1, 3.1, 3.3, 4.1, 5.1.3, 6.1,\nSOME CHANGES IN PART AD: \nOIBA: ALL IAC,\nOIMB: ATS COM FAC, CHART RELATED TO AD, ADC, ALL SID,STAR AND IAC,\nOICC: AD GEO AND ADMINISTRATIVE DATA, HANDLING SERVICES AND FAC,\n APRONS, TWYS, SFC MOV GUIDENCE AND CTL SYSTEM AND MARKINGS,\n OBST, MET INFO, RWY PHYSICAL CHARACTERISTICS, DECLARED DISTANCES,\n APCH AND RWY LGT, RADIO NAV AND LDG AIDS, LOC TFC REGULATIONS\n CHART RELATED TO AD, ADC, ALL SID, STAR AND IAC,\nOIBK: APCH AND RWY LGT, RADIO NAV AND LDG AIDS, IAC 1-1, IAC 1-2\nOIMM: FLT PROC,\nOIGG: RADIO NAV AND LDG AIDS, CHART RELATED TO AD, SID 2-1, \n SID 2-2, STAR 2-1, IAC 1-1, IAC 1-2, IAC 4-1, IAC 4-2, IAC 4-3,\n  IAC 4-4,\r\nA0249/26 NOTAMN\nQ) OIIX/QOATT/IV/BO/A/000/999/\nA) OIIX PART 2 OF 2 B) 2602190000 C) 2603042359\nE)\nOICS: IAC 1-1, IAC 2-1,\nOIKY: AD GEO AND ADMINISTRATIVE DATA, APRONS,TWYS, OBST, MET INFO,\n  RADIO NAV AND LDG AIDS, ALL IAC,\nOIMT: APRONS, TWYS, MET INFO, OTHER LGT AND SRY PWR SUPPLY, ADC\nOITT: AD GEO AND ADMINISTRATIVE DATA, OBST, ALL IAC,\nOIIE: STAR 1-1, STAR 1-3,\nOIII: RESCUE AND FIRE FIGHTING SER, SEASONAL AVILIBILITY, \n APRONS, TWYS, SFC MOV GUIDENCE AND CTL SYSTEM AND MARKINGS,\n RWY PHYSICAL CHARACTERISTICS, ADC, APDC,\nOITR: AD GEO AND ADMINISTRATIVE DATA, APRONS, TWYS, OBST, MET INFO,\n RWY PHYSICAL CHARACTERISTICS, RADIO NAV AND LDG AIDS, \n CHART RELATED TO AD, ADC, ALL SID, STAR AND IAC\nOIYY: APRONS, TWYS, OBST, ADDN INFO, ALL IAC,\nOIIO: HELIPORT GEO AND ADMINISTRATIVE DATA, APRONS, TWYS\n AND CHECK LOCATIONS/POSITIONS DATA, HELIPORT DATA,\n DECLARED DISTANCES, ADDN INFO."
+    },
+    "last_seen_utc": "2026/02/20 04:55:03",
+    "archived_utc": "2026/03/05 03:30:24 Tehran Time"
+  },
   "OIIX A0719/26": {
     "header": {
       "id": "A0719/26",
