@@ -957,7 +957,7 @@ def main():
     expired_notams_decoded = load_json(EXPIRED_DECODED_FILE, {})
     expired_notams_ai = load_json(EXPIRED_AI_FILE, {})
     
-    plane_state = load_json(PLANE_STATE_FILE, {"previous_count": -1})
+    plane_state = load_json(PLANE_STATE_FILE, {"previous_count": -1, "airspace_status": "CLOSED"})
     notam_list = get_all_notams()
     
     current_planes = fetch_iran_planes()
@@ -989,18 +989,29 @@ def main():
     history_2weeks = [r for r in keep_history if r.get("timestamp", 0) >= two_weeks_ago]
     generate_planes_html(history_2weeks)
     
-    prev_count = plane_state.get("previous_count", -1)
-    if prev_count != -1:
-        if prev_count <= 5 and current_count > 5:
-            send_telegram("✅ **AIRSPACE UPDATE:** Iranian Airspace is now OPEN. Normal commercial traffic is resuming.")
-        elif prev_count > 5 and current_count <= 5:
-            if current_count == 0:
-                send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is actively clearing. Current commercial planes detected inside the OIIX FIR boundary: 0.")
+    current_status = plane_state.get("airspace_status", "CLOSED")
+    
+    if current_status == "CLOSED":
+        if current_count >= 3:
+            send_telegram(f"✅ **AIRSPACE UPDATE:** Planes are being seen in Iranian Airspace again. (Count: {current_count})")
+            if current_count >= 10:
+                plane_state["airspace_status"] = "OPEN"
             else:
-                send_telegram(f"⚠️ **AIRSPACE ALERT:** Extreme drop in commercial traffic detected. Only {current_count} planes currently inside the OIIX FIR boundary.")
-        elif prev_count > 0 and current_count == 0:
+                plane_state["airspace_status"] = "WARNING"
+    elif current_status == "WARNING":
+        if current_count >= 10:
+            plane_state["airspace_status"] = "OPEN"
+        elif current_count == 0:
+            plane_state["airspace_status"] = "CLOSED"
             send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is completely CLEARED. Current commercial planes detected inside the OIIX FIR boundary: 0.")
-        
+    elif current_status == "OPEN":
+        if current_count == 0:
+            plane_state["airspace_status"] = "CLOSED"
+            send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is completely CLEARED. Current commercial planes detected inside the OIIX FIR boundary: 0.")
+        elif current_count < 10:
+            plane_state["airspace_status"] = "WARNING"
+            send_telegram(f"⚠️ **AIRSPACE ALERT:** The number of planes has dropped below 10 (Currently {current_count}). This might be a sign of airspace clearing.")
+            
     plane_state["previous_count"] = current_count
     save_json(PLANE_STATE_FILE, plane_state)
     
