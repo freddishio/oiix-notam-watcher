@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772282722,
-    "time_str": "2026-02-28 12:45:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772283021,
     "time_str": "2026-02-28 12:50:21 UTC",
     "count": 0,
@@ -43790,5 +43784,27 @@
     "time_utc": "2026-03-21 12:45:18 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1774097416,
+    "time_utc": "2026-03-21 12:50:16 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ed7c79a",
+        "callsign": "MSR1966",
+        "flight": "MS1966",
+        "type": "B738",
+        "reg": "SU-GCN",
+        "category": "Commercial",
+        "alt": 2650,
+        "track": 71,
+        "speed": 970,
+        "lat": 27.044,
+        "lon": 61.304,
+        "airline": "Egypt Air",
+        "country": "Egypt"
+      }
+    ]
   }
 ]
