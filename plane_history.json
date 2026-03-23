@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772413227,
-    "time_str": "2026-03-02 01:00:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772413525,
     "time_str": "2026-03-02 01:05:25 UTC",
     "count": 0,
@@ -43996,5 +43990,27 @@
     "time_utc": "2026-03-23 01:00:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1774227918,
+    "time_utc": "2026-03-23 01:05:18 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3edc2b57",
+        "callsign": "UAE319",
+        "flight": "EK319",
+        "type": "A388",
+        "reg": "A6-EUJ",
+        "category": "Commercial",
+        "alt": 100,
+        "track": 152,
+        "speed": 306,
+        "lat": 27.222,
+        "lon": 54.426,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
