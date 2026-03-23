@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772482222,
-    "time_str": "2026-03-02 20:10:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772482524,
     "time_str": "2026-03-02 20:15:24 UTC",
     "count": 0,
@@ -44013,5 +44007,27 @@
     "time_utc": "2026-03-23 20:10:19 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1774296921,
+    "time_utc": "2026-03-23 20:15:21 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ee02084",
+        "callsign": "UAE51P",
+        "flight": "EK142",
+        "type": "A388",
+        "reg": "A6-EEG",
+        "category": "Commercial",
+        "alt": 23250,
+        "track": 32,
+        "speed": 897,
+        "lat": 29.197,
+        "lon": 59.26,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
