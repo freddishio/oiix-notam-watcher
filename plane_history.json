@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772476223,
-    "time_str": "2026-03-02 18:30:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772476518,
     "time_str": "2026-03-02 18:35:18 UTC",
     "count": 0,
@@ -44007,5 +44001,27 @@
     "time_utc": "2026-03-23 18:25:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1774290625,
+    "time_utc": "2026-03-23 18:30:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ee0e458",
+        "callsign": "MFX7504",
+        "flight": "C67504",
+        "type": "B763",
+        "reg": "UK67009",
+        "category": "Commercial",
+        "alt": 31875,
+        "track": 46,
+        "speed": 505,
+        "lat": 24.663,
+        "lon": 61.426,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      }
+    ]
   }
 ]
