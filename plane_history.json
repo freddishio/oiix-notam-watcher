@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772564152,
-    "time_str": "2026-03-03 18:55:52 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772564451,
     "time_str": "2026-03-03 19:00:51 UTC",
     "count": 0,
@@ -44130,5 +44124,27 @@
     "time_utc": "2026-03-24 18:55:20 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1774378829,
+    "time_utc": "2026-03-24 19:00:29 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ee4b411",
+        "callsign": "JAG1320",
+        "flight": "Unknown Flight",
+        "type": "B752",
+        "reg": "P4-JAR",
+        "category": "Commercial",
+        "alt": 2000,
+        "track": 353,
+        "speed": 246,
+        "lat": 26.15,
+        "lon": 55.34,
+        "airline": "Alpha Sky",
+        "country": "Kazakhstan"
+      }
+    ]
   }
 ]
