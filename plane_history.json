@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1772675723,
-    "time_str": "2026-03-05 01:55:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1772676029,
     "time_str": "2026-03-05 02:00:29 UTC",
     "count": 0,
@@ -43979,5 +43973,27 @@
     "time_utc": "2026-03-26 01:55:19 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1774490423,
+    "time_utc": "2026-03-26 02:00:23 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3eea537c",
+        "callsign": "ETD4XQ",
+        "flight": "EY207",
+        "type": "B78X",
+        "reg": "A6-BME",
+        "category": "Commercial",
+        "alt": 275,
+        "track": 36,
+        "speed": 578,
+        "lat": 29.789,
+        "lon": 55.783,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
