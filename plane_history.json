@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1773180924,
-    "time_utc": "2026-03-10 22:15:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1773181223,
-    "time_utc": "2026-03-10 22:20:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773181519,
     "time_utc": "2026-03-10 22:25:19 UTC",
     "count": 0,
@@ -43625,6 +43613,28 @@
         "speed": 470,
         "lat": 27.585,
         "lon": 50.545,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1774995631,
+    "time_utc": "2026-03-31 22:20:31 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f00a591",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46048",
+        "category": "Commercial",
+        "alt": 25600,
+        "track": 322,
+        "speed": 330,
+        "lat": 27.992,
+        "lon": 50.273,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
