@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1773264323,
-    "time_utc": "2026-03-11 21:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773264625,
     "time_utc": "2026-03-11 21:30:25 UTC",
     "count": 0,
@@ -43131,6 +43125,28 @@
         "speed": 124,
         "lat": 26.118,
         "lon": 55.253,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1775079024,
+    "time_utc": "2026-04-01 21:30:24 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f03dc28",
+        "callsign": "UAE2",
+        "flight": "EK2",
+        "type": "A388",
+        "reg": "A6-EVO",
+        "category": "Commercial",
+        "alt": 100,
+        "track": 180,
+        "speed": 124,
+        "lat": 25.968,
+        "lon": 55.211,
         "airline": "Emirates",
         "country": "United Arab Emirates"
       }
