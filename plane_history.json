@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1773265524,
-    "time_utc": "2026-03-11 21:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1773265819,
-    "time_utc": "2026-03-11 21:50:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773266122,
     "time_utc": "2026-03-11 21:55:22 UTC",
     "count": 0,
@@ -43163,6 +43151,28 @@
         "speed": 360,
         "lat": 28.001,
         "lon": 50.277,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1775080221,
+    "time_utc": "2026-04-01 21:50:21 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f04a2aa",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "K35R",
+        "reg": "58-0052",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 319,
+        "speed": 352,
+        "lat": 28.392,
+        "lon": 49.946,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
