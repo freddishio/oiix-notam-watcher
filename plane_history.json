@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1773285619,
-    "time_utc": "2026-03-12 03:20:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773285917,
     "time_utc": "2026-03-12 03:25:17 UTC",
     "count": 0,
@@ -43151,5 +43145,27 @@
     "time_utc": "2026-04-02 03:15:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1775100021,
+    "time_utc": "2026-04-02 03:20:21 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f05c970",
+        "callsign": "AFG418",
+        "flight": "FG418",
+        "type": "A310",
+        "reg": "YA-CAV",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 64,
+        "speed": 490,
+        "lat": 24.778,
+        "lon": 61.336,
+        "airline": "Ariana Afghan Airlines",
+        "country": "Afghanistan"
+      }
+    ]
   }
 ]
