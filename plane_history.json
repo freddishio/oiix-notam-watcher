@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1773273623,
-    "time_utc": "2026-03-12 00:00:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773273932,
     "time_utc": "2026-03-12 00:05:32 UTC",
     "count": 0,
@@ -43183,5 +43177,27 @@
     "time_utc": "2026-04-02 00:00:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1775088321,
+    "time_utc": "2026-04-02 00:05:21 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f05b690",
+        "callsign": "KMF902",
+        "flight": "RQ902",
+        "type": "A343",
+        "reg": "YA-KAC",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 47,
+        "speed": 492,
+        "lat": 24.783,
+        "lon": 60.899,
+        "airline": "Kam Air",
+        "country": "Afghanistan"
+      }
+    ]
   }
 ]
