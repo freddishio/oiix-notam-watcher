@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1773445520,
-    "time_utc": "2026-03-13 23:45:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1773445822,
-    "time_utc": "2026-03-13 23:50:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773446124,
     "time_utc": "2026-03-13 23:55:24 UTC",
     "count": 0,
@@ -42352,5 +42340,27 @@
     "time_utc": "2026-04-03 23:45:18 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1775260234,
+    "time_utc": "2026-04-03 23:50:34 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f0cd434",
+        "callsign": "ETH672",
+        "flight": "ET672",
+        "type": "A359",
+        "reg": "ET-AZN",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 60,
+        "speed": 440,
+        "lat": 24.714,
+        "lon": 60.956,
+        "airline": "Ethiopian Airlines",
+        "country": "Ethiopia"
+      }
+    ]
   }
 ]
