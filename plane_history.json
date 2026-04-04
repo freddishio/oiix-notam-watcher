@@ -42443,5 +42443,42 @@
     "time_utc": "2026-04-04 11:10:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1775301316,
+    "time_utc": "2026-04-04 11:15:16 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f0defdc",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 24500,
+        "track": 119,
+        "speed": 40,
+        "lat": 28.342,
+        "lon": 50.323,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3f0e422a",
+        "callsign": "UAE806",
+        "flight": "EK806",
+        "type": "A388",
+        "reg": "A6-EOS",
+        "category": "Commercial",
+        "alt": 275,
+        "track": 343,
+        "speed": 361,
+        "lat": 26.432,
+        "lon": 55.481,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
