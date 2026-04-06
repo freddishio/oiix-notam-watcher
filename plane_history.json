@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1773630322,
-    "time_utc": "2026-03-16 03:05:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773630622,
     "time_utc": "2026-03-16 03:10:22 UTC",
     "count": 0,
@@ -42382,5 +42376,27 @@
     "time_utc": "2026-04-06 03:05:16 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1775445019,
+    "time_utc": "2026-04-06 03:10:19 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f1465cb",
+        "callsign": "PIA942",
+        "flight": "PK942",
+        "type": "A320",
+        "reg": "AP-BOL",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 62,
+        "speed": 750,
+        "lat": 24.715,
+        "lon": 60.983,
+        "airline": "PIA",
+        "country": "Pakistan"
+      }
+    ]
   }
 ]
