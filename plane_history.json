@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1773732322,
-    "time_utc": "2026-03-17 07:25:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773732621,
     "time_utc": "2026-03-17 07:30:21 UTC",
     "count": 0,
@@ -42709,6 +42703,28 @@
         "speed": 326,
         "lat": 28.809,
         "lon": 50.398,
+        "airline": "XXX",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1775546723,
+    "time_utc": "2026-04-07 07:25:23 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f188d68",
+        "callsign": "XXXXXXX",
+        "flight": "Unknown Flight",
+        "type": "Q4",
+        "reg": "169804",
+        "category": "Commercial",
+        "alt": 47000,
+        "track": 336,
+        "speed": 194,
+        "lat": 28.757,
+        "lon": 50.388,
         "airline": "XXX",
         "country": "Unknown Location"
       }
