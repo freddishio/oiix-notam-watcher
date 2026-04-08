@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1773804626,
-    "time_utc": "2026-03-18 03:30:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1773804917,
-    "time_utc": "2026-03-18 03:35:17 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1773805223,
     "time_utc": "2026-03-18 03:40:23 UTC",
     "count": 0,
@@ -43019,6 +43007,28 @@
         "speed": 580,
         "lat": 30.549,
         "lon": 53.404,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1775619320,
+    "time_utc": "2026-04-08 03:35:20 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f1c04aa",
+        "callsign": "UAE4",
+        "flight": "EK4",
+        "type": "A388",
+        "reg": "A6-EUM",
+        "category": "Commercial",
+        "alt": 25,
+        "track": 188,
+        "speed": 676,
+        "lat": 29.71,
+        "lon": 53.236,
         "airline": "Emirates",
         "country": "United Arab Emirates"
       }
