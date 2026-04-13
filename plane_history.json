@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1774235123,
-    "time_utc": "2026-03-23 03:05:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1774235421,
-    "time_utc": "2026-03-23 03:10:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1774235720,
     "time_utc": "2026-03-23 03:15:20 UTC",
     "count": 0,
@@ -41993,5 +41981,27 @@
     "time_utc": "2026-04-13 03:05:15 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1776049824,
+    "time_utc": "2026-04-13 03:10:24 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f31cb6f",
+        "callsign": "IRM079",
+        "flight": "Unknown Flight",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 125,
+        "speed": 498,
+        "lat": 36.052,
+        "lon": 59.896,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
