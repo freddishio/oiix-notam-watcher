@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1774441523,
-    "time_utc": "2026-03-25 12:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1774441821,
-    "time_utc": "2026-03-25 12:30:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1774442121,
     "time_utc": "2026-03-25 12:35:21 UTC",
     "count": 0,
@@ -43055,6 +43043,28 @@
         "speed": 405,
         "lat": 35.117,
         "lon": 60.15,
+        "airline": "GL5",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1776256229,
+    "time_utc": "2026-04-15 12:30:29 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f3afe59",
+        "callsign": "GL5T",
+        "flight": "Unknown Flight",
+        "type": "GL5T",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 297,
+        "speed": 90,
+        "lat": 35.352,
+        "lon": 59.592,
         "airline": "GL5",
         "country": "Unknown Location"
       }
