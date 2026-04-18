@@ -1,4 +1,61 @@
 {
+  "OIIX A3810/25": {
+    "header": {
+      "id": "A3810/25",
+      "series": "A",
+      "number": "3810",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2729/25"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-16T07:09:00.000Z",
+      "validityEnd": "2026-04-16T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1 ATS SURVEILLANCE SERVICES AND PROCEDURES, \nKUSHK MSSR RADAR DERIVED INFORMATION FOR EN-ROUTE NOT AVBL \nDUE KUSHK MSSR RADAR U/S,\nRADAR SER IN SOME PARTS OF THE ACC\nSECTOR 1 (FREQ 132.500 MHZ) AND\nSECTOR 2 (FREQ 125.700 MHZ) AND\nSECTOR 7 (FREQ 120.700 MHZ)\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026/02/20 04:55:03",
+    "archived_utc": "2026-03-10 14:35:39 UTC"
+  },
   "OIIX A0749/26": {
     "header": {
       "id": "A0749/26",
@@ -3554,63 +3611,6 @@
     },
     "content": {
       "text": "THE SPECIFICATION OF THE FLW ATS ROUTES\nSIMULTANEOUSLY AVBL AS RNAV5 FM \nMNM SAFE LVL OF RELATED ATS ROUTES:\nR659, R654, G666, G669, W10, W143, A788 AND G452."
-    },
-    "last_seen_utc": "2026/02/20 04:55:03",
-    "archived_utc": "2026-03-10 14:35:39 UTC"
-  },
-  "OIIX A3810/25": {
-    "header": {
-      "id": "A3810/25",
-      "series": "A",
-      "number": "3810",
-      "year": "25",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A2729/25"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-01-16T07:09:00.000Z",
-      "validityEnd": "2026-04-16T20:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1 ATS SURVEILLANCE SERVICES AND PROCEDURES, \nKUSHK MSSR RADAR DERIVED INFORMATION FOR EN-ROUTE NOT AVBL \nDUE KUSHK MSSR RADAR U/S,\nRADAR SER IN SOME PARTS OF THE ACC\nSECTOR 1 (FREQ 132.500 MHZ) AND\nSECTOR 2 (FREQ 125.700 MHZ) AND\nSECTOR 7 (FREQ 120.700 MHZ)\nMAY NOT BE AVBL."
     },
     "last_seen_utc": "2026/02/20 04:55:03",
     "archived_utc": "2026-03-10 14:35:39 UTC"
