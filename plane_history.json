@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1774807518,
-    "time_utc": "2026-03-29 18:05:18 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1774807821,
     "time_utc": "2026-03-29 18:10:21 UTC",
     "count": 0,
@@ -43613,5 +43607,27 @@
     "time_utc": "2026-04-19 18:00:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1776621921,
+    "time_utc": "2026-04-19 18:05:21 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f4bdcaa",
+        "callsign": "CFG2368",
+        "flight": "DE2368",
+        "type": "A339",
+        "reg": "D-ANRP",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 105,
+        "speed": 408,
+        "lat": 37.52,
+        "lon": 55.794,
+        "airline": "Condor",
+        "country": "Germany"
+      }
+    ]
   }
 ]
