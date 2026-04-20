@@ -1656,6 +1656,44 @@
     },
     "last_seen_utc": "2026-04-20 10:10:28 UTC"
   },
+  "OIIX A0792/26": {
+    "header": {
+      "id": "A0792/26",
+      "series": "A",
+      "number": "0792",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QOAXX/A/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "OAXX",
+        "entity": "OA",
+        "status": "XX",
+        "area": "Other Information",
+        "subject": "Aeronautical information service",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-14T00:00:00.000Z",
+      "validityEnd": "2026-06-23T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE DATE 14 MAY 2026 ."
+    },
+    "last_seen_utc": "2026-04-20 10:55:22 UTC"
+  },
   "KICZ A0016/20": {
     "header": {
       "id": "",
@@ -1801,43 +1839,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0792/26": {
-    "header": {
-      "id": "A0792/26",
-      "series": "A",
-      "number": "0792",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QOAXX/A/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "OAXX",
-        "entity": "OA",
-        "status": "XX",
-        "area": "Other Information",
-        "subject": "Aeronautical information service",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-14T00:00:00.000Z",
-      "validityEnd": "2026-06-23T23:59:00.000Z"
-    },
-    "content": {
-      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE DATE 14 MAY 2026 ."
-    },
-    "last_seen_utc": "2026-04-20 10:55:22 UTC"
   }
 }
