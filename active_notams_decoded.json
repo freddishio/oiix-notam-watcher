@@ -1558,6 +1558,41 @@
     },
     "last_seen_utc": "2026-04-20 09:45:24 UTC"
   },
+  "OIIX A0793/26": {
+    "header": {
+      "id": "VALIDATION",
+      "type": "ERROR:"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-20T09:44:00.000Z",
+      "validityEnd": "2026-08-19T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 3 DOM FLT TOS,\nCHANGE AS FLW:\n- NR 5 DOM FLT FM OIBK TO OIMM (PAGE 28)\n - RELEVANT SID PURNA A418 SOKEV W143 LAR Z5 LOSAN RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICC (PAGE 37)\n - RELEVANT SID KAVOT R659 ISNG202 KRD W158 BUBAV RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICK (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 NOTSARELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICI (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 ALTET RELEVANT STAR"
+    },
+    "last_seen_utc": "2026-04-20 10:50:20 UTC"
+  },
   "OIIX B0191/26": {
     "header": {
       "id": "B0191/26",
@@ -1767,21 +1802,24 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A0793/26": {
+  "OIIX A0792/26": {
     "header": {
-      "id": "VALIDATION",
-      "type": "ERROR:"
+      "id": "A0792/26",
+      "series": "A",
+      "number": "0792",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
     },
     "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
+      "line": "OIIX/QOAXX/A/000/999///",
       "location": "OIIX",
       "code": {
-        "code": "AFXX",
-        "entity": "AF",
+        "code": "OAXX",
+        "entity": "OA",
         "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
+        "area": "Other Information",
+        "subject": "Aeronautical information service",
         "condition": "Other",
         "modifier": "Plain language"
       },
@@ -1794,12 +1832,12 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-05-20T09:44:00.000Z",
-      "validityEnd": "2026-08-19T20:30:00.000Z"
+      "activityStart": "2026-06-14T00:00:00.000Z",
+      "validityEnd": "2026-06-23T23:59:00.000Z"
     },
     "content": {
-      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 3 DOM FLT TOS,\nCHANGE AS FLW:\n- NR 5 DOM FLT FM OIBK TO OIMM (PAGE 28)\n - RELEVANT SID PURNA A418 SOKEV W143 LAR Z5 LOSAN RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICC (PAGE 37)\n - RELEVANT SID KAVOT R659 ISNG202 KRD W158 BUBAV RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICK (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 NOTSARELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICI (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 ALTET RELEVANT STAR"
+      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE DATE 14 MAY 2026 ."
     },
-    "last_seen_utc": "2026-04-20 10:50:20 UTC"
+    "last_seen_utc": "2026-04-20 10:55:22 UTC"
   }
 }
