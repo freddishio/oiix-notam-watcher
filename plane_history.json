@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1774947021,
-    "time_utc": "2026-03-31 08:50:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1774947335,
     "time_utc": "2026-03-31 08:55:35 UTC",
     "count": 0,
@@ -44734,6 +44728,43 @@
         "speed": 473,
         "lat": 26.98,
         "lon": 56.131,
+        "airline": "Aero Transportes Empresariales",
+        "country": "Mexico"
+      }
+    ]
+  },
+  {
+    "timestamp": 1776761423,
+    "time_utc": "2026-04-21 08:50:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f52fdca",
+        "callsign": "EPLCT",
+        "flight": "Unknown Flight",
+        "type": "A321",
+        "reg": "EP-LCT",
+        "category": "Commercial",
+        "alt": 25675,
+        "track": 76,
+        "speed": 478,
+        "lat": 26.667,
+        "lon": 55.454,
+        "airline": "Aero Transportes Empresariales",
+        "country": "Mexico"
+      },
+      {
+        "id": "3f52f958",
+        "callsign": "EPLCL",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 58,
+        "speed": 484,
+        "lat": 27.375,
+        "lon": 56.698,
         "airline": "Aero Transportes Empresariales",
         "country": "Mexico"
       }
