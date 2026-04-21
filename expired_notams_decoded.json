@@ -1,4 +1,68 @@
 {
+  "OIIX B0191/26": {
+    "header": {
+      "id": "B0191/26",
+      "series": "B",
+      "number": "0191",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0062/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-20T10:06:00.000Z",
+      "validityEnd": "2026-08-19T20:30:00.000Z"
+    },
+    "content": {
+      "text": "OPERATION OF ALL VFR FLT AND GENERAL AVIATION FLT SUSPENDED\r\nEXCEPT THOSE FLT OPERATING WITHIN ATZ OR ENGAGE IN HOSP, SAR,\r\nSTATE, MILITARY AND NIOC (NATIONAL IRANIAN OIL CO) HELICOPTER\r\nFLT BY PRIOR COORDINATION WITH APPROPRIATE ATS AUTHORITY."
+    },
+    "last_seen_utc": "2026-04-20 10:10:28 UTC",
+    "archived_utc": "2026-04-21 10:20:22 UTC"
+  },
   "OIIX A0752/26": {
     "header": {
       "id": "A0752/26",
