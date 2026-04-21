@@ -452,40 +452,6 @@
     },
     "last_seen_utc": "2026-04-18 14:30:21 UTC"
   },
-  "OIIX A0759/26": {
-    "header": {
-      "id": "VALIDATION",
-      "type": "ERROR:"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-05-18T07:15:00.000Z",
-      "validityEnd": "2026-05-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0751/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OAKX FIR TO UTAA FIR:\r\n -PAMTU G792 MSD G775 ORPAB,\r\n -PAMTU G792 GIRUN,\r\nFM UTAA FIR TO OAKX FIR: \r\n -GIRUN G792 PAMTU,\r\n -ORPAB G775 MSD G792 PAMTU."
-    },
-    "last_seen_utc": "2026-04-18 14:30:21 UTC"
-  },
-  "OIIX A0758/26": {
-    "header": {
-      "id": "VALIDATION",
-      "type": "ERROR:"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-05-18T07:15:00.000Z",
-      "validityEnd": "2026-05-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0751/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OPKR FIR TO UTAK FIR:\r\n -ASVIB M715 SRN T216 PEGOS L713 OTISO M318 IMKUK N567 SOMAD,\r\nFM UTAK FIR TO OPKR FIR \r\n -SOMAD P718 ITELO N319 DERBO,\r\n -SOMAD P718 ITELO N319 ZDN L125 KEBUD."
-    },
-    "last_seen_utc": "2026-04-18 14:30:21 UTC"
-  },
   "OIIX A0760/26": {
     "header": {
       "id": "VALIDATION",
@@ -1893,5 +1859,85 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0804/26": {
+    "header": {
+      "id": "A0804/26",
+      "series": "A",
+      "number": "0804",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0758/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:42:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OPKR FIR TO UTAK FIR:\n -ASVIB M715 SRN T216 PEGOS L713 OTISO M318 IMKUK N567 SOMAD,\nFM UTAK FIR TO OPKR FIR \n -SOMAD P718 ITELO N319 DERBO,\n -SOMAD P718 ITELO N319 ZDN L125 KEBUD."
+    },
+    "last_seen_utc": "2026-04-21 10:50:22 UTC"
+  },
+  "OIIX A0805/26": {
+    "header": {
+      "id": "A0805/26",
+      "series": "A",
+      "number": "0805",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0759/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:43:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OAKX FIR TO UTAA FIR:\n -PAMTU G792 MSD G775 ORPAB,\n -PAMTU G792 GIRUN,\nFM UTAA FIR TO OAKX FIR: \n -GIRUN G792 PAMTU,\n -ORPAB G775 MSD G792 PAMTU."
+    },
+    "last_seen_utc": "2026-04-21 10:50:22 UTC"
   }
 }
