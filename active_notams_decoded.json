@@ -1588,6 +1588,63 @@
     },
     "last_seen_utc": "2026-04-20 10:10:28 UTC"
   },
+  "OIIX A0796/26": {
+    "header": {
+      "id": "VALIDATION",
+      "type": "ERROR:"
+    },
+    "qualification": {
+      "line": "OIIX/QAFAO/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFAO",
+        "entity": "AF",
+        "status": "AO",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Availability",
+        "modifier": "Operational"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T09:49:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "TEHRAN FIR RESUMED NORMAL OPERATION, WHILE WEST PART REMAINS \nCLOSED FOR OVERFLIGHTS. \nDIVIDING LINE GOES THROUGH IVIVA-PURBO-ANK-OBRIX THEN CLOCKWISE \nALONG TEHRAN TMA TO NAGMO AND LALDA. \nOVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO \nFOLLOWING CONDITIONS: \n-ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL285 SUBJECT TO \n RADAR COVERAGE.\n-INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO FIR \n BOUNDARY FOR IDENTIFICATION. \n-OUTBOUIND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT ACC 5 MIN \n PRIOR TO FIR BOUNDARY. \n-FLIGHTS SHALL HAVE OPERATIONAL ACAS. \n-LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR. \n-FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE. \n IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL \n FURTHER INSTRUCTION BY ACC."
+    },
+    "last_seen_utc": "2026-04-21 10:00:24 UTC"
+  },
+  "OIIX A0797/26": {
+    "header": {
+      "id": "A0797/26",
+      "series": "A",
+      "number": "0797",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0776/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999//"
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T09:55:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND PART OF OMAN SEA \nWEST OF MERIDIAN 059E AS THE RESULT OF SECURITY REASON."
+    },
+    "last_seen_utc": "2026-04-21 10:00:24 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -1771,62 +1828,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0796/26": {
-    "header": {
-      "id": "VALIDATION",
-      "type": "ERROR:"
-    },
-    "qualification": {
-      "line": "OIIX/QAFAO/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFAO",
-        "entity": "AF",
-        "status": "AO",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Availability",
-        "modifier": "Operational"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T09:49:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "TEHRAN FIR RESUMED NORMAL OPERATION, WHILE WEST PART REMAINS \nCLOSED FOR OVERFLIGHTS. \nDIVIDING LINE GOES THROUGH IVIVA-PURBO-ANK-OBRIX THEN CLOCKWISE \nALONG TEHRAN TMA TO NAGMO AND LALDA. \nOVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO \nFOLLOWING CONDITIONS: \n-ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL285 SUBJECT TO \n RADAR COVERAGE.\n-INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO FIR \n BOUNDARY FOR IDENTIFICATION. \n-OUTBOUIND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT ACC 5 MIN \n PRIOR TO FIR BOUNDARY. \n-FLIGHTS SHALL HAVE OPERATIONAL ACAS. \n-LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR. \n-FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE. \n IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL \n FURTHER INSTRUCTION BY ACC."
-    },
-    "last_seen_utc": "2026-04-21 10:00:24 UTC"
-  },
-  "OIIX A0797/26": {
-    "header": {
-      "id": "A0797/26",
-      "series": "A",
-      "number": "0797",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0776/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999//"
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T09:55:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND PART OF OMAN SEA \nWEST OF MERIDIAN 059E AS THE RESULT OF SECURITY REASON."
-    },
-    "last_seen_utc": "2026-04-21 10:00:24 UTC"
   }
 }
