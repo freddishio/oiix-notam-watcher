@@ -1647,6 +1647,69 @@
     },
     "last_seen_utc": "2026-04-21 10:15:21 UTC"
   },
+  "OIIX B0194/26": {
+    "header": {
+      "id": "B0194/26",
+      "series": "B",
+      "number": "0194",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0191/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:16:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT \r\nTHOSE FLT ENGAGED IN HOSP, SAR, STATE AND MILITARY OPERATION, OTHER \r\nVFR FLT REQUIRE PRIOR PERMISSION FROM CIVIL AVIATION AUTHORITY. \r\nIFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT \r\nNEED TO BE CHANGED TO VFR DURING ARRIVAL AND DEPARTURE, \r\nARE NOT SUBJECT TO THIS LIMITATION."
+    },
+    "last_seen_utc": "2026-04-21 10:20:22 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -1830,68 +1893,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX B0194/26": {
-    "header": {
-      "id": "B0194/26",
-      "series": "B",
-      "number": "0194",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0191/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLV",
-        "entity": "AF",
-        "status": "LV",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
-      },
-      "traffic": [
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T10:16:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT \r\nTHOSE FLT ENGAGED IN HOSP, SAR, STATE AND MILITARY OPERATION, OTHER \r\nVFR FLT REQUIRE PRIOR PERMISSION FROM CIVIL AVIATION AUTHORITY. \r\nIFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT \r\nNEED TO BE CHANGED TO VFR DURING ARRIVAL AND DEPARTURE, \r\nARE NOT SUBJECT TO THIS LIMITATION."
-    },
-    "last_seen_utc": "2026-04-21 10:20:22 UTC"
   }
 }
