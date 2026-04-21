@@ -1,4 +1,73 @@
 {
+  "OIIX A0751/26": {
+    "header": {
+      "id": "A0751/26",
+      "series": "A",
+      "number": "0751",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0749/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLC",
+        "entity": "AF",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-18T02:41:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "EAST PART OF TEHRAN FIR RESUMED NORMAL OPERATION,\n WHILE WEST PART REMAINS CLOSED.\nDIVIDING LINE GOES THROUGH IVIVA-PURBO-ANK-OBRIX THEN\n CLOCKWISE ALONG TEHRAN TMA \nTO NAGMO AND LALDA.\nOVERFLIGHT OPERATION IS SUBJECT TO FOLLOWING CONDITIONS:\n-ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL285 \nSUBJECT TO RADAR COVERAGE.\n-INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN \nPRIOR TO FIR BOUNDARY FOR IDENTIFICATION.\n-OUTBOUND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH \nNEXT ACC 5 MIN PRIOR TO FIR BOUNDARY.\n-FLIGHTS SHALL HAVE OPERATIONAL ACAS.\n-LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR.\n-FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE.IF CODE\n HAS NOT BEEN ASSIGNED,\n USE SQUAWK 2000 UNTIL FURTHER INSTRUCTION BY ACC."
+    },
+    "last_seen_utc": "2026-04-18 02:55:17 UTC",
+    "archived_utc": "2026-04-21 10:00:24 UTC"
+  },
   "OIIX A0198/26": {
     "header": {
       "id": "A0198/26",
