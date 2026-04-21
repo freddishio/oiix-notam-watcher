@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1774954820,
-    "time_utc": "2026-03-31 11:00:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1774955120,
     "time_utc": "2026-03-31 11:05:20 UTC",
     "count": 0,
@@ -44910,5 +44904,27 @@
     "time_utc": "2026-04-21 10:55:20 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1776769228,
+    "time_utc": "2026-04-21 11:00:28 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f535000",
+        "callsign": "PGT045",
+        "flight": "PC45",
+        "type": "A21N",
+        "reg": "TC-RBR",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 344,
+        "speed": 475,
+        "lat": 37.728,
+        "lon": 51.109,
+        "airline": "Pegasus",
+        "country": "Turkey"
+      }
+    ]
   }
 ]
