@@ -1623,6 +1623,28 @@
     },
     "last_seen_utc": "2026-04-21 10:00:24 UTC"
   },
+  "OIIX A0798/26": {
+    "header": {
+      "id": "A0798/26",
+      "series": "A",
+      "number": "0798",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0752/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999////"
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:02:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, HOURS OF OPERATION OF ALL \nAIRPORTS IN EAST PART OF \nTEHRAN FIR IS HJ, EXCEPT THAT OIMM AND OIZH ARE ALSO AVAILABLE \nAS ALTERNATE AERODROMES DURING NIGHT PERIOD. \nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS, \nNEW PERMISSION SHALL BE REQUESTED FROM CAA FOR OPRATION OF \nCIVIL IFR PASSENGER FLIGHTS ON THESE AIRPORTS."
+    },
+    "last_seen_utc": "2026-04-21 10:10:22 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -1807,26 +1829,69 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A0798/26": {
+  "OIIX A0799/26": {
     "header": {
-      "id": "A0798/26",
+      "id": "A0799/26",
       "series": "A",
-      "number": "0798",
+      "number": "0799",
       "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0752/26"
+      "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QAFXX/E/000/999////"
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
     },
     "schedule": {
-      "activityStart": "2026-05-21T10:02:00.000Z",
+      "activityStart": "2026-05-21T10:10:00.000Z",
       "validityEnd": "2026-06-25T08:30:00.000Z"
     },
     "content": {
-      "text": "REF NOTAM A0796/26, HOURS OF OPERATION OF ALL \nAIRPORTS IN EAST PART OF \nTEHRAN FIR IS HJ, EXCEPT THAT OIMM AND OIZH ARE ALSO AVAILABLE \nAS ALTERNATE AERODROMES DURING NIGHT PERIOD. \nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS, \nNEW PERMISSION SHALL BE REQUESTED FROM CAA FOR OPRATION OF \nCIVIL IFR PASSENGER FLIGHTS ON THESE AIRPORTS."
+      "text": "REF NOTAM  A0796/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR\r\n ARE CLSD \r\nEXCEPT OITR, OIKK, OIAA, OISS, OIYY, OICC AND OIGG THAT ARE \r\nOPERATIONAL FM SUNRISE TO SUNSET (HJ). \r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS, \r\nNEW PERMISSION SHALL BE REQUESTED FM CAA FOR OPRATION OF \r\nCIVIL IFR PASSENGER FLIGHTS ON THESE AIRPORTS."
     },
-    "last_seen_utc": "2026-04-21 10:10:22 UTC"
+    "last_seen_utc": "2026-04-21 10:15:21 UTC"
   }
 }
