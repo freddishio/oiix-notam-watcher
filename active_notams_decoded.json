@@ -542,28 +542,6 @@
     },
     "last_seen_utc": "2026-04-18 10:55:21 UTC"
   },
-  "OIIX A0752/26": {
-    "header": {
-      "id": "A0752/26",
-      "series": "A",
-      "number": "0752",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-05-18T08:30:00.000Z",
-      "validityEnd": "2026-05-25T14:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "REF NOTAM A0751/26, ALL AIRPORTS ARE CLOSED EXCEPT \nOIII, OIIE, OING, OIMM, OIMB AND OIZH \nTHAT ARE OPERATIONAL FROM 0330 UTC UNTIL 1430 UTC. \nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS.\nNEW PERMISSION SHALL BE REQUESTED FROM IRAN CIVIL AVIATION AUTHORITY \nFOR OPERATION OF CIVIL IFR PASSENGER FLIGHT ON THESE AIRPORTS."
-    },
-    "last_seen_utc": "2026-04-18 03:05:18 UTC"
-  },
   "OIIX A0762/26": {
     "header": {
       "id": "A0762/26",
@@ -1828,5 +1806,27 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0798/26": {
+    "header": {
+      "id": "A0798/26",
+      "series": "A",
+      "number": "0798",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0752/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999////"
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:02:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, HOURS OF OPERATION OF ALL \nAIRPORTS IN EAST PART OF \nTEHRAN FIR IS HJ, EXCEPT THAT OIMM AND OIZH ARE ALSO AVAILABLE \nAS ALTERNATE AERODROMES DURING NIGHT PERIOD. \nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS, \nNEW PERMISSION SHALL BE REQUESTED FROM CAA FOR OPRATION OF \nCIVIL IFR PASSENGER FLIGHTS ON THESE AIRPORTS."
+    },
+    "last_seen_utc": "2026-04-21 10:10:22 UTC"
   }
 }
