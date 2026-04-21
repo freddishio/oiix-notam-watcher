@@ -1,4 +1,62 @@
 {
+  "OIIX A0760/26": {
+    "header": {
+      "id": "VALIDATION",
+      "type": "ERROR:"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-05-18T07:20:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0751/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OAKX FIR TO UBBA FIR: \r\n -SOKAM L333 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OAKX FIR:\r\n -ULDUS P567 ALROT L333 SOKAM."
+    },
+    "last_seen_utc": "2026-04-18 14:30:21 UTC",
+    "archived_utc": "2026-04-21 10:55:20 UTC"
+  },
+  "OIIX A0761/26": {
+    "header": {
+      "id": "A0761/26",
+      "series": "A",
+      "number": "0761",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E////000/999",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": "000"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-18T08:13:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0751/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UBBA FIR:\n -MESPO Y12 W139 DAR DCT OTISO L713 GIBAB DCT ULEXI DCT BATEV, \nFM UBBA FIR TO OOMM FIR:\n -ULDUS N319 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -ULDUS N319 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)."
+    },
+    "last_seen_utc": "2026-04-18 10:55:21 UTC",
+    "archived_utc": "2026-04-21 10:55:20 UTC"
+  },
   "OIIX A0759/26": {
     "header": {
       "id": "VALIDATION",
