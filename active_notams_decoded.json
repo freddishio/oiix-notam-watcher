@@ -1809,6 +1809,46 @@
     },
     "last_seen_utc": "2026-04-22 07:40:22 UTC"
   },
+  "OIIX A0809/26": {
+    "header": {
+      "id": "A0809/26",
+      "series": "A",
+      "number": "0809",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0801/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-22T07:36:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UTAA FIR: \n -MESPO Y12 BAM W139 DAR Z5 MSD A647 NAZAR, \n -MESPO Y12 BAM W139 DAR DCT OTISO M318 RIKOP, \nFM UTAA FIR TO OOMM FIR: \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR), \n -NAZAR A647 MSD G775 ZDN W2 MESPO, \n -NAZAR A647 MSD G775 ZDN W2 CBH R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)."
+    },
+    "last_seen_utc": "2026-04-22 07:55:20 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -1992,45 +2032,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0809/26": {
-    "header": {
-      "id": "A0809/26",
-      "series": "A",
-      "number": "0809",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0801/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-22T07:36:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UTAA FIR: \n -MESPO Y12 BAM W139 DAR Z5 MSD A647 NAZAR, \n -MESPO Y12 BAM W139 DAR DCT OTISO M318 RIKOP, \nFM UTAA FIR TO OOMM FIR: \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR), \n -NAZAR A647 MSD G775 ZDN W2 MESPO, \n -NAZAR A647 MSD G775 ZDN W2 CBH R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)."
-    },
-    "last_seen_utc": "2026-04-22 07:55:20 UTC"
   }
 }
