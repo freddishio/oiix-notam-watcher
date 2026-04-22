@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775029226,
-    "time_utc": "2026-04-01 07:40:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775029522,
-    "time_utc": "2026-04-01 07:45:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775029820,
     "time_utc": "2026-04-01 07:50:20 UTC",
     "count": 0,
@@ -45801,6 +45789,43 @@
         "lon": 60.462,
         "airline": "Mahan Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1776843924,
+    "time_utc": "2026-04-22 07:45:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f55c690",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 311,
+        "speed": 465,
+        "lat": 36.079,
+        "lon": 59.866,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f56fb3f",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 24250,
+        "track": 187,
+        "speed": 382,
+        "lat": 35.252,
+        "lon": 59.5,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
