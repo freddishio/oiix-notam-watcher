@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775125527,
-    "time_utc": "2026-04-02 10:25:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775125821,
-    "time_utc": "2026-04-02 10:30:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775126118,
     "time_utc": "2026-04-02 10:35:18 UTC",
     "count": 0,
@@ -47614,6 +47602,28 @@
         "speed": 310,
         "lat": 26.571,
         "lon": 56.218,
+        "airline": "OVR",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1776940223,
+    "time_utc": "2026-04-23 10:30:23 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f5ad19c",
+        "callsign": "OVRLD02",
+        "flight": "Unknown Flight",
+        "type": "Q4",
+        "reg": "169661",
+        "category": "Commercial",
+        "alt": 47950,
+        "track": 213,
+        "speed": 200,
+        "lat": 26.366,
+        "lon": 55.979,
         "airline": "OVR",
         "country": "Unknown Location"
       }
