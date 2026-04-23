@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775111425,
-    "time_utc": "2026-04-02 06:30:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775111719,
-    "time_utc": "2026-04-02 06:35:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775112019,
     "time_utc": "2026-04-02 06:40:19 UTC",
     "count": 0,
@@ -46546,6 +46534,43 @@
         "lat": 27.074,
         "lon": 50.995,
         "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1776926123,
+    "time_utc": "2026-04-23 06:35:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f5a3a33",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46050",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 322,
+        "speed": 465,
+        "lat": 27.586,
+        "lon": 50.583,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3f5ad19c",
+        "callsign": "OVRLD02",
+        "flight": "Unknown Flight",
+        "type": "Q4",
+        "reg": "169661",
+        "category": "Commercial",
+        "alt": 46950,
+        "track": 180,
+        "speed": 346,
+        "lat": 28.042,
+        "lon": 50.612,
+        "airline": "OVR",
         "country": "Unknown Location"
       }
     ]
