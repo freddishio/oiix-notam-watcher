@@ -1224,69 +1224,6 @@
     },
     "last_seen_utc": "2026-04-20 09:30:26 UTC"
   },
-  "OIIX A0786/26": {
-    "header": {
-      "id": "A0786/26",
-      "series": "A",
-      "number": "0786",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A3718/25\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARCH/IV/BO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARCH",
-        "entity": "AR",
-        "status": "CH",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Changes",
-        "modifier": "Changed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-20T08:11:00.000Z",
-      "validityEnd": "2026-08-19T20:30:00.000Z"
-    },
-    "content": {
-      "text": "THE SPECIFICATION OF THE FLW ATS ROUTES\r\nSIMULTANEOUSLY AVBL AS RNAV5 FM \r\nMNM SAFE LVL OF RELATED ATS ROUTES:\r\nR659, R654, G666, G669, W10, W143, A788 AND G452."
-    },
-    "last_seen_utc": "2026-04-20 09:30:26 UTC"
-  },
   "OIIX B0187/26": {
     "header": {
       "id": "B0187/26",
