@@ -2032,5 +2032,105 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0812/26": {
+    "header": {
+      "id": "A0812/26",
+      "series": "A",
+      "number": "0812",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-23T06:44:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, TRANSFER OF CONTROL POINTS OF TEHRAN FIR\nWITH ANKARA, YERVAN, NAKHCHIVAN AND BAKU FIR(S)\nARE AVBL FOR INTERNATIONAL FLIGHTS INTENDED TO LAND/DEPART WITHIN \nTEHRAN FIR."
+    },
+    "last_seen_utc": "2026-04-23 07:25:25 UTC"
+  },
+  "OIIX A0813/26": {
+    "header": {
+      "id": "A0813/26",
+      "series": "A",
+      "number": "0813",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-23T07:17:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PART ENR 3.1 THE NAVIGATION SPECIFICATION OF ALL \r\nATS ROUTES AVBL AS RNAV 5 FM MNM SAFE LVL."
+    },
+    "last_seen_utc": "2026-04-23 07:25:25 UTC"
   }
 }
