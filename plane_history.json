@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1775132126,
-    "time_utc": "2026-04-02 12:15:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775132424,
     "time_utc": "2026-04-02 12:20:24 UTC",
     "count": 0,
@@ -47834,6 +47828,43 @@
         "lon": 55.814,
         "airline": "OVR",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1776946527,
+    "time_utc": "2026-04-23 12:15:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f5ad19c",
+        "callsign": "OVRLD02",
+        "flight": "Unknown Flight",
+        "type": "Q4",
+        "reg": "169661",
+        "category": "Commercial",
+        "alt": 47975,
+        "track": 185,
+        "speed": 310,
+        "lat": 25.919,
+        "lon": 55.508,
+        "airline": "OVR",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3f5bafc7",
+        "callsign": "ETD310",
+        "flight": "EY310",
+        "type": "A320",
+        "reg": "A6-EIT",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 35,
+        "speed": 456,
+        "lat": 24.812,
+        "lon": 60.585,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
       }
     ]
   }
