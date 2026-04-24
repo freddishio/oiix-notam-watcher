@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1775207121,
-    "time_utc": "2026-04-03 09:05:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775207424,
     "time_utc": "2026-04-03 09:10:24 UTC",
     "count": 0,
@@ -47952,6 +47946,43 @@
         "speed": 450,
         "lat": 27.326,
         "lon": 60.735,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777021820,
+    "time_utc": "2026-04-24 09:10:20 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f5fcf80",
+        "callsign": "EPPHA",
+        "flight": "Unknown Flight",
+        "type": "A109",
+        "reg": "EP-PHA",
+        "category": "Commercial",
+        "alt": 300,
+        "track": 275,
+        "speed": 93,
+        "lat": 26.53,
+        "lon": 53.972,
+        "airline": "EPP",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3f5fad3c",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 189,
+        "speed": 455,
+        "lat": 26.706,
+        "lon": 60.637,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
