@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1775208022,
-    "time_utc": "2026-04-03 09:20:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775208316,
     "time_utc": "2026-04-03 09:25:16 UTC",
     "count": 0,
@@ -47993,6 +47987,28 @@
         "speed": 460,
         "lat": 26.074,
         "lon": 60.525,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777022426,
+    "time_utc": "2026-04-24 09:20:26 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f5fad3c",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 204,
+        "speed": 453,
+        "lat": 25.437,
+        "lon": 60.407,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
