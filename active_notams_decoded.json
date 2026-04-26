@@ -861,6 +861,47 @@
     },
     "last_seen_utc": "2026-04-18 11:20:25 UTC"
   },
+  "OIIX A0776/26": {
+    "header": {
+      "id": "A0776/26",
+      "series": "A",
+      "number": "0776",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0750/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-19T09:19:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED \nOVER  HIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND OMAN \nSEA  AS THE RESULT OF SECURITY REASON."
+    },
+    "last_seen_utc": "2026-04-26 06:45:17 UTC"
+  },
   "OIIX A0753/26": {
     "header": {
       "id": "A0753/26",
@@ -2041,15 +2082,15 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A0776/26": {
+  "OIIX A4458/24": {
     "header": {
-      "id": "A0776/26",
+      "id": "A4458/24",
       "series": "A",
-      "number": "0776",
-      "year": "26",
+      "number": "4458",
+      "year": "24",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0750/26"
+      "idToReplace": "A2842/24"
     },
     "qualification": {
       "line": "OIIX/QAFXX/E/000/999///",
@@ -2073,13 +2114,54 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-05-19T09:19:00.000Z",
-      "validityEnd": "2026-05-25T08:30:00.000Z",
+      "activityStart": "2024-12-11T07:11:00.000Z",
+      "validityEnd": "2025-03-09T20:30:00.000Z",
       "estimated": true
     },
     "content": {
-      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED \nOVER  HIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND OMAN \nSEA  AS THE RESULT OF SECURITY REASON."
+      "text": "ALL TRAFFIC ENTERING TEHRAN FIR FROM KABUL FIR \nSHALL CONTACT TEHRAN ACC NOT LESS THAN 5 MINUTES PRIOR \nTO ENTERING THE TEHRAN FIR \nAS FOLLOWS:\nUL333 SOKAM 120.700 MHZ \nN636 PAMTU 120.700 MHZ\nA453 GADER 123.900 MHZ \nZ627 RANRU 123.900 MHZ\nANY FLIGHT INTENDING TO ENTER KABUL FIR FROM TEHRAN FIR\nAT THEIR OWN RISK WILL BE PROVIDED ATS ONLY\nUNTIL THE TEHRAN/KABUL FIR BOUNDARY."
     },
-    "last_seen_utc": "2026-04-26 06:45:17 UTC"
+    "last_seen_utc": "2026-04-26 06:50:18 UTC"
+  },
+  "OIIX A4459/24": {
+    "header": {
+      "id": "A4459/24",
+      "series": "A",
+      "number": "4459",
+      "year": "24",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2843/24"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2024-12-11T07:15:00.000Z",
+      "validityEnd": "2025-03-09T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "AIRSPACE SAFETY AND SECURITY WARNING: HAZARDOUS SITUATION \nWITHIN  THE TERRITORY AND AIRSPACE OF KABUL FIR(OAKX), ALL \nIRANIAN AIRLINE OPERATORS WHICH ARE PLANNING  TO FLY IN KABUL \nFIR INCLUDING ARRIVAL AND DEPARTURE  AT ALL AERODROMES WITHIN \nTHIS FIR AND OVERFLYING  ARE ADVISED  TO TAKE THIS POTENTIAL \nRISK INTO ACCOUNT IN THEIR RISK ASSESSMENTS  AND ROUTEING \nDECISIONS, DUE TO LACK OF AIR TRAFFIC SERVICES  AND THE RISK \nPOSED BY MILITANT ACTIVITY  AND LIMITED RISK MITIGATION \nCAPABILITIES IN AFGHANISTAN."
+    },
+    "last_seen_utc": "2026-04-26 06:50:18 UTC"
   }
 }
