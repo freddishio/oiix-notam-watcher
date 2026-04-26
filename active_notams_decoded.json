@@ -2040,5 +2040,46 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0776/26": {
+    "header": {
+      "id": "A0776/26",
+      "series": "A",
+      "number": "0776",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0750/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-19T09:19:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED \nOVER  HIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND OMAN \nSEA  AS THE RESULT OF SECURITY REASON."
+    },
+    "last_seen_utc": "2026-04-26 06:45:17 UTC"
   }
 }
