@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1775483120,
-    "time_utc": "2026-04-06 13:45:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775483423,
     "time_utc": "2026-04-06 13:50:23 UTC",
     "count": 0,
@@ -49557,6 +49551,28 @@
         "speed": 450,
         "lat": 25.162,
         "lon": 59.731,
+        "airline": "North-West",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777297525,
+    "time_utc": "2026-04-27 13:45:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f6b9d5c",
+        "callsign": "NWC9034",
+        "flight": "0E9034",
+        "type": "GLEX",
+        "reg": "RA-73575",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 295,
+        "speed": 500,
+        "lat": 25.675,
+        "lon": 59.368,
         "airline": "North-West",
         "country": "Russian Federation"
       }
