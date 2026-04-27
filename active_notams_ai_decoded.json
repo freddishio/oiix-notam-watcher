@@ -54,26 +54,6 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-04-18 11:10:17 UTC"
   },
-  "OIIX A0764/26": {
-    "explanation": "A radar system in Shiraz, Iran, is broken and will be unavailable until April 27, 2026. This means air traffic controllers will not have radar information for planes flying in certain parts of the airspace, specifically in two sectors (Sector 3 and Sector 4). Pilots flying through these areas might not receive radar services.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-18 11:15:19 UTC"
-  },
-  "OIIX A0765/26": {
-    "explanation": "The radar system in the Larestan area is currently broken and out of service. This means that air traffic controllers might not be able to see planes on radar in certain parts of the airspace, specifically in Sector 4, which uses frequency 133.400 MHz. Pilots flying through this region should be aware that radar services for flights between airports may not be available. This situation is expected to last from April 18, 2026, until April 27, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-18 11:15:19 UTC"
-  },
-  "OIIX A0766/26": {
-    "explanation": "The main radar system at Esfahan is currently not working. This means that air traffic controllers might not be able to see planes on their radar screens in certain parts of the airspace (specifically sectors 2, 3, 6 West, and 7). This situation is expected to last from April 18, 2026, until April 27, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-18 11:15:19 UTC"
-  },
-  "OIIX A0767/26": {
-    "explanation": "A radar system at Kish (Iran) is currently broken. This means that air traffic controllers might not be able to see planes on their radar screens in certain parts of the airspace (specifically, parts of Sector 4 and Sector 5). Pilots flying in these areas might not receive radar services. This situation is expected to last from April 18 to April 27, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-18 11:15:19 UTC"
-  },
   "OIIX A0753/26": {
     "explanation": "A specific danger zone, OID126, in the Tehran region will be active daily from April 20 to May 10, 2026, between 03:30 AM and 04:30 PM UTC. Aircraft should avoid flying in this area from the ground up to 14,000 feet above sea level during these times as it is considered dangerous.",
     "highest_level": "Second Level",
@@ -204,6 +184,16 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-04-27 07:35:26 UTC"
   },
+  "OIIX A0843/26": {
+    "explanation": "A radar system in Mashhad, Iran, is currently broken and will be out of service until late May 2026. This means air traffic controllers might not be able to see aircraft on radar in certain areas, especially in a specific air traffic control sector (Sector 7). Pilots flying through this region might not receive radar services.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-04-27 09:00:32 UTC"
+  },
+  "OIIX A0846/26": {
+    "explanation": "A radar system in Iran, called KUSHK MSSR, is currently broken. This means air traffic controllers won't be able to see planes on radar in certain parts of the airspace, specifically in three air traffic control sectors (Sector 1, 2, and 7). This situation is expected to last from April 27 to May 25, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-04-27 09:00:32 UTC"
+  },
   "OIIX A0792/26": {
     "explanation": "This notice is for pilots and airlines. It's letting them know that the usual scheduled update to aviation maps and information, which was expected on May 14, 2026, will not be published. This means the current aviation information will remain valid past that date, as no new amendments will be issued.",
     "highest_level": "Third Level",
@@ -219,14 +209,24 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A0843/26": {
-    "explanation": "A radar system in Mashhad, Iran, is currently broken and will be out of service until late May 2026. This means air traffic controllers might not be able to see aircraft on radar in certain areas, especially in a specific air traffic control sector (Sector 7). Pilots flying through this region might not receive radar services.",
+  "OIIX A0844/26": {
+    "explanation": "The radar system used by air traffic controllers in the Tehran (Mehrabad) area is currently not working. This means that for about a month, from April 27 to May 25, 2026, controllers might not be able to see planes on radar in certain parts of the airspace. This could affect how flights are managed in those specific areas.",
     "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-27 09:00:32 UTC"
+    "last_seen_utc": "2026-04-27 09:05:19 UTC"
   },
-  "OIIX A0846/26": {
-    "explanation": "A radar system in Iran, called KUSHK MSSR, is currently broken. This means air traffic controllers won't be able to see planes on radar in certain parts of the airspace, specifically in three air traffic control sectors (Sector 1, 2, and 7). This situation is expected to last from April 27 to May 25, 2026.",
+  "OIIX A0845/26": {
+    "explanation": "A main radar system at Tehran's Imam Khomeini Airport is currently broken and out of service. This means that air traffic controllers will not be able to see aircraft on radar in certain parts of the airspace around Tehran, specifically in three different control sectors. This affects flights that are flying between airports (en-route). Pilots and air traffic control will need to use other methods to ensure safe separation of aircraft. This situation is expected to last from April 27 to May 25, 2026.",
     "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-27 09:00:32 UTC"
+    "last_seen_utc": "2026-04-27 09:05:19 UTC"
+  },
+  "OIIX A0849/26": {
+    "explanation": "A radar system (LAR MSSR) that helps air traffic controllers track planes flying through the Tehran airspace is currently out of order. This means that controllers might not have radar information for aircraft in certain areas, specifically in parts of Sector 4 (which uses radio frequency 133.400 MHz). This situation is expected to last from April 27th to May 25th.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-04-27 09:05:19 UTC"
+  },
+  "OIIX A0850/26": {
+    "explanation": "Attention pilots flying in the Tehran area: The radar system near Shiraz is currently out of order. This means air traffic controllers won't have radar information for planes flying long distances, especially in specific areas (Sector 3 and Sector 4). This issue started on April 27, 2026, and is expected to continue until May 25, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-04-27 09:05:19 UTC"
   }
 }
