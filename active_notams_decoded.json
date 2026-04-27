@@ -1031,6 +1031,74 @@
     },
     "last_seen_utc": "2026-04-18 10:55:21 UTC"
   },
+  "OIIX A0781/26": {
+    "header": {
+      "id": "A0781/26",
+      "series": "A",
+      "number": "0781",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3714/25\r"
+    },
+    "qualification": {
+      "line": "OIIX/QPLXX/IV/M  /E /000/999/3220N05324E631",
+      "location": "OIIX",
+      "code": {
+        "code": "PLXX",
+        "entity": "PL",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Air Traffic Procedures",
+        "subject": "Obstacle clearance limit (specify procedure)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "M",
+          "description": "Miscellaneous information"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "coordinates": [
+        [
+          32.333333,
+          53.4
+        ],
+        {
+          "radius": 631
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-20T07:51:00.000Z",
+      "validityEnd": "2026-08-19T20:30:00.000Z"
+    },
+    "content": {
+      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND\r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 .)"
+    },
+    "last_seen_utc": "2026-04-27 07:45:23 UTC"
+  },
   "OIIX A0782/26": {
     "header": {
       "id": "A0782/26",
@@ -1575,6 +1643,82 @@
       "text": "REF NOTAM A0796/26,\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO OPKR FIR:  \n -DENDA R462 METBI, \nFM OPKR FIR TO OOMM FIR:  \n -METBI R462 DENDA."
     },
     "last_seen_utc": "2026-04-21 11:00:28 UTC"
+  },
+  "OIIX A0803/26": {
+    "header": {
+      "id": "A0803/26",
+      "series": "A",
+      "number": "0803",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0757/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/IV/NBO/E /000/999/3220N05324E631",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "coordinates": [
+        [
+          32.333333,
+          53.4
+        ],
+        {
+          "radius": 631
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:40:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OPKR FIR TO UBBA FIR: \r\n -ASVIB M715 SRN T216 SODOK L713 GIBAB DCT ULEXI DCT BATEV,\r\n -DERBO G452 ITBIR L713 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OPKR FIR:\r\n -ULDUS N319 DERBO,\r\n -ULDUS N319 ZDN L125 KEBUD.)"
+    },
+    "last_seen_utc": "2026-04-27 07:45:23 UTC"
   },
   "OIIX A0804/26": {
     "header": {
@@ -2340,149 +2484,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0781/26": {
-    "header": {
-      "id": "A0781/26",
-      "series": "A",
-      "number": "0781",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A3714/25\r"
-    },
-    "qualification": {
-      "line": "OIIX/QPLXX/IV/M  /E /000/999/3220N05324E631",
-      "location": "OIIX",
-      "code": {
-        "code": "PLXX",
-        "entity": "PL",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Air Traffic Procedures",
-        "subject": "Obstacle clearance limit (specify procedure)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "M",
-          "description": "Miscellaneous information"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "coordinates": [
-        [
-          32.333333,
-          53.4
-        ],
-        {
-          "radius": 631
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-20T07:51:00.000Z",
-      "validityEnd": "2026-08-19T20:30:00.000Z"
-    },
-    "content": {
-      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND\r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 .)"
-    },
-    "last_seen_utc": "2026-04-27 07:45:23 UTC"
-  },
-  "OIIX A0803/26": {
-    "header": {
-      "id": "A0803/26",
-      "series": "A",
-      "number": "0803",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0757/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/IV/NBO/E /000/999/3220N05324E631",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "coordinates": [
-        [
-          32.333333,
-          53.4
-        ],
-        {
-          "radius": 631
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T10:40:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OPKR FIR TO UBBA FIR: \r\n -ASVIB M715 SRN T216 SODOK L713 GIBAB DCT ULEXI DCT BATEV,\r\n -DERBO G452 ITBIR L713 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OPKR FIR:\r\n -ULDUS N319 DERBO,\r\n -ULDUS N319 ZDN L125 KEBUD.)"
-    },
-    "last_seen_utc": "2026-04-27 07:45:23 UTC"
   }
 }
