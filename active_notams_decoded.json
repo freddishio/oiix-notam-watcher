@@ -431,112 +431,6 @@
     },
     "last_seen_utc": "2026-03-10 14:40:31 UTC"
   },
-  "OIIX A0762/26": {
-    "header": {
-      "id": "A0762/26",
-      "series": "A",
-      "number": "0762",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-18T11:02:00.000Z",
-      "validityEnd": "2026-05-27T10:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, TABRIZ MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO TABRIZ MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ AND FREQ 132.500 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-04-18 11:10:17 UTC"
-  },
-  "OIIX A0763/26": {
-    "header": {
-      "id": "A0763/26",
-      "series": "A",
-      "number": "0763",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-18T11:04:00.000Z",
-      "validityEnd": "2026-05-27T10:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, AHWAZ MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO AHWAZ MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 3 (FREQ 126.900 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-04-18 11:10:17 UTC"
-  },
   "OIIX A0753/26": {
     "header": {
       "id": "A0753/26",
@@ -2095,190 +1989,6 @@
     },
     "last_seen_utc": "2026-04-27 09:00:32 UTC"
   },
-  "OIIX A0792/26": {
-    "header": {
-      "id": "A0792/26",
-      "series": "A",
-      "number": "0792",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QOAXX/A/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "OAXX",
-        "entity": "OA",
-        "status": "XX",
-        "area": "Other Information",
-        "subject": "Aeronautical information service",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-14T00:00:00.000Z",
-      "validityEnd": "2026-06-23T23:59:00.000Z"
-    },
-    "content": {
-      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE DATE 14 MAY 2026 ."
-    },
-    "last_seen_utc": "2026-04-20 10:55:22 UTC"
-  },
-  "KICZ A0016/20": {
-    "header": {
-      "id": "",
-      "type": "A0016/20"
-    },
-    "qualification": {
-      "line": "KICZ/QRDLD/IV/NBO/AE/000/999/",
-      "location": "KICZ",
-      "code": {
-        "code": "RDLD",
-        "entity": "RD",
-        "status": "LD",
-        "area": "Navigation Warnings",
-        "subArea": "Airspace Restrictions",
-        "subject": "Danger area (specify national prefix and number)",
-        "condition": "Limitations",
-        "modifier": "Unsafe"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2020-03-17T19:54:00.000Z",
-      "validityEnd": null,
-      "permanent": true
-    },
-    "content": {
-      "text": "SECURITY..UNITED STATES OF AMERICA ADVISORY FOR OVERWATER\nAIRSPACE ABOVE THE PERSIAN GULF AND THE GULF OF OMAN.\nTHOSE PERSONS DESCRIBED IN PARAGRAPH A BELOW SHOULD EXERCISE CAUTION\nWHEN OPERATING IN OVERWATER AIRSPACE ABOVE THE PERSIAN GULF AND THE\nGULF OF OMAN IN THE KUWAIT FLIGHT INFORMATION REGION (FIR) (OKAC),\nJEDDAH FIR (OEJD) , BAHRAIN FIR (OBBB), EMIRATES FIR (OMAE), AND\nMUSCAT FIR (OOMM) DUE TO CONTINUED ELEVATED MILITARY POSTURING AND\nPOLITICAL TENSIONS IN THE REGION. NOTAM KICZ A0002/20, WHICH\nPROHIBITS U.S. CIVIL AVIATION OPERATIONS IN THE TEHRAN FIR (OIIX),\nREMAINS IN EFFECT UNTIL FURTHER NOTICE.\nA. APPLICABILITY. \nTHIS NOTAM APPLIES TO: ALL U.S. AIR CARRIERS AND\nCOMMERCIAL OPERATORS; ALL PERSONS EXERCISING THE PRIVILEGES OF AN\nAIRMAN CERTIFICATE ISSUED BY THE FAA, EXCEPT SUCH PERSONS OPERATING\nU.S. REGISTERED AIRCRAFT FOR A FOREIGN AIR CARRIER; AND ALL\nOPERATORS OF AIRCRAFT REGISTERED IN THE UNITED STATES, EXCEPT WHERE\nTHE OPERATOR OF SUCH AIRCRAFT IS A FOREIGN AIR CARRIER.\n\nEND PART 1 OF 2\r\nA0016/20 NOTAMN\nQ) KICZ/QRDLD/IV/NBO/AE/000/999/\nA) KICZ PART 2 OF 2\nB) 2002171954\nC) PERM\nE) B. PLANNING. \nTHOSE PERSONS DESCRIBED IN PARAGRAPH A PLANNING TO\nOPERATE IN THE ABOVE-NAMED AREA MUST REVIEW CURRENT SECURITY/THREAT\nINFORMATION AND NOTAMS AND COMPLY WITH ALL APPLICABLE FAA\nREGULATIONS, OPERATIONS SPECIFICATIONS, MANAGEMENT SPECIFICATIONS,\nAND LETTERS OF AUTHORIZATION, INCLUDING UPDATING B450.\nC. OPERATIONS.  AVOID AIR ROUTES NEAREST TO THE TEHRAN FIR (OIIX)\nBOUNDARY, WHENEVER POSSIBLE, TO REDUCE THE RISK OF MISCALCULATION OR\nMISIDENTIFICATION BY AIR DEFENSE SYSTEMS.  ADDITIONALLY, AIRCRAFT\nOPERATING IN THE ABOVE-NAMED AREA MAY ENCOUNTER INADVERTENT GPS\nINTERFERENCE AND OTHER COMMUNICATIONS JAMMING, WHICH COULD OCCUR\nWITH LITTLE OR NO WARNING.  THOSE PERSONS DESCRIBED IN PARAGRAPH A\nMUST REPORT SAFETY AND/OR SECURITY INCIDENTS TO THE FAA AT +1\n202-267-3333.\nADDITIONAL INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
-    },
-    "limits": {
-      "lower": "SFC",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "KICZ A0011/24": {
-    "header": {
-      "id": "A0011/24",
-      "series": "A",
-      "number": "0011",
-      "year": "24",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "KICZ/QRDLP/IV/NBO/AE/000/999/",
-      "location": "KICZ",
-      "code": {
-        "code": "RDLP",
-        "entity": "RD",
-        "status": "LP",
-        "area": "Navigation Warnings",
-        "subArea": "Airspace Restrictions",
-        "subject": "Danger area (specify national prefix and number)",
-        "condition": "Limitations",
-        "modifier": "Prohibited to"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2024-11-04T15:30:00.000Z",
-      "validityEnd": "2027-12-01T23:59:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "UNITED STATES OF AMERICA FLIGHT PROHIBITION AGAINST CERTAIN\nFLIGHTS IN THE TEHRAN FLIGHT INFORMATION REGION (FIR) (OIIX).\n14 CFR 91.1617 SPECIAL FEDERAL AVIATION REGULATION (SFAR) NO.\n117--PROHIBITION AGAINST CERTAIN FLIGHTS IN THE TEHRAN FLIGHT\nINFORMATION REGION (FIR) (OIIX) WAS PUBLISHED IN THE FEDERAL\nREGISTER ON 3 OCT 2024 AND WAS EFFECTIVE ON 3 OCT 2024. OPERATORS\nARE DIRECTED TO READ THE FULL CONTENT OF THE RULE.\nTHIS INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
-    },
-    "limits": {
-      "lower": "SFC",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026/02/26 00:40:24"
-  },
   "OIIX A0847/26": {
     "header": {
       "id": "A0847/26",
@@ -2498,5 +2208,299 @@
       "text": "REF AIP PAGE ENR 1.6-1, SHIRAZ MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO SHIRAZ MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC\r\nSECTOR 3 (FREQ 126.900 MHZ) AND \r\nSECTOR 4 (FREQ 133.400 MHZ) \r\nMAY NOT BE AVBL."
     },
     "last_seen_utc": "2026-04-27 09:05:19 UTC"
+  },
+  "OIIX A0792/26": {
+    "header": {
+      "id": "A0792/26",
+      "series": "A",
+      "number": "0792",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QOAXX/A/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "OAXX",
+        "entity": "OA",
+        "status": "XX",
+        "area": "Other Information",
+        "subject": "Aeronautical information service",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-14T00:00:00.000Z",
+      "validityEnd": "2026-06-23T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE DATE 14 MAY 2026 ."
+    },
+    "last_seen_utc": "2026-04-20 10:55:22 UTC"
+  },
+  "KICZ A0016/20": {
+    "header": {
+      "id": "",
+      "type": "A0016/20"
+    },
+    "qualification": {
+      "line": "KICZ/QRDLD/IV/NBO/AE/000/999/",
+      "location": "KICZ",
+      "code": {
+        "code": "RDLD",
+        "entity": "RD",
+        "status": "LD",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Limitations",
+        "modifier": "Unsafe"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2020-03-17T19:54:00.000Z",
+      "validityEnd": null,
+      "permanent": true
+    },
+    "content": {
+      "text": "SECURITY..UNITED STATES OF AMERICA ADVISORY FOR OVERWATER\nAIRSPACE ABOVE THE PERSIAN GULF AND THE GULF OF OMAN.\nTHOSE PERSONS DESCRIBED IN PARAGRAPH A BELOW SHOULD EXERCISE CAUTION\nWHEN OPERATING IN OVERWATER AIRSPACE ABOVE THE PERSIAN GULF AND THE\nGULF OF OMAN IN THE KUWAIT FLIGHT INFORMATION REGION (FIR) (OKAC),\nJEDDAH FIR (OEJD) , BAHRAIN FIR (OBBB), EMIRATES FIR (OMAE), AND\nMUSCAT FIR (OOMM) DUE TO CONTINUED ELEVATED MILITARY POSTURING AND\nPOLITICAL TENSIONS IN THE REGION. NOTAM KICZ A0002/20, WHICH\nPROHIBITS U.S. CIVIL AVIATION OPERATIONS IN THE TEHRAN FIR (OIIX),\nREMAINS IN EFFECT UNTIL FURTHER NOTICE.\nA. APPLICABILITY. \nTHIS NOTAM APPLIES TO: ALL U.S. AIR CARRIERS AND\nCOMMERCIAL OPERATORS; ALL PERSONS EXERCISING THE PRIVILEGES OF AN\nAIRMAN CERTIFICATE ISSUED BY THE FAA, EXCEPT SUCH PERSONS OPERATING\nU.S. REGISTERED AIRCRAFT FOR A FOREIGN AIR CARRIER; AND ALL\nOPERATORS OF AIRCRAFT REGISTERED IN THE UNITED STATES, EXCEPT WHERE\nTHE OPERATOR OF SUCH AIRCRAFT IS A FOREIGN AIR CARRIER.\n\nEND PART 1 OF 2\r\nA0016/20 NOTAMN\nQ) KICZ/QRDLD/IV/NBO/AE/000/999/\nA) KICZ PART 2 OF 2\nB) 2002171954\nC) PERM\nE) B. PLANNING. \nTHOSE PERSONS DESCRIBED IN PARAGRAPH A PLANNING TO\nOPERATE IN THE ABOVE-NAMED AREA MUST REVIEW CURRENT SECURITY/THREAT\nINFORMATION AND NOTAMS AND COMPLY WITH ALL APPLICABLE FAA\nREGULATIONS, OPERATIONS SPECIFICATIONS, MANAGEMENT SPECIFICATIONS,\nAND LETTERS OF AUTHORIZATION, INCLUDING UPDATING B450.\nC. OPERATIONS.  AVOID AIR ROUTES NEAREST TO THE TEHRAN FIR (OIIX)\nBOUNDARY, WHENEVER POSSIBLE, TO REDUCE THE RISK OF MISCALCULATION OR\nMISIDENTIFICATION BY AIR DEFENSE SYSTEMS.  ADDITIONALLY, AIRCRAFT\nOPERATING IN THE ABOVE-NAMED AREA MAY ENCOUNTER INADVERTENT GPS\nINTERFERENCE AND OTHER COMMUNICATIONS JAMMING, WHICH COULD OCCUR\nWITH LITTLE OR NO WARNING.  THOSE PERSONS DESCRIBED IN PARAGRAPH A\nMUST REPORT SAFETY AND/OR SECURITY INCIDENTS TO THE FAA AT +1\n202-267-3333.\nADDITIONAL INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
+    },
+    "limits": {
+      "lower": "SFC",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "KICZ A0011/24": {
+    "header": {
+      "id": "A0011/24",
+      "series": "A",
+      "number": "0011",
+      "year": "24",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "KICZ/QRDLP/IV/NBO/AE/000/999/",
+      "location": "KICZ",
+      "code": {
+        "code": "RDLP",
+        "entity": "RD",
+        "status": "LP",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Limitations",
+        "modifier": "Prohibited to"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2024-11-04T15:30:00.000Z",
+      "validityEnd": "2027-12-01T23:59:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "UNITED STATES OF AMERICA FLIGHT PROHIBITION AGAINST CERTAIN\nFLIGHTS IN THE TEHRAN FLIGHT INFORMATION REGION (FIR) (OIIX).\n14 CFR 91.1617 SPECIAL FEDERAL AVIATION REGULATION (SFAR) NO.\n117--PROHIBITION AGAINST CERTAIN FLIGHTS IN THE TEHRAN FLIGHT\nINFORMATION REGION (FIR) (OIIX) WAS PUBLISHED IN THE FEDERAL\nREGISTER ON 3 OCT 2024 AND WAS EFFECTIVE ON 3 OCT 2024. OPERATORS\nARE DIRECTED TO READ THE FULL CONTENT OF THE RULE.\nTHIS INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
+    },
+    "limits": {
+      "lower": "SFC",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0851/26": {
+    "header": {
+      "id": "A0851/26",
+      "series": "A",
+      "number": "0851",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0763/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-27T09:02:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, AHWAZ MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO AHWAZ MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 3 (FREQ 126.900 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-04-27 09:10:22 UTC"
+  },
+  "OIIX A0852/26": {
+    "header": {
+      "id": "A0852/26",
+      "series": "A",
+      "number": "0852",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0762/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-27T09:03:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, TABRIZ MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO TABRIZ MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ AND FREQ 132.500 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-04-27 09:10:22 UTC"
   }
 }
