@@ -2190,6 +2190,70 @@
     },
     "last_seen_utc": "2026-04-27 06:40:23 UTC"
   },
+  "OIIX A0827/26": {
+    "header": {
+      "id": "A0827/26",
+      "series": "A",
+      "number": "0827",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-27T06:38:00.000Z",
+      "validityEnd": "2026-06-01T14:30:00.000Z",
+      "elements": [
+        "0430-1430"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A0826/26, MNM SAFE LEVEL ON \r\nAWY W1 BTN MELMI AND JSK NDB RAISED TO FL320."
+    },
+    "last_seen_utc": "2026-04-27 06:45:22 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -2373,69 +2437,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0827/26": {
-    "header": {
-      "id": "A0827/26",
-      "series": "A",
-      "number": "0827",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARCH/IV/BO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARCH",
-        "entity": "AR",
-        "status": "CH",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Changes",
-        "modifier": "Changed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-27T06:38:00.000Z",
-      "validityEnd": "2026-06-01T14:30:00.000Z",
-      "elements": [
-        "0430-1430"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM A0826/26, MNM SAFE LEVEL ON \r\nAWY W1 BTN MELMI AND JSK NDB RAISED TO FL320."
-    },
-    "last_seen_utc": "2026-04-27 06:45:22 UTC"
   }
 }
