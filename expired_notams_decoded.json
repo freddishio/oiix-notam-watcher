@@ -1,4 +1,197 @@
 {
+  "OIIX A3714/25": {
+    "header": {
+      "id": "A3714/25",
+      "series": "A",
+      "number": "3714",
+      "year": "25",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A2667/25"
+    },
+    "qualification": {
+      "line": "OIIX/QXXXX/ / / /000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "XXXX",
+        "entity": "XX",
+        "status": "XX",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-01-11T07:13:00.000Z",
+      "validityEnd": "2026-04-11T20:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\nFM IRANIAN AIRPORTS ARE REQUIRED\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \nINTL INBOUND TFC TO IRANIAN AIRPORTS\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
+    },
+    "last_seen_utc": "2026/02/20 04:55:03",
+    "archived_utc": "2026-03-10 14:35:39 UTC"
+  },
+  "OIIX B0185/26": {
+    "header": {
+      "id": "B0185/26",
+      "series": "B",
+      "number": "0185",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0184/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-13T07:30:00.000Z",
+      "validityEnd": "2026-05-21T07:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CHECKLIST:\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \n YEAR=2025 0991 0992 0993 0995 1002 \n YEAR=2026 0001 0002 0024 0025 0034 0060 0061 0062 0063 0064 0115 \n0116 0121 0122 0123 0127 0128 0134 0135 0136 0143 0145 \n0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 \n0157 0158 0159 0160 0161 0162 0163 0164 0165 0166 0167 \n0168 0169 0170 0171 0172 0177 0179 \nLATEST AIP AMENDMENTS \nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \nAIP AMDT 1/20 01 JAN 2020 \nCHECKLIST OF AIP SUP AND AIC \nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 \n3/25 7/25 12/25 13/25\nAIP SUP: 2/23 9/25 \nAIC: 2/08 3/08 4/08 5/08 9/08 \n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n19 MAR 2026\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-04-13 07:35:21 UTC",
+    "archived_utc": "2026-04-27 07:35:26 UTC"
+  },
+  "OIIX A0757/26": {
+    "header": {
+      "id": "VALIDATION",
+      "type": "ERROR:"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-05-18T07:10:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A0751/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OPKR FIR TO UBBA FIR: \r\n -ASVIB M715 SRN T216 SODOK L713 GIBAB DCT ULEXI DCT BATEV,\r\n -DERBO G452 ITBIR L713 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OPKR FIR:\r\n -ULDUS N319 DERBO,\r\n -ULDUS N319 ZDN L125 KEBUD."
+    },
+    "last_seen_utc": "2026-04-18 14:30:21 UTC",
+    "archived_utc": "2026-04-27 07:35:26 UTC"
+  },
+  "OIIX A0776/26": {
+    "header": {
+      "id": "A0776/26",
+      "series": "A",
+      "number": "0776",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0750/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-19T09:19:00.000Z",
+      "validityEnd": "2026-05-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED \nOVER  HIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND OMAN \nSEA  AS THE RESULT OF SECURITY REASON."
+    },
+    "last_seen_utc": "2026-04-26 06:45:17 UTC",
+    "archived_utc": "2026-04-27 07:35:26 UTC"
+  },
+  "OIIX A0777/26": {
+    "header": {
+      "id": "",
+      "type": "A0777/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-20T07:30:00.000Z",
+      "validityEnd": "2026-05-28T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0253 1415 1416 1417 1418 1892 \r\n YEAR=2023 1718 1719 1720 1721 2113 2496 \r\n YEAR=2024 1456 3358 4458 4459 4460 4461 \r\n YEAR=2025 2322 2549 2572 2776 3524 3526 3599 3607 3608 3635 3637 \r\n3638 3639 3640 3641 3661 3675 3676 3677 3678 3697 3714 \r\n3715 3716 3717 3718 3720 3721 3722 3806 3811 3831 3832 \r\n3833 3834 3835 3888 3889 3903 3942 3943 3945 3946 3947 \r\n3949 3951 3952 3953 4009 \r\n YEAR=2026 0062 0063 0113 0137 0140 0174 0198 0199 0233 0234 0260 \r\n0263 0275 0276 0289 0310 0314 0322 0380 0382 0385 0389 \r\n0390 0392 0399 0415 0421 0477 0480 0483 0484 0489 0519 \r\n0529 0541 0561 0564 0601 0625 0631 0632 0637 0655 0656 \r\n0657 0662 0663 0664 0665 0667 0668 0669 0670 0671 0672 \r\n0673 0674 0687 0690 0691 0692 0693 0694 0695 0696 0701 \r\n0703 0704 0706 0707 0709 0710 0711 0712 0713 0714 0720 \r\n0724 0744 0745 0746 0747 0748 0751 0752 0753 0754 0755 \r\n0756 0757 0758 0759 0760 0761 0762 0763 0764 0765 0766 \r\n0767 0768 0769 0770 0771 0772 0773 0774 0775 0776 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25\r\n 7/25 12/25 13/25\r\nAIP SUP: 2/23 END PART 1 OF 2\r\nA0777/26 NOTAMR A0743/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2604200730  C) 2604280730EST  E) 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n19 MAR 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. END PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-04-26 06:35:19 UTC",
+    "archived_utc": "2026-04-27 07:35:26 UTC"
+  },
   "OIIX A0743/26": {
     "header": {
       "id": "A0743/26",
@@ -4209,45 +4402,6 @@
     "limits": {
       "lower": "GND",
       "upper": "9000 FT AMSL"
-    },
-    "last_seen_utc": "2026/02/20 04:55:03",
-    "archived_utc": "2026-03-10 14:35:39 UTC"
-  },
-  "OIIX A3714/25": {
-    "header": {
-      "id": "A3714/25",
-      "series": "A",
-      "number": "3714",
-      "year": "25",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A2667/25"
-    },
-    "qualification": {
-      "line": "OIIX/QXXXX/ / / /000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "XXXX",
-        "entity": "XX",
-        "status": "XX",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-01-11T07:13:00.000Z",
-      "validityEnd": "2026-04-11T20:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\nFM IRANIAN AIRPORTS ARE REQUIRED\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \nINTL INBOUND TFC TO IRANIAN AIRPORTS\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
     },
     "last_seen_utc": "2026/02/20 04:55:03",
     "archived_utc": "2026-03-10 14:35:39 UTC"
