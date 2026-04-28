@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775565326,
-    "time_utc": "2026-04-07 12:35:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775565619,
-    "time_utc": "2026-04-07 12:40:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775565921,
     "time_utc": "2026-04-07 12:45:21 UTC",
     "count": 0,
@@ -51133,6 +51121,43 @@
         "lon": 59.419,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777380024,
+    "time_utc": "2026-04-28 12:40:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f6fff42",
+        "callsign": "KRU2689",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-NFA",
+        "category": "Commercial",
+        "alt": 32375,
+        "track": 13,
+        "speed": 402,
+        "lat": 32.105,
+        "lon": 49.241,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f6fcd9a",
+        "callsign": "TBN7220",
+        "flight": "Unknown Flight",
+        "type": "B734",
+        "reg": "EP-TBJ",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 303,
+        "speed": 399,
+        "lat": 27.51,
+        "lon": 55.822,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
       }
     ]
   }
