@@ -2502,5 +2502,44 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0863/26": {
+    "header": {
+      "id": "A0863/26",
+      "series": "A",
+      "number": "0863",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-30T08:12:00.000Z",
+      "validityEnd": "2026-08-29T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP SUP 13/25 TRAFFIC ORIENTATION SCHEME (TOS) WI OIIX,\nITEM 3-DOMESTIC FLIGHT TOS,\nTHE FLW STD AND MANDATORY TRAFFIC ORIENTATION SCHEME\nARE APPLICABLE:\nFM OISS TO OIMM:\n- RELEVANT SID KINOT G663 ORSOK G202 VEGUN Z5 LOSAN\nFM OIBB TO OIMM:\n- RELEVANT SID KUGVU W23 SYZ G663 ORSOK G202 VEGUN Z5 LOSAN\nFM OIYY TO OIMM:\n- RELEVANT SID BOMIT G663 ORSOK G202 VEGUN Z5 LOSAN RELEVANT STAR"
+    },
+    "last_seen_utc": "2026-04-30 08:20:28 UTC"
   }
 }
