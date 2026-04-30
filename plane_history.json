@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775711422,
-    "time_utc": "2026-04-09 05:10:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775711719,
-    "time_utc": "2026-04-09 05:15:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775712017,
     "time_utc": "2026-04-09 05:20:17 UTC",
     "count": 0,
@@ -54851,5 +54839,42 @@
     "time_utc": "2026-04-30 05:10:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1777526124,
+    "time_utc": "2026-04-30 05:15:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f772e3e",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 34925,
+        "track": 310,
+        "speed": 466,
+        "lat": 36.938,
+        "lon": 48.902,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f774a95",
+        "callsign": "QSM1249",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 22000,
+        "track": 281,
+        "speed": 299,
+        "lat": 29.887,
+        "lon": 50.975,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
