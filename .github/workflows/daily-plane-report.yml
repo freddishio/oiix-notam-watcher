@@ -1,0 +1,49 @@
+name: Daily Tehran Airspace Aircraft Report
+
+on:
+  # 20:29 UTC is 23:59 Tehran time using the same UTC+03:30 offset used in main.py.
+  schedule:
+    - cron: '29 20 * * *'
+  workflow_dispatch:
+    inputs:
+      report_date:
+        description: 'Optional Tehran date to report, format YYYY-MM-DD'
+        required: false
+        type: string
+      force:
+        description: 'Resend even if this date was already sent'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  send-daily-plane-report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Send daily aircraft report
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          REPORT_DATE: ${{ inputs.report_date }}
+          FORCE_REPORT: ${{ inputs.force && '1' || '0' }}
+        run: python daily_plane_report.py
+
+      - name: Save daily report state
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+
+          git add daily_plane_report_state.json || true
+
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update daily plane report state" && git push)
