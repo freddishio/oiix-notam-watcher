@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1775863824,
-    "time_utc": "2026-04-10 23:30:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775864121,
     "time_utc": "2026-04-10 23:35:21 UTC",
     "count": 0,
@@ -61117,5 +61111,27 @@
     "time_utc": "2026-05-01 23:30:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1777678520,
+    "time_utc": "2026-05-01 23:35:20 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f7d7db1",
+        "callsign": "CAL073",
+        "flight": "CI73",
+        "type": "A359",
+        "reg": "B-18903",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 245,
+        "speed": 210,
+        "lat": 37.087,
+        "lon": 58.156,
+        "airline": "China Airlines",
+        "country": "China"
+      }
+    ]
   }
 ]
