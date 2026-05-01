@@ -438,483 +438,1771 @@ def fetch_iran_planes():
         iran_planes.append(p)
     return iran_planes
 
+
 def generate_planes_html(history_rendered):
-    json_data_string = json.dumps(history_rendered)
-    html = f"""<!DOCTYPE html>
-<html>
+    json_data_string = json.dumps(history_rendered).replace("</", "<\\/")
+    html = r"""<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Active Aircraft Over Iran Dashboard</title>
+    <title>Iran Airspace Live | OIIX FIR Aircraft Dashboard</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07111f" />
+    <meta name="description" content="Live aircraft dashboard for Iranian airspace inside the OIIX FIR boundary." />
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <style>
-        :root {{ --primary: #ffcc00; --bg-glass: rgba(15, 18, 25, 0.85); --bg-solid: #0f1219; --border: rgba(255, 255, 255, 0.15); --text-main: #f8f9fa; --text-muted: #9aa5b1; }}
-        body {{ padding: 0; margin: 0; font-family: 'Inter', sans-serif; overflow: hidden; background: #000; }}
-        #map {{ height: 100vh; width: 100vw; z-index: 1; }}
-        
-        .glass-panel {{ background: var(--bg-glass); backdrop-filter: blur(25px); -webkit-backdrop-filter: blur(25px); border: 1px solid var(--border); box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8); color: var(--text-main); }}
+        :root {
+            --bg: #06101e;
+            --bg-2: #0a1728;
+            --panel: rgba(9, 20, 36, 0.74);
+            --panel-strong: rgba(10, 23, 40, 0.92);
+            --panel-soft: rgba(255, 255, 255, 0.055);
+            --line: rgba(255, 255, 255, 0.12);
+            --line-strong: rgba(255, 255, 255, 0.2);
+            --text: #f7fbff;
+            --muted: #9eb1ca;
+            --muted-2: #6f83a0;
+            --gold: #ffd166;
+            --cyan: #32d5ff;
+            --blue: #61a5ff;
+            --green: #3cff9b;
+            --red: #ff5370;
+            --orange: #ff9f43;
+            --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+            --shadow-soft: 0 18px 48px rgba(0, 0, 0, 0.28);
+            --radius-xl: 28px;
+            --radius-lg: 22px;
+            --radius-md: 16px;
+            --radius-sm: 12px;
+            --safe-bottom: env(safe-area-inset-bottom, 0px);
+        }
 
-        #loading {{ position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; letter-spacing: 1px; z-index: 9999; transition: opacity 0.3s ease; }}
-        
-        #top-banner {{ position: absolute; top: 20px; left: 50%; transform: translateX(-50%); padding: 12px 28px; border-radius: 30px; z-index: 1000; white-space: nowrap; display: flex; align-items: center; gap: 15px; box-shadow: 0 8px 30px rgba(0,0,0,0.6); }}
-        #top-banner span.indicator {{ display: inline-block; width: 10px; height: 10px; background: #00ff00; border-radius: 50%; box-shadow: 0 0 12px #00ff00; }}
-        
-        .time-display-group {{ display: flex; flex-direction: column; align-items: center; gap: 4px; }}
-        #banner-time-tehran {{ font-size: 15px; font-weight: 800; color: #fff; }}
-        #banner-time-local {{ font-size: 12px; font-weight: 600; color: var(--primary); text-transform: uppercase; }}
+        * {
+            box-sizing: border-box;
+        }
 
-        #sidebar-wrapper {{ position: absolute; top: 80px; left: 0; z-index: 1000; display: flex; align-items: flex-start; transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); transform: translateX(-360px); height: calc(100vh - 140px); pointer-events: none; }}
-        #sidebar-content {{ width: 360px; height: 100%; border-radius: 0 16px 16px 0; padding: 24px; overflow-y: auto; box-sizing: border-box; flex-shrink: 0; pointer-events: auto; }}
-        #sidebar-content::-webkit-scrollbar {{ width: 6px; }} #sidebar-content::-webkit-scrollbar-thumb {{ background: rgba(255,255,255,0.2); border-radius: 4px; }}
-        
-        #sidebar-toggle {{ width: 44px; height: 64px; margin-top: 20px; background: var(--bg-glass); backdrop-filter: blur(20px); border: 1px solid var(--border); border-left: none; border-radius: 0 12px 12px 0; color: var(--primary); cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 18px; box-shadow: 6px 0 20px rgba(0,0,0,0.5); user-select: none; flex-shrink: 0; pointer-events: auto; }}
-        .expanded {{ transform: translateX(0) !important; }}
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background:
+                radial-gradient(circle at 18% 12%, rgba(50, 213, 255, 0.18), transparent 30%),
+                radial-gradient(circle at 88% 18%, rgba(255, 209, 102, 0.12), transparent 25%),
+                linear-gradient(135deg, #030812 0%, #06101e 42%, #07172a 100%);
+            color: var(--text);
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            overflow: hidden;
+        }
 
-        .panel-title {{ margin: 0 0 20px 0; font-size: 22px; font-weight: 800; border-bottom: 1px solid var(--border); padding-bottom: 12px; letter-spacing: -0.5px; }}
-        .stat-box {{ background: rgba(0,0,0,0.5); padding: 18px; border-radius: 12px; margin-bottom: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.06); }}
-        .stat-num {{ font-size: 42px; font-weight: 800; color: var(--primary); font-family: 'Roboto Mono', monospace; line-height: 1; margin-top: 10px; text-shadow: 0 2px 10px rgba(255,204,0,0.3); }}
-        .section-title {{ font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1.5px; margin: 25px 0 12px 0; font-weight: 800; }}
-        
-        #clear-filter-btn {{ display: none; width: 100%; background: #ff4444; color: white; border: none; padding: 12px; border-radius: 8px; font-weight: 800; cursor: pointer; margin-bottom: 15px; font-family: 'Inter', sans-serif; transition: 0.2s; box-shadow: 0 4px 15px rgba(255,68,68,0.3); }}
-        #clear-filter-btn:hover {{ background: #ff2222; transform: translateY(-2px); }}
+        button, input, select {
+            font: inherit;
+        }
 
-        .data-list {{ list-style: none; padding: 0; margin: 0; }}
-        .data-list li {{ padding: 10px 14px; margin-bottom: 6px; border: 1px solid transparent; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 600; color: #e2e8f0; cursor: pointer; transition: all 0.2s; background: rgba(255,255,255,0.03); }}
-        .data-list li:hover {{ background: rgba(255,204,0,0.1); border-color: rgba(255,204,0,0.3); }}
-        .data-list li.active-filter {{ background: rgba(255,204,0,0.2); border-color: var(--primary); box-shadow: 0 0 10px rgba(255,204,0,0.2); }}
-        .data-list li img {{ filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }}
-        .flex-left {{ display: flex; align-items: center; gap: 10px; }}
-        .count-badge {{ background: rgba(0,0,0,0.6); border: 1px solid var(--border); padding: 4px 10px; border-radius: 12px; font-family: 'Roboto Mono', monospace; color: var(--primary); font-weight: 800; font-size: 13px; }}
+        button {
+            border: 0;
+        }
 
-        #time-shift-btn {{ position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 16px 36px; border-radius: 40px; cursor: pointer; font-size: 16px; font-weight: 800; z-index: 1000; border: 2px solid var(--primary); color: white; transition: all 0.2s ease; letter-spacing: 0.5px; box-shadow: 0 8px 25px rgba(0,0,0,0.6); }}
-        #time-shift-btn:hover {{ background: var(--primary); color: #000; box-shadow: 0 0 25px rgba(255,204,0,0.5); }}
+        #app {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+        }
 
-        #time-dock {{ display: none; position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); width: 95%; max-width: 800px; border-radius: 20px; padding: 25px 35px; box-sizing: border-box; z-index: 1100; }}
-        .dock-header {{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; position: relative; }}
-        .dock-header h3 {{ margin: 0; font-size: 18px; font-weight: 800; color: var(--primary); width: 100%; text-align: center; text-transform: uppercase; letter-spacing: 1px; }}
-        .close-btn {{ position: absolute; right: 0; background: none; border: none; color: var(--text-muted); font-size: 28px; cursor: pointer; padding: 0; line-height: 1; transition: color 0.2s; }} .close-btn:hover {{ color: white; }}
-        
-        .time-grid {{ display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; background: rgba(0,0,0,0.3); padding: 18px; border-radius: 15px; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.05); }}
-        .tz-toggle {{ display: flex; background: rgba(0,0,0,0.6); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }}
-        .tz-toggle button {{ padding: 12px 18px; border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-weight: 800; font-size: 13px; transition: 0.3s; font-family: 'Inter', sans-serif; }}
-        .tz-toggle button.active {{ background: var(--primary); color: #000; }}
-        
-        .time-inputs {{ display: flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }}
-        .dock-controls-select {{ background: rgba(0,0,0,0.6); color: white; border: 1px solid var(--border); border-radius: 10px; padding: 12px 16px; font-size: 14px; font-family: 'Inter', sans-serif; font-weight: 700; outline: none; cursor: pointer; transition: 0.2s; }}
-        .dock-controls-select:hover {{ border-color: var(--primary); }}
-        .custom-input {{ background: rgba(0,0,0,0.6); color: var(--primary); border: 1px solid var(--border); border-radius: 10px; padding: 11px 16px; font-size: 14px; font-family: 'Roboto Mono', monospace; font-weight: 700; outline: none; cursor: pointer; }}
-        .custom-input::-webkit-calendar-picker-indicator {{ filter: invert(1) sepia(100%) saturate(10000%) hue-rotate(10deg); cursor: pointer; }}
-        
-        .playback-controls {{ display: flex; gap: 10px; align-items: center; }}
-        .control-btn {{ background: rgba(255,255,255,0.1); border: 1px solid var(--border); color: #fff; padding: 12px 20px; border-radius: 10px; cursor: pointer; font-weight: 800; transition: 0.2s; font-family: 'Inter', sans-serif; width: 100px; text-align: center; }}
-        .control-btn:hover {{ background: rgba(255,255,255,0.2); }}
-        .control-btn.playing {{ background: var(--primary); color: #000; border-color: var(--primary); box-shadow: 0 0 15px rgba(255,204,0,0.4); }}
+        #map {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: #050b14;
+        }
 
-        .slider-container {{ position: relative; width: 100%; margin-top: 10px; }}
-        input[type=range] {{ width: 100%; height: 8px; background: rgba(255,255,255,0.2); border-radius: 4px; outline: none; -webkit-appearance: none; accent-color: var(--primary); cursor: pointer; }}
-        input[type=range]::-webkit-slider-thumb {{ -webkit-appearance: none; width: 24px; height: 24px; background: var(--primary); border-radius: 50%; cursor: pointer; box-shadow: 0 0 15px rgba(255,204,0,0.8); transition: transform 0.1s; }}
-        input[type=range]::-webkit-slider-thumb:hover {{ transform: scale(1.15); }}
-        
-        #slider-tooltip {{ position: absolute; top: -50px; background: var(--primary); color: #000; padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 800; transform: translateX(-50%); pointer-events: none; display: none; white-space: nowrap; box-shadow: 0 8px 20px rgba(0,0,0,0.5); font-family: 'Roboto Mono', monospace; z-index: 10; }}
-        #slider-tooltip::after {{ content: ''; position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); border-width: 6px 6px 0; border-style: solid; border-color: var(--primary) transparent transparent transparent; }}
+        .leaflet-control-attribution {
+            background: rgba(5, 12, 22, 0.76) !important;
+            color: rgba(255,255,255,0.66) !important;
+            backdrop-filter: blur(14px);
+            border-radius: 12px 0 0 0;
+        }
 
-        .leaflet-tooltip.plane-tooltip {{ background: var(--bg-solid) !important; border: 1px solid var(--border) !important; color: var(--primary) !important; font-family: 'Roboto Mono', monospace; font-weight: 800; font-size: 14px; border-radius: 8px; padding: 6px 10px; box-shadow: 0 6px 15px rgba(0,0,0,0.6); }}
-        .leaflet-tooltip-top:before {{ border-top-color: var(--border) !important; bottom: -6px !important; border-width: 6px 6px 0 !important; }}
-        
-        .leaflet-popup-content-wrapper {{ background: var(--bg-solid); color: var(--text-main); border: 1px solid var(--border); border-radius: 16px; padding: 0; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.9); }}
-        .leaflet-popup-tip {{ background: var(--bg-solid); width: 20px; height: 20px; margin: -10px auto 0; }}
-        .leaflet-popup-content {{ margin: 0 !important; width: 320px !important; }}
-        
-        .popup-header {{ background: rgba(255, 204, 0, 0.08); padding: 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px; }}
-        .popup-callsign {{ font-size: 24px; font-weight: 800; font-family: 'Roboto Mono', monospace; color: var(--primary); letter-spacing: 1px; line-height: 1.2; }}
-        .popup-airline {{ font-size: 14px; color: var(--text-muted); font-weight: 600; margin-top: 6px; }}
-        .popup-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 18px; padding: 24px; }}
-        .popup-stat {{ display: flex; flex-direction: column; }} .popup-stat label {{ font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-weight: 800; margin-bottom: 6px; letter-spacing: 0.5px; }} .popup-stat span {{ font-size: 16px; font-weight: 700; font-family: 'Roboto Mono', monospace; color: #fff; }}
-        
-        .leaflet-control-zoom {{ border: none !important; margin-right: 20px !important; margin-bottom: 20px !important; box-shadow: 0 8px 20px rgba(0,0,0,0.6) !important; }} .leaflet-control-zoom a {{ background: var(--bg-glass) !important; color: var(--primary) !important; border: 1px solid var(--border) !important; font-weight: 800 !important; backdrop-filter: blur(10px); }} .leaflet-control-zoom a:hover {{ background: var(--primary) !important; color: #000 !important; }}
+        .leaflet-control-attribution a {
+            color: rgba(118, 214, 255, 0.95) !important;
+        }
 
-        @media (max-width: 900px) {{
-            .time-grid {{ grid-template-columns: 1fr; gap: 15px; justify-items: center; }}
-        }}
-        @media (max-width: 768px) {{
-            #top-banner {{ padding: 10px 18px; top: 10px; width: 85%; justify-content: center; }}
-            #sidebar-wrapper {{ transform: translateX(-320px); }}
-            #sidebar-content {{ width: 320px; padding: 18px; }}
-            .expanded {{ transform: translateX(0) !important; }}
-            #time-dock {{ width: 95%; padding: 20px; }}
-            .time-inputs {{ flex-direction: column; width: 100%; }} .dock-controls-select, .custom-input {{ width: 100%; text-align: center; }}
-            #time-shift-btn {{ bottom: 20px; width: 60%; }}
-        }}
+        .leaflet-control-zoom {
+            border: 1px solid var(--line) !important;
+            border-radius: 16px !important;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            backdrop-filter: blur(18px);
+        }
+
+        .leaflet-control-zoom a {
+            width: 40px !important;
+            height: 40px !important;
+            line-height: 40px !important;
+            background: rgba(9, 20, 36, 0.82) !important;
+            color: var(--text) !important;
+            border-bottom: 1px solid var(--line) !important;
+        }
+
+        .leaflet-control-zoom a:hover {
+            background: rgba(50, 213, 255, 0.16) !important;
+        }
+
+        .map-vignette {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 2;
+            background:
+                linear-gradient(90deg, rgba(3, 8, 18, 0.88) 0%, rgba(3, 8, 18, 0.36) 28%, rgba(3, 8, 18, 0.1) 55%, rgba(3, 8, 18, 0.58) 100%),
+                radial-gradient(circle at center, transparent 42%, rgba(0, 0, 0, 0.42) 100%);
+        }
+
+        .noise {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 3;
+            opacity: 0.12;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+            mix-blend-mode: screen;
+        }
+
+        .topbar {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            right: 18px;
+            z-index: 12;
+            display: grid;
+            grid-template-columns: minmax(260px, 450px) minmax(220px, 1fr) auto;
+            gap: 14px;
+            align-items: stretch;
+            pointer-events: none;
+        }
+
+        .brand-card,
+        .search-card,
+        .status-pill,
+        .panel,
+        .timeline-card,
+        .mobile-sheet {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(22px) saturate(1.18);
+            -webkit-backdrop-filter: blur(22px) saturate(1.18);
+        }
+
+        .brand-card {
+            min-height: 76px;
+            border-radius: var(--radius-xl);
+            padding: 16px 18px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            pointer-events: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .brand-card::before {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, rgba(50, 213, 255, 0.22), transparent 42%, rgba(255, 209, 102, 0.18));
+            pointer-events: none;
+            opacity: 0.9;
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            padding: 1px;
+            mask-composite: exclude;
+            -webkit-mask-composite: xor;
+            border-radius: inherit;
+        }
+
+        .brand-icon {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border-radius: 18px;
+            display: grid;
+            place-items: center;
+            background:
+                radial-gradient(circle at 28% 24%, rgba(255,255,255,0.32), transparent 30%),
+                linear-gradient(135deg, rgba(50, 213, 255, 0.96), rgba(97, 165, 255, 0.78));
+            box-shadow: 0 16px 36px rgba(50, 213, 255, 0.22);
+            color: #06101e;
+            font-size: 21px;
+        }
+
+        .brand-copy h1 {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            font-weight: 900;
+        }
+
+        .brand-copy p {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 650;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .search-card {
+            min-height: 76px;
+            border-radius: var(--radius-xl);
+            padding: 12px;
+            display: grid;
+            grid-template-columns: minmax(160px, 1fr) 150px 150px 48px;
+            gap: 10px;
+            align-items: center;
+            pointer-events: auto;
+        }
+
+        .field {
+            position: relative;
+            height: 48px;
+        }
+
+        .field i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted-2);
+            font-size: 14px;
+            z-index: 2;
+        }
+
+        .field input,
+        .field select {
+            width: 100%;
+            height: 48px;
+            border-radius: 17px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.07);
+            color: var(--text);
+            outline: 0;
+            padding: 0 14px 0 42px;
+            font-weight: 650;
+            transition: 160ms ease;
+        }
+
+        .field select {
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .field input:focus,
+        .field select:focus {
+            border-color: rgba(50, 213, 255, 0.62);
+            background: rgba(50, 213, 255, 0.085);
+            box-shadow: 0 0 0 4px rgba(50, 213, 255, 0.12);
+        }
+
+        .field input::placeholder {
+            color: rgba(158, 177, 202, 0.7);
+        }
+
+        .field select option {
+            background: #0a1728;
+            color: #fff;
+        }
+
+        .icon-button {
+            height: 48px;
+            width: 48px;
+            border-radius: 17px;
+            display: grid;
+            place-items: center;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--text);
+            cursor: pointer;
+            transition: 180ms ease;
+        }
+
+        .icon-button:hover {
+            transform: translateY(-1px);
+            background: rgba(50, 213, 255, 0.14);
+            border-color: rgba(50, 213, 255, 0.35);
+        }
+
+        .status-pill {
+            min-height: 76px;
+            border-radius: var(--radius-xl);
+            padding: 14px 17px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            pointer-events: auto;
+            min-width: 210px;
+        }
+
+        .pulse {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: rgba(60, 255, 155, 0.1);
+            border: 1px solid rgba(60, 255, 155, 0.26);
+            color: var(--green);
+            position: relative;
+            flex: 0 0 46px;
+        }
+
+        .pulse::before {
+            content: "";
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            border: 1px solid rgba(60, 255, 155, 0.42);
+            animation: ping 1.9s ease-out infinite;
+        }
+
+        .pulse.no-traffic {
+            background: rgba(255, 83, 112, 0.11);
+            border-color: rgba(255, 83, 112, 0.3);
+            color: var(--red);
+        }
+
+        .pulse.no-traffic::before {
+            border-color: rgba(255, 83, 112, 0.42);
+        }
+
+        @keyframes ping {
+            0% { transform: scale(0.9); opacity: 0.9; }
+            100% { transform: scale(1.35); opacity: 0; }
+        }
+
+        .status-copy strong {
+            display: block;
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .status-copy span {
+            display: block;
+            margin-top: 4px;
+            color: var(--muted);
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .left-panel {
+            position: absolute;
+            left: 18px;
+            top: 112px;
+            bottom: 96px;
+            z-index: 11;
+            width: 420px;
+            max-width: calc(100vw - 36px);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            pointer-events: none;
+        }
+
+        .panel {
+            border-radius: var(--radius-xl);
+            pointer-events: auto;
+            overflow: hidden;
+        }
+
+        .stats-panel {
+            padding: 16px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .stat-tile {
+            min-height: 102px;
+            border-radius: 20px;
+            padding: 15px;
+            background:
+                linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.035));
+            border: 1px solid rgba(255,255,255,0.09);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-tile::after {
+            content: "";
+            position: absolute;
+            right: -22px;
+            bottom: -24px;
+            width: 92px;
+            height: 92px;
+            border-radius: 50%;
+            background: rgba(50, 213, 255, 0.08);
+        }
+
+        .stat-tile.gold::after { background: rgba(255, 209, 102, 0.12); }
+        .stat-tile.green::after { background: rgba(60, 255, 155, 0.10); }
+        .stat-tile.orange::after { background: rgba(255, 159, 67, 0.10); }
+
+        .stat-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 13px;
+            display: grid;
+            place-items: center;
+            background: rgba(50, 213, 255, 0.12);
+            color: var(--cyan);
+            margin-bottom: 12px;
+        }
+
+        .stat-tile.gold .stat-icon {
+            background: rgba(255, 209, 102, 0.13);
+            color: var(--gold);
+        }
+
+        .stat-tile.green .stat-icon {
+            background: rgba(60, 255, 155, 0.12);
+            color: var(--green);
+        }
+
+        .stat-tile.orange .stat-icon {
+            background: rgba(255, 159, 67, 0.13);
+            color: var(--orange);
+        }
+
+        .stat-value {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 800;
+            font-size: 25px;
+            letter-spacing: -0.04em;
+            line-height: 1;
+        }
+
+        .stat-label {
+            margin-top: 7px;
+            font-size: 12px;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
+        .list-panel {
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .panel-header {
+            padding: 18px 18px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 14px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .panel-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+        }
+
+        .panel-title i {
+            color: var(--cyan);
+        }
+
+        .panel-title h2 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        .panel-subtitle {
+            margin-top: 3px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 650;
+        }
+
+        .count-chip {
+            flex: 0 0 auto;
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: rgba(50, 213, 255, 0.11);
+            border: 1px solid rgba(50, 213, 255, 0.2);
+            color: var(--cyan);
+            font-size: 12px;
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 800;
+        }
+
+        .plane-list {
+            padding: 12px;
+            overflow: auto;
+            min-height: 0;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255,255,255,0.18) transparent;
+        }
+
+        .plane-card {
+            border-radius: 20px;
+            padding: 14px;
+            background:
+                linear-gradient(135deg, rgba(255,255,255,0.095), rgba(255,255,255,0.035));
+            border: 1px solid rgba(255,255,255,0.09);
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: 180ms ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .plane-card:hover,
+        .plane-card.active {
+            transform: translateY(-2px);
+            border-color: rgba(50, 213, 255, 0.38);
+            background:
+                linear-gradient(135deg, rgba(50, 213, 255, 0.13), rgba(255,255,255,0.05));
+            box-shadow: 0 16px 40px rgba(0,0,0,0.24);
+        }
+
+        .plane-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            bottom: 14px;
+            width: 3px;
+            border-radius: 99px;
+            background: linear-gradient(var(--cyan), var(--blue));
+            opacity: 0.9;
+        }
+
+        .plane-card-main {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .plane-title {
+            min-width: 0;
+        }
+
+        .plane-title strong {
+            display: block;
+            font-size: 14px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .plane-title span {
+            display: block;
+            margin-top: 4px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 650;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .plane-badge {
+            flex: 0 0 auto;
+            padding: 7px 9px;
+            border-radius: 999px;
+            background: rgba(255, 209, 102, 0.12);
+            border: 1px solid rgba(255, 209, 102, 0.18);
+            color: var(--gold);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .plane-meta {
+            margin-top: 12px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .meta-item {
+            min-width: 0;
+            padding: 9px 10px;
+            border-radius: 14px;
+            background: rgba(0,0,0,0.18);
+            border: 1px solid rgba(255,255,255,0.055);
+        }
+
+        .meta-item small {
+            display: block;
+            color: var(--muted-2);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .meta-item span {
+            display: block;
+            margin-top: 4px;
+            font-size: 12px;
+            font-weight: 800;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .timeline-card {
+            position: absolute;
+            left: 18px;
+            right: 18px;
+            bottom: 18px;
+            z-index: 12;
+            min-height: 62px;
+            border-radius: var(--radius-xl);
+            padding: 12px 16px;
+            display: grid;
+            grid-template-columns: 210px 1fr 170px;
+            gap: 14px;
+            align-items: center;
+            pointer-events: auto;
+        }
+
+        .timeline-label strong {
+            display: block;
+            font-size: 12px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .timeline-label span {
+            display: block;
+            margin-top: 5px;
+            color: var(--muted);
+            font-size: 12px;
+            font-weight: 650;
+        }
+
+        .timeline-range {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .timeline-range button {
+            flex: 0 0 auto;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            accent-color: var(--cyan);
+            cursor: pointer;
+        }
+
+        .time-chip {
+            padding: 10px 12px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text);
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .mobile-open {
+            display: none;
+            position: absolute;
+            right: 16px;
+            bottom: calc(92px + var(--safe-bottom));
+            z-index: 14;
+            width: 58px;
+            height: 58px;
+            border-radius: 22px;
+            background: linear-gradient(135deg, rgba(50, 213, 255, 0.96), rgba(97, 165, 255, 0.86));
+            color: #06101e;
+            box-shadow: 0 20px 54px rgba(50, 213, 255, 0.26);
+            cursor: pointer;
+        }
+
+        .mobile-sheet {
+            display: none;
+        }
+
+        .empty-state {
+            min-height: 230px;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            text-align: center;
+            color: var(--muted);
+        }
+
+        .empty-state i {
+            font-size: 36px;
+            color: var(--muted-2);
+            margin-bottom: 12px;
+        }
+
+        .empty-state strong {
+            display: block;
+            color: var(--text);
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .plane-marker {
+            width: 34px !important;
+            height: 34px !important;
+            margin-left: -17px !important;
+            margin-top: -17px !important;
+        }
+
+        .plane-marker-inner {
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: rgba(6, 16, 30, 0.76);
+            border: 1px solid rgba(50, 213, 255, 0.45);
+            box-shadow:
+                0 0 0 5px rgba(50, 213, 255, 0.12),
+                0 12px 26px rgba(0,0,0,0.42);
+            backdrop-filter: blur(12px);
+            color: var(--cyan);
+        }
+
+        .plane-marker-inner i {
+            transform: rotate(var(--heading));
+            filter: drop-shadow(0 0 8px rgba(50, 213, 255, 0.72));
+        }
+
+        .plane-marker.selected .plane-marker-inner {
+            color: var(--gold);
+            border-color: rgba(255, 209, 102, 0.75);
+            box-shadow:
+                0 0 0 7px rgba(255, 209, 102, 0.14),
+                0 18px 34px rgba(0,0,0,0.48);
+        }
+
+        .leaflet-popup-content-wrapper {
+            background: rgba(8, 19, 34, 0.92);
+            color: var(--text);
+            border: 1px solid rgba(255,255,255,0.14);
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            backdrop-filter: blur(20px);
+        }
+
+        .leaflet-popup-tip {
+            background: rgba(8, 19, 34, 0.92);
+        }
+
+        .leaflet-popup-content {
+            margin: 14px 15px;
+            min-width: 230px;
+        }
+
+        .popup-title {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            font-weight: 900;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .popup-title i {
+            color: var(--gold);
+        }
+
+        .popup-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 7px 12px;
+            font-size: 12px;
+        }
+
+        .popup-grid b {
+            color: var(--muted);
+            font-weight: 800;
+        }
+
+        .popup-grid span {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        @media (max-width: 1120px) {
+            .topbar {
+                grid-template-columns: 1fr;
+                max-width: 470px;
+                right: auto;
+            }
+
+            .search-card {
+                grid-template-columns: 1fr 1fr 48px;
+            }
+
+            .search-card .field:first-child {
+                grid-column: 1 / -1;
+            }
+
+            .status-pill {
+                display: none;
+            }
+
+            .left-panel {
+                top: 250px;
+            }
+
+            .timeline-card {
+                grid-template-columns: 165px 1fr;
+            }
+
+            .time-chip {
+                display: none;
+            }
+        }
+
+        @media (max-width: 760px) {
+            body {
+                overflow: hidden;
+            }
+
+            .map-vignette {
+                background:
+                    linear-gradient(180deg, rgba(3,8,18,0.72) 0%, rgba(3,8,18,0.16) 28%, rgba(3,8,18,0.08) 58%, rgba(3,8,18,0.72) 100%);
+            }
+
+            .topbar {
+                top: 12px;
+                left: 12px;
+                right: 12px;
+                display: block;
+                max-width: none;
+            }
+
+            .brand-card {
+                min-height: 68px;
+                border-radius: 23px;
+                padding: 13px 14px;
+            }
+
+            .brand-icon {
+                width: 42px;
+                height: 42px;
+                flex-basis: 42px;
+                border-radius: 16px;
+                font-size: 18px;
+            }
+
+            .brand-copy h1 {
+                font-size: 15px;
+            }
+
+            .brand-copy p {
+                font-size: 10px;
+            }
+
+            .search-card,
+            .status-pill,
+            .left-panel {
+                display: none;
+            }
+
+            .timeline-card {
+                left: 12px;
+                right: 12px;
+                bottom: calc(12px + var(--safe-bottom));
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 12px;
+                border-radius: 22px;
+            }
+
+            .timeline-label {
+                display: flex;
+                justify-content: space-between;
+                gap: 8px;
+                align-items: center;
+            }
+
+            .timeline-label span {
+                margin-top: 0;
+                text-align: right;
+            }
+
+            .timeline-range {
+                gap: 8px;
+            }
+
+            .timeline-range .icon-button {
+                width: 42px;
+                height: 42px;
+                border-radius: 16px;
+            }
+
+            .mobile-open {
+                display: grid;
+                place-items: center;
+            }
+
+            .mobile-sheet {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                z-index: 30;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: min(82vh, 720px);
+                border-radius: 28px 28px 0 0;
+                border-bottom: 0;
+                transform: translateY(calc(100% - 72px));
+                transition: transform 260ms cubic-bezier(.2,.8,.2,1);
+                overflow: hidden;
+                padding-bottom: var(--safe-bottom);
+            }
+
+            .mobile-sheet.open {
+                transform: translateY(0);
+            }
+
+            .sheet-handle {
+                width: 46px;
+                height: 5px;
+                border-radius: 99px;
+                background: rgba(255,255,255,0.24);
+                margin: 12px auto 8px;
+            }
+
+            .sheet-top {
+                padding: 0 14px 12px;
+                display: grid;
+                grid-template-columns: 1fr 44px;
+                gap: 10px;
+                align-items: center;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+
+            .sheet-top-title strong {
+                display: block;
+                font-size: 15px;
+                font-weight: 900;
+            }
+
+            .sheet-top-title span {
+                display: block;
+                margin-top: 4px;
+                color: var(--muted);
+                font-size: 12px;
+                font-weight: 650;
+            }
+
+            .sheet-content {
+                min-height: 0;
+                overflow: auto;
+                padding: 12px;
+            }
+
+            .mobile-filters {
+                display: grid;
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .mobile-stats {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .mobile-stats .stat-tile {
+                min-height: 90px;
+            }
+
+            .plane-meta {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="loading">Syncing Radar Data...</div>
-    <div id="top-banner" class="glass-panel">
-        <span class="indicator"></span>
-        <div class="time-display-group">
-            <span id="banner-time-tehran">Snapshot Time...</span>
-            <span id="banner-time-local"></span>
-        </div>
-    </div>
-    
-    <div id="sidebar-wrapper">
-        <div id="sidebar-content" class="glass-panel">
-            <h3 class="panel-title">Airspace Analytics</h3>
-            <div class="stat-box"><div style="font-size: 12px; font-weight: 800; color: #a0aab2; text-transform: uppercase; letter-spacing: 1px;">Active Commercial Traffic</div><div class="stat-num" id="plane-count">0</div></div>
-            
-            <button id="clear-filter-btn">Clear Filter</button>
+    <div id="app">
+        <div id="map"></div>
+        <div class="map-vignette"></div>
+        <div class="noise"></div>
 
-            <div class="section-title">Registration Countries</div>
-            <ul id="country-list" class="data-list"></ul>
-            <div class="section-title">Operating Airlines</div>
-            <ul id="airline-list" class="data-list"></ul>
-        </div>
-        <div id="sidebar-toggle">>></div>
-    </div>
+        <header class="topbar" aria-label="Dashboard controls">
+            <section class="brand-card">
+                <div class="brand-icon"><i class="fa-solid fa-plane-up"></i></div>
+                <div class="brand-copy">
+                    <h1>Iran Airspace Monitor</h1>
+                    <p>OIIX FIR aircraft intelligence dashboard</p>
+                </div>
+            </section>
 
-    <button id="time-shift-btn" class="glass-panel">🕰️ Time Shift</button>
+            <section class="search-card">
+                <label class="field">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="searchInput" type="search" placeholder="Search callsign, airline, registration..." autocomplete="off" />
+                </label>
 
-    <div id="time-dock" class="glass-panel">
-        <div class="dock-header">
-            <h3>Time Shift Controls</h3>
-            <button class="close-btn" id="close-dock-btn">&times;</button>
-        </div>
-        
-        <div class="time-grid">
-            <div class="tz-toggle">
-                <button id="btn-tz-tehran" class="active">Tehran Time</button>
-                <button id="btn-tz-local"></button>
+                <label class="field">
+                    <i class="fa-solid fa-building-flag"></i>
+                    <select id="airlineFilter" aria-label="Filter by airline">
+                        <option value="">All airlines</option>
+                    </select>
+                </label>
+
+                <label class="field">
+                    <i class="fa-solid fa-globe"></i>
+                    <select id="countryFilter" aria-label="Filter by country">
+                        <option value="">All countries</option>
+                    </select>
+                </label>
+
+                <button class="icon-button" id="resetFilters" title="Reset filters" type="button">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+            </section>
+
+            <section class="status-pill">
+                <div class="pulse" id="trafficPulse"><i class="fa-solid fa-satellite-dish"></i></div>
+                <div class="status-copy">
+                    <strong id="trafficStatus">Live snapshot</strong>
+                    <span id="lastUpdateText">Loading...</span>
+                </div>
+            </section>
+        </header>
+
+        <aside class="left-panel">
+            <section class="panel stats-panel">
+                <div class="stat-grid" id="desktopStats"></div>
+            </section>
+
+            <section class="panel list-panel">
+                <div class="panel-header">
+                    <div class="panel-title">
+                        <i class="fa-solid fa-plane-circle-check"></i>
+                        <div>
+                            <h2>Aircraft in selected snapshot</h2>
+                            <div class="panel-subtitle" id="snapshotSubtitle">Loading aircraft...</div>
+                        </div>
+                    </div>
+                    <div class="count-chip" id="resultCount">0</div>
+                </div>
+                <div class="plane-list" id="planeList"></div>
+            </section>
+        </aside>
+
+        <section class="timeline-card">
+            <div class="timeline-label">
+                <strong><i class="fa-solid fa-clock-rotate-left"></i> History replay</strong>
+                <span id="timelineRangeLabel">Latest snapshot</span>
             </div>
-            
-            <div class="time-inputs">
-                <select id="hourSelect" class="dock-controls-select"></select>
-                <select id="minuteSelect" class="dock-controls-select"></select>
-                <span style="color:var(--text-muted); font-weight:800; font-size:12px; margin: 0 10px;">OR</span>
-                <input type="datetime-local" id="exactTimePicker" class="custom-input">
+            <div class="timeline-range">
+                <button class="icon-button" id="prevSnapshot" title="Previous snapshot" type="button">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <input id="snapshotSlider" type="range" min="0" max="0" value="0" aria-label="Snapshot timeline" />
+                <button class="icon-button" id="nextSnapshot" title="Next snapshot" type="button">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
+            <div class="time-chip" id="snapshotTimeChip">--</div>
+        </section>
 
-            <div class="playback-controls">
-                <button id="playBtn" class="control-btn">▶ Play</button>
-                <select id="speedSelect" class="dock-controls-select">
-                    <option value="0.5">0.5x</option>
-                    <option value="1" selected>1.0x</option>
-                    <option value="1.5">1.5x</option>
-                    <option value="2">2.0x</option>
-                    <option value="3">3.0x</option>
-                    <option value="4">4.0x</option>
-                </select>
+        <button class="mobile-open" id="mobileOpen" type="button" title="Open aircraft panel">
+            <i class="fa-solid fa-chart-simple"></i>
+        </button>
+
+        <section class="mobile-sheet" id="mobileSheet">
+            <div class="sheet-handle"></div>
+            <div class="sheet-top">
+                <div class="sheet-top-title">
+                    <strong>Aircraft Dashboard</strong>
+                    <span id="mobileSubtitle">Live OIIX FIR snapshot</span>
+                </div>
+                <button class="icon-button" id="mobileClose" type="button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
-        </div>
+            <div class="sheet-content">
+                <div class="mobile-filters">
+                    <label class="field">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input id="mobileSearchInput" type="search" placeholder="Search aircraft..." autocomplete="off" />
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-building-flag"></i>
+                        <select id="mobileAirlineFilter" aria-label="Mobile filter by airline">
+                            <option value="">All airlines</option>
+                        </select>
+                    </label>
+                    <label class="field">
+                        <i class="fa-solid fa-globe"></i>
+                        <select id="mobileCountryFilter" aria-label="Mobile filter by country">
+                            <option value="">All countries</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="mobile-stats" id="mobileStats"></div>
+                <div class="plane-list" id="mobilePlaneList"></div>
+            </div>
+        </section>
 
-        <div class="slider-container">
-            <div id="slider-tooltip"></div>
-            <input type="range" id="modalSlider" min="0" max="0" value="0">
-        </div>
+        <script id="history-data" type="application/json">__PLANE_HISTORY_JSON__</script>
     </div>
-
-    <div id="map"></div>
 
     <script>
-        const flightHistory = {json_data_string};
-        var map = L.map('map', {{ center: [32.4279, 53.6880], zoom: 6, zoomSnap: 0.5, zoomControl: false }});
-        L.control.zoom({{ position: 'bottomright' }}).addTo(map);
-        map.createPane('firPane'); map.getPane('firPane').style.zIndex = 390; 
-        
-        var CartoDB_DarkMatter = L.tileLayer('https://{{s}}.basemaps.cartocdn.com/dark_all/{{z}}/{{x}}/{{y}}{{r}}.png', {{ attribution: '&copy; OpenStreetMap', subdomains: 'abcd', maxZoom: 20 }}).addTo(map);
-        var googleStreets = L.tileLayer('https://{{s}}.google.com/vt/lyrs=m&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}});
-        var googleHybrid = L.tileLayer('https://{{s}}.google.com/vt/lyrs=y&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}});
-        var googleSat = L.tileLayer('https://{{s}}.google.com/vt/lyrs=s&x={{x}}&y={{y}}&z={{z}}',{{maxZoom: 20, subdomains:['mt0','mt1','mt2','mt3']}});
-        
-        L.control.layers({{ "Dark Tracker (Default)": CartoDB_DarkMatter, "Standard Map": googleStreets, "Hybrid (Sat + Borders)": googleHybrid, "Satellite": googleSat }}, {{}}).addTo(map);
+        const rawHistory = JSON.parse(document.getElementById("history-data").textContent || "[]");
 
-        var firLayer = L.geoJSON(null, {{
-            pane: 'firPane',
-            style: function(feature) {{
-                var p = feature.properties;
-                var isIran = (p.id === "OIIX" || (p.FIRname && p.FIRname.indexOf("Tehran") !== -1));
-                return {{ color: isIran ? "#0055ff" : "#00ff00", weight: 2, fillOpacity: isIran ? 0.15 : 0.0 }};
-            }}
-        }}).addTo(map);
-        fetch('https://raw.githubusercontent.com/vatsimnetwork/vatspy-data-project/master/Boundaries.geojson').then(r => r.json()).then(d => firLayer.addData(d));
+        const state = {
+            history: Array.isArray(rawHistory) ? rawHistory.filter(Boolean) : [],
+            snapshotIndex: 0,
+            selectedPlaneKey: null,
+            search: "",
+            airline: "",
+            country: "",
+            markers: new Map()
+        };
 
-        var planeLayerGroup = L.layerGroup().addTo(map);
-        
-        const bannerTehran = document.getElementById("banner-time-tehran");
-        const bannerLocal = document.getElementById("banner-time-local");
-        const countDisplay = document.getElementById("plane-count");
-        const airlineList = document.getElementById("airline-list");
-        const countryList = document.getElementById("country-list");
-        const loading = document.getElementById("loading");
-        const clearFilterBtn = document.getElementById("clear-filter-btn");
-        
-        const sidebarWrapper = document.getElementById("sidebar-wrapper");
-        const sidebarToggle = document.getElementById("sidebar-toggle");
-        
-        let activeFilter = null; 
+        const elements = {
+            searchInput: document.getElementById("searchInput"),
+            mobileSearchInput: document.getElementById("mobileSearchInput"),
+            airlineFilter: document.getElementById("airlineFilter"),
+            mobileAirlineFilter: document.getElementById("mobileAirlineFilter"),
+            countryFilter: document.getElementById("countryFilter"),
+            mobileCountryFilter: document.getElementById("mobileCountryFilter"),
+            resetFilters: document.getElementById("resetFilters"),
+            planeList: document.getElementById("planeList"),
+            mobilePlaneList: document.getElementById("mobilePlaneList"),
+            desktopStats: document.getElementById("desktopStats"),
+            mobileStats: document.getElementById("mobileStats"),
+            resultCount: document.getElementById("resultCount"),
+            snapshotSubtitle: document.getElementById("snapshotSubtitle"),
+            mobileSubtitle: document.getElementById("mobileSubtitle"),
+            snapshotSlider: document.getElementById("snapshotSlider"),
+            prevSnapshot: document.getElementById("prevSnapshot"),
+            nextSnapshot: document.getElementById("nextSnapshot"),
+            snapshotTimeChip: document.getElementById("snapshotTimeChip"),
+            timelineRangeLabel: document.getElementById("timelineRangeLabel"),
+            trafficPulse: document.getElementById("trafficPulse"),
+            trafficStatus: document.getElementById("trafficStatus"),
+            lastUpdateText: document.getElementById("lastUpdateText"),
+            mobileOpen: document.getElementById("mobileOpen"),
+            mobileClose: document.getElementById("mobileClose"),
+            mobileSheet: document.getElementById("mobileSheet")
+        };
 
-        if (window.innerWidth >= 768) {{ sidebarWrapper.classList.add("expanded"); sidebarToggle.innerText = "<<"; }}
-        sidebarToggle.onclick = function() {{
-            sidebarWrapper.classList.toggle("expanded");
-            sidebarToggle.innerText = sidebarWrapper.classList.contains("expanded") ? "<<" : ">>";
-        }};
-        
-        const timeShiftBtn = document.getElementById("time-shift-btn");
-        const timeDock = document.getElementById("time-dock");
-        const closeDockBtn = document.getElementById("close-dock-btn");
-        const hSelect = document.getElementById("hourSelect");
-        const mSelect = document.getElementById("minuteSelect");
-        const exactPicker = document.getElementById("exactTimePicker");
-        const modalSlider = document.getElementById("modalSlider");
-        const sliderTooltip = document.getElementById("slider-tooltip");
-        const playBtn = document.getElementById("playBtn");
-        const speedSelect = document.getElementById("speedSelect");
-        
-        const btnTzTehran = document.getElementById("btn-tz-tehran");
-        const btnTzLocal = document.getElementById("btn-tz-local");
-        let tzMode = "tehran";
+        state.history.sort((a, b) => Number(a.timestamp || 0) - Number(b.timestamp || 0));
+        state.snapshotIndex = Math.max(0, state.history.length - 1);
 
-        const tzParts = new Intl.DateTimeFormat('en-US', {{ timeZoneName: 'short' }}).formatToParts(new Date());
-        const tzPartObj = tzParts.find(p => p.type === 'timeZoneName');
-        const userTzShort = tzPartObj ? tzPartObj.value : Intl.DateTimeFormat().resolvedOptions().timeZone.split('/').pop().replace(/_/g, ' ');
-        btnTzLocal.innerText = userTzShort + " Time";
+        const map = L.map("map", {
+            zoomControl: true,
+            preferCanvas: true
+        }).setView([32.4, 53.7], 5);
 
-        btnTzTehran.onclick = () => {{ tzMode = "tehran"; btnTzTehran.classList.add("active"); btnTzLocal.classList.remove("active"); }};
-        btnTzLocal.onclick = () => {{ tzMode = "local"; btnTzLocal.classList.add("active"); btnTzTehran.classList.remove("active"); }};
-        
-        timeShiftBtn.onclick = function() {{ timeShiftBtn.style.display = "none"; timeDock.style.display = "block"; }}
-        closeDockBtn.onclick = function() {{ timeDock.style.display = "none"; timeShiftBtn.style.display = "block"; }}
-        
-        function getTwemojiUrl(iso) {{
-            if (!iso) return '';
-            const codePoints = [...iso.toUpperCase()].map(c => (c.codePointAt(0) + 127397).toString(16));
-            return `https://raw.githubusercontent.com/twitter/twemoji/master/assets/svg/${{codePoints.join('-')}}.svg`;
-        }}
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+            attribution: '&copy; OpenStreetMap &copy; CARTO',
+            subdomains: "abcd",
+            maxZoom: 20
+        }).addTo(map);
 
-        const countriesMap = {{
-            "united arab emirates": "AE", "qatar": "QA", "turkey": "TR", "saudi arabia": "SA", "kuwait": "KW", "oman": "OM",
-            "bahrain": "BH", "iraq": "IQ", "pakistan": "PK", "india": "IN", "afghanistan": "AF", "germany": "DE",
-            "france": "FR", "united kingdom": "GB", "russia": "RU", "russian federation": "RU", "china": "CN", "united states": "US", "switzerland": "CH",
-            "netherlands": "NL", "italy": "IT", "spain": "ES", "egypt": "EG", "jordan": "JO", "lebanon": "LB", "syria": "SY",
-            "belgium": "BE", "austria": "AT", "sweden": "SE", "norway": "NO", "denmark": "DK", "finland": "FI", "poland": "PL",
-            "greece": "GR", "ireland": "IE", "portugal": "PT", "canada": "CA", "australia": "AU", "japan": "JP", "south korea": "KR",
-            "singapore": "SG", "malaysia": "MY", "indonesia": "ID", "thailand": "TH", "vietnam": "VN", "philippines": "PH",
-            "azerbaijan": "AZ", "armenia": "AM", "georgia": "GE", "kazakhstan": "KZ", "uzbekistan": "UZ", "turkmenistan": "TM",
-            "tajikistan": "TM", "kyrgyzstan": "KG", "sri lanka": "LK", "bangladesh": "LK", "nepal": "NP", "maldives": "MV",
-            "yemen": "YE", "israel": "IL", "cyprus": "IL", "morocco": "MA", "algeria": "MA", "tunisia": "TN", "libya": "LY",
-            "sudan": "SD", "ethiopia": "SD", "kenya": "KE", "somalia": "SO", "djibouti": "SO", "eritrea": "DJ", "rwanda": "ER"
-        }};
+        const markerLayer = L.layerGroup().addTo(map);
+        const trackLayer = L.layerGroup().addTo(map);
 
-        function getFlagHTML(country) {{
-            const c = country.toLowerCase();
-            let iso = countriesMap[c];
-            if (c === "iran" || c.includes("iran")) iso = "IR";
-            if(iso) return `<img src="${{getTwemojiUrl(iso)}}" style="width:26px; height:auto; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">`;
-            return `<span style="font-size:22px; vertical-align:middle; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">🏳️</span>`;
-        }}
+        const iranBounds = L.latLngBounds(
+            L.latLng(24.0, 43.0),
+            L.latLng(40.5, 64.8)
+        );
 
-        function setFilter(type, value) {{
-            activeFilter = {{ type, value }};
-            renderPlanes(modalSlider.value);
-        }}
+        map.fitBounds(iranBounds, { padding: [40, 40], animate: false });
 
-        clearFilterBtn.onclick = function() {{
-            activeFilter = null;
-            renderPlanes(modalSlider.value);
-        }};
+        function safe(value, fallback = "Unknown") {
+            if (value === null || value === undefined) return fallback;
+            const text = String(value).trim();
+            if (!text || ["unknown", "unknown flight", "unknown type", "unknown reg", "unknown airline", "unknown location", "n/a", "none", "null"].includes(text.toLowerCase())) {
+                return fallback;
+            }
+            return text;
+        }
 
-        function renderPlanes(index) {{
-            planeLayerGroup.clearLayers();
-            const record = flightHistory[index];
-            
-            const dateUTC = new Date(record.timestamp * 1000);
-            const opts = {{ year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false }};
-            const localTimeStr = dateUTC.toLocaleString('en-US', opts);
-            const tehranTimeStr = dateUTC.toLocaleString('en-US', {{ ...opts, timeZone: 'Asia/Tehran' }});
+        function safeRaw(value) {
+            const text = safe(value, "");
+            return text === "Unknown" ? "" : text;
+        }
 
-            bannerTehran.innerText = tehranTimeStr + " Tehran Time";
-            bannerLocal.innerText = localTimeStr + " " + userTzShort;
-            
-            const airlines = {{}}; const countries = {{}};
-            let filteredCount = 0;
-            
-            record.planes.forEach(plane => {{
-                airlines[plane.airline] = (airlines[plane.airline] || 0) + 1;
-                countries[plane.country] = (countries[plane.country] || 0) + 1;
-                
-                if (activeFilter) {{
-                    if (activeFilter.type === 'country' && plane.country !== activeFilter.value) return;
-                    if (activeFilter.type === 'airline' && plane.airline !== activeFilter.value) return;
-                }}
-                
-                filteredCount++;
-                
-                let popupHTML = `<div class="fr24-popup"><div class="popup-header">${{getFlagHTML(plane.country)}}<div><div class="popup-callsign">${{plane.callsign}}</div><div class="popup-airline">${{plane.airline}}</div></div></div><div class="popup-grid"><div class="popup-stat"><label>Flight</label><span>${{plane.flight}}</span></div><div class="popup-stat"><label>Reg</label><span>${{plane.reg}}</span></div><div class="popup-stat"><label>Type</label><span>${{plane.type}}</span></div><div class="popup-stat"><label>Category</label><span>${{plane.category}}</span></div><div class="popup-stat"><label>Altitude</label><span>${{plane.alt}} ft</span></div><div class="popup-stat"><label>Speed</label><span>${{plane.speed}} kts</span></div><div class="popup-stat"><label>Track</label><span>${{plane.track}}°</span></div></div></div>`;
-                let marker = L.circleMarker([plane.lat, plane.lon], {{ color: '#ffcc00', radius: 6, weight: 2, fillOpacity: 0.8 }});
-                marker.bindPopup(popupHTML, {{minWidth: 320, maxWidth: 320, className: 'custom-popup-wrapper'}});
-                marker.bindTooltip(plane.callsign, {{direction: 'top', className: 'plane-tooltip', offset: [0, -10]}});
-                marker.addTo(planeLayerGroup);
-            }});
-            
-            if (activeFilter) {{
-                countDisplay.innerText = filteredCount + " / " + record.count;
-                clearFilterBtn.style.display = 'block';
-                clearFilterBtn.innerText = "✖ Clear Filter (" + activeFilter.value + ")";
-            }} else {{
-                countDisplay.innerText = record.count;
-                clearFilterBtn.style.display = 'none';
-            }}
-            
-            airlineList.innerHTML = "";
-            Object.entries(airlines).sort((a,b) => b[1] - a[1]).forEach(([airline, count]) => {{
-                if(airline && airline !== "Unknown Airline") {{
-                    let li = document.createElement("li");
-                    if (activeFilter && activeFilter.type === 'airline' && activeFilter.value === airline) li.classList.add('active-filter');
-                    li.innerHTML = `<div class="flex-left"><span>${{airline}}</span></div><div class="count-badge">${{count}}</div>`;
-                    li.onclick = () => setFilter('airline', airline);
-                    airlineList.appendChild(li);
-                }}
-            }});
-            
-            countryList.innerHTML = "";
-            Object.entries(countries).sort((a,b) => b[1] - a[1]).forEach(([country, count]) => {{
-                if(country && country !== "Unknown Location") {{
-                    let li = document.createElement("li");
-                    if (activeFilter && activeFilter.type === 'country' && activeFilter.value === country) li.classList.add('active-filter');
-                    li.innerHTML = `<div class="flex-left">${{getFlagHTML(country)}} <span>${{country}}</span></div><div class="count-badge">${{count}}</div>`;
-                    li.onclick = () => setFilter('country', country);
-                    countryList.appendChild(li);
-                }}
-            }});
-        }}
+        function numberOrNull(value) {
+            const n = Number(value);
+            return Number.isFinite(n) ? n : null;
+        }
 
-        let playInterval;
-        let isPlaying = false;
+        function fmtNumber(value, fallback = "Unknown") {
+            const n = numberOrNull(value);
+            if (n === null) return fallback;
+            return Math.round(n).toLocaleString("en-US");
+        }
 
-        function startPlayback() {{
-            if(playInterval) clearInterval(playInterval);
-            let speed = parseFloat(speedSelect.value);
-            let delay = 1000 / speed;
-            
-            playInterval = setInterval(() => {{
-                let val = parseInt(modalSlider.value) + 1;
-                if(val > parseInt(modalSlider.max)) val = parseInt(modalSlider.min);
-                modalSlider.value = val;
-                syncSelectsToIndex(val);
-                renderPlanes(val);
-                
-                let percent = modalSlider.max > 0 ? (val / modalSlider.max) * 100 : 0;
-                sliderTooltip.style.left = `calc(${{percent}}% + (${{10 - percent * 0.2}}px))`;
-            }}, delay);
-            playBtn.innerHTML = "⏸ Pause";
-            playBtn.classList.add("playing");
-            isPlaying = true;
-        }}
+        function parseUTC(value) {
+            if (!value) return null;
+            const clean = String(value).replace(" UTC", "Z").replace(" ", "T");
+            const d = new Date(clean);
+            return Number.isNaN(d.getTime()) ? null : d;
+        }
 
-        function stopPlayback() {{
-            clearInterval(playInterval);
-            playBtn.innerHTML = "▶ Play";
-            playBtn.classList.remove("playing");
-            isPlaying = false;
-        }}
+        function formatDateTime(value) {
+            const d = parseUTC(value);
+            if (!d) return "Unknown time";
+            return d.toLocaleString(undefined, {
+                year: "numeric",
+                month: "short",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+            });
+        }
 
-        playBtn.onclick = () => {{ if(isPlaying) stopPlayback(); else startPlayback(); }};
-        speedSelect.onchange = () => {{ if(isPlaying) startPlayback(); }};
+        function formatShortTime(value) {
+            const d = parseUTC(value);
+            if (!d) return "--";
+            return d.toLocaleString(undefined, {
+                month: "short",
+                day: "2-digit",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+            });
+        }
 
-        if (flightHistory.length > 0) {{
-            modalSlider.max = flightHistory.length - 1;
-            const timeMap = {{}};
-            const latestTime = flightHistory[flightHistory.length - 1].timestamp;
-            
-            const fmt = (d) => d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,'0') + "-" + String(d.getDate()).padStart(2,'0') + "T" + String(d.getHours()).padStart(2,'0') + ":" + String(d.getMinutes()).padStart(2,'0');
-            exactPicker.min = fmt(new Date(flightHistory[0].timestamp * 1000));
-            exactPicker.max = fmt(new Date(latestTime * 1000));
+        function planeKey(plane) {
+            const reg = safeRaw(plane.reg);
+            if (reg) return "REG:" + reg.toUpperCase();
 
-            flightHistory.forEach((record, index) => {{
-                let diffSecs = latestTime - record.timestamp;
-                let h = Math.floor(diffSecs / 3600);
-                let m = Math.floor((diffSecs % 3600) / 60);
-                if(!timeMap[h]) timeMap[h] = [];
-                timeMap[h].push({{m: m, index: index}});
-            }});
-            
-            Object.keys(timeMap).sort((a,b) => a-b).forEach(h => {{
-                let opt = document.createElement("option"); opt.value = h; opt.innerText = h == 0 ? "Under 1 hour ago" : h + " hours ago"; hSelect.appendChild(opt);
-            }});
-            
-            function syncSelectsToIndex(idx) {{
-                let record = flightHistory[idx];
-                let diffSecs = latestTime - record.timestamp;
-                let h = Math.floor(diffSecs / 3600);
-                hSelect.value = h;
-                mSelect.innerHTML = "";
-                timeMap[h].sort((a,b) => a.m - b.m).forEach(item => {{
-                    let opt = document.createElement("option"); opt.value = item.index; opt.innerText = item.m + " minutes ago"; mSelect.appendChild(opt);
-                }});
-                mSelect.value = idx;
-                let mVal = Math.floor((diffSecs % 3600) / 60);
-                sliderTooltip.innerText = h + "h " + mVal + "m ago";
-                
-                if(tzMode === "local") {{
-                    exactPicker.value = fmt(new Date(record.timestamp * 1000));
-                }} else {{
-                    let d = new Date((record.timestamp + (3.5 * 3600)) * 1000);
-                    exactPicker.value = fmt(d);
-                }}
-            }}
+            const id = safeRaw(plane.id);
+            if (id) return "ID:" + id;
 
-            hSelect.addEventListener('change', function() {{
-                mSelect.innerHTML = "";
-                timeMap[this.value].sort((a,b) => a.m - b.m).forEach(item => {{ let opt = document.createElement("option"); opt.value = item.index; opt.innerText = item.m + " minutes ago"; mSelect.appendChild(opt); }});
-                let targetIdx = mSelect.options[0].value;
-                modalSlider.value = targetIdx;
-                syncSelectsToIndex(targetIdx);
-                renderPlanes(targetIdx);
-            }});
+            const callsign = safeRaw(plane.callsign);
+            const type = safeRaw(plane.type);
+            return "FALLBACK:" + callsign + "|" + type + "|" + safeRaw(plane.lat) + "|" + safeRaw(plane.lon);
+        }
 
-            mSelect.addEventListener('change', function() {{ modalSlider.value = this.value; syncSelectsToIndex(this.value); renderPlanes(this.value); }});
+        function getRoute(plane) {
+            const route = plane.route || {};
+            const dep = safeRaw(plane.departure) || safeRaw(plane.origin) || safeRaw(plane.from) || safeRaw(route.departure) || safeRaw(route.origin);
+            const dst = safeRaw(plane.destination) || safeRaw(plane.dest) || safeRaw(plane.to) || safeRaw(route.destination) || safeRaw(route.dest);
+            return {
+                departure: dep || "Not available",
+                destination: dst || "Not available"
+            };
+        }
 
-            exactPicker.addEventListener('change', (e) => {{
-                if(!e.target.value) return;
-                let selectedUnix = 0;
-                if(tzMode === "local") {{
-                    selectedUnix = new Date(e.target.value).getTime() / 1000;
-                }} else {{
-                    let d = new Date(e.target.value + "Z");
-                    selectedUnix = (d.getTime() / 1000) - (3.5 * 3600);
-                }}
-                
-                let closestIdx = 0;
-                let minDiff = Infinity;
-                flightHistory.forEach((record, idx) => {{
-                    let diff = Math.abs(record.timestamp - selectedUnix);
-                    if(diff < minDiff) {{ minDiff = diff; closestIdx = idx; }}
-                }});
-                modalSlider.value = closestIdx;
-                syncSelectsToIndex(closestIdx);
-                renderPlanes(closestIdx);
-            }});
+        function getCurrentSnapshot() {
+            return state.history[state.snapshotIndex] || { planes: [], count: 0, time_utc: "" };
+        }
 
-            modalSlider.addEventListener("input", function() {{
-                sliderTooltip.style.display = "block";
-                const val = this.value, min = this.min ? this.min : 0, max = this.max ? this.max : 100;
-                let newVal = max > min ? Number(((val - min) * 100) / (max - min)) : 0;
-                sliderTooltip.style.left = `calc(${{newVal}}% + (${{10 - newVal * 0.2}}px))`;
-                syncSelectsToIndex(this.value);
-                renderPlanes(this.value);
-            }});
-            
-            modalSlider.addEventListener("change", function() {{ sliderTooltip.style.display = "none"; renderPlanes(this.value); }});
-            
-            if(hSelect.options.length > 0) {{ let lastIdx = flightHistory.length - 1; modalSlider.value = lastIdx; syncSelectsToIndex(lastIdx); renderPlanes(lastIdx); }}
-        }} else {{ bannerTehran.innerText = "No temporal data available."; loading.style.display = "none"; }}
+        function getCurrentPlanes() {
+            const snapshot = getCurrentSnapshot();
+            return Array.isArray(snapshot.planes) ? snapshot.planes.filter(p => p && numberOrNull(p.lat) !== null && numberOrNull(p.lon) !== null) : [];
+        }
 
-        window.onload = () => {{ setTimeout(() => {{ loading.style.opacity = "0"; setTimeout(() => {{ loading.style.display = "none"; }}, 300); }}, 500); }};
+        function buildUniqueSeen() {
+            const seen = new Set();
+            for (const snapshot of state.history) {
+                const planes = Array.isArray(snapshot.planes) ? snapshot.planes : [];
+                for (const plane of planes) {
+                    seen.add(planeKey(plane));
+                }
+            }
+            return seen.size;
+        }
+
+        function averageAltitude(planes) {
+            const values = planes.map(p => numberOrNull(p.alt)).filter(v => v !== null);
+            if (!values.length) return "0";
+            return fmtNumber(values.reduce((a, b) => a + b, 0) / values.length);
+        }
+
+        function fastestSpeed(planes) {
+            const values = planes.map(p => numberOrNull(p.speed)).filter(v => v !== null);
+            if (!values.length) return "0";
+            return fmtNumber(Math.max(...values));
+        }
+
+        function filterPlanes(planes) {
+            const q = state.search.trim().toLowerCase();
+            return planes.filter(plane => {
+                const haystack = [
+                    plane.callsign,
+                    plane.flight,
+                    plane.type,
+                    plane.reg,
+                    plane.airline,
+                    plane.country,
+                    plane.id,
+                    getRoute(plane).departure,
+                    getRoute(plane).destination
+                ].map(v => safe(v, "")).join(" ").toLowerCase();
+
+                const matchesSearch = !q || haystack.includes(q);
+                const matchesAirline = !state.airline || safe(plane.airline, "") === state.airline;
+                const matchesCountry = !state.country || safe(plane.country, "") === state.country;
+
+                return matchesSearch && matchesAirline && matchesCountry;
+            });
+        }
+
+        function uniqueOptions(field) {
+            const values = new Set();
+            for (const snapshot of state.history) {
+                const planes = Array.isArray(snapshot.planes) ? snapshot.planes : [];
+                for (const plane of planes) {
+                    const v = safeRaw(plane[field]);
+                    if (v) values.add(v);
+                }
+            }
+            return [...values].sort((a, b) => a.localeCompare(b));
+        }
+
+        function fillSelect(select, values, label) {
+            select.innerHTML = "";
+            const defaultOption = document.createElement("option");
+            defaultOption.value = "";
+            defaultOption.textContent = label;
+            select.appendChild(defaultOption);
+
+            for (const value of values) {
+                const option = document.createElement("option");
+                option.value = value;
+                option.textContent = value;
+                select.appendChild(option);
+            }
+        }
+
+        function syncFiltersToUI() {
+            elements.searchInput.value = state.search;
+            elements.mobileSearchInput.value = state.search;
+            elements.airlineFilter.value = state.airline;
+            elements.mobileAirlineFilter.value = state.airline;
+            elements.countryFilter.value = state.country;
+            elements.mobileCountryFilter.value = state.country;
+        }
+
+        function setFiltersFromUI(source) {
+            if (source === "mobile") {
+                state.search = elements.mobileSearchInput.value;
+                state.airline = elements.mobileAirlineFilter.value;
+                state.country = elements.mobileCountryFilter.value;
+            } else {
+                state.search = elements.searchInput.value;
+                state.airline = elements.airlineFilter.value;
+                state.country = elements.countryFilter.value;
+            }
+            syncFiltersToUI();
+            render();
+        }
+
+        function statTile(icon, value, label, extraClass = "") {
+            return `
+                <div class="stat-tile ${extraClass}">
+                    <div class="stat-icon"><i class="${icon}"></i></div>
+                    <div class="stat-value">${value}</div>
+                    <div class="stat-label">${label}</div>
+                </div>
+            `;
+        }
+
+        function renderStats(planes) {
+            const snapshot = getCurrentSnapshot();
+            const html = [
+                statTile("fa-solid fa-plane", planes.length, "Aircraft now", "green"),
+                statTile("fa-solid fa-fingerprint", buildUniqueSeen(), "Unique in history", "gold"),
+                statTile("fa-solid fa-gauge-high", fastestSpeed(planes), "Top speed kt", "orange"),
+                statTile("fa-solid fa-arrow-up-long", averageAltitude(planes), "Avg altitude ft")
+            ].join("");
+
+            elements.desktopStats.innerHTML = html;
+            elements.mobileStats.innerHTML = html;
+
+            const hasTraffic = planes.length > 0;
+            elements.trafficPulse.classList.toggle("no-traffic", !hasTraffic);
+            elements.trafficStatus.textContent = hasTraffic ? "Traffic detected" : "No aircraft visible";
+            elements.lastUpdateText.textContent = formatShortTime(snapshot.time_utc);
+        }
+
+        function popupHTML(plane) {
+            const route = getRoute(plane);
+            return `
+                <div class="popup-title">
+                    <i class="fa-solid fa-plane-up"></i>
+                    <span>${safe(plane.callsign, "No callsign")}</span>
+                </div>
+                <div class="popup-grid">
+                    <b>Flight</b><span>${safe(plane.flight)}</span>
+                    <b>Airline</b><span>${safe(plane.airline)}</span>
+                    <b>Country</b><span>${safe(plane.country)}</span>
+                    <b>Reg / Type</b><span>${safe(plane.reg)} / ${safe(plane.type)}</span>
+                    <b>Route</b><span>${route.departure} → ${route.destination}</span>
+                    <b>Altitude</b><span>${fmtNumber(plane.alt)} ft</span>
+                    <b>Speed</b><span>${fmtNumber(plane.speed)} kt</span>
+                    <b>Track</b><span>${fmtNumber(plane.track)}°</span>
+                </div>
+            `;
+        }
+
+        function markerIcon(plane, selected) {
+            const heading = numberOrNull(plane.track) || 0;
+            return L.divIcon({
+                className: `plane-marker ${selected ? "selected" : ""}`,
+                html: `<div class="plane-marker-inner" style="--heading:${heading}deg"><i class="fa-solid fa-plane"></i></div>`,
+                iconSize: [34, 34],
+                iconAnchor: [17, 17]
+            });
+        }
+
+        function drawTrackForPlane(key) {
+            trackLayer.clearLayers();
+            if (!key) return;
+
+            const points = [];
+            for (const snapshot of state.history) {
+                const planes = Array.isArray(snapshot.planes) ? snapshot.planes : [];
+                const plane = planes.find(p => planeKey(p) === key);
+                if (!plane) continue;
+                const lat = numberOrNull(plane.lat);
+                const lon = numberOrNull(plane.lon);
+                if (lat !== null && lon !== null) points.push([lat, lon]);
+            }
+
+            if (points.length >= 2) {
+                L.polyline(points, {
+                    color: "#ffd166",
+                    weight: 3,
+                    opacity: 0.86,
+                    lineCap: "round",
+                    lineJoin: "round"
+                }).addTo(trackLayer);
+            }
+        }
+
+        function renderMarkers(planes) {
+            markerLayer.clearLayers();
+            state.markers.clear();
+
+            const bounds = [];
+
+            for (const plane of planes) {
+                const lat = numberOrNull(plane.lat);
+                const lon = numberOrNull(plane.lon);
+                if (lat === null || lon === null) continue;
+
+                const key = planeKey(plane);
+                const marker = L.marker([lat, lon], {
+                    icon: markerIcon(plane, key === state.selectedPlaneKey),
+                    riseOnHover: true
+                });
+
+                marker.bindPopup(popupHTML(plane), {
+                    closeButton: true,
+                    autoPan: true,
+                    maxWidth: 320
+                });
+
+                marker.on("click", () => {
+                    state.selectedPlaneKey = key;
+                    drawTrackForPlane(key);
+                    render();
+                    marker.openPopup();
+                });
+
+                marker.addTo(markerLayer);
+                state.markers.set(key, marker);
+                bounds.push([lat, lon]);
+            }
+
+            if (state.selectedPlaneKey) {
+                drawTrackForPlane(state.selectedPlaneKey);
+            } else {
+                trackLayer.clearLayers();
+            }
+
+            if (bounds.length && bounds.length < 8) {
+                map.fitBounds(bounds, {
+                    paddingTopLeft: [460, 120],
+                    paddingBottomRight: [70, 110],
+                    maxZoom: 7,
+                    animate: true
+                });
+            } else if (bounds.length >= 8) {
+                map.fitBounds(bounds, {
+                    paddingTopLeft: [460, 120],
+                    paddingBottomRight: [70, 110],
+                    maxZoom: 6,
+                    animate: true
+                });
+            }
+        }
+
+        function planeCardHTML(plane, active) {
+            const route = getRoute(plane);
+            return `
+                <article class="plane-card ${active ? "active" : ""}" data-plane-key="${planeKey(plane)}">
+                    <div class="plane-card-main">
+                        <div class="plane-title">
+                            <strong>${safe(plane.callsign, "No callsign")} · ${safe(plane.reg, "No reg")}</strong>
+                            <span>${safe(plane.airline)} · ${safe(plane.country)}</span>
+                        </div>
+                        <div class="plane-badge">${safe(plane.type, "TYPE")}</div>
+                    </div>
+
+                    <div class="plane-meta">
+                        <div class="meta-item">
+                            <small>Flight</small>
+                            <span>${safe(plane.flight)}</span>
+                        </div>
+                        <div class="meta-item">
+                            <small>Altitude</small>
+                            <span>${fmtNumber(plane.alt)} ft</span>
+                        </div>
+                        <div class="meta-item">
+                            <small>Speed</small>
+                            <span>${fmtNumber(plane.speed)} kt</span>
+                        </div>
+                        <div class="meta-item">
+                            <small>Track</small>
+                            <span>${fmtNumber(plane.track)}°</span>
+                        </div>
+                        <div class="meta-item">
+                            <small>From</small>
+                            <span>${route.departure}</span>
+                        </div>
+                        <div class="meta-item">
+                            <small>To</small>
+                            <span>${route.destination}</span>
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        function bindPlaneCards(container) {
+            container.querySelectorAll(".plane-card").forEach(card => {
+                card.addEventListener("click", () => {
+                    const key = card.getAttribute("data-plane-key");
+                    state.selectedPlaneKey = key;
+                    drawTrackForPlane(key);
+                    render();
+
+                    const marker = state.markers.get(key);
+                    if (marker) {
+                        map.setView(marker.getLatLng(), Math.max(map.getZoom(), 7), { animate: true });
+                        marker.openPopup();
+                    }
+
+                    if (window.innerWidth <= 760) {
+                        elements.mobileSheet.classList.remove("open");
+                    }
+                });
+            });
+        }
+
+        function renderLists(planes) {
+            const filtered = filterPlanes(planes);
+            elements.resultCount.textContent = filtered.length;
+
+            if (!filtered.length) {
+                const empty = `
+                    <div class="empty-state">
+                        <div>
+                            <i class="fa-regular fa-radar"></i>
+                            <strong>No aircraft match this view</strong>
+                            <span>Try clearing filters or move the timeline to another snapshot.</span>
+                        </div>
+                    </div>
+                `;
+                elements.planeList.innerHTML = empty;
+                elements.mobilePlaneList.innerHTML = empty;
+                return;
+            }
+
+            const cards = filtered.map(plane => planeCardHTML(plane, planeKey(plane) === state.selectedPlaneKey)).join("");
+            elements.planeList.innerHTML = cards;
+            elements.mobilePlaneList.innerHTML = cards;
+            bindPlaneCards(elements.planeList);
+            bindPlaneCards(elements.mobilePlaneList);
+        }
+
+        function renderTimeline() {
+            const snapshot = getCurrentSnapshot();
+            elements.snapshotSlider.max = Math.max(0, state.history.length - 1);
+            elements.snapshotSlider.value = state.snapshotIndex;
+            elements.snapshotTimeChip.textContent = formatShortTime(snapshot.time_utc);
+            elements.timelineRangeLabel.textContent = state.history.length > 1
+                ? `${state.snapshotIndex + 1} / ${state.history.length}`
+                : "Latest snapshot";
+
+            const subtitle = `${formatDateTime(snapshot.time_utc)} · ${getCurrentPlanes().length} aircraft`;
+            elements.snapshotSubtitle.textContent = subtitle;
+            elements.mobileSubtitle.textContent = subtitle;
+        }
+
+        function render() {
+            const planes = getCurrentPlanes();
+
+            if (state.selectedPlaneKey && !planes.some(p => planeKey(p) === state.selectedPlaneKey)) {
+                state.selectedPlaneKey = null;
+                trackLayer.clearLayers();
+            }
+
+            renderStats(planes);
+            renderMarkers(filterPlanes(planes));
+            renderLists(planes);
+            renderTimeline();
+            syncFiltersToUI();
+        }
+
+        function initControls() {
+            fillSelect(elements.airlineFilter, uniqueOptions("airline"), "All airlines");
+            fillSelect(elements.mobileAirlineFilter, uniqueOptions("airline"), "All airlines");
+            fillSelect(elements.countryFilter, uniqueOptions("country"), "All countries");
+            fillSelect(elements.mobileCountryFilter, uniqueOptions("country"), "All countries");
+
+            elements.searchInput.addEventListener("input", () => setFiltersFromUI("desktop"));
+            elements.mobileSearchInput.addEventListener("input", () => setFiltersFromUI("mobile"));
+            elements.airlineFilter.addEventListener("change", () => setFiltersFromUI("desktop"));
+            elements.mobileAirlineFilter.addEventListener("change", () => setFiltersFromUI("mobile"));
+            elements.countryFilter.addEventListener("change", () => setFiltersFromUI("desktop"));
+            elements.mobileCountryFilter.addEventListener("change", () => setFiltersFromUI("mobile"));
+
+            elements.resetFilters.addEventListener("click", () => {
+                state.search = "";
+                state.airline = "";
+                state.country = "";
+                state.selectedPlaneKey = null;
+                trackLayer.clearLayers();
+                render();
+            });
+
+            elements.snapshotSlider.addEventListener("input", () => {
+                state.snapshotIndex = Number(elements.snapshotSlider.value);
+                state.selectedPlaneKey = null;
+                trackLayer.clearLayers();
+                render();
+            });
+
+            elements.prevSnapshot.addEventListener("click", () => {
+                state.snapshotIndex = Math.max(0, state.snapshotIndex - 1);
+                state.selectedPlaneKey = null;
+                trackLayer.clearLayers();
+                render();
+            });
+
+            elements.nextSnapshot.addEventListener("click", () => {
+                state.snapshotIndex = Math.min(state.history.length - 1, state.snapshotIndex + 1);
+                state.selectedPlaneKey = null;
+                trackLayer.clearLayers();
+                render();
+            });
+
+            elements.mobileOpen.addEventListener("click", () => {
+                elements.mobileSheet.classList.add("open");
+            });
+
+            elements.mobileClose.addEventListener("click", () => {
+                elements.mobileSheet.classList.remove("open");
+            });
+
+            elements.mobileSheet.addEventListener("click", (event) => {
+                if (event.target.classList.contains("sheet-handle")) {
+                    elements.mobileSheet.classList.toggle("open");
+                }
+            });
+
+            window.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
+                    state.selectedPlaneKey = null;
+                    elements.mobileSheet.classList.remove("open");
+                    trackLayer.clearLayers();
+                    render();
+                }
+            });
+        }
+
+        function initEmptyStateIfNeeded() {
+            if (state.history.length) return;
+
+            elements.desktopStats.innerHTML = [
+                statTile("fa-solid fa-plane", "0", "Aircraft now", "green"),
+                statTile("fa-solid fa-fingerprint", "0", "Unique in history", "gold"),
+                statTile("fa-solid fa-gauge-high", "0", "Top speed kt", "orange"),
+                statTile("fa-solid fa-arrow-up-long", "0", "Avg altitude ft")
+            ].join("");
+            elements.mobileStats.innerHTML = elements.desktopStats.innerHTML;
+
+            const empty = `
+                <div class="empty-state">
+                    <div>
+                        <i class="fa-solid fa-satellite"></i>
+                        <strong>No aircraft history available</strong>
+                        <span>The dashboard will populate after the next successful bot run.</span>
+                    </div>
+                </div>
+            `;
+            elements.planeList.innerHTML = empty;
+            elements.mobilePlaneList.innerHTML = empty;
+            elements.resultCount.textContent = "0";
+            elements.snapshotSubtitle.textContent = "No data loaded";
+            elements.mobileSubtitle.textContent = "No data loaded";
+            elements.lastUpdateText.textContent = "No data";
+            elements.trafficStatus.textContent = "Waiting for data";
+            elements.trafficPulse.classList.add("no-traffic");
+        }
+
+        initControls();
+
+        if (state.history.length) {
+            render();
+        } else {
+            initEmptyStateIfNeeded();
+        }
+
+        setTimeout(() => {
+            map.invalidateSize();
+        }, 250);
     </script>
 </body>
-</html>"""
-    with open("planes.html", "w", encoding="utf-8") as f: f.write(html)
+</html>
+"""
+    html = html.replace("__PLANE_HISTORY_JSON__", json_data_string)
+    with open("planes.html", "w", encoding="utf-8") as f:
+        f.write(html)
+
 
 def format_telegram_message(notam_id, notam_type, valid_from_str, valid_to_str, subject_text, condition_text, traffic_list, map_links, pyramid_levels, ai_explanation, raw_text, is_update=False):
     importance_str = "⏳ Pending"
