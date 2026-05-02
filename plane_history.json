@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1775908824,
-    "time_utc": "2026-04-11 12:00:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775909123,
     "time_utc": "2026-04-11 12:05:23 UTC",
     "count": 0,
@@ -63265,5 +63259,27 @@
     "time_utc": "2026-05-02 12:00:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1777723519,
+    "time_utc": "2026-05-02 12:05:19 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f80bea4",
+        "callsign": "IZG3027",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 97,
+        "speed": 510,
+        "lat": 38.01,
+        "lon": 44.361,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
