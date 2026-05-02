@@ -62084,5 +62084,42 @@
     "time_utc": "2026-05-02 06:45:20 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1777704617,
+    "time_utc": "2026-05-02 06:50:17 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f80163b",
+        "callsign": "IRB9780",
+        "flight": "B99780",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 24575,
+        "track": 181,
+        "speed": 458,
+        "lat": 35.398,
+        "lon": 59.512,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f801b3b",
+        "callsign": "QSM1217",
+        "flight": "QB1217",
+        "type": "F100",
+        "reg": "EP-FQI",
+        "category": "Commercial",
+        "alt": 4525,
+        "track": 27,
+        "speed": 220,
+        "lat": 30.493,
+        "lon": 48.292,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
