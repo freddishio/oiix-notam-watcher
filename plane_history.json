@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775990125,
-    "time_utc": "2026-04-12 10:35:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775990423,
-    "time_utc": "2026-04-12 10:40:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775990722,
     "time_utc": "2026-04-12 10:45:22 UTC",
     "count": 0,
@@ -66227,6 +66215,43 @@
         "speed": 292,
         "lat": 30.677,
         "lon": 48.389,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777804827,
+    "time_utc": "2026-05-03 10:40:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f8417fb",
+        "callsign": "MRJ4804",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-SIG",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 114,
+        "speed": 290,
+        "lat": 37.593,
+        "lon": 45.512,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f84551e",
+        "callsign": "KRU2689",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-NFA",
+        "category": "Commercial",
+        "alt": 16075,
+        "track": 25,
+        "speed": 337,
+        "lat": 31.082,
+        "lon": 48.615,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
