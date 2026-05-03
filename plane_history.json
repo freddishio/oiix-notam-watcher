@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775979922,
-    "time_utc": "2026-04-12 07:45:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775980222,
-    "time_utc": "2026-04-12 07:50:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775980516,
     "time_utc": "2026-04-12 07:55:16 UTC",
     "count": 0,
@@ -65313,6 +65301,73 @@
         "speed": 491,
         "lat": 25.686,
         "lon": 60.455,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777794623,
+    "time_utc": "2026-05-03 07:50:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3f83ec4f",
+        "callsign": "IRM5060",
+        "flight": "W55060",
+        "type": "A346",
+        "reg": "EP-MMU",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 286,
+        "speed": 407,
+        "lat": 37.94,
+        "lon": 47.122,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f83f4db",
+        "callsign": "IRA3590",
+        "flight": "IR3590",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 187,
+        "speed": 499,
+        "lat": 34.758,
+        "lon": 59.438,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f83d8b9",
+        "callsign": "IRM107",
+        "flight": "W5107",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 27650,
+        "track": 131,
+        "speed": 532,
+        "lat": 35.316,
+        "lon": 60.688,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f83c6d5",
+        "callsign": "IRA3586",
+        "flight": "IR3586",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 218,
+        "speed": 452,
+        "lat": 25.12,
+        "lon": 60.124,
         "airline": "Iran Air",
         "country": "IRAN"
       }
