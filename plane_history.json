@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775987123,
-    "time_utc": "2026-04-12 09:45:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775987420,
-    "time_utc": "2026-04-12 09:50:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775987723,
     "time_utc": "2026-04-12 09:55:23 UTC",
     "count": 0,
@@ -65980,6 +65968,28 @@
         "speed": 415,
         "lat": 33.461,
         "lon": 59.266,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777801825,
+    "time_utc": "2026-05-03 09:50:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f841ef5",
+        "callsign": "IZG4125",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 6,
+        "speed": 410,
+        "lat": 34.031,
+        "lon": 59.342,
         "airline": "Zagros Airlines",
         "country": "IRAN"
       }
