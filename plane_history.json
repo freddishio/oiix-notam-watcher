@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776003020,
-    "time_utc": "2026-04-12 14:10:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776003322,
     "time_utc": "2026-04-12 14:15:22 UTC",
     "count": 0,
@@ -67073,5 +67067,27 @@
     "time_utc": "2026-05-03 14:05:28 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1777817429,
+    "time_utc": "2026-05-03 14:10:29 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f84e44d",
+        "callsign": "PRS5471",
+        "flight": "Unknown Flight",
+        "type": "CRJ2",
+        "reg": "EP-PRA",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 335,
+        "speed": 346,
+        "lat": 24.876,
+        "lon": 59.824,
+        "airline": "Pars Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
