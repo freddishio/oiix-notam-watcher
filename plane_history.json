@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1775964021,
-    "time_utc": "2026-04-12 03:20:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1775964317,
-    "time_utc": "2026-04-12 03:25:17 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1775964617,
     "time_utc": "2026-04-12 03:30:17 UTC",
     "count": 0,
@@ -64346,6 +64334,28 @@
         "speed": 413,
         "lat": 34.791,
         "lon": 59.447,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777778719,
+    "time_utc": "2026-05-03 03:25:19 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f82fa21",
+        "callsign": "IRA3577",
+        "flight": "IR3577",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 24100,
+        "track": 6,
+        "speed": 355,
+        "lat": 35.284,
+        "lon": 59.516,
         "airline": "Iran Air",
         "country": "IRAN"
       }
