@@ -71084,5 +71084,42 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1777888225,
+    "time_utc": "2026-05-04 09:50:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f87e2d9",
+        "callsign": "IRM077",
+        "flight": "W577",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 131,
+        "speed": 523,
+        "lat": 35.444,
+        "lon": 60.754,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f87f83f",
+        "callsign": "KRU2689",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-NFA",
+        "category": "Commercial",
+        "alt": 2675,
+        "track": 40,
+        "speed": 219,
+        "lat": 30.436,
+        "lon": 48.271,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
