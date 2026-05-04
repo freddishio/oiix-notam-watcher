@@ -69806,5 +69806,42 @@
     "time_utc": "2026-05-04 06:40:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1777877119,
+    "time_utc": "2026-05-04 06:45:19 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f876736",
+        "callsign": "IRB9746",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 27450,
+        "track": 308,
+        "speed": 423,
+        "lat": 38.696,
+        "lon": 44.568,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f878d86",
+        "callsign": "KRU2688",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-NFA",
+        "category": "Commercial",
+        "alt": 7800,
+        "track": 100,
+        "speed": 221,
+        "lat": 30.348,
+        "lon": 48.408,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
