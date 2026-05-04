@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776054316,
-    "time_utc": "2026-04-13 04:25:16 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776054622,
     "time_utc": "2026-04-13 04:30:22 UTC",
     "count": 0,
@@ -68711,6 +68705,73 @@
         "speed": 438,
         "lat": 27.842,
         "lon": 60.767,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777868719,
+    "time_utc": "2026-05-04 04:25:19 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3f873509",
+        "callsign": "IZG3026",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 303,
+        "speed": 404,
+        "lat": 37.716,
+        "lon": 47.667,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f873898",
+        "callsign": "IRB8008",
+        "flight": "B98008",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 294,
+        "speed": 405,
+        "lat": 36.468,
+        "lon": 49.226,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f86e1f6",
+        "callsign": "IRA3535",
+        "flight": "Unknown Flight",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 4,
+        "speed": 430,
+        "lat": 28.428,
+        "lon": 60.815,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f86ef48",
+        "callsign": "IRA3539",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 8,
+        "speed": 443,
+        "lat": 27.222,
+        "lon": 60.751,
         "airline": "Iran Air",
         "country": "IRAN"
       }
