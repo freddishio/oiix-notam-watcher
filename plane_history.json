@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776106227,
-    "time_utc": "2026-04-13 18:50:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776106523,
     "time_utc": "2026-04-13 18:55:23 UTC",
     "count": 0,
@@ -72598,6 +72592,58 @@
         "speed": 486,
         "lat": 25.514,
         "lon": 60.404,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1777920631,
+    "time_utc": "2026-05-04 18:50:31 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3f88f5b6",
+        "callsign": "IRA3541",
+        "flight": "IR3541",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 6,
+        "speed": 459,
+        "lat": 34.642,
+        "lon": 59.421,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f8948e7",
+        "callsign": "ETD7JD",
+        "flight": "EY301",
+        "type": "A321",
+        "reg": "A6-AEI",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 90,
+        "speed": 460,
+        "lat": 25.453,
+        "lon": 56.954,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3f897751",
+        "callsign": "IRA3554",
+        "flight": "IR3554",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 206,
+        "speed": 477,
+        "lat": 24.966,
+        "lon": 59.998,
         "airline": "Iran Air",
         "country": "IRAN"
       }
