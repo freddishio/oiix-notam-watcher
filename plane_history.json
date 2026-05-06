@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1776260426,
-    "time_utc": "2026-04-15 13:40:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1776260718,
-    "time_utc": "2026-04-15 13:45:18 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776261021,
     "time_utc": "2026-04-15 13:50:21 UTC",
     "count": 0,
@@ -79741,5 +79729,42 @@
     "time_utc": "2026-05-06 13:40:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778075132,
+    "time_utc": "2026-05-06 13:45:32 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f90487b",
+        "callsign": "SHI4367",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 33025,
+        "track": 26,
+        "speed": 460,
+        "lat": 34.713,
+        "lon": 58.709,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f908f58",
+        "callsign": "IRZ167",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 10550,
+        "track": 26,
+        "speed": 305,
+        "lat": 30.68,
+        "lon": 48.395,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
