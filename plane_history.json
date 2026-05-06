@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1776295529,
-    "time_utc": "2026-04-15 23:25:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1776295823,
-    "time_utc": "2026-04-15 23:30:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776296120,
     "time_utc": "2026-04-15 23:35:20 UTC",
     "count": 0,
@@ -80376,5 +80364,27 @@
     "time_utc": "2026-05-06 23:25:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778110225,
+    "time_utc": "2026-05-06 23:30:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f925c5c",
+        "callsign": "IRA3688",
+        "flight": "IR3688",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 24875,
+        "track": 184,
+        "speed": 436,
+        "lat": 35.388,
+        "lon": 59.52,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
