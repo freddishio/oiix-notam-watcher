@@ -2254,6 +2254,67 @@
     },
     "last_seen_utc": "2026-05-05 20:55:27 UTC"
   },
+  "OIIX A0912/26": {
+    "header": {
+      "id": "A0912/26",
+      "series": "A",
+      "number": "0912",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-06T08:45:00.000Z",
+      "validityEnd": "2026-09-04T09:00:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 3.1-8, AWY A647 BTN NAZAR AND RAGET CHANGED TO \r\nBIDIRECTIONAL AWY."
+    },
+    "last_seen_utc": "2026-05-06 08:51:25 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -2437,66 +2498,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0912/26": {
-    "header": {
-      "id": "A0912/26",
-      "series": "A",
-      "number": "0912",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARCH/IV/BO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARCH",
-        "entity": "AR",
-        "status": "CH",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Changes",
-        "modifier": "Changed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-06T08:45:00.000Z",
-      "validityEnd": "2026-09-04T09:00:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 3.1-8, AWY A647 BTN NAZAR AND RAGET CHANGED TO \r\nBIDIRECTIONAL AWY."
-    },
-    "last_seen_utc": "2026-05-06 08:51:25 UTC"
   }
 }
