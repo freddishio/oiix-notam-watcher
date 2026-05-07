@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776373520,
-    "time_utc": "2026-04-16 21:05:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776373818,
     "time_utc": "2026-04-16 21:10:18 UTC",
     "count": 0,
@@ -84526,5 +84520,42 @@
     "time_utc": "2026-05-07 21:00:37 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778187929,
+    "time_utc": "2026-05-07 21:05:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f9629e7",
+        "callsign": "FDB4DT",
+        "flight": "FZ337",
+        "type": "B38M",
+        "reg": "A6-FKO",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 270,
+        "speed": 1,
+        "lat": 27.111,
+        "lon": 56.016,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3f95b20c",
+        "callsign": "IRA3627",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 34025,
+        "track": 39,
+        "speed": 481,
+        "lat": 25.142,
+        "lon": 60.131,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
