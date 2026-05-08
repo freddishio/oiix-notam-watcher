@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776393318,
-    "time_utc": "2026-04-17 02:35:18 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776393622,
     "time_utc": "2026-04-17 02:40:22 UTC",
     "count": 0,
@@ -85112,5 +85106,27 @@
     "time_utc": "2026-05-08 02:30:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778207725,
+    "time_utc": "2026-05-08 02:35:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f96327c",
+        "callsign": "RCH421",
+        "flight": "Unknown Flight",
+        "type": "C17",
+        "reg": "05-5139",
+        "category": "Commercial",
+        "alt": 10075,
+        "track": 350,
+        "speed": 730,
+        "lat": 27.347,
+        "lon": 52.032,
+        "airline": "AMC",
+        "country": "United States"
+      }
+    ]
   }
 ]
