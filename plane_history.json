@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1776487521,
-    "time_utc": "2026-04-18 04:45:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1776487820,
-    "time_utc": "2026-04-18 04:50:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776488122,
     "time_utc": "2026-04-18 04:55:22 UTC",
     "count": 0,
@@ -89686,5 +89674,42 @@
     "time_utc": "2026-05-09 04:45:18 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778302224,
+    "time_utc": "2026-05-09 04:50:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f9ba57f",
+        "callsign": "IRM116",
+        "flight": "W5116",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 284,
+        "speed": 447,
+        "lat": 38.144,
+        "lon": 46.397,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f9b44a1",
+        "callsign": "IRA3513",
+        "flight": "IR3513",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 6,
+        "speed": 502,
+        "lat": 34.066,
+        "lon": 59.353,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
