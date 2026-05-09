@@ -90038,5 +90038,42 @@
     "time_utc": "2026-05-09 05:55:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778306420,
+    "time_utc": "2026-05-09 06:00:20 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3f9bcb4e",
+        "callsign": "IRB9710",
+        "flight": "B99710",
+        "type": "A306",
+        "reg": "EP-MDN",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 120,
+        "speed": 19,
+        "lat": 35.703,
+        "lon": 51.318,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3f9bd0a1",
+        "callsign": "TBN6216",
+        "flight": "Unknown Flight",
+        "type": "B734",
+        "reg": "EP-TBJ",
+        "category": "Commercial",
+        "alt": 28100,
+        "track": 61,
+        "speed": 498,
+        "lat": 31.695,
+        "lon": 49.516,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
