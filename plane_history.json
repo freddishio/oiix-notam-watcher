@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776544520,
-    "time_utc": "2026-04-18 20:35:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776544818,
     "time_utc": "2026-04-18 20:40:18 UTC",
     "count": 0,
@@ -92477,5 +92471,27 @@
     "time_utc": "2026-05-09 20:30:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778358932,
+    "time_utc": "2026-05-09 20:35:32 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3f9e5bb9",
+        "callsign": "FJL503",
+        "flight": "9P503",
+        "type": "A320",
+        "reg": "AP-BOQ",
+        "category": "Commercial",
+        "alt": 24325,
+        "track": 83,
+        "speed": 430,
+        "lat": 24.986,
+        "lon": 57.763,
+        "airline": "Fly Jinnah",
+        "country": "Pakistan"
+      }
+    ]
   }
 ]
