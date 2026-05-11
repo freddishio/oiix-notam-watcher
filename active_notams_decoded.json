@@ -2639,6 +2639,156 @@
     },
     "last_seen_utc": "2026-04-20 10:55:22 UTC"
   },
+  "OIIX A0931/26": {
+    "header": {
+      "id": "A0931/26",
+      "series": "A",
+      "number": "0931",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-14T11:30:00.000Z",
+      "validityEnd": "2026-07-20T14:30:00.000Z",
+      "elements": [
+        "EV SAT AND THU 1130-1430"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n352500N 0465100E\r\n352500N 0470000E\r\n351500N 0465100E\r\n352000N 0464500E\r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          35.416667,
+          46.85
+        ],
+        [
+          35.416667,
+          47
+        ],
+        [
+          35.25,
+          46.85
+        ],
+        [
+          35.333333,
+          46.75
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "18000FT AMSL"
+    },
+    "last_seen_utc": "2026-05-11 06:05:19 UTC"
+  },
+  "OIIX A0932/26": {
+    "header": {
+      "id": "A0932/26",
+      "series": "A",
+      "number": "0932",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-14T11:30:00.000Z",
+      "validityEnd": "2026-07-20T14:30:00.000Z",
+      "elements": [
+        "EV SAT AND THU 1130-1430"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A0931/26 ,\r\nDRG ACT MNM SAFE LVL ON \r\nAWY M434/Z740 BTN ASLAX AND NOLTO \r\nRASIED TO FL190."
+    },
+    "last_seen_utc": "2026-05-11 06:05:19 UTC"
+  },
   "OIIX B0210/26": {
     "header": {
       "id": "B0210/26",
@@ -2868,26 +3018,26 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A0931/26": {
+  "OIIX A0933/26": {
     "header": {
-      "id": "A0931/26",
+      "id": "A0933/26",
       "series": "A",
-      "number": "0931",
+      "number": "0933",
       "year": "26",
       "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
+      "line": "OIIX/QRDCA/IV/BO/W/000/180/",
       "location": "OIIX",
       "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
         "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
       },
       "traffic": [
         {
@@ -2921,101 +3071,19 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-06-14T11:30:00.000Z",
-      "validityEnd": "2026-07-20T14:30:00.000Z",
+      "activityStart": "2026-06-14T04:30:00.000Z",
+      "validityEnd": "2026-07-21T18:30:00.000Z",
       "elements": [
-        "EV SAT AND THU 1130-1430"
+        "0430-1830"
       ]
     },
     "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n352500N 0465100E\r\n352500N 0470000E\r\n351500N 0465100E\r\n352000N 0464500E\r\nTO THE POINT OF ORIGIN.",
-      "area": [
-        [
-          35.416667,
-          46.85
-        ],
-        [
-          35.416667,
-          47
-        ],
-        [
-          35.25,
-          46.85
-        ],
-        [
-          35.333333,
-          46.75
-        ]
-      ]
+      "text": "OID125 ACTIVATED, REF AIP PAGE ENR 5.1.3-12."
     },
     "limits": {
       "lower": "GND",
-      "upper": "18000FT AMSL"
+      "upper": "18000 FT AMSL"
     },
-    "last_seen_utc": "2026-05-11 06:05:19 UTC"
-  },
-  "OIIX A0932/26": {
-    "header": {
-      "id": "A0932/26",
-      "series": "A",
-      "number": "0932",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
-      "location": "OIIX",
-      "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "180"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-14T11:30:00.000Z",
-      "validityEnd": "2026-07-20T14:30:00.000Z",
-      "elements": [
-        "EV SAT AND THU 1130-1430"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM A0931/26 ,\r\nDRG ACT MNM SAFE LVL ON \r\nAWY M434/Z740 BTN ASLAX AND NOLTO \r\nRASIED TO FL190."
-    },
-    "last_seen_utc": "2026-05-11 06:05:19 UTC"
+    "last_seen_utc": "2026-05-11 06:10:25 UTC"
   }
 }
