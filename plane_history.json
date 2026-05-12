@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776798320,
-    "time_utc": "2026-04-21 19:05:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776798619,
     "time_utc": "2026-04-21 19:10:19 UTC",
     "count": 0,
@@ -102203,5 +102197,27 @@
     "time_utc": "2026-05-12 19:00:39 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778612725,
+    "time_utc": "2026-05-12 19:05:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fa96e95",
+        "callsign": "IRA3612",
+        "flight": "IR3612",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 188,
+        "speed": 454,
+        "lat": 26.666,
+        "lon": 60.614,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
