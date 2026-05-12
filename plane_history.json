@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1776768320,
-    "time_utc": "2026-04-21 10:45:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776768622,
     "time_utc": "2026-04-21 10:50:22 UTC",
     "count": 0,
@@ -100962,5 +100956,42 @@
     "time_utc": "2026-05-12 10:40:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778582841,
+    "time_utc": "2026-05-12 10:47:21 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fa7862e",
+        "callsign": "IRA718",
+        "flight": "IR718",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 41025,
+        "track": 113,
+        "speed": 496,
+        "lat": 38.773,
+        "lon": 44.858,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fa7b14a",
+        "callsign": "MRJ4802",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 125,
+        "speed": 444,
+        "lat": 38.695,
+        "lon": 44.975,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
