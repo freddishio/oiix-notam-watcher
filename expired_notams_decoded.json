@@ -1,4 +1,73 @@
 {
+  "OIIX A0671/26": {
+    "header": {
+      "id": "A0671/26",
+      "series": "A",
+      "number": "0671",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3627/25"
+    },
+    "qualification": {
+      "line": "OIIX/QNVAS/IV/BO/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "NVAS",
+        "entity": "NV",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Terminal and en-route Navigation Facilities",
+        "subject": "VOR",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-03-23T07:42:00.000Z",
+      "validityEnd": "2026-06-24T23:59:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "VOR ANK FREQ 112.700 MHZ U/S, \nAND SUBSEQUENTLY REQUIRED FLTCK."
+    },
+    "last_seen_utc": "2026/02/23 07:45:13",
+    "archived_utc": "2026-03-10 14:35:39 UTC"
+  },
   "OIIX A0798/26": {
     "header": {
       "id": "A0798/26",
@@ -5462,75 +5531,6 @@
       "upper": "9000 FT AMSL"
     },
     "last_seen_utc": "2026/02/20 04:55:03",
-    "archived_utc": "2026-03-10 14:35:39 UTC"
-  },
-  "OIIX A0671/26": {
-    "header": {
-      "id": "A0671/26",
-      "series": "A",
-      "number": "0671",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A3627/25"
-    },
-    "qualification": {
-      "line": "OIIX/QNVAS/IV/BO/AE/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "NVAS",
-        "entity": "NV",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Terminal and en-route Navigation Facilities",
-        "subject": "VOR",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-03-23T07:42:00.000Z",
-      "validityEnd": "2026-06-24T23:59:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "VOR ANK FREQ 112.700 MHZ U/S, \nAND SUBSEQUENTLY REQUIRED FLTCK."
-    },
-    "last_seen_utc": "2026/02/23 07:45:13",
     "archived_utc": "2026-03-10 14:35:39 UTC"
   },
   "OIIX A0712/26": {
