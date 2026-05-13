@@ -2932,6 +2932,70 @@
     },
     "last_seen_utc": "2026-05-11 06:05:19 UTC"
   },
+  "OIIX A0978/26": {
+    "header": {
+      "id": "A0978/26",
+      "series": "A",
+      "number": "0978",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-14T11:30:00.000Z",
+      "validityEnd": "2026-07-20T14:30:00.000Z",
+      "elements": [
+        "SAT THU 1130-1430"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A0931/26 ,\r\nMNM SAFE LVL ON \r\nAWY M434/Z740 BTN ASLAX AND NOLTO \r\nRAISED TO FL190."
+    },
+    "last_seen_utc": "2026-05-13 11:11:14 UTC"
+  },
   "OIIX B0210/26": {
     "header": {
       "id": "B0210/26",
@@ -3160,69 +3224,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0978/26": {
-    "header": {
-      "id": "A0978/26",
-      "series": "A",
-      "number": "0978",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARCH/IV/BO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARCH",
-        "entity": "AR",
-        "status": "CH",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Changes",
-        "modifier": "Changed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-14T11:30:00.000Z",
-      "validityEnd": "2026-07-20T14:30:00.000Z",
-      "elements": [
-        "SAT THU 1130-1430"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM A0931/26 ,\r\nMNM SAFE LVL ON \r\nAWY M434/Z740 BTN ASLAX AND NOLTO \r\nRAISED TO FL190."
-    },
-    "last_seen_utc": "2026-05-13 11:11:14 UTC"
   }
 }
