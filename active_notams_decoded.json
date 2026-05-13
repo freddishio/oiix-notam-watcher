@@ -2636,6 +2636,46 @@
     },
     "last_seen_utc": "2026-05-13 08:45:28 UTC"
   },
+  "OIIX A0974/26": {
+    "header": {
+      "id": "A0974/26",
+      "series": "A",
+      "number": "0974",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0895/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-13T08:40:00.000Z",
+      "validityEnd": "2026-09-03T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 2 INTL DEP AND ARR TOS WITHIN TEHRAN FIR, \nCHANGE AS FLW:\nFM OIIE/OIII TO OOMM FIR: \n- RELEVANT SID OBRIX DCT ROVAD G208/L125 DAR DCT SILKO DCT \n  NAGES R654 CBH W2 MESPO \nFM OOMM FIR TO OIIE/OIII: \n- MESPO Y12 BAM W139 DAR G208/L125 RADAL RELEVANT STAR \nFM ORBB FIR TO OIIE/OIII: \n- PAXAT B411 ILM G202 ALTET Z730 BUBAV DCT DAXIL B411 \n  SAV RELEVANT STAR \nFM OISS TO OOMM FIR: \n- RELEVANT SID NALBI G452 KER R654 CBH W2 MESPO \nFM OOMM FIR TO OISS: \n- MESPO Y12 BAM W139 ORDAD G452 NALBI RELEVANT STAR \nFM OISS TO ORBB FIR: \n- RELEVANT SID KAVOT R659 ISN G202 RAGET \nFM ORBB FIR TO OISS: \n- PAXAT B411 ILM G202 UKSIS L223 KIXOB W3 KISED RELEVANT STAR \nFM ORBB FIR TO OIMM: \n- PAXAT B411 ILM G202 ALTET Z730 BUBAV DCT DAXIL B411 \n  SAV G667 RUS R661 DHN B411 RIBUX RELEVANT STAR ."
+    },
+    "last_seen_utc": "2026-05-13 08:50:21 UTC"
+  },
   "OIIX A0792/26": {
     "header": {
       "id": "A0792/26",
@@ -3120,45 +3160,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0974/26": {
-    "header": {
-      "id": "A0974/26",
-      "series": "A",
-      "number": "0974",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0895/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-13T08:40:00.000Z",
-      "validityEnd": "2026-09-03T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 2 INTL DEP AND ARR TOS WITHIN TEHRAN FIR, \nCHANGE AS FLW:\nFM OIIE/OIII TO OOMM FIR: \n- RELEVANT SID OBRIX DCT ROVAD G208/L125 DAR DCT SILKO DCT \n  NAGES R654 CBH W2 MESPO \nFM OOMM FIR TO OIIE/OIII: \n- MESPO Y12 BAM W139 DAR G208/L125 RADAL RELEVANT STAR \nFM ORBB FIR TO OIIE/OIII: \n- PAXAT B411 ILM G202 ALTET Z730 BUBAV DCT DAXIL B411 \n  SAV RELEVANT STAR \nFM OISS TO OOMM FIR: \n- RELEVANT SID NALBI G452 KER R654 CBH W2 MESPO \nFM OOMM FIR TO OISS: \n- MESPO Y12 BAM W139 ORDAD G452 NALBI RELEVANT STAR \nFM OISS TO ORBB FIR: \n- RELEVANT SID KAVOT R659 ISN G202 RAGET \nFM ORBB FIR TO OISS: \n- PAXAT B411 ILM G202 UKSIS L223 KIXOB W3 KISED RELEVANT STAR \nFM ORBB FIR TO OIMM: \n- PAXAT B411 ILM G202 ALTET Z730 BUBAV DCT DAXIL B411 \n  SAV G667 RUS R661 DHN B411 RIBUX RELEVANT STAR ."
-    },
-    "last_seen_utc": "2026-05-13 08:50:21 UTC"
   }
 }
