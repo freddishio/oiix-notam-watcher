@@ -1984,28 +1984,6 @@
     },
     "last_seen_utc": "2026-05-11 07:40:22 UTC"
   },
-  "OIIX A0900/26": {
-    "header": {
-      "id": "A0900/26",
-      "series": "A",
-      "number": "0900",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0894/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX////E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-06-05T12:31:00.000Z",
-      "validityEnd": "2026-09-03T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX, \nPART 3 DOM FLT TOS, \nCHANGE AS FLW: \n- DOM FLT FM OIII/OIIE TO OIZH: \nRELEVANT SID OBRIX DCT ROVAD G208/L125 DAR DCT SILKO G452 \nITBIR RELEVANT STAR \n- DOM FLT  FM OIII/OIIE TO OIYY: \nRELEVANT SID OBRIX DCT ROVAD W32 BONOL RELEVANT STAR \n- DOM FLT FM OIII/OIIE TO OIKK: \nRELEVANT SID OBRIX DCT ROVAD W32 YZD R654/L124 ALMOB RELEVANT STAR \n- DOM FLT FM OICI TO OIII: \nRELEVANT SID ALTET G202 RASLA G667 SAV RELEVANT STAR \n- DOM FLT FM OIFM TO OISS: \nRELEVANT SID GESIP R659 KAVOT RELEVANT STAR \n- DOM FLT FM OIII TO OISS: \nRELEVANT SID ELUSI W13 PEKAM R654 ISN R659 KAVOT RELEVANT STAR \n- DOM FLT FM OIII TO OIMB: \nRELEVANT SID OBRIX DCT ROVAD W159 TULKU RELEVANT STAR \n- DOM FLT FM OIII TO OICC: \nRELEVANT SID PAVET A647 ASRIL RELEVANT STAR \n- DOM FLT FM OICC TO OIII: \nRELEVANT SID ASRIL A647 HAM DCT DAXIL B411 SAV RELEVANT STAR \n- DOM FLT FM OIMM TO OICC: \nRELEVANT SID ORDOB A647 ASRIL RELEVANT STAR \n- DOM FLT FM OICC TO OIMM: \nRELEVANT SID ASRIL A647 HAM DCT DAXIL B411 SAV G667 RUS R661 DHN \nB411 RIBUX RELEVANT STAR ."
-    },
-    "last_seen_utc": "2026-05-05 20:55:27 UTC"
-  },
   "OIIX A0912/26": {
     "header": {
       "id": "A0912/26",
@@ -3124,5 +3102,45 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A0973/26": {
+    "header": {
+      "id": "A0973/26",
+      "series": "A",
+      "number": "0973",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0900/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-13T08:30:00.000Z",
+      "validityEnd": "2026-09-03T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX, \nPART 3 DOM FLT TOS, \nCHANGE AS FLW: \nFM OIII/OIIE TO OIZH: \n- RELEVANT SID OBRIX DCT ROVAD G208/L125 DAR DCT SILKO G452 \n  ITBIR RELEVANT STAR \nFM OIII/OIIE TO OIYY: \n- RELEVANT SID OBRIX DCT ROVAD W32 BONOL RELEVANT STAR \nFM OIII/OIIE TO OIKK: \n- RELEVANT SID OBRIX DCT ROVAD W32 YZD R654/L124 ALMOB RELEVANT STAR \nFM OICI TO OIII: \n- RELEVANT SID ALTET G202 RASLA G667 SAV RELEVANT STAR \nFM OIFM TO OISS: \n- RELEVANT SID GESIP R659 KAVOT RELEVANT STAR \nFM OIII TO OISS: \n- RELEVANT SID ELUSI W13 PEKAM R654 ISN R659 KAVOT RELEVANT STAR  \nFM OIGG TO OISS: \n- RELEVANT SID DEDLA Z725 PAXID N72 SAV R654 ISN \n  R659 KAVOT RELEVANT STAR \nFM OIII TO OIMB: \n- RELEVANT SID OBRIX DCT ROVAD W159 TULKU RELEVANT STAR \nFM OIII TO OICC: \n- RELEVANT SID PAVET A647 ASRIL RELEVANT STAR \nFM OICC TO OIII/OIIE:  \n- RELEVANT SID BUBAV DCT DAXIL B411 SAV RELEVANT STAR \nFM OIMM TO OICC: \n- RELEVANT SID ORDOB A647 ASRIL RELEVANT STAR \nFM OICC TO OIMM: \n- RELEVANT SID BUBAV DCT DAXIL B411 SAV G667 RUS R661 DHN B411 \n  RIBUX RELEVANT STAR ."
+    },
+    "last_seen_utc": "2026-05-13 08:45:28 UTC"
   }
 }
