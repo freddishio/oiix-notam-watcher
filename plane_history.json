@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1776976825,
-    "time_utc": "2026-04-23 20:40:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1776977121,
-    "time_utc": "2026-04-23 20:45:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776977425,
     "time_utc": "2026-04-23 20:50:25 UTC",
     "count": 0,
@@ -106358,5 +106346,57 @@
     "time_utc": "2026-05-14 20:40:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778791532,
+    "time_utc": "2026-05-14 20:45:32 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3fb0eb49",
+        "callsign": "UAE373",
+        "flight": "EK373",
+        "type": "A388",
+        "reg": "A6-EUV",
+        "category": "Commercial",
+        "alt": 375,
+        "track": 134,
+        "speed": 310,
+        "lat": 29.283,
+        "lon": 52.025,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fb2313d",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46055",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 97,
+        "speed": 465,
+        "lat": 25.151,
+        "lon": 57.854,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3fb211e7",
+        "callsign": "IRA3638",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 188,
+        "speed": 464,
+        "lat": 27.016,
+        "lon": 60.703,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
