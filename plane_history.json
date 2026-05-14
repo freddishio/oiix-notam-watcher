@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1776975626,
-    "time_utc": "2026-04-23 20:20:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1776975923,
-    "time_utc": "2026-04-23 20:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1776976226,
     "time_utc": "2026-04-23 20:30:26 UTC",
     "count": 0,
@@ -106309,6 +106297,43 @@
         "lon": 46.636,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1778790327,
+    "time_utc": "2026-05-14 20:25:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fb0b2b3",
+        "callsign": "UAE2",
+        "flight": "EK2",
+        "type": "A388",
+        "reg": "A6-EUR",
+        "category": "Commercial",
+        "alt": 4950,
+        "track": 207,
+        "speed": 236,
+        "lat": 27.861,
+        "lon": 55.163,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fb0c444",
+        "callsign": "UAE65W",
+        "flight": "EK74",
+        "type": "A388",
+        "reg": "A6-EEA",
+        "category": "Commercial",
+        "alt": 375,
+        "track": 271,
+        "speed": 151,
+        "lat": 26.174,
+        "lon": 55.849,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
       }
     ]
   }
