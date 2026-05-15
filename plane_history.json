@@ -109281,5 +109281,42 @@
     "time_utc": "2026-05-15 14:35:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778856022,
+    "time_utc": "2026-05-15 14:40:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fb528e2",
+        "callsign": "AXV9921",
+        "flight": "AXV9221",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 30550,
+        "track": 50,
+        "speed": 476,
+        "lat": 33.467,
+        "lon": 46.258,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fb46612",
+        "callsign": "IRA3587",
+        "flight": "IR3587",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 1,
+        "speed": 481,
+        "lat": 27.342,
+        "lon": 60.838,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
