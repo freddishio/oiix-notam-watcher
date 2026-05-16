@@ -3079,6 +3079,27 @@
     },
     "last_seen_utc": "2026-05-09 09:35:21 UTC"
   },
+  "OIIX A0982/26": {
+    "header": {
+      "id": "A0982/26",
+      "series": "A",
+      "number": "0982",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QOAXX/A//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-11T00:00:00.000Z",
+      "validityEnd": "2026-07-24T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC \nEFFECTIVE DATE 11 JUN 2026."
+    },
+    "last_seen_utc": "2026-05-16 06:00:21 UTC"
+  },
   "KICZ A0016/20": {
     "header": {
       "id": "",
@@ -3224,26 +3245,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A0982/26": {
-    "header": {
-      "id": "A0982/26",
-      "series": "A",
-      "number": "0982",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QOAXX/A//000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-11T00:00:00.000Z",
-      "validityEnd": "2026-07-24T23:59:00.000Z"
-    },
-    "content": {
-      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC \nEFFECTIVE DATE 11 JUN 2026."
-    },
-    "last_seen_utc": "2026-05-16 06:00:21 UTC"
   }
 }
