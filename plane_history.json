@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777127420,
-    "time_utc": "2026-04-25 14:30:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777127722,
-    "time_utc": "2026-04-25 14:35:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777128017,
     "time_utc": "2026-04-25 14:40:17 UTC",
     "count": 0,
@@ -112640,6 +112628,43 @@
         "speed": 176,
         "lat": 30.218,
         "lon": 48.347,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1778942124,
+    "time_utc": "2026-05-16 14:35:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fb92e45",
+        "callsign": "AXV9213",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 46,
+        "speed": 532,
+        "lat": 33.773,
+        "lon": 47.324,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fb8cec1",
+        "callsign": "AXV7710",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 1000,
+        "track": 325,
+        "speed": 10,
+        "lat": 30.331,
+        "lon": 48.257,
         "airline": "Ava Air",
         "country": "IRAN"
       }
