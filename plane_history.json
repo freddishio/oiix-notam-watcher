@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777165224,
-    "time_utc": "2026-04-26 01:00:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777165521,
     "time_utc": "2026-04-26 01:05:21 UTC",
     "count": 0,
@@ -112685,5 +112679,27 @@
     "time_utc": "2026-05-17 00:55:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1778979625,
+    "time_utc": "2026-05-17 01:00:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fbaa2f9",
+        "callsign": "ABQ479",
+        "flight": "PA479",
+        "type": "A320",
+        "reg": "AP-BNV",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 57,
+        "speed": 490,
+        "lat": 24.73,
+        "lon": 60.981,
+        "airline": "AirBlue",
+        "country": "Pakistan"
+      }
+    ]
   }
 ]
