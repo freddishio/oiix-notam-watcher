@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777228224,
-    "time_utc": "2026-04-26 18:30:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777228528,
     "time_utc": "2026-04-26 18:35:28 UTC",
     "count": 0,
@@ -115376,5 +115370,27 @@
     "time_utc": "2026-05-17 18:30:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779042919,
+    "time_utc": "2026-05-17 18:35:19 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fbd87cb",
+        "callsign": "ETD888",
+        "flight": "EY888",
+        "type": "B78X",
+        "reg": "A6-BMI",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 58,
+        "speed": 580,
+        "lat": 24.792,
+        "lon": 60.453,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
