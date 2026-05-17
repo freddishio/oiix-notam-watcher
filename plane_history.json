@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777172719,
-    "time_utc": "2026-04-26 03:05:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777173017,
-    "time_utc": "2026-04-26 03:10:17 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777173323,
     "time_utc": "2026-04-26 03:15:23 UTC",
     "count": 0,
@@ -112798,6 +112786,28 @@
         "speed": 504,
         "lat": 28.649,
         "lon": 55.025,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1778987423,
+    "time_utc": "2026-05-17 03:10:23 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fba5a67",
+        "callsign": "UAE93P",
+        "flight": "EK76",
+        "type": "A388",
+        "reg": "A6-EOB",
+        "category": "Commercial",
+        "alt": 300,
+        "track": 165,
+        "speed": 503,
+        "lat": 27.976,
+        "lon": 55.067,
         "airline": "Emirates",
         "country": "United Arab Emirates"
       }
