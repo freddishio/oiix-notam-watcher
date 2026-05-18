@@ -844,69 +844,6 @@
     },
     "last_seen_utc": "2026-04-21 10:15:21 UTC"
   },
-  "OIIX B0194/26": {
-    "header": {
-      "id": "B0194/26",
-      "series": "B",
-      "number": "0194",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0191/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLV",
-        "entity": "AF",
-        "status": "LV",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
-      },
-      "traffic": [
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T10:16:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT \r\nTHOSE FLT ENGAGED IN HOSP, SAR, STATE AND MILITARY OPERATION, OTHER \r\nVFR FLT REQUIRE PRIOR PERMISSION FROM CIVIL AVIATION AUTHORITY. \r\nIFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT \r\nNEED TO BE CHANGED TO VFR DURING ARRIVAL AND DEPARTURE, \r\nARE NOT SUBJECT TO THIS LIMITATION."
-    },
-    "last_seen_utc": "2026-04-21 10:20:22 UTC"
-  },
   "OIIX A0802/26": {
     "header": {
       "id": "A0802/26",
@@ -2892,6 +2829,52 @@
     },
     "last_seen_utc": "2026-05-18 07:35:22 UTC"
   },
+  "OIIX A0996/26": {
+    "header": {
+      "id": "A0996/26",
+      "series": "A",
+      "number": "0996",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0947/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-18T13:20:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF TO NOTAM A0796/26, THE HOURS OF OPERATION OF ALL AIRPORTS\r\nIN THE EAST PART OF TEHRAN FIR ARE HJ, EXCEPT FOR:\r\nOIMM, OIMS, AND OIZH, OPERATING H24.\r\nOIII AND OIIE OPERATING FM 0100-1800 UTC.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\r\nSHALL BE REQUESTED FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-05-18 13:35:30 UTC"
+  },
   "OIIX B0210/26": {
     "header": {
       "id": "B0210/26",
@@ -3142,31 +3125,49 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A0996/26": {
+  "OIIX B0246/26": {
     "header": {
-      "id": "A0996/26",
-      "series": "A",
-      "number": "0996",
+      "id": "B0246/26",
+      "series": "B",
+      "number": "0246",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0947/26\r"
+      "idToReplace": "B0194/26\r"
     },
     "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
       "location": "OIIX",
       "code": {
-        "code": "AFXX",
+        "code": "AFLV",
         "entity": "AF",
-        "status": "XX",
+        "status": "LV",
         "area": "ATM",
         "subArea": "Airspace Organization",
         "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
       },
-      "traffic": [],
-      "purpose": [],
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
       "scope": [
         {
           "code": "E",
@@ -3179,13 +3180,12 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-06-18T13:20:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z",
-      "estimated": true
+      "activityStart": "2026-06-18T13:30:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
     },
     "content": {
-      "text": "REF TO NOTAM A0796/26, THE HOURS OF OPERATION OF ALL AIRPORTS\r\nIN THE EAST PART OF TEHRAN FIR ARE HJ, EXCEPT FOR:\r\nOIMM, OIMS, AND OIZH, OPERATING H24.\r\nOIII AND OIIE OPERATING FM 0100-1800 UTC.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\r\nSHALL BE REQUESTED FROM IRAN CAA."
+      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT:\r\nOIMG AND OIMS WITHIN ATZ, AND THOSE FLT ENGAGED IN\r\nHOSP, SAR, STATE, AND MILITARY OPERATION.\r\nOTHER VFR FLT REQUIRE PRIOR PERMISSION FROM CIVIL \r\nAVIATION AUTHORITY. \r\nIFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT \r\nNEED TO BE CHANGED TO VFR\r\nDURING ARRIVAL AND DEPARTURE, ARE NOT SUBJECT TO THIS LIMITATION."
     },
-    "last_seen_utc": "2026-05-18 13:35:30 UTC"
+    "last_seen_utc": "2026-05-18 13:40:28 UTC"
   }
 }
