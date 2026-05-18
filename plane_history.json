@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777251022,
-    "time_utc": "2026-04-27 00:50:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777251320,
     "time_utc": "2026-04-27 00:55:20 UTC",
     "count": 0,
@@ -115322,5 +115316,27 @@
     "time_utc": "2026-05-18 00:45:20 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779065425,
+    "time_utc": "2026-05-18 00:50:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fbdec51",
+        "callsign": "BRU733",
+        "flight": "B2733",
+        "type": "B38M",
+        "reg": "EW-528PA",
+        "category": "Commercial",
+        "alt": 3625,
+        "track": 51,
+        "speed": 121,
+        "lat": 39.57,
+        "lon": 44.627,
+        "airline": "Belavia",
+        "country": "Belarus"
+      }
+    ]
   }
 ]
