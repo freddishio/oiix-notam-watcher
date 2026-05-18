@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777250118,
-    "time_utc": "2026-04-27 00:35:18 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777250418,
     "time_utc": "2026-04-27 00:40:18 UTC",
     "count": 0,
@@ -115306,5 +115300,27 @@
     "time_utc": "2026-05-18 00:30:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779064521,
+    "time_utc": "2026-05-18 00:35:21 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fbe8c5a",
+        "callsign": "ABY868",
+        "flight": "G9868",
+        "type": "A320",
+        "reg": "A6-ANB",
+        "category": "Commercial",
+        "alt": 27625,
+        "track": 102,
+        "speed": 480,
+        "lat": 24.971,
+        "lon": 57.881,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
