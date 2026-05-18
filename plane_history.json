@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777260619,
-    "time_utc": "2026-04-27 03:30:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777260921,
     "time_utc": "2026-04-27 03:35:21 UTC",
     "count": 0,
@@ -115450,5 +115444,27 @@
     "time_utc": "2026-05-18 03:25:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779075020,
+    "time_utc": "2026-05-18 03:30:20 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fbedd9d",
+        "callsign": "ABY567",
+        "flight": "G9567",
+        "type": "A320",
+        "reg": "A6-ANL",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 65,
+        "speed": 502,
+        "lat": 24.759,
+        "lon": 60.485,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
