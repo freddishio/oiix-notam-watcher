@@ -1,4 +1,45 @@
 {
+  "OIIX A0947/26": {
+    "header": {
+      "id": "A0947/26",
+      "series": "A",
+      "number": "0947",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0798/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-11T17:28:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "SUBJECT TO NOTAM A0796/26, THE HOURS OF OPERATION OF\nALL AIRPORTS IN EAST PART OF TEHRAN FIR ARE HJ,\nEXCEPT FOR OIMM, OIMS AND OIZH, OPERATING H24.\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND \nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-05-11 17:40:31 UTC",
+    "archived_utc": "2026-05-18 13:35:30 UTC"
+  },
   "OIIX A0937/26": {
     "header": {
       "id": "",
