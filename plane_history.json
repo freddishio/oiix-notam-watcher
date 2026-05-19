@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777359633,
-    "time_utc": "2026-04-28 07:00:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777359921,
-    "time_utc": "2026-04-28 07:05:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777360221,
     "time_utc": "2026-04-28 07:10:21 UTC",
     "count": 0,
@@ -119127,5 +119115,42 @@
     "time_utc": "2026-05-19 07:00:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779174326,
+    "time_utc": "2026-05-19 07:05:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fc3483d",
+        "callsign": "SHI7305",
+        "flight": "IS7305",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 29850,
+        "track": 45,
+        "speed": 478,
+        "lat": 33.562,
+        "lon": 46.373,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fc3163d",
+        "callsign": "JZR172",
+        "flight": "J9172",
+        "type": "A320",
+        "reg": "9K-CAK",
+        "category": "Commercial",
+        "alt": 3225,
+        "track": 240,
+        "speed": 227,
+        "lat": 30.295,
+        "lon": 48.321,
+        "airline": "Jazeera Airways",
+        "country": "Kuwait"
+      }
+    ]
   }
 ]
