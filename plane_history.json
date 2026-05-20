@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777448121,
-    "time_utc": "2026-04-29 07:35:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777448426,
     "time_utc": "2026-04-29 07:40:26 UTC",
     "count": 0,
@@ -120333,6 +120327,43 @@
         "lon": 49.217,
         "airline": "Karun Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779262823,
+    "time_utc": "2026-05-20 07:40:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fc7662f",
+        "callsign": "KRU2688",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 9375,
+        "track": 263,
+        "speed": 307,
+        "lat": 30.461,
+        "lon": 48.652,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fc776d0",
+        "callsign": "UAE358",
+        "flight": "EK358",
+        "type": "B77W",
+        "reg": "A6-EGA",
+        "category": "Commercial",
+        "alt": 28025,
+        "track": 82,
+        "speed": 512,
+        "lat": 25.104,
+        "lon": 57.495,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
       }
     ]
   }
