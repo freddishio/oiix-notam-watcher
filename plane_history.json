@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777451725,
-    "time_utc": "2026-04-29 08:35:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777452029,
     "time_utc": "2026-04-29 08:40:29 UTC",
     "count": 1,
@@ -120564,6 +120558,73 @@
         "lat": 33.442,
         "lon": 46.24,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779266424,
+    "time_utc": "2026-05-20 08:40:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3fc797a0",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 34500,
+        "track": 65,
+        "speed": 519,
+        "lat": 33.632,
+        "lon": 47.074,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fc78b38",
+        "callsign": "KIS7167",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 38,
+        "speed": 430,
+        "lat": 34.41,
+        "lon": 58.929,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fc79b82",
+        "callsign": "IRZ8250",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 32950,
+        "track": 131,
+        "speed": 398,
+        "lat": 35.222,
+        "lon": 61.06,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fc7a353",
+        "callsign": "KRU2655",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 2350,
+        "track": 84,
+        "speed": 201,
+        "lat": 30.372,
+        "lon": 48.278,
+        "airline": "Karun Airlines",
         "country": "IRAN"
       }
     ]
