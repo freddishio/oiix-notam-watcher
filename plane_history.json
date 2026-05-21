@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777525222,
-    "time_utc": "2026-04-30 05:00:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777525519,
     "time_utc": "2026-04-30 05:05:19 UTC",
     "count": 0,
@@ -121049,5 +121043,27 @@
     "time_utc": "2026-05-21 04:55:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779339625,
+    "time_utc": "2026-05-21 05:00:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fcb132a",
+        "callsign": "RDA4324",
+        "flight": "Unknown Flight",
+        "type": "IL62",
+        "reg": "EW-450TR",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 302,
+        "speed": 442,
+        "lat": 37.936,
+        "lon": 50.702,
+        "airline": "Rada Airlines",
+        "country": "Belarus"
+      }
+    ]
   }
 ]
