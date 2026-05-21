@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777557320,
-    "time_utc": "2026-04-30 13:55:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777557629,
     "time_utc": "2026-04-30 14:00:29 UTC",
     "count": 0,
@@ -121626,5 +121620,27 @@
     "time_utc": "2026-05-21 13:50:32 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779371728,
+    "time_utc": "2026-05-21 13:55:28 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fccf73c",
+        "callsign": "JZR721",
+        "flight": "J9721",
+        "type": "A320",
+        "reg": "9K-CAS",
+        "category": "Commercial",
+        "alt": 18000,
+        "track": 112,
+        "speed": 904,
+        "lat": 26.508,
+        "lon": 53.206,
+        "airline": "Jazeera Airways",
+        "country": "Kuwait"
+      }
+    ]
   }
 ]
