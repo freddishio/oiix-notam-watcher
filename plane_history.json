@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777650021,
-    "time_utc": "2026-05-01 15:40:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777650322,
     "time_utc": "2026-05-01 15:45:22 UTC",
     "count": 0,
@@ -128649,5 +128643,27 @@
     "time_utc": "2026-05-22 15:35:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779464427,
+    "time_utc": "2026-05-22 15:40:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fd1dd39",
+        "callsign": "AXV9213",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 50,
+        "speed": 507,
+        "lat": 33.378,
+        "lon": 46.128,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
