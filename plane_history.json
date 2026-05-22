@@ -126540,5 +126540,42 @@
         "country": "India"
       }
     ]
+  },
+  {
+    "timestamp": 1779442522,
+    "time_utc": "2026-05-22 09:35:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fd063f1",
+        "callsign": "IRM077",
+        "flight": "W577",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 27000,
+        "track": 149,
+        "speed": 469,
+        "lat": 34.864,
+        "lon": 60.904,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd0903a",
+        "callsign": "KIS7011",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 8575,
+        "track": 28,
+        "speed": 310,
+        "lat": 30.64,
+        "lon": 48.372,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
