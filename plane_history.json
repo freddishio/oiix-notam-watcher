@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777611926,
-    "time_utc": "2026-05-01 05:05:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777612227,
     "time_utc": "2026-05-01 05:10:27 UTC",
     "count": 1,
@@ -122512,6 +122506,103 @@
         "lon": 61.199,
         "airline": "AeroLogic",
         "country": "Germany"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779426624,
+    "time_utc": "2026-05-22 05:10:24 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "3fcfcdac",
+        "callsign": "IRZ158",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 17300,
+        "track": 98,
+        "speed": 433,
+        "lat": 29.839,
+        "lon": 52.632,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fcfe0f1",
+        "callsign": "UAE83M",
+        "flight": "EK215",
+        "type": "A388",
+        "reg": "A6-EVL",
+        "category": "Commercial",
+        "alt": 17225,
+        "track": 98,
+        "speed": 40,
+        "lat": 25.614,
+        "lon": 57.025,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcecfff",
+        "callsign": "BOX707",
+        "flight": "3S707",
+        "type": "B77L",
+        "reg": "D-AALC",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 247,
+        "speed": 492,
+        "lat": 25.415,
+        "lon": 57.522,
+        "airline": "AeroLogic",
+        "country": "Germany"
+      },
+      {
+        "id": "3fcfdaf6",
+        "callsign": "UAE51N",
+        "flight": "EK225",
+        "type": "A388",
+        "reg": "A6-EVG",
+        "category": "Commercial",
+        "alt": 27525,
+        "track": 73,
+        "speed": 800,
+        "lat": 25.707,
+        "lon": 57.785,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcfdb27",
+        "callsign": "OMA903",
+        "flight": "WY903",
+        "type": "B38M",
+        "reg": "A4O-MI",
+        "category": "Commercial",
+        "alt": 17375,
+        "track": 253,
+        "speed": 390,
+        "lat": 25.529,
+        "lon": 59.262,
+        "airline": "Oman Air",
+        "country": "Oman"
+      },
+      {
+        "id": "3fcf7dc6",
+        "callsign": "JZR410",
+        "flight": "J9410",
+        "type": "A20N",
+        "reg": "9K-CBA",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 248,
+        "speed": 428,
+        "lat": 26.116,
+        "lon": 59.728,
+        "airline": "Jazeera Airways",
+        "country": "Kuwait"
       }
     ]
   }
