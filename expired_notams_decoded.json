@@ -1,4 +1,70 @@
 {
+  "OIIX A0799/26": {
+    "header": {
+      "id": "A0799/26",
+      "series": "A",
+      "number": "0799",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-21T10:10:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM  A0796/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR\r\n ARE CLSD \r\nEXCEPT OITR, OIKK, OIAA, OISS, OIYY, OICC AND OIGG THAT ARE \r\nOPERATIONAL FM SUNRISE TO SUNSET (HJ). \r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS, \r\nNEW PERMISSION SHALL BE REQUESTED FM CAA FOR OPRATION OF \r\nCIVIL IFR PASSENGER FLIGHTS ON THESE AIRPORTS."
+    },
+    "last_seen_utc": "2026-04-21 10:15:21 UTC",
+    "archived_utc": "2026-05-22 21:00:26 UTC"
+  },
   "OIIX B0194/26": {
     "header": {
       "id": "B0194/26",
