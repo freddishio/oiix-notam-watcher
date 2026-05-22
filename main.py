@@ -2305,6 +2305,7 @@ def main():
         elif current_count < 10:
             plane_state["airspace_status"] = "WARNING"
             # send_telegram(f"⚠️ **AIRSPACE ALERT:** The number of planes has dropped below 10 (Currently {current_count}). This might be a sign of airspace clearing.")
+            pass  # Disabled for now because it was sending repeatedly.
             
     plane_state["previous_count"] = current_count
     save_json(PLANE_STATE_FILE, plane_state)
