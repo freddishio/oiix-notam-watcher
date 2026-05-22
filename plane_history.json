@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777644928,
-    "time_utc": "2026-05-01 14:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777645225,
-    "time_utc": "2026-05-01 14:20:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777645530,
     "time_utc": "2026-05-01 14:25:30 UTC",
     "count": 0,
@@ -128543,6 +128531,73 @@
         "speed": 998,
         "lat": 30.733,
         "lon": 48.592,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779459631,
+    "time_utc": "2026-05-22 14:20:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3fd0ea10",
+        "callsign": "BRU718",
+        "flight": "B2718",
+        "type": "B38M",
+        "reg": "EW-528PA",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 335,
+        "speed": 425,
+        "lat": 38.119,
+        "lon": 50.396,
+        "airline": "Belavia",
+        "country": "Belarus"
+      },
+      {
+        "id": "3fd17f63",
+        "callsign": "AXV9201",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 50,
+        "speed": 565,
+        "lat": 33.733,
+        "lon": 47.268,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd17e4c",
+        "callsign": "CPN7943",
+        "flight": "IV7943",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 44,
+        "speed": 506,
+        "lat": 33.926,
+        "lon": 47.516,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd06350",
+        "callsign": "ETD81C",
+        "flight": "EY62",
+        "type": "A388",
+        "reg": "A6-API",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 55,
+        "speed": 998,
+        "lat": 31.626,
+        "lon": 50.37,
         "airline": "Etihad Airways",
         "country": "United Arab Emirates"
       }
