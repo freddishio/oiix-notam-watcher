@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1777611027,
-    "time_utc": "2026-05-01 04:50:27 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "3f7b8c8f",
-        "callsign": "MRJ4848",
-        "flight": "Unknown Flight",
-        "type": "A319",
-        "reg": "EP-SSP",
-        "category": "Commercial",
-        "alt": 33025,
-        "track": 131,
-        "speed": 505,
-        "lat": 35.63,
-        "lon": 60.506,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "3f7b9ab0",
-        "callsign": "IRA3504",
-        "flight": "Unknown Flight",
-        "type": "A332",
-        "reg": "EP-IJD",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 193,
-        "speed": 446,
-        "lat": 27.271,
-        "lon": 59.906,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1777611321,
-    "time_utc": "2026-05-01 04:55:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777611625,
     "time_utc": "2026-05-01 05:00:25 UTC",
     "count": 0,
@@ -122375,6 +122332,88 @@
         "lon": 63.24,
         "airline": "AeroLogic",
         "country": "Germany"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779425727,
+    "time_utc": "2026-05-22 04:55:27 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "3fcf1abd",
+        "callsign": "FDB1304",
+        "flight": "FZ1304",
+        "type": "B38M",
+        "reg": "A6-FPA",
+        "category": "Commercial",
+        "alt": 15400,
+        "track": 199,
+        "speed": 370,
+        "lat": 25.81,
+        "lon": 56.787,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcfd570",
+        "callsign": "UAE600",
+        "flight": "EK600",
+        "type": "B77W",
+        "reg": "A6-ENW",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 80,
+        "speed": 514,
+        "lat": 25.618,
+        "lon": 57.314,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcee12a",
+        "callsign": "A319",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 36475,
+        "track": 359,
+        "speed": 424,
+        "lat": 25.27,
+        "lon": 57.473,
+        "airline": "A31",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3fcece2c",
+        "callsign": "BOX713",
+        "flight": "3S713",
+        "type": "B77L",
+        "reg": "D-AALZ",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 245,
+        "speed": 470,
+        "lat": 25.432,
+        "lon": 58.018,
+        "airline": "AeroLogic",
+        "country": "Germany"
+      },
+      {
+        "id": "3fcfa24c",
+        "callsign": "SVA992A",
+        "flight": "Unknown Flight",
+        "type": "B77L",
+        "reg": "HZ-AK71",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 242,
+        "speed": 534,
+        "lat": 25.792,
+        "lon": 60.481,
+        "airline": "Saudia",
+        "country": "Saudi Arabia"
       }
     ]
   }
