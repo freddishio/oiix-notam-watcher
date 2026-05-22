@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777605921,
-    "time_utc": "2026-05-01 03:25:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777606221,
-    "time_utc": "2026-05-01 03:30:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777606522,
     "time_utc": "2026-05-01 03:35:22 UTC",
     "count": 0,
@@ -121481,6 +121469,88 @@
         "lon": 46.08,
         "airline": "Kish Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779420622,
+    "time_utc": "2026-05-22 03:30:22 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "3fce292e",
+        "callsign": "UAE8Y",
+        "flight": "EK345",
+        "type": "B77W",
+        "reg": "A6-EPA",
+        "category": "Commercial",
+        "alt": 15700,
+        "track": 205,
+        "speed": 304,
+        "lat": 27.174,
+        "lon": 56.507,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcfa7fb",
+        "callsign": "ABY556",
+        "flight": "G9556",
+        "type": "A21N",
+        "reg": "A6-ATE",
+        "category": "Commercial",
+        "alt": 24225,
+        "track": 83,
+        "speed": 462,
+        "lat": 25.574,
+        "lon": 56.965,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcf1eda",
+        "callsign": "FDB1942",
+        "flight": "FZ1942",
+        "type": "B38M",
+        "reg": "A6-FMH",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 330,
+        "speed": 426,
+        "lat": 25.11,
+        "lon": 57.406,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcfa67a",
+        "callsign": "OMS391",
+        "flight": "OV391",
+        "type": "A21N",
+        "reg": "A4O-OXH",
+        "category": "Commercial",
+        "alt": 17625,
+        "track": 345,
+        "speed": 790,
+        "lat": 26.007,
+        "lon": 57.617,
+        "airline": "Salam Air",
+        "country": "Oman"
+      },
+      {
+        "id": "3fcf4417",
+        "callsign": "UAE926",
+        "flight": "EK926",
+        "type": "A388",
+        "reg": "A6-EDX",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 25,
+        "speed": 414,
+        "lat": 25.032,
+        "lon": 57.636,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
       }
     ]
   }
