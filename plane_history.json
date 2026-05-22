@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777644628,
-    "time_utc": "2026-05-01 14:10:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777644928,
     "time_utc": "2026-05-01 14:15:28 UTC",
     "count": 0,
@@ -128484,6 +128478,73 @@
         "lon": 49.417,
         "airline": "Iran Air Tours",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779459327,
+    "time_utc": "2026-05-22 14:15:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3fd0ea10",
+        "callsign": "BRU718",
+        "flight": "B2718",
+        "type": "B38M",
+        "reg": "EW-528PA",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 302,
+        "speed": 404,
+        "lat": 37.796,
+        "lon": 50.977,
+        "airline": "Belavia",
+        "country": "Belarus"
+      },
+      {
+        "id": "3fd17f63",
+        "callsign": "AXV9201",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 66,
+        "speed": 579,
+        "lat": 33.489,
+        "lon": 46.354,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd17e4c",
+        "callsign": "CPN7943",
+        "flight": "IV7943",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 95,
+        "speed": 540,
+        "lat": 33.552,
+        "lon": 46.816,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd06350",
+        "callsign": "ETD81C",
+        "flight": "EY62",
+        "type": "A388",
+        "reg": "A6-API",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 60,
+        "speed": 998,
+        "lat": 30.733,
+        "lon": 48.592,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
       }
     ]
   }
