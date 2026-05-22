@@ -2304,7 +2304,7 @@ def main():
             # send_telegram("🚨 **CRITICAL WARNING:** Iranian Airspace is completely CLEARED. Current commercial planes detected inside the OIIX FIR boundary: 0.")
         elif current_count < 10:
             plane_state["airspace_status"] = "WARNING"
-            send_telegram(f"⚠️ **AIRSPACE ALERT:** The number of planes has dropped below 10 (Currently {current_count}). This might be a sign of airspace clearing.")
+            # send_telegram(f"⚠️ **AIRSPACE ALERT:** The number of planes has dropped below 10 (Currently {current_count}). This might be a sign of airspace clearing.")
             
     plane_state["previous_count"] = current_count
     save_json(PLANE_STATE_FILE, plane_state)
