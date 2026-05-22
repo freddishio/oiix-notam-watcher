@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777606830,
-    "time_utc": "2026-05-01 03:40:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777607127,
     "time_utc": "2026-05-01 03:45:27 UTC",
     "count": 0,
@@ -121619,6 +121613,73 @@
         "lon": 59.115,
         "airline": "Meraj Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779421523,
+    "time_utc": "2026-05-22 03:45:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3fcfb254",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 22050,
+        "track": 230,
+        "speed": 368,
+        "lat": 35.686,
+        "lon": 59.12,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3fcf991f",
+        "callsign": "MRJ4848",
+        "flight": "MRJ4848",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 129,
+        "speed": 501,
+        "lat": 36.048,
+        "lon": 59.932,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fcf1d71",
+        "callsign": "FDB1690",
+        "flight": "FZ1690",
+        "type": "B38M",
+        "reg": "A6-FPG",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 246,
+        "speed": 422,
+        "lat": 25.908,
+        "lon": 59.473,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3fcf5bff",
+        "callsign": "FJL740",
+        "flight": "9P740",
+        "type": "A320",
+        "reg": "AP-BPE",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 248,
+        "speed": 420,
+        "lat": 26.346,
+        "lon": 60.605,
+        "airline": "Fly Jinnah",
+        "country": "Pakistan"
       }
     ]
   }
