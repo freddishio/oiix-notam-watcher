@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1777687520,
-    "time_utc": "2026-05-02 02:05:20 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "3f7f6f24",
-        "callsign": "IRA3502",
-        "flight": "IR3502",
-        "type": "A319",
-        "reg": "EP-IEQ",
-        "category": "Commercial",
-        "alt": 32025,
-        "track": 219,
-        "speed": 423,
-        "lat": 25.033,
-        "lon": 60.046,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "3f7f5e36",
-        "callsign": "IRA3510",
-        "flight": "Unknown Flight",
-        "type": "A306",
-        "reg": "EP-IBC",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 219,
-        "speed": 428,
-        "lat": 25.241,
-        "lon": 60.216,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1777687818,
     "time_utc": "2026-05-02 02:10:18 UTC",
     "count": 0,
@@ -128127,5 +128090,27 @@
     "time_utc": "2026-05-23 02:00:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779501931,
+    "time_utc": "2026-05-23 02:05:31 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fd30bbc",
+        "callsign": "SWR176",
+        "flight": "LX176",
+        "type": "B77W",
+        "reg": "HB-JNF",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 231,
+        "speed": 730,
+        "lat": 36.484,
+        "lon": 60.33,
+        "airline": "Swiss",
+        "country": "Switzerland"
+      }
+    ]
   }
 ]
