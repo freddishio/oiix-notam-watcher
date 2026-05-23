@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777765526,
-    "time_utc": "2026-05-02 23:45:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777765819,
-    "time_utc": "2026-05-02 23:50:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777766123,
     "time_utc": "2026-05-02 23:55:23 UTC",
     "count": 0,
@@ -129432,5 +129420,42 @@
     "time_utc": "2026-05-23 23:45:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779580221,
+    "time_utc": "2026-05-23 23:50:21 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fd6c5be",
+        "callsign": "ETH672",
+        "flight": "ET672",
+        "type": "A359",
+        "reg": "ET-BCE",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 60,
+        "speed": 524,
+        "lat": 24.687,
+        "lon": 61.419,
+        "airline": "Ethiopian Airlines",
+        "country": "Ethiopia"
+      },
+      {
+        "id": "3fd73024",
+        "callsign": "SGA2511",
+        "flight": "Unknown Flight",
+        "type": "B752",
+        "reg": "UK75058",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 45,
+        "speed": 482,
+        "lat": 24.67,
+        "lon": 61.435,
+        "airline": "Sky Guard",
+        "country": "Uzbekistan"
+      }
+    ]
   }
 ]
