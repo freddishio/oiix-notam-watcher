@@ -128268,5 +128268,57 @@
     "time_utc": "2026-05-23 03:55:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779508826,
+    "time_utc": "2026-05-23 04:00:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3fd3ff5f",
+        "callsign": "ISP1816",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 283,
+        "speed": 359,
+        "lat": 37.212,
+        "lon": 46.674,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd3fb55",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 310,
+        "speed": 407,
+        "lat": 37.074,
+        "lon": 48.705,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd40433",
+        "callsign": "CPN7943",
+        "flight": "IV7943",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 32950,
+        "track": 94,
+        "speed": 522,
+        "lat": 33.563,
+        "lon": 46.653,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
