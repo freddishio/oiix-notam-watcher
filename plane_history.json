@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777689319,
-    "time_utc": "2026-05-02 02:35:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777689625,
     "time_utc": "2026-05-02 02:40:25 UTC",
     "count": 0,
@@ -128128,5 +128122,27 @@
     "time_utc": "2026-05-23 02:30:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779503727,
+    "time_utc": "2026-05-23 02:35:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fd3c341",
+        "callsign": "MEH4168",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 22425,
+        "track": 151,
+        "speed": 403,
+        "lat": 30.144,
+        "lon": 52.563,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
