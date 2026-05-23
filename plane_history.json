@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777730425,
-    "time_utc": "2026-05-02 14:00:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777730721,
     "time_utc": "2026-05-02 14:05:21 UTC",
     "count": 0,
@@ -129542,5 +129536,27 @@
     "time_utc": "2026-05-23 13:55:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779544827,
+    "time_utc": "2026-05-23 14:00:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fd592cf",
+        "callsign": "FDB573",
+        "flight": "FZ573",
+        "type": "B38M",
+        "reg": "A6-FQI",
+        "category": "Commercial",
+        "alt": 28450,
+        "track": 48,
+        "speed": 454,
+        "lat": 25.021,
+        "lon": 58.022,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
