@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777761030,
-    "time_utc": "2026-05-02 22:30:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777761323,
-    "time_utc": "2026-05-02 22:35:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777761621,
     "time_utc": "2026-05-02 22:40:21 UTC",
     "count": 0,
@@ -129396,6 +129384,28 @@
         "speed": 443,
         "lat": 26.178,
         "lon": 59.915,
+        "airline": "Aviacon Zitotrans",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779575727,
+    "time_utc": "2026-05-23 22:35:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fd649a8",
+        "callsign": "AZS4177",
+        "flight": "Unknown Flight",
+        "type": "IL76",
+        "reg": "RA-76842",
+        "category": "Commercial",
+        "alt": 37025,
+        "track": 148,
+        "speed": 443,
+        "lat": 25.68,
+        "lon": 60.256,
         "airline": "Aviacon Zitotrans",
         "country": "Russian Federation"
       }
