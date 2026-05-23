@@ -2956,73 +2956,6 @@
     },
     "last_seen_utc": "2026-05-09 09:35:21 UTC"
   },
-  "OIIX A1010/26": {
-    "header": {
-      "id": "A1010/26",
-      "series": "A",
-      "number": "1010",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0799/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "FALC",
-        "entity": "FA",
-        "status": "LC",
-        "area": "AGA",
-        "subArea": "Facilities and Services",
-        "subject": "Aerodrome",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-22T20:46:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM  A0796/26, ALL AIRPORTS IN WEST PART \r\nOF TEHRAN FIR ARE CLSD \r\nEXCEPT OITR, OIKK, OIAA, OISS, OIYY, OICC, OIGG, AND OIAW THAT ARE \r\nOPERATIONAL FM SUNRISE TO SUNSET (HJ). \r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS, \r\nNEW PERMISSION SHALL BE REQUESTED FM CAA FOR OPRATION OF \r\nCIVIL IFR PASSENGER FLIGHTS ON THESE AIRPORTS."
-    },
-    "last_seen_utc": "2026-05-22 21:00:26 UTC"
-  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3411,5 +3344,72 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1015/26": {
+    "header": {
+      "id": "A1015/26",
+      "series": "A",
+      "number": "1015",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1010/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-23T18:21:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM  A0796/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR\r\nARE CLSD EXCEPT:\r\nOITR, OIKK, OIAA, OISS, OIYY, OICC, OIGG, OIAW,OIFM, OITL,\r\n OISR AND OIAM\r\nTHAT ARE OPERATIONAL FM SUNRISE TO SUNSET (HJ). \r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS. \r\nNEW PERMISSION SHALL BE REQUESTED FOR OPERATION OF \r\nCIVIL IFR PASSENGER FLIGHTS FM IRAN CAA."
+    },
+    "last_seen_utc": "2026-05-23 18:40:25 UTC"
   }
 }
