@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1777688134,
-    "time_utc": "2026-05-02 02:15:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777688430,
     "time_utc": "2026-05-02 02:20:30 UTC",
     "count": 0,
@@ -128118,5 +128112,27 @@
     "time_utc": "2026-05-23 02:15:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779502827,
+    "time_utc": "2026-05-23 02:20:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fd3d25e",
+        "callsign": "FDB311",
+        "flight": "FZ311",
+        "type": "B38M",
+        "reg": "A6-FKR",
+        "category": "Commercial",
+        "alt": 19000,
+        "track": 82,
+        "speed": 414,
+        "lat": 25.068,
+        "lon": 57.536,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
