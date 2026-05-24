@@ -129297,5 +129297,42 @@
     "time_utc": "2026-05-24 04:30:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779597319,
+    "time_utc": "2026-05-24 04:35:19 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fd7a863",
+        "callsign": "AXV9212",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 254,
+        "speed": 345,
+        "lat": 34.449,
+        "lon": 47.721,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fd7d070",
+        "callsign": "KRU2635",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 11825,
+        "track": 62,
+        "speed": 293,
+        "lat": 31.531,
+        "lon": 49.276,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
