@@ -64,20 +64,10 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-04-20 10:55:22 UTC"
   },
-  "OIIX A0802/26": {
-    "explanation": "This is an urgent aviation update from Iran. It cancels all previous rules for planes flying over Iran and sets new, specific routes for flights above 28,500 feet. These new routes are mandatory for planes traveling between Oman and Pakistan during what is called a 'recovery period,' suggesting there was a recent significant event or issue that required these changes.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-04-21 11:05:20 UTC"
-  },
   "OIIX A0803/26": {
     "explanation": "Due to a 'recovery period,' Iran's airspace (above 28,500 feet) has new rules for planes flying through it. All old rules for overflights are temporarily stopped. This NOTAM lists the specific new routes that planes must follow when flying between Pakistan and Bahrain through Iranian airspace.",
     "highest_level": "First Level",
     "last_seen_utc": "2026-04-27 07:45:23 UTC"
-  },
-  "OIIX A0804/26": {
-    "explanation": "Iran's airspace has new temporary rules for planes flying high above 28,500 feet. All previous rules for planes flying through Iran are stopped. New, specific routes must now be used for flights traveling between Pakistan and Turkmenistan/Uzbekistan during what they call a 'recovery period'.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-04-21 10:50:22 UTC"
   },
   "OIIX A0805/26": {
     "explanation": "This is an update for airplanes flying over Iran. Starting April 21, 2026, and lasting until May 25, 2026, all the usual rules for planes flying over Iran are temporarily stopped. New, specific routes have been created for planes flying above 28,500 feet, especially for those traveling between Afghanistan and Turkmenistan. This change is happening during a 'recovery period,' which suggests there was a previous disruption or event that required these new flight procedures.",
@@ -264,6 +254,11 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026-05-25 06:50:25 UTC"
   },
+  "OIIX A1022/26": {
+    "explanation": "Many airports in the western part of Iran are currently closed. A specific list of airports remains open, but only from sunrise to sunset. All previously approved flight permissions are cancelled, and airlines must request new permission from the Iranian aviation authority for any civil passenger flights.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-05-25 06:55:22 UTC"
+  },
   "OIIX A1006/26": {
     "explanation": "A specific area in the sky near Tehran, called OID84, is now off-limits for aircraft. This restriction is active daily from May 28 to July 22, 2026, between 3:30 AM and 7:30 PM UTC, from the ground up to 13,000 feet. Pilots need to avoid this area.",
     "highest_level": "Second Level",
@@ -294,9 +289,14 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1022/26": {
-    "explanation": "Many airports in the western part of Iran are currently closed. A specific list of airports remains open, but only from sunrise to sunset. All previously approved flight permissions are cancelled, and airlines must request new permission from the Iranian aviation authority for any civil passenger flights.",
+  "OIIX A1023/26": {
+    "explanation": "Iran's air traffic control has announced that all previous rules for planes flying through their airspace are temporarily stopped. Instead, new specific routes must be used for planes flying above 28,500 feet, especially for those traveling between Oman and Pakistan. This change is happening during a 'recovery period,' suggesting a significant event or situation is being managed.",
     "highest_level": "First Level",
-    "last_seen_utc": "2026-05-25 06:55:22 UTC"
+    "last_seen_utc": "2026-05-25 07:00:28 UTC"
+  },
+  "OIIX A1025/26": {
+    "explanation": "Iran has temporarily changed the rules for planes flying high over its airspace (above 28,500 feet). They've stopped all the old rules for these flights and put new, specific routes in place. This is happening during a 'recovery period,' which suggests there was a previous event or situation that required these changes. Planes flying between Pakistan and Afghanistan through Iranian airspace must now follow these new, specific routes.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-05-25 07:00:28 UTC"
   }
 }
