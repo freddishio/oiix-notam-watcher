@@ -1634,28 +1634,6 @@
     },
     "last_seen_utc": "2026-05-18 13:40:28 UTC"
   },
-  "OIIX A1009/26": {
-    "header": {
-      "id": "A1009/26",
-      "series": "A",
-      "number": "1009",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QCEXX/E//000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-06-20T16:57:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26 , ALL AIRCRAFT OPERATING IN WEST PART OF \nTEHRAN FIR   SHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S \nWITH  ADS-B CAPABILITY OR ADS-B WITH DEDICATED  1090MHZ ADS-B \nOUT CAPABILITY."
-    },
-    "last_seen_utc": "2026-05-25 07:40:21 UTC"
-  },
   "OIIX B0210/26": {
     "header": {
       "id": "B0210/26",
@@ -2815,6 +2793,52 @@
     },
     "last_seen_utc": "2026-05-25 08:15:24 UTC"
   },
+  "OIIX A1047/26": {
+    "header": {
+      "id": "A1047/26",
+      "series": "A",
+      "number": "1047",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0996/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T08:10:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF TO NOTAM A1020/26, THE HOURS OF OPERATION OF ALL AIRPORTS\r\nIN THE EAST PART OF TEHRAN FIR ARE HJ, EXCEPT FOR:\r\nOIMM, OIMS, AND OIZH, OPERATING H24.\r\nOIII AND OIIE OPERATING FM 0100-1800 UTC.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\r\nSHALL BE REQUESTED FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-05-25 08:20:24 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3204,50 +3228,26 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1047/26": {
+  "OIIX A1048/26": {
     "header": {
-      "id": "A1047/26",
+      "id": "A1048/26",
       "series": "A",
-      "number": "1047",
+      "number": "1048",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0996/26\r"
+      "idToReplace": "A1009/26"
     },
     "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
+      "line": "OIIX/QCEXX/E//000/999/"
     },
     "schedule": {
-      "activityStart": "2026-06-25T08:10:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z",
-      "estimated": true
+      "activityStart": "2026-06-25T08:13:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
     },
     "content": {
-      "text": "REF TO NOTAM A1020/26, THE HOURS OF OPERATION OF ALL AIRPORTS\r\nIN THE EAST PART OF TEHRAN FIR ARE HJ, EXCEPT FOR:\r\nOIMM, OIMS, AND OIZH, OPERATING H24.\r\nOIII AND OIIE OPERATING FM 0100-1800 UTC.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\r\nSHALL BE REQUESTED FROM IRAN CAA."
+      "text": "REF NOTAM A01020/26 , \nALL AIRCRAFT OPERATING IN WEST PART OF TEHRAN FIR  \nSHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S WITH \nADS-B CAPABILITY OR ADS-B WITH DEDICATED \n1090MHZ ADS-B OUT CAPABILITY.)"
     },
-    "last_seen_utc": "2026-05-25 08:20:24 UTC"
+    "last_seen_utc": "2026-05-25 08:25:23 UTC"
   }
 }
