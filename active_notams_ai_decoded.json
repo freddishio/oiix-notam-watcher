@@ -64,11 +64,6 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-04-20 10:55:22 UTC"
   },
-  "OIIX A0850/26": {
-    "explanation": "Attention pilots flying in the Tehran area: The radar system near Shiraz is currently out of order. This means air traffic controllers won't have radar information for planes flying long distances, especially in specific areas (Sector 3 and Sector 4). This issue started on April 27, 2026, and is expected to continue until May 25, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-27 09:05:19 UTC"
-  },
   "OIIX A0851/26": {
     "explanation": "A radar system in Ahwaz, Iran, is currently broken and will be out of service until May 25, 2026. This means air traffic controllers might not be able to see aircraft on their radar screens in certain parts of the Iranian airspace, specifically in two control sectors (Sector 2 and Sector 3). Pilots flying through these areas will need to be aware that radar services may not be available.",
     "highest_level": "Third Level",
@@ -264,6 +259,16 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-05-25 07:45:24 UTC"
   },
+  "OIIX A1041/26": {
+    "explanation": "The radar system in Esfahan (Isfahan) is currently broken and will be out of service until June 29, 2026. This means that air traffic controllers might not be able to see planes on their radar screens in certain parts of the airspace (specifically sectors 2, 3, 6 West, and 7). Pilots and air traffic control will need to be aware of this reduced radar coverage.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-05-25 07:50:23 UTC"
+  },
+  "OIIX A1042/26": {
+    "explanation": "A main radar system in Iran (called LAR MSSR) is currently broken and not working. This means that air traffic controllers might not be able to see planes on their radar screens in certain areas, especially in a specific air traffic control sector (Sector 4, on frequency 133.400 MHz). This situation will last from May 25, 2026, until June 29, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-05-25 07:50:23 UTC"
+  },
   "OIIX A1006/26": {
     "explanation": "A specific area in the sky near Tehran, called OID84, is now off-limits for aircraft. This restriction is active daily from May 28 to July 22, 2026, between 3:30 AM and 7:30 PM UTC, from the ground up to 13,000 feet. Pilots need to avoid this area.",
     "highest_level": "Second Level",
@@ -294,14 +299,9 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1041/26": {
-    "explanation": "The radar system in Esfahan (Isfahan) is currently broken and will be out of service until June 29, 2026. This means that air traffic controllers might not be able to see planes on their radar screens in certain parts of the airspace (specifically sectors 2, 3, 6 West, and 7). Pilots and air traffic control will need to be aware of this reduced radar coverage.",
+  "OIIX A1043/26": {
+    "explanation": "A radar system in Shiraz, Iran, is currently broken and will be out of service until June 29, 2026. This means that air traffic controllers will not have radar information for planes flying long distances in that area. Additionally, radar services in two specific air traffic control sectors (Sector 3 and Sector 4) might also be unavailable. Pilots and air traffic controllers will need to be aware of this to ensure safe flight operations.",
     "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 07:50:23 UTC"
-  },
-  "OIIX A1042/26": {
-    "explanation": "A main radar system in Iran (called LAR MSSR) is currently broken and not working. This means that air traffic controllers might not be able to see planes on their radar screens in certain areas, especially in a specific air traffic control sector (Sector 4, on frequency 133.400 MHz). This situation will last from May 25, 2026, until June 29, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 07:50:23 UTC"
+    "last_seen_utc": "2026-05-25 07:55:25 UTC"
   }
 }
