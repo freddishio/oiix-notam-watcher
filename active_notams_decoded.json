@@ -722,61 +722,6 @@
     },
     "last_seen_utc": "2026-04-20 10:50:20 UTC"
   },
-  "OIIX A0846/26": {
-    "header": {
-      "id": "A0846/26",
-      "series": "A",
-      "number": "0846",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0768/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-27T08:55:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, KUSHK MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KUSHK MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 132.500 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-04-27 09:00:32 UTC"
-  },
   "OIIX A0847/26": {
     "header": {
       "id": "A0847/26",
@@ -2637,6 +2582,207 @@
     },
     "last_seen_utc": "2026-05-25 07:25:22 UTC"
   },
+  "OIIX A1036/26": {
+    "header": {
+      "id": "A1036/26",
+      "series": "A",
+      "number": "1036",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0844/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:24:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, TEHRAN (MEHRABAD) MSSR RADAR \r\nDERIVED INFORMATION FOR EN-ROUTE NOT AVBL \r\nDUE TO TEHRAN (MEHRABAD) MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
+  "OIIX A1038/26": {
+    "header": {
+      "id": "A1038/26",
+      "series": "A",
+      "number": "1038",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0845/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:28:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, TEHRAN (IMAM KHOMEINI) MSSR RADAR \r\nDERIVED INFORMATION FOR EN-ROUTE NOT AVBL \r\nDUE TO TEHRAN (IMAM KHOMEINI) MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
+  "OIIX A1037/26": {
+    "header": {
+      "id": "",
+      "type": "A1037/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:30:00.000Z",
+      "validityEnd": "2026-07-02T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0253 1415 1416 1417 1418 1892 \r\n YEAR=2023 1718 1719 1720 1721 2113 2496 \r\n YEAR=2024 1456 3358 4458 4459 4460 4461 \r\n YEAR=2025 2322 2572 2776 3524 3526 3607 3608 3697 3903 4009 \r\n YEAR=2026 0113 0174 0233 0234 0263 0390 0392 0415 0477 0489 0519 \r\n0561 0564 0601 0637 0695 0696 0701 0703 0710 0711 0712 \r\n0713 0720 0724 0778 0779 0780 0781 0782 0784 0785 0787 \r\n0788 0789 0790 0791 0793 0794 0817 0818 0819 0820 0821 \r\n0822 0823 0824 0825 0828 0829 0830 0831 0835 0836 0845 \r\n0846 0847 0848 0849 0850 0851 0852 0854 0855 0861 0863 \r\n0868 0869 0870 0872 0873 0874 0878 0883 0886 0887 0888 \r\n0891 0892 0893 0896 0902 0903 0904 0905 0906 0907 0908 \r\n0909 0910 0912 0913 0915 0916 0917 0923 0924 0925 0931 \r\n0933 0934 0935 0936 0938 0940 0941 0946 0951 0953 0954 \r\n0955 0956 0957 0958 0959 0960 0961 0963 0964 0965 0966 \r\n0967 0968 0969 0970 0971 0972 0973 0974 0975 0976 0977 \r\n0978 0982 0983 0984 0985 0986 0987 0988 0990 0991 0996 \r\n0997 1003 1005 1006 1007 1008 1009 1012 1014 1016 1017 \r\n1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 \r\n1029 1030 1031 1032 1033 1034 1035 1036 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 END PART 1 OF 2\r\nA1037/26 NOTAMR A0995/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2605250730  C) 2606020730EST  E) CHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 \r\n7/25 12/25 13/25 1/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n14 MAY 2026 AND 11 JUN 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. END PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
+  "OIIX B0249/26": {
+    "header": {
+      "id": "B0249/26",
+      "series": "B",
+      "number": "0249",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0245/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:30:00.000Z",
+      "validityEnd": "2026-07-02T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0127 0128 0135 0136 0177 0179 0187 0188 0189 \r\n0190 0199 0200 0201 0202 0204 0205 0207 0208 0209 0210 \r\n0213 0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 \r\n0224 0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 \r\n0235 0236 0237 0238 0239 0240 0241 0242 0243 0244 0246 \r\n0247 0248 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 \r\n10/24 3/25 7/25 12/25 13/25 1/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n14 MAY 2026 AND 11 JUN 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3026,15 +3172,37 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1036/26": {
+  "OIIX A1009/26": {
     "header": {
-      "id": "A1036/26",
+      "id": "A1009/26",
       "series": "A",
-      "number": "1036",
+      "number": "1009",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QCEXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-20T16:57:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26 , ALL AIRCRAFT OPERATING IN WEST PART OF \nTEHRAN FIR   SHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S \nWITH  ADS-B CAPABILITY OR ADS-B WITH DEDICATED  1090MHZ ADS-B \nOUT CAPABILITY."
+    },
+    "last_seen_utc": "2026-05-25 07:40:21 UTC"
+  },
+  "OIIX A1039/26": {
+    "header": {
+      "id": "A1039/26",
+      "series": "A",
+      "number": "1039",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0844/26\r"
+      "idToReplace": "A0846/26\r"
     },
     "qualification": {
       "line": "OIIX/QCEAS/I/B/E/000/999/",
@@ -3073,158 +3241,12 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-06-25T07:24:00.000Z",
+      "activityStart": "2026-06-25T07:32:00.000Z",
       "validityEnd": "2026-07-29T08:30:00.000Z"
     },
     "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, TEHRAN (MEHRABAD) MSSR RADAR \r\nDERIVED INFORMATION FOR EN-ROUTE NOT AVBL \r\nDUE TO TEHRAN (MEHRABAD) MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700MHZ) \r\nMAY NOT BE AVBL."
+      "text": "REF AIP PAGE ENR 1.6-1, KUSHK MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KUSHK MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 132.500 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
     },
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
-  },
-  "OIIX A1038/26": {
-    "header": {
-      "id": "A1038/26",
-      "series": "A",
-      "number": "1038",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0845/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-25T07:28:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, TEHRAN (IMAM KHOMEINI) MSSR RADAR \r\nDERIVED INFORMATION FOR EN-ROUTE NOT AVBL \r\nDUE TO TEHRAN (IMAM KHOMEINI) MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
-  },
-  "OIIX A1037/26": {
-    "header": {
-      "id": "",
-      "type": "A1037/26"
-    },
-    "qualification": {
-      "line": "OIIX/QKKKK/K/K/K/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "KKKK"
-      },
-      "traffic": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "scope": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-25T07:30:00.000Z",
-      "validityEnd": "2026-07-02T07:30:00.000Z"
-    },
-    "content": {
-      "text": "CHECKLIST:\r\n YEAR=2022 0253 1415 1416 1417 1418 1892 \r\n YEAR=2023 1718 1719 1720 1721 2113 2496 \r\n YEAR=2024 1456 3358 4458 4459 4460 4461 \r\n YEAR=2025 2322 2572 2776 3524 3526 3607 3608 3697 3903 4009 \r\n YEAR=2026 0113 0174 0233 0234 0263 0390 0392 0415 0477 0489 0519 \r\n0561 0564 0601 0637 0695 0696 0701 0703 0710 0711 0712 \r\n0713 0720 0724 0778 0779 0780 0781 0782 0784 0785 0787 \r\n0788 0789 0790 0791 0793 0794 0817 0818 0819 0820 0821 \r\n0822 0823 0824 0825 0828 0829 0830 0831 0835 0836 0845 \r\n0846 0847 0848 0849 0850 0851 0852 0854 0855 0861 0863 \r\n0868 0869 0870 0872 0873 0874 0878 0883 0886 0887 0888 \r\n0891 0892 0893 0896 0902 0903 0904 0905 0906 0907 0908 \r\n0909 0910 0912 0913 0915 0916 0917 0923 0924 0925 0931 \r\n0933 0934 0935 0936 0938 0940 0941 0946 0951 0953 0954 \r\n0955 0956 0957 0958 0959 0960 0961 0963 0964 0965 0966 \r\n0967 0968 0969 0970 0971 0972 0973 0974 0975 0976 0977 \r\n0978 0982 0983 0984 0985 0986 0987 0988 0990 0991 0996 \r\n0997 1003 1005 1006 1007 1008 1009 1012 1014 1016 1017 \r\n1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 \r\n1029 1030 1031 1032 1033 1034 1035 1036 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 END PART 1 OF 2\r\nA1037/26 NOTAMR A0995/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2605250730  C) 2606020730EST  E) CHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 \r\n7/25 12/25 13/25 1/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n14 MAY 2026 AND 11 JUN 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. END PART 2 OF 2"
-    },
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
-  },
-  "OIIX B0249/26": {
-    "header": {
-      "id": "B0249/26",
-      "series": "B",
-      "number": "0249",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0245/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QKKKK/K/K/K/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "KKKK"
-      },
-      "traffic": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "scope": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-25T07:30:00.000Z",
-      "validityEnd": "2026-07-02T07:30:00.000Z"
-    },
-    "content": {
-      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0127 0128 0135 0136 0177 0179 0187 0188 0189 \r\n0190 0199 0200 0201 0202 0204 0205 0207 0208 0209 0210 \r\n0213 0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 \r\n0224 0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 \r\n0235 0236 0237 0238 0239 0240 0241 0242 0243 0244 0246 \r\n0247 0248 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 \r\n10/24 3/25 7/25 12/25 13/25 1/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n14 MAY 2026 AND 11 JUN 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
-    },
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+    "last_seen_utc": "2026-05-25 07:40:21 UTC"
   }
 }

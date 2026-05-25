@@ -64,11 +64,6 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-04-20 10:55:22 UTC"
   },
-  "OIIX A0846/26": {
-    "explanation": "A radar system in Iran, called KUSHK MSSR, is currently broken. This means air traffic controllers won't be able to see planes on radar in certain parts of the airspace, specifically in three air traffic control sectors (Sector 1, 2, and 7). This situation is expected to last from April 27 to May 25, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-27 09:00:32 UTC"
-  },
   "OIIX A0847/26": {
     "explanation": "The radar system at Kish airport is currently broken and will not be working from April 27 to May 25, 2026. This means that pilots flying in certain areas, specifically en-route and in parts of air traffic control sectors 4 and 5, might not receive radar information from air traffic controllers.",
     "highest_level": "Third Level",
@@ -249,6 +244,26 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-05-25 07:25:22 UTC"
   },
+  "OIIX A1036/26": {
+    "explanation": "The main radar system used by air traffic controllers in Tehran (Mehrabad) is currently out of order. This means that pilots flying in certain parts of the airspace around Tehran might not receive radar services, making it harder for controllers to track and guide aircraft. This situation will last from May 25, 2026, until June 29, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
+  "OIIX A1038/26": {
+    "explanation": "The main radar system at Tehran's Imam Khomeini Airport is currently not working. This means that air traffic controllers might not have radar information for planes flying in certain areas (sectors 1, 2, and 7) of the airspace. As a result, radar services in these specific areas may not be available to pilots. This situation is expected to last from May 25, 2026, until June 29, 2026.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
+  "OIIX A1037/26": {
+    "explanation": "This is an administrative notice for pilots and air traffic controllers in the Tehran flight region. It provides a comprehensive list of all currently active aviation notices (NOTAMs), updates to aeronautical information publications (AIP Amendments), and other important circulars (AIP SUP and AIC) that they need to be aware of. It also informs them that no new major updates to the flight information publications will be released on May 14, 2026, and June 11, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
+  "OIIX B0249/26": {
+    "explanation": "This is a routine update for pilots and aviation staff in the Tehran region. It's like a table of contents, listing all the important active notices (NOTAMs), aviation publications (AIP Amendments, Supplements), and information circulars that they need to be aware of. It also mentions that no new major aviation updates will be released on May 14 and June 11, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+  },
   "OIIX A1006/26": {
     "explanation": "A specific area in the sky near Tehran, called OID84, is now off-limits for aircraft. This restriction is active daily from May 28 to July 22, 2026, between 3:30 AM and 7:30 PM UTC, from the ground up to 13,000 feet. Pilots need to avoid this area.",
     "highest_level": "Second Level",
@@ -279,24 +294,14 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1036/26": {
-    "explanation": "The main radar system used by air traffic controllers in Tehran (Mehrabad) is currently out of order. This means that pilots flying in certain parts of the airspace around Tehran might not receive radar services, making it harder for controllers to track and guide aircraft. This situation will last from May 25, 2026, until June 29, 2026.",
+  "OIIX A1009/26": {
+    "explanation": "Starting May 20, 2026, all aircraft flying in the western part of Tehran's flight control area must be equipped with specific advanced tracking technology called an SSR Transponder Mode S with ADS-B capability, or ADS-B with dedicated 1090MHz ADS-B Out capability. This rule will be in effect until May 25, 2026.",
     "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+    "last_seen_utc": "2026-05-25 07:40:21 UTC"
   },
-  "OIIX A1038/26": {
-    "explanation": "The main radar system at Tehran's Imam Khomeini Airport is currently not working. This means that air traffic controllers might not have radar information for planes flying in certain areas (sectors 1, 2, and 7) of the airspace. As a result, radar services in these specific areas may not be available to pilots. This situation is expected to last from May 25, 2026, until June 29, 2026.",
+  "OIIX A1039/26": {
+    "explanation": "A main radar system in Iran (called Kushk MSSR) is broken and will not be working until June 29th. This means air traffic controllers in certain parts of Iran's airspace, specifically in sectors 1, 2, and 7, will not have radar information to track planes. This will affect flights that rely on instruments and may limit air traffic control services in these areas.",
     "highest_level": "Second Level",
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
-  },
-  "OIIX A1037/26": {
-    "explanation": "This is an administrative notice for pilots and air traffic controllers in the Tehran flight region. It provides a comprehensive list of all currently active aviation notices (NOTAMs), updates to aeronautical information publications (AIP Amendments), and other important circulars (AIP SUP and AIC) that they need to be aware of. It also informs them that no new major updates to the flight information publications will be released on May 14, 2026, and June 11, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
-  },
-  "OIIX B0249/26": {
-    "explanation": "This is a routine update for pilots and aviation staff in the Tehran region. It's like a table of contents, listing all the important active notices (NOTAMs), aviation publications (AIP Amendments, Supplements), and information circulars that they need to be aware of. It also mentions that no new major aviation updates will be released on May 14 and June 11, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 07:35:22 UTC"
+    "last_seen_utc": "2026-05-25 07:40:21 UTC"
   }
 }
