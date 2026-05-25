@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1777889421,
-    "time_utc": "2026-05-04 10:10:21 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3f87f83f",
-        "callsign": "KRU2689",
-        "flight": "Unknown Flight",
-        "type": "F100",
-        "reg": "EP-NFA",
-        "category": "Commercial",
-        "alt": 28325,
-        "track": 14,
-        "speed": 435,
-        "lat": 32.192,
-        "lon": 49.288,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1777889724,
     "time_utc": "2026-05-04 10:15:24 UTC",
     "count": 2,
@@ -129605,6 +129583,73 @@
         "lon": 57.74,
         "airline": "Gulf Air",
         "country": "Bahrain"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779703824,
+    "time_utc": "2026-05-25 10:10:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3fdc2a9a",
+        "callsign": "IRA5328",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 55,
+        "speed": 575,
+        "lat": 33.694,
+        "lon": 47.203,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdbdf99",
+        "callsign": "KRU2526",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 8775,
+        "track": 156,
+        "speed": 285,
+        "lat": 31.082,
+        "lon": 48.88,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdba70d",
+        "callsign": "C130",
+        "flight": "Unknown Flight",
+        "type": "C130",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 450,
+        "track": 44,
+        "speed": 140,
+        "lat": 27.171,
+        "lon": 55.715,
+        "airline": "C13",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3fdc18aa",
+        "callsign": "MFX352",
+        "flight": "C6352",
+        "type": "A320",
+        "reg": "UK32071",
+        "category": "Commercial",
+        "alt": 33025,
+        "track": 155,
+        "speed": 296,
+        "lat": 27.388,
+        "lon": 60.564,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
       }
     ]
   }
