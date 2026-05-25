@@ -3151,6 +3151,160 @@
     },
     "last_seen_utc": "2026-05-25 09:35:25 UTC"
   },
+  "OIIX A1054/26": {
+    "header": {
+      "id": "A1054/26",
+      "series": "A",
+      "number": "1054",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-30T02:30:00.000Z",
+      "validityEnd": "2026-08-22T20:30:00.000Z",
+      "elements": [
+        "0230-2030"
+      ]
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 5.1.3-12 , OID123 ACTIVATED ."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "18000 FT AMSL"
+    },
+    "last_seen_utc": "2026-05-25 09:45:25 UTC"
+  },
+  "OIIX B0251/26": {
+    "header": {
+      "id": "B0251/26",
+      "series": "B",
+      "number": "0251",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/140/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "140"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-30T03:30:00.000Z",
+      "validityEnd": "2026-08-22T18:30:00.000Z",
+      "elements": [
+        "0330-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD: \r\n353320N  0611313E \r\n353207N  0611527E \r\n352905N  0611359E \r\n353107N  0611143E \r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          35.550556,
+          61.220278
+        ],
+        [
+          35.533333,
+          61.2575
+        ],
+        [
+          35.483333,
+          61.233056
+        ],
+        [
+          35.516667,
+          61.195278
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "14000 FT AMSL"
+    },
+    "last_seen_utc": "2026-05-25 09:45:25 UTC"
+  },
   "OIIX A0982/26": {
     "header": {
       "id": "A0982/26",
@@ -3318,16 +3472,16 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1054/26": {
+  "OIIX A1055/26": {
     "header": {
-      "id": "A1054/26",
+      "id": "A1055/26",
       "series": "A",
-      "number": "1054",
+      "number": "1055",
       "year": "26",
       "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QRDCA/IV/BO/W/000/180/",
+      "line": "OIIX/QRDCA/IV/BO/W/000/150/",
       "location": "OIIX",
       "code": {
         "code": "RDCA",
@@ -3367,30 +3521,30 @@
       ],
       "limits": {
         "lower": "000",
-        "upper": "180"
+        "upper": "150"
       }
     },
     "schedule": {
       "activityStart": "2026-06-30T02:30:00.000Z",
-      "validityEnd": "2026-08-22T20:30:00.000Z",
+      "validityEnd": "2026-08-22T16:30:00.000Z",
       "elements": [
-        "0230-2030"
+        "0230-1630"
       ]
     },
     "content": {
-      "text": "REF AIP PAGE ENR 5.1.3-12 , OID123 ACTIVATED ."
+      "text": "REF AIP PAGE ENR 5.1.3-13. , OID128 ACTIVATED ."
     },
     "limits": {
       "lower": "GND",
-      "upper": "18000 FT AMSL"
+      "upper": "15000 FT AMSL"
     },
-    "last_seen_utc": "2026-05-25 09:45:25 UTC"
+    "last_seen_utc": "2026-05-25 09:50:29 UTC"
   },
-  "OIIX B0251/26": {
+  "OIIX B0252/26": {
     "header": {
-      "id": "B0251/26",
+      "id": "B0252/26",
       "series": "B",
-      "number": "0251",
+      "number": "0252",
       "year": "26",
       "type": "NOTAMN\r"
     },
@@ -3446,23 +3600,23 @@
       ]
     },
     "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD: \r\n353320N  0611313E \r\n353207N  0611527E \r\n352905N  0611359E \r\n353107N  0611143E \r\nTO THE POINT OF ORIGIN.",
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n345907N  0610125E\r\n345842N  0605850E\r\n345634N  0605925E\r\n345700N  0610159E\r\nTO THE POINT OF ORIGIN.",
       "area": [
         [
-          35.550556,
-          61.220278
+          34.983333,
+          61.023611
         ],
         [
-          35.533333,
-          61.2575
+          34.967778,
+          60.980556
         ],
         [
-          35.483333,
-          61.233056
+          34.934167,
+          60.990278
         ],
         [
-          35.516667,
-          61.195278
+          34.95,
+          61.033056
         ]
       ]
     },
@@ -3470,6 +3624,6 @@
       "lower": "GND",
       "upper": "14000 FT AMSL"
     },
-    "last_seen_utc": "2026-05-25 09:45:25 UTC"
+    "last_seen_utc": "2026-05-25 09:50:29 UTC"
   }
 }
