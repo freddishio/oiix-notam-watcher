@@ -264,11 +264,6 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026-05-25 08:20:24 UTC"
   },
-  "OIIX A1048/26": {
-    "explanation": "This is an official notice for pilots. It states that any aircraft flying in the western part of the Tehran flight information region (FIR) must have specific equipment. This equipment is either an SSR Transponder Mode S with ADS-B capability, or an ADS-B system with a dedicated 1090MHz ADS-B Out capability. This rule is in effect from May 25, 2026, until June 29, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 08:25:23 UTC"
-  },
   "OIIX B0250/26": {
     "explanation": "This is a temporary rule for flying in Iran. Most private and visual flights (where pilots fly by looking outside) are stopped. However, flights around specific airports (OIMG and OIMS), flights for emergencies (like hospital, search and rescue), government, or military operations are still allowed. If you want to fly visually for other reasons, you need special permission. Flights that normally use instruments but have to switch to visual rules just for landing or takeoff at small airports are not affected by this rule.",
     "highest_level": "First Level",
@@ -303,5 +298,10 @@
     "explanation": "The United States government has issued a new rule (SFAR 117) that bans certain US flights from flying in the airspace over Tehran, Iran. This ban started on October 3, 2024, and is expected to last until October 31, 2027. All pilots and airlines are required to read the full details of this rule.",
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1049/26": {
+    "explanation": "For about a month, any aircraft flying in the western part of the airspace managed by Tehran (Iran) must have a specific type of modern tracking and broadcasting equipment called ADS-B. This equipment helps air traffic controllers see the aircraft more clearly and accurately. If an aircraft doesn't have this equipment, it cannot fly in that specific area.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-05-25 08:40:28 UTC"
   }
 }
