@@ -722,61 +722,6 @@
     },
     "last_seen_utc": "2026-04-20 10:50:20 UTC"
   },
-  "OIIX A0847/26": {
-    "header": {
-      "id": "A0847/26",
-      "series": "A",
-      "number": "0847",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0767/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-27T08:57:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, KISH MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KISH MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 4 (FREQ 133.400MHZ) AND \r\nSECTOR 5 (FREQ 120.300 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-04-27 09:05:19 UTC"
-  },
   "OIIX A0848/26": {
     "header": {
       "id": "A0848/26",
@@ -2031,6 +1976,28 @@
     },
     "last_seen_utc": "2026-05-18 13:40:28 UTC"
   },
+  "OIIX A1009/26": {
+    "header": {
+      "id": "A1009/26",
+      "series": "A",
+      "number": "1009",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QCEXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-20T16:57:00.000Z",
+      "validityEnd": "2026-06-25T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF NOTAM A0796/26 , ALL AIRCRAFT OPERATING IN WEST PART OF \nTEHRAN FIR   SHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S \nWITH  ADS-B CAPABILITY OR ADS-B WITH DEDICATED  1090MHZ ADS-B \nOUT CAPABILITY."
+    },
+    "last_seen_utc": "2026-05-25 07:40:21 UTC"
+  },
   "OIIX B0210/26": {
     "header": {
       "id": "B0210/26",
@@ -2783,6 +2750,61 @@
     },
     "last_seen_utc": "2026-05-25 07:35:22 UTC"
   },
+  "OIIX A1039/26": {
+    "header": {
+      "id": "A1039/26",
+      "series": "A",
+      "number": "1039",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0846/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:32:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, KUSHK MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KUSHK MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 132.500 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-05-25 07:40:21 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3172,37 +3194,15 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1009/26": {
+  "OIIX A1040/26": {
     "header": {
-      "id": "A1009/26",
+      "id": "A1040/26",
       "series": "A",
-      "number": "1009",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QCEXX/E//000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-06-20T16:57:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26 , ALL AIRCRAFT OPERATING IN WEST PART OF \nTEHRAN FIR   SHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S \nWITH  ADS-B CAPABILITY OR ADS-B WITH DEDICATED  1090MHZ ADS-B \nOUT CAPABILITY."
-    },
-    "last_seen_utc": "2026-05-25 07:40:21 UTC"
-  },
-  "OIIX A1039/26": {
-    "header": {
-      "id": "A1039/26",
-      "series": "A",
-      "number": "1039",
+      "number": "1040",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0846/26\r"
+      "idToReplace": "A0847/26\r"
     },
     "qualification": {
       "line": "OIIX/QCEAS/I/B/E/000/999/",
@@ -3241,12 +3241,12 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-06-25T07:32:00.000Z",
+      "activityStart": "2026-06-25T07:35:00.000Z",
       "validityEnd": "2026-07-29T08:30:00.000Z"
     },
     "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, KUSHK MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KUSHK MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 132.500 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
+      "text": "REF AIP PAGE ENR 1.6-1, KISH MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KISH MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 4 (FREQ 133.400MHZ) AND \r\nSECTOR 5 (FREQ 120.300 MHZ) \r\nMAY NOT BE AVBL."
     },
-    "last_seen_utc": "2026-05-25 07:40:21 UTC"
+    "last_seen_utc": "2026-05-25 07:45:24 UTC"
   }
 }
