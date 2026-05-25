@@ -129940,5 +129940,57 @@
     "time_utc": "2026-05-25 13:10:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779714923,
+    "time_utc": "2026-05-25 13:15:23 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3fdccbe0",
+        "callsign": "CPN7951",
+        "flight": "IV7951",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 301,
+        "speed": 376,
+        "lat": 38.531,
+        "lon": 47.21,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdcab31",
+        "callsign": "IRA748",
+        "flight": "IR748",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 164,
+        "speed": 456,
+        "lat": 37.644,
+        "lon": 51.14,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdc124f",
+        "callsign": "IRB9730",
+        "flight": "B99730",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 24075,
+        "track": 163,
+        "speed": 392,
+        "lat": 29.963,
+        "lon": 52.489,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
