@@ -1571,69 +1571,6 @@
     },
     "last_seen_utc": "2026-05-13 11:11:14 UTC"
   },
-  "OIIX B0246/26": {
-    "header": {
-      "id": "B0246/26",
-      "series": "B",
-      "number": "0246",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0194/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLV",
-        "entity": "AF",
-        "status": "LV",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
-      },
-      "traffic": [
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-18T13:30:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT:\r\nOIMG AND OIMS WITHIN ATZ, AND THOSE FLT ENGAGED IN\r\nHOSP, SAR, STATE, AND MILITARY OPERATION.\r\nOTHER VFR FLT REQUIRE PRIOR PERMISSION FROM CIVIL \r\nAVIATION AUTHORITY. \r\nIFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT \r\nNEED TO BE CHANGED TO VFR\r\nDURING ARRIVAL AND DEPARTURE, ARE NOT SUBJECT TO THIS LIMITATION."
-    },
-    "last_seen_utc": "2026-05-18 13:40:28 UTC"
-  },
   "OIIX B0210/26": {
     "header": {
       "id": "B0210/26",
@@ -2839,6 +2776,28 @@
     },
     "last_seen_utc": "2026-05-25 08:20:24 UTC"
   },
+  "OIIX A1048/26": {
+    "header": {
+      "id": "A1048/26",
+      "series": "A",
+      "number": "1048",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1009/26"
+    },
+    "qualification": {
+      "line": "OIIX/QCEXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T08:13:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A01020/26 , \nALL AIRCRAFT OPERATING IN WEST PART OF TEHRAN FIR  \nSHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S WITH \nADS-B CAPABILITY OR ADS-B WITH DEDICATED \n1090MHZ ADS-B OUT CAPABILITY.)"
+    },
+    "last_seen_utc": "2026-05-25 08:25:23 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3228,26 +3187,67 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1048/26": {
+  "OIIX B0250/26": {
     "header": {
-      "id": "A1048/26",
-      "series": "A",
-      "number": "1048",
+      "id": "B0250/26",
+      "series": "B",
+      "number": "0250",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1009/26"
+      "idToReplace": "B0246/26\r"
     },
     "qualification": {
-      "line": "OIIX/QCEXX/E//000/999/"
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
     },
     "schedule": {
-      "activityStart": "2026-06-25T08:13:00.000Z",
+      "activityStart": "2026-06-25T08:16:00.000Z",
       "validityEnd": "2026-07-29T08:30:00.000Z"
     },
     "content": {
-      "text": "REF NOTAM A01020/26 , \nALL AIRCRAFT OPERATING IN WEST PART OF TEHRAN FIR  \nSHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S WITH \nADS-B CAPABILITY OR ADS-B WITH DEDICATED \n1090MHZ ADS-B OUT CAPABILITY.)"
+      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT:\r\nOIMG AND OIMS WITHIN ATZ, AND THOSE FLT ENGAGED IN\r\nHOSP, SAR, STATE, AND MILITARY OPERATION.\r\nOTHER VFR FLT REQUIRE PRIOR PERMISSION FROM CIVIL \r\nAVIATION AUTHORITY. \r\nIFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT NEED \r\nTO BE CHANGED TO VFR\r\nDURING ARRIVAL AND DEPARTURE, ARE NOT SUBJECT TO THIS LIMITATION."
     },
-    "last_seen_utc": "2026-05-25 08:25:23 UTC"
+    "last_seen_utc": "2026-05-25 08:30:35 UTC"
   }
 }
