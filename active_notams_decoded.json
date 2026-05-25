@@ -722,202 +722,6 @@
     },
     "last_seen_utc": "2026-04-20 10:50:20 UTC"
   },
-  "OIIX A0803/26": {
-    "header": {
-      "id": "A0803/26",
-      "series": "A",
-      "number": "0803",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0757/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/IV/NBO/E /000/999/3220N05324E631",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "coordinates": [
-        [
-          32.333333,
-          53.4
-        ],
-        {
-          "radius": 631
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T10:40:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26, \r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \r\nDURING RECOVERY PERIOD: \r\nFM OPKR FIR TO UBBA FIR: \r\n -ASVIB M715 SRN T216 SODOK L713 GIBAB DCT ULEXI DCT BATEV,\r\n -DERBO G452 ITBIR L713 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OPKR FIR:\r\n -ULDUS N319 DERBO,\r\n -ULDUS N319 ZDN L125 KEBUD.)"
-    },
-    "last_seen_utc": "2026-04-27 07:45:23 UTC"
-  },
-  "OIIX A0807/26": {
-    "header": {
-      "id": "A0807/26",
-      "series": "A",
-      "number": "0807",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0761/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-21T10:46:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26,\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UBBA FIR:\n -MESPO Y12 W139 DAR DCT OTISO L713 GIBAB DCT ULEXI DCT BATEV, \nFM UBBA FIR TO OOMM FIR:\n -ULDUS N319 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -ULDUS N319 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)."
-    },
-    "last_seen_utc": "2026-04-21 10:55:20 UTC"
-  },
-  "OIIX A0808/26": {
-    "header": {
-      "id": "A0808/26",
-      "series": "A",
-      "number": "0808",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0800/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-22T07:31:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UTAK FIR: \n -MESPO Y12 BAM W139 DAR DCT OTISO M318 IMKUK N567 SOMAD, \nFM UTAK FIR TO OOMM FIR: \n -SOMAD P718 ITELO N319 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -SOMAD P718 ITELO N319 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)."
-    },
-    "last_seen_utc": "2026-04-22 07:40:22 UTC"
-  },
-  "OIIX A0809/26": {
-    "header": {
-      "id": "A0809/26",
-      "series": "A",
-      "number": "0809",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0801/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-22T07:36:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UTAA FIR: \n -MESPO Y12 BAM W139 DAR Z5 MSD A647 NAZAR, \n -MESPO Y12 BAM W139 DAR DCT OTISO M318 RIKOP, \nFM UTAA FIR TO OOMM FIR: \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR), \n -NAZAR A647 MSD G775 ZDN W2 MESPO, \n -NAZAR A647 MSD G775 ZDN W2 CBH R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)."
-    },
-    "last_seen_utc": "2026-04-22 07:55:20 UTC"
-  },
   "OIIX A0812/26": {
     "header": {
       "id": "A0812/26",
@@ -2869,6 +2673,98 @@
     },
     "last_seen_utc": "2026-05-25 07:00:28 UTC"
   },
+  "OIIX A1026/26": {
+    "header": {
+      "id": "A1026/26",
+      "series": "A",
+      "number": "1026",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0805/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T06:53:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26,\r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED,\r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285\r\nDURING RECOVERY PERIOD:\r\nFM OAKX FIR TO UTAA FIR:\r\n -PAMTU G792 MSD G775 ORPAB,\r\n -PAMTU G792 GIRUN,\r\nFM UTAA FIR TO OAKX FIR:\r\n -GIRUN G792 PAMTU,\r\n -ORPAB G775 MSD G792 PAMTU."
+    },
+    "last_seen_utc": "2026-05-25 07:05:25 UTC"
+  },
+  "OIIX A1027/26": {
+    "header": {
+      "id": "A1027/26",
+      "series": "A",
+      "number": "1027",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0806/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T06:55:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26,\r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED,\r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285\r\nDURING RECOVERY PERIOD:\r\nFM OAKX FIR TO UBBA FIR:\r\n -SOKAM L333 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OAKX FIR:\r\n -ULDUS P567 ALROT L333 SOKAM."
+    },
+    "last_seen_utc": "2026-05-25 07:05:25 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3258,96 +3154,92 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1026/26": {
+  "OIIX A1024/26": {
     "header": {
-      "id": "A1026/26",
+      "id": "A1024/26",
       "series": "A",
-      "number": "1026",
+      "number": "1024",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0805/26\r"
+      "idToReplace": "A0803/26"
     },
     "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
+      "line": "OIIX/QAFXX/E//000/999/"
     },
     "schedule": {
-      "activityStart": "2026-06-25T06:53:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z",
-      "estimated": true
+      "activityStart": "2026-06-25T06:49:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
     },
     "content": {
-      "text": "REF NOTAM A1020/26,\r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED,\r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285\r\nDURING RECOVERY PERIOD:\r\nFM OAKX FIR TO UTAA FIR:\r\n -PAMTU G792 MSD G775 ORPAB,\r\n -PAMTU G792 GIRUN,\r\nFM UTAA FIR TO OAKX FIR:\r\n -GIRUN G792 PAMTU,\r\n -ORPAB G775 MSD G792 PAMTU."
+      "text": "REF NOTAM A1020/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OPKR FIR TO UBBA FIR: \n -ASVIB M715 SRN T216 SODOK L713 GIBAB DCT ULEXI DCT BATEV,\n -DERBO G452 ITBIR L713 GIBAB DCT ULEXI DCT BATEV,\nFM UBBA FIR TO OPKR FIR:\n -ULDUS N319 DERBO,\n -ULDUS N319 ZDN L125 KEBUD ."
     },
-    "last_seen_utc": "2026-05-25 07:05:25 UTC"
+    "last_seen_utc": "2026-05-25 07:10:24 UTC"
   },
-  "OIIX A1027/26": {
+  "OIIX A1028/26": {
     "header": {
-      "id": "A1027/26",
+      "id": "A1028/26",
       "series": "A",
-      "number": "1027",
+      "number": "1028",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0806/26\r"
+      "idToReplace": "A0807/26"
     },
     "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
+      "line": "OIIX/QAFXX/E//000/999/"
     },
     "schedule": {
-      "activityStart": "2026-06-25T06:55:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z",
-      "estimated": true
+      "activityStart": "2026-06-25T06:59:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
     },
     "content": {
-      "text": "REF NOTAM A1020/26,\r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED,\r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285\r\nDURING RECOVERY PERIOD:\r\nFM OAKX FIR TO UBBA FIR:\r\n -SOKAM L333 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OAKX FIR:\r\n -ULDUS P567 ALROT L333 SOKAM."
+      "text": "REF NOTAM A1020/26,\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UBBA FIR:\n -MESPO Y12 W139 DAR DCT OTISO L713 GIBAB DCT ULEXI DCT BATEV, \nFM UBBA FIR TO OOMM FIR:\n -ULDUS N319 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -ULDUS N319 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)"
     },
-    "last_seen_utc": "2026-05-25 07:05:25 UTC"
+    "last_seen_utc": "2026-05-25 07:10:24 UTC"
+  },
+  "OIIX A1029/26": {
+    "header": {
+      "id": "A1029/26",
+      "series": "A",
+      "number": "1029",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0809/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:01:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UTAA FIR: \n -MESPO Y12 BAM W139 DAR Z5 MSD A647 NAZAR, \n -MESPO Y12 BAM W139 DAR DCT OTISO M318 RIKOP, \nFM UTAA FIR TO OOMM FIR: \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -RIKOP M324 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR), \n -NAZAR A647 MSD G775 ZDN W2 MESPO, \n -NAZAR A647 MSD G775 ZDN W2 CBH R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)"
+    },
+    "last_seen_utc": "2026-05-25 07:10:24 UTC"
+  },
+  "OIIX A1030/26": {
+    "header": {
+      "id": "A1030/26",
+      "series": "A",
+      "number": "1030",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0808/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:03:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO UTAK FIR: \n -MESPO Y12 BAM W139 DAR DCT OTISO M318 IMKUK N567 SOMAD, \nFM UTAK FIR TO OOMM FIR: \n -SOMAD P718 ITELO N319 ROXEK DCT SILKO DCT NAGES R654 CBH W2 MESPO, \n -SOMAD P718 ITELO N319 ROXEK DCT SILKO DCT NAGES R654 DENDA \n  (FOR TRAFFIC LANDING IN UAE FIR)"
+    },
+    "last_seen_utc": "2026-05-25 07:10:24 UTC"
   }
 }
