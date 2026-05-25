@@ -966,27 +966,6 @@
     },
     "last_seen_utc": "2026-05-06 10:50:22 UTC"
   },
-  "OIIX A0946/26": {
-    "header": {
-      "id": "A0946/26",
-      "series": "A",
-      "number": "0946",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999////"
-    },
-    "schedule": {
-      "activityStart": "2026-06-11T17:20:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A0796/26, RAGET AND PAXAT ARE AVAILABLE AS \nTRANSFER OF CONTROL\nPOINTS BTN TEHRAN FIR AND BAGHDAD FIR FM 0230-1430 UTC,\nONLY FOR FLIGHTS ARRIVING TO OR DEPARTING FM AIRPORTS IN TEHRAN FIR"
-    },
-    "last_seen_utc": "2026-05-11 17:40:31 UTC"
-  },
   "OIIX A0957/26": {
     "header": {
       "id": "A0957/26",
@@ -3248,5 +3227,27 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1046/26": {
+    "header": {
+      "id": "A1046/26",
+      "series": "A",
+      "number": "1046",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0946/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T08:02:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26, RAGET AND PAXAT ARE AVAILABLE \nAS TRANSFER OF CONTROL POINTS BTN\nTEHRAN FIR AND BAGHDAD FIR FM 0230-1430 UTC,\nONLY FOR FLIGHTS ARRIVING TO OR \nDEPARTING FM AIRPORTS IN TEHRAN FIR"
+    },
+    "last_seen_utc": "2026-05-25 08:15:24 UTC"
   }
 }
