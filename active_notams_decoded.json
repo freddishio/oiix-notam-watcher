@@ -1571,52 +1571,6 @@
     },
     "last_seen_utc": "2026-05-13 11:11:14 UTC"
   },
-  "OIIX A0996/26": {
-    "header": {
-      "id": "A0996/26",
-      "series": "A",
-      "number": "0996",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0947/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-18T13:20:00.000Z",
-      "validityEnd": "2026-06-25T08:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "REF TO NOTAM A0796/26, THE HOURS OF OPERATION OF ALL AIRPORTS\r\nIN THE EAST PART OF TEHRAN FIR ARE HJ, EXCEPT FOR:\r\nOIMM, OIMS, AND OIZH, OPERATING H24.\r\nOIII AND OIIE OPERATING FM 0100-1800 UTC.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\r\nSHALL BE REQUESTED FROM IRAN CAA."
-    },
-    "last_seen_utc": "2026-05-18 13:35:30 UTC"
-  },
   "OIIX B0246/26": {
     "header": {
       "id": "B0246/26",
@@ -2839,6 +2793,28 @@
     },
     "last_seen_utc": "2026-05-25 08:00:28 UTC"
   },
+  "OIIX A1046/26": {
+    "header": {
+      "id": "A1046/26",
+      "series": "A",
+      "number": "1046",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0946/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T08:02:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26, RAGET AND PAXAT ARE AVAILABLE \nAS TRANSFER OF CONTROL POINTS BTN\nTEHRAN FIR AND BAGHDAD FIR FM 0230-1430 UTC,\nONLY FOR FLIGHTS ARRIVING TO OR \nDEPARTING FM AIRPORTS IN TEHRAN FIR"
+    },
+    "last_seen_utc": "2026-05-25 08:15:24 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3228,26 +3204,50 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1046/26": {
+  "OIIX A1047/26": {
     "header": {
-      "id": "A1046/26",
+      "id": "A1047/26",
       "series": "A",
-      "number": "1046",
+      "number": "1047",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0946/26"
+      "idToReplace": "A0996/26\r"
     },
     "qualification": {
-      "line": "OIIX/QAFXX/E//000/999/"
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
     },
     "schedule": {
-      "activityStart": "2026-06-25T08:02:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
+      "activityStart": "2026-06-25T08:10:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
     },
     "content": {
-      "text": "REF NOTAM A1020/26, RAGET AND PAXAT ARE AVAILABLE \nAS TRANSFER OF CONTROL POINTS BTN\nTEHRAN FIR AND BAGHDAD FIR FM 0230-1430 UTC,\nONLY FOR FLIGHTS ARRIVING TO OR \nDEPARTING FM AIRPORTS IN TEHRAN FIR"
+      "text": "REF TO NOTAM A1020/26, THE HOURS OF OPERATION OF ALL AIRPORTS\r\nIN THE EAST PART OF TEHRAN FIR ARE HJ, EXCEPT FOR:\r\nOIMM, OIMS, AND OIZH, OPERATING H24.\r\nOIII AND OIIE OPERATING FM 0100-1800 UTC.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\r\nSHALL BE REQUESTED FROM IRAN CAA."
     },
-    "last_seen_utc": "2026-05-25 08:15:24 UTC"
+    "last_seen_utc": "2026-05-25 08:20:24 UTC"
   }
 }

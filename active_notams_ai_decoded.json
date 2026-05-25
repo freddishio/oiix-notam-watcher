@@ -129,11 +129,6 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-05-13 11:11:14 UTC"
   },
-  "OIIX A0996/26": {
-    "explanation": "This is an important update for pilots flying in the eastern part of Tehran's airspace. From May 18th to May 25th, most airports in this area will only be open during daylight hours (sunrise to sunset). However, three specific airports (OIMM, OIMS, OIZH) will operate 24 hours a day, and two others (OIII, OIIE) will be open from 1 AM to 6 PM UTC. Crucially, any flight permissions you had before are now cancelled, and you must apply for new ones directly from the Iranian aviation authorities.",
-    "highest_level": "Second Level",
-    "last_seen_utc": "2026-05-18 13:35:30 UTC"
-  },
   "OIIX B0246/26": {
     "explanation": "For about a week, most private and visual flights (VFR) are not allowed in Iran. However, essential flights like medical, search and rescue, government, and military operations can still fly. Flights within two specific airport zones (OIMG and OIMS) are also permitted. If you want to fly visually for other reasons, you need special permission from the aviation authority. Flights that use instruments but briefly switch to visual rules for landing or takeoff are not affected by this restriction.",
     "highest_level": "First Level",
@@ -269,6 +264,11 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-05-25 08:00:28 UTC"
   },
+  "OIIX A1046/26": {
+    "explanation": "Two specific points in the sky, named RAGET and PAXAT, are now available for air traffic controllers to hand over flights between Iran's and Iraq's airspaces. This is only for flights that are either arriving at or departing from airports within Iran, and it's available daily from 2:30 AM to 2:30 PM UTC.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-05-25 08:15:24 UTC"
+  },
   "OIIX A1006/26": {
     "explanation": "A specific area in the sky near Tehran, called OID84, is now off-limits for aircraft. This restriction is active daily from May 28 to July 22, 2026, between 3:30 AM and 7:30 PM UTC, from the ground up to 13,000 feet. Pilots need to avoid this area.",
     "highest_level": "Second Level",
@@ -299,9 +299,9 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1046/26": {
-    "explanation": "Two specific points in the sky, named RAGET and PAXAT, are now available for air traffic controllers to hand over flights between Iran's and Iraq's airspaces. This is only for flights that are either arriving at or departing from airports within Iran, and it's available daily from 2:30 AM to 2:30 PM UTC.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-05-25 08:15:24 UTC"
+  "OIIX A1047/26": {
+    "explanation": "This is an important update for flights in the eastern part of the Tehran region. Most airports there will now only be open during the day. A few specific airports will remain open 24 hours, and two others will have specific operating hours. All old flight approvals are no longer valid, and new ones must be requested from the Iranian aviation authorities.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-05-25 08:20:24 UTC"
   }
 }
