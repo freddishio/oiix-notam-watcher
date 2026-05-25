@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1777876830,
-    "time_utc": "2026-05-04 06:40:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777877119,
-    "time_utc": "2026-05-04 06:45:19 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "3f876736",
-        "callsign": "IRB9746",
-        "flight": "Unknown Flight",
-        "type": "A320",
-        "reg": "EP-MDS",
-        "category": "Commercial",
-        "alt": 27450,
-        "track": 308,
-        "speed": 423,
-        "lat": 38.696,
-        "lon": 44.568,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "3f878d86",
-        "callsign": "KRU2688",
-        "flight": "Unknown Flight",
-        "type": "F100",
-        "reg": "EP-NFA",
-        "category": "Commercial",
-        "alt": 7800,
-        "track": 100,
-        "speed": 221,
-        "lat": 30.348,
-        "lon": 48.408,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1777877421,
     "time_utc": "2026-05-04 06:50:21 UTC",
     "count": 1,
@@ -129953,6 +129910,73 @@
         "lat": 34.17,
         "lon": 48.025,
         "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1779691522,
+    "time_utc": "2026-05-25 06:45:22 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3fdb91c8",
+        "callsign": "QSM2213",
+        "flight": "QB2213",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 295,
+        "speed": 411,
+        "lat": 38.851,
+        "lon": 44.366,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdba7ca",
+        "callsign": "IZG3043",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 29575,
+        "track": 52,
+        "speed": 541,
+        "lat": 33.357,
+        "lon": 46.097,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdba59c",
+        "callsign": "AXV9213",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 46,
+        "speed": 531,
+        "lat": 33.704,
+        "lon": 47.228,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fdba0d1",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 60,
+        "speed": 554,
+        "lat": 34.023,
+        "lon": 47.667,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
