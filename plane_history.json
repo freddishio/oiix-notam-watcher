@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778004930,
-    "time_utc": "2026-05-05 18:15:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778005231,
     "time_utc": "2026-05-05 18:20:31 UTC",
     "count": 0,
@@ -133319,5 +133313,27 @@
     "time_utc": "2026-05-26 18:15:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779819624,
+    "time_utc": "2026-05-26 18:20:24 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fe1cea5",
+        "callsign": "GFA154",
+        "flight": "GF154",
+        "type": "B789",
+        "reg": "A9C-FJ",
+        "category": "Commercial",
+        "alt": 17600,
+        "track": 60,
+        "speed": 410,
+        "lat": 27.338,
+        "lon": 52.964,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
+      }
+    ]
   }
 ]
