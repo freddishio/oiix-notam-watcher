@@ -2855,6 +2855,86 @@
     },
     "last_seen_utc": "2026-05-26 14:00:33 UTC"
   },
+  "OIIX A1067/26": {
+    "header": {
+      "id": "A1067/26",
+      "series": "A",
+      "number": "1067",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1046/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-26T13:53:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26,\nRAGET AND PAXAT ARE AVAILABLE AS TRANSFER OF CONTROL POINTS \nBTN TEHRAN FIR AND BAGHDAD FIR FM 0130-1530 UTC,\nONLY FOR FLT ARRIVING TO OR DEPARTING FM AIRPORTS IN TEHRAN FIR."
+    },
+    "last_seen_utc": "2026-05-26 14:10:32 UTC"
+  },
+  "OIIX A1068/26": {
+    "header": {
+      "id": "A1068/26",
+      "series": "A",
+      "number": "1068",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1047/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-26T13:58:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF TO NOTAM A1020/26, THE HOURS OF OPERATION OF ALL AIRPORTS\nIN THE EAST PART OF TEHRAN FIR ARE ACCORDING AIP.\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\nSHALL BE REQUESTED FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-05-26 14:10:32 UTC"
+  },
   "OIIX A1006/26": {
     "header": {
       "id": "A1006/26",
@@ -3859,85 +3939,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1067/26": {
-    "header": {
-      "id": "A1067/26",
-      "series": "A",
-      "number": "1067",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1046/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-26T13:53:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A1020/26,\nRAGET AND PAXAT ARE AVAILABLE AS TRANSFER OF CONTROL POINTS \nBTN TEHRAN FIR AND BAGHDAD FIR FM 0130-1530 UTC,\nONLY FOR FLT ARRIVING TO OR DEPARTING FM AIRPORTS IN TEHRAN FIR."
-    },
-    "last_seen_utc": "2026-05-26 14:10:32 UTC"
-  },
-  "OIIX A1068/26": {
-    "header": {
-      "id": "A1068/26",
-      "series": "A",
-      "number": "1068",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1047/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-26T13:58:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF TO NOTAM A1020/26, THE HOURS OF OPERATION OF ALL AIRPORTS\nIN THE EAST PART OF TEHRAN FIR ARE ACCORDING AIP.\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND NEW PERMISSIONS\nSHALL BE REQUESTED FROM IRAN CAA."
-    },
-    "last_seen_utc": "2026-05-26 14:10:32 UTC"
   }
 }
