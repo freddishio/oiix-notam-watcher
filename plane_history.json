@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1777939230,
-    "time_utc": "2026-05-05 00:00:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1777939520,
-    "time_utc": "2026-05-05 00:05:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1777939826,
     "time_utc": "2026-05-05 00:10:26 UTC",
     "count": 0,
@@ -129601,5 +129589,27 @@
     "time_utc": "2026-05-26 00:00:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779753922,
+    "time_utc": "2026-05-26 00:05:22 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fdea9c3",
+        "callsign": "RDA4324",
+        "flight": "Unknown Flight",
+        "type": "IL62",
+        "reg": "EW-505TR",
+        "category": "Commercial",
+        "alt": 16525,
+        "track": 113,
+        "speed": 382,
+        "lat": 25.394,
+        "lon": 57.059,
+        "airline": "Rada Airlines",
+        "country": "Belarus"
+      }
+    ]
   }
 ]
