@@ -135421,5 +135421,42 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1779960924,
+    "time_utc": "2026-05-28 09:35:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fe83aaf",
+        "callsign": "IRM077",
+        "flight": "Unknown Flight",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 131,
+        "speed": 552,
+        "lat": 35.803,
+        "lon": 60.255,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fe83f8c",
+        "callsign": "IRZ166",
+        "flight": "IRZ181",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 21525,
+        "track": 232,
+        "speed": 373,
+        "lat": 30.56,
+        "lon": 49.135,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
