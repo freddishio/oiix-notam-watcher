@@ -135225,5 +135225,42 @@
     "time_utc": "2026-05-28 02:00:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1779933924,
+    "time_utc": "2026-05-28 02:05:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fe74add",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 310,
+        "speed": 399,
+        "lat": 37.091,
+        "lon": 48.693,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fe74791",
+        "callsign": "QSM2237",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 34025,
+        "track": 251,
+        "speed": 389,
+        "lat": 34.463,
+        "lon": 47.713,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
