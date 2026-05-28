@@ -135883,5 +135883,42 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1779976232,
+    "time_utc": "2026-05-28 13:50:32 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fe930c1",
+        "callsign": "IRB8006",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 103,
+        "speed": 521,
+        "lat": 37.04,
+        "lon": 47.144,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fe931f2",
+        "callsign": "SHI7347",
+        "flight": "IS7347",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 29425,
+        "track": 50,
+        "speed": 494,
+        "lat": 33.526,
+        "lon": 46.341,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
