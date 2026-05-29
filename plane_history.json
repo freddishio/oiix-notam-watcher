@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778198727,
-    "time_utc": "2026-05-08 00:05:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778199019,
-    "time_utc": "2026-05-08 00:10:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778199320,
     "time_utc": "2026-05-08 00:15:20 UTC",
     "count": 0,
@@ -135641,5 +135629,42 @@
     "time_utc": "2026-05-29 00:05:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780013427,
+    "time_utc": "2026-05-29 00:10:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3fe97052",
+        "callsign": "UAE317",
+        "flight": "EK317",
+        "type": "B77W",
+        "reg": "A6-EPY",
+        "category": "Commercial",
+        "alt": 35300,
+        "track": 190,
+        "speed": 462,
+        "lat": 29.872,
+        "lon": 56.598,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3feb647b",
+        "callsign": "UAE1N",
+        "flight": "EK564",
+        "type": "B77W",
+        "reg": "A6-EGK",
+        "category": "Commercial",
+        "alt": 30750,
+        "track": 101,
+        "speed": 518,
+        "lat": 25.013,
+        "lon": 57.492,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
