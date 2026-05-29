@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778252729,
-    "time_utc": "2026-05-08 15:05:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778253024,
-    "time_utc": "2026-05-08 15:10:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778253327,
     "time_utc": "2026-05-08 15:15:27 UTC",
     "count": 0,
@@ -137447,6 +137435,28 @@
         "speed": 173,
         "lat": 30.465,
         "lon": 48.211,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780067428,
+    "time_utc": "2026-05-29 15:10:28 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fede6c8",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 9925,
+        "track": 24,
+        "speed": 321,
+        "lat": 30.796,
+        "lon": 48.421,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
