@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778291123,
-    "time_utc": "2026-05-09 01:45:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778291425,
     "time_utc": "2026-05-09 01:50:25 UTC",
     "count": 0,
@@ -137023,5 +137017,27 @@
     "time_utc": "2026-05-30 01:40:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780105527,
+    "time_utc": "2026-05-30 01:45:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ff001de",
+        "callsign": "RNA230",
+        "flight": "RA230",
+        "type": "A332",
+        "reg": "9N-ALZ",
+        "category": "Commercial",
+        "alt": 27700,
+        "track": 77,
+        "speed": 480,
+        "lat": 24.983,
+        "lon": 58.077,
+        "airline": "Nepal Airlines",
+        "country": "Nepal"
+      }
+    ]
   }
 ]
