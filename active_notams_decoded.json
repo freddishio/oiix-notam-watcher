@@ -3733,6 +3733,28 @@
     },
     "last_seen_utc": "2026-05-31 14:50:28 UTC"
   },
+  "OIIX A1087/26": {
+    "header": {
+      "id": "A1087/26",
+      "series": "A",
+      "number": "1087",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1049/26"
+    },
+    "qualification": {
+      "line": "OIIX/QCEXX////E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-01T14:43:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "IN THE WEST PART OF TEHRAN FIR FM MAGRI-SISIL-EGVEL\n-RERET-YZD-NALBI-RIGUT-IVIVA\nTHENCE ALONG TEHRAN FIR BOUNDARY TO THE POINT OF ORIGIN,\nALL ACFT SHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S \nWITH ADS-B CAPABILITY\nOR ADS-B WITH DEDICATED 1090MHZ ADS-B OUT CAPABILITY."
+    },
+    "last_seen_utc": "2026-05-31 14:55:25 UTC"
+  },
   "OIIX A0982/26": {
     "header": {
       "id": "A0982/26",
@@ -3899,27 +3921,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1087/26": {
-    "header": {
-      "id": "A1087/26",
-      "series": "A",
-      "number": "1087",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1049/26"
-    },
-    "qualification": {
-      "line": "OIIX/QCEXX////E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-01T14:43:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "IN THE WEST PART OF TEHRAN FIR FM MAGRI-SISIL-EGVEL\n-RERET-YZD-NALBI-RIGUT-IVIVA\nTHENCE ALONG TEHRAN FIR BOUNDARY TO THE POINT OF ORIGIN,\nALL ACFT SHALL BE EQUIPPED WITH SSR TRANSPONDER MODE S \nWITH ADS-B CAPABILITY\nOR ADS-B WITH DEDICATED 1090MHZ ADS-B OUT CAPABILITY."
-    },
-    "last_seen_utc": "2026-05-31 14:55:25 UTC"
   }
 }
