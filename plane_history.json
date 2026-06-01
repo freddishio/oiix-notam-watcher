@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778499328,
-    "time_utc": "2026-05-11 11:35:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778499628,
     "time_utc": "2026-05-11 11:40:28 UTC",
     "count": 0,
@@ -142229,6 +142223,58 @@
         "lon": 58.576,
         "airline": "Royal Air Force of Oman",
         "country": "Oman"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780314025,
+    "time_utc": "2026-06-01 11:40:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3ff919c6",
+        "callsign": "KIS7087",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 13775,
+        "track": 59,
+        "speed": 403,
+        "lat": 31.634,
+        "lon": 49.385,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff8e67c",
+        "callsign": "ETD2KQ",
+        "flight": "EY75",
+        "type": "B789",
+        "reg": "A6-BLV",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 27,
+        "speed": 290,
+        "lat": 26.942,
+        "lon": 51.58,
+        "airline": "Etihad Airways",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff90ed1",
+        "callsign": "UAE528",
+        "flight": "EK528",
+        "type": "B77W",
+        "reg": "A6-EGD",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 10,
+        "speed": 502,
+        "lat": 25.369,
+        "lon": 58.169,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
       }
     ]
   }
