@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778528131,
-    "time_utc": "2026-05-11 19:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778528427,
     "time_utc": "2026-05-11 19:40:27 UTC",
     "count": 0,
@@ -147265,5 +147259,117 @@
     "time_utc": "2026-06-01 19:35:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780342826,
+    "time_utc": "2026-06-01 19:40:26 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "3ffaccd1",
+        "callsign": "ABY552",
+        "flight": "G9552",
+        "type": "A320",
+        "reg": "A6-ANB",
+        "category": "Commercial",
+        "alt": 34400,
+        "track": 90,
+        "speed": 430,
+        "lat": 25.345,
+        "lon": 57.677,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff97e70",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46050",
+        "category": "Commercial",
+        "alt": 18500,
+        "track": 270,
+        "speed": 432,
+        "lat": 25.26,
+        "lon": 57.781,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffab4d0",
+        "callsign": "UAE538",
+        "flight": "EK538",
+        "type": "A359",
+        "reg": "A6-EXL",
+        "category": "Commercial",
+        "alt": 34050,
+        "track": 64,
+        "speed": 870,
+        "lat": 25.541,
+        "lon": 58.764,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ffac884",
+        "callsign": "QTR1L",
+        "flight": "QR1125",
+        "type": "A320",
+        "reg": "A7-AHU",
+        "category": "Commercial",
+        "alt": 11275,
+        "track": 257,
+        "speed": 302,
+        "lat": 25.022,
+        "lon": 58.885,
+        "airline": "Qatar Airways",
+        "country": "Qatar"
+      },
+      {
+        "id": "3ffa5c79",
+        "callsign": "GFA135",
+        "flight": "GF135",
+        "type": "A21N",
+        "reg": "A9C-NA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 257,
+        "speed": 120,
+        "lat": 25.348,
+        "lon": 59.169,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
+      },
+      {
+        "id": "3ffa9d9e",
+        "callsign": "GFA130",
+        "flight": "GF130",
+        "type": "A21N",
+        "reg": "A9C-NC",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 99,
+        "speed": 260,
+        "lat": 25.797,
+        "lon": 59.636,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
+      },
+      {
+        "id": "3ffabbac",
+        "callsign": "ABY467",
+        "flight": "G9467",
+        "type": "A320",
+        "reg": "A6-ANE",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 72,
+        "speed": 710,
+        "lat": 25.944,
+        "lon": 60.93,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
