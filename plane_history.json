@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778543433,
-    "time_utc": "2026-05-11 23:50:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778543728,
     "time_utc": "2026-05-11 23:55:28 UTC",
     "count": 0,
@@ -148723,6 +148717,58 @@
         "lon": 57.199,
         "airline": "Emirates",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780358124,
+    "time_utc": "2026-06-01 23:55:24 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3ffb9216",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "EP-SAU",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 292,
+        "speed": 19,
+        "lat": 35.687,
+        "lon": 51.317,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffa3fda",
+        "callsign": "UAE381",
+        "flight": "EK381",
+        "type": "A388",
+        "reg": "A6-EUM",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 288,
+        "speed": 486,
+        "lat": 30.155,
+        "lon": 56.658,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ffb1f2b",
+        "callsign": "MSR937",
+        "flight": "MS937",
+        "type": "A21N",
+        "reg": "SU-GFR",
+        "category": "Commercial",
+        "alt": 625,
+        "track": 338,
+        "speed": 128,
+        "lat": 27.639,
+        "lon": 53.791,
+        "airline": "Egypt Air",
+        "country": "Egypt"
       }
     ]
   }
