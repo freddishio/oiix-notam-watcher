@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778467819,
-    "time_utc": "2026-05-11 02:50:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778468126,
     "time_utc": "2026-05-11 02:55:26 UTC",
     "count": 0,
@@ -140520,5 +140514,27 @@
     "time_utc": "2026-06-01 02:45:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780282222,
+    "time_utc": "2026-06-01 02:50:22 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ff7d741",
+        "callsign": "1234",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-JIB",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 193,
+        "speed": 432,
+        "lat": 31.971,
+        "lon": 49.673,
+        "airline": "123",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
