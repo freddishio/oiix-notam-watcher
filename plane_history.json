@@ -143831,5 +143831,57 @@
     "time_utc": "2026-06-01 14:30:35 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780324532,
+    "time_utc": "2026-06-01 14:35:32 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3ff91ca1",
+        "callsign": "QSM2212",
+        "flight": "QB2212",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 108,
+        "speed": 496,
+        "lat": 38.006,
+        "lon": 44.413,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff94c87",
+        "callsign": "IRA1647",
+        "flight": "IR1647",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 54,
+        "speed": 552,
+        "lat": 33.434,
+        "lon": 46.213,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff99ce6",
+        "callsign": "IRA0678",
+        "flight": "IR678",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 72,
+        "speed": 546,
+        "lat": 33.553,
+        "lon": 46.428,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
