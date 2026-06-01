@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778529625,
-    "time_utc": "2026-05-11 20:00:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778529929,
     "time_utc": "2026-05-11 20:05:29 UTC",
     "count": 0,
@@ -147590,6 +147584,103 @@
         "lon": 59.823,
         "airline": "Air Sial",
         "country": "Pakistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780344035,
+    "time_utc": "2026-06-01 20:00:35 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "3ffade42",
+        "callsign": "AXB920",
+        "flight": "IX920",
+        "type": "B38M",
+        "reg": "VT-BXE",
+        "category": "Commercial",
+        "alt": 17725,
+        "track": 27,
+        "speed": 402,
+        "lat": 25.657,
+        "lon": 56.782,
+        "airline": "Air India Express",
+        "country": "India"
+      },
+      {
+        "id": "3ffadd7b",
+        "callsign": "IGO1466",
+        "flight": "6E1466",
+        "type": "A20N",
+        "reg": "VT-IST",
+        "category": "Commercial",
+        "alt": 25475,
+        "track": 58,
+        "speed": 478,
+        "lat": 25.539,
+        "lon": 57.21,
+        "airline": "Indigo",
+        "country": "India"
+      },
+      {
+        "id": "3ff97e70",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46050",
+        "category": "Commercial",
+        "alt": 18500,
+        "track": 266,
+        "speed": 359,
+        "lat": 25.337,
+        "lon": 57.409,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffadb8d",
+        "callsign": "FDB1689",
+        "flight": "FZ1689",
+        "type": "B38M",
+        "reg": "A6-FMD",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 91,
+        "speed": 380,
+        "lat": 25.356,
+        "lon": 57.645,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ffacc74",
+        "callsign": "ABY463",
+        "flight": "G9463",
+        "type": "A320",
+        "reg": "A6-AOJ",
+        "category": "Commercial",
+        "alt": 33025,
+        "track": 81,
+        "speed": 480,
+        "lat": 25.398,
+        "lon": 58.509,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff99f32",
+        "callsign": "UAE134",
+        "flight": "EK134",
+        "type": "A388",
+        "reg": "A6-EDK",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 271,
+        "speed": 483,
+        "lat": 25.65,
+        "lon": 60.54,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
       }
     ]
   }
