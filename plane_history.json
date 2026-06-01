@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778517625,
-    "time_utc": "2026-05-11 16:40:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778517927,
     "time_utc": "2026-05-11 16:45:27 UTC",
     "count": 0,
@@ -144954,6 +144948,43 @@
         "lon": 59.567,
         "airline": "SriLankan Airlines",
         "country": "Sri Lanka"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780332030,
+    "time_utc": "2026-06-01 16:40:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ff8f66e",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46048",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 77,
+        "speed": 732,
+        "lat": 25.264,
+        "lon": 58.181,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffa1fec",
+        "callsign": "ABQ111",
+        "flight": "PA111",
+        "type": "A321",
+        "reg": "AP-BMW",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 65,
+        "speed": 444,
+        "lat": 25.921,
+        "lon": 60.367,
+        "airline": "AirBlue",
+        "country": "Pakistan"
       }
     ]
   }
