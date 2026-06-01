@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1778494822,
-    "time_utc": "2026-05-11 10:20:22 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fa37c07",
-        "callsign": "AXV9205",
-        "flight": "Unknown Flight",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 107,
-        "speed": 520,
-        "lat": 37.53,
-        "lon": 48.808,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778495124,
     "time_utc": "2026-05-11 10:25:24 UTC",
     "count": 1,
@@ -141619,6 +141597,73 @@
         "speed": 310,
         "lat": 25.271,
         "lon": 60.482,
+        "airline": "Salam Air",
+        "country": "Oman"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780309229,
+    "time_utc": "2026-06-01 10:20:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ff86352",
+        "callsign": "IGO1427",
+        "flight": "6E1427",
+        "type": "A320",
+        "reg": "VT-IFS",
+        "category": "Commercial",
+        "alt": 20125,
+        "track": 292,
+        "speed": 380,
+        "lat": 25.82,
+        "lon": 57.504,
+        "airline": "Indigo",
+        "country": "India"
+      },
+      {
+        "id": "3ff8d70c",
+        "callsign": "UAE566",
+        "flight": "EK566",
+        "type": "B77W",
+        "reg": "A6-ECO",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 85,
+        "speed": 498,
+        "lat": 25.34,
+        "lon": 57.695,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff8d050",
+        "callsign": "LSK3538",
+        "flight": "Unknown Flight",
+        "type": "GLEX",
+        "reg": "RA-73538",
+        "category": "Commercial",
+        "alt": 29650,
+        "track": 54,
+        "speed": 830,
+        "lat": 26.082,
+        "lon": 58.162,
+        "airline": "Skylight",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "3ff8d475",
+        "callsign": "OMS365",
+        "flight": "OV365",
+        "type": "A20N",
+        "reg": "A4O-OVF",
+        "category": "Commercial",
+        "alt": 15000,
+        "track": 261,
+        "speed": 360,
+        "lat": 24.933,
+        "lon": 58.744,
         "airline": "Salam Air",
         "country": "Oman"
       }
