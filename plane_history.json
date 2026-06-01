@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778531725,
-    "time_utc": "2026-05-11 20:35:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778532025,
     "time_utc": "2026-05-11 20:40:25 UTC",
     "count": 1,
@@ -148480,6 +148474,43 @@
         "lon": 60.031,
         "airline": "Indigo",
         "country": "India"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780346130,
+    "time_utc": "2026-06-01 20:35:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffae92d",
+        "callsign": "IRA748",
+        "flight": "IR748",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 158,
+        "speed": 474,
+        "lat": 36.773,
+        "lon": 50.096,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffadbe0",
+        "callsign": "IRA1632",
+        "flight": "IR1632",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 233,
+        "speed": 405,
+        "lat": 33.904,
+        "lon": 46.488,
+        "airline": "Iran Air",
+        "country": "IRAN"
       }
     ]
   }
