@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778516430,
-    "time_utc": "2026-05-11 16:20:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778516737,
     "time_utc": "2026-05-11 16:25:37 UTC",
     "count": 0,
@@ -144620,6 +144614,73 @@
         "lon": 51.154,
         "airline": "Aeroflot",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780330841,
+    "time_utc": "2026-06-01 16:20:41 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ff97877",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 302,
+        "speed": 404,
+        "lat": 38.018,
+        "lon": 50.541,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "3ffa0a49",
+        "callsign": "IGO75P",
+        "flight": "6E1456",
+        "type": "A21N",
+        "reg": "VT-ICF",
+        "category": "Commercial",
+        "alt": 33625,
+        "track": 90,
+        "speed": 460,
+        "lat": 25.334,
+        "lon": 57.53,
+        "airline": "Indigo",
+        "country": "India"
+      },
+      {
+        "id": "3ff8f66e",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46048",
+        "category": "Commercial",
+        "alt": 23025,
+        "track": 262,
+        "speed": 640,
+        "lat": 25.343,
+        "lon": 57.957,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffa1561",
+        "callsign": "ABY119",
+        "flight": "G9119",
+        "type": "A320",
+        "reg": "A6-AOK",
+        "category": "Commercial",
+        "alt": 10975,
+        "track": 257,
+        "speed": 330,
+        "lat": 25.084,
+        "lon": 59.214,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
       }
     ]
   }
