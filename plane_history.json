@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778518840,
-    "time_utc": "2026-05-11 17:00:40 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778519124,
-    "time_utc": "2026-05-11 17:05:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778519439,
     "time_utc": "2026-05-11 17:10:39 UTC",
     "count": 0,
@@ -145294,6 +145282,43 @@
         "lon": 60.609,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780333534,
+    "time_utc": "2026-06-01 17:05:34 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffa341a",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33925,
+        "track": 309,
+        "speed": 388,
+        "lat": 37.399,
+        "lon": 48.223,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff9dcac",
+        "callsign": "IRA1643",
+        "flight": "IR1643",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 77,
+        "speed": 553,
+        "lat": 33.557,
+        "lon": 46.476,
+        "airline": "Iran Air",
+        "country": "IRAN"
       }
     ]
   }
