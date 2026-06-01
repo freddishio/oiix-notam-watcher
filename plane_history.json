@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778513429,
-    "time_utc": "2026-05-11 15:30:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778513730,
     "time_utc": "2026-05-11 15:35:30 UTC",
     "count": 0,
@@ -144106,6 +144100,58 @@
         "lon": 46.745,
         "airline": "Ava Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780327839,
+    "time_utc": "2026-06-01 15:30:39 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3ff9b6fe",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 80,
+        "speed": 540,
+        "lat": 35.494,
+        "lon": 54.319,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff9de09",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 47,
+        "speed": 492,
+        "lat": 33.889,
+        "lon": 47.467,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff9e732",
+        "callsign": "AXB194",
+        "flight": "IX194",
+        "type": "A20N",
+        "reg": "VT-ATE",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 49,
+        "speed": 456,
+        "lat": 25.716,
+        "lon": 57.39,
+        "airline": "Air India Express",
+        "country": "India"
       }
     ]
   }
