@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1778475921,
-    "time_utc": "2026-05-11 05:05:21 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fa2daa4",
-        "callsign": "IRZ166",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-SIJ",
-        "category": "Commercial",
-        "alt": 575,
-        "track": 325,
-        "speed": 129,
-        "lat": 30.351,
-        "lon": 48.243,
-        "airline": "Saha Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778476219,
     "time_utc": "2026-05-11 05:10:19 UTC",
     "count": 1,
@@ -140640,5 +140618,42 @@
     "time_utc": "2026-06-01 05:00:33 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780290322,
+    "time_utc": "2026-06-01 05:05:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ff81fda",
+        "callsign": "IRB8008",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 284,
+        "speed": 411,
+        "lat": 36.832,
+        "lon": 48.025,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff80768",
+        "callsign": "AXV9212",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 255,
+        "speed": 395,
+        "lat": 34.44,
+        "lon": 47.632,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
