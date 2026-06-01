@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778471122,
-    "time_utc": "2026-05-11 03:45:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778471420,
-    "time_utc": "2026-05-11 03:50:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778471723,
     "time_utc": "2026-05-11 03:55:23 UTC",
     "count": 1,
@@ -140616,6 +140604,43 @@
         "speed": 355,
         "lat": 34.373,
         "lon": 47.317,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780285825,
+    "time_utc": "2026-06-01 03:50:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ff7fcf8",
+        "callsign": "TBZ6601",
+        "flight": "I36601",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 22000,
+        "track": 296,
+        "speed": 386,
+        "lat": 38.504,
+        "lon": 45.287,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff7d16b",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 232,
+        "speed": 368,
+        "lat": 34.107,
+        "lon": 46.806,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
