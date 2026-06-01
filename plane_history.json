@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1778472031,
-    "time_utc": "2026-05-11 04:00:31 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "3fa2cbce",
-        "callsign": "IZG3026",
-        "flight": "Unknown Flight",
-        "type": "A319",
-        "reg": "EP-ZAX",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 303,
-        "speed": 408,
-        "lat": 37.667,
-        "lon": 47.762,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "3fa2d6a2",
-        "callsign": "IZG4112",
-        "flight": "ZO4112",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 25000,
-        "track": 220,
-        "speed": 387,
-        "lat": 35.71,
-        "lon": 59.064,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778472328,
     "time_utc": "2026-05-11 04:05:28 UTC",
     "count": 1,
@@ -140666,5 +140629,42 @@
     "time_utc": "2026-06-01 04:00:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780286723,
+    "time_utc": "2026-06-01 04:05:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ff8029d",
+        "callsign": "IZG3026",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 33950,
+        "track": 310,
+        "speed": 428,
+        "lat": 37.168,
+        "lon": 48.565,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff7de60",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 238,
+        "speed": 359,
+        "lat": 34.61,
+        "lon": 48.034,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
