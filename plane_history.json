@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778541326,
-    "time_utc": "2026-05-11 23:15:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778541629,
     "time_utc": "2026-05-11 23:20:29 UTC",
     "count": 0,
@@ -148658,6 +148652,28 @@
         "speed": 200,
         "lat": 37.228,
         "lon": 46.785,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780356024,
+    "time_utc": "2026-06-01 23:20:24 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ffb0c5f",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 37050,
+        "track": 90,
+        "speed": 480,
+        "lat": 38.252,
+        "lon": 46.062,
         "airline": "Caspian Airlines",
         "country": "IRAN"
       }
