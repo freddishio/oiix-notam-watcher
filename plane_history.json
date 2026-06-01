@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778512233,
-    "time_utc": "2026-05-11 15:10:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778512526,
-    "time_utc": "2026-05-11 15:15:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778512835,
     "time_utc": "2026-05-11 15:20:35 UTC",
     "count": 0,
@@ -144082,5 +144070,27 @@
     "time_utc": "2026-06-01 15:10:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780326930,
+    "time_utc": "2026-06-01 15:15:30 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ff9d039",
+        "callsign": "ABQ813",
+        "flight": "PA813",
+        "type": "A320",
+        "reg": "AP-BNV",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 62,
+        "speed": 480,
+        "lat": 24.969,
+        "lon": 58.316,
+        "airline": "AirBlue",
+        "country": "Pakistan"
+      }
+    ]
   }
 ]
