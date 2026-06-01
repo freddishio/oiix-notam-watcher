@@ -148688,5 +148688,42 @@
     "time_utc": "2026-06-01 23:45:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780357823,
+    "time_utc": "2026-06-01 23:50:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffb9216",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "EP-SAU",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 19,
+        "lat": 35.678,
+        "lon": 51.35,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffa4b55",
+        "callsign": "UAE329",
+        "flight": "EK329",
+        "type": "B77L",
+        "reg": "A6-EWB",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 190,
+        "speed": 478,
+        "lat": 32.707,
+        "lon": 57.199,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
