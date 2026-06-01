@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778518528,
-    "time_utc": "2026-05-11 16:55:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778518840,
     "time_utc": "2026-05-11 17:00:40 UTC",
     "count": 0,
@@ -145033,5 +145027,117 @@
     "time_utc": "2026-06-01 16:50:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780332937,
+    "time_utc": "2026-06-01 16:55:37 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "3ffa341a",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33200,
+        "track": 310,
+        "speed": 390,
+        "lat": 36.67,
+        "lon": 49.293,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff9850d",
+        "callsign": "FDB7LW",
+        "flight": "FZ1946",
+        "type": "B738",
+        "reg": "A6-FGE",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 348,
+        "speed": 456,
+        "lat": 30.268,
+        "lon": 56.688,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff8f66e",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46048",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 92,
+        "speed": 560,
+        "lat": 25.188,
+        "lon": 57.465,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ff9ae14",
+        "callsign": "SVA5332",
+        "flight": "SV5332",
+        "type": "B77W",
+        "reg": "9H-AZE",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 81,
+        "speed": 496,
+        "lat": 24.968,
+        "lon": 58.48,
+        "airline": "Saudia",
+        "country": "Saudi Arabia"
+      },
+      {
+        "id": "3ff994c6",
+        "callsign": "ABY427",
+        "flight": "G9427",
+        "type": "A320",
+        "reg": "A6-AOJ",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 359,
+        "speed": 464,
+        "lat": 24.983,
+        "lon": 58.998,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff9c786",
+        "callsign": "SVA733",
+        "flight": "SV733",
+        "type": "B77W",
+        "reg": "HZ-AK15",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 259,
+        "speed": 496,
+        "lat": 25.085,
+        "lon": 59.579,
+        "airline": "Saudia",
+        "country": "Saudi Arabia"
+      },
+      {
+        "id": "3ff95928",
+        "callsign": "ABY301",
+        "flight": "G9301",
+        "type": "A320",
+        "reg": "A6-AOT",
+        "category": "Commercial",
+        "alt": 36025,
+        "track": 253,
+        "speed": 456,
+        "lat": 25.837,
+        "lon": 61.452,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
