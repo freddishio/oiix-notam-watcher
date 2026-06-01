@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778513730,
-    "time_utc": "2026-05-11 15:35:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778514035,
     "time_utc": "2026-05-11 15:40:35 UTC",
     "count": 0,
@@ -144152,6 +144146,73 @@
         "lon": 57.39,
         "airline": "Air India Express",
         "country": "India"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780328142,
+    "time_utc": "2026-06-01 15:35:42 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ff9de09",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 61,
+        "speed": 510,
+        "lat": 34.248,
+        "lon": 48.191,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff9e732",
+        "callsign": "AXB194",
+        "flight": "IX194",
+        "type": "A20N",
+        "reg": "VT-ATE",
+        "category": "Commercial",
+        "alt": 33275,
+        "track": 79,
+        "speed": 478,
+        "lat": 25.359,
+        "lon": 57.882,
+        "airline": "Air India Express",
+        "country": "India"
+      },
+      {
+        "id": "3ff99c93",
+        "callsign": "JZR427",
+        "flight": "J9427",
+        "type": "A20N",
+        "reg": "9K-CBK",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 15,
+        "speed": 468,
+        "lat": 29.067,
+        "lon": 58.095,
+        "airline": "Jazeera Airways",
+        "country": "Kuwait"
+      },
+      {
+        "id": "3ff961de",
+        "callsign": "ABY466",
+        "flight": "G9466",
+        "type": "A320",
+        "reg": "A6-AOX",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 249,
+        "speed": 442,
+        "lat": 25.113,
+        "lon": 58.976,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
       }
     ]
   }
