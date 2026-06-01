@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778502924,
-    "time_utc": "2026-05-11 12:35:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778503230,
     "time_utc": "2026-05-11 12:40:30 UTC",
     "count": 2,
@@ -143005,6 +142999,118 @@
         "lat": 25.533,
         "lon": 58.638,
         "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780317329,
+    "time_utc": "2026-06-01 12:35:29 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "3ff90ac2",
+        "callsign": "MRJ4849",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 35950,
+        "track": 283,
+        "speed": 393,
+        "lat": 36.226,
+        "lon": 59.555,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff90281",
+        "callsign": "AXV9204",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 32650,
+        "track": 232,
+        "speed": 387,
+        "lat": 33.845,
+        "lon": 46.396,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff9493d",
+        "callsign": "SHI4367",
+        "flight": "IS4367",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 18475,
+        "track": 25,
+        "speed": 413,
+        "lat": 31.115,
+        "lon": 48.634,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff922df",
+        "callsign": "GFA754",
+        "flight": "GF754",
+        "type": "A20N",
+        "reg": "A9C-TF",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 67,
+        "speed": 496,
+        "lat": 25.287,
+        "lon": 57.245,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
+      },
+      {
+        "id": "3ff89ccb",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46053",
+        "category": "Commercial",
+        "alt": 25000,
+        "track": 347,
+        "speed": 350,
+        "lat": 25.22,
+        "lon": 57.388,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ff93d7f",
+        "callsign": "ABY530",
+        "flight": "G9530",
+        "type": "A320",
+        "reg": "A6-AOH",
+        "category": "Commercial",
+        "alt": 29925,
+        "track": 87,
+        "speed": 482,
+        "lat": 25.354,
+        "lon": 57.852,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ff8bbcd",
+        "callsign": "ABY274",
+        "flight": "G9274",
+        "type": "A320",
+        "reg": "A6-ANR",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 255,
+        "speed": 462,
+        "lat": 25.642,
+        "lon": 60.646,
+        "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
     ]
