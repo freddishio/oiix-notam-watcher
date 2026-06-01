@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778496324,
-    "time_utc": "2026-05-11 10:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778496632,
     "time_utc": "2026-05-11 10:50:32 UTC",
     "count": 1,
@@ -141949,6 +141943,88 @@
         "speed": 492,
         "lat": 25.615,
         "lon": 57.432,
+        "airline": "Azerbaijan Airlines",
+        "country": "Azerbaijan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780310728,
+    "time_utc": "2026-06-01 10:45:28 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "3ff8bf1d",
+        "callsign": "IZG3043",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 109,
+        "speed": 498,
+        "lat": 37.029,
+        "lon": 47.49,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff8ac0e",
+        "callsign": "SHI7310",
+        "flight": "IS7310",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 237,
+        "speed": 357,
+        "lat": 33.898,
+        "lon": 46.632,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff8d7be",
+        "callsign": "IRA679",
+        "flight": "IR679",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 28025,
+        "track": 232,
+        "speed": 376,
+        "lat": 34.225,
+        "lon": 46.991,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ff8a67e",
+        "callsign": "188",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 7175,
+        "track": 175,
+        "speed": 282,
+        "lat": 30.412,
+        "lon": 48.506,
+        "airline": "188",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ff8e716",
+        "callsign": "AHY012",
+        "flight": "J212",
+        "type": "A20N",
+        "reg": "VP-BBK",
+        "category": "Commercial",
+        "alt": 34050,
+        "track": 82,
+        "speed": 478,
+        "lat": 25.361,
+        "lon": 57.76,
         "airline": "Azerbaijan Airlines",
         "country": "Azerbaijan"
       }
