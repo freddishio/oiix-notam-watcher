@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1778526927,
-    "time_utc": "2026-05-11 19:15:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778527226,
-    "time_utc": "2026-05-11 19:20:26 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fa4fbbe",
-        "callsign": "IRA3549",
-        "flight": "Unknown Flight",
-        "type": "A332",
-        "reg": "EP-IJC",
-        "category": "Commercial",
-        "alt": 39000,
-        "track": 8,
-        "speed": 496,
-        "lat": 26.659,
-        "lon": 60.626,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778527522,
     "time_utc": "2026-05-11 19:25:22 UTC",
     "count": 2,
@@ -147231,6 +147203,73 @@
         "speed": 488,
         "lat": 25.89,
         "lon": 61.682,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780341632,
+    "time_utc": "2026-06-01 19:20:32 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ffa77ce",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "K35R",
+        "reg": "64-14835",
+        "category": "Commercial",
+        "alt": 20500,
+        "track": 339,
+        "speed": 130,
+        "lat": 25.156,
+        "lon": 57.325,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffa2fd6",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "K35R",
+        "reg": "58-0122",
+        "category": "Commercial",
+        "alt": 24475,
+        "track": 296,
+        "speed": 442,
+        "lat": 25.407,
+        "lon": 58.036,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ff97e70",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B762",
+        "reg": "18-46050",
+        "category": "Commercial",
+        "alt": 18500,
+        "track": 59,
+        "speed": 511,
+        "lat": 25.362,
+        "lon": 58.427,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffa9db6",
+        "callsign": "UAE374",
+        "flight": "EK374",
+        "type": "B77W",
+        "reg": "A6-EGG",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 62,
+        "speed": 494,
+        "lat": 25.683,
+        "lon": 59.292,
         "airline": "Emirates",
         "country": "United Arab Emirates"
       }
