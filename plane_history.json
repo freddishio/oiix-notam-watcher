@@ -149502,5 +149502,42 @@
     "time_utc": "2026-06-02 03:35:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780371624,
+    "time_utc": "2026-06-02 03:40:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffc207e",
+        "callsign": "TBZ6601",
+        "flight": "I36601",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 14725,
+        "track": 293,
+        "speed": 260,
+        "lat": 38.303,
+        "lon": 45.847,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffc1ac5",
+        "callsign": "SHI4366",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 30650,
+        "track": 217,
+        "speed": 394,
+        "lat": 35.519,
+        "lon": 58.859,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
