@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778582131,
-    "time_utc": "2026-05-12 10:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778582429,
     "time_utc": "2026-05-12 10:40:29 UTC",
     "count": 0,
@@ -151655,6 +151649,43 @@
         "speed": 414,
         "lat": 33.463,
         "lon": 47.951,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780396828,
+    "time_utc": "2026-06-02 10:40:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffcf301",
+        "callsign": "IRM112",
+        "flight": "W5112",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 295,
+        "speed": 428,
+        "lat": 38.429,
+        "lon": 45.479,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcea45",
+        "callsign": "IRA1550",
+        "flight": "Unknown Flight",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 275,
+        "speed": 408,
+        "lat": 33.517,
+        "lon": 47.27,
         "airline": "Iran Air",
         "country": "IRAN"
       }
