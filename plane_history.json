@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778579419,
-    "time_utc": "2026-05-12 09:50:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778579720,
     "time_utc": "2026-05-12 09:55:20 UTC",
     "count": 0,
@@ -151268,6 +151262,73 @@
         "lat": 30.422,
         "lon": 48.601,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780393827,
+    "time_utc": "2026-06-02 09:50:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ffcae0c",
+        "callsign": "KIS7010",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 1325,
+        "track": 324,
+        "speed": 144,
+        "lat": 30.303,
+        "lon": 48.283,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcf01f",
+        "callsign": "VRH5889",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 16200,
+        "track": 337,
+        "speed": 337,
+        "lat": 30.996,
+        "lon": 48.933,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcedba",
+        "callsign": "QSM2116",
+        "flight": "QB2116",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 139,
+        "speed": 502,
+        "lat": 29.278,
+        "lon": 57.458,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcd22f",
+        "callsign": "TBN7212",
+        "flight": "Unknown Flight",
+        "type": "B734",
+        "reg": "EP-TBJ",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 311,
+        "speed": 412,
+        "lat": 27.996,
+        "lon": 62.463,
+        "airline": "Taban Airlines",
         "country": "IRAN"
       }
     ]

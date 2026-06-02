@@ -3859,6 +3859,85 @@
     },
     "last_seen_utc": "2026-06-02 07:00:34 UTC"
   },
+  "OIIX A1103/26": {
+    "header": {
+      "id": "A1103/26",
+      "series": "A",
+      "number": "1103",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLC/IV/NBO/E/000/275/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLC",
+        "entity": "AF",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "275"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-04T04:30:00.000Z",
+      "validityEnd": "2026-07-04T09:30:00.000Z"
+    },
+    "content": {
+      "text": "ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION\r\nA CIRCLE 70 NM RADIUS CENTERED ON TEHRAN DVOR/DME \r\nEXCLUDING THE NORTH SEGMENT OF A LINE OF \r\n354119N 0524247E TO 362039N 0500516E\r\nEXC THOSE FLT ENGAGED IN DEMISE ANNIVERSARY.",
+      "area": [
+        [
+          35.683611,
+          52.713056
+        ],
+        [
+          36.334167,
+          50.087778
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "FL 275"
+    },
+    "last_seen_utc": "2026-06-02 09:45:33 UTC"
+  },
   "OIIX A0982/26": {
     "header": {
       "id": "A0982/26",
@@ -4025,84 +4104,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1103/26": {
-    "header": {
-      "id": "A1103/26",
-      "series": "A",
-      "number": "1103",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLC/IV/NBO/E/000/275/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLC",
-        "entity": "AF",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "275"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-04T04:30:00.000Z",
-      "validityEnd": "2026-07-04T09:30:00.000Z"
-    },
-    "content": {
-      "text": "ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION\r\nA CIRCLE 70 NM RADIUS CENTERED ON TEHRAN DVOR/DME \r\nEXCLUDING THE NORTH SEGMENT OF A LINE OF \r\n354119N 0524247E TO 362039N 0500516E\r\nEXC THOSE FLT ENGAGED IN DEMISE ANNIVERSARY.",
-      "area": [
-        [
-          35.683611,
-          52.713056
-        ],
-        [
-          36.334167,
-          50.087778
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "FL 275"
-    },
-    "last_seen_utc": "2026-06-02 09:45:33 UTC"
   }
 }
