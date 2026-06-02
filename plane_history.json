@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1778608525,
-    "time_utc": "2026-05-12 17:55:25 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fa94b69",
-        "callsign": "UAE75V",
-        "flight": "EK618",
-        "type": "B77W",
-        "reg": "A6-ECY",
-        "category": "Commercial",
-        "alt": 21775,
-        "track": 83,
-        "speed": 428,
-        "lat": 25.087,
-        "lon": 57.405,
-        "airline": "Emirates",
-        "country": "United Arab Emirates"
-      }
-    ]
-  },
-  {
     "timestamp": 1778608828,
     "time_utc": "2026-05-12 18:00:28 UTC",
     "count": 1,
@@ -152723,5 +152701,42 @@
     "time_utc": "2026-06-02 17:50:32 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780422930,
+    "time_utc": "2026-06-02 17:55:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffe6b2b",
+        "callsign": "IRA5328",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 115,
+        "speed": 506,
+        "lat": 38.671,
+        "lon": 44.838,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffea71f",
+        "callsign": "IRA1570",
+        "flight": "IR1570",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 28,
+        "speed": 13,
+        "lat": 35.411,
+        "lon": 51.165,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
