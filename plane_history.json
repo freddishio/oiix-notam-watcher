@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1778586929,
-    "time_utc": "2026-05-12 11:55:29 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fa7a2f0",
-        "callsign": "IRM117",
-        "flight": "W5117",
-        "type": "A343",
-        "reg": "EP-MJF",
-        "category": "Commercial",
-        "alt": 37025,
-        "track": 147,
-        "speed": 444,
-        "lat": 36.902,
-        "lon": 48.259,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1778587225,
-    "time_utc": "2026-05-12 12:00:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778587529,
     "time_utc": "2026-05-12 12:05:29 UTC",
     "count": 1,
@@ -151749,5 +151721,42 @@
     "time_utc": "2026-06-02 11:55:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780401637,
+    "time_utc": "2026-06-02 12:00:37 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffce232",
+        "callsign": "IRB9734",
+        "flight": "B99734",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 114,
+        "speed": 520,
+        "lat": 37.892,
+        "lon": 44.719,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd041c",
+        "callsign": "SHI7310",
+        "flight": "IS7310",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 246,
+        "speed": 343,
+        "lat": 34.476,
+        "lon": 47.761,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
