@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778592031,
-    "time_utc": "2026-05-12 13:20:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778592328,
     "time_utc": "2026-05-12 13:25:28 UTC",
     "count": 1,
@@ -151850,6 +151844,73 @@
         "lat": 33.907,
         "lon": 58.349,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780406725,
+    "time_utc": "2026-06-02 13:25:25 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ffd6837",
+        "callsign": "IRM5056",
+        "flight": "Unknown Flight",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 231,
+        "speed": 398,
+        "lat": 33.745,
+        "lon": 46.249,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd6334",
+        "callsign": "IRM4583",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 22975,
+        "track": 11,
+        "speed": 401,
+        "lat": 34.446,
+        "lon": 58.42,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd675c",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73123",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 343,
+        "speed": 443,
+        "lat": 25.236,
+        "lon": 59.709,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "3ffd7760",
+        "callsign": "QSM2113",
+        "flight": "QB2113",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 344,
+        "speed": 444,
+        "lat": 25.23,
+        "lon": 59.71,
+        "airline": "Qeshm Air",
         "country": "IRAN"
       }
     ]
