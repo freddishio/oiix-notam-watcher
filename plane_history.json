@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778600432,
-    "time_utc": "2026-05-12 15:40:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778600724,
-    "time_utc": "2026-05-12 15:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778601022,
     "time_utc": "2026-05-12 15:50:22 UTC",
     "count": 0,
@@ -152632,6 +152620,58 @@
         "lat": 34.011,
         "lon": 47.573,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780415134,
+    "time_utc": "2026-06-02 15:45:34 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "3ffdb0e2",
+        "callsign": "GWC3",
+        "flight": "GWC3",
+        "type": "CL60",
+        "reg": "A6-SAJ",
+        "category": "Commercial",
+        "alt": 14875,
+        "track": 90,
+        "speed": 70,
+        "lat": 38.252,
+        "lon": 46.088,
+        "airline": "Gulf Wings",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "3ffd675c",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73123",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 302,
+        "speed": 373,
+        "lat": 37.962,
+        "lon": 50.65,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "3ffdb4d1",
+        "callsign": "IRA1559",
+        "flight": "IR1559",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 38975,
+        "track": 95,
+        "speed": 556,
+        "lat": 33.513,
+        "lon": 47.309,
+        "airline": "Iran Air",
         "country": "IRAN"
       }
     ]
