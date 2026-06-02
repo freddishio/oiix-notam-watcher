@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778617832,
-    "time_utc": "2026-05-12 20:30:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778618131,
     "time_utc": "2026-05-12 20:35:31 UTC",
     "count": 0,
@@ -152876,6 +152870,28 @@
         "speed": 396,
         "lat": 33.516,
         "lon": 47.281,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780432237,
+    "time_utc": "2026-06-02 20:30:37 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fff0376",
+        "callsign": "IRA1560",
+        "flight": "IR1560",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 274,
+        "speed": 395,
+        "lat": 33.565,
+        "lon": 46.607,
         "airline": "Iran Air",
         "country": "IRAN"
       }
