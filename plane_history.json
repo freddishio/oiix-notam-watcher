@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778549431,
-    "time_utc": "2026-05-12 01:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778549728,
-    "time_utc": "2026-05-12 01:35:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778550020,
     "time_utc": "2026-05-12 01:40:20 UTC",
     "count": 0,
@@ -148969,6 +148957,28 @@
         "speed": 480,
         "lat": 25.501,
         "lon": 59.801,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780364129,
+    "time_utc": "2026-06-02 01:35:29 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ffb59d7",
+        "callsign": "UAE543",
+        "flight": "EK543",
+        "type": "B77W",
+        "reg": "A6-EPR",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 254,
+        "speed": 490,
+        "lat": 25.422,
+        "lon": 59.684,
         "airline": "Emirates",
         "country": "United Arab Emirates"
       }
