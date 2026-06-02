@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778598927,
-    "time_utc": "2026-05-12 15:15:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778599229,
     "time_utc": "2026-05-12 15:20:29 UTC",
     "count": 0,
@@ -152394,6 +152388,43 @@
         "speed": 553,
         "lat": 34.012,
         "lon": 47.655,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780413329,
+    "time_utc": "2026-06-02 15:15:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffdf427",
+        "callsign": "CPN7943",
+        "flight": "IV7943",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 94,
+        "speed": 531,
+        "lat": 33.569,
+        "lon": 46.565,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffdf0bf",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 61,
+        "speed": 572,
+        "lat": 34.365,
+        "lon": 48.438,
         "airline": "Ava Air",
         "country": "IRAN"
       }
