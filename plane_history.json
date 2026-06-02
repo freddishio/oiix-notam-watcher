@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778596531,
-    "time_utc": "2026-05-12 14:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778596827,
-    "time_utc": "2026-05-12 14:40:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778597131,
     "time_utc": "2026-05-12 14:45:31 UTC",
     "count": 0,
@@ -152244,6 +152232,43 @@
         "speed": 490,
         "lat": 26.971,
         "lon": 59.591,
+        "airline": "RusJet",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780411231,
+    "time_utc": "2026-06-02 14:40:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffdd2c6",
+        "callsign": "SHI7311",
+        "flight": "IS7311",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 95,
+        "speed": 548,
+        "lat": 33.55,
+        "lon": 46.819,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd0b65",
+        "callsign": "RSJ3536",
+        "flight": "RSJ3536",
+        "type": "GLEX",
+        "reg": "RA-73536",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 147,
+        "speed": 498,
+        "lat": 26.316,
+        "lon": 59.821,
         "airline": "RusJet",
         "country": "Russian Federation"
       }
