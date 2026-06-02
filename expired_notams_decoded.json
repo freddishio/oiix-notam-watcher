@@ -1,4 +1,72 @@
 {
+  "OIIX A1066/26": {
+    "header": {
+      "id": "A1066/26",
+      "series": "A",
+      "number": "1066",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1022/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-26T13:47:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A01020/26,\r\nALL AIRPORTS IN WEST PART OF TEHRAN FIR ARE CLSD EXCEPT:\r\n-OIKK OPERATING H24\r\n-OITR, OIAA, OISS, OIYY, OICC, OIGG, OIAW, OIFM, OITL, OISR, OIAM,\r\nOITT AND OINR OPERATING SUNRISE TO SUNSET (HJ).\r\n-IN ADDITION, HAJ FLT ARE AUTHORIZED TO OPR AT OIFM, OISS AND OIYY\r\nDURING NIGHT PERIOD.\r\nALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS.\r\nNEW PERMISSION SHALL BE REQUESTED FOR OPERATION OF\r\nCIVIL IFR PASSENGER FLIGHTS FM IRAN CAA."
+    },
+    "last_seen_utc": "2026-05-26 14:00:33 UTC",
+    "archived_utc": "2026-06-02 14:20:30 UTC"
+  },
   "OIIX B0269/26": {
     "header": {
       "id": "B0269/26",

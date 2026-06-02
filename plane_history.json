@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1778595333,
-    "time_utc": "2026-05-12 14:15:33 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fa7fa40",
-        "callsign": "IRZ8257",
-        "flight": "IRZ8257",
-        "type": "B733",
-        "reg": "EP-SIM",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 115,
-        "speed": 425,
-        "lat": 36.7,
-        "lon": 48.144,
-        "airline": "Saha Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1778595621,
-    "time_utc": "2026-05-12 14:20:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778595936,
     "time_utc": "2026-05-12 14:25:36 UTC",
     "count": 0,
@@ -152168,6 +152140,43 @@
         "lon": 58.787,
         "airline": "RusJet",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780410030,
+    "time_utc": "2026-06-02 14:20:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffd4398",
+        "callsign": "IRZ8257",
+        "flight": "IRZ8257",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 108,
+        "speed": 506,
+        "lat": 37.348,
+        "lon": 46.358,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffdb52d",
+        "callsign": "SHI7347",
+        "flight": "IS7347",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 61,
+        "speed": 534,
+        "lat": 34.328,
+        "lon": 48.346,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
       }
     ]
   }
