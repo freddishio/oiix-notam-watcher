@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778598026,
-    "time_utc": "2026-05-12 15:00:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778598328,
     "time_utc": "2026-05-12 15:05:28 UTC",
     "count": 0,
@@ -152346,6 +152340,28 @@
         "speed": 361,
         "lat": 34.003,
         "lon": 46.646,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780412438,
+    "time_utc": "2026-06-02 15:00:38 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ffdd1ec",
+        "callsign": "IRA5329",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 231,
+        "speed": 366,
+        "lat": 33.685,
+        "lon": 46.159,
         "airline": "Iran Air",
         "country": "IRAN"
       }
