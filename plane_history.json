@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778553922,
-    "time_utc": "2026-05-12 02:45:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778554227,
     "time_utc": "2026-05-12 02:50:27 UTC",
     "count": 0,
@@ -149388,6 +149382,28 @@
         "speed": 385,
         "lat": 34.477,
         "lon": 47.808,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780368325,
+    "time_utc": "2026-06-02 02:45:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ffbcb31",
+        "callsign": "IRA1640",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 247,
+        "speed": 378,
+        "lat": 34.342,
+        "lon": 47.201,
         "airline": "Iran Air",
         "country": "IRAN"
       }
