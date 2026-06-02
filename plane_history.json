@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778573428,
-    "time_utc": "2026-05-12 08:10:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778573720,
     "time_utc": "2026-05-12 08:15:20 UTC",
     "count": 0,
@@ -150753,6 +150747,43 @@
         "lat": 34.756,
         "lon": 58.042,
         "airline": "JSky Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780387832,
+    "time_utc": "2026-06-02 08:10:32 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffca96a",
+        "callsign": "MRJ4802",
+        "flight": "MRJ4801",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 52,
+        "speed": 532,
+        "lat": 33.399,
+        "lon": 46.158,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcae0c",
+        "callsign": "KIS7010",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 28300,
+        "track": 218,
+        "speed": 405,
+        "lat": 35.154,
+        "lon": 58.26,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
