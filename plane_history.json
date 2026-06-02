@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778581523,
-    "time_utc": "2026-05-12 10:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778581823,
     "time_utc": "2026-05-12 10:30:23 UTC",
     "count": 0,
@@ -151512,6 +151506,73 @@
         "lat": 27.903,
         "lon": 52.939,
         "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780395927,
+    "time_utc": "2026-06-02 10:25:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ffcf301",
+        "callsign": "IRM112",
+        "flight": "W5112",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 303,
+        "speed": 412,
+        "lat": 37.81,
+        "lon": 47.491,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcea45",
+        "callsign": "IRA1550",
+        "flight": "Unknown Flight",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 288,
+        "speed": 428,
+        "lat": 33.162,
+        "lon": 49.297,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd0302",
+        "callsign": "KRU2594",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 23100,
+        "track": 357,
+        "speed": 352,
+        "lat": 28.387,
+        "lon": 52.913,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffcd22f",
+        "callsign": "TBN7212",
+        "flight": "Unknown Flight",
+        "type": "B734",
+        "reg": "EP-TBJ",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 310,
+        "speed": 400,
+        "lat": 30.041,
+        "lon": 58.553,
+        "airline": "Taban Airlines",
         "country": "IRAN"
       }
     ]
