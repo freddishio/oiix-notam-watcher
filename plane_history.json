@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778597426,
-    "time_utc": "2026-05-12 14:50:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778597730,
     "time_utc": "2026-05-12 14:55:30 UTC",
     "count": 1,
@@ -152315,6 +152309,43 @@
         "speed": 500,
         "lat": 25.72,
         "lon": 60.228,
+        "airline": "RusJet",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780411838,
+    "time_utc": "2026-06-02 14:50:38 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffdd1ec",
+        "callsign": "IRA5329",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 36025,
+        "track": 233,
+        "speed": 356,
+        "lat": 34.301,
+        "lon": 47.11,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd0b65",
+        "callsign": "RSJ3536",
+        "flight": "RSJ3536",
+        "type": "GLEX",
+        "reg": "RA-73536",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 148,
+        "speed": 495,
+        "lat": 25.133,
+        "lon": 60.627,
         "airline": "RusJet",
         "country": "Russian Federation"
       }
