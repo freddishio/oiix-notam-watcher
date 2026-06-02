@@ -3859,11 +3859,11 @@
     },
     "last_seen_utc": "2026-06-02 07:00:34 UTC"
   },
-  "OIIX B0269/26": {
+  "OIIX B0270/26": {
     "header": {
-      "id": "B0269/26",
+      "id": "B0270/26",
       "series": "B",
-      "number": "0269",
+      "number": "0270",
       "year": "26",
       "type": "NOTAMN\r"
     },
@@ -3919,13 +3919,13 @@
       ]
     },
     "content": {
-      "text": "REF NOTAM A1103/26,\r\nALL VFR FLIGHTS (HELICOPTER, LIGHT, ULTRA LIGHT,\r\nKITE OR PARAGLIDER, RPA AND DRONE ACT)\r\nSUSPENDED WI MENTIONED AREA\r\nEXC THOSE FLT ENGAGED IN DEMISE ANNIVERSARY."
+      "text": "ALL VFR FLIGHTS (HELICOPTER, LIGHT, ULTRA LIGHT,\r\nKITE OR PARAGLIDER, RPA AND DRONE ACT)\r\nSUSPENDED WI MENTIONED AREA\r\nEXCEPT THOSE FLIGHTS ENGAGED IN DEMISE ANNIVERSARY."
     },
     "limits": {
       "lower": "GND",
       "upper": "UNL"
     },
-    "last_seen_utc": "2026-06-02 11:20:34 UTC"
+    "last_seen_utc": "2026-06-02 11:30:35 UTC"
   },
   "OIIX A1103/26": {
     "header": {
@@ -4238,28 +4238,32 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX B0270/26": {
+  "OIIX B0272/26": {
     "header": {
-      "id": "B0270/26",
+      "id": "B0272/26",
       "series": "B",
-      "number": "0270",
+      "number": "0272",
       "year": "26",
       "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QARLV/V/NBO/E/000/999/",
+      "line": "OIIX/QARLT/IV/NBO/E/000/999/",
       "location": "OIIX",
       "code": {
-        "code": "ARLV",
+        "code": "ARLT",
         "entity": "AR",
-        "status": "LV",
+        "status": "LT",
         "area": "ATM",
         "subArea": "Airspace Organization",
         "subject": "ATS route (specify)",
         "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
+        "modifier": "Limited to"
       },
       "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
         {
           "code": "V",
           "description": "VFR Traffic"
@@ -4298,12 +4302,12 @@
       ]
     },
     "content": {
-      "text": "ALL VFR FLIGHTS (HELICOPTER, LIGHT, ULTRA LIGHT,\r\nKITE OR PARAGLIDER, RPA AND DRONE ACT)\r\nSUSPENDED WI MENTIONED AREA\r\nEXCEPT THOSE FLIGHTS ENGAGED IN DEMISE ANNIVERSARY."
+      "text": "REF NOTAM B0270/26, \r\nEMERGENCY, AMBULANCE OR SEARCH AND RESCUE FLIGHTS\r\nWILL BE AUTHORIZED BY PRIOR COORDINATION WITH AND\r\nPERMISSION OF OIII APP."
     },
     "limits": {
       "lower": "GND",
       "upper": "UNL"
     },
-    "last_seen_utc": "2026-06-02 11:30:35 UTC"
+    "last_seen_utc": "2026-06-02 11:35:27 UTC"
   }
 }
