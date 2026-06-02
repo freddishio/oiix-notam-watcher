@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778618131,
-    "time_utc": "2026-05-12 20:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778618428,
     "time_utc": "2026-05-12 20:40:28 UTC",
     "count": 0,
@@ -152892,6 +152886,43 @@
         "speed": 395,
         "lat": 33.565,
         "lon": 46.607,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780432532,
+    "time_utc": "2026-06-02 20:35:32 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffef5b8",
+        "callsign": "MEH4151",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 7575,
+        "track": 288,
+        "speed": 230,
+        "lat": 35.627,
+        "lon": 51.518,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "3fff0376",
+        "callsign": "IRA1560",
+        "flight": "IR1560",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 261,
+        "speed": 390,
+        "lat": 33.524,
+        "lon": 45.966,
         "airline": "Iran Air",
         "country": "IRAN"
       }
