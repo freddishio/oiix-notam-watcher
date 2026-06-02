@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778621423,
-    "time_utc": "2026-05-12 21:30:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778621717,
     "time_utc": "2026-05-12 21:35:17 UTC",
     "count": 0,
@@ -152986,6 +152980,28 @@
         "speed": 385,
         "lat": 34.198,
         "lon": 46.952,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780435828,
+    "time_utc": "2026-06-02 21:30:28 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3fff395c",
+        "callsign": "IRA1552",
+        "flight": "IR1552",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 234,
+        "speed": 382,
+        "lat": 33.872,
+        "lon": 46.448,
         "airline": "Iran Air",
         "country": "IRAN"
       }
