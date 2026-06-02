@@ -3927,6 +3927,78 @@
     },
     "last_seen_utc": "2026-06-02 11:30:35 UTC"
   },
+  "OIIX B0272/26": {
+    "header": {
+      "id": "B0272/26",
+      "series": "B",
+      "number": "0272",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARLT/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLT",
+        "entity": "AR",
+        "status": "LT",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Limited to"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-03T01:20:00.000Z",
+      "validityEnd": "2026-07-04T15:47:00.000Z",
+      "elements": [
+        "0120-1547"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM B0270/26, \r\nEMERGENCY, AMBULANCE OR SEARCH AND RESCUE FLIGHTS\r\nWILL BE AUTHORIZED BY PRIOR COORDINATION WITH AND\r\nPERMISSION OF OIII APP."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-06-02 11:35:27 UTC"
+  },
   "OIIX A1103/26": {
     "header": {
       "id": "A1103/26",
@@ -4237,77 +4309,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX B0272/26": {
-    "header": {
-      "id": "B0272/26",
-      "series": "B",
-      "number": "0272",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARLT/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARLT",
-        "entity": "AR",
-        "status": "LT",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Limitations",
-        "modifier": "Limited to"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-03T01:20:00.000Z",
-      "validityEnd": "2026-07-04T15:47:00.000Z",
-      "elements": [
-        "0120-1547"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM B0270/26, \r\nEMERGENCY, AMBULANCE OR SEARCH AND RESCUE FLIGHTS\r\nWILL BE AUTHORIZED BY PRIOR COORDINATION WITH AND\r\nPERMISSION OF OIII APP."
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-06-02 11:35:27 UTC"
   }
 }
