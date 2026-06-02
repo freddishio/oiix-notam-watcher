@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778545519,
-    "time_utc": "2026-05-12 00:25:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778545821,
     "time_utc": "2026-05-12 00:30:21 UTC",
     "count": 0,
@@ -148827,5 +148821,42 @@
     "time_utc": "2026-06-02 00:20:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780359925,
+    "time_utc": "2026-06-02 00:25:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffb9216",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "EP-SAU",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 0,
+        "lat": 35.677,
+        "lon": 51.354,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffb6061",
+        "callsign": "IGO64C",
+        "flight": "6E1342",
+        "type": "A20N",
+        "reg": "VT-IPW",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 8,
+        "speed": 410,
+        "lat": 32.87,
+        "lon": 55.662,
+        "airline": "Indigo",
+        "country": "India"
+      }
+    ]
   }
 ]
