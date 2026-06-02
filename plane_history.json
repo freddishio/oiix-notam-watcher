@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778574623,
-    "time_utc": "2026-05-12 08:30:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778574924,
     "time_utc": "2026-05-12 08:35:24 UTC",
     "count": 0,
@@ -150803,5 +150797,42 @@
     "time_utc": "2026-06-02 08:25:31 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780389030,
+    "time_utc": "2026-06-02 08:30:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffcb4e0",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 194,
+        "speed": 448,
+        "lat": 32.16,
+        "lon": 49.727,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "3ffc2ccf",
+        "callsign": "AFL520",
+        "flight": "SU520",
+        "type": "B738",
+        "reg": "RA-73123",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 161,
+        "speed": 477,
+        "lat": 30.048,
+        "lon": 58.649,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
   }
 ]
