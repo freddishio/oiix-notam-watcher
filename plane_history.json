@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778574023,
-    "time_utc": "2026-05-12 08:20:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778574323,
     "time_utc": "2026-05-12 08:25:23 UTC",
     "count": 1,
@@ -150799,6 +150793,28 @@
         "speed": 540,
         "lat": 33.574,
         "lon": 46.996,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780388433,
+    "time_utc": "2026-06-02 08:20:33 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "3ffca96a",
+        "callsign": "MRJ4802",
+        "flight": "MRJ4801",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 60,
+        "speed": 527,
+        "lat": 34.033,
+        "lon": 47.691,
         "airline": "Meraj Airlines",
         "country": "IRAN"
       }
