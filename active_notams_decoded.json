@@ -3859,6 +3859,74 @@
     },
     "last_seen_utc": "2026-06-02 07:00:34 UTC"
   },
+  "OIIX B0269/26": {
+    "header": {
+      "id": "B0269/26",
+      "series": "B",
+      "number": "0269",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLV",
+        "entity": "AR",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-03T01:20:00.000Z",
+      "validityEnd": "2026-07-04T15:47:00.000Z",
+      "elements": [
+        "0120-1547"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1103/26,\r\nALL VFR FLIGHTS (HELICOPTER, LIGHT, ULTRA LIGHT,\r\nKITE OR PARAGLIDER, RPA AND DRONE ACT)\r\nSUSPENDED WI MENTIONED AREA\r\nEXC THOSE FLT ENGAGED IN DEMISE ANNIVERSARY."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-06-02 11:20:34 UTC"
+  },
   "OIIX A1103/26": {
     "header": {
       "id": "A1103/26",
@@ -4169,73 +4237,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX B0269/26": {
-    "header": {
-      "id": "B0269/26",
-      "series": "B",
-      "number": "0269",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARLV/V/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARLV",
-        "entity": "AR",
-        "status": "LV",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
-      },
-      "traffic": [
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-03T01:20:00.000Z",
-      "validityEnd": "2026-07-04T15:47:00.000Z",
-      "elements": [
-        "0120-1547"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM A1103/26,\r\nALL VFR FLIGHTS (HELICOPTER, LIGHT, ULTRA LIGHT,\r\nKITE OR PARAGLIDER, RPA AND DRONE ACT)\r\nSUSPENDED WI MENTIONED AREA\r\nEXC THOSE FLT ENGAGED IN DEMISE ANNIVERSARY."
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-06-02 11:20:34 UTC"
   }
 }
