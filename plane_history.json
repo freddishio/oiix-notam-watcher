@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778599829,
-    "time_utc": "2026-05-12 15:30:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778600130,
     "time_utc": "2026-05-12 15:35:30 UTC",
     "count": 0,
@@ -152488,6 +152482,73 @@
         "lat": 34.175,
         "lon": 48.002,
         "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780414236,
+    "time_utc": "2026-06-02 15:30:36 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "3ffe0d96",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 30125,
+        "track": 50,
+        "speed": 533,
+        "lat": 33.389,
+        "lon": 46.148,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd9f9a",
+        "callsign": "IRA1653",
+        "flight": "IR1653",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 62,
+        "speed": 560,
+        "lat": 33.465,
+        "lon": 46.289,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffe049d",
+        "callsign": "IRM5055",
+        "flight": "W55055",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 50,
+        "speed": 530,
+        "lat": 34.088,
+        "lon": 47.749,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffdd43d",
+        "callsign": "AXV9227",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBB",
+        "category": "Commercial",
+        "alt": 25650,
+        "track": 311,
+        "speed": 366,
+        "lat": 35.336,
+        "lon": 60.904,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
