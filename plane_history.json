@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778595936,
-    "time_utc": "2026-05-12 14:25:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778596232,
-    "time_utc": "2026-05-12 14:30:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778596531,
     "time_utc": "2026-05-12 14:35:31 UTC",
     "count": 0,
@@ -152199,6 +152187,43 @@
         "lon": 52.862,
         "airline": "Karun Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780410634,
+    "time_utc": "2026-06-02 14:30:34 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffd4398",
+        "callsign": "IRZ8257",
+        "flight": "IRZ8257",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 109,
+        "speed": 516,
+        "lat": 36.876,
+        "lon": 48.076,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffd0b65",
+        "callsign": "RSJ3536",
+        "flight": "RSJ3536",
+        "type": "GLEX",
+        "reg": "RA-73536",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 165,
+        "speed": 494,
+        "lat": 27.641,
+        "lon": 59.392,
+        "airline": "RusJet",
+        "country": "Russian Federation"
       }
     ]
   }
