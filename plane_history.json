@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778558424,
-    "time_utc": "2026-05-12 04:00:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778558726,
     "time_utc": "2026-05-12 04:05:26 UTC",
     "count": 0,
@@ -149532,5 +149526,42 @@
     "time_utc": "2026-06-02 03:55:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780372831,
+    "time_utc": "2026-06-02 04:00:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "3ffc2c13",
+        "callsign": "MRJ4805",
+        "flight": "MRJ4805",
+        "type": "A306",
+        "reg": "EP-SIG",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 317,
+        "speed": 140,
+        "lat": 38.738,
+        "lon": 44.681,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "3ffbf448",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 255,
+        "speed": 355,
+        "lat": 34.42,
+        "lon": 47.526,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
