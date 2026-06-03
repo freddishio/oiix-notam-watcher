@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778695233,
-    "time_utc": "2026-05-13 18:00:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778695531,
-    "time_utc": "2026-05-13 18:05:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778695831,
     "time_utc": "2026-05-13 18:10:31 UTC",
     "count": 0,
@@ -157887,6 +157875,73 @@
         "lat": 35.371,
         "lon": 51.931,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780509938,
+    "time_utc": "2026-06-03 18:05:38 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4002b200",
+        "callsign": "AXV7703",
+        "flight": "AXV7703",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 25,
+        "speed": 7,
+        "lat": 35.694,
+        "lon": 51.294,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400300c4",
+        "callsign": "KRU2662",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 145,
+        "speed": 15,
+        "lat": 35.681,
+        "lon": 51.319,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002bb56",
+        "callsign": "KIS7066",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 12350,
+        "track": 186,
+        "speed": 211,
+        "lat": 35.299,
+        "lon": 51.596,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002e45f",
+        "callsign": "IRA1504",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 185,
+        "speed": 508,
+        "lat": 27.268,
+        "lon": 60.742,
+        "airline": "Iran Air",
         "country": "IRAN"
       }
     ]
