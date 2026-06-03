@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778663119,
-    "time_utc": "2026-05-13 09:05:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778663422,
     "time_utc": "2026-05-13 09:10:22 UTC",
     "count": 0,
@@ -153772,6 +153766,73 @@
         "lat": 24.968,
         "lon": 60.017,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780477527,
+    "time_utc": "2026-06-03 09:05:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4000bbaa",
+        "callsign": "TBZ6602",
+        "flight": "I36602",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 19700,
+        "track": 90,
+        "speed": 60,
+        "lat": 38.252,
+        "lon": 46.062,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4000f795",
+        "callsign": "MRJ4873",
+        "flight": "MRJ4873",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 287,
+        "speed": 387,
+        "lat": 37.485,
+        "lon": 48.993,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40010921",
+        "callsign": "QSM1264",
+        "flight": "QB1264",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 22975,
+        "track": 172,
+        "speed": 367,
+        "lat": 35.305,
+        "lon": 60.08,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40011046",
+        "callsign": "KRU2571",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 20950,
+        "track": 103,
+        "speed": 405,
+        "lat": 30.054,
+        "lon": 49.935,
+        "airline": "Karun Airlines",
         "country": "IRAN"
       }
     ]
