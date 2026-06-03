@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778694935,
-    "time_utc": "2026-05-13 17:55:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778695233,
     "time_utc": "2026-05-13 18:00:33 UTC",
     "count": 0,
@@ -157856,6 +157850,43 @@
         "lat": 36.557,
         "lon": 59.104,
         "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780509632,
+    "time_utc": "2026-06-03 18:00:32 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4002b200",
+        "callsign": "AXV7703",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 6475,
+        "track": 288,
+        "speed": 170,
+        "lat": 35.641,
+        "lon": 51.484,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002bb56",
+        "callsign": "KIS7066",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 17000,
+        "track": 266,
+        "speed": 244,
+        "lat": 35.371,
+        "lon": 51.931,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
