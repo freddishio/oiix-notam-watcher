@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778675726,
-    "time_utc": "2026-05-13 12:35:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778676023,
-    "time_utc": "2026-05-13 12:40:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778676326,
     "time_utc": "2026-05-13 12:45:26 UTC",
     "count": 0,
@@ -154887,6 +154875,103 @@
         "speed": 386,
         "lat": 29.239,
         "lon": 58.361,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780490429,
+    "time_utc": "2026-06-03 12:40:29 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40015158",
+        "callsign": "SHI7310",
+        "flight": "IS7310",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 232,
+        "speed": 354,
+        "lat": 34.022,
+        "lon": 46.695,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40016112",
+        "callsign": "AXV9204",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 222,
+        "speed": 385,
+        "lat": 34.17,
+        "lon": 46.957,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400143fd",
+        "callsign": "IRA1521",
+        "flight": "IR1521",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 97,
+        "speed": 571,
+        "lat": 33.434,
+        "lon": 48.283,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400179cf",
+        "callsign": "AXV9928",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 269,
+        "speed": 364,
+        "lat": 35.435,
+        "lon": 50.543,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4001ae5b",
+        "callsign": "KRU2501",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 17525,
+        "track": 41,
+        "speed": 424,
+        "lat": 31.641,
+        "lon": 48.902,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400172bc",
+        "callsign": "VRH6811",
+        "flight": "VRH6811",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 334,
+        "speed": 380,
+        "lat": 29.746,
+        "lon": 58.097,
         "airline": "Varesh Airlines",
         "country": "IRAN"
       }
