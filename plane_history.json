@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778682946,
-    "time_utc": "2026-05-13 14:35:46 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778683225,
-    "time_utc": "2026-05-13 14:40:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778683526,
     "time_utc": "2026-05-13 14:45:26 UTC",
     "count": 1,
@@ -155678,6 +155666,28 @@
         "speed": 448,
         "lat": 24.968,
         "lon": 59.977,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780497631,
+    "time_utc": "2026-06-03 14:40:31 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "40016e70",
+        "callsign": "IRA1565",
+        "flight": "IR1565",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 23,
+        "speed": 447,
+        "lat": 25.474,
+        "lon": 60.399,
         "airline": "Iran Air",
         "country": "IRAN"
       }
