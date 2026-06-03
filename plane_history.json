@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1778680253,
-    "time_utc": "2026-05-13 13:50:53 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fac83b2",
-        "callsign": "MRJ4834",
-        "flight": "Unknown Flight",
-        "type": "A319",
-        "reg": "EP-SSP",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 122,
-        "speed": 447,
-        "lat": 37.371,
-        "lon": 49.527,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778680530,
     "time_utc": "2026-05-13 13:55:30 UTC",
     "count": 1,
@@ -155437,5 +155415,42 @@
     "time_utc": "2026-06-03 13:50:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780494927,
+    "time_utc": "2026-06-03 13:55:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4001e77f",
+        "callsign": "SHI7321",
+        "flight": "IS7321",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 90,
+        "speed": 520,
+        "lat": 33.574,
+        "lon": 46.482,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4001df54",
+        "callsign": "IRC861",
+        "flight": "EP861",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 14,
+        "speed": 466,
+        "lat": 32.896,
+        "lon": 49.473,
+        "airline": "Iran Aseman Airline",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
