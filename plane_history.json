@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778702125,
-    "time_utc": "2026-05-13 19:55:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778702435,
     "time_utc": "2026-05-13 20:00:35 UTC",
     "count": 0,
@@ -158698,6 +158692,43 @@
         "lon": 48.295,
         "airline": "Iran Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780516531,
+    "time_utc": "2026-06-03 19:55:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40034944",
+        "callsign": "IRA1510",
+        "flight": "IR1510",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 35975,
+        "track": 250,
+        "speed": 361,
+        "lat": 34.461,
+        "lon": 47.721,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400349fc",
+        "callsign": "ABY463",
+        "flight": "G9463",
+        "type": "A320",
+        "reg": "A6-AOK",
+        "category": "Commercial",
+        "alt": 29575,
+        "track": 34,
+        "speed": 490,
+        "lat": 25.001,
+        "lon": 57.913,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
       }
     ]
   }
