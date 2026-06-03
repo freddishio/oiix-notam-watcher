@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778676629,
-    "time_utc": "2026-05-13 12:50:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778676930,
     "time_utc": "2026-05-13 12:55:30 UTC",
     "count": 0,
@@ -155035,6 +155029,73 @@
         "lon": 48.934,
         "airline": "Iran Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780491033,
+    "time_utc": "2026-06-03 12:50:33 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40016112",
+        "callsign": "AXV9204",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 221,
+        "speed": 392,
+        "lat": 33.353,
+        "lon": 46.089,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400143fd",
+        "callsign": "IRA1521",
+        "flight": "IR1521",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 146,
+        "speed": 519,
+        "lat": 32.412,
+        "lon": 49.435,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40017294",
+        "callsign": "0TKN3141",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 26,
+        "speed": 476,
+        "lat": 34.783,
+        "lon": 58.711,
+        "airline": "0TK",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "400198f8",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 344,
+        "speed": 432,
+        "lat": 25.251,
+        "lon": 59.708,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
