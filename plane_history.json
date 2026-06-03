@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778694032,
-    "time_utc": "2026-05-13 17:40:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778694333,
     "time_utc": "2026-05-13 17:45:33 UTC",
     "count": 0,
@@ -157676,5 +157670,87 @@
     "time_utc": "2026-06-03 17:40:31 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780508730,
+    "time_utc": "2026-06-03 17:45:30 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40028340",
+        "callsign": "CPN7901",
+        "flight": "IV7901",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 17300,
+        "track": 126,
+        "speed": 377,
+        "lat": 35.472,
+        "lon": 50.766,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400295b4",
+        "callsign": "MEH4151",
+        "flight": "MEH4151",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 11,
+        "lat": 35.692,
+        "lon": 51.304,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002deae",
+        "callsign": "VRH5840",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 23700,
+        "track": 356,
+        "speed": 19,
+        "lat": 35.541,
+        "lon": 51.405,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002b200",
+        "callsign": "AXV7703",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 29325,
+        "track": 260,
+        "speed": 359,
+        "lat": 35.525,
+        "lon": 52.871,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002bb56",
+        "callsign": "KIS7066",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 271,
+        "speed": 363,
+        "lat": 35.447,
+        "lon": 53.648,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
