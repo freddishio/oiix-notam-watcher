@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778677523,
-    "time_utc": "2026-05-13 13:05:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778677829,
     "time_utc": "2026-05-13 13:10:29 UTC",
     "count": 0,
@@ -155203,6 +155197,73 @@
         "lon": 59.34,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780491929,
+    "time_utc": "2026-06-03 13:05:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4001a92e",
+        "callsign": "MRJ4834",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 37075,
+        "track": 140,
+        "speed": 490,
+        "lat": 37.872,
+        "lon": 48.26,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40016778",
+        "callsign": "SHI7346",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 353,
+        "lat": 34.317,
+        "lon": 47.134,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400179cf",
+        "callsign": "AXV9928",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 247,
+        "speed": 365,
+        "lat": 34.457,
+        "lon": 47.763,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400143fd",
+        "callsign": "IRA1521",
+        "flight": "IR1521",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 36200,
+        "track": 130,
+        "speed": 526,
+        "lat": 30.726,
+        "lon": 51.01,
+        "airline": "Iran Air",
+        "country": "IRAN"
       }
     ]
   }
