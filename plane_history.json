@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778665529,
-    "time_utc": "2026-05-13 09:45:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778665828,
     "time_utc": "2026-05-13 09:50:28 UTC",
     "count": 0,
@@ -154236,6 +154230,58 @@
         "speed": 468,
         "lat": 25.499,
         "lon": 60.371,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780480227,
+    "time_utc": "2026-06-03 09:50:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40012db7",
+        "callsign": "KIS7043",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 25075,
+        "track": 222,
+        "speed": 316,
+        "lat": 35.709,
+        "lon": 59.052,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4000eff7",
+        "callsign": "0TKN3140",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 25325,
+        "track": 199,
+        "speed": 422,
+        "lat": 30.868,
+        "lon": 49.256,
+        "airline": "0TK",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4000f777",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 219,
+        "speed": 457,
+        "lat": 24.966,
+        "lon": 59.993,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
