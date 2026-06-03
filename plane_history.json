@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778712025,
-    "time_utc": "2026-05-13 22:40:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778712325,
-    "time_utc": "2026-05-13 22:45:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778712623,
     "time_utc": "2026-05-13 22:50:23 UTC",
     "count": 1,
@@ -158860,6 +158848,28 @@
         "speed": 170,
         "lat": 35.389,
         "lon": 51.541,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780526728,
+    "time_utc": "2026-06-03 22:45:28 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "40022f5b",
+        "callsign": "IRM078",
+        "flight": "W578",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 3400,
+        "track": 287,
+        "speed": 90,
+        "lat": 35.453,
+        "lon": 51.21,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
