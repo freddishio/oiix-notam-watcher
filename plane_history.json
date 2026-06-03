@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778678128,
-    "time_utc": "2026-05-13 13:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778678428,
     "time_utc": "2026-05-13 13:20:28 UTC",
     "count": 1,
@@ -155420,6 +155414,73 @@
         "speed": 395,
         "lat": 29.887,
         "lon": 52.136,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780492828,
+    "time_utc": "2026-06-03 13:20:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40004e71",
+        "callsign": "IRM1026",
+        "flight": "W51036",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 17175,
+        "track": 314,
+        "speed": 239,
+        "lat": 38.336,
+        "lon": 48.407,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400179cf",
+        "callsign": "AXV9928",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 232,
+        "speed": 371,
+        "lat": 33.7,
+        "lon": 46.183,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4001d03a",
+        "callsign": "IZG4123",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 17300,
+        "track": 55,
+        "speed": 436,
+        "lat": 31.128,
+        "lon": 48.932,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400143fd",
+        "callsign": "IRA1521",
+        "flight": "IR1521",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 12000,
+        "track": 132,
+        "speed": 244,
+        "lat": 29.558,
+        "lon": 52.565,
         "airline": "Iran Air",
         "country": "IRAN"
       }
