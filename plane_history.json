@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778697034,
-    "time_utc": "2026-05-13 18:30:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778697335,
     "time_utc": "2026-05-13 18:35:35 UTC",
     "count": 0,
@@ -158147,6 +158141,43 @@
         "speed": 429,
         "lat": 34.485,
         "lon": 52.376,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780511732,
+    "time_utc": "2026-06-03 18:35:32 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40030bb1",
+        "callsign": "IRA1502",
+        "flight": "Unknown Flight",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 82,
+        "lat": 35.415,
+        "lon": 51.16,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400300c4",
+        "callsign": "KRU2662",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 28975,
+        "track": 138,
+        "speed": 487,
+        "lat": 33.994,
+        "lon": 52.904,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
