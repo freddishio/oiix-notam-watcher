@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778664331,
-    "time_utc": "2026-05-13 09:25:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778664622,
-    "time_utc": "2026-05-13 09:30:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778664923,
     "time_utc": "2026-05-13 09:35:23 UTC",
     "count": 0,
@@ -154038,6 +154026,43 @@
         "lat": 34.112,
         "lon": 47.386,
         "airline": "Atlas Khomein Kish",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780479031,
+    "time_utc": "2026-06-03 09:30:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4000f795",
+        "callsign": "MRJ4873",
+        "flight": "MRJ4873",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 32050,
+        "track": 295,
+        "speed": 407,
+        "lat": 38.335,
+        "lon": 45.732,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4000dd22",
+        "callsign": "IRA1512",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 231,
+        "speed": 372,
+        "lat": 33.575,
+        "lon": 45.989,
+        "airline": "Iran Air",
         "country": "IRAN"
       }
     ]
