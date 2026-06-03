@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1778644228,
-    "time_utc": "2026-05-13 03:50:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778644519,
-    "time_utc": "2026-05-13 03:55:19 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fab1d7b",
-        "callsign": "IZG4122",
-        "flight": "Unknown Flight",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 221,
-        "speed": 411,
-        "lat": 35.474,
-        "lon": 58.816,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778644831,
     "time_utc": "2026-05-13 04:00:31 UTC",
     "count": 1,
@@ -152878,6 +152850,43 @@
         "lon": 45.896,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780458923,
+    "time_utc": "2026-06-03 03:55:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40005e4c",
+        "callsign": "TBZ6601",
+        "flight": "I36601",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 20975,
+        "track": 296,
+        "speed": 393,
+        "lat": 38.48,
+        "lon": 45.347,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40001684",
+        "callsign": "IRA1553",
+        "flight": "IR1553",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 63,
+        "speed": 567,
+        "lat": 33.467,
+        "lon": 46.294,
+        "airline": "Iran Air",
+        "country": "IRAN"
       }
     ]
   }
