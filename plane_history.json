@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778682636,
-    "time_utc": "2026-05-13 14:30:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778682946,
     "time_utc": "2026-05-13 14:35:46 UTC",
     "count": 0,
@@ -155567,6 +155561,58 @@
         "lon": 52.46,
         "airline": "Varesh Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780497037,
+    "time_utc": "2026-06-03 14:30:37 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4001f604",
+        "callsign": "CPN7900",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 28025,
+        "track": 231,
+        "speed": 386,
+        "lat": 33.942,
+        "lon": 46.551,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4001d03a",
+        "callsign": "IZG4123",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 26,
+        "speed": 473,
+        "lat": 35.017,
+        "lon": 58.894,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400222c5",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 5575,
+        "track": 315,
+        "speed": 197,
+        "lat": 29.55,
+        "lon": 52.552,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
