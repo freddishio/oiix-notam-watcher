@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778667022,
-    "time_utc": "2026-05-13 10:10:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778667332,
     "time_utc": "2026-05-13 10:15:32 UTC",
     "count": 2,
@@ -154277,6 +154271,73 @@
         "lat": 37.863,
         "lon": 44.804,
         "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780481429,
+    "time_utc": "2026-06-03 10:10:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4000f7ce",
+        "callsign": "CPN7903",
+        "flight": "IV7903",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34900,
+        "track": 115,
+        "speed": 480,
+        "lat": 37.575,
+        "lon": 45.562,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4000d8e9",
+        "callsign": "IRA1557",
+        "flight": "IR1557",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 73,
+        "speed": 583,
+        "lat": 33.524,
+        "lon": 46.468,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400121af",
+        "callsign": "AXV9207",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 254,
+        "speed": 380,
+        "lat": 34.432,
+        "lon": 47.566,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4001289a",
+        "callsign": "IRC860",
+        "flight": "EP860",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 199,
+        "speed": 399,
+        "lat": 31.39,
+        "lon": 49.471,
+        "airline": "Iran Aseman Airline",
         "country": "IRAN"
       }
     ]
