@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1778681732,
-    "time_utc": "2026-05-13 14:15:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778682027,
-    "time_utc": "2026-05-13 14:20:27 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3faccc13",
-        "callsign": "IRZ169",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-SIM",
-        "category": "Commercial",
-        "alt": 31025,
-        "track": 104,
-        "speed": 466,
-        "lat": 36.872,
-        "lon": 48.026,
-        "airline": "Saha Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778682327,
     "time_utc": "2026-05-13 14:25:27 UTC",
     "count": 1,
@@ -155528,6 +155500,43 @@
         "lon": 49.567,
         "airline": "Kish Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780496433,
+    "time_utc": "2026-06-03 14:20:33 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4001f604",
+        "callsign": "CPN7900",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 28025,
+        "track": 255,
+        "speed": 379,
+        "lat": 34.452,
+        "lon": 47.669,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002157f",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMA",
+        "category": "Commercial",
+        "alt": 9250,
+        "track": 27,
+        "speed": 263,
+        "lat": 29.637,
+        "lon": 52.538,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
