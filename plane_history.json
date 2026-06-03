@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778663422,
-    "time_utc": "2026-05-13 09:10:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778663731,
     "time_utc": "2026-05-13 09:15:31 UTC",
     "count": 0,
@@ -153832,6 +153826,58 @@
         "speed": 405,
         "lat": 30.054,
         "lon": 49.935,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780477833,
+    "time_utc": "2026-06-03 09:10:33 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4000f795",
+        "callsign": "MRJ4873",
+        "flight": "MRJ4873",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 290,
+        "speed": 395,
+        "lat": 37.605,
+        "lon": 48.331,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40010921",
+        "callsign": "QSM1264",
+        "flight": "QB1264",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 203,
+        "speed": 364,
+        "lat": 34.848,
+        "lon": 59.853,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40011046",
+        "callsign": "KRU2571",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 20975,
+        "track": 103,
+        "speed": 410,
+        "lat": 29.922,
+        "lon": 50.578,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
