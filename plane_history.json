@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778692825,
-    "time_utc": "2026-05-13 17:20:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778693136,
     "time_utc": "2026-05-13 17:25:36 UTC",
     "count": 0,
@@ -157497,6 +157491,58 @@
         "speed": 430,
         "lat": 35.451,
         "lon": 53.525,
+        "airline": "Atlas Khomein Kish",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780507230,
+    "time_utc": "2026-06-03 17:20:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40028340",
+        "callsign": "CPN7901",
+        "flight": "IV7901",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34925,
+        "track": 109,
+        "speed": 512,
+        "lat": 37.137,
+        "lon": 47.112,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002d171",
+        "callsign": "IRM077",
+        "flight": "W577",
+        "type": "A346",
+        "reg": "EP-MMU",
+        "category": "Commercial",
+        "alt": 5050,
+        "track": 279,
+        "speed": 213,
+        "lat": 35.443,
+        "lon": 51.037,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4002b9d2",
+        "callsign": "ATS6100",
+        "flight": "Unknown Flight",
+        "type": "MD87",
+        "reg": "EP-SAT",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 83,
+        "speed": 510,
+        "lat": 35.55,
+        "lon": 54.456,
         "airline": "Atlas Khomein Kish",
         "country": "IRAN"
       }
