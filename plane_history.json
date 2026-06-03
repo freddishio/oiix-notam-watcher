@@ -1,79 +1,5 @@
 [
   {
-    "timestamp": 1778638530,
-    "time_utc": "2026-05-13 02:15:30 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "3fa9ec32",
-        "callsign": "UAE39L",
-        "flight": "EK92",
-        "type": "A388",
-        "reg": "A6-EOL",
-        "category": "Commercial",
-        "alt": 425,
-        "track": 263,
-        "speed": 492,
-        "lat": 28.144,
-        "lon": 56.182,
-        "airline": "Emirates",
-        "country": "United Arab Emirates"
-      },
-      {
-        "id": "3faa83fb",
-        "callsign": "IRA3613",
-        "flight": "Unknown Flight",
-        "type": "A306",
-        "reg": "EP-IBC",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 9,
-        "speed": 491,
-        "lat": 26.526,
-        "lon": 60.603,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1778638820,
-    "time_utc": "2026-05-13 02:20:20 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "3faae484",
-        "callsign": "IRA3610",
-        "flight": "IR3610",
-        "type": "A332",
-        "reg": "EP-IJC",
-        "category": "Commercial",
-        "alt": 25550,
-        "track": 183,
-        "speed": 456,
-        "lat": 35.472,
-        "lon": 59.526,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "3faa83fb",
-        "callsign": "IRA3613",
-        "flight": "Unknown Flight",
-        "type": "A306",
-        "reg": "EP-IBC",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 9,
-        "speed": 495,
-        "lat": 27.179,
-        "lon": 60.72,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778639121,
     "time_utc": "2026-05-13 02:25:21 UTC",
     "count": 2,
@@ -152760,5 +152686,42 @@
     "time_utc": "2026-06-03 02:15:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780453224,
+    "time_utc": "2026-06-03 02:20:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40002d3c",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 0,
+        "lat": 35.412,
+        "lon": 51.164,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40002d4d",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "A343",
+        "reg": "EP-MMC",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 21,
+        "lat": 35.413,
+        "lon": 51.165,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
