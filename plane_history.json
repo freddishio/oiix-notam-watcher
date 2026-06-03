@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778663731,
-    "time_utc": "2026-05-13 09:15:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778664028,
     "time_utc": "2026-05-13 09:20:28 UTC",
     "count": 0,
@@ -153946,6 +153940,58 @@
         "lat": 29.797,
         "lon": 51.168,
         "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780478427,
+    "time_utc": "2026-06-03 09:20:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4000f795",
+        "callsign": "MRJ4873",
+        "flight": "MRJ4873",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 286,
+        "speed": 394,
+        "lat": 37.958,
+        "lon": 47.04,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40010f0b",
+        "callsign": "ATS6443",
+        "flight": "Unknown Flight",
+        "type": "MD87",
+        "reg": "EP-SAT",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 56,
+        "speed": 538,
+        "lat": 33.717,
+        "lon": 46.645,
+        "airline": "Atlas Khomein Kish",
+        "country": "IRAN"
+      },
+      {
+        "id": "4000dd22",
+        "callsign": "IRA1512",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 233,
+        "speed": 368,
+        "lat": 34.208,
+        "lon": 46.963,
+        "airline": "Iran Air",
         "country": "IRAN"
       }
     ]
