@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778780136,
-    "time_utc": "2026-05-14 17:35:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778780437,
     "time_utc": "2026-05-14 17:40:37 UTC",
     "count": 0,
@@ -173321,6 +173315,103 @@
         "speed": 400,
         "lat": 34.487,
         "lon": 52.536,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780594827,
+    "time_utc": "2026-06-04 17:40:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "400713d3",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33925,
+        "track": 295,
+        "speed": 393,
+        "lat": 38.416,
+        "lon": 45.516,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40074b97",
+        "callsign": "VRH5840",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 165,
+        "lat": 35.671,
+        "lon": 51.287,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40070c7a",
+        "callsign": "SHI7321",
+        "flight": "IS7321",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 19,
+        "lat": 35.692,
+        "lon": 51.289,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40073016",
+        "callsign": "IRA1598",
+        "flight": "IR1598",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 35975,
+        "track": 238,
+        "speed": 372,
+        "lat": 34.597,
+        "lon": 47.996,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40071c10",
+        "callsign": "IRA3495",
+        "flight": "IR3495",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 24275,
+        "track": 346,
+        "speed": 355,
+        "lat": 34.748,
+        "lon": 51.829,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400732ed",
+        "callsign": "MEH4154",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 130,
+        "speed": 398,
+        "lat": 34.126,
+        "lon": 53.046,
         "airline": "Mehr Airways",
         "country": "IRAN"
       }
