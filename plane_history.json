@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778778340,
-    "time_utc": "2026-05-14 17:05:40 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778778639,
     "time_utc": "2026-05-14 17:10:39 UTC",
     "count": 1,
@@ -172734,6 +172728,103 @@
         "lat": 34.494,
         "lon": 47.798,
         "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780593027,
+    "time_utc": "2026-06-04 17:10:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "400713d3",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33925,
+        "track": 310,
+        "speed": 383,
+        "lat": 36.877,
+        "lon": 48.992,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006e188",
+        "callsign": "VRH5841",
+        "flight": "VRH5841",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 25,
+        "speed": 6,
+        "lat": 35.693,
+        "lon": 51.303,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006f5b4",
+        "callsign": "TBN6211",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 12800,
+        "track": 273,
+        "speed": 341,
+        "lat": 35.533,
+        "lon": 52.045,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40070148",
+        "callsign": "IRA1578",
+        "flight": "IR1578",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 248,
+        "speed": 399,
+        "lat": 34.344,
+        "lon": 47.202,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40070c7a",
+        "callsign": "SHI7321",
+        "flight": "IS7321",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 61,
+        "speed": 520,
+        "lat": 34.263,
+        "lon": 48.208,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40072557",
+        "callsign": "IRM081",
+        "flight": "W581",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 10375,
+        "track": 119,
+        "speed": 315,
+        "lat": 35.276,
+        "lon": 51.055,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
