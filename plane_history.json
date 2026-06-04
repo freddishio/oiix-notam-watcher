@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778786732,
-    "time_utc": "2026-05-14 19:25:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778787027,
-    "time_utc": "2026-05-14 19:30:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778787331,
     "time_utc": "2026-05-14 19:35:31 UTC",
     "count": 0,
@@ -174410,6 +174398,73 @@
         "lon": 57.503,
         "airline": "Emirates",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780601433,
+    "time_utc": "2026-06-04 19:30:33 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4007a844",
+        "callsign": "MRJ4833",
+        "flight": "MRJ4833",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 19000,
+        "track": 314,
+        "speed": 402,
+        "lat": 35.979,
+        "lon": 50.243,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4007b085",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 146,
+        "speed": 0,
+        "lat": 35.691,
+        "lon": 51.319,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40078b5c",
+        "callsign": "KIS7178",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 260,
+        "speed": 385,
+        "lat": 35.563,
+        "lon": 53.081,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40078014",
+        "callsign": "IRA1594",
+        "flight": "IR1594",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 232,
+        "speed": 388,
+        "lat": 34.199,
+        "lon": 46.951,
+        "airline": "Iran Air",
+        "country": "IRAN"
       }
     ]
   }
