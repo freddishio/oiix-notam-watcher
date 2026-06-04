@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778773832,
-    "time_utc": "2026-05-14 15:50:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778774120,
     "time_utc": "2026-05-14 15:55:20 UTC",
     "count": 0,
@@ -171633,6 +171627,88 @@
         "lat": 26.98,
         "lon": 60.688,
         "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780588234,
+    "time_utc": "2026-06-04 15:50:34 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "400696e6",
+        "callsign": "AXV7707",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 6400,
+        "track": 289,
+        "speed": 197,
+        "lat": 35.622,
+        "lon": 51.497,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400662b0",
+        "callsign": "IRA1515",
+        "flight": "IR1515",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 53,
+        "speed": 560,
+        "lat": 33.975,
+        "lon": 47.592,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400643b1",
+        "callsign": "IRA1581",
+        "flight": "IR1581",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 61,
+        "speed": 556,
+        "lat": 34.167,
+        "lon": 47.991,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006aceb",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 87,
+        "speed": 573,
+        "lat": 35.399,
+        "lon": 51.15,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006bc14",
+        "callsign": "DZD9442",
+        "flight": "Unknown Flight",
+        "type": "RJ85",
+        "reg": "EP-DZH",
+        "category": "Commercial",
+        "alt": 20000,
+        "track": 317,
+        "speed": 309,
+        "lat": 34.204,
+        "lon": 53.13,
+        "airline": "Yazd Airways",
         "country": "IRAN"
       }
     ]
