@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778721627,
-    "time_utc": "2026-05-14 01:20:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778721924,
-    "time_utc": "2026-05-14 01:25:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778722229,
     "time_utc": "2026-05-14 01:30:29 UTC",
     "count": 1,
@@ -159214,6 +159202,43 @@
         "speed": 459,
         "lat": 26.462,
         "lon": 60.599,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780536331,
+    "time_utc": "2026-06-04 01:25:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "400451d0",
+        "callsign": "SHI7302",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 254,
+        "speed": 382,
+        "lat": 34.456,
+        "lon": 47.687,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4003dfcc",
+        "callsign": "IRA1501",
+        "flight": "IR1501",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 8,
+        "speed": 458,
+        "lat": 27.111,
+        "lon": 60.714,
         "airline": "Iran Air",
         "country": "IRAN"
       }
