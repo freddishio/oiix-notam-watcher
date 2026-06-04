@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778730321,
-    "time_utc": "2026-05-14 03:45:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778730625,
     "time_utc": "2026-05-14 03:50:25 UTC",
     "count": 0,
@@ -160267,6 +160261,103 @@
         "lat": 35.413,
         "lon": 51.201,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780544727,
+    "time_utc": "2026-06-04 03:45:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4004a6a0",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 32500,
+        "track": 310,
+        "speed": 424,
+        "lat": 36.729,
+        "lon": 49.209,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40048a04",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 269,
+        "speed": 361,
+        "lat": 35.445,
+        "lon": 49.967,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400495fa",
+        "callsign": "AXV9228",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 268,
+        "speed": 364,
+        "lat": 35.448,
+        "lon": 50.585,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004a643",
+        "callsign": "SHI7301",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 62,
+        "speed": 492,
+        "lat": 34.448,
+        "lon": 48.628,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40049f69",
+        "callsign": "IZG3026",
+        "flight": "ZO3026",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 29,
+        "lat": 35.421,
+        "lon": 51.131,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004b58c",
+        "callsign": "IRM1129",
+        "flight": "W51129",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 11950,
+        "track": 120,
+        "speed": 367,
+        "lat": 35.225,
+        "lon": 51.201,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
