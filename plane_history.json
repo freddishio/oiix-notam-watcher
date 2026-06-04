@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778801431,
-    "time_utc": "2026-05-14 23:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778801720,
-    "time_utc": "2026-05-14 23:35:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778802019,
     "time_utc": "2026-05-14 23:40:19 UTC",
     "count": 0,
@@ -175170,6 +175158,43 @@
         "speed": 277,
         "lat": 34.943,
         "lon": 52.281,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780616126,
+    "time_utc": "2026-06-04 23:35:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4007f426",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 113,
+        "speed": 484,
+        "lat": 37.713,
+        "lon": 45.203,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400833b3",
+        "callsign": "MEH4155",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 17650,
+        "track": 306,
+        "speed": 275,
+        "lat": 35.179,
+        "lon": 51.903,
         "airline": "Mehr Airways",
         "country": "IRAN"
       }
