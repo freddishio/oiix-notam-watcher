@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778774120,
-    "time_utc": "2026-05-14 15:55:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778774431,
     "time_utc": "2026-05-14 16:00:31 UTC",
     "count": 0,
@@ -171708,6 +171702,103 @@
         "speed": 309,
         "lat": 34.204,
         "lon": 53.13,
+        "airline": "Yazd Airways",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780588532,
+    "time_utc": "2026-06-04 15:55:32 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "400696e6",
+        "callsign": "AXV7707",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 47,
+        "lat": 35.672,
+        "lon": 51.321,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40063e72",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 308,
+        "speed": 393,
+        "lat": 36.474,
+        "lon": 53.163,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "400643b1",
+        "callsign": "IRA1581",
+        "flight": "IR1581",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 62,
+        "speed": 561,
+        "lat": 34.526,
+        "lon": 48.806,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006b395",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 60,
+        "speed": 530,
+        "lat": 35.01,
+        "lon": 50.37,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006aceb",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 94,
+        "speed": 575,
+        "lat": 35.31,
+        "lon": 52.102,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006bc14",
+        "callsign": "DZD9442",
+        "flight": "Unknown Flight",
+        "type": "RJ85",
+        "reg": "EP-DZH",
+        "category": "Commercial",
+        "alt": 19975,
+        "track": 317,
+        "speed": 302,
+        "lat": 34.513,
+        "lon": 52.785,
         "airline": "Yazd Airways",
         "country": "IRAN"
       }
