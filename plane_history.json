@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778775332,
-    "time_utc": "2026-05-14 16:15:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778775630,
-    "time_utc": "2026-05-14 16:20:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778775920,
     "time_utc": "2026-05-14 16:25:20 UTC",
     "count": 0,
@@ -172169,6 +172157,103 @@
         "speed": 425,
         "lat": 25.321,
         "lon": 59.663,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780590040,
+    "time_utc": "2026-06-04 16:20:40 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40063e72",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 302,
+        "speed": 391,
+        "lat": 38.098,
+        "lon": 50.38,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "4006bc14",
+        "callsign": "DZD9442",
+        "flight": "Unknown Flight",
+        "type": "RJ85",
+        "reg": "EP-DZH",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 42,
+        "lat": 35.689,
+        "lon": 51.311,
+        "airline": "Yazd Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "40065d72",
+        "callsign": "IRA1593",
+        "flight": "IR1593",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 31850,
+        "track": 62,
+        "speed": 556,
+        "lat": 34.681,
+        "lon": 49.165,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400662b0",
+        "callsign": "IRA1515",
+        "flight": "IR1515",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 78,
+        "speed": 580,
+        "lat": 35.287,
+        "lon": 52.971,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400643b1",
+        "callsign": "IRA1581",
+        "flight": "IR1581",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 38975,
+        "track": 79,
+        "speed": 583,
+        "lat": 35.349,
+        "lon": 53.331,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006c6ad",
+        "callsign": "SHI7373",
+        "flight": "IS7373",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 344,
+        "speed": 423,
+        "lat": 25.917,
+        "lon": 59.482,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
