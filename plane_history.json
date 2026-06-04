@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778779532,
-    "time_utc": "2026-05-14 17:25:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778779829,
-    "time_utc": "2026-05-14 17:30:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778780136,
     "time_utc": "2026-05-14 17:35:36 UTC",
     "count": 0,
@@ -173139,6 +173127,118 @@
         "speed": 517,
         "lat": 34.198,
         "lon": 52.945,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780594231,
+    "time_utc": "2026-06-04 17:30:31 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "400713d3",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33925,
+        "track": 286,
+        "speed": 381,
+        "lat": 38.024,
+        "lon": 46.765,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40073016",
+        "callsign": "IRA1598",
+        "flight": "IR1598",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 35975,
+        "track": 251,
+        "speed": 367,
+        "lat": 35.029,
+        "lon": 49.082,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40070c7a",
+        "callsign": "SHI7321",
+        "flight": "IS7321",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 16525,
+        "track": 88,
+        "speed": 281,
+        "lat": 35.277,
+        "lon": 51.111,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006cb91",
+        "callsign": "CPN7901",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 5400,
+        "track": 288,
+        "speed": 182,
+        "lat": 35.375,
+        "lon": 51.303,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400732ed",
+        "callsign": "MEH4154",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 20675,
+        "track": 136,
+        "speed": 391,
+        "lat": 34.857,
+        "lon": 52.035,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "40071c10",
+        "callsign": "IRA3495",
+        "flight": "IR3495",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 357,
+        "speed": 449,
+        "lat": 33.719,
+        "lon": 52.289,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40072557",
+        "callsign": "IRM081",
+        "flight": "W581",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 30200,
+        "track": 130,
+        "speed": 550,
+        "lat": 33.704,
+        "lon": 53.632,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
