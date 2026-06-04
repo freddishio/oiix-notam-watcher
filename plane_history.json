@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778783130,
-    "time_utc": "2026-05-14 18:25:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778783427,
-    "time_utc": "2026-05-14 18:30:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778783726,
     "time_utc": "2026-05-14 18:35:26 UTC",
     "count": 0,
@@ -173946,6 +173934,43 @@
         "speed": 404,
         "lat": 34.489,
         "lon": 52.813,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780597830,
+    "time_utc": "2026-06-04 18:30:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40077207",
+        "callsign": "IRM051",
+        "flight": "W551",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 15425,
+        "track": 125,
+        "speed": 421,
+        "lat": 35.004,
+        "lon": 51.725,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400582f7",
+        "callsign": "IRM086",
+        "flight": "Unknown Flight",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 23575,
+        "track": 316,
+        "speed": 391,
+        "lat": 34.89,
+        "lon": 52.358,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
