@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778781625,
-    "time_utc": "2026-05-14 18:00:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778781944,
     "time_utc": "2026-05-14 18:05:44 UTC",
     "count": 0,
@@ -173650,6 +173644,58 @@
         "lat": 34.321,
         "lon": 53.01,
         "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780596029,
+    "time_utc": "2026-06-04 18:00:29 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40075037",
+        "callsign": "AXV7702",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 18275,
+        "track": 106,
+        "speed": 408,
+        "lat": 35.517,
+        "lon": 51.649,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006c6ad",
+        "callsign": "SHI7373",
+        "flight": "IS7373",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 31475,
+        "track": 318,
+        "speed": 381,
+        "lat": 34.713,
+        "lon": 52.591,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40074b97",
+        "callsign": "VRH5840",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 32700,
+        "track": 98,
+        "speed": 520,
+        "lat": 35.242,
+        "lon": 52.674,
+        "airline": "Varesh Airlines",
         "country": "IRAN"
       }
     ]
