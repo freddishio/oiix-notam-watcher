@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778784332,
-    "time_utc": "2026-05-14 18:45:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778784623,
-    "time_utc": "2026-05-14 18:50:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778784920,
     "time_utc": "2026-05-14 18:55:20 UTC",
     "count": 0,
@@ -174101,6 +174089,43 @@
         "lat": 33.664,
         "lon": 53.687,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780599028,
+    "time_utc": "2026-06-04 18:50:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40078014",
+        "callsign": "IRA1594",
+        "flight": "IR1594",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 22,
+        "speed": 4,
+        "lat": 35.413,
+        "lon": 51.166,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400785fa",
+        "callsign": "TBN6212",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 17275,
+        "track": 108,
+        "speed": 444,
+        "lat": 35.428,
+        "lon": 51.99,
+        "airline": "Taban Airlines",
         "country": "IRAN"
       }
     ]
