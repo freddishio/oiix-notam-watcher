@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778723728,
-    "time_utc": "2026-05-14 01:55:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778724031,
     "time_utc": "2026-05-14 02:00:31 UTC",
     "count": 0,
@@ -159307,6 +159301,58 @@
         "lat": 35.689,
         "lon": 51.33,
         "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780538427,
+    "time_utc": "2026-06-04 02:00:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40047759",
+        "callsign": "KRU2524",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 10975,
+        "track": 171,
+        "speed": 229,
+        "lat": 35.585,
+        "lon": 51.16,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4003da62",
+        "callsign": "IRA1505",
+        "flight": "IR1505",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 76,
+        "speed": 539,
+        "lat": 34.889,
+        "lon": 49.722,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400471b3",
+        "callsign": "IRM1185",
+        "flight": "W51185",
+        "type": "A343",
+        "reg": "EP-MMC",
+        "category": "Commercial",
+        "alt": 23525,
+        "track": 130,
+        "speed": 494,
+        "lat": 34.305,
+        "lon": 52.795,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
