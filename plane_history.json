@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778787331,
-    "time_utc": "2026-05-14 19:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778787627,
     "time_utc": "2026-05-14 19:40:27 UTC",
     "count": 0,
@@ -174463,6 +174457,58 @@
         "speed": 388,
         "lat": 34.199,
         "lon": 46.951,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780601735,
+    "time_utc": "2026-06-04 19:35:35 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4007b085",
+        "callsign": "IRA3496",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 19,
+        "lat": 35.686,
+        "lon": 51.332,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40078b5c",
+        "callsign": "KIS7178",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 22150,
+        "track": 274,
+        "speed": 307,
+        "lat": 35.524,
+        "lon": 52.482,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40078014",
+        "callsign": "IRA1594",
+        "flight": "IR1594",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 231,
+        "speed": 391,
+        "lat": 33.867,
+        "lon": 46.437,
         "airline": "Iran Air",
         "country": "IRAN"
       }
