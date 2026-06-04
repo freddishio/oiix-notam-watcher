@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778781944,
-    "time_utc": "2026-05-14 18:05:44 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778782227,
     "time_utc": "2026-05-14 18:10:27 UTC",
     "count": 0,
@@ -173763,6 +173757,73 @@
         "lat": 35.361,
         "lon": 53.539,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780596626,
+    "time_utc": "2026-06-04 18:10:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4006882f",
+        "callsign": "WMT8356",
+        "flight": "W46763",
+        "type": "A21N",
+        "reg": "9H-WMR",
+        "category": "Commercial",
+        "alt": 2750,
+        "track": 211,
+        "speed": 329,
+        "lat": 38.042,
+        "lon": 44.975,
+        "airline": "Wizz Air Malta",
+        "country": "Malta"
+      },
+      {
+        "id": "40074b97",
+        "callsign": "VRH5840",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 33025,
+        "track": 79,
+        "speed": 521,
+        "lat": 35.488,
+        "lon": 54.397,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006c6ad",
+        "callsign": "SHI7373",
+        "flight": "IS7373",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 10425,
+        "track": 289,
+        "speed": 277,
+        "lat": 35.316,
+        "lon": 51.699,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40075037",
+        "callsign": "AXV7702",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31750,
+        "track": 79,
+        "speed": 513,
+        "lat": 35.328,
+        "lon": 53.191,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
