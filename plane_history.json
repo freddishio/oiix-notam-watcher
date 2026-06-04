@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778736630,
-    "time_utc": "2026-05-14 05:30:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778736921,
-    "time_utc": "2026-05-14 05:35:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778737224,
     "time_utc": "2026-05-14 05:40:24 UTC",
     "count": 0,
@@ -162965,6 +162953,118 @@
         "speed": 391,
         "lat": 31.194,
         "lon": 48.835,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780551322,
+    "time_utc": "2026-06-04 05:35:22 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "4004b955",
+        "callsign": "IRB9735",
+        "flight": "B99735",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 296,
+        "speed": 410,
+        "lat": 37.266,
+        "lon": 49.767,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004d101",
+        "callsign": "VRH6850",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 31275,
+        "track": 131,
+        "speed": 505,
+        "lat": 35.535,
+        "lon": 60.566,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004b4c1",
+        "callsign": "AXV9212",
+        "flight": "AXV9212",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 231,
+        "speed": 400,
+        "lat": 33.725,
+        "lon": 46.216,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004d9f2",
+        "callsign": "IRA679",
+        "flight": "IR679",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 232,
+        "speed": 352,
+        "lat": 34.159,
+        "lon": 46.887,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004d93b",
+        "callsign": "IRA1580",
+        "flight": "Unknown Flight",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 282,
+        "speed": 384,
+        "lat": 33.286,
+        "lon": 49.109,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004d30f",
+        "callsign": "AXV9216",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 376,
+        "lat": 35.402,
+        "lon": 52.039,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4004f388",
+        "callsign": "ISP1829",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 28950,
+        "track": 32,
+        "speed": 488,
+        "lat": 31.711,
+        "lon": 49.113,
         "airline": "JSky Airlines",
         "country": "IRAN"
       }
