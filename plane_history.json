@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778775920,
-    "time_utc": "2026-05-14 16:25:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778776221,
     "time_utc": "2026-05-14 16:30:21 UTC",
     "count": 0,
@@ -172254,6 +172248,88 @@
         "speed": 423,
         "lat": 25.917,
         "lon": 59.482,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780590333,
+    "time_utc": "2026-06-04 16:25:33 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40070148",
+        "callsign": "IRA1578",
+        "flight": "IR1578",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 115,
+        "speed": 19,
+        "lat": 35.686,
+        "lon": 51.291,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400643b1",
+        "callsign": "IRA1581",
+        "flight": "IR1581",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 79,
+        "speed": 575,
+        "lat": 35.488,
+        "lon": 54.274,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40065d72",
+        "callsign": "IRA1593",
+        "flight": "IR1593",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 23325,
+        "track": 76,
+        "speed": 464,
+        "lat": 34.932,
+        "lon": 49.938,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400662b0",
+        "callsign": "IRA1515",
+        "flight": "IR1515",
+        "type": "A306",
+        "reg": "EP-IBC",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 80,
+        "speed": 575,
+        "lat": 35.428,
+        "lon": 53.921,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006c6ad",
+        "callsign": "SHI7373",
+        "flight": "IS7373",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 344,
+        "speed": 420,
+        "lat": 26.467,
+        "lon": 59.313,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
