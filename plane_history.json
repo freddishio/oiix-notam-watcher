@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778769320,
-    "time_utc": "2026-05-14 14:35:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778769628,
     "time_utc": "2026-05-14 14:40:28 UTC",
     "count": 0,
@@ -170871,6 +170865,103 @@
         "lat": 32.853,
         "lon": 53.862,
         "airline": "JSky Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780583729,
+    "time_utc": "2026-06-04 14:35:29 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4006636c",
+        "callsign": "IRB9710",
+        "flight": "B99710",
+        "type": "A306",
+        "reg": "EP-MDU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 293,
+        "speed": 412,
+        "lat": 37.956,
+        "lon": 47.144,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "400647fd",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 23900,
+        "track": 274,
+        "speed": 375,
+        "lat": 35.546,
+        "lon": 52.487,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40067680",
+        "callsign": "SHI7311",
+        "flight": "IS7311",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 30950,
+        "track": 62,
+        "speed": 523,
+        "lat": 33.601,
+        "lon": 46.496,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006788a",
+        "callsign": "SHI7347",
+        "flight": "IS7347",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 95,
+        "speed": 523,
+        "lat": 33.57,
+        "lon": 46.549,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006490f",
+        "callsign": "ISP1819",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 29950,
+        "track": 266,
+        "speed": 399,
+        "lat": 32.824,
+        "lon": 53.19,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006244f",
+        "callsign": "KRU2634",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 12625,
+        "track": 215,
+        "speed": 354,
+        "lat": 31.49,
+        "lon": 49.199,
+        "airline": "Karun Airlines",
         "country": "IRAN"
       }
     ]
