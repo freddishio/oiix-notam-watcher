@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778767824,
-    "time_utc": "2026-05-14 14:10:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778768119,
     "time_utc": "2026-05-14 14:15:19 UTC",
     "count": 0,
@@ -170566,6 +170560,103 @@
         "speed": 355,
         "lat": 32.799,
         "lon": 52.448,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780582228,
+    "time_utc": "2026-06-04 14:10:28 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4005bcda",
+        "callsign": "CPN7903",
+        "flight": "IV7903",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34675,
+        "track": 123,
+        "speed": 502,
+        "lat": 35.881,
+        "lon": 50.092,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40064289",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 231,
+        "speed": 392,
+        "lat": 33.691,
+        "lon": 46.167,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006483b",
+        "callsign": "CPN7900",
+        "flight": "IV7900",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 29950,
+        "track": 232,
+        "speed": 392,
+        "lat": 34.058,
+        "lon": 46.729,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4005c65d",
+        "callsign": "IRA1589",
+        "flight": "IR1589",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 28,
+        "lat": 35.424,
+        "lon": 51.126,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40063ca0",
+        "callsign": "IZG3027",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 9450,
+        "track": 119,
+        "speed": 242,
+        "lat": 35.323,
+        "lon": 51.167,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006244f",
+        "callsign": "KRU2634",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 259,
+        "speed": 351,
+        "lat": 32.763,
+        "lon": 51.867,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
