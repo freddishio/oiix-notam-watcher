@@ -1,49 +1,5 @@
 [
   {
-    "timestamp": 1778743827,
-    "time_utc": "2026-05-14 07:30:27 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fafb486",
-        "callsign": "AXV9205",
-        "flight": "Unknown Flight",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 58,
-        "speed": 502,
-        "lat": 33.683,
-        "lon": 47.172,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1778744121,
-    "time_utc": "2026-05-14 07:35:21 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "3fafb486",
-        "callsign": "AXV9205",
-        "flight": "Unknown Flight",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 61,
-        "speed": 506,
-        "lat": 34.094,
-        "lon": 47.81,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1778744431,
     "time_utc": "2026-05-14 07:40:31 UTC",
     "count": 1,
@@ -165056,5 +165012,57 @@
     "time_utc": "2026-06-04 07:30:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1780558530,
+    "time_utc": "2026-06-04 07:35:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "400517be",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 279,
+        "speed": 397,
+        "lat": 35.373,
+        "lon": 51.528,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40053414",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 21600,
+        "track": 122,
+        "speed": 460,
+        "lat": 34.837,
+        "lon": 51.992,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40053afe",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 112,
+        "speed": 34,
+        "lat": 29.532,
+        "lon": 52.584,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
