@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778777436,
-    "time_utc": "2026-05-14 16:50:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778777725,
-    "time_utc": "2026-05-14 16:55:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778778031,
     "time_utc": "2026-05-14 17:00:31 UTC",
     "count": 1,
@@ -172522,6 +172510,73 @@
         "lat": 35.514,
         "lon": 52.864,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780592131,
+    "time_utc": "2026-06-04 16:55:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4006cb91",
+        "callsign": "CPN7901",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 90,
+        "speed": 501,
+        "lat": 38.252,
+        "lon": 46.062,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "400713d3",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 16825,
+        "track": 314,
+        "speed": 364,
+        "lat": 35.812,
+        "lon": 50.452,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006e188",
+        "callsign": "VRH5841",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 18600,
+        "track": 275,
+        "speed": 336,
+        "lat": 35.522,
+        "lon": 52.255,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40071c10",
+        "callsign": "IRA3495",
+        "flight": "IR3495",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 9850,
+        "track": 351,
+        "speed": 265,
+        "lat": 29.618,
+        "lon": 52.458,
+        "airline": "Iran Air",
         "country": "IRAN"
       }
     ]
