@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778773221,
-    "time_utc": "2026-05-14 15:40:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778773524,
     "time_utc": "2026-05-14 15:45:24 UTC",
     "count": 0,
@@ -171540,6 +171534,58 @@
         "speed": 458,
         "lat": 25.794,
         "lon": 60.479,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780587634,
+    "time_utc": "2026-06-04 15:40:34 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "400643b1",
+        "callsign": "IRA1581",
+        "flight": "IR1581",
+        "type": "A332",
+        "reg": "EP-IJB",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 68,
+        "speed": 560,
+        "lat": 33.506,
+        "lon": 46.39,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006b395",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 61,
+        "speed": 532,
+        "lat": 34.108,
+        "lon": 47.858,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4005faff",
+        "callsign": "IRA1507",
+        "flight": "IR1507",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 8,
+        "speed": 454,
+        "lat": 26.418,
+        "lon": 60.589,
         "airline": "Iran Air",
         "country": "IRAN"
       }
