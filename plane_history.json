@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778726117,
-    "time_utc": "2026-05-14 02:35:17 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778726426,
     "time_utc": "2026-05-14 02:40:26 UTC",
     "count": 0,
@@ -159622,6 +159616,43 @@
         "speed": 450,
         "lat": 32.59,
         "lon": 51.883,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780540526,
+    "time_utc": "2026-06-04 02:35:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "400482f5",
+        "callsign": "IRM098",
+        "flight": "Unknown Flight",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 320,
+        "speed": 120,
+        "lat": 36.292,
+        "lon": 51.804,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40047759",
+        "callsign": "KRU2524",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 31050,
+        "track": 168,
+        "speed": 453,
+        "lat": 31.986,
+        "lon": 52.036,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
