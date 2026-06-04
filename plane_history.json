@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778781032,
-    "time_utc": "2026-05-14 17:50:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778781321,
-    "time_utc": "2026-05-14 17:55:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778781625,
     "time_utc": "2026-05-14 18:00:25 UTC",
     "count": 0,
@@ -173579,6 +173567,88 @@
         "speed": 376,
         "lat": 33.933,
         "lon": 53.424,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780595729,
+    "time_utc": "2026-06-04 17:55:29 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40075037",
+        "callsign": "AXV7702",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 10150,
+        "track": 184,
+        "speed": 203,
+        "lat": 35.662,
+        "lon": 51.123,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40071c10",
+        "callsign": "IRA3495",
+        "flight": "IR3495",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 4450,
+        "track": 289,
+        "speed": 149,
+        "lat": 35.704,
+        "lon": 51.37,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40074b97",
+        "callsign": "VRH5840",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 27675,
+        "track": 108,
+        "speed": 480,
+        "lat": 35.46,
+        "lon": 51.86,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40073016",
+        "callsign": "IRA1598",
+        "flight": "IR1598",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 232,
+        "speed": 388,
+        "lat": 33.78,
+        "lon": 46.297,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006c6ad",
+        "callsign": "SHI7373",
+        "flight": "IS7373",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 318,
+        "speed": 375,
+        "lat": 34.321,
+        "lon": 53.01,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
