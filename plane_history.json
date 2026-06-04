@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778772622,
-    "time_utc": "2026-05-14 15:30:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778772921,
     "time_utc": "2026-05-14 15:35:21 UTC",
     "count": 0,
@@ -171434,6 +171428,88 @@
         "lat": 33.612,
         "lon": 47.016,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780587032,
+    "time_utc": "2026-06-04 15:30:32 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4006751b",
+        "callsign": "QSM1253",
+        "flight": "QB1253",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 17575,
+        "track": 274,
+        "speed": 279,
+        "lat": 35.514,
+        "lon": 52.31,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006b395",
+        "callsign": "AXV9221",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 34575,
+        "track": 65,
+        "speed": 521,
+        "lat": 33.558,
+        "lon": 46.395,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006aceb",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 57,
+        "speed": 551,
+        "lat": 34.061,
+        "lon": 47.744,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400696e6",
+        "callsign": "AXV7707",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 335,
+        "speed": 387,
+        "lat": 34.374,
+        "lon": 52.01,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4005faff",
+        "callsign": "IRA1507",
+        "flight": "IR1507",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 39,
+        "speed": 466,
+        "lat": 25.198,
+        "lon": 60.185,
+        "airline": "Iran Air",
         "country": "IRAN"
       }
     ]
