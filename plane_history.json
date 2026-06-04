@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778772030,
-    "time_utc": "2026-05-14 15:20:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778772321,
-    "time_utc": "2026-05-14 15:25:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778772622,
     "time_utc": "2026-05-14 15:30:22 UTC",
     "count": 0,
@@ -171409,6 +171397,43 @@
         "lat": 35.427,
         "lon": 53.852,
         "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780586729,
+    "time_utc": "2026-06-04 15:25:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4006751b",
+        "callsign": "QSM1253",
+        "flight": "QB1253",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 23650,
+        "track": 259,
+        "speed": 293,
+        "lat": 35.501,
+        "lon": 52.77,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4006aceb",
+        "callsign": "AXV9205",
+        "flight": "Unknown Flight",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 69,
+        "speed": 558,
+        "lat": 33.612,
+        "lon": 47.016,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
