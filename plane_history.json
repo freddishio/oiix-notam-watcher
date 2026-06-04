@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778765721,
-    "time_utc": "2026-05-14 13:35:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778766028,
     "time_utc": "2026-05-14 13:40:28 UTC",
     "count": 0,
@@ -169902,6 +169896,103 @@
         "speed": 411,
         "lat": 33.743,
         "lon": 53.639,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780580134,
+    "time_utc": "2026-06-04 13:35:34 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4005bcda",
+        "callsign": "CPN7903",
+        "flight": "IV7903",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 36950,
+        "track": 114,
+        "speed": 484,
+        "lat": 37.905,
+        "lon": 44.69,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4005df8d",
+        "callsign": "IRA748",
+        "flight": "IR748",
+        "type": "A319",
+        "reg": "EP-IEQ",
+        "category": "Commercial",
+        "alt": 18950,
+        "track": 151,
+        "speed": 422,
+        "lat": 35.867,
+        "lon": 50.623,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "400610ad",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 36,
+        "speed": 18,
+        "lat": 35.694,
+        "lon": 51.309,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4005effe",
+        "callsign": "AXV9220",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 232,
+        "speed": 371,
+        "lat": 34.247,
+        "lon": 47.024,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4005c65d",
+        "callsign": "IRA1589",
+        "flight": "IR1589",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 63,
+        "speed": 577,
+        "lat": 33.925,
+        "lon": 47.44,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4005badb",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 316,
+        "speed": 402,
+        "lat": 34.155,
+        "lon": 53.181,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
