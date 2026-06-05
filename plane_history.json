@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1778814103,
-    "time_utc": "2026-05-15 03:01:43 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1778814319,
-    "time_utc": "2026-05-15 03:05:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778814618,
     "time_utc": "2026-05-15 03:10:18 UTC",
     "count": 0,
@@ -175708,6 +175696,43 @@
         "speed": 377,
         "lat": 34.436,
         "lon": 47.598,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780628728,
+    "time_utc": "2026-06-05 03:05:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4008e36e",
+        "callsign": "MRJ4848",
+        "flight": "Unknown Flight",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 32550,
+        "track": 131,
+        "speed": 522,
+        "lat": 35.905,
+        "lon": 60.11,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4008f0f1",
+        "callsign": "IRM5058",
+        "flight": "Unknown Flight",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 232,
+        "speed": 401,
+        "lat": 34.236,
+        "lon": 47.007,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
