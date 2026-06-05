@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778812823,
-    "time_utc": "2026-05-15 02:40:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778813128,
     "time_utc": "2026-05-15 02:45:28 UTC",
     "count": 0,
@@ -175649,6 +175643,28 @@
         "speed": 24,
         "lat": 39.315,
         "lon": 44.575,
+        "airline": "FlyOne Armenia",
+        "country": "Armenia"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780627224,
+    "time_utc": "2026-06-05 02:40:24 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "40087254",
+        "callsign": "FIE324",
+        "flight": "3F324",
+        "type": "A320",
+        "reg": "EK-FOC",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 32,
+        "lat": 39.278,
+        "lon": 44.558,
         "airline": "FlyOne Armenia",
         "country": "Armenia"
       }
