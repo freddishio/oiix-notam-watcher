@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1778824519,
-    "time_utc": "2026-05-15 05:55:19 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1778824824,
     "time_utc": "2026-05-15 06:00:24 UTC",
     "count": 0,
@@ -178620,6 +178614,103 @@
         "lat": 34.425,
         "lon": 47.746,
         "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1780638925,
+    "time_utc": "2026-06-05 05:55:25 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4008fdef",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 295,
+        "speed": 416,
+        "lat": 38.755,
+        "lon": 44.623,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40092edd",
+        "callsign": "IRB9731",
+        "flight": "B99731",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 295,
+        "speed": 422,
+        "lat": 38.519,
+        "lon": 45.244,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "400957d6",
+        "callsign": "QSM2213",
+        "flight": "QB2213",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 309,
+        "speed": 418,
+        "lat": 37.291,
+        "lon": 48.383,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40095381",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 232,
+        "speed": 427,
+        "lat": 34.232,
+        "lon": 47.001,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40092f26",
+        "callsign": "IRA1546",
+        "flight": "IR1546",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 240,
+        "speed": 393,
+        "lat": 34.146,
+        "lon": 47.216,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4009463b",
+        "callsign": "KRU2635",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 31450,
+        "track": 22,
+        "speed": 442,
+        "lat": 35.208,
+        "lon": 59.032,
+        "airline": "Karun Airlines",
         "country": "IRAN"
       }
     ]
