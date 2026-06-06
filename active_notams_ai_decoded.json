@@ -129,11 +129,6 @@
     "highest_level": "Second Level",
     "last_seen_utc": "2026-05-09 09:35:21 UTC"
   },
-  "OIIX A1020/26": {
-    "explanation": "The airspace over Tehran has partially reopened. The western part is still closed for planes flying through. The eastern part is open, but planes must follow strict rules: they need to contact air traffic control at specific times, have a working collision avoidance system, and might be kept further apart. Radar services are available above a certain altitude.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-05-25 06:40:23 UTC"
-  },
   "OIIX A1021/26": {
     "explanation": "This is a warning for all flights. It states that a dangerous area, possibly a conflict zone, might expand into international airspace over the Persian Gulf and part of the Oman Sea. This is due to security concerns, and flights should be cautious in that region.",
     "highest_level": "First Level",
@@ -329,11 +324,6 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026-06-02 07:05:27 UTC"
   },
-  "OIIX A1110/26": {
-    "explanation": "Attention all travelers and pilots: Many airports in the western part of the Tehran air traffic control region are currently closed. However, some airports are still open. OIKK airport is open 24 hours a day. Several other airports (OITR, OIAA, OISS, OIYY, OICC, OIGG, OIAW, OIFM, OITL, OISR, OIAM, OITT, OINR, and OISL) are open from sunrise to sunset. Additionally, flights for the Hajj pilgrimage are allowed to operate at OIFM, OISS, and OIYY even during the night. All previous flight approvals are no longer valid, and new permission must be requested from the Iran Civil Aviation Authority for any civil passenger flights using instruments (IFR). This situation is in effect from June 2nd, 2026, until June 29th, 2026.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-06-02 14:20:30 UTC"
-  },
   "OIIX B0273/26": {
     "explanation": "Most private and visual flights are temporarily stopped in Iran's airspace from June 3rd to June 29th, 2026. However, some flights are still allowed, including training flights at specific airports, emergency services (like hospital, search and rescue), government, and military operations. Other visual flights can proceed if they get special permission. Also, flights that use instruments but need to switch to visual rules for landing or takeoff at airports without navigation aids are not affected by this restriction.",
     "highest_level": "First Level",
@@ -353,5 +343,15 @@
     "explanation": "The United States government has issued a new rule (SFAR 117) that bans certain US flights from flying in the airspace over Tehran, Iran. This ban started on October 3, 2024, and is expected to last until October 31, 2027. All pilots and airlines are required to read the full details of this rule.",
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1132/26": {
+    "explanation": "The airspace over Tehran (Iran) is mostly back to normal for flights, but the western part is still closed for planes that are just flying through (not landing). There's a specific line that separates the closed western area from the open eastern area. If planes fly through the open eastern part, they must follow special rules: air traffic control radar will only work above 28,500 feet and only if there's radar coverage. Planes entering or leaving this airspace must contact air traffic control 5 minutes before crossing the boundary. All planes must have a working collision avoidance system. Air traffic control might keep planes further apart than usual, and pilots must use specific transponder codes.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-06-06 12:50:26 UTC"
+  },
+  "OIIX A1133/26": {
+    "explanation": "Many airports in the western part of the Tehran flight region are closed until June 29, 2026. A few specific airports (OIAA, OISS, OICC, OIAW, OIFM, OISR, OIAM, OISL) are allowed to operate only from sunrise to sunset. Haj flights are specially permitted to operate at OIFM and OISS even at night. All previous flight permissions are cancelled, and new permission must be requested from the Iran Civil Aviation Authority for any civil passenger flights.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-06-06 12:50:26 UTC"
   }
 }
