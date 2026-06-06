@@ -1,4 +1,97 @@
 {
+  "OIIX A1023/26": {
+    "header": {
+      "id": "A1023/26",
+      "series": "A",
+      "number": "1023",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0802/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T06:45:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26,\r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED,\r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285\r\nDURING RECOVERY PERIOD:\r\nFM OOMM FIR TO OPKR FIR:\r\n -DENDA R462 METBI,\r\nFM OPKR FIR TO OOMM FIR:\r\n -METBI R462 DENDA."
+    },
+    "last_seen_utc": "2026-05-25 07:00:28 UTC",
+    "archived_utc": "2026-06-06 13:05:28 UTC"
+  },
+  "OIIX A1031/26": {
+    "header": {
+      "id": "A1031/26",
+      "series": "A",
+      "number": "1031",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0812/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E//000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:10:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26, TRANSFER OF CONTROL POINTS OF TEHRAN FIR\nWITH ANKARA, YERVAN, NAKHCHIVAN AND BAKU FIR(S)\nARE AVBL FOR INTERNATIONAL FLIGHTS INTENDED TO LAND/DEPART WITHIN \nTEHRAN FIR."
+    },
+    "last_seen_utc": "2026-05-25 07:30:29 UTC",
+    "archived_utc": "2026-06-06 13:05:28 UTC"
+  },
+  "OIIX A1086/26": {
+    "header": {
+      "id": "A1086/26",
+      "series": "A",
+      "number": "1086",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1067/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX////E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-01T14:35:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1020/26, RAGET AND PAXAT ARE AVAILABLE AS TRANSFER\nOF CONTROL POINTS BTN TEHRAN FIR AND BAGHDAD FIR FM 0130-1530 UTC,\nONLY FOR FLIGHTS ARRIVING TO OR DEPARTING FM AIRPORTS IN TEHRAN FIR.\nHAJ FLIGHTS ARE EXEMPTED FROM THIS TIME RESTRICTION."
+    },
+    "last_seen_utc": "2026-05-31 14:50:28 UTC",
+    "archived_utc": "2026-06-06 13:05:28 UTC"
+  },
   "OIIX A1068/26": {
     "header": {
       "id": "A1068/26",
