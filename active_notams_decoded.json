@@ -3503,6 +3503,46 @@
     },
     "last_seen_utc": "2026-06-07 22:15:29 UTC"
   },
+  "OIIX A1165/26": {
+    "header": {
+      "id": "A1165/26",
+      "series": "A",
+      "number": "1165",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1153/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-07T22:05:00.000Z",
+      "validityEnd": "2026-07-08T20:00:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1151/26,\nOPERATION OF ALL FLIGHT IN THE AIRPORTS WITHIN EAST PART OF\nTEHRAN FIR SUSPENDED EXCEPT OIMM, OIMN, OIMB, OIMS, OING AND OIZH,\nALL PERVIOUS PERMISSIONS FOR COMMERCIAL FLT ARE SUSPENDED AND\nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA, FLT ENGAGED IN \nHOSP, SAR, STATE, MILITARY AND FLT WITH PRIOR PERMISSION FROM CIVIL \nAVIATION AUTHORITY ARE EXMEPTED FROM THIS RESTRICTION."
+    },
+    "last_seen_utc": "2026-06-07 22:25:22 UTC"
+  },
   "OIIX A0982/26": {
     "header": {
       "id": "A0982/26",
@@ -3669,45 +3709,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1165/26": {
-    "header": {
-      "id": "A1165/26",
-      "series": "A",
-      "number": "1165",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1153/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-07T22:05:00.000Z",
-      "validityEnd": "2026-07-08T20:00:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A1151/26,\nOPERATION OF ALL FLIGHT IN THE AIRPORTS WITHIN EAST PART OF\nTEHRAN FIR SUSPENDED EXCEPT OIMM, OIMN, OIMB, OIMS, OING AND OIZH,\nALL PERVIOUS PERMISSIONS FOR COMMERCIAL FLT ARE SUSPENDED AND\nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA, FLT ENGAGED IN \nHOSP, SAR, STATE, MILITARY AND FLT WITH PRIOR PERMISSION FROM CIVIL \nAVIATION AUTHORITY ARE EXMEPTED FROM THIS RESTRICTION."
-    },
-    "last_seen_utc": "2026-06-07 22:25:22 UTC"
   }
 }
