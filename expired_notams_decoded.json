@@ -1,4 +1,133 @@
 {
+  "OIIX A1139/26": {
+    "header": {
+      "id": "A1139/26",
+      "series": "A",
+      "number": "1139",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1023/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E///000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-06T12:57:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1132/26,\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OOMM FIR TO OPKR FIR:  \n -DENDA R462 METBI, \nFM OPKR FIR TO OOMM FIR:  \n -METBI R462 DENDA."
+    },
+    "last_seen_utc": "2026-06-06 13:05:28 UTC",
+    "archived_utc": "2026-06-07 21:50:23 UTC"
+  },
+  "OIIX A1141/26": {
+    "header": {
+      "id": "A1141/26",
+      "series": "A",
+      "number": "1141",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1025/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E///000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-06T13:02:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1132/26, \nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED, \nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285 \nDURING RECOVERY PERIOD: \nFM OPKR FIR TO UTAK FIR:\n -ASVIB M715 SRN T216 PEGOS L713 OTISO M318 IMKUK N567 SOMAD,\nFM UTAK FIR TO OPKR FIR \n -SOMAD P718 ITELO N319 DERBO,\n -SOMAD P718 ITELO N319 ZDN L125 KEBUD."
+    },
+    "last_seen_utc": "2026-06-06 13:10:23 UTC",
+    "archived_utc": "2026-06-07 21:50:23 UTC"
+  },
+  "OIIX A1143/26": {
+    "header": {
+      "id": "A1143/26",
+      "series": "A",
+      "number": "1143",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1027/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-06T13:06:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "REF NOTAM A1132/26,\r\nALL TOS IN AIP SUP 13/25 REGARDING OVERFLIGHTS ARE SUSPENDED,\r\nFLW NEW TOS IS ESTABLISHED FOR OVERFLIGHTS ABOVE FL285\r\nDURING RECOVERY PERIOD:\r\nFM OAKX FIR TO UBBA FIR:\r\n -SOKAM L333 GIBAB DCT ULEXI DCT BATEV,\r\nFM UBBA FIR TO OAKX FIR:\r\n -ULDUS P567 ALROT L333 SOKAM."
+    },
+    "last_seen_utc": "2026-06-06 13:15:24 UTC",
+    "archived_utc": "2026-06-07 21:50:23 UTC"
+  },
   "OIIX A1133/26": {
     "header": {
       "id": "A1133/26",
