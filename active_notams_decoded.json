@@ -3842,6 +3842,43 @@
     },
     "last_seen_utc": "2026-06-06 13:25:28 UTC"
   },
+  "OIIX A1151/26": {
+    "header": {
+      "id": "----------\nA1151/26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1132/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX//E//000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-07T20:24:00.000Z",
+      "validityEnd": "2026-07-08T20:00:00.000Z"
+    },
+    "content": {
+      "text": "THE WEST PART OF TEHRAN FIR FM IVIVA-PURBO-GIBAB-SOMAD THENCE ALONG\nFIR BOUNDARY TO THE POINT OF ORIGIN CLSD,\nOPERATION OF ALL FLIGHT IN CLSD AIRSPACE SUSPENDED EXCEPT THOSE FLT \nENGAGED IN HOSP, SAR,STATE, MILITARY AND FLT WITH PRIOR PERMISSION\nFROM CIVIL AVIATION AUTHORITY.\nTHE EAST PART OF TEHRAN FIR IS OPEN FOR FLIGHTS ARRIVING TO \nOR DEPARTING FM AIRPORTS IN TEHRAN FIR."
+    },
+    "last_seen_utc": "2026-06-07 20:40:24 UTC"
+  },
   "OIIX A0982/26": {
     "header": {
       "id": "A0982/26",
@@ -4008,42 +4045,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1151/26": {
-    "header": {
-      "id": "----------\nA1151/26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1132/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX//E//000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-07T20:24:00.000Z",
-      "validityEnd": "2026-07-08T20:00:00.000Z"
-    },
-    "content": {
-      "text": "THE WEST PART OF TEHRAN FIR FM IVIVA-PURBO-GIBAB-SOMAD THENCE ALONG\nFIR BOUNDARY TO THE POINT OF ORIGIN CLSD,\nOPERATION OF ALL FLIGHT IN CLSD AIRSPACE SUSPENDED EXCEPT THOSE FLT \nENGAGED IN HOSP, SAR,STATE, MILITARY AND FLT WITH PRIOR PERMISSION\nFROM CIVIL AVIATION AUTHORITY.\nTHE EAST PART OF TEHRAN FIR IS OPEN FOR FLIGHTS ARRIVING TO \nOR DEPARTING FM AIRPORTS IN TEHRAN FIR."
-    },
-    "last_seen_utc": "2026-06-07 20:40:24 UTC"
   }
 }
