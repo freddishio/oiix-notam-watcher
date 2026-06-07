@@ -1,4 +1,51 @@
 {
+  "OIIX A1132/26": {
+    "header": {
+      "id": "A1132/26",
+      "series": "A",
+      "number": "1132",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1020/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFAO///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFAO",
+        "entity": "AF",
+        "status": "AO",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Availability",
+        "modifier": "Operational"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-06T12:39:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "TEHRAN FIR RESUMED NORMAL OPERATION,\r\nWHILE WEST PART OF TEHRAN FIR REMAINS CLOSED FOR OVERFLIGHTS,\r\nDIVIDING LINE GOES THROUGH\r\nIVIVA-RIGUT-NALBI-YZD-RERET-EGVEL-GONVA-ROVON-LUMOM,\r\n- OVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO\r\n  FOLLOWING CONDITIONS:\r\n1- ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL 285\r\n   SUBJECT TO RADAR COVERAGE,\r\n2- INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO\r\n   FIR BOUNDARY FOR IDENTIFICATION,\r\n3- OUTBOUND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT\r\n   ACC 5 MIN PRIOR TO FIR BOUNDARY,\r\n4- FLIGHTS SHALL HAVE OPERATIONAL ACAS,\r\n5- LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR,\r\n6- FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE,\r\n   IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL\r\n   FURTHER INSTRUCTION BY ACC."
+    },
+    "last_seen_utc": "2026-06-06 12:50:26 UTC",
+    "archived_utc": "2026-06-07 20:40:24 UTC"
+  },
   "OIIX A1030/26": {
     "header": {
       "id": "A1030/26",
