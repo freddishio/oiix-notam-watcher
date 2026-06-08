@@ -3605,6 +3605,28 @@
     },
     "last_seen_utc": "2026-06-08 16:35:27 UTC"
   },
+  "OIIX A1180/26": {
+    "header": {
+      "id": "A1180/26",
+      "series": "A",
+      "number": "1180",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1173/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/////000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-08T16:26:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF TO NOTAM A1178/26,\nALL AIRPORTS WHICH LOCATED IN EAST PART OF TEHRAN FIR ARE OPEN\nAND HOUR OF OPERATION AS PUBLISHED IN AIP EXCEPT:\n- OIIP, OITZ, OITP, OITM, OITK AND OITU CLSD\n-OIYY, OITR, OIGG, OITL, OITT, OINR OPERATING SUNRISE TO SUNSET (HJ),\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT OIYY DURING\n NIGHT PERIOD,\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND \nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-06-08 16:40:27 UTC"
+  },
   "OIIX A0982/26": {
     "header": {
       "id": "A0982/26",
@@ -3771,27 +3793,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1180/26": {
-    "header": {
-      "id": "A1180/26",
-      "series": "A",
-      "number": "1180",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1173/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/////000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-08T16:26:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF TO NOTAM A1178/26,\nALL AIRPORTS WHICH LOCATED IN EAST PART OF TEHRAN FIR ARE OPEN\nAND HOUR OF OPERATION AS PUBLISHED IN AIP EXCEPT:\n- OIIP, OITZ, OITP, OITM, OITK AND OITU CLSD\n-OIYY, OITR, OIGG, OITL, OITT, OINR OPERATING SUNRISE TO SUNSET (HJ),\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT OIYY DURING\n NIGHT PERIOD,\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND \nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA."
-    },
-    "last_seen_utc": "2026-06-08 16:40:27 UTC"
   }
 }
