@@ -274,11 +274,6 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-06-08 10:40:26 UTC"
   },
-  "OIIX A1173/26": {
-    "explanation": "This is an urgent aviation notice for the eastern part of Tehran's airspace. Most flights in airports within this area are temporarily stopped, except for a few specific airports. All commercial flights that had permission before now need to get new approval from Iran's aviation authority. Emergency flights (like hospital, search and rescue), government, and military flights are allowed to continue.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-06-08 11:15:30 UTC"
-  },
   "OIIX B0289/26": {
     "explanation": "All private and recreational flights (General Aviation and VFR flights) are temporarily stopped in Iran's airspace. The only exceptions are flights for hospitals, search and rescue, government, and military operations. Any other recreational flights need special permission first. However, larger planes flying by instruments (IFR flights) to smaller airports that don't have advanced navigation systems, and might need to switch to visual flying for landing or takeoff, are still allowed.",
     "highest_level": "First Level",
@@ -288,6 +283,16 @@
     "explanation": "A radar system in Mashhad, Iran, is currently broken and will be unavailable until tomorrow morning. This means air traffic controllers might not be able to see planes on their radar screens in certain parts of the airspace, specifically in Air Traffic Control Sector 7. This could affect how flights are managed in that area, potentially leading to delays or changes in flight paths.",
     "highest_level": "Second Level",
     "last_seen_utc": "2026-06-08 11:15:30 UTC"
+  },
+  "OIIX A1178/26": {
+    "explanation": "The airspace over Tehran (Iran) is mostly open again for flights, but the western part of this airspace is still completely closed to planes flying through. If you need to fly through the eastern part, you must follow several special rules: Air traffic control radar services are only available above 28,500 feet and only where radar can see you. You must contact air traffic control 5 minutes before entering and 5 minutes before leaving this airspace. Your plane needs a working collision avoidance system. Air traffic controllers might keep planes further apart than usual, which could cause delays. Finally, you must keep your assigned transponder code, or use '2000' if you don't have one, until air traffic control tells you otherwise.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-06-08 16:35:27 UTC"
+  },
+  "OIIX A1179/26": {
+    "explanation": "Many airports in the western part of Tehran's airspace are closed. A few specific airports are open, but only during daylight hours. Flights for the Hajj pilgrimage are allowed to operate at two of these airports even at night. All previous flight approvals are now canceled, and airlines must get new permission from the Iranian aviation authority for any civil passenger flights.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-06-08 16:35:27 UTC"
   },
   "OIIX A0982/26": {
     "explanation": "Aviation authorities in Iran are letting pilots know that there will be no scheduled updates to their official aviation documents (like charts and procedures) on June 11, 2026, even though that was a planned date for updates.",
@@ -304,14 +309,9 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1178/26": {
-    "explanation": "The airspace over Tehran (Iran) is mostly open again for flights, but the western part of this airspace is still completely closed to planes flying through. If you need to fly through the eastern part, you must follow several special rules: Air traffic control radar services are only available above 28,500 feet and only where radar can see you. You must contact air traffic control 5 minutes before entering and 5 minutes before leaving this airspace. Your plane needs a working collision avoidance system. Air traffic controllers might keep planes further apart than usual, which could cause delays. Finally, you must keep your assigned transponder code, or use '2000' if you don't have one, until air traffic control tells you otherwise.",
+  "OIIX A1180/26": {
+    "explanation": "This is an important update about airports in the eastern part of Tehran's airspace, effective from June 8 to June 29, 2026. While most airports in this area are open as usual, several specific airports are completely closed. Other specific airports are only open during daylight hours (sunrise to sunset), with an exception for Hajj flights at one airport (OIYY), which can operate at night. Crucially, all previous flight approvals are cancelled, and anyone wishing to fly must request new permission from the Iran Civil Aviation Authority.",
     "highest_level": "First Level",
-    "last_seen_utc": "2026-06-08 16:35:27 UTC"
-  },
-  "OIIX A1179/26": {
-    "explanation": "Many airports in the western part of Tehran's airspace are closed. A few specific airports are open, but only during daylight hours. Flights for the Hajj pilgrimage are allowed to operate at two of these airports even at night. All previous flight approvals are now canceled, and airlines must get new permission from the Iranian aviation authority for any civil passenger flights.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-06-08 16:35:27 UTC"
+    "last_seen_utc": "2026-06-08 16:40:27 UTC"
   }
 }
