@@ -4168,5 +4168,40 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1209/26": {
+    "header": {
+      "id": "A1209/26",
+      "series": "A",
+      "number": "1209",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QXXXX/ / / /000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "XXXX",
+        "entity": "XX",
+        "status": "XX",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-10T20:30:00.000Z",
+      "validityEnd": "2026-07-24T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NEW AIRCRAFT OPERATING AGENCY ESTABLISHED\r\nWITH FLW SPECIFICATIONS:\r\nNAME: SOROUSH\r\nTHREE-LETTER DESIGNATOR: SHR\r\nTELEPHONY DESIGNATOR: SOROUSH"
+    },
+    "last_seen_utc": "2026-06-10 06:20:31 UTC"
   }
 }
