@@ -4433,6 +4433,70 @@
     },
     "last_seen_utc": "2026-06-15 07:15:29 UTC"
   },
+  "OIIX A1242/26": {
+    "header": {
+      "id": "A1242/26",
+      "series": "A",
+      "number": "1242",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-20T10:30:00.000Z",
+      "validityEnd": "2026-07-21T14:30:00.000Z",
+      "elements": [
+        "1030-1430"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1240/26, MNM SAFE LVL ON\r\nAWY W152 BTN MIRIT AND ROSUM,\r\nAWY M561 BTN DENSA AND  BOSOS,\r\nAWY P574 BTN DAPER AND DENSA,\r\nAWY T800/N717 BTN MIRIT AND VEKEL RAISED TO FL170."
+    },
+    "last_seen_utc": "2026-06-15 07:20:33 UTC"
+  },
   "OIIX A1202/26": {
     "header": {
       "id": "A1202/26",
@@ -4654,69 +4718,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1242/26": {
-    "header": {
-      "id": "A1242/26",
-      "series": "A",
-      "number": "1242",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARCH/IV/BO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARCH",
-        "entity": "AR",
-        "status": "CH",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Changes",
-        "modifier": "Changed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-20T10:30:00.000Z",
-      "validityEnd": "2026-07-21T14:30:00.000Z",
-      "elements": [
-        "1030-1430"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM A1240/26, MNM SAFE LVL ON\r\nAWY W152 BTN MIRIT AND ROSUM,\r\nAWY M561 BTN DENSA AND  BOSOS,\r\nAWY P574 BTN DAPER AND DENSA,\r\nAWY T800/N717 BTN MIRIT AND VEKEL RAISED TO FL170."
-    },
-    "last_seen_utc": "2026-06-15 07:20:33 UTC"
   }
 }
