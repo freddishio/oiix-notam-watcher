@@ -3307,54 +3307,6 @@
     },
     "last_seen_utc": "2026-06-08 10:40:26 UTC"
   },
-  "OIIX B0288/26": {
-    "header": {
-      "id": "B0288/26",
-      "series": "B",
-      "number": "0288",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0257/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QKKKK/K/K/K/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "KKKK"
-      },
-      "traffic": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "scope": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-08T07:30:00.000Z",
-      "validityEnd": "2026-07-16T07:30:00.000Z"
-    },
-    "content": {
-      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0127 0128 0135 0136 0177 0179 0187 0188 0189 \r\n0190 0199 0200 0201 0202 0204 0205 0207 0209 0210 0213 \r\n0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 0224 \r\n0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 \r\n0236 0237 0238 0239 0240 0241 0242 0243 0244 0247 0248 \r\n0251 0252 0254 0255 0287 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 \r\n12/25 13/25 1/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n14 MAY 2026 AND 11 JUN 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
-    },
-    "last_seen_utc": "2026-06-08 10:40:26 UTC"
-  },
   "OIIX A1175/26": {
     "header": {
       "id": "A1175/26",
@@ -3939,6 +3891,49 @@
     },
     "last_seen_utc": "2026-06-10 06:00:30 UTC"
   },
+  "OIIX A1247/26": {
+    "header": {
+      "id": "",
+      "type": "A1247/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-15T07:30:00.000Z",
+      "validityEnd": "2026-07-23T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST: YEAR=2022 0253 1415 1416 1417 1418 1892 \nYEAR=2023 1718 1719 1720 1721 2113 2496 YEAR=2024 1456 3358 \n4458 4459 4460 4461 YEAR=2025 2322 2572 2776 3524 3526 3607 \n3608 3697 3903 4009 YEAR=2026 0113 0174 0233 0263 0390 0392 \n0415 0477 0489 0561 0564 0601 0637 0695 0696 0703 0712 0713 \n0724 0778 0779 0780 0781 0782 0784 0785 0787 0788 0789 0790 \n0791 0793 0794 0817 0818 0819 0820 0821 0822 0824 0825 0828 \n0829 0830 0835 0836 0854 0863 0868 0869 0870 0872 0873 0874 \n0878 0883 0886 0888 0891 0892 0893 0896 0902 0903 0904 0905 \n0906 0907 0908 0909 0910 0912 0913 0915 0916 0917 0923 0924 \n0925 0931 0933 0934 0935 0936 0938 0940 0951 0953 0954 0955 \n0956 0957 0958 0959 0960 0961 0963 0964 0965 0973 0974 0976 \n0977 0978 0982 0983 0984 0985 0986 0987 0990 0991 0997 1003 \n1005 1006 1007 1008 1018 1019 1021 1032 1033 1034 \n ) 1035 1036 1038 1039 1040 1041 1042 1043 1044 1045 1051 1052 \n1053 1054 1055 1056 1058 1062 1063 1064 1065 1073 1074 1077 \n1079 1082 1101 1102 1112 1113 1115 1127 1128 1129 1148 1170 \n1175 1178 1179 1180 1181 1182 1183 1184 1185 1186 1187 1188 \n1189 1190 1191 1192 1194 1195 1196 1202 1203 1205 1208 1209 \n1229 1230 1231 1232 1234 1235 1236 1237 1238 1239 1240 END PART 1 OF 2\r\nA1247/26 NOTAMR A1167/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2606150730  C) 2606230730EST  E) 1241 \n1242 1243 1244 1245 1246 LATEST AIP AMENDMENTS AIRAC AIP \nAMDT 1/26 WEF 19 FEB 2026 AIP AMDT 1/20 01 JAN 2020 \nCHECKLIST OF AIP SUP AND AIC AIRAC AIP SUP: 6/19 9/19 11/19 \n12/19 11/21 22/21 10/24 3/25 7/25 12/25 13/25 1/26 2/26 AIP \nSUP: 2/23 9/25 AIC: 2/08 3/08 4/08 5/08 9/08 1/14 2/14 1/15 \n2/18 2/20 2/23 3/23 1/24 NO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE 11 JUN 2026 AND 09 JUL 2026 AND 06 AUG \n2026 NOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. \n ) END PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-06-15 07:35:34 UTC"
+  },
   "OIIX A1236/26": {
     "header": {
       "id": "A1236/26",
@@ -4454,6 +4449,83 @@
     },
     "last_seen_utc": "2026-06-15 07:20:33 UTC"
   },
+  "OIIX A1248/26": {
+    "header": {
+      "id": "A1248/26",
+      "series": "A",
+      "number": "1248",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/150/2614N05509E005",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "coordinates": [
+        [
+          26.233333,
+          55.15
+        ],
+        {
+          "radius": 5
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "150"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-20T10:30:00.000Z",
+      "validityEnd": "2026-07-21T14:30:00.000Z",
+      "elements": [
+        "1030-1430"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 5NM CENTERED AT:\r\n261423N  0550846E"
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "15000 FT AMSL"
+    },
+    "last_seen_utc": "2026-06-15 07:35:34 UTC"
+  },
   "OIIX A1202/26": {
     "header": {
       "id": "A1202/26",
@@ -4676,10 +4748,15 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1247/26": {
+  "OIIX B0292/26": {
     "header": {
-      "id": "",
-      "type": "A1247/26"
+      "id": "B0292/26",
+      "series": "B",
+      "number": "0292",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0288/26\r"
     },
     "qualification": {
       "line": "OIIX/QKKKK/K/K/K/000/999/",
@@ -4715,20 +4792,20 @@
       "validityEnd": "2026-07-23T07:30:00.000Z"
     },
     "content": {
-      "text": "CHECKLIST: YEAR=2022 0253 1415 1416 1417 1418 1892 \nYEAR=2023 1718 1719 1720 1721 2113 2496 YEAR=2024 1456 3358 \n4458 4459 4460 4461 YEAR=2025 2322 2572 2776 3524 3526 3607 \n3608 3697 3903 4009 YEAR=2026 0113 0174 0233 0263 0390 0392 \n0415 0477 0489 0561 0564 0601 0637 0695 0696 0703 0712 0713 \n0724 0778 0779 0780 0781 0782 0784 0785 0787 0788 0789 0790 \n0791 0793 0794 0817 0818 0819 0820 0821 0822 0824 0825 0828 \n0829 0830 0835 0836 0854 0863 0868 0869 0870 0872 0873 0874 \n0878 0883 0886 0888 0891 0892 0893 0896 0902 0903 0904 0905 \n0906 0907 0908 0909 0910 0912 0913 0915 0916 0917 0923 0924 \n0925 0931 0933 0934 0935 0936 0938 0940 0951 0953 0954 0955 \n0956 0957 0958 0959 0960 0961 0963 0964 0965 0973 0974 0976 \n0977 0978 0982 0983 0984 0985 0986 0987 0990 0991 0997 1003 \n1005 1006 1007 1008 1018 1019 1021 1032 1033 1034 \n ) 1035 1036 1038 1039 1040 1041 1042 1043 1044 1045 1051 1052 \n1053 1054 1055 1056 1058 1062 1063 1064 1065 1073 1074 1077 \n1079 1082 1101 1102 1112 1113 1115 1127 1128 1129 1148 1170 \n1175 1178 1179 1180 1181 1182 1183 1184 1185 1186 1187 1188 \n1189 1190 1191 1192 1194 1195 1196 1202 1203 1205 1208 1209 \n1229 1230 1231 1232 1234 1235 1236 1237 1238 1239 1240 END PART 1 OF 2\r\nA1247/26 NOTAMR A1167/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2606150730  C) 2606230730EST  E) 1241 \n1242 1243 1244 1245 1246 LATEST AIP AMENDMENTS AIRAC AIP \nAMDT 1/26 WEF 19 FEB 2026 AIP AMDT 1/20 01 JAN 2020 \nCHECKLIST OF AIP SUP AND AIC AIRAC AIP SUP: 6/19 9/19 11/19 \n12/19 11/21 22/21 10/24 3/25 7/25 12/25 13/25 1/26 2/26 AIP \nSUP: 2/23 9/25 AIC: 2/08 3/08 4/08 5/08 9/08 1/14 2/14 1/15 \n2/18 2/20 2/23 3/23 1/24 NO AIRAC AIP AMDT WILL BE PUBLISHED \nON AIRAC EFFECTIVE 11 JUN 2026 AND 09 JUL 2026 AND 06 AUG \n2026 NOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. \n ) END PART 2 OF 2"
+      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0127 0128 0135 0136 0177 0179 0187 0188 0189 \r\n0190 0199 0201 0202 0204 0205 0207 0209 0210 0213 0214 \r\n0215 0216 0217 0218 0219 0220 0221 0222 0223 0224 0225 \r\n0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 0236 \r\n0237 0238 0239 0240 0241 0242 0243 0244 0247 0248 0251 \r\n0252 0254 0255 0290 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 \r\n12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n11 JUN 2026 AND 09 JUL 2026 AND 06 AUG 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
     },
-    "last_seen_utc": "2026-06-15 07:35:34 UTC"
+    "last_seen_utc": "2026-06-15 07:40:33 UTC"
   },
-  "OIIX A1248/26": {
+  "OIIX A1249/26": {
     "header": {
-      "id": "A1248/26",
+      "id": "A1249/26",
       "series": "A",
-      "number": "1248",
+      "number": "1249",
       "year": "26",
       "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/150/2614N05509E005",
+      "line": "OIIX/QWMLW/IV/BO/W/000/150/2555N05432E005",
       "location": "OIIX",
       "code": {
         "code": "WMLW",
@@ -4768,8 +4845,8 @@
       ],
       "coordinates": [
         [
-          26.233333,
-          55.15
+          25.916667,
+          54.533333
         ],
         {
           "radius": 5
@@ -4788,12 +4865,86 @@
       ]
     },
     "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE, RADIUS 5NM CENTERED AT:\r\n261423N  0550846E"
+      "text": "GUN FIRING WILL TAKE PLACE WI A CIRCLE RADIUS 5NM CENTERED AT:\r\n255446N   0543137E,\r\nEXCLUDING THE SOUTH SEGMENT OF A LINE OF \r\n255543N   0542653E TO 255246N   0543553E",
+      "area": [
+        [
+          25.901111,
+          54.526944
+        ],
+        [
+          25.917778,
+          54.448056
+        ]
+      ]
     },
     "limits": {
       "lower": "GND",
       "upper": "15000 FT AMSL"
     },
-    "last_seen_utc": "2026-06-15 07:35:34 UTC"
+    "last_seen_utc": "2026-06-15 07:40:33 UTC"
+  },
+  "OIIX A1250/26": {
+    "header": {
+      "id": "A1250/26",
+      "series": "A",
+      "number": "1250",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-20T10:30:00.000Z",
+      "validityEnd": "2026-07-21T14:30:00.000Z",
+      "elements": [
+        "1030-1430"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1248/26, MNM SAFE LVL ON\r\nAWY T800 BTN MIRIT AND NANPA, \r\nAWY W146 BTN VELIX AND NANPA,\r\nAWY W152 BTN ABM NDB/DME AND MIRIT,\r\nRAISED TO FL170"
+    },
+    "last_seen_utc": "2026-06-15 07:40:33 UTC"
   }
 }
