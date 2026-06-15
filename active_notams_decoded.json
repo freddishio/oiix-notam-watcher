@@ -4154,6 +4154,70 @@
     },
     "last_seen_utc": "2026-06-15 10:30:40 UTC"
   },
+  "OIIX A1254/26": {
+    "header": {
+      "id": "A1254/26",
+      "series": "A",
+      "number": "1254",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-16T03:30:00.000Z",
+      "validityEnd": "2026-07-25T07:30:00.000Z",
+      "elements": [
+        "0330-0730"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1253/26, MNM SAFE LVL ON\r\nAWY G665 BTN BOTAS AND VATAN\r\nAWY L570 BTN VELUT AND AJR DVOR/DME\r\nAWY P715 BTN KHG DVOR/DME AND MESVI RAISED TO FL420."
+    },
+    "last_seen_utc": "2026-06-15 10:50:27 UTC"
+  },
   "OIIX A1237/26": {
     "header": {
       "id": "A1237/26",
@@ -5186,69 +5250,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1254/26": {
-    "header": {
-      "id": "A1254/26",
-      "series": "A",
-      "number": "1254",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARCH/IV/BO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARCH",
-        "entity": "AR",
-        "status": "CH",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Changes",
-        "modifier": "Changed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-16T03:30:00.000Z",
-      "validityEnd": "2026-07-25T07:30:00.000Z",
-      "elements": [
-        "0330-0730"
-      ]
-    },
-    "content": {
-      "text": "REF NOTAM A1253/26, MNM SAFE LVL ON\r\nAWY G665 BTN BOTAS AND VATAN\r\nAWY L570 BTN VELUT AND AJR DVOR/DME\r\nAWY P715 BTN KHG DVOR/DME AND MESVI RAISED TO FL420."
-    },
-    "last_seen_utc": "2026-06-15 10:50:27 UTC"
   }
 }
