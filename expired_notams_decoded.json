@@ -1,4 +1,156 @@
 {
+  "OIIX A1253/26": {
+    "header": {
+      "id": "A1253/26",
+      "series": "A",
+      "number": "1253",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/400/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "400"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-16T03:30:00.000Z",
+      "validityEnd": "2026-07-25T07:30:00.000Z",
+      "elements": [
+        "0330-0730"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH FLW COORD: \r\n302000N 0495000E\r\n302000N 0501000E\r\n300500N 0501000E\r\n300500N 0495000E\r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          30.333333,
+          49.833333
+        ],
+        [
+          30.333333,
+          50.166667
+        ],
+        [
+          30.083333,
+          50.166667
+        ],
+        [
+          30.083333,
+          49.833333
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "40000 FT AMSL"
+    },
+    "last_seen_utc": "2026-06-15 10:30:40 UTC",
+    "archived_utc": "2026-06-16 14:00:43 UTC"
+  },
+  "OIIX A1254/26": {
+    "header": {
+      "id": "A1254/26",
+      "series": "A",
+      "number": "1254",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-16T03:30:00.000Z",
+      "validityEnd": "2026-07-25T07:30:00.000Z",
+      "elements": [
+        "0330-0730"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1253/26, MNM SAFE LVL ON\r\nAWY G665 BTN BOTAS AND VATAN\r\nAWY L570 BTN VELUT AND AJR DVOR/DME\r\nAWY P715 BTN KHG DVOR/DME AND MESVI RAISED TO FL420."
+    },
+    "last_seen_utc": "2026-06-15 10:50:27 UTC",
+    "archived_utc": "2026-06-16 14:00:43 UTC"
+  },
   "OIIX A1179/26": {
     "header": {
       "id": "A1179/26",
