@@ -4133,6 +4133,119 @@
     },
     "last_seen_utc": "2026-06-16 14:00:43 UTC"
   },
+  "OIIX A1276/26": {
+    "header": {
+      "id": "A1276/26",
+      "series": "A",
+      "number": "1276",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1270/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-17T14:22:00.000Z",
+      "validityEnd": "2026-07-17T17:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "TEHRAN FIR RESUMED NORMAL OPERATION,\r\nWHILE WEST PART OF TEHRAN FIR REMAINS CLOSED ,\r\nDIVIDING LINE GOES THROUGH\r\nIVIVA-RIGUT-NALBI-YZD-RERET-EGVEL-GONVA-ROVON-LUMOM,\r\n- OVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO\r\n  FOLLOWING CONDITIONS:\r\n1- ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL 285\r\n   SUBJECT TO RADAR COVERAGE,\r\n2- INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO\r\n   FIR BOUNDARY FOR IDENTIFICATION,\r\n3- OUTBOUND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT\r\n   ACC 5 MIN PRIOR TO FIR BOUNDARY,\r\n4- FLIGHTS SHALL HAVE OPERATIONAL ACAS,\r\n5- LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR,\r\n6- FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE,\r\n   IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL\r\n   FURTHER INSTRUCTION BY ACC."
+    },
+    "last_seen_utc": "2026-06-17 14:35:33 UTC"
+  },
+  "OIIX A1277/26": {
+    "header": {
+      "id": "A1277/26",
+      "series": "A",
+      "number": "1277",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1271/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-17T14:24:00.000Z",
+      "validityEnd": "2026-07-17T17:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1276/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR \r\nARE CLOSED."
+    },
+    "last_seen_utc": "2026-06-17 14:35:33 UTC"
+  },
   "OIIX A1237/26": {
     "header": {
       "id": "A1237/26",
@@ -5165,118 +5278,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1276/26": {
-    "header": {
-      "id": "A1276/26",
-      "series": "A",
-      "number": "1276",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1270/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-17T14:22:00.000Z",
-      "validityEnd": "2026-07-17T17:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "TEHRAN FIR RESUMED NORMAL OPERATION,\r\nWHILE WEST PART OF TEHRAN FIR REMAINS CLOSED ,\r\nDIVIDING LINE GOES THROUGH\r\nIVIVA-RIGUT-NALBI-YZD-RERET-EGVEL-GONVA-ROVON-LUMOM,\r\n- OVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO\r\n  FOLLOWING CONDITIONS:\r\n1- ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL 285\r\n   SUBJECT TO RADAR COVERAGE,\r\n2- INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO\r\n   FIR BOUNDARY FOR IDENTIFICATION,\r\n3- OUTBOUND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT\r\n   ACC 5 MIN PRIOR TO FIR BOUNDARY,\r\n4- FLIGHTS SHALL HAVE OPERATIONAL ACAS,\r\n5- LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR,\r\n6- FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE,\r\n   IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL\r\n   FURTHER INSTRUCTION BY ACC."
-    },
-    "last_seen_utc": "2026-06-17 14:35:33 UTC"
-  },
-  "OIIX A1277/26": {
-    "header": {
-      "id": "A1277/26",
-      "series": "A",
-      "number": "1277",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1271/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "FALC",
-        "entity": "FA",
-        "status": "LC",
-        "area": "AGA",
-        "subArea": "Facilities and Services",
-        "subject": "Aerodrome",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-17T14:24:00.000Z",
-      "validityEnd": "2026-07-17T17:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A1276/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR \r\nARE CLOSED."
-    },
-    "last_seen_utc": "2026-06-17 14:35:33 UTC"
   }
 }
