@@ -3362,28 +3362,6 @@
     },
     "last_seen_utc": "2026-06-08 10:55:27 UTC"
   },
-  "OIIX A1180/26": {
-    "header": {
-      "id": "A1180/26",
-      "series": "A",
-      "number": "1180",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1173/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/////000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-08T16:26:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF TO NOTAM A1178/26,\nALL AIRPORTS WHICH LOCATED IN EAST PART OF TEHRAN FIR ARE OPEN\nAND HOUR OF OPERATION AS PUBLISHED IN AIP EXCEPT:\n- OIIP, OITZ, OITP, OITM, OITK AND OITU CLSD\n-OIYY, OITR, OIGG, OITL, OITT, OINR OPERATING SUNRISE TO SUNSET (HJ),\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT OIYY DURING\n NIGHT PERIOD,\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND \nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA."
-    },
-    "last_seen_utc": "2026-06-08 16:40:27 UTC"
-  },
   "OIIX A1181/26": {
     "header": {
       "id": "A1181/26",
@@ -4149,73 +4127,6 @@
     },
     "content": {
       "text": "TEHRAN FIR RESUMED NORMAL OPERATION, \nWHILE WEST PART OF TEHRAN FIR REMAINS CLOSED FOR OVERFLIGHTS, \nDIVIDING LINE GOES THROUGH \nIVIVA-RIGUT-NALBI-YZD-RERET-EGVEL-GONVA-ROVON-LUMOM, \n- OVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO \n  FOLLOWING CONDITIONS: \n1- ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL 285 \n   SUBJECT TO RADAR COVERAGE, \n2- INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO \n   FIR BOUNDARY FOR IDENTIFICATION, \n3- OUTBOUND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT \n   ACC 5 MIN PRIOR TO FIR BOUNDARY, \n4- FLIGHTS SHALL HAVE OPERATIONAL ACAS, \n5- LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR, \n6- FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE, \n   IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL \n   FURTHER INSTRUCTION BY ACC."
-    },
-    "last_seen_utc": "2026-06-17 18:05:40 UTC"
-  },
-  "OIIX A1283/26": {
-    "header": {
-      "id": "A1283/26",
-      "series": "A",
-      "number": "1283",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1277/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "FALC",
-        "entity": "FA",
-        "status": "LC",
-        "area": "AGA",
-        "subArea": "Facilities and Services",
-        "subject": "Aerodrome",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-17T17:57:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A1282/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR \r\nARE CLOSED EXCEPT: \r\n- OIAA, OISS, OICC, OIAW, OIFM, OISR, OIAM AND OISL \r\n  OPERATING SUNRISE TO SUNSET (HJ), \r\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT \r\n  OIFM AND OISS DURING NIGHT PERIOD, \r\n- ALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS,\r\n- NEW PERMISSION SHALL BE REQUESTED FOR \r\n  OPERATION OF CIVIL IFR PASSENGER FLIGHTS FROM IRAN CAA."
     },
     "last_seen_utc": "2026-06-17 18:05:40 UTC"
   },
@@ -5251,5 +5162,91 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1284/26": {
+    "header": {
+      "id": "----------\nA1284/26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1180/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX//E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-17T18:01:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF TO NOTAM A1282/26,\nALL AIRPORTS WHICH LOCATED IN EAST PART OF TEHRAN FIR ARE OPEN\nAND HOUR OF OPERATION AS PUBLISHED IN AIP EXCEPT:\n- OIIP, OITZ, OITP, OITM, OITK AND OITU CLSD\n- OIYY, OITR, OIGG, OITL, OITT, OINR OPERATING SUNRISE TO \nSUNSET (HJ),\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT OIYY \nDURING NIGHT PERIOD,\nALL PREVIOUS PERMISSIONS ARE SUSPENDED AND \nNEW PERMISSIONS SHALL BE REQUESTED FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-06-17 18:25:40 UTC"
+  },
+  "OIIX A1285/26": {
+    "header": {
+      "id": "A1285/26",
+      "series": "A",
+      "number": "1285",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1283/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-17T18:14:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1282/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR \r\nARE CLOSED EXCEPT: \r\n- OIAA, OISS, OICC, OIAW, OIFM, OISR, OIAM ,OICI AND OISL \r\n  OPERATING SUNRISE TO SUNSET (HJ), \r\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT \r\n  OIFM AND OISS DURING NIGHT PERIOD, \r\n- ALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS,\r\n- NEW PERMISSION SHALL BE REQUESTED FOR \r\n  OPERATION OF CIVIL IFR PASSENGER FLIGHTS FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-06-17 18:25:40 UTC"
   }
 }
