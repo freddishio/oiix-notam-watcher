@@ -3479,25 +3479,6 @@
     },
     "last_seen_utc": "2026-06-16 14:00:43 UTC"
   },
-  "OIIX A1282/26": {
-    "header": {
-      "id": "----------\nA1282/26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1276/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX//E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-17T17:55:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "TEHRAN FIR RESUMED NORMAL OPERATION, \nWHILE WEST PART OF TEHRAN FIR REMAINS CLOSED FOR OVERFLIGHTS, \nDIVIDING LINE GOES THROUGH \nIVIVA-RIGUT-NALBI-YZD-RERET-EGVEL-GONVA-ROVON-LUMOM, \n- OVERFLIGHT OPERATION IN EAST PART OF TEHRAN FIR IS SUBJECT TO \n  FOLLOWING CONDITIONS: \n1- ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL 285 \n   SUBJECT TO RADAR COVERAGE, \n2- INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO \n   FIR BOUNDARY FOR IDENTIFICATION, \n3- OUTBOUND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT \n   ACC 5 MIN PRIOR TO FIR BOUNDARY, \n4- FLIGHTS SHALL HAVE OPERATIONAL ACAS, \n5- LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR, \n6- FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE, \n   IF CODE HAS NOT BEEN ASSIGNED, USE SQUAWK 2000 UNTIL \n   FURTHER INSTRUCTION BY ACC."
-    },
-    "last_seen_utc": "2026-06-17 18:05:40 UTC"
-  },
   "OIIX A1284/26": {
     "header": {
       "id": "----------\nA1284/26",
@@ -3986,5 +3967,51 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1306/26": {
+    "header": {
+      "id": "A1306/26",
+      "series": "A",
+      "number": "1306",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1282/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-22T11:21:00.000Z",
+      "validityEnd": "2026-10-19T08:30:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "TEHRAN FIR RESUMED NORMAL OPERATION, OVERFLIGHT OPERATION IN\r\nTEHRAN FIR IS SUBJECT TO FOLLOWING CONDITIONS:\r\n- ATS SURVEILLANCE SERVICE WILL BE PROVIDED ABOVE FL285 SUBJECT TO\r\n  RADAR COVERAGE,\r\n- NON ATS SURVEILLANCE SEPARATION MINIMA (50 NM) FOR TRAFFIC ON\r\n  SAME TRACK, SAME DIRECTION AND SAME LEVEL WILL BE APPLIED ON\r\n  THE FOLLOWING TRANSFER OF CONTROL POINTS:\r\n  IMLOT, GABKO, PATAT, ORSAR, DASUT, ELIDU, RAGAS, MIDSI, OBTAR,\r\n  ALSER, PATIR, NANPI, TULAX, PAXAT, RAGET, BOXIX, ALRAM, BONAM,\r\n  DASIS, AGINA, DULAV, MAGRI, PARSU, PAMTU, SOKAM AND RANRU,\r\n- LARGER SEPARATION MAY BE APPLIED WITHIN TEHRAN FIR,\r\n- INBOUND TRAFFIC SHALL CONTACT TEHRAN ACC 5 MIN PRIOR TO FIR\r\n  BOUNDARY FOR IDENTIFICATION,\r\n- OUTBOUIND TRAFFIC SHALL ESTABLISH COMMUNICATION WITH NEXT\r\n  ACC 5 MIN PRIOR TO FIR BOUNDARY,\r\n- FLIGHTS SHALL HAVE OPERATIONAL ACAS,\r\n- FLIGHTS SHALL RETAIN THE LAST ASSIGNED SSR CODE, IF CODE HAS NOT\r\n  BEEN ASSIGNED, USE SQUAWK 2000 UNTIL FURTHER INSTRUCTION BY ACC."
+    },
+    "last_seen_utc": "2026-06-22 11:30:32 UTC"
   }
 }
