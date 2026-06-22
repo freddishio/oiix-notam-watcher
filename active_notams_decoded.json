@@ -1034,28 +1034,6 @@
     },
     "last_seen_utc": "2026-05-13 08:50:21 UTC"
   },
-  "OIIX A1021/26": {
-    "header": {
-      "id": "A1021/26",
-      "series": "A",
-      "number": "1021",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0797/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX//E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-06-25T06:33:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND PART OF OMAN SEA \nWEST OF MERIDIAN 059E AS THE RESULT OF SECURITY REASON."
-    },
-    "last_seen_utc": "2026-05-25 06:50:25 UTC"
-  },
   "OIIX A1032/26": {
     "header": {
       "id": "A1032/26",
@@ -3994,5 +3972,27 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1316/26": {
+    "header": {
+      "id": "A1316/26",
+      "series": "A",
+      "number": "1316",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1021/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E////000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-22T11:52:00.000Z",
+      "validityEnd": "2026-08-25T08:30:00.000Z"
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND PART OF OMAN SEA \nWEST OF MERIDIAN 059E AS THE RESULT OF SECURITY REASON."
+    },
+    "last_seen_utc": "2026-06-22 12:15:30 UTC"
   }
 }
