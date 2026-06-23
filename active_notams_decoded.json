@@ -3616,6 +3616,140 @@
     },
     "last_seen_utc": "2026-06-22 18:05:30 UTC"
   },
+  "OIIX A1334/26": {
+    "header": {
+      "id": "A1334/26",
+      "series": "A",
+      "number": "1334",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0712/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-23T11:23:00.000Z",
+      "validityEnd": "2026-10-21T20:30:00.000Z"
+    },
+    "content": {
+      "text": "AIRWAY N39 BTN DEMBA AND OBRIX CLSD FOR TRANSITING \r\n   TEHRAN FIR FLIGHTS\r\n- ALTN TOS FOR WESTBOUND:\r\n      RADAL DCT IMKER DCT ULDUS, \r\n      MNM FLT LVL: FL 275, \r\n- ALTN TOS FOR EASTBOUND:\r\n      ULDUS DCT ALKUP DCT IMLIM DCT OXADU M715 OBRIX,\r\n      MNM FLT LVL: FL 285."
+    },
+    "last_seen_utc": "2026-06-23 11:35:26 UTC"
+  },
+  "OIIX A1335/26": {
+    "header": {
+      "id": "A1335/26",
+      "series": "A",
+      "number": "1335",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0713/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-23T11:25:00.000Z",
+      "validityEnd": "2026-10-21T20:30:00.000Z"
+    },
+    "content": {
+      "text": "AWY G208/L125 BTN RADAL AND IKA DVOR/DME CLSD\r\nFOR TRANSITIONING TEHRAN FIR FLIGHTS, \r\nFLT INTENDING TO USE THIS AWY SHALL FILE FPL\r\nVIA ROVAD DCT IKA DVOR/DME,\r\nRADAL AVBL FOR OIII/OIIE/OIIP ARR."
+    },
+    "last_seen_utc": "2026-06-23 11:35:26 UTC"
+  },
   "OIIX A1202/26": {
     "header": {
       "id": "A1202/26",
@@ -3837,139 +3971,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1334/26": {
-    "header": {
-      "id": "A1334/26",
-      "series": "A",
-      "number": "1334",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0712/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARLC",
-        "entity": "AR",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-23T11:23:00.000Z",
-      "validityEnd": "2026-10-21T20:30:00.000Z"
-    },
-    "content": {
-      "text": "AIRWAY N39 BTN DEMBA AND OBRIX CLSD FOR TRANSITING \r\n   TEHRAN FIR FLIGHTS\r\n- ALTN TOS FOR WESTBOUND:\r\n      RADAL DCT IMKER DCT ULDUS, \r\n      MNM FLT LVL: FL 275, \r\n- ALTN TOS FOR EASTBOUND:\r\n      ULDUS DCT ALKUP DCT IMLIM DCT OXADU M715 OBRIX,\r\n      MNM FLT LVL: FL 285."
-    },
-    "last_seen_utc": "2026-06-23 11:35:26 UTC"
-  },
-  "OIIX A1335/26": {
-    "header": {
-      "id": "A1335/26",
-      "series": "A",
-      "number": "1335",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0713/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "ARLC",
-        "entity": "AR",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "ATS route (specify)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-23T11:25:00.000Z",
-      "validityEnd": "2026-10-21T20:30:00.000Z"
-    },
-    "content": {
-      "text": "AWY G208/L125 BTN RADAL AND IKA DVOR/DME CLSD\r\nFOR TRANSITIONING TEHRAN FIR FLIGHTS, \r\nFLT INTENDING TO USE THIS AWY SHALL FILE FPL\r\nVIA ROVAD DCT IKA DVOR/DME,\r\nRADAL AVBL FOR OIII/OIIE/OIIP ARR."
-    },
-    "last_seen_utc": "2026-06-23 11:35:26 UTC"
   }
 }
