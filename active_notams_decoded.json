@@ -3728,6 +3728,46 @@
     },
     "last_seen_utc": "2026-06-23 11:35:26 UTC"
   },
+  "OIIX A1336/26": {
+    "header": {
+      "id": "A1336/26",
+      "series": "A",
+      "number": "1336",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0724/26"
+    },
+    "qualification": {
+      "line": "OIIX/QSCXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "SCXX",
+        "entity": "SC",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Air Traffic and VOLMET Services ",
+        "subject": "Area control centre (ACC)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-23T11:39:00.000Z",
+      "validityEnd": "2026-10-21T20:30:00.000Z"
+    },
+    "content": {
+      "text": "ADDITIONAL ACC MOBILE NR IS 00989385580035"
+    },
+    "last_seen_utc": "2026-06-23 11:55:27 UTC"
+  },
   "OIIX A1202/26": {
     "header": {
       "id": "A1202/26",
@@ -3949,45 +3989,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1336/26": {
-    "header": {
-      "id": "A1336/26",
-      "series": "A",
-      "number": "1336",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0724/26"
-    },
-    "qualification": {
-      "line": "OIIX/QSCXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "SCXX",
-        "entity": "SC",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Air Traffic and VOLMET Services ",
-        "subject": "Area control centre (ACC)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-23T11:39:00.000Z",
-      "validityEnd": "2026-10-21T20:30:00.000Z"
-    },
-    "content": {
-      "text": "ADDITIONAL ACC MOBILE NR IS 00989385580035"
-    },
-    "last_seen_utc": "2026-06-23 11:55:27 UTC"
   }
 }
