@@ -198,28 +198,6 @@
     },
     "last_seen_utc": "2026-04-26 06:55:23 UTC"
   },
-  "OIIX A0724/26": {
-    "header": {
-      "id": "A0724/26",
-      "series": "A",
-      "number": "0724",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QSCXX/E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-04-03T19:48:00.000Z",
-      "validityEnd": "2026-06-05T07:00:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "ADDITIONAL ACC DIRECT LINE IS 00982144665478 AND \nMOBILE NUMBER 00989385580035 ."
-    },
-    "last_seen_utc": "2026-03-10 14:40:31 UTC"
-  },
   "OIIX A0781/26": {
     "header": {
       "id": "A0781/26",
@@ -3971,5 +3949,45 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1336/26": {
+    "header": {
+      "id": "A1336/26",
+      "series": "A",
+      "number": "1336",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0724/26"
+    },
+    "qualification": {
+      "line": "OIIX/QSCXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "SCXX",
+        "entity": "SC",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Air Traffic and VOLMET Services ",
+        "subject": "Area control centre (ACC)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-23T11:39:00.000Z",
+      "validityEnd": "2026-10-21T20:30:00.000Z"
+    },
+    "content": {
+      "text": "ADDITIONAL ACC MOBILE NR IS 00989385580035"
+    },
+    "last_seen_utc": "2026-06-23 11:55:27 UTC"
   }
 }
