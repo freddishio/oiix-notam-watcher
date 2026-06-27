@@ -3900,6 +3900,71 @@
     },
     "last_seen_utc": "2026-06-24 10:55:27 UTC"
   },
+  "OIIX B0313/26": {
+    "header": {
+      "id": "B0313/26",
+      "series": "B",
+      "number": "0313",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-08T20:30:00.000Z",
+      "validityEnd": "2026-08-09T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A/1356/26,\r\nALL VFR, ULTRA LIGHT, GLIDER, PARAGLIDER, \r\nMODEL AND RPA (REMOTELY PILOTED AIRCRAFT) FLIGHTS SUSPENDED\r\nWI MENTIONED AREA, EXCEPT THOSE FLIGHTS INVOLVED IN \r\nTHE FUNERAL PROCESSION."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-06-27 10:20:23 UTC"
+  },
   "OIIX A1202/26": {
     "header": {
       "id": "A1202/26",
@@ -4328,11 +4393,11 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX B0313/26": {
+  "OIIX B0314/26": {
     "header": {
-      "id": "B0313/26",
+      "id": "B0314/26",
       "series": "B",
-      "number": "0313",
+      "number": "0314",
       "year": "26",
       "type": "NOTAMN\r"
     },
@@ -4381,16 +4446,16 @@
       }
     },
     "schedule": {
-      "activityStart": "2026-08-08T20:30:00.000Z",
-      "validityEnd": "2026-08-09T20:30:00.000Z"
+      "activityStart": "2026-08-01T20:30:00.000Z",
+      "validityEnd": "2026-08-10T20:30:00.000Z"
     },
     "content": {
-      "text": "REF NOTAM A/1356/26,\r\nALL VFR, ULTRA LIGHT, GLIDER, PARAGLIDER, \r\nMODEL AND RPA (REMOTELY PILOTED AIRCRAFT) FLIGHTS SUSPENDED\r\nWI MENTIONED AREA, EXCEPT THOSE FLIGHTS INVOLVED IN \r\nTHE FUNERAL PROCESSION."
+      "text": "REF NOTAM A/1345/26, A/1349/26 AND A/1356/26,\r\nALL MIL ACT ( GUN FIRING, ROCKET LUANC, RPA FLIGHTS)\r\nSUSPENDED WI MENTIONED AREA, EXCEPT THOSE RPA FLIGHTS\r\nINVOLVED IN THE FUNERAL PROCESSION."
     },
     "limits": {
       "lower": "GND",
       "upper": "UNL"
     },
-    "last_seen_utc": "2026-06-27 10:20:23 UTC"
+    "last_seen_utc": "2026-06-27 10:25:27 UTC"
   }
 }
