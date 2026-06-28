@@ -4168,6 +4168,27 @@
     },
     "last_seen_utc": "2026-06-09 09:35:27 UTC"
   },
+  "OIIX A1371/26": {
+    "header": {
+      "id": "A1371/26",
+      "series": "A",
+      "number": "1371",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QOAXX//A/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-10-03T00:00:00.000Z",
+      "validityEnd": "2026-10-16T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NIL NOTIFICATION: NO AIRAC AIP AMDT WILL BE PUBLISHED\nON AIRAC EFFECTIVE DATE 03 SEP 2026."
+    },
+    "last_seen_utc": "2026-06-28 07:05:29 UTC"
+  },
   "KICZ A0016/20": {
     "header": {
       "id": "",
@@ -4314,25 +4335,72 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1371/26": {
+  "OIIX A1372/26": {
     "header": {
-      "id": "A1371/26",
+      "id": "A1372/26",
       "series": "A",
-      "number": "1371",
+      "number": "1372",
       "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
+      "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QOAXX//A/000/999/"
+      "line": "OIIX/QRDCA/IV/BO/W/000/130/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "130"
+      }
     },
     "schedule": {
-      "activityStart": "2026-10-03T00:00:00.000Z",
-      "validityEnd": "2026-10-16T23:59:00.000Z"
+      "activityStart": "2026-08-14T05:30:00.000Z",
+      "validityEnd": "2026-08-19T11:30:00.000Z",
+      "elements": [
+        "0530-1130"
+      ]
     },
     "content": {
-      "text": "NIL NOTIFICATION: NO AIRAC AIP AMDT WILL BE PUBLISHED\nON AIRAC EFFECTIVE DATE 03 SEP 2026."
+      "text": "OID 130 ACTIVATED, REF AIP PAGE ENR 5.1.3-13."
     },
-    "last_seen_utc": "2026-06-28 07:05:29 UTC"
+    "limits": {
+      "lower": "GND",
+      "upper": "13000 FT AMSL"
+    },
+    "last_seen_utc": "2026-06-28 07:10:29 UTC"
   }
 }
