@@ -1,4 +1,313 @@
 {
+  "OIIX A1175/26": {
+    "header": {
+      "id": "A1175/26",
+      "series": "A",
+      "number": "1175",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1169/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-08T10:46:00.000Z",
+      "validityEnd": "2026-07-09T10:00:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, MASHHAD MSSR RADAR DERIVED INFORMATION \r\nFOR EN-ROUTE NOT AVBL DUE TO MASHHAD MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 7 (FREQ 120.700 MHZ) MAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-06-08 10:55:27 UTC",
+    "archived_utc": "2026-06-29 07:35:25 UTC"
+  },
+  "OIIX A1181/26": {
+    "header": {
+      "id": "A1181/26",
+      "series": "A",
+      "number": "1181",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QCEXX/E/////000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-07-08T16:45:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "ALL AIRCRAFT OPERATING IN WEST PART OF TEHRAN FIR SHALL\n BE EQUIPPED \nWITH SSR TRANSPONDER MODE S WITH ADS-B CAPABILITY OR ADS-B WITH \nDEDICATED 1090 MHZ ADS-B OUT CAPABILITY."
+    },
+    "last_seen_utc": "2026-06-08 17:00:36 UTC",
+    "archived_utc": "2026-06-29 07:35:25 UTC"
+  },
+  "OIIX A1285/26": {
+    "header": {
+      "id": "A1285/26",
+      "series": "A",
+      "number": "1285",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1283/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QFALC/IV/NBO/A/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "FALC",
+        "entity": "FA",
+        "status": "LC",
+        "area": "AGA",
+        "subArea": "Facilities and Services",
+        "subject": "Aerodrome",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-17T18:14:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1282/26, ALL AIRPORTS IN WEST PART OF TEHRAN FIR \r\nARE CLOSED EXCEPT: \r\n- OIAA, OISS, OICC, OIAW, OIFM, OISR, OIAM ,OICI AND OISL \r\n  OPERATING SUNRISE TO SUNSET (HJ), \r\n- IN ADDITION, HAJ FLIGHT IS AUTHORIZED TO OPERATE AT \r\n  OIFM AND OISS DURING NIGHT PERIOD, \r\n- ALL PREVIOUS PERMISSIONS ARE SUSPENDED FOR ALL OPERATORS,\r\n- NEW PERMISSION SHALL BE REQUESTED FOR \r\n  OPERATION OF CIVIL IFR PASSENGER FLIGHTS FROM IRAN CAA."
+    },
+    "last_seen_utc": "2026-06-17 18:25:40 UTC",
+    "archived_utc": "2026-06-29 07:35:25 UTC"
+  },
+  "OIIX B0295/26": {
+    "header": {
+      "id": "B0295/26",
+      "series": "B",
+      "number": "0295",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0292/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-22T07:30:00.000Z",
+      "validityEnd": "2026-07-30T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0127 0128 0135 0136 0177 0179 0187 0188 0189 \r\n0190 0199 0201 0202 0204 0205 0207 0213 0214 0215 0216 \r\n0217 0218 0219 0220 0221 0222 0223 0224 0225 0226 0227 \r\n0228 0229 0230 0231 0232 0233 0234 0235 0236 0237 0238 \r\n0239 0240 0241 0242 0243 0244 0247 0248 0251 0252 0254 \r\n0255 0290 0294 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 \r\n12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n11 JUN 2026 AND 09 JUL 2026 AND 06 AUG 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-06-22 07:35:26 UTC",
+    "archived_utc": "2026-06-29 07:35:25 UTC"
+  },
+  "OIIX A1301/26": {
+    "header": {
+      "id": "",
+      "type": "A1301/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-07-22T07:30:00.000Z",
+      "validityEnd": "2026-07-30T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0253 1415 1416 1417 1418 1892 \r\n YEAR=2023 1718 1719 1720 1721 2113 2496 \r\n YEAR=2024 1456 3358 4458 4459 4460 4461 \r\n YEAR=2025 2322 2572 2776 3524 3526 3607 3608 3697 3903 4009 \r\n YEAR=2026 0113 0174 0233 0263 0390 0392 0415 0477 0489 0561 0601 \r\n0637 0695 0696 0703 0712 0713 0724 0778 0779 0780 0781 \r\n0782 0784 0785 0787 0788 0789 0790 0791 0793 0794 0817 \r\n0818 0819 0820 0821 0822 0824 0825 0828 0829 0830 0835 \r\n0836 0854 0863 0868 0869 0870 0872 0873 0874 0878 0883 \r\n0886 0888 0891 0892 0893 0896 0902 0903 0904 0905 0906 \r\n0907 0908 0909 0910 0912 0923 0924 0925 0938 0940 0951 \r\n0953 0954 0955 0956 0957 0958 0959 0960 0961 0963 0964 \r\n0965 0973 0974 0976 0977 0982 0983 0984 0985 0986 0987 \r\n0990 0991 0997 1003 1005 1006 1007 1008 1018 1019 1021 \r\n1032 1033 1034 1035 1036 1038 1039 1040 1041 1042 1043 \r\n1044 1045 1051 1052 1053 1054 1055 1056 1058 1062 1063 \r\n1064 1065 1073 1074 1077 1079 1082 1101 1102 1112 1113 \r\n1127 1128 1129 1148 1170 1175 1181 1182 1183 1184 1185 \r\n1186 1187 1188 1189 1190 1191 1192 1194 1195 1196 1202 \r\n1203 1205 1208 1209 1229 1230 1236 1245 1252 1257 1260 \r\n1261 1263 1282 1284 1285 1290 1293 1294 1298 1300 \r\nLATEST AIP AMENDMENTS END PART 1 OF 2\r\nA1301/26 NOTAMR A1247/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2606220730  C) 2606300730EST  E) AIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25\r\n 7/25 12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n11 JUN 2026 AND 09 JUL 2026 AND 06 AUG 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. END PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-06-22 07:35:26 UTC",
+    "archived_utc": "2026-06-29 07:35:25 UTC"
+  },
+  "OIIX A1350/26": {
+    "header": {
+      "id": "A1350/26",
+      "series": "A",
+      "number": "1350",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLC",
+        "entity": "AF",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-10T01:30:00.000Z",
+      "validityEnd": "2026-08-11T01:30:00.000Z"
+    },
+    "content": {
+      "text": "OPERATION OF ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION: \r\nA CIRCLE RADIUS 30 NM CENTERED AT MSD DVOR/DME,  \r\n(WI LATERAL LIMITS OF MASHHAD CTR) \r\nEXC FOR THOSE FLIGHTS ENGAGED IN THE FUNERAL PROCESSION."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-06-24 11:00:30 UTC",
+    "archived_utc": "2026-06-29 07:35:25 UTC"
+  },
   "OIIX B0294/26": {
     "header": {
       "id": "B0294/26",
