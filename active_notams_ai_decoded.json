@@ -264,6 +264,11 @@
     "highest_level": "Second Level",
     "last_seen_utc": "2026-06-22 11:30:32 UTC"
   },
+  "OIIX A1311/26": {
+    "explanation": "From June 22nd to September 19th, 2026, all planes flying in a specific area within the airspace over Tehran, Iran, must have special tracking equipment called a Mode S transponder with ADS-B capability, or a dedicated ADS-B Out system. This equipment helps air traffic control track planes more accurately. The only exception is for flights involved in hospital operations.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-06-29 07:35:25 UTC"
+  },
   "OIIX A1316/26": {
     "explanation": "This is a warning for all flights in the Tehran airspace, specifically over the Persian Gulf and part of the Oman Sea. There's a possibility that a dangerous area (a conflict zone) might expand into international waters due to security reasons. This warning is in effect from June 22 to July 25, 2026.",
     "highest_level": "First Level",
@@ -288,6 +293,16 @@
     "explanation": "This is an important message for pilots flying in the Tehran airspace. It provides an additional mobile phone number for the air traffic control center. This new contact number will be active from June 23, 2026, until September 21, 2026.",
     "highest_level": "Third Level",
     "last_seen_utc": "2026-06-23 11:55:27 UTC"
+  },
+  "OIIX A1398/26": {
+    "explanation": "This is an administrative notice for the Tehran Flight Information Region (FIR). It acts as a checklist, listing all currently active aviation notices (NOTAMs), as well as the latest valid updates to aviation publications (AIP Amendments, Supplements, and Circulars). It also informs that no new major aviation publication updates will be issued on specific dates in July, August, and September 2026. This NOTAM helps pilots and air traffic controllers ensure they have the most current reference documents for safe operations.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-06-29 07:35:25 UTC"
+  },
+  "OIIX B0321/26": {
+    "explanation": "This is an official aviation notice for the Tehran (Iran) airspace. It's a checklist that tells pilots and aviation staff which other important aviation updates, official publications, and informational notices are currently valid and should be reviewed. It also informs them that no new major publication updates will be released on specific dates in July, August, and September 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-06-29 07:35:25 UTC"
   },
   "OIIX B0317/26": {
     "explanation": "This is an aviation alert for a specific area in Iran. For about 10 days in early July 2026, all military activities like gun firing, rocket launches, and most drone flights will be temporarily stopped. The only exception is drone flights that are part of a funeral procession.",
@@ -358,20 +373,5 @@
     "explanation": "The United States government has issued a new rule (SFAR 117) that bans certain US flights from flying in the airspace over Tehran, Iran. This ban started on October 3, 2024, and is expected to last until October 31, 2027. All pilots and airlines are required to read the full details of this rule.",
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1311/26": {
-    "explanation": "From June 22nd to September 19th, 2026, all planes flying in a specific area within the airspace over Tehran, Iran, must have special tracking equipment called a Mode S transponder with ADS-B capability, or a dedicated ADS-B Out system. This equipment helps air traffic control track planes more accurately. The only exception is for flights involved in hospital operations.",
-    "highest_level": "Second Level",
-    "last_seen_utc": "2026-06-29 07:35:25 UTC"
-  },
-  "OIIX A1398/26": {
-    "explanation": "This is an administrative notice for the Tehran Flight Information Region (FIR). It acts as a checklist, listing all currently active aviation notices (NOTAMs), as well as the latest valid updates to aviation publications (AIP Amendments, Supplements, and Circulars). It also informs that no new major aviation publication updates will be issued on specific dates in July, August, and September 2026. This NOTAM helps pilots and air traffic controllers ensure they have the most current reference documents for safe operations.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-06-29 07:35:25 UTC"
-  },
-  "OIIX B0321/26": {
-    "explanation": "This is an official aviation notice for the Tehran (Iran) airspace. It's a checklist that tells pilots and aviation staff which other important aviation updates, official publications, and informational notices are currently valid and should be reviewed. It also informs them that no new major publication updates will be released on specific dates in July, August, and September 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-06-29 07:35:25 UTC"
   }
 }
