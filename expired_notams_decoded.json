@@ -1,4 +1,236 @@
 {
+  "OIIX A1032/26": {
+    "header": {
+      "id": "A1032/26",
+      "series": "A",
+      "number": "1032",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0813/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:16:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PART ENR 3.1 THE NAVIGATION SPECIFICATION OF ALL \r\nATS ROUTES AVBL AS RNAV 5 FM MNM SAFE LVL."
+    },
+    "last_seen_utc": "2026-05-25 07:25:22 UTC",
+    "archived_utc": "2026-06-30 06:45:28 UTC"
+  },
+  "OIIX A1036/26": {
+    "header": {
+      "id": "A1036/26",
+      "series": "A",
+      "number": "1036",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0844/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:24:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, TEHRAN (MEHRABAD) MSSR RADAR \r\nDERIVED INFORMATION FOR EN-ROUTE NOT AVBL \r\nDUE TO TEHRAN (MEHRABAD) MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 119.300 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-05-25 07:35:22 UTC",
+    "archived_utc": "2026-06-30 06:45:28 UTC"
+  },
+  "OIIX A1040/26": {
+    "header": {
+      "id": "A1040/26",
+      "series": "A",
+      "number": "1040",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0847/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:35:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, KISH MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KISH MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 4 (FREQ 133.400MHZ) AND \r\nSECTOR 5 (FREQ 120.300 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-05-25 07:45:24 UTC",
+    "archived_utc": "2026-06-08 10:35:39 UTC"
+  },
+  "OIIX A1041/26": {
+    "header": {
+      "id": "A1041/26",
+      "series": "A",
+      "number": "1041",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0848/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-06-25T07:38:00.000Z",
+      "validityEnd": "2026-07-29T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, ESFAHAN MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO ESFAHAN MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 3 (FREQ 126.900 MHZ) AND \r\nSECTOR 6 WEST (FREQ 132.750 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-05-25 07:50:23 UTC",
+    "archived_utc": "2026-06-08 10:35:39 UTC"
+  },
   "OIIX A1042/26": {
     "header": {
       "id": "A1042/26",
@@ -4316,118 +4548,6 @@
       "text": "REF AIP PAGE ENR 1.6-1, KUSHK MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KUSHK MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 132.500 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
     },
     "last_seen_utc": "2026-05-25 07:40:21 UTC",
-    "archived_utc": "2026-06-08 10:35:39 UTC"
-  },
-  "OIIX A1040/26": {
-    "header": {
-      "id": "A1040/26",
-      "series": "A",
-      "number": "1040",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0847/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-25T07:35:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, KISH MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KISH MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 4 (FREQ 133.400MHZ) AND \r\nSECTOR 5 (FREQ 120.300 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-05-25 07:45:24 UTC",
-    "archived_utc": "2026-06-08 10:35:39 UTC"
-  },
-  "OIIX A1041/26": {
-    "header": {
-      "id": "A1041/26",
-      "series": "A",
-      "number": "1041",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0848/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-06-25T07:38:00.000Z",
-      "validityEnd": "2026-07-29T08:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, ESFAHAN MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO ESFAHAN MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 3 (FREQ 126.900 MHZ) AND \r\nSECTOR 6 WEST (FREQ 132.750 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-05-25 07:50:23 UTC",
     "archived_utc": "2026-06-08 10:35:39 UTC"
   },
   "OIIX A1056/26": {
