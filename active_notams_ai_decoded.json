@@ -119,16 +119,6 @@
     "highest_level": "Third Level",
     "last_seen_utc": "2026-06-08 11:00:32 UTC"
   },
-  "OIIX A1044/26": {
-    "explanation": "A radar system in Ahwaz, Iran, is currently broken. This means that air traffic controllers might not have radar information for planes flying in certain parts of the Ahwaz airspace (specifically Sector 2 and Sector 3). Pilots flying through these areas will need to rely on other communication and navigation methods. This issue is expected to last from May 25 to June 29, 2026.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-06-08 10:40:26 UTC"
-  },
-  "OIIX A1045/26": {
-    "explanation": "A radar system near Tabriz, Iran, is currently broken and will be out of service until late June 2026. This means that air traffic controllers might not be able to see planes on their radar screens in some parts of the airspace, particularly in a specific control sector. Pilots flying through these areas will need to be aware that radar services might not be available.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-06-08 10:40:26 UTC"
-  },
   "OIIX A1056/26": {
     "explanation": "This is a permanent update for pilots flying in Iran. A specific area called 'OIR42 Uromiyeh' that was previously restricted for flights has now been completely removed. This means aircraft can now fly through this area without any special permissions or limitations. Pilots should update their navigation charts accordingly.",
     "highest_level": "Third Level",
@@ -373,5 +363,20 @@
     "explanation": "The United States government has issued a new rule (SFAR 117) that bans certain US flights from flying in the airspace over Tehran, Iran. This ban started on October 3, 2024, and is expected to last until October 31, 2027. All pilots and airlines are required to read the full details of this rule.",
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1417/26": {
+    "explanation": "A radar system in Tabriz, Iran, is broken and will not be providing information for aircraft flying en-route. This means air traffic controllers will not have radar coverage in some parts of the airspace, specifically in a sector using frequencies 119.300 MHz and 132.500 MHz. This situation is expected to last from June 30, 2026, until September 22, 2026. Pilots and controllers will need to use alternative procedures during this period.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-06-30 06:35:23 UTC"
+  },
+  "OIIX A1418/26": {
+    "explanation": "This is an update for pilots flying in Iran's airspace. It means that all air traffic routes can now be navigated using a specific type of satellite-based navigation system called RNAV 5, starting from the lowest safe altitude. This allows aircraft to fly these routes using their onboard navigation systems with a certain level of accuracy.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-06-30 06:35:23 UTC"
+  },
+  "OIIX A1419/26": {
+    "explanation": "The main radar system in the Ahwaz region of Iran is currently out of order. This means that air traffic controllers will not be able to see planes on their radar screens when they are flying long distances (en-route) in certain parts of the airspace, specifically in Sector 2 and Sector 3. Pilots and controllers will need to use other methods to ensure safe separation between aircraft. This situation is expected to last from June 30th to September 22nd.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-06-30 06:35:23 UTC"
   }
 }
