@@ -3398,6 +3398,45 @@
     },
     "last_seen_utc": "2026-07-03 03:05:24 UTC"
   },
+  "OIIX A1457/26": {
+    "header": {
+      "id": "A1457/26",
+      "series": "A",
+      "number": "1457",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/E/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-03T08:53:00.000Z",
+      "validityEnd": "2026-11-02T07:30:00.000Z"
+    },
+    "content": {
+      "text": "ADDITIONAL TEL NR FOR FLT PERMISSION OFFICE:\n00982163146556 AND 00982166036242"
+    },
+    "last_seen_utc": "2026-07-03 09:05:23 UTC"
+  },
   "OIIX A1345/26": {
     "header": {
       "id": "A1345/26",
@@ -4129,44 +4168,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1457/26": {
-    "header": {
-      "id": "A1457/26",
-      "series": "A",
-      "number": "1457",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-03T08:53:00.000Z",
-      "validityEnd": "2026-11-02T07:30:00.000Z"
-    },
-    "content": {
-      "text": "ADDITIONAL TEL NR FOR FLT PERMISSION OFFICE:\n00982163146556 AND 00982166036242"
-    },
-    "last_seen_utc": "2026-07-03 09:05:23 UTC"
   }
 }
