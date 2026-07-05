@@ -4168,5 +4168,66 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1468/26": {
+    "header": {
+      "id": "A1468/26",
+      "series": "A",
+      "number": "1468",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCD/IV/BO/W/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCD",
+        "entity": "RD",
+        "status": "CD",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Deactivated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-06T01:30:00.000Z",
+      "validityEnd": "2026-08-08T01:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP ENR 5.1-3, DANGER AREA OID41, OID51, OID56, OID90,\r\nOID95, OID117 AND OID118 DEACTIVATED."
+    },
+    "last_seen_utc": "2026-07-05 15:55:25 UTC"
   }
 }
