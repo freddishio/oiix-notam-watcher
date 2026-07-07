@@ -3769,6 +3769,71 @@
     },
     "last_seen_utc": "2026-07-03 03:05:24 UTC"
   },
+  "OIIX A1474/26": {
+    "header": {
+      "id": "A1474/26",
+      "series": "A",
+      "number": "1474",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QNMAS/IV/BO/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "NMAS",
+        "entity": "NM",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Terminal and en-route Navigation Facilities",
+        "subject": "VOR/DME",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-07T10:11:00.000Z",
+      "validityEnd": "2026-08-07T16:00:00.000Z"
+    },
+    "content": {
+      "text": "ANARAK VOR/DME ANK 112.700MHZ CH74X NOT OPR DUE TO MAINT."
+    },
+    "last_seen_utc": "2026-07-07 10:20:41 UTC"
+  },
   "OIIX B0343/26": {
     "header": {
       "id": "B0343/26",
@@ -4281,70 +4346,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1474/26": {
-    "header": {
-      "id": "A1474/26",
-      "series": "A",
-      "number": "1474",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QNMAS/IV/BO/AE/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "NMAS",
-        "entity": "NM",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Terminal and en-route Navigation Facilities",
-        "subject": "VOR/DME",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-07T10:11:00.000Z",
-      "validityEnd": "2026-08-07T16:00:00.000Z"
-    },
-    "content": {
-      "text": "ANARAK VOR/DME ANK 112.700MHZ CH74X NOT OPR DUE TO MAINT."
-    },
-    "last_seen_utc": "2026-07-07 10:20:41 UTC"
   }
 }
