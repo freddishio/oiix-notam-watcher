@@ -1,4 +1,84 @@
 {
+  "OIIX A1345/26": {
+    "header": {
+      "id": "A1345/26",
+      "series": "A",
+      "number": "1345",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLC",
+        "entity": "AF",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-06T01:30:00.000Z",
+      "validityEnd": "2026-08-07T01:30:00.000Z"
+    },
+    "content": {
+      "text": "OPERATION OF ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION:\r\nA CIRCLE RADIUS 70 NM CENTERED AT TEHRAN DVOR/DME \r\nEXCLUDING THE NORTH SEGMENT OF A \r\nLINE OF  354119N 0524247E  TO  362039N 0500516E\r\n(WI LATERAL LIMITS OF TEHRAN TMA) \r\nEXC FOR THOSE FLIGHTS ENGAGED IN THE FUNERAL PROCESSION.",
+      "area": [
+        [
+          35.683611,
+          52.713056
+        ],
+        [
+          36.334167,
+          50.087778
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-06-24 10:05:24 UTC",
+    "archived_utc": "2026-07-03 03:01:03 UTC"
+  },
   "OIIX A1336/26": {
     "header": {
       "id": "A1336/26",
@@ -321,86 +401,6 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-06-27 10:05:28 UTC",
-    "archived_utc": "2026-07-03 03:01:03 UTC"
-  },
-  "OIIX A1345/26": {
-    "header": {
-      "id": "A1345/26",
-      "series": "A",
-      "number": "1345",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLC",
-        "entity": "AF",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-06T01:30:00.000Z",
-      "validityEnd": "2026-08-07T01:30:00.000Z"
-    },
-    "content": {
-      "text": "OPERATION OF ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION:\r\nA CIRCLE RADIUS 70 NM CENTERED AT TEHRAN DVOR/DME \r\nEXCLUDING THE NORTH SEGMENT OF A \r\nLINE OF  354119N 0524247E  TO  362039N 0500516E\r\n(WI LATERAL LIMITS OF TEHRAN TMA) \r\nEXC FOR THOSE FLIGHTS ENGAGED IN THE FUNERAL PROCESSION.",
-      "area": [
-        [
-          35.683611,
-          52.713056
-        ],
-        [
-          36.334167,
-          50.087778
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-06-24 10:05:24 UTC",
     "archived_utc": "2026-07-03 03:01:03 UTC"
   },
   "OIIX B0312/26": {
