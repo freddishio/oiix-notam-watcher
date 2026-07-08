@@ -1,4 +1,142 @@
 {
+  "OIIX A1468/26": {
+    "header": {
+      "id": "A1468/26",
+      "series": "A",
+      "number": "1468",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCD/IV/BO/W/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCD",
+        "entity": "RD",
+        "status": "CD",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Deactivated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-06T01:30:00.000Z",
+      "validityEnd": "2026-08-08T01:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP ENR 5.1-3, DANGER AREA OID41, OID51, OID56, OID90,\r\nOID95, OID117 AND OID118 DEACTIVATED."
+    },
+    "last_seen_utc": "2026-07-05 15:55:25 UTC",
+    "archived_utc": "2026-07-08 01:30:47 UTC"
+  },
+  "OIIX A1349/26": {
+    "header": {
+      "id": "A1349/26",
+      "series": "A",
+      "number": "1349",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLC",
+        "entity": "AF",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-07T01:30:00.000Z",
+      "validityEnd": "2026-08-08T01:30:00.000Z"
+    },
+    "content": {
+      "text": "OPERATION OF ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION: \r\nA CIRCLE RADIUS 20 NM CENTERED AT 343827N 0505243E, \r\nEXC FOR THOSE FLIGHTS ENGAGED IN THE FUNERAL PROCESSION.",
+      "area": [
+        [
+          34.633889,
+          50.878611
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-06-24 10:55:27 UTC",
+    "archived_utc": "2026-07-03 03:01:03 UTC"
+  },
   "OIIX B0311/26": {
     "header": {
       "id": "B0311/26",
@@ -467,82 +605,6 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-06-27 10:10:27 UTC",
-    "archived_utc": "2026-07-03 03:01:03 UTC"
-  },
-  "OIIX A1349/26": {
-    "header": {
-      "id": "A1349/26",
-      "series": "A",
-      "number": "1349",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLC/IV/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLC",
-        "entity": "AF",
-        "status": "LC",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-07T01:30:00.000Z",
-      "validityEnd": "2026-08-08T01:30:00.000Z"
-    },
-    "content": {
-      "text": "OPERATION OF ALL FLIGHTS SUSPENDED WI AREA WITH FLW SPECIFICATION: \r\nA CIRCLE RADIUS 20 NM CENTERED AT 343827N 0505243E, \r\nEXC FOR THOSE FLIGHTS ENGAGED IN THE FUNERAL PROCESSION.",
-      "area": [
-        [
-          34.633889,
-          50.878611
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-06-24 10:55:27 UTC",
     "archived_utc": "2026-07-03 03:01:03 UTC"
   },
   "OIIX B0343/26": {
