@@ -3135,73 +3135,6 @@
     },
     "last_seen_utc": "2026-07-03 03:05:24 UTC"
   },
-  "OIIX B0345/26": {
-    "header": {
-      "id": "B0345/26",
-      "series": "B",
-      "number": "0345",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0317/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QWMXX/IV/BO/W/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "WMXX",
-        "entity": "WM",
-        "status": "XX",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-01T21:07:00.000Z",
-      "validityEnd": "2026-08-10T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A1345/26, A1349/26 AND A1446/26,\r\nALL MIL ACT (GUN FIRING, ROCKET LAUNCH, RPA FLIGHTS)\r\nSUSPENDED WI MENTIONED AREA, EXCEPT THOSE RPA FLIGHTS\r\nINVOLVED IN THE FUNERAL PROCESSION."
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-07-03 03:05:24 UTC"
-  },
   "OIIX A1455/26": {
     "header": {
       "id": "A1455/26",
@@ -4082,5 +4015,72 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX B0353/26": {
+    "header": {
+      "id": "B0353/26",
+      "series": "B",
+      "number": "0353",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0345/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMXX/IV/BO/W/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMXX",
+        "entity": "WM",
+        "status": "XX",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-09T14:29:00.000Z",
+      "validityEnd": "2026-08-09T18:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1495/26,\r\nALL MIL ACT (GUN FIRING, ROCKET LAUNCH, RPA FLIGHTS)\r\nSUSPENDED WI MENTIONED AREA, EXCEPT THOSE RPA FLIGHTS\r\nINVOLVED IN THE FUNERAL PROCESSION."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-07-09 14:40:40 UTC"
   }
 }
