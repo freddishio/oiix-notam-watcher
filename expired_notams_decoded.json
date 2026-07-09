@@ -1,4 +1,70 @@
 {
+  "OIIX B0343/26": {
+    "header": {
+      "id": "B0343/26",
+      "series": "B",
+      "number": "0343",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-08T20:30:00.000Z",
+      "validityEnd": "2026-08-09T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF NOTAM A1446/26,\r\nALL VFR, ULTRA LIGHT, GLIDER, PARAGLIDER, \r\nMODEL AND RPA (REMOTELY PILOTED AIRCRAFT) FLIGHTS SUSPENDED\r\nWI MENTIONED AREA, EXCEPT THOSE FLIGHTS INVOLVED IN THE FUNERAL\r\nPROCESSION."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-07-01 21:15:27 UTC",
+    "archived_utc": "2026-07-03 03:01:03 UTC"
+  },
   "OIIX B0345/26": {
     "header": {
       "id": "B0345/26",
@@ -675,72 +741,6 @@
       "text": "REF AIP PAGE ENR 1.6-1, KUSHK MSSR RADAR DERIVED INFORMATION FOR \r\nEN-ROUTE NOT AVBL DUE TO KUSHK MSSR RADAR U/S, \r\nRADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 1 (FREQ 132.500 MHZ) AND \r\nSECTOR 2 (FREQ 125.700 MHZ) AND \r\nSECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
     },
     "last_seen_utc": "2026-06-30 06:50:26 UTC",
-    "archived_utc": "2026-07-03 03:01:03 UTC"
-  },
-  "OIIX B0343/26": {
-    "header": {
-      "id": "B0343/26",
-      "series": "B",
-      "number": "0343",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLV",
-        "entity": "AF",
-        "status": "LV",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
-      },
-      "traffic": [
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-08T20:30:00.000Z",
-      "validityEnd": "2026-08-09T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF NOTAM A1446/26,\r\nALL VFR, ULTRA LIGHT, GLIDER, PARAGLIDER, \r\nMODEL AND RPA (REMOTELY PILOTED AIRCRAFT) FLIGHTS SUSPENDED\r\nWI MENTIONED AREA, EXCEPT THOSE FLIGHTS INVOLVED IN THE FUNERAL\r\nPROCESSION."
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-07-01 21:15:27 UTC",
     "archived_utc": "2026-07-03 03:01:03 UTC"
   },
   "OIIX A1202/26": {
