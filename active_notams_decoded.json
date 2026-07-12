@@ -3777,6 +3777,74 @@
     },
     "last_seen_utc": "2026-07-12 08:20:32 UTC"
   },
+  "OIIX A1518/26": {
+    "header": {
+      "id": "A1518/26",
+      "series": "A",
+      "number": "1518",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QRDCA/IV/BO/W/000/300/",
+      "location": "OIIX",
+      "code": {
+        "code": "RDCA",
+        "entity": "RD",
+        "status": "CA",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Changes",
+        "modifier": "Activated"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "300"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-14T03:30:00.000Z",
+      "validityEnd": "2026-08-20T19:30:00.000Z",
+      "elements": [
+        "0330-1930"
+      ]
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 5.1.3-12, OID121 ACTIVATED."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "30000FT AMSL"
+    },
+    "last_seen_utc": "2026-07-12 08:25:27 UTC"
+  },
   "OIIX A1368/26": {
     "header": {
       "id": "A1368/26",
@@ -4118,16 +4186,16 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1518/26": {
+  "OIIX A1520/26": {
     "header": {
-      "id": "A1518/26",
+      "id": "A1520/26",
       "series": "A",
-      "number": "1518",
+      "number": "1520",
       "year": "26",
       "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QRDCA/IV/BO/W/000/300/",
+      "line": "OIIX/QRDCA/IV/BO/W/000/120/",
       "location": "OIIX",
       "code": {
         "code": "RDCA",
@@ -4167,7 +4235,7 @@
       ],
       "limits": {
         "lower": "000",
-        "upper": "300"
+        "upper": "120"
       }
     },
     "schedule": {
@@ -4178,12 +4246,12 @@
       ]
     },
     "content": {
-      "text": "REF AIP PAGE ENR 5.1.3-12, OID121 ACTIVATED."
+      "text": "OID127 ACTIVATED, REF AIP PAGE ENR 5.1.3-12."
     },
     "limits": {
       "lower": "GND",
-      "upper": "30000FT AMSL"
+      "upper": "12000FT AMSL"
     },
-    "last_seen_utc": "2026-07-12 08:25:27 UTC"
+    "last_seen_utc": "2026-07-12 08:30:44 UTC"
   }
 }
