@@ -3519,6 +3519,59 @@
     },
     "last_seen_utc": "2026-07-11 17:50:35 UTC"
   },
+  "OIIX A1522/26": {
+    "header": {
+      "id": "A1522/26",
+      "series": "A",
+      "number": "1522",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-12T09:20:00.000Z",
+      "validityEnd": "2026-10-12T12:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, MASHHAD MSSR RADAR DERIVED INFORMATION\r\nFOR EN-ROUTE AND APP NOT AVBL DUE TO MASHHAD MSSR RADAR U/S,\r\nRADAR SER IN SOME PARTS OF THE ACC SECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-07-12 09:30:39 UTC"
+  },
   "OIIX A1503/26": {
     "header": {
       "id": "A1503/26",
@@ -4253,58 +4306,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
-  },
-  "OIIX A1522/26": {
-    "header": {
-      "id": "A1522/26",
-      "series": "A",
-      "number": "1522",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCEAS/I/B/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CEAS",
-        "entity": "CE",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "En route surveillance radar",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-12T09:20:00.000Z",
-      "validityEnd": "2026-10-12T12:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 1.6-1, MASHHAD MSSR RADAR DERIVED INFORMATION\r\nFOR EN-ROUTE AND APP NOT AVBL DUE TO MASHHAD MSSR RADAR U/S,\r\nRADAR SER IN SOME PARTS OF THE ACC SECTOR 7 (FREQ 120.700 MHZ) \r\nMAY NOT BE AVBL."
-    },
-    "last_seen_utc": "2026-07-12 09:30:39 UTC"
   }
 }
