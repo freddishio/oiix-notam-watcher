@@ -19,11 +19,6 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026-04-26 06:55:23 UTC"
   },
-  "OIIX A0782/26": {
-    "explanation": "This is an important message for pilots flying in the Tehran airspace. Several specific high-frequency radio channels that pilots use to talk to Tehran air traffic information services are currently not working. This affects all types of flights, from the ground up to any altitude, and will last from April 20, 2026, until July 19, 2026. Pilots need to use alternative communication methods or frequencies during this time.",
-    "highest_level": "Third Level",
-    "last_seen_utc": "2026-04-20 09:30:26 UTC"
-  },
   "OIIX A0784/26": {
     "explanation": "This NOTAM announces a new, permanent controlled airspace established south of Tehran, Iran. This new area starts at 19,500 feet and extends upwards indefinitely. At 20,000 feet, it's designated as Class D airspace, meaning pilots must communicate with air traffic control. Above 20,000 feet, it becomes Class A airspace, which is highly controlled and primarily for instrument flights. Tehran Air Traffic Control will manage this area 24 hours a day on frequency 133.400 MHz, using English and Persian. This change is important for pilots flying through this region.",
     "highest_level": "Second Level",
@@ -359,6 +354,11 @@
     "highest_level": "Second Level",
     "last_seen_utc": "2026-07-03 03:05:24 UTC"
   },
+  "OIIX A1550/26": {
+    "explanation": "Foreign airlines and planes flying out of Iran, or flying through Iran's airspace, need to send their flight plans to a specific address (OIIXIFPS). Also, international flights coming into Iran must follow special rules found in Iran's aviation guide.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-14 10:30:35 UTC"
+  },
   "OIIX B0360/26": {
     "explanation": "There will be gun firing in a specific area in Iran on July 21, 2026, between 11:30 AM and 5:30 PM UTC. This activity will take place from the ground up to 10,000 feet above sea level.",
     "highest_level": "Second Level",
@@ -379,9 +379,9 @@
     "highest_level": "First Level",
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1550/26": {
-    "explanation": "Foreign airlines and planes flying out of Iran, or flying through Iran's airspace, need to send their flight plans to a specific address (OIIXIFPS). Also, international flights coming into Iran must follow special rules found in Iran's aviation guide.",
+  "OIIX A1551/26": {
+    "explanation": "This is an official notice for pilots flying in the Tehran airspace. It states that several specific high-frequency (HF) radio channels, which are used for communication with Tehran air traffic information, are currently not working. This means pilots cannot use these particular frequencies to talk to air traffic control. This situation started on July 14, 2026, and is expected to continue until October 12, 2026.",
     "highest_level": "Third Level",
-    "last_seen_utc": "2026-07-14 10:30:35 UTC"
+    "last_seen_utc": "2026-07-14 10:35:23 UTC"
   }
 }

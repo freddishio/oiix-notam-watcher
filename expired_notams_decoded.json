@@ -1,4 +1,68 @@
 {
+  "OIIX A0782/26": {
+    "header": {
+      "id": "A0782/26",
+      "series": "A",
+      "number": "0782",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A3715/25\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CAAS",
+        "entity": "CA",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "Air/ground facility (specify service and frequency)",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-05-20T08:00:00.000Z",
+      "validityEnd": "2026-08-19T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 2.1-1 TEHRAN FIR, TEHRAN INFO, \r\nHF FREQ 5658 KHZ, 5667 KHZ, 6925 KHZ, 8091 KHZ, 8918 KHZ,\r\n10018 KHZ, 13288 KHZ AND 13312 KHZ U/S."
+    },
+    "last_seen_utc": "2026-04-20 09:30:26 UTC",
+    "archived_utc": "2026-07-14 10:35:23 UTC"
+  },
   "OIIX A0781/26": {
     "header": {
       "id": "A0781/26",

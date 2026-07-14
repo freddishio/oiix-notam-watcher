@@ -198,69 +198,6 @@
     },
     "last_seen_utc": "2026-04-26 06:55:23 UTC"
   },
-  "OIIX A0782/26": {
-    "header": {
-      "id": "A0782/26",
-      "series": "A",
-      "number": "0782",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A3715/25\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CAAS",
-        "entity": "CA",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "Air/ground facility (specify service and frequency)",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-20T08:00:00.000Z",
-      "validityEnd": "2026-08-19T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 2.1-1 TEHRAN FIR, TEHRAN INFO, \r\nHF FREQ 5658 KHZ, 5667 KHZ, 6925 KHZ, 8091 KHZ, 8918 KHZ,\r\n10018 KHZ, 13288 KHZ AND 13312 KHZ U/S."
-    },
-    "last_seen_utc": "2026-04-20 09:30:26 UTC"
-  },
   "OIIX A0784/26": {
     "header": {
       "id": "A0784/26",
@@ -3969,6 +3906,43 @@
     },
     "last_seen_utc": "2026-07-03 03:05:24 UTC"
   },
+  "OIIX A1550/26": {
+    "header": {
+      "id": "A1550/26",
+      "series": "A",
+      "number": "1550",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0781/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QXXXX/ / / /000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "XXXX",
+        "entity": "XX",
+        "status": "XX",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-14T10:20:00.000Z",
+      "validityEnd": "2026-11-12T20:30:00.000Z"
+    },
+    "content": {
+      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
+    },
+    "last_seen_utc": "2026-07-14 10:30:35 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -4219,41 +4193,67 @@
     },
     "last_seen_utc": "2026/02/26 00:40:24"
   },
-  "OIIX A1550/26": {
+  "OIIX A1551/26": {
     "header": {
-      "id": "A1550/26",
+      "id": "A1551/26",
       "series": "A",
-      "number": "1550",
+      "number": "1551",
       "year": "26",
       "type": "NOTAMR",
       "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0781/26\r"
+      "idToReplace": "A0782/26\r"
     },
     "qualification": {
-      "line": "OIIX/QXXXX/ / / /000/999/",
+      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
       "location": "OIIX",
       "code": {
-        "code": "XXXX",
-        "entity": "XX",
-        "status": "XX",
-        "condition": "Other",
-        "modifier": "Plain language"
+        "code": "CAAS",
+        "entity": "CA",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "Air/ground facility (specify service and frequency)",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
       },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
       "limits": {
         "lower": "000",
         "upper": "999"
       }
     },
     "schedule": {
-      "activityStart": "2026-08-14T10:20:00.000Z",
+      "activityStart": "2026-08-14T10:27:00.000Z",
       "validityEnd": "2026-11-12T20:30:00.000Z"
     },
     "content": {
-      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
+      "text": "REF AIP PAGE ENR 2.1-1 TEHRAN FIR, TEHRAN INFO, \r\nHF FREQ 5658 KHZ, 5667 KHZ, 6925 KHZ, 8091 KHZ, 8918 KHZ,\r\n10018 KHZ, 13288 KHZ AND 13312 KHZ U/S."
     },
-    "last_seen_utc": "2026-07-14 10:30:35 UTC"
+    "last_seen_utc": "2026-07-14 10:35:23 UTC"
   }
 }
