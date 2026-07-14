@@ -198,74 +198,6 @@
     },
     "last_seen_utc": "2026-04-26 06:55:23 UTC"
   },
-  "OIIX A0781/26": {
-    "header": {
-      "id": "A0781/26",
-      "series": "A",
-      "number": "0781",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A3714/25\r"
-    },
-    "qualification": {
-      "line": "OIIX/QPLXX/IV/M  /E /000/999/3220N05324E631",
-      "location": "OIIX",
-      "code": {
-        "code": "PLXX",
-        "entity": "PL",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Air Traffic Procedures",
-        "subject": "Obstacle clearance limit (specify procedure)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "M",
-          "description": "Miscellaneous information"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "coordinates": [
-        [
-          32.333333,
-          53.4
-        ],
-        {
-          "radius": 631
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-05-20T07:51:00.000Z",
-      "validityEnd": "2026-08-19T20:30:00.000Z"
-    },
-    "content": {
-      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND\r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 .)"
-    },
-    "last_seen_utc": "2026-04-27 07:45:23 UTC"
-  },
   "OIIX A0782/26": {
     "header": {
       "id": "A0782/26",
@@ -4286,5 +4218,42 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026/02/26 00:40:24"
+  },
+  "OIIX A1550/26": {
+    "header": {
+      "id": "A1550/26",
+      "series": "A",
+      "number": "1550",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0781/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QXXXX/ / / /000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "XXXX",
+        "entity": "XX",
+        "status": "XX",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-14T10:20:00.000Z",
+      "validityEnd": "2026-11-12T20:30:00.000Z"
+    },
+    "content": {
+      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
+    },
+    "last_seen_utc": "2026-07-14 10:30:35 UTC"
   }
 }
