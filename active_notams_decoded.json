@@ -1485,27 +1485,6 @@
     },
     "last_seen_utc": "2026-06-08 10:40:26 UTC"
   },
-  "OIIX A1101/26": {
-    "header": {
-      "id": "A1101/26",
-      "series": "A",
-      "number": "1101",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/E//000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-02T06:02:00.000Z",
-      "validityEnd": "2026-09-25T23:59:00.000Z"
-    },
-    "content": {
-      "text": "CIVIL RPA AND DRONE ACT SUSPENDED WITHIN TEHRAN FIR,\nEXCEPT THOSE AGRICULTURAL SPRAYING FLT WITH MAX 165 FT HEIGHT AGL,\nBY PRIOR COORDINATION AND PERMISSION, \nACCORDING TO RELATED CAA CIRCULAR."
-    },
-    "last_seen_utc": "2026-06-08 10:40:26 UTC"
-  },
   "OIIX A1102/26": {
     "header": {
       "id": "",
@@ -4169,5 +4148,50 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-14 15:00:53 UTC"
+  },
+  "OIIX A1556/26": {
+    "header": {
+      "id": "A1556/26",
+      "series": "A",
+      "number": "1556",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1101/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-15T09:26:00.000Z",
+      "validityEnd": "2026-10-23T20:30:00.000Z"
+    },
+    "content": {
+      "text": "CIVIL RPA AND DRONE ACT SUSPENDED WITHIN TEHRAN FIR, \nEXCEPT THOSE AGRICULTURAL SPRAYING FLT AND PHOTOGRAPHY FLT \nWITH MAX HEIGHT 165 FT AGL, \nBY PRIOR COORDINATION AND PERMISSION, \nACCORDING TO RELATED CAA CIRCULAR."
+    },
+    "last_seen_utc": "2026-07-15 09:50:38 UTC"
   }
 }
