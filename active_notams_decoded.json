@@ -3896,6 +3896,32 @@
     },
     "last_seen_utc": "2026-07-15 09:50:38 UTC"
   },
+  "OIIX A1557/26": {
+    "header": {
+      "id": "A1557/26",
+      "series": "A",
+      "number": "1557",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1502/26"
+    },
+    "qualification": {
+      "line": "OIIX/QRMXX/////W/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-08-15T11:32:00.000Z",
+      "validityEnd": "2026-09-15T11:30:00.000Z"
+    },
+    "content": {
+      "text": "DUE TO MIL EXER AREA CLSD BOUNDED BY\nSERDU BONIK ORPEN DENSA EXCEPT FOR \nFLT ARRIVING TO OR DEPARTING FROM OIKQ."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-07-15 11:45:27 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -4145,31 +4171,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-14 15:00:53 UTC"
-  },
-  "OIIX A1557/26": {
-    "header": {
-      "id": "A1557/26",
-      "series": "A",
-      "number": "1557",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1502/26"
-    },
-    "qualification": {
-      "line": "OIIX/QRMXX/////W/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-08-15T11:32:00.000Z",
-      "validityEnd": "2026-09-15T11:30:00.000Z"
-    },
-    "content": {
-      "text": "DUE TO MIL EXER AREA CLSD BOUNDED BY\nSERDU BONIK ORPEN DENSA EXCEPT FOR \nFLT ARRIVING TO OR DEPARTING FROM OIKQ."
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-07-15 11:45:27 UTC"
   }
 }
