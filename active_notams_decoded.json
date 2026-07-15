@@ -3003,54 +3003,6 @@
     },
     "last_seen_utc": "2026-07-03 03:05:24 UTC"
   },
-  "OIIX A1502/26": {
-    "header": {
-      "id": "A1502/26",
-      "series": "A",
-      "number": "1502",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1490/26"
-    },
-    "qualification": {
-      "line": "OIIX/QRMXX///W/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "RMXX",
-        "entity": "RM",
-        "status": "XX",
-        "area": "Navigation Warnings",
-        "subArea": "Airspace Restrictions",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-11T17:38:00.000Z",
-      "validityEnd": "2026-08-14T09:30:00.000Z"
-    },
-    "content": {
-      "text": "DUE TO MIL EXER AREA CLSD BOUNDED BY\nSERDU BONIK ORPEN DENSA EXCEPT FOR \nFLT ARRIVING TO OR DEPARTING FROM OIKQ."
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026-07-11 17:50:35 UTC"
-  },
   "OIIX A1522/26": {
     "header": {
       "id": "A1522/26",
@@ -4193,5 +4145,31 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-14 15:00:53 UTC"
+  },
+  "OIIX A1557/26": {
+    "header": {
+      "id": "A1557/26",
+      "series": "A",
+      "number": "1557",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1502/26"
+    },
+    "qualification": {
+      "line": "OIIX/QRMXX/////W/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-08-15T11:32:00.000Z",
+      "validityEnd": "2026-09-15T11:30:00.000Z"
+    },
+    "content": {
+      "text": "DUE TO MIL EXER AREA CLSD BOUNDED BY\nSERDU BONIK ORPEN DENSA EXCEPT FOR \nFLT ARRIVING TO OR DEPARTING FROM OIKQ."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026-07-15 11:45:27 UTC"
   }
 }
