@@ -3892,6 +3892,28 @@
     },
     "last_seen_utc": "2026-07-16 14:15:31 UTC"
   },
+  "OIIX A1564/26": {
+    "header": {
+      "id": "A1564/26",
+      "series": "A",
+      "number": "1564",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0793/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX/////E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-08-16T14:52:00.000Z",
+      "validityEnd": "2026-11-14T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 3 DOM FLT TOS,\nCHANGE AS FLW:\n- NR 5 DOM FLT FM OIBK TO OIMM (PAGE 28)\n - RELEVANT SID PURNA A418 SOKEV W143 LAR Z5 LOSAN RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICC (PAGE 37)\n - RELEVANT SID KAVOT R659 ISNG202 KRD W158 BUBAV RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICK (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 NOTSARELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICI (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 ALTET RELEVANT STAR"
+    },
+    "last_seen_utc": "2026-07-16 15:05:30 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -4141,27 +4163,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-14 15:00:53 UTC"
-  },
-  "OIIX A1564/26": {
-    "header": {
-      "id": "A1564/26",
-      "series": "A",
-      "number": "1564",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0793/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX/////E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-08-16T14:52:00.000Z",
-      "validityEnd": "2026-11-14T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP SUP 13/25 TFC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nPART 3 DOM FLT TOS,\nCHANGE AS FLW:\n- NR 5 DOM FLT FM OIBK TO OIMM (PAGE 28)\n - RELEVANT SID PURNA A418 SOKEV W143 LAR Z5 LOSAN RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICC (PAGE 37)\n - RELEVANT SID KAVOT R659 ISNG202 KRD W158 BUBAV RELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICK (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 NOTSARELEVANT STAR\n- NR 35 DOM FLT FM OISS TO OICI (PAGE 37)\n - RELEVANT SID KAVOT R659 ISN G202 ALTET RELEVANT STAR"
-    },
-    "last_seen_utc": "2026-07-16 15:05:30 UTC"
   }
 }
