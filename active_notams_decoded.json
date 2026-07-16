@@ -3882,6 +3882,51 @@
     },
     "last_seen_utc": "2026-07-15 11:45:27 UTC"
   },
+  "OIIX B0365/26": {
+    "header": {
+      "id": "B0365/26",
+      "series": "B",
+      "number": "0365",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0187/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-16T14:01:00.000Z",
+      "validityEnd": "2026-11-14T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF SUP 13/25 TRAFFIC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nITEM 3-DOMESTIC FLIGHT TOS,\nTHE FOLLOWING STANDARD AND MANDATORY TRAFFIC ORIENTATION SCHEME\nBTN OIII AND OIMD ARE APPLICABLE:\n1. TRN DHN B411 GIBAB L333 TASLU,\n2. TRN DHN B411 GIBAB B411 MUSEG N567 TASLU."
+    },
+    "last_seen_utc": "2026-07-16 14:15:31 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -4131,50 +4176,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-14 15:00:53 UTC"
-  },
-  "OIIX B0365/26": {
-    "header": {
-      "id": "B0365/26",
-      "series": "B",
-      "number": "0365",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0187/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-16T14:01:00.000Z",
-      "validityEnd": "2026-11-14T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF SUP 13/25 TRAFFIC ORIENTATION SCHEME (TOS) WITHIN OIIX,\nITEM 3-DOMESTIC FLIGHT TOS,\nTHE FOLLOWING STANDARD AND MANDATORY TRAFFIC ORIENTATION SCHEME\nBTN OIII AND OIMD ARE APPLICABLE:\n1. TRN DHN B411 GIBAB L333 TASLU,\n2. TRN DHN B411 GIBAB B411 MUSEG N567 TASLU."
-    },
-    "last_seen_utc": "2026-07-16 14:15:31 UTC"
   }
 }
