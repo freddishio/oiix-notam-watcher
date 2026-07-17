@@ -4163,5 +4163,111 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-14 15:00:53 UTC"
+  },
+  "OIIX A1569/26": {
+    "header": {
+      "id": "A1569/26",
+      "series": "A",
+      "number": "1569",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-17T09:32:00.000Z",
+      "validityEnd": "2026-10-22T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, JIROFT MSSR RADAR DERIVED INFORMATION\r\nFOR EN-ROUTE NOT AVBL DUE TO JIROFT MSSR RADAR U/S, \r\nAND RADAR SER IN SOME PARTS OF THE ACC \r\nSECTOR 5 (FERQ 120.300 MHZ) AND \r\nSECTOR 6E (FREQ 123.900 MHZ) AND \r\nSECTOR 6W (FREQ 132.750 MHZ) \r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-07-17 09:50:31 UTC"
+  },
+  "OIIX A1570/26": {
+    "header": {
+      "id": "A1570/26",
+      "series": "A",
+      "number": "1570",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCEAS/I/B/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEAS",
+        "entity": "CE",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-17T09:36:00.000Z",
+      "validityEnd": "2026-10-22T08:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 1.6-1, IRAN SHAHR MSSR RADAR DERIVED INFORMATION \r\nFOR EN-ROUTE NOT AVBL DUE TO IRAN SHAHR MSSR RADAR U/S, \r\nAND RADAR SER IN SOME PARTS OF THE ACC\r\nSECTOR 5 (FREQ 120.300MHZ) AND\r\nSECTOR 6 (FREQ 123.900MHZ)\r\nMAY NOT BE AVBL."
+    },
+    "last_seen_utc": "2026-07-17 09:50:31 UTC"
   }
 }
