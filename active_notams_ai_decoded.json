@@ -149,16 +149,6 @@
     "highest_level": "Second Level",
     "last_seen_utc": "2026-06-08 17:20:31 UTC"
   },
-  "KICZ A0016/20": {
-    "explanation": "This is a security warning from the U.S. government (FAA) for American airlines, pilots, and aircraft flying over the Persian Gulf and Gulf of Oman. Due to ongoing military activity and political tensions in the region, they should be very careful. They are advised to avoid routes close to Iranian airspace if possible, be aware of potential GPS and communication problems, and report any safety or security issues to the FAA. A previous ban on flying in Iranian airspace is still active.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-07-14 15:00:53 UTC"
-  },
-  "KICZ A0011/24": {
-    "explanation": "The United States has issued a warning that bans certain flights from flying in the airspace over Tehran, Iran. This ban started on October 4, 2024, and will remain in effect until October 31, 2027. This is a special rule from the U.S. aviation authority, and pilots and airlines must read the full details of this regulation.",
-    "highest_level": "First Level",
-    "last_seen_utc": "2026-07-14 15:00:53 UTC"
-  },
   "OIIX A1189/26": {
     "explanation": "Iran's airspace has new temporary rules for planes flying over it, specifically above 28,500 feet. All previous rules for these overflights are suspended. New, specific routes must be followed for planes traveling between Afghanistan and Azerbaijan through Iranian airspace during what's called a 'recovery period'. This change is in effect from June 8th to June 29th, 2026.",
     "highest_level": "First Level",
@@ -308,5 +298,95 @@
     "explanation": "This is an aviation warning about gun firing activities in a specific area within Iran. The activities will take place daily from July 14 to July 20, 2026, between 03:30 AM and 06:30 PM UTC. The affected area extends from the ground up to 13,000 feet above sea level.",
     "highest_level": "Second Level",
     "last_seen_utc": "2026-07-18 09:25:54 UTC"
+  },
+  "KICZ A0016/20": {
+    "explanation": "This is a security warning from the U.S. government (FAA) for American airlines, pilots, and aircraft flying over the Persian Gulf and Gulf of Oman. Due to ongoing military activity and political tensions in the region, they should be very careful. They are advised to avoid routes close to Iranian airspace if possible, be aware of potential GPS and communication problems, and report any safety or security issues to the FAA. A previous ban on flying in Iranian airspace is still active.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-07-14 15:00:53 UTC"
+  },
+  "KICZ A0011/24": {
+    "explanation": "The United States has issued a warning that bans certain flights from flying in the airspace over Tehran, Iran. This ban started on October 4, 2024, and will remain in effect until October 31, 2027. This is a special rule from the U.S. aviation authority, and pilots and airlines must read the full details of this regulation.",
+    "highest_level": "First Level",
+    "last_seen_utc": "2026-07-14 15:00:53 UTC"
+  },
+  "OIIX A1518/26": {
+    "explanation": "An area in the Tehran region, identified as OID121, will be restricted for aircraft from July 14th to July 20th, 2026. During these dates, no aircraft are allowed to fly in this area from the ground up to 30,000 feet, daily between 03:30 AM and 07:30 PM UTC. This is a warning for all pilots.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1520/26": {
+    "explanation": "A specific danger zone in Iranian airspace, called OID127, will be active on July 26th, 2026, from 3:30 AM to 7:30 PM UTC. This area extends from the ground up to 12,000 feet above sea level. Pilots flying in this region should be aware of this activated danger area.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1368/26": {
+    "explanation": "From July 14 to July 19, 2026, a specific area in the sky over Iran, known as OID125, will be restricted for aircraft. This restriction will be in effect daily between 4:30 AM and 6:30 PM UTC, from the ground up to 18,000 feet. Pilots must avoid this area during these times.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1372/26": {
+    "explanation": "A specific area of airspace, likely called 'OID 130', will be restricted or dangerous for flights. This restriction will be active daily from July 14th to July 19th, 2026, between 5:30 AM and 11:30 AM UTC. The restricted area extends from the ground up to 13,000 feet above sea level. Pilots should check their aviation charts for the exact location and details.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1550/26": {
+    "explanation": "Foreign airlines and aircraft flying into, out of, or through Iran's airspace must now send their flight plans and updates to a specific address (OIIXIFPS). Additionally, all international flights in these categories must follow special procedures detailed in Iran's aviation rulebook (AIP ENR 1.11). This is a new procedural requirement for international flights.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1551/26": {
+    "explanation": "Several high-frequency radio channels that aircraft use to communicate with air traffic control in the Tehran flight information region are currently out of service. This affects all flights in the area, from the ground up to any altitude, and is expected to last from July 14, 2026, until October 12, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1552/26": {
+    "explanation": "This is an announcement about a new controlled airspace being set up south of Tehran, Iran. It will be active from July 14 to October 12, 2026. This new area starts at 19,500 feet above sea level and goes upwards indefinitely. Pilots flying through this space will need to communicate with Tehran Radar on 133.400 MHz and follow specific air traffic rules, as the airspace is classified as Class D at 20,000 feet and Class A above that.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1553/26": {
+    "explanation": "This is an official notice for pilots flying in Iran. It announces a change to one of the radio frequencies used by air traffic controllers. Specifically, the frequency for 'Sector 7' (a specific area of airspace) is changing from 302.400 MHz to 258.400 MHz. This change is temporary, lasting from July 14, 2026, to October 12, 2026. Pilots need to use the new frequency to communicate with air traffic control in that sector.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1556/26": {
+    "explanation": "All drones and remote-controlled aircraft are banned from flying in the airspace around Tehran. The only exceptions are specific agricultural spraying and photography flights, but these need special permission and must stay below 165 feet above the ground.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1557/26": {
+    "explanation": "An area of airspace is closed from July 15 to August 15, 2026, due to military exercises. This closure affects flights from the ground up to unlimited altitude within the specified boundaries (SERDU, BONIK, ORPEN, DENSA). However, flights going to or from OIKQ airport are still allowed.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX B0365/26": {
+    "explanation": "This is an update about specific flight paths that planes must follow when flying domestically between Tehran Imam Khomeini International Airport (OIII) and Mashhad International Airport (OIMD) in Iran. It's a mandatory set of routes to help manage air traffic.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1564/26": {
+    "explanation": "This is an important update for pilots flying within Iran. It announces changes to specific flight paths (routes for taking off and landing) for certain domestic flights between cities like Kerman, Mashhad, Shiraz, Bandar Abbas, Kish Island, and Chabahar. These changes are part of a larger plan to manage air traffic more efficiently and safely, and pilots must follow these new procedures starting from July 16, 2026, until October 14, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1569/26": {
+    "explanation": "A radar system called Jiroft MSSR is currently broken and will be out of service from July 17, 2026, until September 22, 2026. This means that air traffic controllers will not be able to use radar to track planes flying en-route in the affected areas. Additionally, radar services might not be available in specific air traffic control sectors (Sector 5, Sector 6E, and Sector 6W). Pilots and air traffic control will need to rely on other methods for navigation and separation in these areas.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1570/26": {
+    "explanation": "A radar system in Iran (Iran Shahr MSSR) is currently broken and cannot provide information for planes flying on routes. This also means that air traffic controllers in specific areas (Sector 5 and Sector 6) might not have radar services available. This situation is expected to last from July 17, 2026, until September 22, 2026.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX B0360/26": {
+    "explanation": "On July 21, 2026, from 11:30 AM to 5:30 PM UTC, there will be gun firing in a specific area. This activity will take place from the ground up to 10,000 feet above sea level.",
+    "highest_level": "Second Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
+  },
+  "OIIX A1371/26": {
+    "explanation": "This notice informs pilots and aviation personnel that a scheduled update to aviation charts and information, which was expected on September 3, 2026, will not be published. This means there will be no new changes to the official aviation documents on that date, and everyone should continue to use the existing information.",
+    "highest_level": "Third Level",
+    "last_seen_utc": "2026-07-18 09:35:27 UTC"
   }
 }
