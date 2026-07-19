@@ -1888,69 +1888,6 @@
     },
     "last_seen_utc": "2026-07-18 13:20:26 UTC"
   },
-  "OIIX B0298/26": {
-    "header": {
-      "id": "B0298/26",
-      "series": "B",
-      "number": "0298",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0297/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFLV",
-        "entity": "AF",
-        "status": "LV",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Limitations",
-        "modifier": "Closed to VFR operations"
-      },
-      "traffic": [
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-07-22T17:54:00.000Z",
-      "validityEnd": "2026-10-19T08:30:00.000Z"
-    },
-    "content": {
-      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT: \r\n- OIIP, OINJ, OIYR, OIYP, OISO, OINN, OINR, OINE, OIKK, OIMN, OIMG, \r\n  OIMS AND OIMM WITHIN ATZ FOR TRAINING FLT, AND \r\n- THOSE FLT ENGAGED IN HOSP, SAR, STATE, AND MILITARY OPERATION, \r\n- OTHER VFR FLT REQUIRE PRIOR PERMISSION FROM \r\n  CIVIL AVIATION AUTHORITY, \r\n- IFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT NEED TO \r\n  BE CHANGED TO VFR DURING ARRIVAL AND DEPARTURE, \r\n  ARE NOT SUBJECT TO THIS LIMITATION."
-    },
-    "last_seen_utc": "2026-07-18 13:20:26 UTC"
-  },
   "OIIX A1334/26": {
     "header": {
       "id": "A1334/26",
@@ -4184,5 +4121,68 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-18 14:00:28 UTC"
+  },
+  "OIIX B0375/26": {
+    "header": {
+      "id": "B0375/26",
+      "series": "B",
+      "number": "0375",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0298/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-19T15:09:00.000Z",
+      "validityEnd": "2026-10-19T08:30:00.000Z"
+    },
+    "content": {
+      "text": "OPERATION OF ALL GENERAL AVIATION AND VFR FLT SUSPENDED EXCEPT: \r\n- OIHR, OITT, OIIB, OIIP, OINJ, OIYR, OIYP, OISO, OINN, OINR,\r\nOINE, OIKK, OIMN, OIMG, \r\n  OIMS AND OIMM WITHIN ATZ FOR TRAINING FLT, AND \r\n- THOSE FLT ENGAGED IN HOSP, SAR, STATE, AND MILITARY OPERATION, \r\n- OTHER VFR FLT REQUIRE PRIOR PERMISSION FROM \r\n  CIVIL AVIATION AUTHORITY, \r\n- IFR FLIGHTS TO/FROM AIRPORTS WITH NO NAVAID THAT NEED TO \r\n  BE CHANGED TO VFR DURING ARRIVAL AND DEPARTURE, \r\n  ARE NOT SUBJECT TO THIS LIMITATION."
+    },
+    "last_seen_utc": "2026-07-19 15:20:26 UTC"
   }
 }
