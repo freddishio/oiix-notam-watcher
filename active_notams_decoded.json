@@ -3913,6 +3913,28 @@
     },
     "last_seen_utc": "2026-07-18 14:00:28 UTC"
   },
+  "OIIX A1587/26": {
+    "header": {
+      "id": "A1587/26",
+      "series": "A",
+      "number": "1587",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0863/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX////E/000/999/"
+    },
+    "schedule": {
+      "activityStart": "2026-08-19T12:36:00.000Z",
+      "validityEnd": "2026-11-17T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP SUP 13/25 TRAFFIC ORIENTATION SCHEME (TOS) WI OIIX,\nITEM 3-DOMESTIC FLIGHT TOS,\nTHE FLW STD AND MANDATORY TRAFFIC ORIENTATION SCHEME\nARE APPLICABLE:\nFM OISS TO OIMM:\n- RELEVANT SID KINOT G663 ORSOK G202 VEGUN Z5 LOSAN\nFM OIBB TO OIMM:\n- RELEVANT SID KUGVU W23 SYZ G663 ORSOK G202 VEGUN Z5 LOSAN\nFM OIYY TO OIMM:\n- RELEVANT SID BOMIT G663 ORSOK G202 VEGUN Z5 LOSAN RELEVANT STAR"
+    },
+    "last_seen_utc": "2026-07-19 12:50:25 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -4162,27 +4184,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-18 14:00:28 UTC"
-  },
-  "OIIX A1587/26": {
-    "header": {
-      "id": "A1587/26",
-      "series": "A",
-      "number": "1587",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0863/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX////E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-08-19T12:36:00.000Z",
-      "validityEnd": "2026-11-17T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP SUP 13/25 TRAFFIC ORIENTATION SCHEME (TOS) WI OIIX,\nITEM 3-DOMESTIC FLIGHT TOS,\nTHE FLW STD AND MANDATORY TRAFFIC ORIENTATION SCHEME\nARE APPLICABLE:\nFM OISS TO OIMM:\n- RELEVANT SID KINOT G663 ORSOK G202 VEGUN Z5 LOSAN\nFM OIBB TO OIMM:\n- RELEVANT SID KUGVU W23 SYZ G663 ORSOK G202 VEGUN Z5 LOSAN\nFM OIYY TO OIMM:\n- RELEVANT SID BOMIT G663 ORSOK G202 VEGUN Z5 LOSAN RELEVANT STAR"
-    },
-    "last_seen_utc": "2026-07-19 12:50:25 UTC"
   }
 }
