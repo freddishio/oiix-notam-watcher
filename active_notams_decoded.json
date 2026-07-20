@@ -4185,5 +4185,91 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
+  },
+  "OIIX A1589/26": {
+    "header": {
+      "id": "A1589/26",
+      "series": "A",
+      "number": "1589",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/400/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "400"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA :\r\n250559N 0603759E\r\n251800N 0603759E\r\n251800N 0601359E\r\n250600N 0601359E\r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          25.084722,
+          60.633056
+        ],
+        [
+          25.3,
+          60.633056
+        ],
+        [
+          25.3,
+          60.233056
+        ],
+        [
+          25.1,
+          60.233056
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "40000FT AMSL"
+    },
+    "last_seen_utc": "2026-07-20 11:20:25 UTC"
   }
 }
