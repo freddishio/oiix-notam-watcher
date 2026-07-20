@@ -1,347 +1,4 @@
 {
-  "KICZ A0016/20": {
-    "header": {
-      "id": "",
-      "type": "A0016/20"
-    },
-    "qualification": {
-      "line": "KICZ/QRDLD/IV/NBO/AE/000/999/",
-      "location": "KICZ",
-      "code": {
-        "code": "RDLD",
-        "entity": "RD",
-        "status": "LD",
-        "area": "Navigation Warnings",
-        "subArea": "Airspace Restrictions",
-        "subject": "Danger area (specify national prefix and number)",
-        "condition": "Limitations",
-        "modifier": "Unsafe"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2020-03-17T19:54:00.000Z",
-      "validityEnd": null,
-      "permanent": true
-    },
-    "content": {
-      "text": "SECURITY..UNITED STATES OF AMERICA ADVISORY FOR OVERWATER\nAIRSPACE ABOVE THE PERSIAN GULF AND THE GULF OF OMAN.\nTHOSE PERSONS DESCRIBED IN PARAGRAPH A BELOW SHOULD EXERCISE CAUTION\nWHEN OPERATING IN OVERWATER AIRSPACE ABOVE THE PERSIAN GULF AND THE\nGULF OF OMAN IN THE KUWAIT FLIGHT INFORMATION REGION (FIR) (OKAC),\nJEDDAH FIR (OEJD) , BAHRAIN FIR (OBBB), EMIRATES FIR (OMAE), AND\nMUSCAT FIR (OOMM) DUE TO CONTINUED ELEVATED MILITARY POSTURING AND\nPOLITICAL TENSIONS IN THE REGION. NOTAM KICZ A0002/20, WHICH\nPROHIBITS U.S. CIVIL AVIATION OPERATIONS IN THE TEHRAN FIR (OIIX),\nREMAINS IN EFFECT UNTIL FURTHER NOTICE.\nA. APPLICABILITY. \nTHIS NOTAM APPLIES TO: ALL U.S. AIR CARRIERS AND\nCOMMERCIAL OPERATORS; ALL PERSONS EXERCISING THE PRIVILEGES OF AN\nAIRMAN CERTIFICATE ISSUED BY THE FAA, EXCEPT SUCH PERSONS OPERATING\nU.S. REGISTERED AIRCRAFT FOR A FOREIGN AIR CARRIER; AND ALL\nOPERATORS OF AIRCRAFT REGISTERED IN THE UNITED STATES, EXCEPT WHERE\nTHE OPERATOR OF SUCH AIRCRAFT IS A FOREIGN AIR CARRIER.\n\nEND PART 1 OF 2\r\nA0016/20 NOTAMN\nQ) KICZ/QRDLD/IV/NBO/AE/000/999/\nA) KICZ PART 2 OF 2\nB) 2002171954\nC) PERM\nE) B. PLANNING. \nTHOSE PERSONS DESCRIBED IN PARAGRAPH A PLANNING TO\nOPERATE IN THE ABOVE-NAMED AREA MUST REVIEW CURRENT SECURITY/THREAT\nINFORMATION AND NOTAMS AND COMPLY WITH ALL APPLICABLE FAA\nREGULATIONS, OPERATIONS SPECIFICATIONS, MANAGEMENT SPECIFICATIONS,\nAND LETTERS OF AUTHORIZATION, INCLUDING UPDATING B450.\nC. OPERATIONS.  AVOID AIR ROUTES NEAREST TO THE TEHRAN FIR (OIIX)\nBOUNDARY, WHENEVER POSSIBLE, TO REDUCE THE RISK OF MISCALCULATION OR\nMISIDENTIFICATION BY AIR DEFENSE SYSTEMS.  ADDITIONALLY, AIRCRAFT\nOPERATING IN THE ABOVE-NAMED AREA MAY ENCOUNTER INADVERTENT GPS\nINTERFERENCE AND OTHER COMMUNICATIONS JAMMING, WHICH COULD OCCUR\nWITH LITTLE OR NO WARNING.  THOSE PERSONS DESCRIBED IN PARAGRAPH A\nMUST REPORT SAFETY AND/OR SECURITY INCIDENTS TO THE FAA AT +1\n202-267-3333.\nADDITIONAL INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
-    },
-    "limits": {
-      "lower": "SFC",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026/02/23 20:30:29",
-    "archived_utc": "2026/02/25 23:55:15"
-  },
-  "KICZ A0011/24": {
-    "header": {
-      "id": "A0011/24",
-      "series": "A",
-      "number": "0011",
-      "year": "24",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "KICZ/QRDLP/IV/NBO/AE/000/999/",
-      "location": "KICZ",
-      "code": {
-        "code": "RDLP",
-        "entity": "RD",
-        "status": "LP",
-        "area": "Navigation Warnings",
-        "subArea": "Airspace Restrictions",
-        "subject": "Danger area (specify national prefix and number)",
-        "condition": "Limitations",
-        "modifier": "Prohibited to"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "N",
-          "description": "Selected for the immediate attention to aircraft operators"
-        },
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2024-11-04T15:30:00.000Z",
-      "validityEnd": "2027-12-01T23:59:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "UNITED STATES OF AMERICA FLIGHT PROHIBITION AGAINST CERTAIN\nFLIGHTS IN THE TEHRAN FLIGHT INFORMATION REGION (FIR) (OIIX).\n14 CFR 91.1617 SPECIAL FEDERAL AVIATION REGULATION (SFAR) NO.\n117--PROHIBITION AGAINST CERTAIN FLIGHTS IN THE TEHRAN FLIGHT\nINFORMATION REGION (FIR) (OIIX) WAS PUBLISHED IN THE FEDERAL\nREGISTER ON 3 OCT 2024 AND WAS EFFECTIVE ON 3 OCT 2024. OPERATORS\nARE DIRECTED TO READ THE FULL CONTENT OF THE RULE.\nTHIS INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
-    },
-    "limits": {
-      "lower": "SFC",
-      "upper": "UNL"
-    },
-    "last_seen_utc": "2026/02/23 20:30:29",
-    "archived_utc": "2026/02/25 23:55:15"
-  },
-  "OIIX B0358/26": {
-    "header": {
-      "id": "B0358/26",
-      "series": "B",
-      "number": "0358",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0350/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QKKKK/K/K/K/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "KKKK"
-      },
-      "traffic": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "scope": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-13T07:30:00.000Z",
-      "validityEnd": "2026-08-21T07:30:00.000Z"
-    },
-    "content": {
-      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0135 0136 0177 0179 0187 0188 0189 0190 0199\r\n0201 0202 0204 0205 0207 0213 0214 0215 0216 0217 0218 \r\n0219 0220 0221 0222 0223 0224 0225 0226 0227 0228 0229 \r\n0230 0231 0232 0233 0234 0235 0236 0237 0238 0239 0240 \r\n0241 0242 0243 0244 0247 0248 0251 0252 0254 0255 0298 \r\n0299 0310 0319 0322 0326 0328 0330 0331 0332 0333 0334 \r\n0335 0336 0337 0338 0346 0347 0348 0349 0351 0356 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 \r\n12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n09 JUL 2026 AND 06 AUG 2026 AND 03 SEP 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
-    },
-    "last_seen_utc": "2026-07-13 07:35:25 UTC",
-    "archived_utc": "2026-07-18 09:20:56 UTC"
-  },
-  "OIIX A1537/26": {
-    "header": {
-      "id": "",
-      "type": "A1537/26"
-    },
-    "qualification": {
-      "line": "OIIX/QKKKK/K/K/K/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "KKKK"
-      },
-      "traffic": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "scope": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-13T07:30:00.000Z",
-      "validityEnd": "2026-08-21T07:30:00.000Z"
-    },
-    "content": {
-      "text": "CHECKLIST\nYEAR=2022 0253 1415 1416 1417 1418 1892\nYEAR=2023 1718 1719 1720 1721 2113 2496\nYEAR=2024 1456 3358 4458 4459 4460 4461\nYEAR=2025 2322 2572 2776 3524 3526 3607\n3608 3903 4009\nYEAR=2026 0113 0233 0263 0390 0392 0489 0561\n0601 0637 0695 0703  0778 0779 0780 0781 0782 0784 0785 0787\n0788 0789 0790  0791 0793 0794 0818 0819 0820 0821 0822 0824\n0825 0828  0829 0830 0835 0836 0854 0863 0868 0869 0870 0872\n0873  0874 0878 0883 0886 0891 0892 0893 0896 0902 0903 0904\n0905 0906 0907 0908 0909 0910 0912 0923 0924 0925 0938  0940\n0951 0953 0954 0955 0956 0957 0958 0959 0960 0961  0963 0964\n0965 0973 0974 0976 0977 0983 0985 0986 0987  0990 0991 0997\n1003 1005 1006 1007 1008 1018 1019 1051  1052 1053 1054 1055\n1056 1058 1062 1073 1077 1082 1101  1102 1112 1113 1128 1129\n1170 1183 1185 1186 1187 1188  1189 1190 1191 1192 1194 1202\n1293 1303 1306 1309 1311 1312 1313 1314 1315 1316 1317 1330\n1334 1335 1342 1355 1368 1370 1371 1372 1373 1374 1375 1376\n1377 1378 1381 1395 1399 1403 1406 1410 1412 1413 1417 1418\n1419 1421 1422 1423 1424 1425 1426 1427 1428 1429 1430 1436\n1437 1438 1455 1456 1457 1458 1462 1463 1472 1482 1484 1485\n1488 1489 1492 1498 1499 1501 1502 1503 1504 1505 1506 1507 END PART 1 OF 2\r\nA1537/26 NOTAMR A1469/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2607130730  C) 2607210730EST  E) 1516 1517 1518 1519 1520 1522 1532 1533 1534 1535 1536\nLATEST AIP AMENDMENTS AIRAC AIP AMDT 1/26 WEF 19 FEB 2026\nAIP AMDT 1/20 01 JAN 2020 CHECKLIST OF AIP SUP AND AIC\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25\n7/25 12/25 13/25 1/26 2/26 AIP SUP: 2/23 9/25 AIC: 2/08\n3/08 4/08 5/08 9/08 1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE 09 JUL\n2026 AND 06 AUG 2026 AND 03 SEP 2026 NOTE: ONLY NOTAM CLASS\nTWO 34/1989 IS VALID.1203 1205 1257 END PART 2 OF 2"
-    },
-    "last_seen_utc": "2026-07-13 07:40:35 UTC",
-    "archived_utc": "2026-07-18 09:20:56 UTC"
-  },
-  "OIIX A1550/26": {
-    "header": {
-      "id": "A1550/26",
-      "series": "A",
-      "number": "1550",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0781/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QXXXX/ / / /000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "XXXX",
-        "entity": "XX",
-        "status": "XX",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-14T10:20:00.000Z",
-      "validityEnd": "2026-11-12T20:30:00.000Z"
-    },
-    "content": {
-      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
-    },
-    "last_seen_utc": "2026-07-14 10:30:35 UTC",
-    "archived_utc": "2026-07-18 09:20:56 UTC"
-  },
-  "OIIX A1551/26": {
-    "header": {
-      "id": "A1551/26",
-      "series": "A",
-      "number": "1551",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A0782/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CAAS",
-        "entity": "CA",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "Air/ground facility (specify service and frequency)",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-14T10:27:00.000Z",
-      "validityEnd": "2026-11-12T20:30:00.000Z"
-    },
-    "content": {
-      "text": "REF AIP PAGE ENR 2.1-1 TEHRAN FIR, TEHRAN INFO, \r\nHF FREQ 5658 KHZ, 5667 KHZ, 6925 KHZ, 8091 KHZ, 8918 KHZ,\r\n10018 KHZ, 13288 KHZ AND 13312 KHZ U/S."
-    },
-    "last_seen_utc": "2026-07-14 10:35:23 UTC",
-    "archived_utc": "2026-07-18 09:20:56 UTC"
-  },
   "OIIX A1552/26": {
     "header": {
       "id": "A1552/26",
@@ -841,6 +498,99 @@
     "last_seen_utc": "2026-07-19 15:20:26 UTC",
     "archived_utc": "2026-07-20 04:01:27 UTC"
   },
+  "OIIX A1588/26": {
+    "header": {
+      "id": "",
+      "type": "A1588/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-20T07:30:00.000Z",
+      "validityEnd": "2026-08-28T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST\nYEAR=2022 0253 1415 1416 1417 1418 1892\nYEAR=2023 1718 1719 1720 1721 2113 2496\nYEAR=2024 1456 3358 4458 4459 4460 4461\nYEAR=2025 2572 2776 3524 3526 3607 3608 3903 4009\nYEAR=2026 0113 0233 0263 0390 0392 0489 0561 0601\n0637 0695 0703 0818 0819 0820 0821 0822 0824 0825 0828 0829\n0830 0835 0836 0868 0869 0870 0874 0878 0883 0886 0891 0892\n0893 0896 0902 0903 0904 0905 0906 0907 0908 0909 0910 0912\n0923 0924 0925 0938 0940 0951 0953 0954 0955 0956 0957 0958\n0959 0960 0961 0963 0964 0965 0973 0974 0976 0977 0985 0986\n0987 0990 0991 0997 1003 1005 1006 1008 1018 1019 1051 1053\n1054 1055 1056 1058 1062 1073 1077 1082 1102 1112 1113 1128\n1129 1170 1183 1185 1186 1187 1188 1189 1190 1191 1192 1194\n1202 1203 1205 1257 1293 1303 1306 1309 1311 1312 1313 1314\n1315 1316 1317 1330 1334 1335 1342 1355 1370 1371 1373 1374\n1375 1376 1377 1378 1381 1395 1399 1403 1410 1412 1413 1417\n1418 1419 1421 1422 1423 1424 1425 1426 1427 1428 1429 1430\n1436 1437 1438 1455 1456 1457 1458 1462 1463 1472 1484 1488\n1489 1507 1516 1517 1518 1519 1520 1522 1533 1534 1542 1543\n1545 1546 1547 1549 1550 1551 1552 1553 1554 1555 1556 1557\n1561 1562 1563 1564 1565 1566 1569 1570 1572 1573 1576 1580\n1581 1582 END PART 1 OF 2\r\nA1588/26 NOTAMR A1537/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2607200730  C) 2607280730EST  E) 1583 1584 1585 1586 1587\n\nLATEST AIP AMENDMENTS\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 AIP AMDT 1/20 01 JAN\n2020 CHECKLIST OF AIP SUP AND AIC AIRAC AIP SUP: 6/19 9/19\n11/19 12/19 11/21 22/21 10/24 3/25 7/25 12/25 13/25 1/26\n2/26 AIP SUP: 2/23 9/25 AIC: 2/08 3/08 4/08 5/08 9/08 1/14\n2/14 1/15 2/18 2/20 2/23 3/23 1/24 NO AIRAC AIP AMDT WILL BE\nPUBLISHED ON AIRAC EFFECTIVE 09 JUL 2026 AND 06 AUG 2026 AND\n03 SEP 2026 NOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID. END PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-07-20 07:35:30 UTC",
+    "archived_utc": "2026-07-20 09:16:29 UTC"
+  },
+  "OIIX B0378/26": {
+    "header": {
+      "id": "B0378/26",
+      "series": "B",
+      "number": "0378",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0358/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-20T07:30:00.000Z",
+      "validityEnd": "2026-08-28T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0135 0136 0177 0179 0199 0204 0205 0207 0213 \r\n0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 0224 \r\n0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 \r\n0236 0237 0238 0239 0240 0241 0242 0243 0244 0247 0248 \r\n0251 0252 0254 0255 0299 0310 0322 0326 0328 0330 0331 \r\n0332 0333 0336 0337 0338 0346 0347 0349 0351 0356 0360 \r\n0361 0362 0363 0364 0365 0366 0367 0368 0370 0371 0372 \r\n0375 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25\r\n 12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n09 JUL 2026 AND 06 AUG 2026 AND 03 SEP 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-07-20 07:40:25 UTC",
+    "archived_utc": "2026-07-20 09:16:29 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -925,6 +675,45 @@
     "last_seen_utc": "2026-07-14 07:20:37 UTC",
     "archived_utc": "2026-07-18 09:20:56 UTC"
   },
+  "OIIX A1203/26": {
+    "header": {
+      "id": "A1203/26",
+      "series": "A",
+      "number": "1203",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QOAXX/A/000/999///",
+      "location": "OIIX",
+      "code": {
+        "code": "OAXX",
+        "entity": "OA",
+        "status": "XX",
+        "area": "Other Information",
+        "subject": "Aeronautical information service",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "",
+        "upper": ""
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-09-06T00:00:00.000Z",
+      "validityEnd": "2026-09-19T23:59:00.000Z"
+    },
+    "content": {
+      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n DATE 06 AUG 2026"
+    },
+    "last_seen_utc": "2026-06-09 09:35:27 UTC",
+    "archived_utc": "2026-07-03 03:01:03 UTC"
+  },
   "OIIX A1371/26": {
     "header": {
       "id": "A1371/26",
@@ -946,6 +735,349 @@
     },
     "last_seen_utc": "2026-06-28 07:05:29 UTC",
     "archived_utc": "2026-07-03 03:01:03 UTC"
+  },
+  "KICZ A0016/20": {
+    "header": {
+      "id": "",
+      "type": "A0016/20"
+    },
+    "qualification": {
+      "line": "KICZ/QRDLD/IV/NBO/AE/000/999/",
+      "location": "KICZ",
+      "code": {
+        "code": "RDLD",
+        "entity": "RD",
+        "status": "LD",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Limitations",
+        "modifier": "Unsafe"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2020-03-17T19:54:00.000Z",
+      "validityEnd": null,
+      "permanent": true
+    },
+    "content": {
+      "text": "SECURITY..UNITED STATES OF AMERICA ADVISORY FOR OVERWATER\nAIRSPACE ABOVE THE PERSIAN GULF AND THE GULF OF OMAN.\nTHOSE PERSONS DESCRIBED IN PARAGRAPH A BELOW SHOULD EXERCISE CAUTION\nWHEN OPERATING IN OVERWATER AIRSPACE ABOVE THE PERSIAN GULF AND THE\nGULF OF OMAN IN THE KUWAIT FLIGHT INFORMATION REGION (FIR) (OKAC),\nJEDDAH FIR (OEJD) , BAHRAIN FIR (OBBB), EMIRATES FIR (OMAE), AND\nMUSCAT FIR (OOMM) DUE TO CONTINUED ELEVATED MILITARY POSTURING AND\nPOLITICAL TENSIONS IN THE REGION. NOTAM KICZ A0002/20, WHICH\nPROHIBITS U.S. CIVIL AVIATION OPERATIONS IN THE TEHRAN FIR (OIIX),\nREMAINS IN EFFECT UNTIL FURTHER NOTICE.\nA. APPLICABILITY. \nTHIS NOTAM APPLIES TO: ALL U.S. AIR CARRIERS AND\nCOMMERCIAL OPERATORS; ALL PERSONS EXERCISING THE PRIVILEGES OF AN\nAIRMAN CERTIFICATE ISSUED BY THE FAA, EXCEPT SUCH PERSONS OPERATING\nU.S. REGISTERED AIRCRAFT FOR A FOREIGN AIR CARRIER; AND ALL\nOPERATORS OF AIRCRAFT REGISTERED IN THE UNITED STATES, EXCEPT WHERE\nTHE OPERATOR OF SUCH AIRCRAFT IS A FOREIGN AIR CARRIER.\n\nEND PART 1 OF 2\r\nA0016/20 NOTAMN\nQ) KICZ/QRDLD/IV/NBO/AE/000/999/\nA) KICZ PART 2 OF 2\nB) 2002171954\nC) PERM\nE) B. PLANNING. \nTHOSE PERSONS DESCRIBED IN PARAGRAPH A PLANNING TO\nOPERATE IN THE ABOVE-NAMED AREA MUST REVIEW CURRENT SECURITY/THREAT\nINFORMATION AND NOTAMS AND COMPLY WITH ALL APPLICABLE FAA\nREGULATIONS, OPERATIONS SPECIFICATIONS, MANAGEMENT SPECIFICATIONS,\nAND LETTERS OF AUTHORIZATION, INCLUDING UPDATING B450.\nC. OPERATIONS.  AVOID AIR ROUTES NEAREST TO THE TEHRAN FIR (OIIX)\nBOUNDARY, WHENEVER POSSIBLE, TO REDUCE THE RISK OF MISCALCULATION OR\nMISIDENTIFICATION BY AIR DEFENSE SYSTEMS.  ADDITIONALLY, AIRCRAFT\nOPERATING IN THE ABOVE-NAMED AREA MAY ENCOUNTER INADVERTENT GPS\nINTERFERENCE AND OTHER COMMUNICATIONS JAMMING, WHICH COULD OCCUR\nWITH LITTLE OR NO WARNING.  THOSE PERSONS DESCRIBED IN PARAGRAPH A\nMUST REPORT SAFETY AND/OR SECURITY INCIDENTS TO THE FAA AT +1\n202-267-3333.\nADDITIONAL INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
+    },
+    "limits": {
+      "lower": "SFC",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026/02/23 20:30:29",
+    "archived_utc": "2026/02/25 23:55:15"
+  },
+  "KICZ A0011/24": {
+    "header": {
+      "id": "A0011/24",
+      "series": "A",
+      "number": "0011",
+      "year": "24",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "KICZ/QRDLP/IV/NBO/AE/000/999/",
+      "location": "KICZ",
+      "code": {
+        "code": "RDLP",
+        "entity": "RD",
+        "status": "LP",
+        "area": "Navigation Warnings",
+        "subArea": "Airspace Restrictions",
+        "subject": "Danger area (specify national prefix and number)",
+        "condition": "Limitations",
+        "modifier": "Prohibited to"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2024-11-04T15:30:00.000Z",
+      "validityEnd": "2027-12-01T23:59:00.000Z",
+      "estimated": true
+    },
+    "content": {
+      "text": "UNITED STATES OF AMERICA FLIGHT PROHIBITION AGAINST CERTAIN\nFLIGHTS IN THE TEHRAN FLIGHT INFORMATION REGION (FIR) (OIIX).\n14 CFR 91.1617 SPECIAL FEDERAL AVIATION REGULATION (SFAR) NO.\n117--PROHIBITION AGAINST CERTAIN FLIGHTS IN THE TEHRAN FLIGHT\nINFORMATION REGION (FIR) (OIIX) WAS PUBLISHED IN THE FEDERAL\nREGISTER ON 3 OCT 2024 AND WAS EFFECTIVE ON 3 OCT 2024. OPERATORS\nARE DIRECTED TO READ THE FULL CONTENT OF THE RULE.\nTHIS INFORMATION IS PROVIDED AT:\nHTTPS://WWW.FAA.GOV/AIR_TRAFFIC/PUBLICATIONS/US_RESTRICTIONS/"
+    },
+    "limits": {
+      "lower": "SFC",
+      "upper": "UNL"
+    },
+    "last_seen_utc": "2026/02/23 20:30:29",
+    "archived_utc": "2026/02/25 23:55:15"
+  },
+  "OIIX B0358/26": {
+    "header": {
+      "id": "B0358/26",
+      "series": "B",
+      "number": "0358",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0350/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-13T07:30:00.000Z",
+      "validityEnd": "2026-08-21T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0135 0136 0177 0179 0187 0188 0189 0190 0199\r\n0201 0202 0204 0205 0207 0213 0214 0215 0216 0217 0218 \r\n0219 0220 0221 0222 0223 0224 0225 0226 0227 0228 0229 \r\n0230 0231 0232 0233 0234 0235 0236 0237 0238 0239 0240 \r\n0241 0242 0243 0244 0247 0248 0251 0252 0254 0255 0298 \r\n0299 0310 0319 0322 0326 0328 0330 0331 0332 0333 0334 \r\n0335 0336 0337 0338 0346 0347 0348 0349 0351 0356 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25 \r\n12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n09 JUL 2026 AND 06 AUG 2026 AND 03 SEP 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-07-13 07:35:25 UTC",
+    "archived_utc": "2026-07-18 09:20:56 UTC"
+  },
+  "OIIX A1537/26": {
+    "header": {
+      "id": "",
+      "type": "A1537/26"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-13T07:30:00.000Z",
+      "validityEnd": "2026-08-21T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST\nYEAR=2022 0253 1415 1416 1417 1418 1892\nYEAR=2023 1718 1719 1720 1721 2113 2496\nYEAR=2024 1456 3358 4458 4459 4460 4461\nYEAR=2025 2322 2572 2776 3524 3526 3607\n3608 3903 4009\nYEAR=2026 0113 0233 0263 0390 0392 0489 0561\n0601 0637 0695 0703  0778 0779 0780 0781 0782 0784 0785 0787\n0788 0789 0790  0791 0793 0794 0818 0819 0820 0821 0822 0824\n0825 0828  0829 0830 0835 0836 0854 0863 0868 0869 0870 0872\n0873  0874 0878 0883 0886 0891 0892 0893 0896 0902 0903 0904\n0905 0906 0907 0908 0909 0910 0912 0923 0924 0925 0938  0940\n0951 0953 0954 0955 0956 0957 0958 0959 0960 0961  0963 0964\n0965 0973 0974 0976 0977 0983 0985 0986 0987  0990 0991 0997\n1003 1005 1006 1007 1008 1018 1019 1051  1052 1053 1054 1055\n1056 1058 1062 1073 1077 1082 1101  1102 1112 1113 1128 1129\n1170 1183 1185 1186 1187 1188  1189 1190 1191 1192 1194 1202\n1293 1303 1306 1309 1311 1312 1313 1314 1315 1316 1317 1330\n1334 1335 1342 1355 1368 1370 1371 1372 1373 1374 1375 1376\n1377 1378 1381 1395 1399 1403 1406 1410 1412 1413 1417 1418\n1419 1421 1422 1423 1424 1425 1426 1427 1428 1429 1430 1436\n1437 1438 1455 1456 1457 1458 1462 1463 1472 1482 1484 1485\n1488 1489 1492 1498 1499 1501 1502 1503 1504 1505 1506 1507 END PART 1 OF 2\r\nA1537/26 NOTAMR A1469/26 Q) OIIX/QKKKK/K/K/K/000/999/ A) OIIX  PART 2 OF 2  B) 2607130730  C) 2607210730EST  E) 1516 1517 1518 1519 1520 1522 1532 1533 1534 1535 1536\nLATEST AIP AMENDMENTS AIRAC AIP AMDT 1/26 WEF 19 FEB 2026\nAIP AMDT 1/20 01 JAN 2020 CHECKLIST OF AIP SUP AND AIC\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25\n7/25 12/25 13/25 1/26 2/26 AIP SUP: 2/23 9/25 AIC: 2/08\n3/08 4/08 5/08 9/08 1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE 09 JUL\n2026 AND 06 AUG 2026 AND 03 SEP 2026 NOTE: ONLY NOTAM CLASS\nTWO 34/1989 IS VALID.1203 1205 1257 END PART 2 OF 2"
+    },
+    "last_seen_utc": "2026-07-13 07:40:35 UTC",
+    "archived_utc": "2026-07-18 09:20:56 UTC"
+  },
+  "OIIX A1550/26": {
+    "header": {
+      "id": "A1550/26",
+      "series": "A",
+      "number": "1550",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0781/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QXXXX/ / / /000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "XXXX",
+        "entity": "XX",
+        "status": "XX",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-14T10:20:00.000Z",
+      "validityEnd": "2026-11-12T20:30:00.000Z"
+    },
+    "content": {
+      "text": "FOREIGN AIRLINES AND ACFT OPS DEPARTING\r\nFM IRANIAN AIRPORTS ARE REQUIRED\r\nTO ADDRESS FPL AND RELATIVE UPDATES TO ADDRESS OIIXIFPS,\r\nFOR TRANSITING INTL FLT VIA TEHRAN FIR AND \r\nINTL INBOUND TFC TO IRANIAN AIRPORTS\r\nSHALL FLW PROCEDURE SPECIFIED IN IRAN AIP ENR 1.11 ."
+    },
+    "last_seen_utc": "2026-07-14 10:30:35 UTC",
+    "archived_utc": "2026-07-18 09:20:56 UTC"
+  },
+  "OIIX A1551/26": {
+    "header": {
+      "id": "A1551/26",
+      "series": "A",
+      "number": "1551",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A0782/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CAAS",
+        "entity": "CA",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "Air/ground facility (specify service and frequency)",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-14T10:27:00.000Z",
+      "validityEnd": "2026-11-12T20:30:00.000Z"
+    },
+    "content": {
+      "text": "REF AIP PAGE ENR 2.1-1 TEHRAN FIR, TEHRAN INFO, \r\nHF FREQ 5658 KHZ, 5667 KHZ, 6925 KHZ, 8091 KHZ, 8918 KHZ,\r\n10018 KHZ, 13288 KHZ AND 13312 KHZ U/S."
+    },
+    "last_seen_utc": "2026-07-14 10:35:23 UTC",
+    "archived_utc": "2026-07-18 09:20:56 UTC"
   },
   "OIIX A1368/26": {
     "header": {
@@ -5074,45 +5206,6 @@
     },
     "last_seen_utc": "2026-07-07 10:20:41 UTC",
     "archived_utc": "2026-07-13 07:40:35 UTC"
-  },
-  "OIIX A1203/26": {
-    "header": {
-      "id": "A1203/26",
-      "series": "A",
-      "number": "1203",
-      "year": "26",
-      "type": "NOTAMN",
-      "typeDesc": "New NOTAM"
-    },
-    "qualification": {
-      "line": "OIIX/QOAXX/A/000/999///",
-      "location": "OIIX",
-      "code": {
-        "code": "OAXX",
-        "entity": "OA",
-        "status": "XX",
-        "area": "Other Information",
-        "subject": "Aeronautical information service",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [],
-      "limits": {
-        "lower": "",
-        "upper": ""
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-09-06T00:00:00.000Z",
-      "validityEnd": "2026-09-19T23:59:00.000Z"
-    },
-    "content": {
-      "text": "NIL NOTIFICATION:\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\n DATE 06 AUG 2026"
-    },
-    "last_seen_utc": "2026-06-09 09:35:27 UTC",
-    "archived_utc": "2026-07-03 03:01:03 UTC"
   },
   "OIIX B0350/26": {
     "header": {
