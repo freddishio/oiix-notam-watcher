@@ -3534,6 +3534,94 @@
     },
     "last_seen_utc": "2026-07-21 11:20:23 UTC"
   },
+  "OIIX B0382/26": {
+    "header": {
+      "id": "B0382/26",
+      "series": "B",
+      "number": "0382",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0248/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/150/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "150"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-21T04:52:00.000Z",
+      "validityEnd": "2026-09-01T18:30:00.000Z",
+      "elements": [
+        "JUL 21 22 0330-1830 JUL 26 - AUG 01 0330-1830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n370500N 0454500E \r\n370000N 0453000E \r\n370000N 0450500E \r\n371000N 0453000E \r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          37.083333,
+          45.75
+        ],
+        [
+          37,
+          45.5
+        ],
+        [
+          37,
+          45.083333
+        ],
+        [
+          37.166667,
+          45.5
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "15000 FT AMSL"
+    },
+    "last_seen_utc": "2026-07-21 11:30:34 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -3766,6 +3854,89 @@
       "text": "REF NOTAM A1589/26,\r\n-AWY A791 BTN KINOX AND EGPIC\r\n-AWY R554 BTN DENDA AND CBH DVOR/DME\r\n-AWY W2 BTN MESPO AND CBH DVOR/DME \r\n ARE CLSD."
     },
     "last_seen_utc": "2026-07-20 11:30:25 UTC"
+  },
+  "OIIX B0383/26": {
+    "header": {
+      "id": "B0383/26",
+      "series": "B",
+      "number": "0383",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/080/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "080"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-29T03:30:00.000Z",
+      "validityEnd": "2026-08-29T19:30:00.000Z"
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD: \r\n254410N  0575455E \r\n254223N  0575340E \r\n254205N  0575250E \r\n254415N  0575310E \r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          25.733611,
+          57.915278
+        ],
+        [
+          25.700556,
+          57.894444
+        ],
+        [
+          25.7,
+          57.880556
+        ],
+        [
+          25.733611,
+          57.886111
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "8000 FT AMSL"
+    },
+    "last_seen_utc": "2026-07-21 11:30:34 UTC"
   },
   "OIIX A1203/26": {
     "header": {
@@ -4002,176 +4173,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
-  },
-  "OIIX B0382/26": {
-    "header": {
-      "id": "B0382/26",
-      "series": "B",
-      "number": "0382",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0248/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/150/",
-      "location": "OIIX",
-      "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "150"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-21T04:52:00.000Z",
-      "validityEnd": "2026-09-01T18:30:00.000Z",
-      "elements": [
-        "JUL 21 22 0330-1830 JUL 26 - AUG 01 0330-1830"
-      ]
-    },
-    "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n370500N 0454500E \r\n370000N 0453000E \r\n370000N 0450500E \r\n371000N 0453000E \r\nTO THE POINT OF ORIGIN.",
-      "area": [
-        [
-          37.083333,
-          45.75
-        ],
-        [
-          37,
-          45.5
-        ],
-        [
-          37,
-          45.083333
-        ],
-        [
-          37.166667,
-          45.5
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "15000 FT AMSL"
-    },
-    "last_seen_utc": "2026-07-21 11:30:34 UTC"
-  },
-  "OIIX B0383/26": {
-    "header": {
-      "id": "B0383/26",
-      "series": "B",
-      "number": "0383",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/080/",
-      "location": "OIIX",
-      "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "080"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-29T03:30:00.000Z",
-      "validityEnd": "2026-08-29T19:30:00.000Z"
-    },
-    "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD: \r\n254410N  0575455E \r\n254223N  0575340E \r\n254205N  0575250E \r\n254415N  0575310E \r\nTO THE POINT OF ORIGIN.",
-      "area": [
-        [
-          25.733611,
-          57.915278
-        ],
-        [
-          25.700556,
-          57.894444
-        ],
-        [
-          25.7,
-          57.880556
-        ],
-        [
-          25.733611,
-          57.886111
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "8000 FT AMSL"
-    },
-    "last_seen_utc": "2026-07-21 11:30:34 UTC"
   }
 }
