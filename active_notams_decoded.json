@@ -4173,5 +4173,73 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
+  },
+  "OIIX B0392/26": {
+    "header": {
+      "id": "B0392/26",
+      "series": "B",
+      "number": "0392",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/400/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "400"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1589/26, \r\nALL VFR SUSPENDED WI MENTIONED AREA."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "40000 FT AMSL"
+    },
+    "last_seen_utc": "2026-07-21 11:40:28 UTC"
   }
 }
