@@ -3559,6 +3559,67 @@
     },
     "last_seen_utc": "2026-07-20 09:35:22 UTC"
   },
+  "OIIX A1592/26": {
+    "header": {
+      "id": "A1592/26",
+      "series": "A",
+      "number": "1592",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CAAS",
+        "entity": "CA",
+        "status": "AS",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "Air/ground facility (specify service and frequency)",
+        "condition": "Availability",
+        "modifier": "Unserviceable"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        }
+      ],
+      "scope": [
+        {
+          "code": "A",
+          "description": "Aerodrome"
+        },
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-21T03:05:00.000Z",
+      "validityEnd": "2026-08-21T14:30:00.000Z"
+    },
+    "content": {
+      "text": "RCAG SHIRAZ FREQ 126.900 MHZ, FREQ 258.400 MHZ,\r\nFREQ 128.750 MHZ SECTOR 3,\r\nAND FREQ 133.400 MHZ, FREQ 258.400 MHZ SECTOR 4 U/S"
+    },
+    "last_seen_utc": "2026-07-21 11:20:23 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
@@ -4027,66 +4088,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
-  },
-  "OIIX A1592/26": {
-    "header": {
-      "id": "A1592/26",
-      "series": "A",
-      "number": "1592",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QCAAS/IV/B/AE/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "CAAS",
-        "entity": "CA",
-        "status": "AS",
-        "area": "CNS",
-        "subArea": "Communications and Surveillance Facilities",
-        "subject": "Air/ground facility (specify service and frequency)",
-        "condition": "Availability",
-        "modifier": "Unserviceable"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        }
-      ],
-      "scope": [
-        {
-          "code": "A",
-          "description": "Aerodrome"
-        },
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-21T03:05:00.000Z",
-      "validityEnd": "2026-08-21T14:30:00.000Z"
-    },
-    "content": {
-      "text": "RCAG SHIRAZ FREQ 126.900 MHZ, FREQ 258.400 MHZ,\r\nFREQ 128.750 MHZ SECTOR 3,\r\nAND FREQ 133.400 MHZ, FREQ 258.400 MHZ SECTOR 4 U/S"
-    },
-    "last_seen_utc": "2026-07-21 11:20:23 UTC"
   }
 }
