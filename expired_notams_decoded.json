@@ -1,4 +1,88 @@
 {
+  "OIIX B0360/26": {
+    "header": {
+      "id": "B0360/26",
+      "series": "B",
+      "number": "0360",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/100/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "100"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-21T11:30:00.000Z",
+      "validityEnd": "2026-08-21T17:30:00.000Z"
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n254234N  0580008E\r\n254145N  0580045E\r\n253629N  0575601E\r\n253951N  0575326E\r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          25.700833,
+          58.002222
+        ],
+        [
+          25.684444,
+          58.0125
+        ],
+        [
+          25.600556,
+          57.933611
+        ],
+        [
+          25.651389,
+          57.890556
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "10000 FT AMSL"
+    },
+    "last_seen_utc": "2026-07-14 07:20:37 UTC",
+    "archived_utc": "2026-07-18 09:20:56 UTC"
+  },
   "OIIX A1311/26": {
     "header": {
       "id": "A1311/26",
@@ -2266,90 +2350,6 @@
     },
     "last_seen_utc": "2026-07-20 07:40:25 UTC",
     "archived_utc": "2026-07-20 09:16:29 UTC"
-  },
-  "OIIX B0360/26": {
-    "header": {
-      "id": "B0360/26",
-      "series": "B",
-      "number": "0360",
-      "year": "26",
-      "type": "NOTAMN\r"
-    },
-    "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/100/",
-      "location": "OIIX",
-      "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
-      },
-      "traffic": [
-        {
-          "code": "I",
-          "description": "IFR Traffic"
-        },
-        {
-          "code": "V",
-          "description": "VFR Traffic"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "B",
-          "description": "For inclusion in Preflight Infomation Bulletins"
-        },
-        {
-          "code": "O",
-          "description": "Operationally significant for IFR flights"
-        }
-      ],
-      "scope": [
-        {
-          "code": "W",
-          "description": "Navigational warnings"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "100"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-21T11:30:00.000Z",
-      "validityEnd": "2026-08-21T17:30:00.000Z"
-    },
-    "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n254234N  0580008E\r\n254145N  0580045E\r\n253629N  0575601E\r\n253951N  0575326E\r\nTO THE POINT OF ORIGIN.",
-      "area": [
-        [
-          25.700833,
-          58.002222
-        ],
-        [
-          25.684444,
-          58.0125
-        ],
-        [
-          25.600556,
-          57.933611
-        ],
-        [
-          25.651389,
-          57.890556
-        ]
-      ]
-    },
-    "limits": {
-      "lower": "GND",
-      "upper": "10000 FT AMSL"
-    },
-    "last_seen_utc": "2026-07-14 07:20:37 UTC",
-    "archived_utc": "2026-07-18 09:20:56 UTC"
   },
   "OIIX A1203/26": {
     "header": {
