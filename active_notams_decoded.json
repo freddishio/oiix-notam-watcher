@@ -1751,35 +1751,6 @@
     },
     "last_seen_utc": "2026-07-20 09:25:58 UTC"
   },
-  "OIIX A1311/26": {
-    "header": {
-      "id": "A1311/26",
-      "series": "A",
-      "number": "1311",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1181/26"
-    },
-    "qualification": {
-      "line": "OIIX/QCEXX//E/000/999/"
-    },
-    "schedule": {
-      "activityStart": "2026-07-22T11:38:00.000Z",
-      "validityEnd": "2026-10-19T08:30:00.000Z",
-      "estimated": true
-    },
-    "content": {
-      "text": "AREA WITHIN TEHRAN FIR FM  331147N \n0461217E-ALTET-EGVEL-RERET-YZD-NALBI-RIGUT-IVIVA  THENCE \nALONG TEHRAN FIR BOUNDARY TO THE POINT OF ORIGIN,  ALL ACFT \n(IFR AND VFR) SHALL BE EQUIPPED WITH SSR TRANSPONDER  MODE S \nWITH ADS-B CAPABILITY OR ADS-B WITH DEDICATED 1090 MHZ ADS-B  \nOUT CAPABILITY, EXCEPT FOR THOSE FLT ENGAGED IN HOSP \nOPERATION.",
-      "area": [
-        [
-          33.184444,
-          46.204722
-        ]
-      ]
-    },
-    "last_seen_utc": "2026-07-20 09:25:58 UTC"
-  },
   "OIIX A1316/26": {
     "header": {
       "id": "A1316/26",
@@ -4373,5 +4344,60 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
+  },
+  "OIIX A1599/26": {
+    "header": {
+      "id": "A1599/26",
+      "series": "A",
+      "number": "1599",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1311/26"
+    },
+    "qualification": {
+      "line": "OIIX/QCEXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "CEXX",
+        "entity": "CE",
+        "status": "XX",
+        "area": "CNS",
+        "subArea": "Communications and Surveillance Facilities",
+        "subject": "En route surveillance radar",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-21T11:50:00.000Z",
+      "validityEnd": "2026-10-19T08:30:00.000Z"
+    },
+    "content": {
+      "text": "IN AREA WITHIN TEHRAN FIR\n FM 331147N 0461217E-ALTET-EGVEL-RERET-YZD-ZAL-\n311854N 0614709E THENCE CLOCKWISE ALONG TEHRAN FIR BOUNDARY \nTO THE POINT OF ORIGIN, ALL ACFT SHALL \nBE EQUIPPED WITH SSR TRANSPONDER\nMODE S WITH ADS-B CAPABILITY OR ADS-B WITH DEDICATED 1090 MHZ\nADS-B OUT CAPABILITY, EXCEPT FOR:\n- FLT WITH PRIOR PERMISSION FM CIVIL AVIATION AUTHORITY,\n- FLT ENGAGED IN HOSP OPERATION,\n- FLT ARRIVING TO OR DEPARTING FROM OIKK, OIZH AND OIZB,\nACFT IDENTIFICATION USED IN FLT SHOULD BE ENTERED\n (THROUGH THE FMS OR THE TRANSPONDER CONTROL PANEL).",
+      "area": [
+        [
+          33.184444,
+          46.204722
+        ],
+        [
+          31.301389,
+          61.785833
+        ]
+      ]
+    },
+    "last_seen_utc": "2026-07-21 13:10:38 UTC"
   }
 }
