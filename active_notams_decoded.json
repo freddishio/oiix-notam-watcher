@@ -3626,6 +3626,51 @@
     },
     "last_seen_utc": "2026-07-21 13:10:38 UTC"
   },
+  "OIIX A1614/26": {
+    "header": {
+      "id": "A1614/26",
+      "series": "A",
+      "number": "1614",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "A1316/26"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-22T11:33:00.000Z",
+      "validityEnd": "2026-09-22T08:30:00.000Z"
+    },
+    "content": {
+      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND PART OF OMAN SEA \nWEST OF MERIDIAN 059E AS THE RESULT OF SECURITY REASON."
+    },
+    "last_seen_utc": "2026-07-22 11:45:24 UTC"
+  },
   "OIIX A1589/26": {
     "header": {
       "id": "A1589/26",
@@ -4298,50 +4343,5 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
-  },
-  "OIIX A1614/26": {
-    "header": {
-      "id": "A1614/26",
-      "series": "A",
-      "number": "1614",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "A1316/26"
-    },
-    "qualification": {
-      "line": "OIIX/QAFXX///E/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "AFXX",
-        "entity": "AF",
-        "status": "XX",
-        "area": "ATM",
-        "subArea": "Airspace Organization",
-        "subject": "Flight information region (FIR)",
-        "condition": "Other",
-        "modifier": "Plain language"
-      },
-      "traffic": [],
-      "purpose": [],
-      "scope": [
-        {
-          "code": "E",
-          "description": "En-route information"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-22T11:33:00.000Z",
-      "validityEnd": "2026-09-22T08:30:00.000Z"
-    },
-    "content": {
-      "text": "CAUTION TO ALL FLIGHTS, NEAR CONFLICT ZONE MAY BE EXTENDED OVER \nHIGH SEAS WITHIN TEHRAN FIR IN PERSIAN GULF AND PART OF OMAN SEA \nWEST OF MERIDIAN 059E AS THE RESULT OF SECURITY REASON."
-    },
-    "last_seen_utc": "2026-07-22 11:45:24 UTC"
   }
 }
