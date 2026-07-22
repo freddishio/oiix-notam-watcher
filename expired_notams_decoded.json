@@ -1,4 +1,69 @@
 {
+  "OIIX A1590/26": {
+    "header": {
+      "id": "A1590/26",
+      "series": "A",
+      "number": "1590",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1589/26,\r\n-AWY A791 BTN KINOX AND EGPIC\r\n-AWY R554 BTN DENDA AND CBH DVOR/DME\r\n-AWY W2 BTN MESPO AND CBH DVOR/DME \r\n ARE CLSD."
+    },
+    "last_seen_utc": "2026-07-20 11:30:25 UTC",
+    "archived_utc": "2026-07-22 08:50:28 UTC"
+  },
   "OIIX B0360/26": {
     "header": {
       "id": "B0360/26",
