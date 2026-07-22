@@ -4316,5 +4316,73 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
+  },
+  "OIIX A1608/26": {
+    "header": {
+      "id": "A1608/26",
+      "series": "A",
+      "number": "1608",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1589/26,\r\n-AWY A791 BTN KINOX AND EGPIC\r\n-AWY R654 BTN DENDA AND CBH DVOR/DME\r\n-AWY W2 BTN MESPO AND CBH DVOR/DME\r\n ARE CLSD."
+    },
+    "last_seen_utc": "2026-07-22 08:45:33 UTC"
   }
 }
