@@ -3881,5 +3881,49 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
+  },
+  "OIIX A1618/26": {
+    "header": {
+      "id": "A1618/26",
+      "series": "A",
+      "number": "1618",
+      "year": "26",
+      "type": "NOTAMN",
+      "typeDesc": "New NOTAM"
+    },
+    "qualification": {
+      "line": "OIIX/QAFXX///E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFXX",
+        "entity": "AF",
+        "status": "XX",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Other",
+        "modifier": "Plain language"
+      },
+      "traffic": [],
+      "purpose": [],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-23T00:00:00.000Z",
+      "validityEnd": "2026-11-21T00:00:00.000Z"
+    },
+    "content": {
+      "text": "NEW TEMP TOS ARE ESTABLISHED AND AVBL BTN TEHRAN OIIX FIR AND\n  BAGHDAD ORBB FIR\nABOVE FL195 AS FOLLOWING:\n- ALI DCT ILMAP P975 ULDUR DCT GABSU DCT MAH THEN ALONG AVBL\n TOS TO DESTINATION\nFOR TRAFFIC FROM ORNI TO AD WITHIN TEHRAN FIR, \nTRAFFIC SHALL CONTACT TEHRAN ACC 40NM PRIOR TO GABSU ON FREQ\n 126.900 MHZ.\n- FM DEPARTURE PROCEED ALONG AVBL TOS TO ABD DCT BSR DCT GADSI\n L602 ALPET DCT ALI,\nFOR TRAFFIC FROM AD WITHIN TEHRAN FIR TO ORNI,\nTRAFFIC SHALL CONTACT BAGHDAD ACC 20 NM PRIOR TO\n ABD ON FREQ 128.700 MHZ."
+    },
+    "last_seen_utc": "2026-07-22 19:45:27 UTC"
   }
 }
