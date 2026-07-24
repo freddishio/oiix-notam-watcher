@@ -384861,5 +384861,72 @@
     "time_utc": "2026-07-24 22:15:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1784931628,
+    "time_utc": "2026-07-24 22:20:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40d60e29",
+        "callsign": "MRJ4802",
+        "flight": "MRJ4802",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 61,
+        "speed": 487,
+        "lat": 34.049,
+        "lon": 47.725,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d60233",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 27150,
+        "track": 76,
+        "speed": 517,
+        "lat": 34.924,
+        "lon": 49.899,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d5ef52",
+        "callsign": "VRH6809",
+        "flight": "VRH6809",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 25100,
+        "track": 151,
+        "speed": 350,
+        "lat": 35.835,
+        "lon": 50.63,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d60399",
+        "callsign": "TBZ5683",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 11,
+        "speed": 450,
+        "lat": 33.584,
+        "lon": 52.401,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
