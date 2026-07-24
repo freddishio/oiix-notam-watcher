@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783120234,
-    "time_utc": "2026-07-03 23:10:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783120527,
     "time_utc": "2026-07-03 23:15:27 UTC",
     "count": 3,
@@ -385213,5 +385207,42 @@
     "time_utc": "2026-07-24 23:10:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1784934924,
+    "time_utc": "2026-07-24 23:15:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40d627ab",
+        "callsign": "0TKN3103",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 295,
+        "speed": 12,
+        "lat": 35.721,
+        "lon": 51.224,
+        "airline": "0TK",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40d64ce5",
+        "callsign": "IZG9040",
+        "flight": "ZO9040",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 292,
+        "speed": 0,
+        "lat": 35.682,
+        "lon": 51.334,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
