@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783111524,
-    "time_utc": "2026-07-03 20:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783111835,
     "time_utc": "2026-07-03 20:50:35 UTC",
     "count": 0,
@@ -384512,5 +384506,57 @@
     "time_utc": "2026-07-24 20:40:33 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1784925928,
+    "time_utc": "2026-07-24 20:45:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40d5b509",
+        "callsign": "TKN3280",
+        "flight": "TKN3280",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 30625,
+        "track": 344,
+        "speed": 440,
+        "lat": 37.007,
+        "lon": 49.73,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d4ca31",
+        "callsign": "IRM1103",
+        "flight": "W51103",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 284,
+        "speed": 0,
+        "lat": 36.055,
+        "lon": 51.013,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d5883f",
+        "callsign": "MRJ4801",
+        "flight": "MRJ4801",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 244,
+        "speed": 443,
+        "lat": 33.497,
+        "lon": 45.848,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
