@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783114828,
-    "time_utc": "2026-07-03 21:40:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783115125,
     "time_utc": "2026-07-03 21:45:25 UTC",
     "count": 1,
@@ -384647,6 +384641,58 @@
         "lon": 53.065,
         "airline": "Karun Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1784929230,
+    "time_utc": "2026-07-24 21:40:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40d5d27f",
+        "callsign": "PFI7404",
+        "flight": "FP7404",
+        "type": "B733",
+        "reg": "EP-FPC",
+        "category": "Commercial",
+        "alt": 5950,
+        "track": 287,
+        "speed": 224,
+        "lat": 35.638,
+        "lon": 51.472,
+        "airline": "Aerolineas Chihuahua Al Pacifico",
+        "country": "Mexico"
+      },
+      {
+        "id": "40d5d911",
+        "callsign": "KRU2662",
+        "flight": "KRU2662",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 315,
+        "speed": 425,
+        "lat": 34.712,
+        "lon": 52.57,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d5f3c8",
+        "callsign": "C5SUA",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 32350,
+        "track": 79,
+        "speed": 485,
+        "lat": 35.407,
+        "lon": 53.713,
+        "airline": "C5S",
+        "country": "Unknown Location"
       }
     ]
   }
