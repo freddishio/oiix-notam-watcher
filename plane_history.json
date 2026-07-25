@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1783128634,
-    "time_utc": "2026-07-04 01:30:34 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "407ec829",
-        "callsign": "AXV9214",
-        "flight": "AXV9214",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 29975,
-        "track": 310,
-        "speed": 439,
-        "lat": 36.936,
-        "lon": 48.908,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "407edf2a",
-        "callsign": "TKN3287",
-        "flight": "TKN3287",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 3400,
-        "track": 90,
-        "speed": 0,
-        "lat": 35.69,
-        "lon": 51.31,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783128926,
     "time_utc": "2026-07-04 01:35:26 UTC",
     "count": 4,
@@ -385026,5 +384989,72 @@
     "time_utc": "2026-07-25 01:30:33 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1784943323,
+    "time_utc": "2026-07-25 01:35:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40d6a54a",
+        "callsign": "TBZ5658",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 8875,
+        "track": 224,
+        "speed": 258,
+        "lat": 35.637,
+        "lon": 51.12,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d6a515",
+        "callsign": "MRJ2804",
+        "flight": "MRJ2804",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 16575,
+        "track": 104,
+        "speed": 20,
+        "lat": 35.672,
+        "lon": 51.36,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d68ae6",
+        "callsign": "SHI7301",
+        "flight": "IS7301",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 259,
+        "speed": 436,
+        "lat": 35.64,
+        "lon": 53.755,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d69bfe",
+        "callsign": "IZG3004",
+        "flight": "ZO3004",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 250,
+        "speed": 457,
+        "lat": 34.914,
+        "lon": 48.723,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
