@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1783204842,
-    "time_utc": "2026-07-04 22:40:42 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "4081c07f",
-        "callsign": "IRB9721",
-        "flight": "B99721",
-        "type": "A310",
-        "reg": "EP-MDH",
-        "category": "Commercial",
-        "alt": 28875,
-        "track": 316,
-        "speed": 420,
-        "lat": 34.803,
-        "lon": 52.471,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783205123,
-    "time_utc": "2026-07-04 22:45:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783205436,
     "time_utc": "2026-07-04 22:50:36 UTC",
     "count": 1,
@@ -385698,5 +385670,57 @@
     "time_utc": "2026-07-25 22:40:32 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785019525,
+    "time_utc": "2026-07-25 22:45:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40d9e4f5",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 109,
+        "speed": 495,
+        "lat": 37.105,
+        "lon": 47.221,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da258f",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 25550,
+        "track": 76,
+        "speed": 488,
+        "lat": 34.954,
+        "lon": 49.975,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1216",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 0,
+        "lat": 35.696,
+        "lon": 51.27,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
