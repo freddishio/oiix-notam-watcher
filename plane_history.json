@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783198850,
-    "time_utc": "2026-07-04 21:00:50 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783199127,
     "time_utc": "2026-07-04 21:05:27 UTC",
     "count": 1,
@@ -385019,6 +385013,73 @@
         "lon": 51.337,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785013524,
+    "time_utc": "2026-07-25 21:05:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40d990e6",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 22125,
+        "track": 123,
+        "speed": 444,
+        "lat": 35.783,
+        "lon": 50.276,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9ec45",
+        "callsign": "IZG3023",
+        "flight": "ZO3023",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 62,
+        "speed": 488,
+        "lat": 34.363,
+        "lon": 48.434,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9d640",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 11000,
+        "track": 347,
+        "speed": 310,
+        "lat": 35.366,
+        "lon": 51.63,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9b910",
+        "callsign": "SHI7317",
+        "flight": "IS7317",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 317,
+        "speed": 455,
+        "lat": 33.611,
+        "lon": 53.784,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
       }
     ]
   }
