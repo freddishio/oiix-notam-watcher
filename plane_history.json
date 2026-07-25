@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783174527,
-    "time_utc": "2026-07-04 14:15:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783174832,
     "time_utc": "2026-07-04 14:20:32 UTC",
     "count": 6,
@@ -386215,6 +386209,88 @@
         "speed": 333,
         "lat": 30.388,
         "lon": 48.577,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1784989228,
+    "time_utc": "2026-07-25 14:20:28 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40d87764",
+        "callsign": "IRB8029",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-MDQ",
+        "category": "Commercial",
+        "alt": 4050,
+        "track": 105,
+        "speed": 11,
+        "lat": 35.702,
+        "lon": 51.316,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d83504",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 5475,
+        "track": 336,
+        "speed": 7,
+        "lat": 34.913,
+        "lon": 50.995,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d88f35",
+        "callsign": "CPN026",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 344,
+        "speed": 20,
+        "lat": 34.91,
+        "lon": 50.998,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d89a22",
+        "callsign": "IRM114",
+        "flight": "W5114",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 23750,
+        "track": 90,
+        "speed": 1,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d85052",
+        "callsign": "KIS7010",
+        "flight": "KIS7010",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 1650,
+        "track": 321,
+        "speed": 147,
+        "lat": 30.303,
+        "lon": 48.283,
         "airline": "Kish Air",
         "country": "IRAN"
       }
