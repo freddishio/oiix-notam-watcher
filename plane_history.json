@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783201836,
-    "time_utc": "2026-07-04 21:50:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783202123,
-    "time_utc": "2026-07-04 21:55:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783202444,
     "time_utc": "2026-07-04 22:00:44 UTC",
     "count": 0,
@@ -385252,6 +385240,73 @@
         "speed": 472,
         "lat": 32.959,
         "lon": 54.143,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785016529,
+    "time_utc": "2026-07-25 21:55:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40da1216",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 0,
+        "lat": 35.696,
+        "lon": 51.27,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da0b09",
+        "callsign": "CPN027",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 70,
+        "lat": 35.759,
+        "lon": 54.565,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1536",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 24300,
+        "track": 193,
+        "speed": 418,
+        "lat": 34.215,
+        "lon": 50.337,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1596",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 322,
+        "speed": 470,
+        "lat": 33.569,
+        "lon": 53.826,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
