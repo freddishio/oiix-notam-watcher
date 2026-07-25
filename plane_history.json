@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783146329,
-    "time_utc": "2026-07-04 06:25:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783146632,
     "time_utc": "2026-07-04 06:30:32 UTC",
     "count": 4,
@@ -385848,6 +385842,133 @@
         "lon": 53.076,
         "airline": "Varesh Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1784961031,
+    "time_utc": "2026-07-25 06:30:31 UTC",
+    "count": 8,
+    "planes": [
+      {
+        "id": "40d73681",
+        "callsign": "IRA3481",
+        "flight": "IR3481",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 34100,
+        "track": 310,
+        "speed": 443,
+        "lat": 36.944,
+        "lon": 48.897,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d73eaa",
+        "callsign": "IRB9710",
+        "flight": "B99710",
+        "type": "A310",
+        "reg": "EP-MDH",
+        "category": "Commercial",
+        "alt": 16975,
+        "track": 301,
+        "speed": 391,
+        "lat": 35.669,
+        "lon": 51.023,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d72505",
+        "callsign": "TBZ5657",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 98,
+        "speed": 8,
+        "lat": 35.712,
+        "lon": 51.293,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d72178",
+        "callsign": "SHI7321",
+        "flight": "IS7321",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 112,
+        "speed": 120,
+        "lat": 35.387,
+        "lon": 51.115,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d723b7",
+        "callsign": "SHI7311",
+        "flight": "IS7311",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 95,
+        "speed": 465,
+        "lat": 35.324,
+        "lon": 51.876,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d73634",
+        "callsign": "IRM1129",
+        "flight": "W51129",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 23025,
+        "track": 130,
+        "speed": 439,
+        "lat": 34.5,
+        "lon": 52.517,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d71bc6",
+        "callsign": "VRH6800",
+        "flight": "VRH6800",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 167,
+        "speed": 454,
+        "lat": 27.123,
+        "lon": 53.26,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d73238",
+        "callsign": "GFA770",
+        "flight": "GF770",
+        "type": "A21N",
+        "reg": "A9C-XB",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 72,
+        "speed": 448,
+        "lat": 27.561,
+        "lon": 57.298,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
       }
     ]
   }
