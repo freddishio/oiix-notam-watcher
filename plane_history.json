@@ -1,94 +1,5 @@
 [
   {
-    "timestamp": 1783190433,
-    "time_utc": "2026-07-04 18:40:33 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40817ec3",
-        "callsign": "SHI7345",
-        "flight": "IS7345",
-        "type": "B735",
-        "reg": "EP-FSQ",
-        "category": "Commercial",
-        "alt": 31000,
-        "track": 47,
-        "speed": 484,
-        "lat": 33.703,
-        "lon": 47.227,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40817f65",
-        "callsign": "SHI4367",
-        "flight": "IS4367",
-        "type": "B735",
-        "reg": "EP-FSF",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 61,
-        "speed": 473,
-        "lat": 32.18,
-        "lon": 50.546,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "408166e5",
-        "callsign": "TBN7260",
-        "flight": "TBN7260",
-        "type": "B734",
-        "reg": "EP-TBJ",
-        "category": "Commercial",
-        "alt": 4500,
-        "track": 290,
-        "speed": 182,
-        "lat": 35.398,
-        "lon": 51.218,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783190726,
-    "time_utc": "2026-07-04 18:45:26 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "4080e634",
-        "callsign": "AFL527",
-        "flight": "SU527",
-        "type": "B738",
-        "reg": "RA-73123",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 303,
-        "speed": 395,
-        "lat": 37.789,
-        "lon": 50.991,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      },
-      {
-        "id": "40818539",
-        "callsign": "IRB0968",
-        "flight": "B9968",
-        "type": "MD82",
-        "reg": "EP-MDE",
-        "category": "Commercial",
-        "alt": 29025,
-        "track": 76,
-        "speed": 450,
-        "lat": 35.442,
-        "lon": 53.675,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783191038,
     "time_utc": "2026-07-04 18:50:38 UTC",
     "count": 1,
@@ -384612,6 +384523,88 @@
         "lat": 34.168,
         "lon": 59.359,
         "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785005129,
+    "time_utc": "2026-07-25 18:45:29 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40d95ed5",
+        "callsign": "TBN7265",
+        "flight": "SUE7265",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 270,
+        "speed": 460,
+        "lat": 35.444,
+        "lon": 50.567,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d99529",
+        "callsign": "VRH5802",
+        "flight": "VRH5802",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 274,
+        "speed": 449,
+        "lat": 36.606,
+        "lon": 55.213,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d98398",
+        "callsign": "IZG3020",
+        "flight": "ZO3020",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 232,
+        "speed": 479,
+        "lat": 33.825,
+        "lon": 46.371,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9a32c",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 34025,
+        "track": 270,
+        "speed": 40,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9905c",
+        "callsign": "IRM1055",
+        "flight": "W51055",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 27500,
+        "track": 90,
+        "speed": 1,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
