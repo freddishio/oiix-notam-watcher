@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783203034,
-    "time_utc": "2026-07-04 22:10:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783203328,
     "time_utc": "2026-07-04 22:15:28 UTC",
     "count": 0,
@@ -385512,6 +385506,73 @@
         "lat": 34.465,
         "lon": 48.669,
         "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785017728,
+    "time_utc": "2026-07-25 22:15:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40da1503",
+        "callsign": "MRJ4802",
+        "flight": "MRJ4802",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 62,
+        "speed": 504,
+        "lat": 34.788,
+        "lon": 49.414,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1536",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 19125,
+        "track": 192,
+        "speed": 387,
+        "lat": 31.867,
+        "lon": 49.66,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da0b09",
+        "callsign": "CPN027",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 10800,
+        "track": 227,
+        "speed": 30,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1216",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 0,
+        "lat": 35.696,
+        "lon": 51.27,
+        "airline": "Caspian Airlines",
         "country": "IRAN"
       }
     ]
