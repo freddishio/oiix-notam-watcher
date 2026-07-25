@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1783167031,
-    "time_utc": "2026-07-04 12:10:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783167330,
-    "time_utc": "2026-07-04 12:15:30 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40803c01",
-        "callsign": "CPN7904",
-        "flight": "IV7904",
-        "type": "B735",
-        "reg": "EP-KPB",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 285,
-        "speed": 357,
-        "lat": 38.082,
-        "lon": 46.508,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "408055a2",
-        "callsign": "IZG4035",
-        "flight": "ZO4035",
-        "type": "A319",
-        "reg": "EP-ZAX",
-        "category": "Commercial",
-        "alt": 29975,
-        "track": 342,
-        "speed": 465,
-        "lat": 28.05,
-        "lon": 53.429,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783167633,
     "time_utc": "2026-07-04 12:20:33 UTC",
     "count": 2,
@@ -386183,6 +386140,103 @@
         "lat": 27.132,
         "lon": 63.079,
         "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1784981958,
+    "time_utc": "2026-07-25 12:19:18 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40d81038",
+        "callsign": "IRA749",
+        "flight": "IR749",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 340,
+        "speed": 470,
+        "lat": 36.269,
+        "lon": 48.59,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d835e2",
+        "callsign": "IR6666",
+        "flight": "W56666",
+        "type": "A343",
+        "reg": "EP-MJC",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 20,
+        "lat": 35.695,
+        "lon": 51.306,
+        "airline": "IR6",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40d83a0a",
+        "callsign": "IRM1026",
+        "flight": "W51026",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 272,
+        "speed": 6,
+        "lat": 35.685,
+        "lon": 51.319,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d80e00",
+        "callsign": "IRB9752",
+        "flight": "B99752",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 452,
+        "lat": 35.626,
+        "lon": 53.761,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d8221a",
+        "callsign": "AXV7729",
+        "flight": "AXV7729",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 46,
+        "speed": 466,
+        "lat": 35.172,
+        "lon": 50.526,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d7ff1b",
+        "callsign": "KIS7054",
+        "flight": "KIS7054",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 26375,
+        "track": 338,
+        "speed": 454,
+        "lat": 34.616,
+        "lon": 51.869,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
