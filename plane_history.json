@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783203328,
-    "time_utc": "2026-07-04 22:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783203634,
     "time_utc": "2026-07-04 22:20:34 UTC",
     "count": 0,
@@ -385572,6 +385566,88 @@
         "speed": 0,
         "lat": 35.696,
         "lon": 51.27,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785018028,
+    "time_utc": "2026-07-25 22:20:28 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40da1216",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 0,
+        "lat": 35.696,
+        "lon": 51.27,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da258f",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 46,
+        "speed": 471,
+        "lat": 33.573,
+        "lon": 46.382,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1503",
+        "callsign": "MRJ4802",
+        "flight": "MRJ4802",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 27200,
+        "track": 76,
+        "speed": 454,
+        "lat": 34.98,
+        "lon": 50.18,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1596",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 9475,
+        "track": 90,
+        "speed": 110,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da0b09",
+        "callsign": "CPN027",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 3900,
+        "track": 91,
+        "speed": 30,
+        "lat": 34.902,
+        "lon": 51.015,
         "airline": "Caspian Airlines",
         "country": "IRAN"
       }
