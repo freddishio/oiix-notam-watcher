@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783208442,
-    "time_utc": "2026-07-04 23:40:42 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783208727,
-    "time_utc": "2026-07-04 23:45:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783209036,
     "time_utc": "2026-07-04 23:50:36 UTC",
     "count": 0,
@@ -385680,5 +385668,42 @@
     "time_utc": "2026-07-25 23:40:38 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785023137,
+    "time_utc": "2026-07-25 23:45:37 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40da662c",
+        "callsign": "TBN9063",
+        "flight": "AXV9063",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 194,
+        "speed": 14,
+        "lat": 35.685,
+        "lon": 51.331,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9027d",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 317,
+        "speed": 482,
+        "lat": 34.242,
+        "lon": 53.088,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
