@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783196728,
-    "time_utc": "2026-07-04 20:25:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783197043,
     "time_utc": "2026-07-04 20:30:43 UTC",
     "count": 1,
@@ -384883,6 +384877,58 @@
         "lon": 51.909,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785011431,
+    "time_utc": "2026-07-25 20:30:31 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40d990e6",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 115,
+        "speed": 508,
+        "lat": 37.834,
+        "lon": 44.878,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9c0e1",
+        "callsign": "KRU2651",
+        "flight": "KRU2651",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 295,
+        "speed": 16,
+        "lat": 35.688,
+        "lon": 51.284,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9d0ae",
+        "callsign": "IZG3022",
+        "flight": "ZO3022",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 220,
+        "speed": 584,
+        "lat": 33.904,
+        "lon": 46.489,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
       }
     ]
   }
