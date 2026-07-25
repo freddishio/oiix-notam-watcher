@@ -385142,5 +385142,57 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1785015029,
+    "time_utc": "2026-07-25 21:30:29 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40d9f28e",
+        "callsign": "TBN7260",
+        "flight": "SUE7260",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 22925,
+        "track": 76,
+        "speed": 458,
+        "lat": 34.992,
+        "lon": 50.237,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d9ec45",
+        "callsign": "IZG3023",
+        "flight": "ZO3023",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 5025,
+        "track": 90,
+        "speed": 10,
+        "lat": 34.903,
+        "lon": 51.0,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40da1216",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 180,
+        "speed": 0,
+        "lat": 35.689,
+        "lon": 51.324,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
