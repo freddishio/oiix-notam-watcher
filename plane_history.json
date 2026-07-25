@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783179035,
-    "time_utc": "2026-07-04 15:30:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783179323,
-    "time_utc": "2026-07-04 15:35:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783179632,
     "time_utc": "2026-07-04 15:40:32 UTC",
     "count": 2,
@@ -385668,6 +385656,73 @@
         "lat": 35.454,
         "lon": 51.09,
         "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1784993726,
+    "time_utc": "2026-07-25 15:35:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40d8cb69",
+        "callsign": "IRB9705",
+        "flight": "B99705",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 16250,
+        "track": 57,
+        "speed": 401,
+        "lat": 35.018,
+        "lon": 50.173,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d8bdbd",
+        "callsign": "IRA748",
+        "flight": "IR748",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 20,
+        "lat": 35.431,
+        "lon": 51.149,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d8fba9",
+        "callsign": "IRM107",
+        "flight": "W5107",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 5000,
+        "track": 90,
+        "speed": 193,
+        "lat": 35.686,
+        "lon": 51.564,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40d8cdee",
+        "callsign": "IRM1060",
+        "flight": "W51060",
+        "type": "RJ85",
+        "reg": "EP-MEI",
+        "category": "Commercial",
+        "alt": 20975,
+        "track": 86,
+        "speed": 358,
+        "lat": 32.749,
+        "lon": 52.021,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
