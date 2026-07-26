@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783290643,
-    "time_utc": "2026-07-05 22:30:43 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783290927,
-    "time_utc": "2026-07-05 22:35:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783291237,
     "time_utc": "2026-07-05 22:40:37 UTC",
     "count": 0,
@@ -387576,6 +387564,58 @@
         "lon": 54.647,
         "airline": "Kish Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785105333,
+    "time_utc": "2026-07-26 22:35:33 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40dde07f",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 118,
+        "speed": 442,
+        "lat": 38.725,
+        "lon": 46.797,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ddd1d3",
+        "callsign": "IRM1052",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MOH",
+        "category": "Commercial",
+        "alt": 23975,
+        "track": 317,
+        "speed": 365,
+        "lat": 34.184,
+        "lon": 53.153,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dde0ff",
+        "callsign": "GFA500",
+        "flight": "GF500",
+        "type": "A20N",
+        "reg": "A9C-TB",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 27,
+        "speed": 520,
+        "lat": 26.294,
+        "lon": 53.383,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
       }
     ]
   }
