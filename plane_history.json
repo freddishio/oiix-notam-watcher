@@ -387120,5 +387120,42 @@
     "time_utc": "2026-07-26 17:25:31 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785087030,
+    "time_utc": "2026-07-26 17:30:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40dd0463",
+        "callsign": "TBN7260",
+        "flight": "SUE7260",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 32725,
+        "track": 49,
+        "speed": 452,
+        "lat": 33.376,
+        "lon": 46.125,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dd1928",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 3475,
+        "track": 288,
+        "speed": 150,
+        "lat": 35.418,
+        "lon": 51.148,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
