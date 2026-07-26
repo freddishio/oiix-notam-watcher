@@ -1,124 +1,5 @@
 [
   {
-    "timestamp": 1783222241,
-    "time_utc": "2026-07-05 03:30:41 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "4082863e",
-        "callsign": "AXV9214",
-        "flight": "AXV9214",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 31925,
-        "track": 310,
-        "speed": 423,
-        "lat": 37.388,
-        "lon": 48.252,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40828c61",
-        "callsign": "IRA719",
-        "flight": "IR719",
-        "type": "A332",
-        "reg": "EP-IJC",
-        "category": "Commercial",
-        "alt": 15525,
-        "track": 314,
-        "speed": 412,
-        "lat": 35.836,
-        "lon": 50.422,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "408270cf",
-        "callsign": "AXV9228",
-        "flight": "AXV9228",
-        "type": "B735",
-        "reg": "EP-RBC",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 251,
-        "speed": 384,
-        "lat": 34.923,
-        "lon": 48.782,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783222524,
-    "time_utc": "2026-07-05 03:35:24 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "4082863e",
-        "callsign": "AXV9214",
-        "flight": "AXV9214",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 31925,
-        "track": 303,
-        "speed": 421,
-        "lat": 37.716,
-        "lon": 47.684,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "408270cf",
-        "callsign": "AXV9228",
-        "flight": "AXV9228",
-        "type": "B735",
-        "reg": "EP-RBC",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 239,
-        "speed": 391,
-        "lat": 34.699,
-        "lon": 48.23,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40829318",
-        "callsign": "TBZ6617",
-        "flight": "I36617",
-        "type": "A320",
-        "reg": "EP-TAD",
-        "category": "Commercial",
-        "alt": 5025,
-        "track": 284,
-        "speed": 189,
-        "lat": 35.434,
-        "lon": 51.088,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "408290de",
-        "callsign": "KIS7146",
-        "flight": "KIS7146",
-        "type": "F100",
-        "reg": "EP-LCQ",
-        "category": "Commercial",
-        "alt": 7175,
-        "track": 299,
-        "speed": 216,
-        "lat": 27.489,
-        "lon": 52.513,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783222832,
     "time_utc": "2026-07-05 03:40:32 UTC",
     "count": 3,
@@ -386415,6 +386296,58 @@
         "speed": 449,
         "lat": 27.918,
         "lon": 52.84,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785036931,
+    "time_utc": "2026-07-26 03:35:31 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40dad6b8",
+        "callsign": "IRZ170",
+        "flight": "IRZ170",
+        "type": "B733",
+        "reg": "EP-SII",
+        "category": "Commercial",
+        "alt": 21000,
+        "track": 103,
+        "speed": 405,
+        "lat": 35.454,
+        "lon": 51.667,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dad960",
+        "callsign": "KRU2657",
+        "flight": "KRU2657",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 13775,
+        "track": 38,
+        "speed": 234,
+        "lat": 31.68,
+        "lon": 49.097,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40daba47",
+        "callsign": "KIS7093",
+        "flight": "KIS7093",
+        "type": "MD82",
+        "reg": "EP-LCK",
+        "category": "Commercial",
+        "alt": 12225,
+        "track": 187,
+        "speed": 292,
+        "lat": 27.397,
+        "lon": 52.77,
         "airline": "Kish Air",
         "country": "IRAN"
       }
