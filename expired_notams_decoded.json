@@ -1,4 +1,229 @@
 {
+  "OIIX A1589/26": {
+    "header": {
+      "id": "A1589/26",
+      "series": "A",
+      "number": "1589",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/400/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "400"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA :\r\n250559N 0603759E\r\n251800N 0603759E\r\n251800N 0601359E\r\n250600N 0601359E\r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          25.084722,
+          60.633056
+        ],
+        [
+          25.3,
+          60.633056
+        ],
+        [
+          25.3,
+          60.233056
+        ],
+        [
+          25.1,
+          60.233056
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "40000FT AMSL"
+    },
+    "last_seen_utc": "2026-07-20 11:20:25 UTC",
+    "archived_utc": "2026-07-26 08:30:26 UTC"
+  },
+  "OIIX B0392/26": {
+    "header": {
+      "id": "B0392/26",
+      "series": "B",
+      "number": "0392",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QAFLV/V/NBO/E/000/400/",
+      "location": "OIIX",
+      "code": {
+        "code": "AFLV",
+        "entity": "AF",
+        "status": "LV",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "Flight information region (FIR)",
+        "condition": "Limitations",
+        "modifier": "Closed to VFR operations"
+      },
+      "traffic": [
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "400"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1589/26, \r\nALL VFR SUSPENDED WI MENTIONED AREA."
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "40000 FT AMSL"
+    },
+    "last_seen_utc": "2026-07-21 11:40:28 UTC",
+    "archived_utc": "2026-07-26 08:30:26 UTC"
+  },
+  "OIIX A1608/26": {
+    "header": {
+      "id": "A1608/26",
+      "series": "A",
+      "number": "1608",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QARLC/IV/NBO/E/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "ARLC",
+        "entity": "AR",
+        "status": "LC",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Limitations",
+        "modifier": "Closed"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "N",
+          "description": "Selected for the immediate attention to aircraft operators"
+        },
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "E",
+          "description": "En-route information"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-25T06:30:00.000Z",
+      "validityEnd": "2026-08-26T08:30:00.000Z",
+      "elements": [
+        "0630-0830"
+      ]
+    },
+    "content": {
+      "text": "REF NOTAM A1589/26,\r\n-AWY A791 BTN KINOX AND EGPIC\r\n-AWY R654 BTN DENDA AND CBH DVOR/DME\r\n-AWY W2 BTN MESPO AND CBH DVOR/DME\r\n ARE CLSD."
+    },
+    "last_seen_utc": "2026-07-22 08:45:33 UTC",
+    "archived_utc": "2026-07-26 08:30:26 UTC"
+  },
   "OIIX A1202/26": {
     "header": {
       "id": "A1202/26",
