@@ -3430,6 +3430,92 @@
     },
     "last_seen_utc": "2026-07-26 06:10:31 UTC"
   },
+  "OIIX A1641/26": {
+    "header": {
+      "id": "A1641/26",
+      "series": "A",
+      "number": "1641",
+      "year": "26",
+      "type": "NOTAMN\r"
+    },
+    "qualification": {
+      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
+      "location": "OIIX",
+      "code": {
+        "code": "WMLW",
+        "entity": "WM",
+        "status": "LW",
+        "area": "Navigation Warnings",
+        "subArea": "Warnings",
+        "subject": "Missile, gun or rocket firing",
+        "condition": "Limitations",
+        "modifier": "Will take place"
+      },
+      "traffic": [
+        {
+          "code": "I",
+          "description": "IFR Traffic"
+        },
+        {
+          "code": "V",
+          "description": "VFR Traffic"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "B",
+          "description": "For inclusion in Preflight Infomation Bulletins"
+        },
+        {
+          "code": "O",
+          "description": "Operationally significant for IFR flights"
+        }
+      ],
+      "scope": [
+        {
+          "code": "W",
+          "description": "Navigational warnings"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "180"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-09-01T11:30:00.000Z",
+      "validityEnd": "2026-09-06T14:30:00.000Z",
+      "elements": [
+        "01 06 1130-1430"
+      ]
+    },
+    "content": {
+      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n352500N 0465100E\r\n352500N 0470000E\r\n351500N 0465100E\r\n352000N 0464500E\r\nTO THE POINT OF ORIGIN.",
+      "area": [
+        [
+          35.416667,
+          46.85
+        ],
+        [
+          35.416667,
+          47
+        ],
+        [
+          35.25,
+          46.85
+        ],
+        [
+          35.333333,
+          46.75
+        ]
+      ]
+    },
+    "limits": {
+      "lower": "GND",
+      "upper": "18000FT AMSL"
+    },
+    "last_seen_utc": "2026-07-26 06:15:25 UTC"
+  },
   "OIIX A1203/26": {
     "header": {
       "id": "A1203/26",
@@ -3666,26 +3752,26 @@
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
   },
-  "OIIX A1641/26": {
+  "OIIX A1642/26": {
     "header": {
-      "id": "A1641/26",
+      "id": "A1642/26",
       "series": "A",
-      "number": "1641",
+      "number": "1642",
       "year": "26",
       "type": "NOTAMN\r"
     },
     "qualification": {
-      "line": "OIIX/QWMLW/IV/BO/W/000/180/",
+      "line": "OIIX/QARCH/IV/BO/E/000/999/",
       "location": "OIIX",
       "code": {
-        "code": "WMLW",
-        "entity": "WM",
-        "status": "LW",
-        "area": "Navigation Warnings",
-        "subArea": "Warnings",
-        "subject": "Missile, gun or rocket firing",
-        "condition": "Limitations",
-        "modifier": "Will take place"
+        "code": "ARCH",
+        "entity": "AR",
+        "status": "CH",
+        "area": "ATM",
+        "subArea": "Airspace Organization",
+        "subject": "ATS route (specify)",
+        "condition": "Changes",
+        "modifier": "Changed"
       },
       "traffic": [
         {
@@ -3709,13 +3795,13 @@
       ],
       "scope": [
         {
-          "code": "W",
-          "description": "Navigational warnings"
+          "code": "E",
+          "description": "En-route information"
         }
       ],
       "limits": {
         "lower": "000",
-        "upper": "180"
+        "upper": "999"
       }
     },
     "schedule": {
@@ -3726,30 +3812,8 @@
       ]
     },
     "content": {
-      "text": "GUN FIRING WILL TAKE PLACE WI AREA WITH THE FLW COORD:\r\n352500N 0465100E\r\n352500N 0470000E\r\n351500N 0465100E\r\n352000N 0464500E\r\nTO THE POINT OF ORIGIN.",
-      "area": [
-        [
-          35.416667,
-          46.85
-        ],
-        [
-          35.416667,
-          47
-        ],
-        [
-          35.25,
-          46.85
-        ],
-        [
-          35.333333,
-          46.75
-        ]
-      ]
+      "text": "REF NOTAM A1641/26 ,\r\nMNM SAFE LVL ON AWY M434/Z740 BTN ASLAX AND NOLTO \r\nRAISED TO FL190."
     },
-    "limits": {
-      "lower": "GND",
-      "upper": "18000FT AMSL"
-    },
-    "last_seen_utc": "2026-07-26 06:15:25 UTC"
+    "last_seen_utc": "2026-07-26 06:20:33 UTC"
   }
 }
