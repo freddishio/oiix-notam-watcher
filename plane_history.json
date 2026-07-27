@@ -395124,5 +395124,57 @@
         "country": "Russian Federation"
       }
     ]
+  },
+  {
+    "timestamp": 1785164440,
+    "time_utc": "2026-07-27 15:00:40 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40dff5de",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 307,
+        "speed": 457,
+        "lat": 36.915,
+        "lon": 52.455,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "40e05724",
+        "callsign": "KRU2665",
+        "flight": "KRU2665",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 8350,
+        "track": 24,
+        "speed": 290,
+        "lat": 36.753,
+        "lon": 52.906,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e04cf9",
+        "callsign": "IRB8038",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 17825,
+        "track": 45,
+        "speed": 470,
+        "lat": 31.72,
+        "lon": 49.572,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
