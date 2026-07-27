@@ -1,109 +1,5 @@
 [
   {
-    "timestamp": 1783311035,
-    "time_utc": "2026-07-06 04:10:35 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40864035",
-        "callsign": "KRU2665",
-        "flight": "KRU2665",
-        "type": "F100",
-        "reg": "EP-MIS",
-        "category": "Commercial",
-        "alt": 31050,
-        "track": 4,
-        "speed": 425,
-        "lat": 34.506,
-        "lon": 48.483,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40863d39",
-        "callsign": "KRU2635",
-        "flight": "KRU2635",
-        "type": "F100",
-        "reg": "EP-AWZ",
-        "category": "Commercial",
-        "alt": 32875,
-        "track": 86,
-        "speed": 467,
-        "lat": 32.818,
-        "lon": 53.619,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783311329,
-    "time_utc": "2026-07-06 04:15:29 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "40864035",
-        "callsign": "KRU2665",
-        "flight": "KRU2665",
-        "type": "F100",
-        "reg": "EP-MIS",
-        "category": "Commercial",
-        "alt": 31050,
-        "track": 15,
-        "speed": 439,
-        "lat": 35.08,
-        "lon": 48.634,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "408622fb",
-        "callsign": "AXV9228",
-        "flight": "AXV9228",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 282,
-        "speed": 380,
-        "lat": 33.275,
-        "lon": 49.1,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40862d20",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-FSU",
-        "category": "Commercial",
-        "alt": 32100,
-        "track": 283,
-        "speed": 398,
-        "lat": 32.816,
-        "lon": 51.512,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "40863d39",
-        "callsign": "KRU2635",
-        "flight": "KRU2635",
-        "type": "F100",
-        "reg": "EP-AWZ",
-        "category": "Commercial",
-        "alt": 32975,
-        "track": 87,
-        "speed": 491,
-        "lat": 32.85,
-        "lon": 54.356,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783311640,
     "time_utc": "2026-07-06 04:20:40 UTC",
     "count": 3,
@@ -389329,6 +389225,73 @@
         "speed": 323,
         "lat": 30.441,
         "lon": 49.279,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785125730,
+    "time_utc": "2026-07-27 04:15:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40deb698",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 18000,
+        "track": 314,
+        "speed": 417,
+        "lat": 35.988,
+        "lon": 50.234,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40deb9fb",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 16350,
+        "track": 273,
+        "speed": 376,
+        "lat": 35.523,
+        "lon": 52.161,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40dead41",
+        "callsign": "CPN7954",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 36025,
+        "track": 260,
+        "speed": 340,
+        "lat": 35.598,
+        "lon": 53.484,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40deabbc",
+        "callsign": "KRU2635",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 86,
+        "speed": 428,
+        "lat": 32.833,
+        "lon": 53.876,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
