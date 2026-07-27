@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783308643,
-    "time_utc": "2026-07-06 03:30:43 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783308924,
     "time_utc": "2026-07-06 03:35:24 UTC",
     "count": 1,
@@ -388938,6 +388932,43 @@
         "lat": 34.903,
         "lon": 51.001,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785123324,
+    "time_utc": "2026-07-27 03:35:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40dead68",
+        "callsign": "IRZ166",
+        "flight": "IRZ166",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 6700,
+        "track": 216,
+        "speed": 248,
+        "lat": 35.677,
+        "lon": 51.147,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dea47e",
+        "callsign": "IZG3007",
+        "flight": "ZO3007",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 28975,
+        "track": 43,
+        "speed": 453,
+        "lat": 33.463,
+        "lon": 46.233,
+        "airline": "Zagros Airlines",
         "country": "IRAN"
       }
     ]
