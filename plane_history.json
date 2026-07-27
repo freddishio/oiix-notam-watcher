@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783354865,
-    "time_utc": "2026-07-06 16:21:05 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783355134,
     "time_utc": "2026-07-06 16:25:34 UTC",
     "count": 2,
@@ -395925,5 +395919,57 @@
     "time_utc": "2026-07-27 16:20:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785169531,
+    "time_utc": "2026-07-27 16:25:31 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40e0c6d1",
+        "callsign": "CPN7950",
+        "flight": "IV7950",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 122,
+        "speed": 466,
+        "lat": 37.427,
+        "lon": 49.421,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e0d5ea",
+        "callsign": "KRU2664",
+        "flight": "KRU2664",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 173,
+        "speed": 451,
+        "lat": 35.019,
+        "lon": 50.453,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e0b251",
+        "callsign": "IM4597",
+        "flight": "W54597",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 16325,
+        "track": 99,
+        "speed": 333,
+        "lat": 35.385,
+        "lon": 51.339,
+        "airline": "IM4",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
