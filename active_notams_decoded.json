@@ -2584,54 +2584,6 @@
     },
     "last_seen_utc": "2026-07-20 09:35:22 UTC"
   },
-  "OIIX B0378/26": {
-    "header": {
-      "id": "B0378/26",
-      "series": "B",
-      "number": "0378",
-      "year": "26",
-      "type": "NOTAMR",
-      "typeDesc": "Replacement NOTAM",
-      "idToReplace": "B0358/26\r"
-    },
-    "qualification": {
-      "line": "OIIX/QKKKK/K/K/K/000/999/",
-      "location": "OIIX",
-      "code": {
-        "code": "KKKK"
-      },
-      "traffic": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "purpose": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "scope": [
-        {
-          "code": "K",
-          "description": "Checklist"
-        }
-      ],
-      "limits": {
-        "lower": "000",
-        "upper": "999"
-      }
-    },
-    "schedule": {
-      "activityStart": "2026-08-20T07:30:00.000Z",
-      "validityEnd": "2026-08-28T07:30:00.000Z"
-    },
-    "content": {
-      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0135 0136 0177 0179 0199 0204 0205 0207 0213 \r\n0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 0224 \r\n0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 \r\n0236 0237 0238 0239 0240 0241 0242 0243 0244 0247 0248 \r\n0251 0252 0254 0255 0299 0310 0322 0326 0328 0330 0331 \r\n0332 0333 0336 0337 0338 0346 0347 0349 0351 0356 0360 \r\n0361 0362 0363 0364 0365 0366 0367 0368 0370 0371 0372 \r\n0375 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25 7/25\r\n 12/25 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n09 JUL 2026 AND 06 AUG 2026 AND 03 SEP 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
-    },
-    "last_seen_utc": "2026-07-20 09:35:22 UTC"
-  },
   "OIIX A1592/26": {
     "header": {
       "id": "A1592/26",
@@ -3593,5 +3545,53 @@
       "upper": "UNL"
     },
     "last_seen_utc": "2026-07-20 09:20:55 UTC"
+  },
+  "OIIX B0394/26": {
+    "header": {
+      "id": "B0394/26",
+      "series": "B",
+      "number": "0394",
+      "year": "26",
+      "type": "NOTAMR",
+      "typeDesc": "Replacement NOTAM",
+      "idToReplace": "B0378/26\r"
+    },
+    "qualification": {
+      "line": "OIIX/QKKKK/K/K/K/000/999/",
+      "location": "OIIX",
+      "code": {
+        "code": "KKKK"
+      },
+      "traffic": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "purpose": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "scope": [
+        {
+          "code": "K",
+          "description": "Checklist"
+        }
+      ],
+      "limits": {
+        "lower": "000",
+        "upper": "999"
+      }
+    },
+    "schedule": {
+      "activityStart": "2026-08-27T07:30:00.000Z",
+      "validityEnd": "2026-09-04T07:30:00.000Z"
+    },
+    "content": {
+      "text": "CHECKLIST:\r\n YEAR=2022 0060 0061 0062 0063 0064 0065 0066 0069 0070 \r\n YEAR=2025 1002 \r\n YEAR=2026 0001 0002 0135 0136 0177 0179 0199 0204 0205 0207 0213 \r\n0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 0224 \r\n0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 \r\n0236 0237 0238 0239 0240 0241 0242 0243 0244 0247 0299 \r\n0310 0322 0326 0328 0330 0331 0332 0333 0336 0337 0338 \r\n0346 0347 0349 0351 0362 0363 0364 0365 0366 0367 0368 \r\n0370 0371 0372 0375 0382 0383 0384 0393 \r\nLATEST AIP AMENDMENTS \r\nAIRAC AIP AMDT 1/26 WEF 19 FEB 2026 \r\nAIP AMDT 1/20 01 JAN 2020 \r\nCHECKLIST OF AIP SUP AND AIC \r\nAIRAC AIP SUP: 6/19 9/19 11/19 12/19 11/21 22/21 10/24 3/25\r\n 7/25 12/25\r\n 13/25 1/26  2/26\r\nAIP SUP: 2/23 9/25 \r\nAIC: 2/08 3/08 4/08 5/08 9/08 \r\n1/14 2/14 1/15 2/18 2/20 2/23 3/23 1/24 \r\nNO AIRAC AIP AMDT WILL BE PUBLISHED ON AIRAC EFFECTIVE\r\n09 JUL 2026 AND 06 AUG 2026 AND 03 SEP 2026\r\nNOTE: ONLY NOTAM CLASS TWO 34/1989 IS VALID."
+    },
+    "last_seen_utc": "2026-07-27 07:35:27 UTC"
   }
 }
