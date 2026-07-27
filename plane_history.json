@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1783355447,
-    "time_utc": "2026-07-06 16:30:47 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783355723,
-    "time_utc": "2026-07-06 16:35:23 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40884bc5",
-        "callsign": "RSJ3604",
-        "flight": "RSJ3604",
-        "type": "GLEX",
-        "reg": "RA-73604",
-        "category": "Commercial",
-        "alt": 39975,
-        "track": 343,
-        "speed": 483,
-        "lat": 26.658,
-        "lon": 59.258,
-        "airline": "RusJet",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1783356031,
     "time_utc": "2026-07-06 16:40:31 UTC",
     "count": 2,
@@ -395983,6 +395955,88 @@
         "lat": 34.381,
         "lon": 50.396,
         "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785170129,
+    "time_utc": "2026-07-27 16:35:29 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40e0f84c",
+        "callsign": "CPN7912",
+        "flight": "IV7912",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 292,
+        "speed": 430,
+        "lat": 38.575,
+        "lon": 45.081,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e0c6d1",
+        "callsign": "CPN7950",
+        "flight": "IV7950",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 27125,
+        "track": 158,
+        "speed": 435,
+        "lat": 36.393,
+        "lon": 50.285,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e0b251",
+        "callsign": "IM4597",
+        "flight": "W54597",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 3900,
+        "track": 289,
+        "speed": 135,
+        "lat": 35.683,
+        "lon": 51.332,
+        "airline": "IM4",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40e0d5ea",
+        "callsign": "KRU2664",
+        "flight": "KRU2664",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 193,
+        "speed": 452,
+        "lat": 33.778,
+        "lon": 50.221,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40df2af5",
+        "callsign": "ISP1814",
+        "flight": "ISP1819",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 31925,
+        "track": 267,
+        "speed": 478,
+        "lat": 32.923,
+        "lon": 54.304,
+        "airline": "JSky Airlines",
         "country": "IRAN"
       }
     ]
