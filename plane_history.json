@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1783372839,
-    "time_utc": "2026-07-06 21:20:39 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783373124,
-    "time_utc": "2026-07-06 21:25:24 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "4089239a",
-        "callsign": "AXV7711",
-        "flight": "AXV7711",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 24525,
-        "track": 42,
-        "speed": 70,
-        "lat": 35.365,
-        "lon": 59.254,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783373446,
     "time_utc": "2026-07-06 21:30:46 UTC",
     "count": 0,
@@ -397530,5 +397502,42 @@
     "time_utc": "2026-07-27 21:20:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785187529,
+    "time_utc": "2026-07-27 21:25:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e1d2df",
+        "callsign": "IRA5358",
+        "flight": "IR5358",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 77,
+        "speed": 452,
+        "lat": 33.55,
+        "lon": 46.492,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e1cf09",
+        "callsign": "IZG3023",
+        "flight": "ZO3023",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 47,
+        "speed": 482,
+        "lat": 33.623,
+        "lon": 47.126,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
