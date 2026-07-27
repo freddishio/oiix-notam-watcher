@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783306233,
-    "time_utc": "2026-07-06 02:50:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783306522,
-    "time_utc": "2026-07-06 02:55:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783306843,
     "time_utc": "2026-07-06 03:00:43 UTC",
     "count": 0,
@@ -388542,6 +388530,88 @@
         "lat": 35.189,
         "lon": 51.079,
         "airline": "Fars Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785120924,
+    "time_utc": "2026-07-27 02:55:24 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40de9476",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 232,
+        "speed": 469,
+        "lat": 33.638,
+        "lon": 46.087,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de6dc0",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 239,
+        "speed": 453,
+        "lat": 34.787,
+        "lon": 48.389,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8f45",
+        "callsign": "TBN7267",
+        "flight": "AXV7267",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 251,
+        "speed": 490,
+        "lat": 34.984,
+        "lon": 48.956,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8d3e",
+        "callsign": "QFZ9975",
+        "flight": "Unknown Flight",
+        "type": "B742",
+        "reg": "EP-FAB",
+        "category": "Commercial",
+        "alt": 30475,
+        "track": 192,
+        "speed": 458,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Fars Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8e76",
+        "callsign": "IRM4568",
+        "flight": "W54568",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 238,
+        "speed": 386,
+        "lat": 35.883,
+        "lon": 53.975,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
