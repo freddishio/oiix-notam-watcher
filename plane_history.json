@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783374042,
-    "time_utc": "2026-07-06 21:40:42 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783374326,
-    "time_utc": "2026-07-06 21:45:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783374643,
     "time_utc": "2026-07-06 21:50:43 UTC",
     "count": 1,
@@ -397612,6 +397600,28 @@
         "speed": 450,
         "lat": 35.793,
         "lon": 54.869,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785188734,
+    "time_utc": "2026-07-27 21:45:34 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "40e1db78",
+        "callsign": "AXV9212",
+        "flight": "AXV9212",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 34025,
+        "track": 259,
+        "speed": 443,
+        "lat": 35.68,
+        "lon": 54.119,
         "airline": "Ava Air",
         "country": "IRAN"
       }
