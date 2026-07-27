@@ -1,79 +1,5 @@
 [
   {
-    "timestamp": 1783352440,
-    "time_utc": "2026-07-06 15:40:40 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "4087f6cd",
-        "callsign": "SHI7346",
-        "flight": "IS7346",
-        "type": "B733",
-        "reg": "EP-FSE",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 283,
-        "speed": 414,
-        "lat": 32.961,
-        "lon": 50.792,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4087b1d2",
-        "callsign": "FDB733",
-        "flight": "FZ733",
-        "type": "B38M",
-        "reg": "A6-FMI",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 320,
-        "speed": 412,
-        "lat": 35.39,
-        "lon": 54.762,
-        "airline": "flydubai",
-        "country": "United Arab Emirates"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783352727,
-    "time_utc": "2026-07-06 15:45:27 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "4087b1d2",
-        "callsign": "FDB733",
-        "flight": "FZ733",
-        "type": "B38M",
-        "reg": "A6-FMI",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 308,
-        "speed": 402,
-        "lat": 35.756,
-        "lon": 54.281,
-        "airline": "flydubai",
-        "country": "United Arab Emirates"
-      },
-      {
-        "id": "4087f6cd",
-        "callsign": "SHI7346",
-        "flight": "IS7346",
-        "type": "B733",
-        "reg": "EP-FSE",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 283,
-        "speed": 405,
-        "lat": 33.086,
-        "lon": 50.163,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783353034,
     "time_utc": "2026-07-06 15:50:34 UTC",
     "count": 2,
@@ -395716,5 +395642,72 @@
     "time_utc": "2026-07-27 15:40:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785167130,
+    "time_utc": "2026-07-27 15:45:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40e0b251",
+        "callsign": "IM4597",
+        "flight": "W54597",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 25025,
+        "track": 128,
+        "speed": 406,
+        "lat": 37.628,
+        "lon": 47.042,
+        "airline": "IM4",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40e0b6fb",
+        "callsign": "CPN7919",
+        "flight": "IV7919",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 29050,
+        "track": 49,
+        "speed": 462,
+        "lat": 33.365,
+        "lon": 46.108,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e09fe9",
+        "callsign": "IZG4086",
+        "flight": "ZO4086",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 168,
+        "speed": 470,
+        "lat": 31.008,
+        "lon": 52.249,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e0ad41",
+        "callsign": "SHI7316",
+        "flight": "IS7316",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 132,
+        "speed": 457,
+        "lat": 26.015,
+        "lon": 54.487,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
