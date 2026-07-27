@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783371653,
-    "time_utc": "2026-07-06 21:00:53 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783371928,
-    "time_utc": "2026-07-06 21:05:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783372242,
     "time_utc": "2026-07-06 21:10:42 UTC",
     "count": 0,
@@ -397481,6 +397469,43 @@
         "lon": 47.276,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785186330,
+    "time_utc": "2026-07-27 21:05:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e1adf9",
+        "callsign": "TBZ5684",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 18075,
+        "track": 90,
+        "speed": 328,
+        "lat": 29.813,
+        "lon": 52.606,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e1bad4",
+        "callsign": "KRU2663",
+        "flight": "KRU2663",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 348,
+        "speed": 441,
+        "lat": 32.958,
+        "lon": 54.046,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
       }
     ]
   }
