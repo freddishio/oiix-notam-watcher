@@ -393036,5 +393036,42 @@
     "time_utc": "2026-07-27 10:05:39 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785147030,
+    "time_utc": "2026-07-27 10:10:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40df68dc",
+        "callsign": "IRZ8246",
+        "flight": "IRZ8246",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 269,
+        "speed": 444,
+        "lat": 35.439,
+        "lon": 50.25,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40df6f1d",
+        "callsign": "CPN7907",
+        "flight": "IV7907",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 99,
+        "speed": 448,
+        "lat": 35.433,
+        "lon": 50.989,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
