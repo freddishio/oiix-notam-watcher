@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783307440,
-    "time_utc": "2026-07-06 03:10:40 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783307724,
-    "time_utc": "2026-07-06 03:15:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783308038,
     "time_utc": "2026-07-06 03:20:38 UTC",
     "count": 0,
@@ -388758,5 +388746,72 @@
     "time_utc": "2026-07-27 03:10:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785122127,
+    "time_utc": "2026-07-27 03:15:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40de8e76",
+        "callsign": "IRM4568",
+        "flight": "W54568",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 9900,
+        "track": 289,
+        "speed": 210,
+        "lat": 35.58,
+        "lon": 51.682,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dea4ef",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "JY-HHB",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 247,
+        "speed": 440,
+        "lat": 34.427,
+        "lon": 47.517,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40de9eeb",
+        "callsign": "IRA3470",
+        "flight": "IR3470",
+        "type": "AT76",
+        "reg": "EP-ITM",
+        "category": "Commercial",
+        "alt": 13425,
+        "track": 90,
+        "speed": 20,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de9cb5",
+        "callsign": "IRM1016",
+        "flight": "W51016",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 24475,
+        "track": 90,
+        "speed": 2,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
