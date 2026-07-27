@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783306843,
-    "time_utc": "2026-07-06 03:00:43 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783307126,
     "time_utc": "2026-07-06 03:05:26 UTC",
     "count": 0,
@@ -388694,6 +388688,73 @@
         "lat": 35.09,
         "lon": 50.947,
         "airline": "Fars Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785121523,
+    "time_utc": "2026-07-27 03:05:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40de9eeb",
+        "callsign": "IRA3470",
+        "flight": "IR3470",
+        "type": "AT76",
+        "reg": "EP-ITM",
+        "category": "Commercial",
+        "alt": 5525,
+        "track": 226,
+        "speed": 10,
+        "lat": 35.624,
+        "lon": 51.643,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8e76",
+        "callsign": "IRM4568",
+        "flight": "W54568",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 260,
+        "speed": 380,
+        "lat": 35.502,
+        "lon": 52.773,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de9e67",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-FSB",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 448,
+        "lat": 33.532,
+        "lon": 45.919,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40de6dc0",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 456,
+        "lat": 34.248,
+        "lon": 47.018,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
