@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1783344329,
-    "time_utc": "2026-07-06 13:25:29 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "408770d6",
-        "callsign": "KRU2634",
-        "flight": "KRU2634",
-        "type": "F100",
-        "reg": "EP-AWZ",
-        "category": "Commercial",
-        "alt": 27975,
-        "track": 241,
-        "speed": 435,
-        "lat": 32.091,
-        "lon": 50.374,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40872b28",
-        "callsign": "IRB9730",
-        "flight": "B99730",
-        "type": "A310",
-        "reg": "EP-MDL",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 162,
-        "speed": 516,
-        "lat": 32.615,
-        "lon": 51.856,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783344642,
     "time_utc": "2026-07-06 13:30:42 UTC",
     "count": 3,
@@ -394665,6 +394628,58 @@
         "speed": 462,
         "lat": 27.022,
         "lon": 59.576,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785159032,
+    "time_utc": "2026-07-27 13:30:32 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40dfff2f",
+        "callsign": "KIS7011",
+        "flight": "KIS7011",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 8250,
+        "track": 23,
+        "speed": 354,
+        "lat": 30.669,
+        "lon": 48.389,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dff5de",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 344,
+        "speed": 457,
+        "lat": 27.353,
+        "lon": 58.985,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "40df58ca",
+        "callsign": "AFL526",
+        "flight": "SU526",
+        "type": "B738",
+        "reg": "RA-73119",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 155,
+        "speed": 480,
+        "lat": 26.405,
+        "lon": 59.763,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
