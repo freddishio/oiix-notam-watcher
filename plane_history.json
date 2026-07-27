@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783305635,
-    "time_utc": "2026-07-06 02:40:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783305922,
-    "time_utc": "2026-07-06 02:45:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783306233,
     "time_utc": "2026-07-06 02:50:33 UTC",
     "count": 0,
@@ -388405,6 +388393,73 @@
         "lat": 35.437,
         "lon": 50.95,
         "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785120324,
+    "time_utc": "2026-07-27 02:45:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40de8f45",
+        "callsign": "TBN7267",
+        "flight": "AXV7267",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 17925,
+        "track": 270,
+        "speed": 405,
+        "lat": 35.442,
+        "lon": 50.348,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8d3e",
+        "callsign": "QFZ9975",
+        "flight": "Unknown Flight",
+        "type": "B742",
+        "reg": "EP-FAB",
+        "category": "Commercial",
+        "alt": 21950,
+        "track": 8,
+        "speed": 430,
+        "lat": 35.89,
+        "lon": 51.319,
+        "airline": "Fars Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8851",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 9175,
+        "track": 19,
+        "speed": 266,
+        "lat": 36.662,
+        "lon": 53.149,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40de9476",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 29600,
+        "track": 254,
+        "speed": 430,
+        "lat": 34.392,
+        "lon": 47.399,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
