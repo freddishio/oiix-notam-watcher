@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783305045,
-    "time_utc": "2026-07-06 02:30:45 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783305329,
     "time_utc": "2026-07-06 02:35:29 UTC",
     "count": 0,
@@ -388223,6 +388217,103 @@
         "lat": 35.488,
         "lon": 54.321,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785119725,
+    "time_utc": "2026-07-27 02:35:25 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40de8851",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 25000,
+        "track": 15,
+        "speed": 435,
+        "lat": 35.641,
+        "lon": 52.772,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40de7dc8",
+        "callsign": "AXV7702",
+        "flight": "AXV7702",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 80,
+        "speed": 440,
+        "lat": 35.59,
+        "lon": 55.038,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8e76",
+        "callsign": "IRM4568",
+        "flight": "W54568",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 239,
+        "speed": 391,
+        "lat": 36.999,
+        "lon": 56.274,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de8d3e",
+        "callsign": "QFZ9975",
+        "flight": "Unknown Flight",
+        "type": "B742",
+        "reg": "EP-FAB",
+        "category": "Commercial",
+        "alt": 8000,
+        "track": 257,
+        "speed": 140,
+        "lat": 35.663,
+        "lon": 50.832,
+        "airline": "Fars Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de6dc0",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 280,
+        "speed": 456,
+        "lat": 35.399,
+        "lon": 51.271,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de879b",
+        "callsign": "KIS6034",
+        "flight": "KIS6034",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 31200,
+        "track": 186,
+        "speed": 456,
+        "lat": 34.714,
+        "lon": 59.436,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
