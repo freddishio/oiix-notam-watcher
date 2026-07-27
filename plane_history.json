@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783304728,
-    "time_utc": "2026-07-06 02:25:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783305045,
     "time_utc": "2026-07-06 02:30:45 UTC",
     "count": 0,
@@ -388191,6 +388185,43 @@
         "speed": 437,
         "lat": 35.375,
         "lon": 53.547,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785119430,
+    "time_utc": "2026-07-27 02:30:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40de8d3e",
+        "callsign": "QFZ9975",
+        "flight": "Unknown Flight",
+        "type": "B742",
+        "reg": "EP-FAB",
+        "category": "Commercial",
+        "alt": 5225,
+        "track": 253,
+        "speed": 90,
+        "lat": 35.641,
+        "lon": 51.532,
+        "airline": "Fars Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de7dc8",
+        "callsign": "AXV7702",
+        "flight": "AXV7702",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 80,
+        "speed": 438,
+        "lat": 35.488,
+        "lon": 54.321,
         "airline": "Ava Air",
         "country": "IRAN"
       }
