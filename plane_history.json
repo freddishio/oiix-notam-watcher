@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783363857,
-    "time_utc": "2026-07-06 18:50:57 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783364125,
     "time_utc": "2026-07-06 18:55:25 UTC",
     "count": 1,
@@ -396507,6 +396501,58 @@
         "speed": 460,
         "lat": 33.336,
         "lon": 53.926,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785178525,
+    "time_utc": "2026-07-27 18:55:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40e0da7f",
+        "callsign": "AFL527",
+        "flight": "SU527",
+        "type": "B738",
+        "reg": "RA-73119",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 307,
+        "speed": 458,
+        "lat": 37.016,
+        "lon": 52.29,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "40e17217",
+        "callsign": "ISP1815",
+        "flight": "ISP1815",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 10050,
+        "track": 31,
+        "speed": 295,
+        "lat": 30.687,
+        "lon": 48.546,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e16124",
+        "callsign": "KRU2647",
+        "flight": "KRU2647",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 24975,
+        "track": 102,
+        "speed": 417,
+        "lat": 30.083,
+        "lon": 49.83,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
