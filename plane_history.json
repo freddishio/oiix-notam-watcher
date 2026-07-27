@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783308038,
-    "time_utc": "2026-07-06 03:20:38 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783308323,
-    "time_utc": "2026-07-06 03:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783308643,
     "time_utc": "2026-07-06 03:30:43 UTC",
     "count": 0,
@@ -388819,5 +388807,87 @@
     "time_utc": "2026-07-27 03:20:37 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785122730,
+    "time_utc": "2026-07-27 03:25:30 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40dea4ef",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "Unknown Type",
+        "reg": "JY-HHB",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 232,
+        "speed": 420,
+        "lat": 33.818,
+        "lon": 46.36,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40de9eeb",
+        "callsign": "IRA3470",
+        "flight": "IR3470",
+        "type": "AT76",
+        "reg": "EP-ITM",
+        "category": "Commercial",
+        "alt": 18075,
+        "track": 90,
+        "speed": 20,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dea62c",
+        "callsign": "CPN7920",
+        "flight": "IV7920",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 15125,
+        "track": 270,
+        "speed": 70,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40dea34c",
+        "callsign": "IRM5119",
+        "flight": "W55119",
+        "type": "A343",
+        "reg": "EP-MMC",
+        "category": "Commercial",
+        "alt": 22450,
+        "track": 90,
+        "speed": 50,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40de9cb5",
+        "callsign": "IRM1016",
+        "flight": "W51016",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 168,
+        "speed": 5,
+        "lat": 31.569,
+        "lon": 51.087,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
