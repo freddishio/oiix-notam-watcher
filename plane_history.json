@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783318528,
-    "time_utc": "2026-07-06 06:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783318830,
     "time_utc": "2026-07-06 06:20:30 UTC",
     "count": 0,
@@ -391116,6 +391110,43 @@
         "lat": 25.843,
         "lon": 60.17,
         "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785133229,
+    "time_utc": "2026-07-27 06:20:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40dedf26",
+        "callsign": "AXV9205",
+        "flight": "AXV9205",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 79,
+        "speed": 450,
+        "lat": 35.511,
+        "lon": 54.32,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40df09cf",
+        "callsign": "IRM1017",
+        "flight": "W51017",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 2225,
+        "track": 296,
+        "speed": 200,
+        "lat": 27.421,
+        "lon": 52.656,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
