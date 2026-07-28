@@ -401548,5 +401548,57 @@
     "time_utc": "2026-07-28 17:05:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785258630,
+    "time_utc": "2026-07-28 17:10:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40e54108",
+        "callsign": "MRJ4822",
+        "flight": "MRJ4822",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 52,
+        "speed": 463,
+        "lat": 33.443,
+        "lon": 46.223,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e5391d",
+        "callsign": "SHI7349",
+        "flight": "IS7349",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 249,
+        "speed": 477,
+        "lat": 34.875,
+        "lon": 48.578,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e54a22",
+        "callsign": "KIS7004",
+        "flight": "KIS7004",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 23975,
+        "track": 186,
+        "speed": 486,
+        "lat": 35.23,
+        "lon": 59.506,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
