@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1783458928,
-    "time_utc": "2026-07-07 21:15:28 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "408d133b",
-        "callsign": "AXV9220",
-        "flight": "AXV9220",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 231,
-        "speed": 414,
-        "lat": 33.653,
-        "lon": 46.111,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783459245,
     "time_utc": "2026-07-07 21:20:45 UTC",
     "count": 0,
@@ -402919,5 +402897,42 @@
     "time_utc": "2026-07-28 21:15:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785273627,
+    "time_utc": "2026-07-28 21:20:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e5a889",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 109,
+        "speed": 476,
+        "lat": 36.919,
+        "lon": 47.875,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e5f657",
+        "callsign": "AXV9174",
+        "flight": "AXV9174",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 257,
+        "speed": 444,
+        "lat": 35.847,
+        "lon": 54.477,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
