@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783439127,
-    "time_utc": "2026-07-07 15:45:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783439441,
     "time_utc": "2026-07-07 15:50:41 UTC",
     "count": 6,
@@ -401956,6 +401950,73 @@
         "lat": 35.826,
         "lon": 55.035,
         "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785253834,
+    "time_utc": "2026-07-28 15:50:34 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40e45610",
+        "callsign": "IRA3500",
+        "flight": "IR3500",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 90,
+        "speed": 466,
+        "lat": 36.616,
+        "lon": 51.568,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e4f024",
+        "callsign": "VRH5802",
+        "flight": "VRH5802",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 19400,
+        "track": 272,
+        "speed": 400,
+        "lat": 36.666,
+        "lon": 53.933,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e4e4bb",
+        "callsign": "TBN6211",
+        "flight": "TBN6211",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 480,
+        "lat": 35.703,
+        "lon": 54.213,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e502b4",
+        "callsign": "SHI4310",
+        "flight": "IS4310",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 79,
+        "speed": 454,
+        "lat": 35.309,
+        "lon": 53.036,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
