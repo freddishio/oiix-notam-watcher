@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783389327,
-    "time_utc": "2026-07-07 01:55:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783389650,
     "time_utc": "2026-07-07 02:00:50 UTC",
     "count": 6,
@@ -399085,6 +399079,43 @@
         "lat": 37.2,
         "lon": 48.508,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785204038,
+    "time_utc": "2026-07-28 02:00:38 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e28667",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 303,
+        "speed": 440,
+        "lat": 37.59,
+        "lon": 47.903,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e280e9",
+        "callsign": "SHI7310",
+        "flight": "IS7310",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 260,
+        "speed": 457,
+        "lat": 35.474,
+        "lon": 52.566,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
