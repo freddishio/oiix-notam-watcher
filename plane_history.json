@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1783433736,
-    "time_utc": "2026-07-07 14:15:36 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "408bc723",
-        "callsign": "AXV7710",
-        "flight": "AXV7710",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 241,
-        "speed": 439,
-        "lat": 31.878,
-        "lon": 49.94,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "408c064b",
-        "callsign": "ATS6446",
-        "flight": "IRH6446",
-        "type": "B734",
-        "reg": "EP-SAU",
-        "category": "Commercial",
-        "alt": 28000,
-        "track": 90,
-        "speed": 0,
-        "lat": 34.903,
-        "lon": 51.001,
-        "airline": "Atlas Khomein Kish",
-        "country": "IRAN"
-      },
-      {
-        "id": "408b1425",
-        "callsign": "AFL526",
-        "flight": "SU526",
-        "type": "B738",
-        "reg": "RA-73118",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 148,
-        "speed": 470,
-        "lat": 25.129,
-        "lon": 60.63,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1783434046,
     "time_utc": "2026-07-07 14:20:46 UTC",
     "count": 2,
@@ -401580,6 +401528,73 @@
         "lon": 49.645,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785248429,
+    "time_utc": "2026-07-28 14:20:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40e47b9a",
+        "callsign": "IRB9732",
+        "flight": "B99732",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 34025,
+        "track": 260,
+        "speed": 10,
+        "lat": 35.527,
+        "lon": 52.96,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e48fe7",
+        "callsign": "KIS7045",
+        "flight": "KIS7045",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 27025,
+        "track": 92,
+        "speed": 489,
+        "lat": 36.645,
+        "lon": 53.267,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e42f26",
+        "callsign": "QSM2113",
+        "flight": "QB2113",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 26700,
+        "track": 317,
+        "speed": 427,
+        "lat": 34.593,
+        "lon": 52.692,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e49575",
+        "callsign": "TKN3102",
+        "flight": "TKN3102",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 80,
+        "speed": 20,
+        "lat": 35.377,
+        "lon": 53.408,
+        "airline": "Kish Air",
+        "country": "IRAN"
       }
     ]
   }
