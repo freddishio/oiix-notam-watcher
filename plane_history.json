@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1783460439,
-    "time_utc": "2026-07-07 21:40:39 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "408cfa2c",
-        "callsign": "FDB5YA",
-        "flight": "FZ990",
-        "type": "B38M",
-        "reg": "A6-FMD",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 128,
-        "speed": 493,
-        "lat": 37.066,
-        "lon": 52.531,
-        "airline": "flydubai",
-        "country": "United Arab Emirates"
-      }
-    ]
-  },
-  {
     "timestamp": 1783460729,
     "time_utc": "2026-07-07 21:45:29 UTC",
     "count": 1,
@@ -402988,5 +402966,87 @@
     "time_utc": "2026-07-28 21:40:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785275122,
+    "time_utc": "2026-07-28 21:45:22 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40e60f31",
+        "callsign": "CPN7951",
+        "flight": "IV7951",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 302,
+        "speed": 433,
+        "lat": 38.885,
+        "lon": 46.426,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e60205",
+        "callsign": "TKN3295",
+        "flight": "TKN3295",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 6125,
+        "track": 107,
+        "speed": 175,
+        "lat": 35.45,
+        "lon": 50.956,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e62860",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 115,
+        "speed": 3,
+        "lat": 35.68,
+        "lon": 51.338,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e5f657",
+        "callsign": "AXV9174",
+        "flight": "AXV9174",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 10200,
+        "track": 343,
+        "speed": 72,
+        "lat": 35.347,
+        "lon": 51.961,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e5fe50",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 95,
+        "speed": 20,
+        "lat": 35.287,
+        "lon": 52.272,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
