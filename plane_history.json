@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783461647,
-    "time_utc": "2026-07-07 22:00:47 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783461929,
     "time_utc": "2026-07-07 22:05:29 UTC",
     "count": 1,
@@ -403090,6 +403084,43 @@
         "lat": 38.006,
         "lon": 44.409,
         "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785276327,
+    "time_utc": "2026-07-28 22:05:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e62e41",
+        "callsign": "AXV7731",
+        "flight": "AXV7731",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 30050,
+        "track": 259,
+        "speed": 461,
+        "lat": 35.781,
+        "lon": 54.709,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e5fe50",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 80,
+        "speed": 437,
+        "lat": 35.622,
+        "lon": 55.262,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
