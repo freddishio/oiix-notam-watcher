@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783386928,
-    "time_utc": "2026-07-07 01:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783387246,
     "time_utc": "2026-07-07 01:20:46 UTC",
     "count": 0,
@@ -398885,6 +398879,43 @@
         "lat": 35.324,
         "lon": 51.729,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785201623,
+    "time_utc": "2026-07-28 01:20:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e256bb",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 95,
+        "speed": 457,
+        "lat": 35.264,
+        "lon": 52.496,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e25e4a",
+        "callsign": "QSM2112",
+        "flight": "QB2112",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 25000,
+        "track": 168,
+        "speed": 494,
+        "lat": 29.721,
+        "lon": 52.545,
+        "airline": "Qeshm Air",
         "country": "IRAN"
       }
     ]
