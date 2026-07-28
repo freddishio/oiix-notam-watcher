@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1783464647,
-    "time_utc": "2026-07-07 22:50:47 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "408da905",
-        "callsign": "TBN6318",
-        "flight": "TBN6318",
-        "type": "MD88",
-        "reg": "EP-SMA",
-        "category": "Commercial",
-        "alt": 31000,
-        "track": 86,
-        "speed": 513,
-        "lat": 32.831,
-        "lon": 54.143,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "408d80ce",
-        "callsign": "ABY563",
-        "flight": "G9563",
-        "type": "A320",
-        "reg": "A6-AQN",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 261,
-        "speed": 464,
-        "lat": 26.786,
-        "lon": 61.84,
-        "airline": "Air Arabia",
-        "country": "United Arab Emirates"
-      }
-    ]
-  },
-  {
     "timestamp": 1783464926,
     "time_utc": "2026-07-07 22:55:26 UTC",
     "count": 1,
@@ -403376,6 +403339,58 @@
         "speed": 470,
         "lat": 33.598,
         "lon": 47.024,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785279322,
+    "time_utc": "2026-07-28 22:55:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40e6514f",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 50,
+        "speed": 478,
+        "lat": 33.514,
+        "lon": 46.323,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e64f94",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 36950,
+        "track": 93,
+        "speed": 449,
+        "lat": 33.561,
+        "lon": 46.715,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e64989",
+        "callsign": "MRJ4800",
+        "flight": "MRJ4800",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 56,
+        "speed": 477,
+        "lat": 33.995,
+        "lon": 47.613,
         "airline": "Meraj Airlines",
         "country": "IRAN"
       }
