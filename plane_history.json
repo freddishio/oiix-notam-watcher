@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783382450,
-    "time_utc": "2026-07-07 00:00:50 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783382726,
-    "time_utc": "2026-07-07 00:05:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783383037,
     "time_utc": "2026-07-07 00:10:37 UTC",
     "count": 0,
@@ -398424,5 +398412,42 @@
     "time_utc": "2026-07-28 00:00:36 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785197136,
+    "time_utc": "2026-07-28 00:05:36 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e21cd6",
+        "callsign": "IZG3022",
+        "flight": "ZO3022",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 308,
+        "speed": 19,
+        "lat": 35.535,
+        "lon": 51.409,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e0fb09",
+        "callsign": "IRM078",
+        "flight": "W578",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 12425,
+        "track": 139,
+        "speed": 320,
+        "lat": 35.561,
+        "lon": 51.438,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
