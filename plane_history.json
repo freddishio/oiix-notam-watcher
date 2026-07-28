@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783384247,
-    "time_utc": "2026-07-07 00:30:47 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783384522,
-    "time_utc": "2026-07-07 00:35:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783384842,
     "time_utc": "2026-07-07 00:40:42 UTC",
     "count": 0,
@@ -398592,6 +398580,73 @@
         "lat": 35.534,
         "lon": 51.414,
         "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785198931,
+    "time_utc": "2026-07-28 00:35:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40e219c1",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 122,
+        "speed": 463,
+        "lat": 36.497,
+        "lon": 48.911,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e1d259",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 25950,
+        "track": 122,
+        "speed": 454,
+        "lat": 35.991,
+        "lon": 49.881,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e25e4a",
+        "callsign": "QSM2112",
+        "flight": "QB2112",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 16950,
+        "track": 111,
+        "speed": 19,
+        "lat": 35.55,
+        "lon": 51.42,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e256bb",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32175,
+        "track": 51,
+        "speed": 458,
+        "lat": 33.523,
+        "lon": 46.333,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
