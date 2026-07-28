@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783465527,
-    "time_utc": "2026-07-07 23:05:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783465836,
     "time_utc": "2026-07-07 23:10:36 UTC",
     "count": 0,
@@ -403407,6 +403401,43 @@
         "lat": 34.027,
         "lon": 47.678,
         "airline": "Zagros Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785280225,
+    "time_utc": "2026-07-28 23:10:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40e6514f",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 28975,
+        "track": 62,
+        "speed": 477,
+        "lat": 34.345,
+        "lon": 48.392,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e64989",
+        "callsign": "MRJ4800",
+        "flight": "MRJ4800",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 74,
+        "speed": 473,
+        "lat": 34.897,
+        "lon": 49.751,
+        "airline": "Meraj Airlines",
         "country": "IRAN"
       }
     ]
