@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1783468244,
-    "time_utc": "2026-07-07 23:50:44 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783468525,
-    "time_utc": "2026-07-07 23:55:25 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "408dc515",
-        "callsign": "AXV9221",
-        "flight": "AXV9221",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 79,
-        "speed": 476,
-        "lat": 35.313,
-        "lon": 53.186,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783468848,
     "time_utc": "2026-07-08 00:00:48 UTC",
     "count": 1,
@@ -403592,6 +403564,58 @@
         "lon": 51.343,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785282929,
+    "time_utc": "2026-07-28 23:55:29 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40e68446",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A310",
+        "reg": "EP-MDH",
+        "category": "Commercial",
+        "alt": 10850,
+        "track": 310,
+        "speed": 326,
+        "lat": 35.661,
+        "lon": 50.742,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e64f94",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 80,
+        "speed": 474,
+        "lat": 35.717,
+        "lon": 55.636,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e51f79",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 13300,
+        "track": 324,
+        "speed": 228,
+        "lat": 34.958,
+        "lon": 51.483,
+        "airline": "Mahan Air",
+        "country": "IRAN"
       }
     ]
   }
