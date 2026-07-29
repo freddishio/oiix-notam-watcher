@@ -1,72 +1,5 @@
 [
   {
-    "timestamp": 1783541729,
-    "time_utc": "2026-07-08 20:15:29 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "40910177",
-        "callsign": "AXV9211",
-        "flight": "AXV9211",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 4550,
-        "track": 114,
-        "speed": 140,
-        "lat": 35.466,
-        "lon": 51.047,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40918e37",
-        "callsign": "SHI7347",
-        "flight": "IS7347",
-        "type": "B733",
-        "reg": "EP-FSE",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 100,
-        "speed": 473,
-        "lat": 35.353,
-        "lon": 51.566,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40917d72",
-        "callsign": "IRZ8267",
-        "flight": "IRZ8267",
-        "type": "B733",
-        "reg": "EP-SII",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 79,
-        "speed": 463,
-        "lat": 35.434,
-        "lon": 53.906,
-        "airline": "Saha Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "4091bab2",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-NFC",
-        "category": "Commercial",
-        "alt": 13400,
-        "track": 39,
-        "speed": 290,
-        "lat": 31.608,
-        "lon": 49.017,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      }
-    ]
-  },
-  {
     "timestamp": 1783542044,
     "time_utc": "2026-07-08 20:20:44 UTC",
     "count": 2,
@@ -407202,5 +407135,42 @@
     "time_utc": "2026-07-29 20:15:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785356434,
+    "time_utc": "2026-07-29 20:20:34 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40ea4348",
+        "callsign": "MRJ4875",
+        "flight": "MRJ4875",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 182,
+        "speed": 456,
+        "lat": 34.543,
+        "lon": 47.126,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ea37db",
+        "callsign": "TKN3266",
+        "flight": "TKN3266",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 95,
+        "speed": 422,
+        "lat": 33.504,
+        "lon": 47.439,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
