@@ -407211,5 +407211,57 @@
     "time_utc": "2026-07-29 19:45:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785354621,
+    "time_utc": "2026-07-29 19:50:21 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40ea12fd",
+        "callsign": "IRA5361",
+        "flight": "IR5361",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 260,
+        "speed": 487,
+        "lat": 35.48,
+        "lon": 52.663,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ea28f2",
+        "callsign": "KRU2651",
+        "flight": "KRU2651",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 29025,
+        "track": 13,
+        "speed": 459,
+        "lat": 32.988,
+        "lon": 49.508,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ea25ca",
+        "callsign": "CPN6913",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 33150,
+        "track": 64,
+        "speed": 330,
+        "lat": 32.44,
+        "lon": 51.136,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
