@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783483523,
-    "time_utc": "2026-07-08 04:05:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783483843,
     "time_utc": "2026-07-08 04:10:43 UTC",
     "count": 0,
@@ -404334,6 +404328,103 @@
         "lon": 52.815,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785298228,
+    "time_utc": "2026-07-29 04:10:28 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40e70fe7",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 286,
+        "speed": 422,
+        "lat": 37.963,
+        "lon": 47.047,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e71056",
+        "callsign": "IRB8028",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-MDQ",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 310,
+        "speed": 463,
+        "lat": 36.846,
+        "lon": 49.033,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e710e2",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 12500,
+        "track": 314,
+        "speed": 374,
+        "lat": 35.684,
+        "lon": 50.609,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e72516",
+        "callsign": "IZG3002",
+        "flight": "ZO3002",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 7450,
+        "track": 270,
+        "speed": 223,
+        "lat": 35.445,
+        "lon": 50.973,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e70423",
+        "callsign": "IRM1036",
+        "flight": "W51036",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 27,
+        "lat": 35.691,
+        "lon": 51.303,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40e725a5",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 3475,
+        "track": 42,
+        "speed": 201,
+        "lat": 30.45,
+        "lon": 48.249,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
