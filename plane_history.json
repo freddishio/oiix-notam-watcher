@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783561530,
-    "time_utc": "2026-07-09 01:45:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783561846,
     "time_utc": "2026-07-09 01:50:46 UTC",
     "count": 0,
@@ -407788,5 +407782,87 @@
     "time_utc": "2026-07-30 01:45:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785376224,
+    "time_utc": "2026-07-30 01:50:24 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40eb0518",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 270,
+        "speed": 473,
+        "lat": 35.445,
+        "lon": 50.611,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb32e4",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 451,
+        "lat": 35.828,
+        "lon": 54.998,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40eb212b",
+        "callsign": "TKN3295",
+        "flight": "TKN3295",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 30950,
+        "track": 62,
+        "speed": 431,
+        "lat": 34.729,
+        "lon": 49.275,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb3516",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 30925,
+        "track": 90,
+        "speed": 20,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb3c0a",
+        "callsign": "KRU2542",
+        "flight": "KRU2542",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 18475,
+        "track": 176,
+        "speed": 339,
+        "lat": 35.059,
+        "lon": 51.324,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
