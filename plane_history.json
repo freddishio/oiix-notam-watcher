@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1783616438,
-    "time_utc": "2026-07-09 17:00:38 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40956d86",
-        "callsign": "TKN3287",
-        "flight": "TKN3287",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 32025,
-        "track": 270,
-        "speed": 10,
-        "lat": 34.903,
-        "lon": 51.001,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783616723,
     "time_utc": "2026-07-09 17:05:23 UTC",
     "count": 2,
@@ -413465,6 +413443,73 @@
         "speed": 476,
         "lat": 25.48,
         "lon": 59.632,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785431122,
+    "time_utc": "2026-07-30 17:05:22 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40edff6c",
+        "callsign": "TBZ6619",
+        "flight": "I36619",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 12250,
+        "track": 90,
+        "speed": 20,
+        "lat": 35.686,
+        "lon": 51.564,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edd83e",
+        "callsign": "FPI7439",
+        "flight": "FP7439",
+        "type": "B733",
+        "reg": "EP-FPC",
+        "category": "Commercial",
+        "alt": 11425,
+        "track": 274,
+        "speed": 279,
+        "lat": 35.562,
+        "lon": 51.827,
+        "airline": "FlyPersia",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edf27d",
+        "callsign": "AXV7728",
+        "flight": "AXV7728",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 459,
+        "lat": 35.882,
+        "lon": 55.411,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edc551",
+        "callsign": "AFL527",
+        "flight": "SU527",
+        "type": "B738",
+        "reg": "RA-73112",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 343,
+        "speed": 470,
+        "lat": 26.084,
+        "lon": 59.441,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
