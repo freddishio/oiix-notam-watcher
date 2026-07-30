@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783607130,
-    "time_utc": "2026-07-09 14:25:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783607434,
     "time_utc": "2026-07-09 14:30:34 UTC",
     "count": 3,
@@ -413478,6 +413472,103 @@
         "lat": 36.436,
         "lon": 49.031,
         "airline": "Iran Air Tours",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785421834,
+    "time_utc": "2026-07-30 14:30:34 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40ed40db",
+        "callsign": "MRJ4801",
+        "flight": "MRJ4801",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 259,
+        "speed": 471,
+        "lat": 35.663,
+        "lon": 53.906,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ed51ed",
+        "callsign": "AXV7730",
+        "flight": "AXV7730",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 80,
+        "speed": 456,
+        "lat": 35.483,
+        "lon": 54.241,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ed64e5",
+        "callsign": "QSM1217",
+        "flight": "QB1217",
+        "type": "F100",
+        "reg": "EP-FQI",
+        "category": "Commercial",
+        "alt": 17300,
+        "track": 25,
+        "speed": 336,
+        "lat": 31.139,
+        "lon": 48.62,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ed3862",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAG",
+        "category": "Commercial",
+        "alt": 5925,
+        "track": 79,
+        "speed": 100,
+        "lat": 31.104,
+        "lon": 49.07,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ed6164",
+        "callsign": "CPN6913",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 19575,
+        "track": 45,
+        "speed": 130,
+        "lat": 31.77,
+        "lon": 49.658,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ed3dbd",
+        "callsign": "SHI7357",
+        "flight": "IS7357",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 223,
+        "speed": 360,
+        "lat": 25.656,
+        "lon": 58.451,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
