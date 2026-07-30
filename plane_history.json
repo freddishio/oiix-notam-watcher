@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783611641,
-    "time_utc": "2026-07-09 15:40:41 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783611937,
     "time_utc": "2026-07-09 15:45:37 UTC",
     "count": 1,
@@ -413313,6 +413307,73 @@
         "speed": 445,
         "lat": 35.318,
         "lon": 52.893,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785426330,
+    "time_utc": "2026-07-30 15:45:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40ecae02",
+        "callsign": "TBN6211",
+        "flight": "TBN6234",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 259,
+        "speed": 477,
+        "lat": 35.738,
+        "lon": 54.409,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ed8d2c",
+        "callsign": "IRA5356",
+        "flight": "IR5356",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 61,
+        "speed": 466,
+        "lat": 34.146,
+        "lon": 47.945,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edaf9a",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAG",
+        "category": "Commercial",
+        "alt": 23600,
+        "track": 13,
+        "speed": 390,
+        "lat": 32.356,
+        "lon": 49.319,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ed6e21",
+        "callsign": "IRZ8247",
+        "flight": "IRZ8247",
+        "type": "B733",
+        "reg": "EP-SII",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 80,
+        "speed": 444,
+        "lat": 35.428,
+        "lon": 53.636,
         "airline": "Saha Air",
         "country": "IRAN"
       }
