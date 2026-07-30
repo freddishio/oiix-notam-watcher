@@ -1,79 +1,5 @@
 [
   {
-    "timestamp": 1783639836,
-    "time_utc": "2026-07-09 23:30:36 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40965a2d",
-        "callsign": "TKN3287",
-        "flight": "TKN3287",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 32325,
-        "track": 122,
-        "speed": 467,
-        "lat": 36.132,
-        "lon": 49.617,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783640126,
-    "time_utc": "2026-07-09 23:35:26 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40965a2d",
-        "callsign": "TKN3287",
-        "flight": "TKN3287",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 22100,
-        "track": 119,
-        "speed": 418,
-        "lat": 35.818,
-        "lon": 50.254,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40969622",
-        "callsign": "IRA748",
-        "flight": "IR748",
-        "type": "A310",
-        "reg": "EP-IBK",
-        "category": "Commercial",
-        "alt": 6500,
-        "track": 288,
-        "speed": 230,
-        "lat": 35.357,
-        "lon": 51.367,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40954666",
-        "callsign": "IRM090",
-        "flight": "W590",
-        "type": "A343",
-        "reg": "EP-MJE",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 310,
-        "speed": 464,
-        "lat": 33.534,
-        "lon": 53.872,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783640429,
     "time_utc": "2026-07-09 23:40:29 UTC",
     "count": 1,
@@ -413495,5 +413421,72 @@
     "time_utc": "2026-07-30 23:30:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785454527,
+    "time_utc": "2026-07-30 23:35:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40ef3003",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 62,
+        "speed": 470,
+        "lat": 34.61,
+        "lon": 48.998,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef46f0",
+        "callsign": "IRA3460",
+        "flight": "IR3460",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 106,
+        "speed": 13,
+        "lat": 35.41,
+        "lon": 51.164,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef220a",
+        "callsign": "QSM2230",
+        "flight": "QB2230",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 7850,
+        "track": 101,
+        "speed": 19,
+        "lat": 35.674,
+        "lon": 51.343,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edc5f4",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 20000,
+        "track": 316,
+        "speed": 404,
+        "lat": 34.889,
+        "lon": 52.362,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
