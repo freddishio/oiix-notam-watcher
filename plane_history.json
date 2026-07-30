@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1783638040,
-    "time_utc": "2026-07-09 23:00:40 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "4096801e",
-        "callsign": "TBN7220",
-        "flight": "TBN7220",
-        "type": "MD88",
-        "reg": "EP-TBF",
-        "category": "Commercial",
-        "alt": 21550,
-        "track": 300,
-        "speed": 444,
-        "lat": 28.898,
-        "lon": 53.083,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783638329,
     "time_utc": "2026-07-09 23:05:29 UTC",
     "count": 2,
@@ -413346,5 +413324,57 @@
     "time_utc": "2026-07-30 23:00:32 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785452723,
+    "time_utc": "2026-07-30 23:05:23 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40ef0884",
+        "callsign": "AXV7731",
+        "flight": "AXV7731",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 6500,
+        "track": 290,
+        "speed": 184,
+        "lat": 35.623,
+        "lon": 51.505,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef220a",
+        "callsign": "QSM2230",
+        "flight": "QB2230",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 61,
+        "speed": 476,
+        "lat": 34.188,
+        "lon": 48.03,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef1293",
+        "callsign": "TKN3295",
+        "flight": "TKN3295",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 31050,
+        "track": 62,
+        "speed": 457,
+        "lat": 34.786,
+        "lon": 49.409,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
