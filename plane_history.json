@@ -1,72 +1,5 @@
 [
   {
-    "timestamp": 1783603119,
-    "time_utc": "2026-07-09 13:18:39 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "409452dc",
-        "callsign": "QSM2272",
-        "flight": "QB2272",
-        "type": "A320",
-        "reg": "EP-FQP",
-        "category": "Commercial",
-        "alt": 28925,
-        "track": 158,
-        "speed": 444,
-        "lat": 36.508,
-        "lon": 50.229,
-        "airline": "Qeshm Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40945803",
-        "callsign": "AFL521",
-        "flight": "SU521",
-        "type": "B738",
-        "reg": "RA-73116",
-        "category": "Commercial",
-        "alt": 31500,
-        "track": 344,
-        "speed": 456,
-        "lat": 25.14,
-        "lon": 59.74,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      },
-      {
-        "id": "4093ed63",
-        "callsign": "ADY715",
-        "flight": "3L715",
-        "type": "A320",
-        "reg": "A6-AQL",
-        "category": "Commercial",
-        "alt": 36025,
-        "track": 154,
-        "speed": 458,
-        "lat": 24.866,
-        "lon": 60.805,
-        "airline": "Air Arabia Abu Dhabi",
-        "country": "United Arab Emirates"
-      },
-      {
-        "id": "409394ac",
-        "callsign": "AFL526",
-        "flight": "SU526",
-        "type": "B738",
-        "reg": "RA-73112",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 157,
-        "speed": 461,
-        "lat": 24.812,
-        "lon": 60.841,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1783603373,
     "time_utc": "2026-07-09 13:22:53 UTC",
     "count": 2,
@@ -413777,6 +413710,58 @@
         "speed": 450,
         "lat": 25.644,
         "lon": 60.28,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785417633,
+    "time_utc": "2026-07-30 13:20:33 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40ecfd42",
+        "callsign": "SHI7313",
+        "flight": "IS7313",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 33850,
+        "track": 343,
+        "speed": 453,
+        "lat": 25.846,
+        "lon": 59.517,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ecde4c",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73103",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 343,
+        "speed": 457,
+        "lat": 25.389,
+        "lon": 59.662,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "40ec2155",
+        "callsign": "AFL526",
+        "flight": "SU526",
+        "type": "B738",
+        "reg": "RA-73112",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 449,
+        "lat": 25.079,
+        "lon": 60.664,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
