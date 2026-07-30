@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783567528,
-    "time_utc": "2026-07-09 03:25:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783567849,
     "time_utc": "2026-07-09 03:30:49 UTC",
     "count": 3,
@@ -409160,6 +409154,88 @@
         "lon": 59.81,
         "airline": "Rubystar",
         "country": "Belarus"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785382224,
+    "time_utc": "2026-07-30 03:30:24 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40eb700f",
+        "callsign": "VRH6805",
+        "flight": "VRH6805",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 18900,
+        "track": 8,
+        "speed": 383,
+        "lat": 36.103,
+        "lon": 51.344,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb705b",
+        "callsign": "SHR5291",
+        "flight": "SHR5291",
+        "type": "A310",
+        "reg": "EP-HNA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 270,
+        "speed": 140,
+        "lat": 34.902,
+        "lon": 50.971,
+        "airline": "SHR",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40eb4f97",
+        "callsign": "SHI7310",
+        "flight": "IS7310",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 90,
+        "speed": 451,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb7307",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 0,
+        "lat": 35.411,
+        "lon": 51.164,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb7d95",
+        "callsign": "TBZ6617",
+        "flight": "I36617",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 303,
+        "speed": 19,
+        "lat": 35.413,
+        "lon": 51.165,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
       }
     ]
   }
