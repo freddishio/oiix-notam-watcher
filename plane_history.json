@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783564844,
-    "time_utc": "2026-07-09 02:40:44 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783565124,
-    "time_utc": "2026-07-09 02:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783565448,
     "time_utc": "2026-07-09 02:50:48 UTC",
     "count": 0,
@@ -408495,6 +408483,103 @@
         "lon": 55.226,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785379527,
+    "time_utc": "2026-07-30 02:45:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40eb5ef4",
+        "callsign": "IRA3496",
+        "flight": "IR3496",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 0,
+        "lat": 35.686,
+        "lon": 51.334,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb4c1a",
+        "callsign": "SHI7346",
+        "flight": "IS7346",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 259,
+        "speed": 410,
+        "lat": 35.747,
+        "lon": 54.473,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb32e4",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 455,
+        "lat": 34.245,
+        "lon": 47.058,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40eb51ec",
+        "callsign": "TBN7267",
+        "flight": "AXV7267",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 255,
+        "speed": 506,
+        "lat": 34.38,
+        "lon": 47.35,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb3c3a",
+        "callsign": "IRM5084",
+        "flight": "W55084",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 90,
+        "speed": 3,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb4c2b",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 16,
+        "speed": 0,
+        "lat": 35.414,
+        "lon": 51.15,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
