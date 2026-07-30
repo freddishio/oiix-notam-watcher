@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783558855,
-    "time_utc": "2026-07-09 01:00:55 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783559122,
-    "time_utc": "2026-07-09 01:05:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783559448,
     "time_utc": "2026-07-09 01:10:48 UTC",
     "count": 1,
@@ -407482,6 +407470,73 @@
         "lat": 37.618,
         "lon": 51.144,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785373534,
+    "time_utc": "2026-07-30 01:05:34 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40eac1be",
+        "callsign": "IRB9703",
+        "flight": "B99703",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 109,
+        "speed": 473,
+        "lat": 36.877,
+        "lon": 48.078,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eaa122",
+        "callsign": "THY8HA",
+        "flight": "TK412",
+        "type": "A333",
+        "reg": "TC-JNO",
+        "category": "Commercial",
+        "alt": 1975,
+        "track": 19,
+        "speed": 230,
+        "lat": 38.329,
+        "lon": 48.307,
+        "airline": "Turkish Airlines",
+        "country": "Turkey"
+      },
+      {
+        "id": "40e95640",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 35675,
+        "track": 164,
+        "speed": 484,
+        "lat": 36.963,
+        "lon": 51.364,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ea9a05",
+        "callsign": "IZG3051",
+        "flight": "ZO3051",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 4300,
+        "track": 90,
+        "speed": 40,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Zagros Airlines",
         "country": "IRAN"
       }
     ]
