@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783560646,
-    "time_utc": "2026-07-09 01:30:46 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783560922,
-    "time_utc": "2026-07-09 01:35:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783561247,
     "time_utc": "2026-07-09 01:40:47 UTC",
     "count": 0,
@@ -407632,6 +407620,58 @@
         "speed": 498,
         "lat": 25.683,
         "lon": 59.568,
+        "airline": "TARP Aviation",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785375334,
+    "time_utc": "2026-07-30 01:35:34 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40eb0518",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 260,
+        "speed": 468,
+        "lat": 35.527,
+        "lon": 52.924,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb212b",
+        "callsign": "TKN3295",
+        "flight": "TKN3295",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 30950,
+        "track": 47,
+        "speed": 430,
+        "lat": 33.866,
+        "lon": 47.438,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40eb0588",
+        "callsign": "RLA1111",
+        "flight": "RLA1111",
+        "type": "GLF6",
+        "reg": "RA-11000",
+        "category": "Commercial",
+        "alt": 43000,
+        "track": 343,
+        "speed": 502,
+        "lat": 26.353,
+        "lon": 59.355,
         "airline": "TARP Aviation",
         "country": "Russian Federation"
       }
