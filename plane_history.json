@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783615836,
-    "time_utc": "2026-07-09 16:50:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783616126,
-    "time_utc": "2026-07-09 16:55:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783616438,
     "time_utc": "2026-07-09 17:00:38 UTC",
     "count": 1,
@@ -413358,6 +413346,73 @@
         "speed": 456,
         "lat": 26.879,
         "lon": 53.636,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785430530,
+    "time_utc": "2026-07-30 16:55:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40edd83e",
+        "callsign": "FPI7439",
+        "flight": "FP7439",
+        "type": "B733",
+        "reg": "EP-FPC",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 261,
+        "speed": 477,
+        "lat": 35.566,
+        "lon": 53.231,
+        "airline": "FlyPersia",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edb529",
+        "callsign": "IRA5330",
+        "flight": "IR5330",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 79,
+        "speed": 486,
+        "lat": 35.52,
+        "lon": 54.334,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ede72d",
+        "callsign": "IRB9758",
+        "flight": "B99758",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 250,
+        "speed": 489,
+        "lat": 34.915,
+        "lon": 48.722,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edec1a",
+        "callsign": "SHI7316",
+        "flight": "IS7316",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 138,
+        "speed": 450,
+        "lat": 26.391,
+        "lon": 54.087,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
