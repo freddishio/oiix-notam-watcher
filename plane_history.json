@@ -1,72 +1,5 @@
 [
   {
-    "timestamp": 1783699830,
-    "time_utc": "2026-07-10 16:10:30 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "4099c630",
-        "callsign": "CPN7978",
-        "flight": "IV7978",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 25750,
-        "track": 295,
-        "speed": 399,
-        "lat": 38.374,
-        "lon": 45.623,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40999d60",
-        "callsign": "SHI7354",
-        "flight": "IS7354",
-        "type": "B735",
-        "reg": "EP-FSQ",
-        "category": "Commercial",
-        "alt": 32025,
-        "track": 259,
-        "speed": 440,
-        "lat": 35.675,
-        "lon": 53.983,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "409829cd",
-        "callsign": "TBN6211",
-        "flight": "TBN7220",
-        "type": "MD88",
-        "reg": "EP-TBF",
-        "category": "Commercial",
-        "alt": 28000,
-        "track": 259,
-        "speed": 472,
-        "lat": 35.674,
-        "lon": 53.99,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4099c502",
-        "callsign": "ATS6145",
-        "flight": "IRH6145",
-        "type": "MD87",
-        "reg": "EP-SAT",
-        "category": "Commercial",
-        "alt": 26325,
-        "track": 300,
-        "speed": 210,
-        "lat": 27.96,
-        "lon": 55.764,
-        "airline": "Atlas Khomein Kish",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783700130,
     "time_utc": "2026-07-10 16:15:30 UTC",
     "count": 9,
@@ -413079,6 +413012,28 @@
         "speed": 459,
         "lat": 32.868,
         "lon": 53.906,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785514526,
+    "time_utc": "2026-07-31 16:15:26 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "40f21fb6",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 266,
+        "speed": 461,
+        "lat": 32.837,
+        "lon": 53.144,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
