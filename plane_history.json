@@ -413484,5 +413484,42 @@
     "time_utc": "2026-07-31 00:45:31 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785459026,
+    "time_utc": "2026-07-31 00:50:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40ef19e5",
+        "callsign": "MRJ4832",
+        "flight": "MRJ4832",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 20000,
+        "track": 123,
+        "speed": 397,
+        "lat": 35.631,
+        "lon": 50.557,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef8944",
+        "callsign": "QSM1328",
+        "flight": "QB1328",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 180,
+        "speed": 13,
+        "lat": 35.679,
+        "lon": 51.334,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
