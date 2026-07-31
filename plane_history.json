@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783719929,
-    "time_utc": "2026-07-10 21:45:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783720228,
     "time_utc": "2026-07-10 21:50:28 UTC",
     "count": 2,
@@ -411621,6 +411615,73 @@
         "speed": 420,
         "lat": 33.976,
         "lon": 53.38,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785534330,
+    "time_utc": "2026-07-31 21:45:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f34a6d",
+        "callsign": "VRH6809",
+        "flight": "VRH6809",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 32925,
+        "track": 122,
+        "speed": 468,
+        "lat": 37.962,
+        "lon": 48.367,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f351b7",
+        "callsign": "MRJ2805",
+        "flight": "MRJ2805",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 259,
+        "speed": 455,
+        "lat": 35.828,
+        "lon": 55.014,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f30376",
+        "callsign": "TBN7259",
+        "flight": "SUE7259",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 29950,
+        "track": 241,
+        "speed": 452,
+        "lat": 34.318,
+        "lon": 47.15,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f356cf",
+        "callsign": "CPN6951",
+        "flight": "IV6951",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 318,
+        "speed": 550,
+        "lat": 34.458,
+        "lon": 52.845,
         "airline": "Caspian Airlines",
         "country": "IRAN"
       }
