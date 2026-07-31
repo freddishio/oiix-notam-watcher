@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1783646725,
-    "time_utc": "2026-07-10 01:25:25 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "4096a335",
-        "callsign": "TBN7274",
-        "flight": "TBN7274",
-        "type": "B734",
-        "reg": "EP-TBJ",
-        "category": "Commercial",
-        "alt": 34900,
-        "track": 109,
-        "speed": 487,
-        "lat": 37.272,
-        "lon": 46.626,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783647035,
     "time_utc": "2026-07-10 01:30:35 UTC",
     "count": 0,
@@ -413593,6 +413571,43 @@
         "speed": 447,
         "lat": 35.902,
         "lon": 55.511,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785461429,
+    "time_utc": "2026-07-31 01:30:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40ef80cf",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 260,
+        "speed": 453,
+        "lat": 35.435,
+        "lon": 52.267,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef9381",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 444,
+        "lat": 35.792,
+        "lon": 54.772,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
