@@ -1,78 +1,5 @@
 [
   {
-    "timestamp": 1783725633,
-    "time_utc": "2026-07-10 23:20:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783725928,
-    "time_utc": "2026-07-10 23:25:28 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "409b2a5c",
-        "callsign": "TBN7273",
-        "flight": "TBN7273",
-        "type": "B734",
-        "reg": "EP-TBJ",
-        "category": "Commercial",
-        "alt": 29725,
-        "track": 311,
-        "speed": 442,
-        "lat": 36.999,
-        "lon": 48.814,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "409b24a9",
-        "callsign": "KRU2678",
-        "flight": "KRU2678",
-        "type": "B733",
-        "reg": "EP-NFC",
-        "category": "Commercial",
-        "alt": 27400,
-        "track": 194,
-        "speed": 470,
-        "lat": 32.38,
-        "lon": 49.793,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "409acd26",
-        "callsign": "IRZ8257",
-        "flight": "IRZ8257",
-        "type": "B733",
-        "reg": "EP-SIM",
-        "category": "Commercial",
-        "alt": 29575,
-        "track": 122,
-        "speed": 464,
-        "lat": 35.897,
-        "lon": 50.07,
-        "airline": "Saha Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "409ac66c",
-        "callsign": "IRM113",
-        "flight": "W5113",
-        "type": "A343",
-        "reg": "EP-MJF",
-        "category": "Commercial",
-        "alt": 11575,
-        "track": 122,
-        "speed": 336,
-        "lat": 35.519,
-        "lon": 50.77,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783726232,
     "time_utc": "2026-07-10 23:30:32 UTC",
     "count": 2,
@@ -412127,6 +412054,88 @@
         "speed": 504,
         "lat": 37.868,
         "lon": 44.789,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785540332,
+    "time_utc": "2026-07-31 23:25:32 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40f3523b",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 115,
+        "speed": 504,
+        "lat": 37.559,
+        "lon": 45.602,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f39cf5",
+        "callsign": "IRA5326",
+        "flight": "IR5326",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 63,
+        "speed": 501,
+        "lat": 34.397,
+        "lon": 48.088,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f38fe8",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 85,
+        "speed": 504,
+        "lat": 35.123,
+        "lon": 50.833,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f38edb",
+        "callsign": "IRA812",
+        "flight": "IR812",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 90,
+        "speed": 30,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f2327e",
+        "callsign": "IRM080",
+        "flight": "W580",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 312,
+        "speed": 488,
+        "lat": 33.545,
+        "lon": 53.858,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
