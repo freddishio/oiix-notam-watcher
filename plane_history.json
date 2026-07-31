@@ -1,117 +1,5 @@
 [
   {
-    "timestamp": 1783664127,
-    "time_utc": "2026-07-10 06:15:27 UTC",
-    "count": 7,
-    "planes": [
-      {
-        "id": "4097abe9",
-        "callsign": "IZG3043",
-        "flight": "ZO3043",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 76,
-        "speed": 10,
-        "lat": 34.924,
-        "lon": 49.893,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4097b7c1",
-        "callsign": "IRA5329",
-        "flight": "IR5329",
-        "type": "A319",
-        "reg": "EP-IEQ",
-        "category": "Commercial",
-        "alt": 20700,
-        "track": 263,
-        "speed": 20,
-        "lat": 35.437,
-        "lon": 50.023,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "4097c332",
-        "callsign": "IRB9710",
-        "flight": "B99710",
-        "type": "A320",
-        "reg": "EP-MDS",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 196,
-        "speed": 1,
-        "lat": 35.412,
-        "lon": 51.149,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "4097b480",
-        "callsign": "IRB9720",
-        "flight": "B99720",
-        "type": "A310",
-        "reg": "EP-MDH",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 167,
-        "speed": 190,
-        "lat": 32.197,
-        "lon": 52.032,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "409797f0",
-        "callsign": "KIS7072",
-        "flight": "KIS7072",
-        "type": "A321",
-        "reg": "EP-LCT",
-        "category": "Commercial",
-        "alt": 30850,
-        "track": 26,
-        "speed": 443,
-        "lat": 35.077,
-        "lon": 58.93,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "409719b9",
-        "callsign": "BRU717",
-        "flight": "B2717",
-        "type": "A332",
-        "reg": "EW-587PD",
-        "category": "Commercial",
-        "alt": 39000,
-        "track": 161,
-        "speed": 484,
-        "lat": 30.052,
-        "lon": 58.645,
-        "airline": "Belavia",
-        "country": "Belarus"
-      },
-      {
-        "id": "4097bb29",
-        "callsign": "TBN7219",
-        "flight": "TBN7219",
-        "type": "MD88",
-        "reg": "EP-TBF",
-        "category": "Commercial",
-        "alt": 31000,
-        "track": 141,
-        "speed": 467,
-        "lat": 27.136,
-        "lon": 53.402,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783664434,
     "time_utc": "2026-07-10 06:20:34 UTC",
     "count": 8,
@@ -414386,6 +414274,73 @@
         "lon": 48.283,
         "airline": "Kish Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785478824,
+    "time_utc": "2026-07-31 06:20:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40efd05e",
+        "callsign": "AFL524",
+        "flight": "SU524",
+        "type": "B738",
+        "reg": "RA-73112",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 125,
+        "speed": 458,
+        "lat": 36.344,
+        "lon": 53.726,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "40f0391b",
+        "callsign": "IRM5058",
+        "flight": "W55058",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 254,
+        "speed": 484,
+        "lat": 34.415,
+        "lon": 47.503,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f0464a",
+        "callsign": "KIS7142",
+        "flight": "KIS7142",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 14275,
+        "track": 25,
+        "speed": 387,
+        "lat": 30.879,
+        "lon": 48.505,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef6dc6",
+        "callsign": "BRU717",
+        "flight": "B2717",
+        "type": "A332",
+        "reg": "EW-587PD",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 469,
+        "lat": 25.152,
+        "lon": 60.615,
+        "airline": "Belavia",
+        "country": "Belarus"
       }
     ]
   }
