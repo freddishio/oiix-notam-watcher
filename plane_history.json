@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1783719629,
-    "time_utc": "2026-07-10 21:40:29 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "409adbf2",
-        "callsign": "IZG3029",
-        "flight": "ZO3029",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 29025,
-        "track": 47,
-        "speed": 433,
-        "lat": 33.613,
-        "lon": 47.12,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "409ad070",
-        "callsign": "KRU2646",
-        "flight": "Unknown Flight",
-        "type": "Unknown Type",
-        "reg": "Unknown Reg",
-        "category": "Commercial",
-        "alt": 7500,
-        "track": 357,
-        "speed": 297,
-        "lat": 31.002,
-        "lon": 48.955,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783719929,
     "time_utc": "2026-07-10 21:45:29 UTC",
     "count": 0,
@@ -411622,6 +411585,43 @@
         "lat": 35.55,
         "lon": 53.136,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785534034,
+    "time_utc": "2026-07-31 21:40:34 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40f34a6d",
+        "callsign": "VRH6809",
+        "flight": "VRH6809",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 32925,
+        "track": 121,
+        "speed": 470,
+        "lat": 38.302,
+        "lon": 47.678,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f356cf",
+        "callsign": "CPN6951",
+        "flight": "IV6951",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 317,
+        "speed": 420,
+        "lat": 33.976,
+        "lon": 53.38,
+        "airline": "Caspian Airlines",
         "country": "IRAN"
       }
     ]
