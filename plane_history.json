@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783647035,
-    "time_utc": "2026-07-10 01:30:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783647328,
-    "time_utc": "2026-07-10 01:35:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783647628,
     "time_utc": "2026-07-10 01:40:28 UTC",
     "count": 4,
@@ -413610,6 +413598,73 @@
         "lon": 54.772,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785461730,
+    "time_utc": "2026-07-31 01:35:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40efa612",
+        "callsign": "KRU2648",
+        "flight": "KRU2648",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 106,
+        "speed": 22,
+        "lat": 35.684,
+        "lon": 51.319,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef9381",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 441,
+        "lat": 35.68,
+        "lon": 54.009,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ef80cf",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 279,
+        "speed": 455,
+        "lat": 35.358,
+        "lon": 51.507,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef91e9",
+        "callsign": "CPN6922",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 184,
+        "speed": 220,
+        "lat": 33.466,
+        "lon": 59.267,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
       }
     ]
   }
