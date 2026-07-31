@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783688135,
-    "time_utc": "2026-07-10 12:55:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783688440,
     "time_utc": "2026-07-10 13:00:40 UTC",
     "count": 8,
@@ -412750,6 +412744,73 @@
         "lat": 35.405,
         "lon": 51.968,
         "airline": "JSky Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785502832,
+    "time_utc": "2026-07-31 13:00:32 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f13597",
+        "callsign": "ISP1705",
+        "flight": "ISP1705",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 85,
+        "speed": 471,
+        "lat": 35.456,
+        "lon": 52.735,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f1471e",
+        "callsign": "IRB9706",
+        "flight": "B99706",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 231,
+        "speed": 460,
+        "lat": 33.857,
+        "lon": 46.42,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f1437e",
+        "callsign": "IRM1128",
+        "flight": "W51128",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 343,
+        "speed": 483,
+        "lat": 26.308,
+        "lon": 59.37,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f0cf0c",
+        "callsign": "VRH6801",
+        "flight": "VRH6801",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 36025,
+        "track": 327,
+        "speed": 475,
+        "lat": 26.926,
+        "lon": 59.397,
+        "airline": "Varesh Airlines",
         "country": "IRAN"
       }
     ]
