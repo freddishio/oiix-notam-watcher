@@ -412626,5 +412626,57 @@
     "time_utc": "2026-07-31 17:15:31 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785518422,
+    "time_utc": "2026-07-31 17:20:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f259a4",
+        "callsign": "IRM114",
+        "flight": "W5114",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 295,
+        "speed": 470,
+        "lat": 38.522,
+        "lon": 45.238,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f22cff",
+        "callsign": "IRB9752",
+        "flight": "B99752",
+        "type": "A306",
+        "reg": "EP-MDU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 238,
+        "speed": 454,
+        "lat": 33.517,
+        "lon": 45.896,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f25f8f",
+        "callsign": "SHI7349",
+        "flight": "IS7349",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 436,
+        "lat": 34.304,
+        "lon": 47.114,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
