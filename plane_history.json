@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1783648233,
-    "time_utc": "2026-07-10 01:50:33 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "4095bec6",
-        "callsign": "FLCN03",
-        "flight": "Unknown Flight",
-        "type": "FA8X",
-        "reg": "A-0801",
-        "category": "Commercial",
-        "alt": 25150,
-        "track": 6,
-        "speed": 476,
-        "lat": 34.841,
-        "lon": 59.454,
-        "airline": "FAA Flight Inspection Services",
-        "country": "United States"
-      },
-      {
-        "id": "409709f2",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "MD88",
-        "reg": "EP-SMB",
-        "category": "Commercial",
-        "alt": 28975,
-        "track": 168,
-        "speed": 486,
-        "lat": 29.854,
-        "lon": 52.493,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      }
-    ]
-  },
-  {
     "timestamp": 1783648530,
     "time_utc": "2026-07-10 01:55:30 UTC",
     "count": 1,
@@ -413688,5 +413651,87 @@
     "time_utc": "2026-07-31 01:50:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785462923,
+    "time_utc": "2026-07-31 01:55:23 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40efaabd",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 16500,
+        "track": 313,
+        "speed": 398,
+        "lat": 35.836,
+        "lon": 50.456,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40efb159",
+        "callsign": "DZD9441",
+        "flight": "DZD9441",
+        "type": "RJ85",
+        "reg": "EP-DZH",
+        "category": "Commercial",
+        "alt": 6575,
+        "track": 270,
+        "speed": 24,
+        "lat": 35.691,
+        "lon": 51.299,
+        "airline": "Yazd Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "40efaf34",
+        "callsign": "IRA5319",
+        "flight": "IR5319",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 27900,
+        "track": 242,
+        "speed": 449,
+        "lat": 35.611,
+        "lon": 53.437,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef9e11",
+        "callsign": "IRM5084",
+        "flight": "W55084",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 260,
+        "speed": 475,
+        "lat": 35.929,
+        "lon": 55.735,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef80cf",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 251,
+        "speed": 464,
+        "lat": 34.881,
+        "lon": 48.629,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
