@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783643727,
-    "time_utc": "2026-07-10 00:35:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783644035,
     "time_utc": "2026-07-10 00:40:35 UTC",
     "count": 1,
@@ -413533,6 +413527,43 @@
         "lat": 36.638,
         "lon": 48.627,
         "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785458425,
+    "time_utc": "2026-07-31 00:40:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40ef19e5",
+        "callsign": "MRJ4832",
+        "flight": "MRJ4832",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 34950,
+        "track": 122,
+        "speed": 457,
+        "lat": 36.295,
+        "lon": 49.291,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40edadbe",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 6350,
+        "track": 113,
+        "speed": 17,
+        "lat": 35.683,
+        "lon": 51.311,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
