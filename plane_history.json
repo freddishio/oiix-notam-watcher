@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1783653332,
-    "time_utc": "2026-07-10 03:15:32 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "4097437f",
-        "callsign": "SHR5200",
-        "flight": "SHR5200",
-        "type": "A310",
-        "reg": "EP-HNA",
-        "category": "Commercial",
-        "alt": 26975,
-        "track": 260,
-        "speed": 429,
-        "lat": 35.511,
-        "lon": 52.825,
-        "airline": "SHR",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "4097507a",
-        "callsign": "AXV9212",
-        "flight": "AXV9212",
-        "type": "B735",
-        "reg": "EP-RBC",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 259,
-        "speed": 419,
-        "lat": 35.733,
-        "lon": 54.317,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783653629,
     "time_utc": "2026-07-10 03:20:29 UTC",
     "count": 7,
@@ -413715,5 +413678,57 @@
     "time_utc": "2026-07-31 03:15:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785468025,
+    "time_utc": "2026-07-31 03:20:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40efdbc4",
+        "callsign": "TBN7267",
+        "flight": "AXV7267",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 250,
+        "speed": 506,
+        "lat": 34.964,
+        "lon": 48.886,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40efe0c6",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 20450,
+        "track": 270,
+        "speed": 405,
+        "lat": 35.442,
+        "lon": 50.213,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40efbfef",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 8925,
+        "track": 311,
+        "speed": 247,
+        "lat": 35.207,
+        "lon": 51.839,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
