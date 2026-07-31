@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783641637,
-    "time_utc": "2026-07-10 00:00:37 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783641923,
     "time_utc": "2026-07-10 00:05:23 UTC",
     "count": 0,
@@ -413385,5 +413379,57 @@
     "time_utc": "2026-07-31 00:00:33 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785456322,
+    "time_utc": "2026-07-31 00:05:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40ef2b00",
+        "callsign": "IRA5332",
+        "flight": "IR5356",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 9475,
+        "track": 112,
+        "speed": 265,
+        "lat": 35.36,
+        "lon": 51.05,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef402e",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 91,
+        "speed": 499,
+        "lat": 35.175,
+        "lon": 51.212,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ef46f0",
+        "callsign": "IRA3460",
+        "flight": "IR3460",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 28975,
+        "track": 58,
+        "speed": 446,
+        "lat": 35.477,
+        "lon": 53.165,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
