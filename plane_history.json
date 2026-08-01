@@ -415416,5 +415416,72 @@
     "time_utc": "2026-08-01 18:15:28 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785608432,
+    "time_utc": "2026-08-01 18:20:32 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f64f28",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 29950,
+        "track": 259,
+        "speed": 469,
+        "lat": 35.648,
+        "lon": 53.742,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40f5b7fd",
+        "callsign": "AFL245",
+        "flight": "SU245",
+        "type": "A359",
+        "reg": "RA-73154",
+        "category": "Commercial",
+        "alt": 40000,
+        "track": 312,
+        "speed": 479,
+        "lat": 35.551,
+        "lon": 54.592,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "40f6bf0e",
+        "callsign": "VRH6813",
+        "flight": "VRH6813",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 231,
+        "speed": 440,
+        "lat": 33.842,
+        "lon": 46.397,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f6cb8c",
+        "callsign": "IRZ8245",
+        "flight": "IRZ8245",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 95,
+        "speed": 443,
+        "lat": 33.568,
+        "lon": 46.605,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
