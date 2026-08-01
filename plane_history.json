@@ -414225,5 +414225,57 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1785576027,
+    "time_utc": "2026-08-01 09:20:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f4e97f",
+        "callsign": "TBN7265",
+        "flight": "AXV7265",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 269,
+        "speed": 484,
+        "lat": 35.447,
+        "lon": 50.72,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f50b7a",
+        "callsign": "KIS7146",
+        "flight": "KIS7146",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 8925,
+        "track": 340,
+        "speed": 350,
+        "lat": 27.537,
+        "lon": 52.687,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f46520",
+        "callsign": "AFL520",
+        "flight": "SU520",
+        "type": "B738",
+        "reg": "RA-73122",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 455,
+        "lat": 25.081,
+        "lon": 60.664,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
   }
 ]
