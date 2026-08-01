@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783729837,
-    "time_utc": "2026-07-11 00:30:37 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783730124,
     "time_utc": "2026-07-11 00:35:24 UTC",
     "count": 2,
@@ -412325,5 +412319,42 @@
     "time_utc": "2026-08-01 00:30:28 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785544521,
+    "time_utc": "2026-08-01 00:35:21 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40f3c2cb",
+        "callsign": "TKN3281",
+        "flight": "TKN3281",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 122,
+        "speed": 470,
+        "lat": 37.473,
+        "lon": 49.329,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f20cdb",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMU",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 164,
+        "speed": 504,
+        "lat": 37.859,
+        "lon": 51.065,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
