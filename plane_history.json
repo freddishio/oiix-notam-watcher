@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783810530,
-    "time_utc": "2026-07-11 22:55:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783810842,
     "time_utc": "2026-07-11 23:00:42 UTC",
     "count": 0,
@@ -415144,5 +415138,72 @@
     "time_utc": "2026-08-01 22:55:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785625232,
+    "time_utc": "2026-08-01 23:00:32 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f72864",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 90,
+        "speed": 70,
+        "lat": 38.246,
+        "lon": 46.058,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f77c67",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 60,
+        "speed": 497,
+        "lat": 34.091,
+        "lon": 47.809,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7676d",
+        "callsign": "MRJ4800",
+        "flight": "MRJ4800",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 90,
+        "speed": 30,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f769b3",
+        "callsign": "KIS6050",
+        "flight": "KIS6050",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 4050,
+        "track": 90,
+        "speed": 80,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
