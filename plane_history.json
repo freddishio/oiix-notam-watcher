@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783823441,
-    "time_utc": "2026-07-12 02:30:41 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783823724,
-    "time_utc": "2026-07-12 02:35:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783824030,
     "time_utc": "2026-07-12 02:40:30 UTC",
     "count": 0,
@@ -416174,6 +416162,43 @@
         "lat": 34.679,
         "lon": 48.17,
         "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785638126,
+    "time_utc": "2026-08-02 02:35:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40f7ed9d",
+        "callsign": "SHI7300",
+        "flight": "IS4338",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 259,
+        "speed": 449,
+        "lat": 35.602,
+        "lon": 53.499,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7d605",
+        "callsign": "KIS7053",
+        "flight": "KIS7053",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 8125,
+        "track": 118,
+        "speed": 248,
+        "lat": 26.683,
+        "lon": 53.564,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
