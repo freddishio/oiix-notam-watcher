@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783827923,
-    "time_utc": "2026-07-12 03:45:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783828232,
     "time_utc": "2026-07-12 03:50:32 UTC",
     "count": 1,
@@ -417479,6 +417473,73 @@
         "lat": 35.278,
         "lon": 52.864,
         "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785642628,
+    "time_utc": "2026-08-02 03:50:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f81b3d",
+        "callsign": "IRA3481",
+        "flight": "IR3481",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 9450,
+        "track": 242,
+        "speed": 216,
+        "lat": 38.144,
+        "lon": 46.154,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f81bb3",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 37500,
+        "track": 303,
+        "speed": 466,
+        "lat": 37.589,
+        "lon": 47.909,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f82802",
+        "callsign": "IRZ170",
+        "flight": "IRZ170",
+        "type": "B733",
+        "reg": "EP-SII",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 79,
+        "speed": 453,
+        "lat": 35.392,
+        "lon": 53.628,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f82b3f",
+        "callsign": "KRU2657",
+        "flight": "KRU2657",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 26850,
+        "track": 9,
+        "speed": 438,
+        "lat": 33.133,
+        "lon": 49.561,
+        "airline": "Karun Airlines",
         "country": "IRAN"
       }
     ]
