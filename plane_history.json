@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783830923,
-    "time_utc": "2026-07-12 04:35:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783831229,
     "time_utc": "2026-07-12 04:40:29 UTC",
     "count": 0,
@@ -418202,6 +418196,118 @@
         "lon": 53.553,
         "airline": "Taban Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785645325,
+    "time_utc": "2026-08-02 04:35:25 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "40f82bbf",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 233,
+        "speed": 434,
+        "lat": 35.264,
+        "lon": 49.595,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40f833d6",
+        "callsign": "KRU2649",
+        "flight": "KRU2649",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 22950,
+        "track": 45,
+        "speed": 444,
+        "lat": 35.203,
+        "lon": 50.414,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f846d6",
+        "callsign": "SHI7344",
+        "flight": "IS7344",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 17175,
+        "track": 270,
+        "speed": 345,
+        "lat": 35.438,
+        "lon": 50.444,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f83ab3",
+        "callsign": "QSM2217",
+        "flight": "QB2217",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 31775,
+        "track": 90,
+        "speed": 190,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f8319b",
+        "callsign": "TBN6205",
+        "flight": "TBN6205",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 20200,
+        "track": 266,
+        "speed": 429,
+        "lat": 32.796,
+        "lon": 52.935,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f83a87",
+        "callsign": "KRU2567",
+        "flight": "KRU2567",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 145,
+        "speed": 320,
+        "lat": 29.571,
+        "lon": 52.029,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f84933",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 2475,
+        "track": 290,
+        "speed": 187,
+        "lat": 27.41,
+        "lon": 52.678,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
