@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783869030,
-    "time_utc": "2026-07-12 15:10:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783869327,
     "time_utc": "2026-07-12 15:15:27 UTC",
     "count": 3,
@@ -421649,6 +421643,58 @@
         "lon": 53.784,
         "airline": "Varesh Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785683722,
+    "time_utc": "2026-08-02 15:15:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f9e108",
+        "callsign": "IRM1027",
+        "flight": "W51027",
+        "type": "RJ85",
+        "reg": "EP-MEU",
+        "category": "Commercial",
+        "alt": 9950,
+        "track": 54,
+        "speed": 202,
+        "lat": 35.508,
+        "lon": 51.483,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f9d2d1",
+        "callsign": "AXV9212",
+        "flight": "AXV9212",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 260,
+        "speed": 435,
+        "lat": 35.386,
+        "lon": 52.079,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f9cc62",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 95,
+        "speed": 480,
+        "lat": 35.281,
+        "lon": 52.473,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
