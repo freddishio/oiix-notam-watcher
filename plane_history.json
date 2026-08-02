@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783888524,
-    "time_utc": "2026-07-12 20:35:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783888830,
     "time_utc": "2026-07-12 20:40:30 UTC",
     "count": 0,
@@ -421543,6 +421537,43 @@
         "lon": 60.551,
         "airline": "Tulpar Air",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785703227,
+    "time_utc": "2026-08-02 20:40:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40fae6f3",
+        "callsign": "IZG3022",
+        "flight": "ZO3022",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 238,
+        "speed": 466,
+        "lat": 34.327,
+        "lon": 47.471,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fad981",
+        "callsign": "KIS6048",
+        "flight": "KIS6048",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 274,
+        "speed": 463,
+        "lat": 33.484,
+        "lon": 47.69,
+        "airline": "Kish Air",
+        "country": "IRAN"
       }
     ]
   }
