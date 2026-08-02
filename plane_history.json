@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783833930,
-    "time_utc": "2026-07-12 05:25:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783834235,
     "time_utc": "2026-07-12 05:30:35 UTC",
     "count": 1,
@@ -419551,6 +419545,73 @@
         "lon": 49.148,
         "airline": "ATA Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785648624,
+    "time_utc": "2026-08-02 05:30:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f85ee3",
+        "callsign": "TBZ5657",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 21900,
+        "track": 14,
+        "speed": 449,
+        "lat": 32.288,
+        "lon": 49.315,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f84ac5",
+        "callsign": "VRH5898",
+        "flight": "VRH5898",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 26000,
+        "track": 283,
+        "speed": 494,
+        "lat": 33.055,
+        "lon": 50.321,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f847a7",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 266,
+        "speed": 476,
+        "lat": 32.772,
+        "lon": 52.268,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40f7cd4c",
+        "callsign": "AFL524",
+        "flight": "SU524",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 165,
+        "speed": 462,
+        "lat": 27.169,
+        "lon": 59.532,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
       }
     ]
   }
