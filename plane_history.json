@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783826123,
-    "time_utc": "2026-07-12 03:15:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783826434,
     "time_utc": "2026-07-12 03:20:34 UTC",
     "count": 0,
@@ -417023,6 +417017,43 @@
         "lat": 33.868,
         "lon": 53.504,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785640824,
+    "time_utc": "2026-08-02 03:20:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40f80b0a",
+        "callsign": "IRM118",
+        "flight": "W5118",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 286,
+        "speed": 462,
+        "lat": 37.929,
+        "lon": 47.159,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f80b52",
+        "callsign": "CPN7902",
+        "flight": "IV7902",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 303,
+        "speed": 452,
+        "lat": 37.73,
+        "lon": 47.643,
+        "airline": "Caspian Airlines",
         "country": "IRAN"
       }
     ]
