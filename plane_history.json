@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783898434,
-    "time_utc": "2026-07-12 23:20:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783898727,
     "time_utc": "2026-07-12 23:25:27 UTC",
     "count": 2,
@@ -423058,6 +423052,73 @@
         "speed": 437,
         "lat": 34.43,
         "lon": 52.619,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785713124,
+    "time_utc": "2026-08-02 23:25:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40fb3d7b",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 14550,
+        "track": 159,
+        "speed": 380,
+        "lat": 35.425,
+        "lon": 50.903,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb381c",
+        "callsign": "KIS6084",
+        "flight": "KIS6084",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 3775,
+        "track": 290,
+        "speed": 167,
+        "lat": 35.409,
+        "lon": 51.193,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fa10bb",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 8800,
+        "track": 272,
+        "speed": 195,
+        "lat": 35.346,
+        "lon": 51.5,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb50d0",
+        "callsign": "IRM081",
+        "flight": "W581",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 27050,
+        "track": 130,
+        "speed": 10,
+        "lat": 34.065,
+        "lon": 53.131,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
