@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783822833,
-    "time_utc": "2026-07-12 02:20:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783823122,
-    "time_utc": "2026-07-12 02:25:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783823441,
     "time_utc": "2026-07-12 02:30:41 UTC",
     "count": 0,
@@ -416112,6 +416100,58 @@
         "lat": 28.071,
         "lon": 52.986,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785637524,
+    "time_utc": "2026-08-02 02:25:24 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f7fb9f",
+        "callsign": "IRM116",
+        "flight": "W5116",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 16675,
+        "track": 309,
+        "speed": 100,
+        "lat": 36.024,
+        "lon": 49.983,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7c936",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 427,
+        "lat": 33.54,
+        "lon": 45.938,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7e6b0",
+        "callsign": "KRU2648",
+        "flight": "KRU2648",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 6325,
+        "track": 321,
+        "speed": 188,
+        "lat": 33.53,
+        "lon": 46.529,
+        "airline": "Karun Airlines",
         "country": "IRAN"
       }
     ]
