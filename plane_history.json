@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1783869327,
-    "time_utc": "2026-07-12 15:15:27 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40a1866b",
-        "callsign": "SHI7310",
-        "flight": "IS7310",
-        "type": "B735",
-        "reg": "EP-FSQ",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 259,
-        "speed": 455,
-        "lat": 35.806,
-        "lon": 54.712,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a0fcd9",
-        "callsign": "IRB9734",
-        "flight": "B99734",
-        "type": "A310",
-        "reg": "EP-MDL",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 104,
-        "speed": 509,
-        "lat": 36.438,
-        "lon": 56.1,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a0ed37",
-        "callsign": "IRB9711",
-        "flight": "B99711",
-        "type": "A306",
-        "reg": "EP-MDU",
-        "category": "Commercial",
-        "alt": 23475,
-        "track": 123,
-        "speed": 451,
-        "lat": 35.997,
-        "lon": 49.875,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783869632,
     "time_utc": "2026-07-12 15:20:32 UTC",
     "count": 4,
@@ -421695,6 +421643,58 @@
         "lon": 52.473,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785684028,
+    "time_utc": "2026-08-02 15:20:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f9dad5",
+        "callsign": "IRM114",
+        "flight": "W5114",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 289,
+        "speed": 529,
+        "lat": 38.462,
+        "lon": 45.38,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f9ea51",
+        "callsign": "IRM112",
+        "flight": "W5112",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 303,
+        "speed": 463,
+        "lat": 37.807,
+        "lon": 47.496,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f9e108",
+        "callsign": "IRM1027",
+        "flight": "W51027",
+        "type": "RJ85",
+        "reg": "EP-MEU",
+        "category": "Commercial",
+        "alt": 5150,
+        "track": 291,
+        "speed": 141,
+        "lat": 35.658,
+        "lon": 51.415,
+        "airline": "Mahan Air",
+        "country": "IRAN"
       }
     ]
   }
