@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783832445,
-    "time_utc": "2026-07-12 05:00:45 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783832724,
     "time_utc": "2026-07-12 05:05:24 UTC",
     "count": 1,
@@ -418895,6 +418889,58 @@
         "lat": 27.39,
         "lon": 52.768,
         "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785646913,
+    "time_utc": "2026-08-02 05:01:53 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f84933",
+        "callsign": "KIS7092",
+        "flight": "KIS7092",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 348,
+        "speed": 475,
+        "lat": 30.263,
+        "lon": 52.421,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f84ac5",
+        "callsign": "VRH5898",
+        "flight": "VRH5898",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 26000,
+        "track": 348,
+        "speed": 488,
+        "lat": 30.13,
+        "lon": 52.452,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f849ce",
+        "callsign": "KIS7060",
+        "flight": "KIS7060",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 15650,
+        "track": 329,
+        "speed": 309,
+        "lat": 28.894,
+        "lon": 52.929,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
