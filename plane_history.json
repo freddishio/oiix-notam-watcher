@@ -421749,5 +421749,57 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1785680427,
+    "time_utc": "2026-08-02 14:20:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f98b1e",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "RJ85",
+        "reg": "EP-MES",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 92,
+        "lat": 35.679,
+        "lon": 51.305,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f9b511",
+        "callsign": "SHI7313",
+        "flight": "IS7313",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 343,
+        "speed": 463,
+        "lat": 26.256,
+        "lon": 59.383,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f9a30f",
+        "callsign": "QSM2205",
+        "flight": "QB2205",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 344,
+        "speed": 469,
+        "lat": 25.332,
+        "lon": 59.678,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
