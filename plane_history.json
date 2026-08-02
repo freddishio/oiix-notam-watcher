@@ -1,79 +1,5 @@
 [
   {
-    "timestamp": 1783896035,
-    "time_utc": "2026-07-12 22:40:35 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40a2d6f0",
-        "callsign": "AXV9229",
-        "flight": "AXV9229",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 94,
-        "speed": 449,
-        "lat": 35.345,
-        "lon": 51.316,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a2de9a",
-        "callsign": "TBZ5683",
-        "flight": "Unknown Flight",
-        "type": "B735",
-        "reg": "EP-TAG",
-        "category": "Commercial",
-        "alt": 9500,
-        "track": 346,
-        "speed": 224,
-        "lat": 35.465,
-        "lon": 51.647,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1783896323,
-    "time_utc": "2026-07-12 22:45:23 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40a2de9a",
-        "callsign": "TBZ5683",
-        "flight": "Unknown Flight",
-        "type": "B735",
-        "reg": "EP-TAG",
-        "category": "Commercial",
-        "alt": 5275,
-        "track": 287,
-        "speed": 177,
-        "lat": 35.668,
-        "lon": 51.447,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a2d6f0",
-        "callsign": "AXV9229",
-        "flight": "AXV9229",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 95,
-        "speed": 451,
-        "lat": 35.292,
-        "lon": 52.047,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783896634,
     "time_utc": "2026-07-12 22:50:34 UTC",
     "count": 1,
@@ -422791,5 +422717,57 @@
     "time_utc": "2026-08-02 22:40:19 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785710726,
+    "time_utc": "2026-08-02 22:45:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40fb2144",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 33950,
+        "track": 303,
+        "speed": 426,
+        "lat": 37.578,
+        "lon": 47.934,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb3126",
+        "callsign": "TKN3281",
+        "flight": "TKN3281",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 122,
+        "speed": 482,
+        "lat": 37.841,
+        "lon": 48.575,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb381c",
+        "callsign": "KIS6084",
+        "flight": "KIS6084",
+        "type": "MD83",
+        "reg": "EP-LCO",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 100,
+        "speed": 500,
+        "lat": 33.57,
+        "lon": 46.722,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
