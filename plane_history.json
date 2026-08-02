@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783853129,
-    "time_utc": "2026-07-12 10:45:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783853431,
     "time_utc": "2026-07-12 10:50:31 UTC",
     "count": 2,
@@ -421003,6 +420997,73 @@
         "lon": 59.388,
         "airline": "Mahan Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785667825,
+    "time_utc": "2026-08-02 10:50:25 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f8b60e",
+        "callsign": "IRM119",
+        "flight": "W5119",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 19150,
+        "track": 123,
+        "speed": 426,
+        "lat": 35.808,
+        "lon": 50.228,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f89f51",
+        "callsign": "IZG3051",
+        "flight": "ZO3051",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 76,
+        "lat": 35.42,
+        "lon": 51.142,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f89838",
+        "callsign": "VRH5923",
+        "flight": "VRH5899",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 335,
+        "speed": 10,
+        "lat": 35.516,
+        "lon": 51.384,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f8bb4f",
+        "callsign": "AFL779",
+        "flight": "SU779",
+        "type": "B738",
+        "reg": "RA-73116",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 308,
+        "speed": 454,
+        "lat": 36.227,
+        "lon": 53.549,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
       }
     ]
   }
