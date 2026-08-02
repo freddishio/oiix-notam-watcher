@@ -423025,5 +423025,42 @@
     "time_utc": "2026-08-02 23:15:28 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785712825,
+    "time_utc": "2026-08-02 23:20:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40fb4ac7",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 62,
+        "speed": 514,
+        "lat": 34.237,
+        "lon": 47.631,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb50d0",
+        "callsign": "IRM081",
+        "flight": "W581",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 23275,
+        "track": 130,
+        "speed": 437,
+        "lat": 34.43,
+        "lon": 52.619,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
