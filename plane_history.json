@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783821322,
-    "time_utc": "2026-07-12 01:55:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783821640,
     "time_utc": "2026-07-12 02:00:40 UTC",
     "count": 0,
@@ -415779,6 +415773,73 @@
         "lon": 59.679,
         "airline": "Aviacon Zitotrans",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785636026,
+    "time_utc": "2026-08-02 02:00:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "40f7eb8b",
+        "callsign": "VRH5922",
+        "flight": "VRH5922",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 26275,
+        "track": 188,
+        "speed": 405,
+        "lat": 36.221,
+        "lon": 51.384,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7f10e",
+        "callsign": "DZD9441",
+        "flight": "DZD9441",
+        "type": "RJ85",
+        "reg": "EP-DZH",
+        "category": "Commercial",
+        "alt": 12150,
+        "track": 140,
+        "speed": 296,
+        "lat": 35.442,
+        "lon": 51.465,
+        "airline": "Yazd Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7f40d",
+        "callsign": "SJT8608",
+        "flight": "Unknown Flight",
+        "type": "E145",
+        "reg": "EP-JEK",
+        "category": "Commercial",
+        "alt": 21025,
+        "track": 248,
+        "speed": 330,
+        "lat": 33.564,
+        "lon": 46.974,
+        "airline": "Asajet Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7e6b0",
+        "callsign": "KRU2648",
+        "flight": "KRU2648",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 26050,
+        "track": 218,
+        "speed": 438,
+        "lat": 34.788,
+        "lon": 48.614,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
       }
     ]
   }
