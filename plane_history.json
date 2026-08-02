@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783826434,
-    "time_utc": "2026-07-12 03:20:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783826722,
-    "time_utc": "2026-07-12 03:25:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783827038,
     "time_utc": "2026-07-12 03:30:38 UTC",
     "count": 0,
@@ -417054,6 +417042,88 @@
         "lat": 37.73,
         "lon": 47.643,
         "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785641124,
+    "time_utc": "2026-08-02 03:25:24 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40f80b0a",
+        "callsign": "IRM118",
+        "flight": "W5118",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 285,
+        "speed": 462,
+        "lat": 38.111,
+        "lon": 46.378,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f80b52",
+        "callsign": "CPN7902",
+        "flight": "IV7902",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 286,
+        "speed": 440,
+        "lat": 37.982,
+        "lon": 46.939,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f81b3d",
+        "callsign": "IRA3481",
+        "flight": "IR3481",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 310,
+        "speed": 455,
+        "lat": 37.162,
+        "lon": 48.579,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f8138b",
+        "callsign": "IZG3050",
+        "flight": "ZO3050",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 27175,
+        "track": 345,
+        "speed": 461,
+        "lat": 37.141,
+        "lon": 49.686,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f821b1",
+        "callsign": "AXV7730",
+        "flight": "AXV7730",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 21125,
+        "track": 107,
+        "speed": 378,
+        "lat": 35.444,
+        "lon": 51.932,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
