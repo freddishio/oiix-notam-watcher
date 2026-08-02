@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783822233,
-    "time_utc": "2026-07-12 02:10:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783822523,
     "time_utc": "2026-07-12 02:15:23 UTC",
     "count": 0,
@@ -416004,6 +415998,58 @@
         "speed": 461,
         "lat": 29.323,
         "lon": 52.64,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785636922,
+    "time_utc": "2026-08-02 02:15:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40f7e6b0",
+        "callsign": "KRU2648",
+        "flight": "KRU2648",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 16475,
+        "track": 226,
+        "speed": 327,
+        "lat": 33.603,
+        "lon": 47.104,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7f10e",
+        "callsign": "DZD9441",
+        "flight": "DZD9441",
+        "type": "RJ85",
+        "reg": "EP-DZH",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 130,
+        "speed": 372,
+        "lat": 34.398,
+        "lon": 52.663,
+        "airline": "Yazd Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f7d605",
+        "callsign": "KIS7053",
+        "flight": "KIS7053",
+        "type": "F100",
+        "reg": "EP-LCQ",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 166,
+        "speed": 500,
+        "lat": 28.728,
+        "lon": 52.808,
         "airline": "Kish Air",
         "country": "IRAN"
       }
