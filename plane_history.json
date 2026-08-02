@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1783830037,
-    "time_utc": "2026-07-12 04:20:37 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783830323,
-    "time_utc": "2026-07-12 04:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783830641,
     "time_utc": "2026-07-12 04:30:41 UTC",
     "count": 0,
@@ -418084,6 +418072,88 @@
         "speed": 444,
         "lat": 35.35,
         "lon": 51.755,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785644725,
+    "time_utc": "2026-08-02 04:25:25 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40f82997",
+        "callsign": "TBZ6617",
+        "flight": "I36617",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 295,
+        "speed": 444,
+        "lat": 38.625,
+        "lon": 44.967,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f83289",
+        "callsign": "IRB8028",
+        "flight": "B98028",
+        "type": "A320",
+        "reg": "EP-MDQ",
+        "category": "Commercial",
+        "alt": 26050,
+        "track": 303,
+        "speed": 443,
+        "lat": 37.837,
+        "lon": 47.432,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f82b3f",
+        "callsign": "KRU2657",
+        "flight": "KRU2657",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 317,
+        "speed": 436,
+        "lat": 36.765,
+        "lon": 48.363,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f83956",
+        "callsign": "AXV9205",
+        "flight": "AXV9205",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 95,
+        "speed": 454,
+        "lat": 33.571,
+        "lon": 46.532,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40f83372",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 255,
+        "speed": 434,
+        "lat": 34.419,
+        "lon": 47.51,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
