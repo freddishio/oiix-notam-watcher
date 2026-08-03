@@ -427899,5 +427899,42 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1785765629,
+    "time_utc": "2026-08-03 14:00:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40fd850d",
+        "callsign": "AXV7702",
+        "flight": "AXV7702",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 29050,
+        "track": 79,
+        "speed": 458,
+        "lat": 35.308,
+        "lon": 53.075,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fd3697",
+        "callsign": "ISP1814",
+        "flight": "ISP1814",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 7075,
+        "track": 196,
+        "speed": 264,
+        "lat": 30.3,
+        "lon": 48.509,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
