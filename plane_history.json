@@ -426305,5 +426305,57 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1785736828,
+    "time_utc": "2026-08-03 06:00:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40fc075d",
+        "callsign": "IRB9735",
+        "flight": "B99735",
+        "type": "A306",
+        "reg": "EP-MDU",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 286,
+        "speed": 472,
+        "lat": 38.09,
+        "lon": 46.487,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fc24b7",
+        "callsign": "IRZ189",
+        "flight": "IRZ189",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 86,
+        "speed": 469,
+        "lat": 32.79,
+        "lon": 52.596,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fc2f90",
+        "callsign": "CPN6922",
+        "flight": "IV6922",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 187,
+        "speed": 380,
+        "lat": 34.037,
+        "lon": 59.342,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
