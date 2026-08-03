@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": 1783970434,
-    "time_utc": "2026-07-13 19:20:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1783970725,
-    "time_utc": "2026-07-13 19:25:25 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40a6837f",
-        "callsign": "AXV9229",
-        "flight": "AXV9229",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 30975,
-        "track": 46,
-        "speed": 438,
-        "lat": 33.694,
-        "lon": 47.226,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a6824f",
-        "callsign": "SHI7331",
-        "flight": "IS7331",
-        "type": "B735",
-        "reg": "EP-FSQ",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 47,
-        "speed": 462,
-        "lat": 33.741,
-        "lon": 47.277,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a67e91",
-        "callsign": "TBN6212",
-        "flight": "TBN6212",
-        "type": "B734",
-        "reg": "EP-TBJ",
-        "category": "Commercial",
-        "alt": 30875,
-        "track": 80,
-        "speed": 472,
-        "lat": 35.422,
-        "lon": 53.822,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1783971040,
     "time_utc": "2026-07-13 19:30:40 UTC",
     "count": 2,
@@ -428625,6 +428567,28 @@
         "lat": 35.269,
         "lon": 52.724,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785785126,
+    "time_utc": "2026-08-03 19:25:26 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "40fe9eff",
+        "callsign": "IZG3020",
+        "flight": "ZO3020",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 246,
+        "speed": 493,
+        "lat": 34.872,
+        "lon": 48.574,
+        "airline": "Zagros Airlines",
         "country": "IRAN"
       }
     ]
