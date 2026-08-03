@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783963529,
-    "time_utc": "2026-07-13 17:25:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783963840,
     "time_utc": "2026-07-13 17:30:40 UTC",
     "count": 4,
@@ -428353,6 +428347,43 @@
         "lat": 33.569,
         "lon": 46.545,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785778229,
+    "time_utc": "2026-08-03 17:30:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40fe37f6",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 115,
+        "speed": 480,
+        "lat": 38.813,
+        "lon": 45.597,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40fe3e68",
+        "callsign": "TBZ6619",
+        "flight": "I36619",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 30200,
+        "track": 310,
+        "speed": 446,
+        "lat": 37.108,
+        "lon": 48.654,
+        "airline": "ATA Airlines",
         "country": "IRAN"
       }
     ]
