@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783908634,
-    "time_utc": "2026-07-13 02:10:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783908924,
     "time_utc": "2026-07-13 02:15:24 UTC",
     "count": 0,
@@ -423873,6 +423867,58 @@
         "lon": 53.987,
         "airline": "EPM",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785723322,
+    "time_utc": "2026-08-03 02:15:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40fbb556",
+        "callsign": "3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 310,
+        "speed": 430,
+        "lat": 37.178,
+        "lon": 48.571,
+        "airline": "328",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40fb88c9",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 231,
+        "speed": 446,
+        "lat": 33.567,
+        "lon": 45.978,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fbadce",
+        "callsign": "IRM5042",
+        "flight": "W55042",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 232,
+        "speed": 379,
+        "lat": 34.188,
+        "lon": 46.932,
+        "airline": "Mahan Air",
+        "country": "IRAN"
       }
     ]
   }
