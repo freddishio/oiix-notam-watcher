@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783908924,
-    "time_utc": "2026-07-13 02:15:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783909231,
     "time_utc": "2026-07-13 02:20:31 UTC",
     "count": 1,
@@ -423917,6 +423911,58 @@
         "speed": 379,
         "lat": 34.188,
         "lon": 46.932,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785723627,
+    "time_utc": "2026-08-03 02:20:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "40fbb556",
+        "callsign": "3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 303,
+        "speed": 434,
+        "lat": 37.57,
+        "lon": 47.975,
+        "airline": "328",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40fbbe02",
+        "callsign": "KRU2648",
+        "flight": "KRU2648",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 22975,
+        "track": 257,
+        "speed": 355,
+        "lat": 35.479,
+        "lon": 50.073,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fbc0c6",
+        "callsign": "IRM116",
+        "flight": "W5116",
+        "type": "A346",
+        "reg": "EP-MMU",
+        "category": "Commercial",
+        "alt": 14550,
+        "track": 287,
+        "speed": 19,
+        "lat": 35.674,
+        "lon": 51.356,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
