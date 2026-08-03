@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1783901725,
-    "time_utc": "2026-07-13 00:15:25 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40a2b7a2",
-        "callsign": "CPN7973",
-        "flight": "IV7973",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 3850,
-        "track": 165,
-        "speed": 19,
-        "lat": 35.544,
-        "lon": 51.427,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a33ab7",
-        "callsign": "IRM109",
-        "flight": "W5109",
-        "type": "A346",
-        "reg": "EP-MMG",
-        "category": "Commercial",
-        "alt": 15225,
-        "track": 168,
-        "speed": 19,
-        "lat": 35.543,
-        "lon": 51.427,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40a33f75",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 28,
-        "speed": 0,
-        "lat": 35.414,
-        "lon": 51.144,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      }
-    ]
-  },
-  {
     "timestamp": 1783902031,
     "time_utc": "2026-07-13 00:20:31 UTC",
     "count": 0,
@@ -423242,5 +423190,42 @@
     "time_utc": "2026-08-03 00:15:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785716422,
+    "time_utc": "2026-08-03 00:20:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40fb5f8f",
+        "callsign": "IZG3061",
+        "flight": "ZO3061",
+        "type": "A320",
+        "reg": "EP-ZAP",
+        "category": "Commercial",
+        "alt": 9800,
+        "track": 59,
+        "speed": 275,
+        "lat": 35.447,
+        "lon": 51.27,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb5773",
+        "callsign": "MRJ4802",
+        "flight": "MRJ4802",
+        "type": "A321",
+        "reg": "EP-SSN",
+        "category": "Commercial",
+        "alt": 4975,
+        "track": 288,
+        "speed": 216,
+        "lat": 35.383,
+        "lon": 51.275,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
