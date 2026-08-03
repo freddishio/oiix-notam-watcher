@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783976135,
-    "time_utc": "2026-07-13 20:55:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783976444,
     "time_utc": "2026-07-13 21:00:44 UTC",
     "count": 1,
@@ -428609,6 +428603,133 @@
         "lat": 35.09,
         "lon": 51.761,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785790829,
+    "time_utc": "2026-08-03 21:00:29 UTC",
+    "count": 8,
+    "planes": [
+      {
+        "id": "40feedc1",
+        "callsign": "KI6051",
+        "flight": "KIS6051",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 17675,
+        "track": 270,
+        "speed": 405,
+        "lat": 35.442,
+        "lon": 50.182,
+        "airline": "KI6",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40feee56",
+        "callsign": "IZG3060",
+        "flight": "ZO3060",
+        "type": "A320",
+        "reg": "EP-ZAP",
+        "category": "Commercial",
+        "alt": 8725,
+        "track": 228,
+        "speed": 277,
+        "lat": 35.595,
+        "lon": 51.128,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fe5b42",
+        "callsign": "TKN3169",
+        "flight": "TKN3168",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 9350,
+        "track": 348,
+        "speed": 292,
+        "lat": 35.536,
+        "lon": 51.63,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40febef7",
+        "callsign": "MRJ4825",
+        "flight": "MRJ4825",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 29975,
+        "track": 232,
+        "speed": 499,
+        "lat": 33.894,
+        "lon": 46.477,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fedffb",
+        "callsign": "QSM2230",
+        "flight": "QB2230",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 71,
+        "speed": 458,
+        "lat": 33.588,
+        "lon": 47.061,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fed750",
+        "callsign": "CPN7919",
+        "flight": "IV7919",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 29050,
+        "track": 61,
+        "speed": 453,
+        "lat": 34.432,
+        "lon": 48.612,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40feddd7",
+        "callsign": "SHI4368",
+        "flight": "IS4368",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 193,
+        "speed": 459,
+        "lat": 32.467,
+        "lon": 49.747,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fec506",
+        "callsign": "CPN7907",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 370,
+        "lat": 35.31,
+        "lon": 52.066,
+        "airline": "Caspian Airlines",
         "country": "IRAN"
       }
     ]
