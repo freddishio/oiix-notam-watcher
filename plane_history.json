@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783906833,
-    "time_utc": "2026-07-13 01:40:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783907131,
     "time_utc": "2026-07-13 01:45:31 UTC",
     "count": 1,
@@ -423451,6 +423445,103 @@
         "lat": 34.366,
         "lon": 52.739,
         "airline": "Atlas Khomein Kish",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785721526,
+    "time_utc": "2026-08-03 01:45:26 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40fbb1e8",
+        "callsign": "CPN7902",
+        "flight": "IV7902",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34100,
+        "track": 303,
+        "speed": 418,
+        "lat": 37.624,
+        "lon": 47.844,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fbadce",
+        "callsign": "IRM5042",
+        "flight": "W55042",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 20375,
+        "track": 255,
+        "speed": 339,
+        "lat": 35.524,
+        "lon": 50.263,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fbaaf7",
+        "callsign": "EPMRB",
+        "flight": "Unknown Flight",
+        "type": "RJ1H",
+        "reg": "EP-MRB",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 330,
+        "speed": 70,
+        "lat": 35.652,
+        "lon": 51.361,
+        "airline": "EPM",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40fb98bb",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 259,
+        "speed": 10,
+        "lat": 35.645,
+        "lon": 53.784,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fb88c9",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 233,
+        "speed": 432,
+        "lat": 35.325,
+        "lon": 49.698,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fa3400",
+        "callsign": "IRB9775",
+        "flight": "B99775",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 38025,
+        "track": 308,
+        "speed": 460,
+        "lat": 33.518,
+        "lon": 53.892,
+        "airline": "Iran Air Tours",
         "country": "IRAN"
       }
     ]
