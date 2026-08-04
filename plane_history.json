@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1784071234,
-    "time_utc": "2026-07-14 23:20:34 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40ab8bbd",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "B734",
-        "reg": "EP-NSR",
-        "category": "Commercial",
-        "alt": 29025,
-        "track": 136,
-        "speed": 450,
-        "lat": 38.141,
-        "lon": 47.996,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "40ab04d9",
-        "callsign": "ABY313",
-        "flight": "G9313",
-        "type": "A320",
-        "reg": "A6-ANR",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 245,
-        "speed": 466,
-        "lat": 24.726,
-        "lon": 60.963,
-        "airline": "Air Arabia",
-        "country": "United Arab Emirates"
-      }
-    ]
-  },
-  {
-    "timestamp": 1784071524,
-    "time_utc": "2026-07-14 23:25:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784071843,
     "time_utc": "2026-07-14 23:30:43 UTC",
     "count": 0,
@@ -432181,6 +432138,73 @@
         "lat": 34.374,
         "lon": 52.944,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785885926,
+    "time_utc": "2026-08-04 23:25:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "410388e6",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 303,
+        "speed": 450,
+        "lat": 37.677,
+        "lon": 47.744,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "41031c05",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 110,
+        "speed": 460,
+        "lat": 36.798,
+        "lon": 48.291,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "410347fd",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 28450,
+        "track": 122,
+        "speed": 459,
+        "lat": 36.033,
+        "lon": 49.804,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4103766b",
+        "callsign": "TKN3281",
+        "flight": "TKN3281",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 29400,
+        "track": 157,
+        "speed": 457,
+        "lat": 36.533,
+        "lon": 50.217,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
