@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1784072435,
-    "time_utc": "2026-07-14 23:40:35 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40ab9336",
-        "callsign": "IRB9740",
-        "flight": "B99740",
-        "type": "A306",
-        "reg": "EP-MDU",
-        "category": "Commercial",
-        "alt": 30200,
-        "track": 270,
-        "speed": 1,
-        "lat": 34.903,
-        "lon": 51.001,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1784072724,
-    "time_utc": "2026-07-14 23:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784073029,
     "time_utc": "2026-07-14 23:50:29 UTC",
     "count": 0,
@@ -432411,5 +432383,42 @@
     "time_utc": "2026-08-04 23:40:28 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785887127,
+    "time_utc": "2026-08-04 23:45:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "410388e6",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 295,
+        "speed": 440,
+        "lat": 38.663,
+        "lon": 44.875,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "41031c05",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 21975,
+        "track": 123,
+        "speed": 366,
+        "lat": 35.529,
+        "lon": 50.753,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
