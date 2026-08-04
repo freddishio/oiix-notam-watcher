@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784041253,
-    "time_utc": "2026-07-14 15:00:53 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784041534,
     "time_utc": "2026-07-14 15:05:34 UTC",
     "count": 5,
@@ -431736,6 +431730,73 @@
         "lon": 51.466,
         "airline": "Ava Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785855928,
+    "time_utc": "2026-08-04 15:05:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41019a5b",
+        "callsign": "AXV9212",
+        "flight": "AXV9212",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 269,
+        "speed": 436,
+        "lat": 35.452,
+        "lon": 50.767,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4101d13d",
+        "callsign": "IRM1027",
+        "flight": "W51027",
+        "type": "RJ85",
+        "reg": "EP-MET",
+        "category": "Commercial",
+        "alt": 14050,
+        "track": 133,
+        "speed": 314,
+        "lat": 35.659,
+        "lon": 51.184,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4101e1fd",
+        "callsign": "KRU2659",
+        "flight": "KRU2659",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 26975,
+        "track": 25,
+        "speed": 160,
+        "lat": 34.208,
+        "lon": 49.889,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4101eb77",
+        "callsign": "SHR5299",
+        "flight": "SHR5299",
+        "type": "A306",
+        "reg": "EP-HNS",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 90,
+        "speed": 10,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "SHR",
+        "country": "Unknown Location"
       }
     ]
   }
