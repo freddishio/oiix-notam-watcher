@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783993530,
-    "time_utc": "2026-07-14 01:45:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783993832,
     "time_utc": "2026-07-14 01:50:32 UTC",
     "count": 2,
@@ -430415,6 +430409,103 @@
         "speed": 230,
         "lat": 35.686,
         "lon": 51.283,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785808223,
+    "time_utc": "2026-08-04 01:50:23 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "40ffaaf1",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 310,
+        "speed": 464,
+        "lat": 37.076,
+        "lon": 48.704,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff8fb5",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 25450,
+        "track": 239,
+        "speed": 457,
+        "lat": 34.824,
+        "lon": 48.466,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ff8bad",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 269,
+        "speed": 439,
+        "lat": 35.425,
+        "lon": 50.264,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff6b66",
+        "callsign": "QSM2276",
+        "flight": "QB2276",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 188,
+        "speed": 0,
+        "lat": 35.41,
+        "lon": 51.157,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ffb8f5",
+        "callsign": "KRU2648",
+        "flight": "KRU2648",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 90,
+        "speed": 3,
+        "lat": 35.685,
+        "lon": 51.338,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ffb0be",
+        "callsign": "MRJ2804",
+        "flight": "MRJ2804",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 15600,
+        "track": 226,
+        "speed": 210,
+        "lat": 35.689,
+        "lon": 51.343,
         "airline": "Meraj Airlines",
         "country": "IRAN"
       }
