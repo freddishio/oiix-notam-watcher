@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783992635,
-    "time_utc": "2026-07-14 01:30:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783992931,
     "time_utc": "2026-07-14 01:35:31 UTC",
     "count": 0,
@@ -430263,6 +430257,88 @@
         "speed": 435,
         "lat": 35.537,
         "lon": 53.185,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785807331,
+    "time_utc": "2026-08-04 01:35:31 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40ffaaf1",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 18475,
+        "track": 311,
+        "speed": 400,
+        "lat": 35.827,
+        "lon": 50.487,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff8fb5",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 269,
+        "speed": 478,
+        "lat": 35.446,
+        "lon": 50.76,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ffb0be",
+        "callsign": "MRJ2804",
+        "flight": "MRJ2804",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 0,
+        "lat": 35.683,
+        "lon": 51.334,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff6b66",
+        "callsign": "QSM2276",
+        "flight": "QB2276",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 7925,
+        "track": 290,
+        "speed": 229,
+        "lat": 35.307,
+        "lon": 51.544,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff8bad",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 437,
+        "lat": 35.442,
+        "lon": 52.494,
         "airline": "Ava Air",
         "country": "IRAN"
       }
