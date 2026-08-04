@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1783992931,
-    "time_utc": "2026-07-14 01:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1783993230,
     "time_utc": "2026-07-14 01:40:30 UTC",
     "count": 2,
@@ -430341,6 +430335,88 @@
         "lon": 52.494,
         "airline": "Ava Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785807626,
+    "time_utc": "2026-08-04 01:40:26 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "40ff8fb5",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 249,
+        "speed": 484,
+        "lat": 35.428,
+        "lon": 49.911,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "40ff6b66",
+        "callsign": "QSM2276",
+        "flight": "QB2276",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 3700,
+        "track": 289,
+        "speed": 139,
+        "lat": 35.404,
+        "lon": 51.198,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ffb0be",
+        "callsign": "MRJ2804",
+        "flight": "MRJ2804",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 0,
+        "lat": 35.683,
+        "lon": 51.334,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff8bad",
+        "callsign": "AXV9204",
+        "flight": "AXV9204",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 438,
+        "lat": 35.334,
+        "lon": 51.731,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "40ff9eb8",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 30950,
+        "track": 168,
+        "speed": 472,
+        "lat": 32.2,
+        "lon": 51.946,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
