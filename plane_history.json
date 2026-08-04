@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1784056839,
-    "time_utc": "2026-07-14 19:20:39 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40aa9767",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-FSU",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 80,
-        "speed": 462,
-        "lat": 35.678,
-        "lon": 55.603,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      }
-    ]
-  },
-  {
-    "timestamp": 1784057129,
-    "time_utc": "2026-07-14 19:25:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784057443,
     "time_utc": "2026-07-14 19:30:43 UTC",
     "count": 1,
@@ -431614,6 +431586,73 @@
         "speed": 491,
         "lat": 35.564,
         "lon": 53.287,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785871535,
+    "time_utc": "2026-08-04 19:25:35 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4102cfb6",
+        "callsign": "IRZ8256",
+        "flight": "IRZ8256",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 31125,
+        "track": 311,
+        "speed": 422,
+        "lat": 37.296,
+        "lon": 48.393,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4102bfda",
+        "callsign": "IRA5361",
+        "flight": "IR5361",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 260,
+        "speed": 493,
+        "lat": 35.455,
+        "lon": 52.485,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4102c9c7",
+        "callsign": "QSM2230",
+        "flight": "QB2230",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 61,
+        "speed": 472,
+        "lat": 34.318,
+        "lon": 48.322,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4102a1f7",
+        "callsign": "IRA5318",
+        "flight": "IR5318",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 77,
+        "speed": 474,
+        "lat": 35.166,
+        "lon": 52.163,
         "airline": "Iran Air",
         "country": "IRAN"
       }
