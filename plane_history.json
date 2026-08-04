@@ -431461,5 +431461,87 @@
     "time_utc": "2026-08-04 18:45:31 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785869429,
+    "time_utc": "2026-08-04 18:50:29 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4102a1f7",
+        "callsign": "IRA5318",
+        "flight": "IR5318",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 54,
+        "speed": 460,
+        "lat": 33.929,
+        "lon": 46.995,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4102a869",
+        "callsign": "SHR5298",
+        "flight": "SHR5298",
+        "type": "A306",
+        "reg": "EP-HNS",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 63,
+        "speed": 478,
+        "lat": 34.529,
+        "lon": 48.788,
+        "airline": "SHR",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4102bc90",
+        "callsign": "IRA5327",
+        "flight": "IR5327",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 252,
+        "speed": 472,
+        "lat": 35.063,
+        "lon": 49.006,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4102c4e3",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 20900,
+        "track": 220,
+        "speed": 387,
+        "lat": 35.209,
+        "lon": 50.972,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41028c02",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 79,
+        "speed": 476,
+        "lat": 35.317,
+        "lon": 53.243,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
