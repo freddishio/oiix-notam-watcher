@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784071843,
-    "time_utc": "2026-07-14 23:30:43 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784072124,
-    "time_utc": "2026-07-14 23:35:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784072435,
     "time_utc": "2026-07-14 23:40:35 UTC",
     "count": 1,
@@ -432301,6 +432289,118 @@
         "speed": 316,
         "lat": 35.128,
         "lon": 51.884,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785886532,
+    "time_utc": "2026-08-04 23:35:32 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "41031c05",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 122,
+        "speed": 453,
+        "lat": 36.112,
+        "lon": 49.653,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4103766b",
+        "callsign": "TKN3281",
+        "flight": "TKN3281",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 22975,
+        "track": 151,
+        "speed": 317,
+        "lat": 35.586,
+        "lon": 50.811,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410384f5",
+        "callsign": "IRA5360",
+        "flight": "IR5360",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 76,
+        "speed": 484,
+        "lat": 34.94,
+        "lon": 49.973,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41038016",
+        "callsign": "KIS6050",
+        "flight": "KIS6050",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 25150,
+        "track": 45,
+        "speed": 395,
+        "lat": 35.094,
+        "lon": 50.467,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410347fd",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 21450,
+        "track": 100,
+        "speed": 287,
+        "lat": 35.439,
+        "lon": 50.948,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "410374ea",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 3500,
+        "track": 288,
+        "speed": 157,
+        "lat": 35.411,
+        "lon": 51.188,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41021a96",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 7525,
+        "track": 299,
+        "speed": 235,
+        "lat": 35.271,
+        "lon": 51.567,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
