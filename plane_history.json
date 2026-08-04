@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784051436,
-    "time_utc": "2026-07-14 17:50:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784051727,
     "time_utc": "2026-07-14 17:55:27 UTC",
     "count": 4,
@@ -431661,6 +431655,58 @@
         "lon": 54.056,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785866127,
+    "time_utc": "2026-08-04 17:55:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4102667e",
+        "callsign": "IRB9759",
+        "flight": "B99759",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 13600,
+        "track": 60,
+        "speed": 10,
+        "lat": 35.424,
+        "lon": 50.884,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "410264b1",
+        "callsign": "SHI7330",
+        "flight": "IS7330",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 260,
+        "speed": 439,
+        "lat": 35.399,
+        "lon": 52.026,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4102802c",
+        "callsign": "IRM1055",
+        "flight": "W51055",
+        "type": "RJ85",
+        "reg": "EP-MEU",
+        "category": "Commercial",
+        "alt": 25000,
+        "track": 130,
+        "speed": 374,
+        "lat": 33.942,
+        "lon": 53.302,
+        "airline": "Mahan Air",
+        "country": "IRAN"
       }
     ]
   }
