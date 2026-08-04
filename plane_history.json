@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784002830,
-    "time_utc": "2026-07-14 04:20:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784003127,
     "time_utc": "2026-07-14 04:25:27 UTC",
     "count": 1,
@@ -431107,6 +431101,43 @@
         "lat": 27.121,
         "lon": 52.88,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785817523,
+    "time_utc": "2026-08-04 04:25:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "40fff270",
+        "callsign": "TBN6205",
+        "flight": "TBN6205",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 267,
+        "speed": 481,
+        "lat": 32.864,
+        "lon": 53.575,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "40fffe8b",
+        "callsign": "AXV7736",
+        "flight": "AXV7736",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 168,
+        "speed": 460,
+        "lat": 33.158,
+        "lon": 53.961,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
