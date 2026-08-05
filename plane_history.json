@@ -432527,5 +432527,57 @@
         "country": "Russian Federation"
       }
     ]
+  },
+  {
+    "timestamp": 1785893435,
+    "time_utc": "2026-08-05 01:30:35 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4103ef0c",
+        "callsign": "IRA5357",
+        "flight": "IR5357",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 20275,
+        "track": 273,
+        "speed": 434,
+        "lat": 35.419,
+        "lon": 50.299,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4103ab8e",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 278,
+        "speed": 431,
+        "lat": 35.417,
+        "lon": 51.095,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4103de40",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 180,
+        "speed": 1,
+        "lat": 35.687,
+        "lon": 51.321,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
