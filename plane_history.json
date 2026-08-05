@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784153728,
-    "time_utc": "2026-07-15 22:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784154039,
     "time_utc": "2026-07-15 22:20:39 UTC",
     "count": 2,
@@ -433689,6 +433683,73 @@
         "speed": 353,
         "lat": 34.557,
         "lon": 52.735,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785968422,
+    "time_utc": "2026-08-05 22:20:22 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4107b29a",
+        "callsign": "QSM2237",
+        "flight": "QB2237",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 18250,
+        "track": 269,
+        "speed": 388,
+        "lat": 35.449,
+        "lon": 50.52,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41065427",
+        "callsign": "IRM056",
+        "flight": "W556",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 284,
+        "speed": 28,
+        "lat": 35.42,
+        "lon": 51.14,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41077de2",
+        "callsign": "KRU2639",
+        "flight": "KRU2639",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 58,
+        "lat": 35.674,
+        "lon": 51.35,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41078dee",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "RJ1H",
+        "reg": "EP-MOH",
+        "category": "Commercial",
+        "alt": 22000,
+        "track": 309,
+        "speed": 347,
+        "lat": 34.913,
+        "lon": 52.326,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
