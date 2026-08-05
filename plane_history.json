@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784153436,
-    "time_utc": "2026-07-15 22:10:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784153728,
     "time_utc": "2026-07-15 22:15:28 UTC",
     "count": 0,
@@ -433643,6 +433637,58 @@
         "speed": 351,
         "lat": 34.216,
         "lon": 53.118,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785968122,
+    "time_utc": "2026-08-05 22:15:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41077de2",
+        "callsign": "KRU2639",
+        "flight": "KRU2639",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 8925,
+        "track": 287,
+        "speed": 240,
+        "lat": 35.587,
+        "lon": 51.659,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41079f67",
+        "callsign": "MRJ4800",
+        "flight": "MRJ4800",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 31800,
+        "track": 69,
+        "speed": 450,
+        "lat": 33.525,
+        "lon": 46.406,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41078dee",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "RJ1H",
+        "reg": "EP-MOH",
+        "category": "Commercial",
+        "alt": 22000,
+        "track": 317,
+        "speed": 353,
+        "lat": 34.557,
+        "lon": 52.735,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
