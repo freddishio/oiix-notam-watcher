@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1784127042,
-    "time_utc": "2026-07-15 14:50:42 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40ae1f51",
-        "callsign": "SHI7310",
-        "flight": "IS7310",
-        "type": "B735",
-        "reg": "EP-FSQ",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 259,
-        "speed": 458,
-        "lat": 35.726,
-        "lon": 54.329,
-        "airline": "Sepehran Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1784127328,
     "time_utc": "2026-07-15 14:55:28 UTC",
     "count": 4,
@@ -434539,5 +434517,42 @@
     "time_utc": "2026-08-05 14:50:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785941728,
+    "time_utc": "2026-08-05 14:55:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41061c4d",
+        "callsign": "IRM1027",
+        "flight": "W51027",
+        "type": "RJ1H",
+        "reg": "EP-MOH",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 158,
+        "speed": 382,
+        "lat": 36.795,
+        "lon": 50.084,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4105e266",
+        "callsign": "MRJ4801",
+        "flight": "MRJ4801",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 90,
+        "speed": 60,
+        "lat": 34.903,
+        "lon": 51.001,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
