@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784146837,
-    "time_utc": "2026-07-15 20:20:37 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784147126,
-    "time_utc": "2026-07-15 20:25:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784147444,
     "time_utc": "2026-07-15 20:30:44 UTC",
     "count": 1,
@@ -433326,6 +433314,73 @@
         "lat": 37.475,
         "lon": 48.108,
         "airline": "Iran Air Tours",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785961530,
+    "time_utc": "2026-08-05 20:25:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41074593",
+        "callsign": "VRH6809",
+        "flight": "VRH6809",
+        "type": "B735",
+        "reg": "EP-VBM",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 118,
+        "speed": 524,
+        "lat": 38.78,
+        "lon": 46.665,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41074064",
+        "callsign": "IRB9702",
+        "flight": "B99702",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 303,
+        "speed": 438,
+        "lat": 37.814,
+        "lon": 47.483,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "41073c5c",
+        "callsign": "IRA5358",
+        "flight": "IR5358",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 62,
+        "speed": 466,
+        "lat": 34.221,
+        "lon": 48.122,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41071b78",
+        "callsign": "ISP1821",
+        "flight": "ISP1821",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 32300,
+        "track": 26,
+        "speed": 455,
+        "lat": 35.179,
+        "lon": 58.99,
+        "airline": "JSky Airlines",
         "country": "IRAN"
       }
     ]
