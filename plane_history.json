@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1784087430,
-    "time_utc": "2026-07-15 03:50:30 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40ac3876",
-        "callsign": "IZG3026",
-        "flight": "ZO3026",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 239,
-        "speed": 449,
-        "lat": 34.628,
-        "lon": 48.066,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40abfdff",
-        "callsign": "JZR718",
-        "flight": "J9718",
-        "type": "A320",
-        "reg": "9K-CAN",
-        "category": "Commercial",
-        "alt": 17000,
-        "track": 30,
-        "speed": 60,
-        "lat": 31.5,
-        "lon": 49.881,
-        "airline": "Jazeera Airways",
-        "country": "Kuwait"
-      }
-    ]
-  },
-  {
     "timestamp": 1784087726,
     "time_utc": "2026-07-15 03:55:26 UTC",
     "count": 5,
@@ -433083,6 +433046,73 @@
         "speed": 464,
         "lat": 28.59,
         "lon": 52.857,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785902125,
+    "time_utc": "2026-08-05 03:55:25 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "410432f2",
+        "callsign": "IRA719",
+        "flight": "IR719",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 32950,
+        "track": 310,
+        "speed": 461,
+        "lat": 37.131,
+        "lon": 48.621,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410444a8",
+        "callsign": "IRB8028",
+        "flight": "B98028",
+        "type": "A320",
+        "reg": "EP-MDQ",
+        "category": "Commercial",
+        "alt": 20700,
+        "track": 294,
+        "speed": 413,
+        "lat": 36.021,
+        "lon": 50.418,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "41043c76",
+        "callsign": "KRU2567",
+        "flight": "KRU2567",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 102,
+        "speed": 467,
+        "lat": 29.857,
+        "lon": 51.031,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41043d35",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 26975,
+        "track": 167,
+        "speed": 491,
+        "lat": 27.93,
+        "lon": 53.033,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
