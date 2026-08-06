@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784181322,
-    "time_utc": "2026-07-16 05:55:22 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784181639,
     "time_utc": "2026-07-16 06:00:39 UTC",
     "count": 1,
@@ -435715,6 +435709,58 @@
         "lon": 53.846,
         "airline": "Karun Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785995723,
+    "time_utc": "2026-08-06 05:55:23 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4108d27d",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 15975,
+        "track": 347,
+        "speed": 339,
+        "lat": 27.769,
+        "lon": 52.488,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4108d17d",
+        "callsign": "KRU2543",
+        "flight": "KRU2543",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 15650,
+        "track": 343,
+        "speed": 312,
+        "lat": 27.177,
+        "lon": 53.72,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4108b1b2",
+        "callsign": "RSB7685",
+        "flight": "RSB7685",
+        "type": "IL76",
+        "reg": "EW-567TH",
+        "category": "Commercial",
+        "alt": 30050,
+        "track": 314,
+        "speed": 408,
+        "lat": 26.124,
+        "lon": 59.307,
+        "airline": "Rubystar",
+        "country": "Belarus"
       }
     ]
   }
