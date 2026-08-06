@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784166635,
-    "time_utc": "2026-07-16 01:50:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784166925,
-    "time_utc": "2026-07-16 01:55:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784167239,
     "time_utc": "2026-07-16 02:00:39 UTC",
     "count": 0,
@@ -434310,6 +434298,58 @@
         "lat": 35.28,
         "lon": 51.262,
         "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1785981327,
+    "time_utc": "2026-08-06 01:55:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4107cda2",
+        "callsign": "IZG3051",
+        "flight": "ZO3051",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 16000,
+        "track": 130,
+        "speed": 374,
+        "lat": 35.661,
+        "lon": 51.175,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41082a29",
+        "callsign": "SHI7310",
+        "flight": "IS7310",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 10,
+        "lat": 35.488,
+        "lon": 52.67,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41082d41",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 259,
+        "speed": 10,
+        "lat": 35.597,
+        "lon": 53.464,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
