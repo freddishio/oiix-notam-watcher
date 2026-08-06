@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784169041,
-    "time_utc": "2026-07-16 02:30:41 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784169327,
     "time_utc": "2026-07-16 02:35:27 UTC",
     "count": 0,
@@ -434781,5 +434775,42 @@
     "time_utc": "2026-08-06 02:30:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1785983726,
+    "time_utc": "2026-08-06 02:35:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41085997",
+        "callsign": "CPN024",
+        "flight": "IV24",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 29950,
+        "track": 78,
+        "speed": 470,
+        "lat": 35.314,
+        "lon": 53.106,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "410846a4",
+        "callsign": "SHI7330",
+        "flight": "IS7330",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 261,
+        "speed": 432,
+        "lat": 35.558,
+        "lon": 53.192,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
