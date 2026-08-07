@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1784250029,
-    "time_utc": "2026-07-17 01:00:29 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40b4ac23",
-        "callsign": "AXV9213",
-        "flight": "AXV9213",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 65,
-        "speed": 478,
-        "lat": 34.186,
-        "lon": 47.976,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1784250330,
     "time_utc": "2026-07-17 01:05:30 UTC",
     "count": 3,
@@ -430166,5 +430144,57 @@
     "time_utc": "2026-08-07 00:55:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786064432,
+    "time_utc": "2026-08-07 01:00:32 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "410c45a8",
+        "callsign": "IRA769",
+        "flight": "IR769",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 18300,
+        "track": 312,
+        "speed": 393,
+        "lat": 35.903,
+        "lon": 50.362,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410c1957",
+        "callsign": "MRJ4832",
+        "flight": "MRJ4832",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 11975,
+        "track": 126,
+        "speed": 322,
+        "lat": 35.437,
+        "lon": 50.921,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "410c7d0b",
+        "callsign": "IRZ9181",
+        "flight": "IRZ9181",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 8025,
+        "track": 62,
+        "speed": 254,
+        "lat": 35.575,
+        "lon": 51.37,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
