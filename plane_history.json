@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784322325,
-    "time_utc": "2026-07-17 21:05:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784322632,
     "time_utc": "2026-07-17 21:10:32 UTC",
     "count": 1,
@@ -432800,6 +432794,73 @@
         "speed": 244,
         "lat": 35.388,
         "lon": 51.062,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786137026,
+    "time_utc": "2026-08-07 21:10:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41101f3f",
+        "callsign": "IRZ8256",
+        "flight": "IRZ8256",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 297,
+        "speed": 412,
+        "lat": 37.889,
+        "lon": 47.341,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4110103d",
+        "callsign": "MRJ2805",
+        "flight": "MRJ2805",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 11000,
+        "track": 274,
+        "speed": 222,
+        "lat": 35.552,
+        "lon": 51.825,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "411028eb",
+        "callsign": "AXV9229",
+        "flight": "AXV9229",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 46,
+        "speed": 454,
+        "lat": 33.584,
+        "lon": 47.075,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41100b04",
+        "callsign": "CPN7919",
+        "flight": "IV7919",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 3275,
+        "track": 288,
+        "speed": 130,
+        "lat": 35.417,
+        "lon": 51.151,
         "airline": "Caspian Airlines",
         "country": "IRAN"
       }
