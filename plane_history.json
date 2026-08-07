@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784251827,
-    "time_utc": "2026-07-17 01:30:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784252124,
     "time_utc": "2026-07-17 01:35:24 UTC",
     "count": 1,
@@ -430120,5 +430114,42 @@
     "time_utc": "2026-08-07 01:25:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786066228,
+    "time_utc": "2026-08-07 01:30:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "410c45a8",
+        "callsign": "IRA769",
+        "flight": "IR769",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 286,
+        "speed": 450,
+        "lat": 38.054,
+        "lon": 46.626,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410c6a18",
+        "callsign": "TBN7270",
+        "flight": "TBN7270",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 95,
+        "speed": 515,
+        "lat": 35.234,
+        "lon": 52.665,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
