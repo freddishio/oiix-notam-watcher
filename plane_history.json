@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784303724,
-    "time_utc": "2026-07-17 15:55:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784304039,
     "time_utc": "2026-07-17 16:00:39 UTC",
     "count": 0,
@@ -431890,6 +431884,43 @@
         "lon": 54.377,
         "airline": "Varesh Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786118127,
+    "time_utc": "2026-08-07 15:55:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "410f1505",
+        "callsign": "KRU2647",
+        "flight": "KRU2647",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 22075,
+        "track": 123,
+        "speed": 350,
+        "lat": 30.123,
+        "lon": 49.604,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "410e852b",
+        "callsign": "FDB1114",
+        "flight": "FZ1114",
+        "type": "B738",
+        "reg": "A6-FET",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 330,
+        "speed": 340,
+        "lat": 26.499,
+        "lon": 52.731,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
