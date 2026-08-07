@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784320231,
-    "time_utc": "2026-07-17 20:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784320528,
     "time_utc": "2026-07-17 20:35:28 UTC",
     "count": 0,
@@ -432371,6 +432365,73 @@
         "lon": 49.234,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786134633,
+    "time_utc": "2026-08-07 20:30:33 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "410ff71c",
+        "callsign": "IRB9753",
+        "flight": "B99753",
+        "type": "A310",
+        "reg": "EP-MDH",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 76,
+        "speed": 498,
+        "lat": 34.942,
+        "lon": 49.951,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "410fe3f9",
+        "callsign": "VRH6814",
+        "flight": "VRH6814",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 295,
+        "speed": 38,
+        "lat": 35.437,
+        "lon": 51.135,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41101f3f",
+        "callsign": "IRZ8256",
+        "flight": "IRZ8256",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 0,
+        "speed": 0,
+        "lat": 35.42,
+        "lon": 51.145,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410fe901",
+        "callsign": "SHI7347",
+        "flight": "IS7347",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 95,
+        "speed": 473,
+        "lat": 35.313,
+        "lon": 52.011,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
       }
     ]
   }
