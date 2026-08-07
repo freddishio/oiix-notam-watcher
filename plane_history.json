@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1784302839,
-    "time_utc": "2026-07-17 15:40:39 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40b718e5",
-        "callsign": "IRM114",
-        "flight": "W5114",
-        "type": "A343",
-        "reg": "EP-MJE",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 286,
-        "speed": 444,
-        "lat": 38.224,
-        "lon": 45.822,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40b73b5c",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "B733",
-        "reg": "EP-FSU",
-        "category": "Commercial",
-        "alt": 28000,
-        "track": 178,
-        "speed": 419,
-        "lat": 36.218,
-        "lon": 50.333,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      }
-    ]
-  },
-  {
     "timestamp": 1784303134,
     "time_utc": "2026-07-17 15:45:34 UTC",
     "count": 1,
@@ -431866,6 +431829,58 @@
         "lon": 53.483,
         "airline": "Varesh Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786117526,
+    "time_utc": "2026-08-07 15:45:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "410f0ba4",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 6400,
+        "track": 270,
+        "speed": 175,
+        "lat": 29.55,
+        "lon": 52.542,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "410f13e6",
+        "callsign": "VRH6810",
+        "flight": "VRH6810",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 102,
+        "speed": 442,
+        "lat": 26.575,
+        "lon": 53.917,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "410ee0f8",
+        "callsign": "AFL527",
+        "flight": "SU527",
+        "type": "B738",
+        "reg": "RA-73122",
+        "category": "Commercial",
+        "alt": 32600,
+        "track": 344,
+        "speed": 466,
+        "lat": 25.142,
+        "lon": 59.739,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
       }
     ]
   }
