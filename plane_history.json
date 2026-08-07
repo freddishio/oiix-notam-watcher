@@ -1,109 +1,5 @@
 [
   {
-    "timestamp": 1784328923,
-    "time_utc": "2026-07-17 22:55:23 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40b85864",
-        "callsign": "IRA768",
-        "flight": "IR768",
-        "type": "A332",
-        "reg": "EP-IJA",
-        "category": "Commercial",
-        "alt": 39000,
-        "track": 109,
-        "speed": 509,
-        "lat": 36.873,
-        "lon": 48.031,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40b73552",
-        "callsign": "IRM080",
-        "flight": "W580",
-        "type": "A346",
-        "reg": "EP-MMQ",
-        "category": "Commercial",
-        "alt": 11000,
-        "track": 246,
-        "speed": 19,
-        "lat": 35.533,
-        "lon": 51.42,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40b894ef",
-        "callsign": "MRJ4802A",
-        "flight": "Unknown Flight",
-        "type": "A320",
-        "reg": "EP-AJJ",
-        "category": "Commercial",
-        "alt": 18000,
-        "track": 258,
-        "speed": 19,
-        "lat": 35.533,
-        "lon": 51.421,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1784329231,
-    "time_utc": "2026-07-17 23:00:31 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40b85864",
-        "callsign": "IRA768",
-        "flight": "IR768",
-        "type": "A332",
-        "reg": "EP-IJA",
-        "category": "Commercial",
-        "alt": 39000,
-        "track": 122,
-        "speed": 491,
-        "lat": 36.548,
-        "lon": 48.808,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40b894ef",
-        "callsign": "MRJ4802A",
-        "flight": "Unknown Flight",
-        "type": "A320",
-        "reg": "EP-AJJ",
-        "category": "Commercial",
-        "alt": 10100,
-        "track": 68,
-        "speed": 19,
-        "lat": 35.55,
-        "lon": 51.412,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40b83381",
-        "callsign": "TBN7274",
-        "flight": "SUE7274",
-        "type": "A320",
-        "reg": "C5-SUA",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 258,
-        "speed": 18,
-        "lat": 35.42,
-        "lon": 51.135,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1784329528,
     "time_utc": "2026-07-17 23:05:28 UTC",
     "count": 0,
@@ -433855,5 +433751,102 @@
     "time_utc": "2026-08-07 22:55:22 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786143635,
+    "time_utc": "2026-08-07 23:00:35 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "41102108",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 115,
+        "speed": 486,
+        "lat": 37.984,
+        "lon": 44.479,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41106864",
+        "callsign": "IZG3001",
+        "flight": "ZO3001",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 62,
+        "speed": 483,
+        "lat": 34.662,
+        "lon": 49.118,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4110590d",
+        "callsign": "MRJ4812",
+        "flight": "MRJ4812",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 4000,
+        "track": 108,
+        "speed": 161,
+        "lat": 35.437,
+        "lon": 51.081,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4110510a",
+        "callsign": "TKN3283",
+        "flight": "TKN3283",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 140,
+        "speed": 7,
+        "lat": 35.416,
+        "lon": 51.152,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "410e9d7d",
+        "callsign": "IRM050",
+        "flight": "W550",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 9350,
+        "track": 289,
+        "speed": 250,
+        "lat": 35.333,
+        "lon": 51.351,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41107490",
+        "callsign": "IRM093",
+        "flight": "W593",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 127,
+        "speed": 110,
+        "lat": 33.498,
+        "lon": 53.923,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
