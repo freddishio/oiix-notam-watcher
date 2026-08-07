@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784329528,
-    "time_utc": "2026-07-17 23:05:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784329829,
     "time_utc": "2026-07-17 23:10:29 UTC",
     "count": 1,
@@ -433867,6 +433861,43 @@
         "lat": 37.706,
         "lon": 45.217,
         "airline": "ATA Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786144226,
+    "time_utc": "2026-08-07 23:10:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41102108",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 108,
+        "speed": 482,
+        "lat": 37.442,
+        "lon": 46.0,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41107bdc",
+        "callsign": "KIS6050",
+        "flight": "KIS6050",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 95,
+        "speed": 439,
+        "lat": 33.545,
+        "lon": 46.891,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
