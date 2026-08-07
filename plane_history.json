@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1784323530,
-    "time_utc": "2026-07-17 21:25:30 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40b844b9",
-        "callsign": "VRH6809",
-        "flight": "VRH6809",
-        "type": "B733",
-        "reg": "EP-VAT",
-        "category": "Commercial",
-        "alt": 15550,
-        "track": 150,
-        "speed": 275,
-        "lat": 35.793,
-        "lon": 50.679,
-        "airline": "Varesh Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40b84cbc",
-        "callsign": "KMF978",
-        "flight": "RQ978",
-        "type": "B733",
-        "reg": "YA-KMJ",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 90,
-        "speed": 432,
-        "lat": 25.46,
-        "lon": 57.041,
-        "airline": "Kam Air",
-        "country": "Afghanistan"
-      }
-    ]
-  },
-  {
     "timestamp": 1784323828,
     "time_utc": "2026-07-17 21:30:28 UTC",
     "count": 1,
@@ -432789,5 +432752,102 @@
     "time_utc": "2026-08-07 21:25:25 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786138224,
+    "time_utc": "2026-08-07 21:30:24 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4110281f",
+        "callsign": "KRU2639",
+        "flight": "KRU2639",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 22575,
+        "track": 273,
+        "speed": 314,
+        "lat": 35.498,
+        "lon": 52.596,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41104004",
+        "callsign": "TBZ6652",
+        "flight": "I36652",
+        "type": "MD83",
+        "reg": "EP-TAN",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 231,
+        "speed": 476,
+        "lat": 33.714,
+        "lon": 46.202,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4110497b",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B734",
+        "reg": "EP-NSR",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 232,
+        "speed": 450,
+        "lat": 33.932,
+        "lon": 46.535,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "411028eb",
+        "callsign": "AXV9229",
+        "flight": "AXV9229",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 75,
+        "speed": 466,
+        "lat": 34.881,
+        "lon": 49.662,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "411010e0",
+        "callsign": "VRH6809",
+        "flight": "VRH6809",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 9050,
+        "track": 187,
+        "speed": 214,
+        "lat": 35.279,
+        "lon": 51.628,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41102795",
+        "callsign": "FPI7404",
+        "flight": "FP7404",
+        "type": "B733",
+        "reg": "EP-FPC",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 336,
+        "speed": 434,
+        "lat": 34.074,
+        "lon": 52.198,
+        "airline": "FlyPersia",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
