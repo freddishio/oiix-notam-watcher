@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784340928,
-    "time_utc": "2026-07-18 02:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784341223,
-    "time_utc": "2026-07-18 02:20:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784341523,
     "time_utc": "2026-07-18 02:25:23 UTC",
     "count": 0,
@@ -434210,6 +434198,58 @@
         "speed": 459,
         "lat": 34.162,
         "lon": 46.892,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786155628,
+    "time_utc": "2026-08-08 02:20:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4110ed6d",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 300,
+        "speed": 417,
+        "lat": 37.975,
+        "lon": 46.622,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4111030b",
+        "callsign": "IRC842",
+        "flight": "EP842",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 13800,
+        "track": 258,
+        "speed": 313,
+        "lat": 35.623,
+        "lon": 50.846,
+        "airline": "Iran Aseman Airline",
+        "country": "IRAN"
+      },
+      {
+        "id": "4111012b",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 117,
+        "speed": 19,
+        "lat": 35.691,
+        "lon": 51.331,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
