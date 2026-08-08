@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784408440,
-    "time_utc": "2026-07-18 21:00:40 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784408728,
     "time_utc": "2026-07-18 21:05:28 UTC",
     "count": 0,
@@ -438553,6 +438547,58 @@
         "lon": 52.584,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786223126,
+    "time_utc": "2026-08-08 21:05:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41141dbc",
+        "callsign": "IRC3791",
+        "flight": "EP3791",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 110,
+        "lat": 35.688,
+        "lon": 51.317,
+        "airline": "Iran Aseman Airline",
+        "country": "IRAN"
+      },
+      {
+        "id": "41142e64",
+        "callsign": "IRB965",
+        "flight": "B9965",
+        "type": "MD82",
+        "reg": "EP-MDG",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 257,
+        "speed": 570,
+        "lat": 35.613,
+        "lon": 53.57,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "41143145",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 352,
+        "speed": 250,
+        "lat": 33.666,
+        "lon": 52.343,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
       }
     ]
   }
