@@ -439035,5 +439035,42 @@
     "time_utc": "2026-08-08 23:30:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786232124,
+    "time_utc": "2026-08-08 23:35:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4113fa27",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 108,
+        "speed": 536,
+        "lat": 37.475,
+        "lon": 45.884,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "411444af",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 13400,
+        "track": 123,
+        "speed": 381,
+        "lat": 35.487,
+        "lon": 50.827,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
