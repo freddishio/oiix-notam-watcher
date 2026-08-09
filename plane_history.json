@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784474128,
-    "time_utc": "2026-07-19 15:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784474426,
     "time_utc": "2026-07-19 15:20:26 UTC",
     "count": 5,
@@ -442500,6 +442494,43 @@
         "lon": 49.364,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786288823,
+    "time_utc": "2026-08-09 15:20:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41165f1c",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73103",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 307,
+        "speed": 418,
+        "lat": 36.744,
+        "lon": 52.732,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "41164c10",
+        "callsign": "IRA3500",
+        "flight": "IR3500",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 91,
+        "speed": 506,
+        "lat": 36.65,
+        "lon": 54.152,
+        "airline": "Iran Air",
+        "country": "IRAN"
       }
     ]
   }
