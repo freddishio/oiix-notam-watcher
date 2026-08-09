@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784418923,
-    "time_utc": "2026-07-18 23:55:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784419235,
     "time_utc": "2026-07-19 00:00:35 UTC",
     "count": 2,
@@ -439178,5 +439172,42 @@
     "time_utc": "2026-08-08 23:55:21 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786233628,
+    "time_utc": "2026-08-09 00:00:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41145adc",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34925,
+        "track": 115,
+        "speed": 484,
+        "lat": 37.57,
+        "lon": 45.576,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4113fa27",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 25975,
+        "track": 123,
+        "speed": 470,
+        "lat": 35.956,
+        "lon": 49.95,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
