@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784511036,
-    "time_utc": "2026-07-20 01:30:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784511334,
     "time_utc": "2026-07-20 01:35:34 UTC",
     "count": 2,
@@ -442365,6 +442359,43 @@
         "lat": 35.406,
         "lon": 51.148,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786325722,
+    "time_utc": "2026-08-10 01:35:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4118aaea",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 21200,
+        "track": 314,
+        "speed": 415,
+        "lat": 35.939,
+        "lon": 50.289,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41188dde",
+        "callsign": "MRJ4818",
+        "flight": "MRJ4818",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 7850,
+        "track": 128,
+        "speed": 19,
+        "lat": 35.548,
+        "lon": 51.423,
+        "airline": "Meraj Airlines",
         "country": "IRAN"
       }
     ]
