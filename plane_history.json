@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784557831,
-    "time_utc": "2026-07-20 14:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784558129,
     "time_utc": "2026-07-20 14:35:29 UTC",
     "count": 1,
@@ -445073,6 +445067,43 @@
         "lon": 50.943,
         "airline": "Iran Air Tours",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786372237,
+    "time_utc": "2026-08-10 14:30:37 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "411ab4e6",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B734",
+        "reg": "EP-CAQ",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 305,
+        "speed": 390,
+        "lat": 38.541,
+        "lon": 47.187,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4119c30f",
+        "callsign": "AFL526",
+        "flight": "SU526",
+        "type": "B738",
+        "reg": "RA-73122",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 173,
+        "speed": 458,
+        "lat": 25.985,
+        "lon": 59.906,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
       }
     ]
   }
