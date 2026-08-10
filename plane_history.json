@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784569527,
-    "time_utc": "2026-07-20 17:45:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784569824,
     "time_utc": "2026-07-20 17:50:24 UTC",
     "count": 1,
@@ -447452,6 +447446,118 @@
         "speed": 191,
         "lat": 29.564,
         "lon": 52.486,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786384221,
+    "time_utc": "2026-08-10 17:50:21 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "411b3e5a",
+        "callsign": "TBN7265",
+        "flight": "AXV7265",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 269,
+        "speed": 444,
+        "lat": 35.447,
+        "lon": 50.49,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "411b75de",
+        "callsign": "KIS7066",
+        "flight": "KIS7066",
+        "type": "MD82",
+        "reg": "EP-LCJ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 16,
+        "speed": 19,
+        "lat": 35.691,
+        "lon": 51.296,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "411b5515",
+        "callsign": "IZG3042",
+        "flight": "ZO3042",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 437,
+        "lat": 35.808,
+        "lon": 54.872,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "411b5e78",
+        "callsign": "IRB900",
+        "flight": "B9900",
+        "type": "MD82",
+        "reg": "EP-MDD",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 273,
+        "speed": 360,
+        "lat": 36.539,
+        "lon": 55.865,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "411b6884",
+        "callsign": "IRM1073",
+        "flight": "W51073",
+        "type": "RJ1H",
+        "reg": "EP-MOH",
+        "category": "Commercial",
+        "alt": 22300,
+        "track": 129,
+        "speed": 384,
+        "lat": 34.647,
+        "lon": 52.309,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "411b6e3a",
+        "callsign": "SHI4369",
+        "flight": "IS4369",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 22075,
+        "track": 25,
+        "speed": 403,
+        "lat": 31.188,
+        "lon": 48.682,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "411b6da5",
+        "callsign": "KRU2646",
+        "flight": "KRU2646",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 14725,
+        "track": 283,
+        "speed": 281,
+        "lat": 29.574,
+        "lon": 52.323,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
