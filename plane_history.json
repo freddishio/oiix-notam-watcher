@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784601931,
-    "time_utc": "2026-07-21 02:45:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784602225,
     "time_utc": "2026-07-21 02:50:25 UTC",
     "count": 6,
@@ -450166,6 +450160,73 @@
         "lat": 34.557,
         "lon": 48.009,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786416623,
+    "time_utc": "2026-08-11 02:50:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "411cf01d",
+        "callsign": "IZG3026",
+        "flight": "ZO3026",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 13900,
+        "track": 270,
+        "speed": 329,
+        "lat": 35.446,
+        "lon": 50.568,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "411ce8b9",
+        "callsign": "ISP1804",
+        "flight": "ISP1804",
+        "type": "B733",
+        "reg": "EP-JIB",
+        "category": "Commercial",
+        "alt": 28025,
+        "track": 288,
+        "speed": 18,
+        "lat": 35.684,
+        "lon": 51.327,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "411cf328",
+        "callsign": "IRM1016",
+        "flight": "W51016",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 27,
+        "lat": 35.684,
+        "lon": 51.329,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "411ce5e5",
+        "callsign": "MRJ4850",
+        "flight": "MRJ4850",
+        "type": "A320",
+        "reg": "EP-AJJ",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 80,
+        "speed": 498,
+        "lat": 35.489,
+        "lon": 54.277,
+        "airline": "Meraj Airlines",
         "country": "IRAN"
       }
     ]
