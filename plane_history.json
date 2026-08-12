@@ -462304,5 +462304,42 @@
     "time_utc": "2026-08-12 22:15:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786573229,
+    "time_utc": "2026-08-12 22:20:29 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41232f61",
+        "callsign": "IRM078",
+        "flight": "W578",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 36150,
+        "track": 165,
+        "speed": 495,
+        "lat": 37.226,
+        "lon": 51.277,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4124ba51",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 319,
+        "speed": 19,
+        "lat": 35.692,
+        "lon": 51.306,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
