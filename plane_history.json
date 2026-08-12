@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784752828,
-    "time_utc": "2026-07-22 20:40:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784753124,
-    "time_utc": "2026-07-22 20:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784753425,
     "time_utc": "2026-07-22 20:50:25 UTC",
     "count": 2,
@@ -461702,6 +461690,58 @@
         "lat": 34.089,
         "lon": 47.835,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786567534,
+    "time_utc": "2026-08-12 20:45:34 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "412467d4",
+        "callsign": "AXV9205",
+        "flight": "AXV9205",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 61,
+        "speed": 20,
+        "lat": 34.375,
+        "lon": 48.485,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4124720e",
+        "callsign": "CPN6913",
+        "flight": "IV6913",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 65,
+        "speed": 10,
+        "lat": 32.599,
+        "lon": 51.494,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "412450d3",
+        "callsign": "IRC",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 8000,
+        "track": 40,
+        "speed": 272,
+        "lat": 35.518,
+        "lon": 51.52,
+        "airline": "Iran Aseman Airline",
         "country": "IRAN"
       }
     ]
