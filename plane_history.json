@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784686227,
-    "time_utc": "2026-07-22 02:10:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784686542,
     "time_utc": "2026-07-22 02:15:42 UTC",
     "count": 1,
@@ -455173,6 +455167,58 @@
         "lon": 55.609,
         "airline": "Ava Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786500925,
+    "time_utc": "2026-08-12 02:15:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4120fffd",
+        "callsign": "AXV9212",
+        "flight": "AXV9212",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 259,
+        "speed": 398,
+        "lat": 35.823,
+        "lon": 54.929,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "412117e4",
+        "callsign": "TKN3102",
+        "flight": "TKN3102",
+        "type": "MD82",
+        "reg": "EP-LED",
+        "category": "Commercial",
+        "alt": 4175,
+        "track": 315,
+        "speed": 214,
+        "lat": 35.705,
+        "lon": 51.298,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41210462",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 161,
+        "speed": 493,
+        "lat": 32.716,
+        "lon": 51.831,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
