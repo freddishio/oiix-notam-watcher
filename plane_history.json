@@ -458131,5 +458131,42 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1786529725,
+    "time_utc": "2026-08-12 10:15:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "412221fc",
+        "callsign": "TBN6275",
+        "flight": "TBN6275",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 259,
+        "speed": 427,
+        "lat": 35.784,
+        "lon": 54.67,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4122229e",
+        "callsign": "IRA5329",
+        "flight": "IR5329",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 238,
+        "speed": 448,
+        "lat": 34.819,
+        "lon": 48.46,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
