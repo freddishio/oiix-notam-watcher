@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784680233,
-    "time_utc": "2026-07-22 00:30:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784680526,
-    "time_utc": "2026-07-22 00:35:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784680829,
     "time_utc": "2026-07-22 00:40:29 UTC",
     "count": 0,
@@ -454617,6 +454605,43 @@
         "lat": 37.234,
         "lon": 51.274,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786494927,
+    "time_utc": "2026-08-12 00:35:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "411f1c39",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 27400,
+        "track": 183,
+        "speed": 437,
+        "lat": 36.587,
+        "lon": 51.446,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4120d776",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 5400,
+        "track": 288,
+        "speed": 206,
+        "lat": 35.44,
+        "lon": 51.063,
+        "airline": "Iran Air Tours",
         "country": "IRAN"
       }
     ]
