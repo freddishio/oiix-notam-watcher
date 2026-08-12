@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784688930,
-    "time_utc": "2026-07-22 02:55:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784689234,
     "time_utc": "2026-07-22 03:00:34 UTC",
     "count": 2,
@@ -455716,6 +455710,73 @@
         "speed": 432,
         "lat": 35.334,
         "lon": 52.181,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786503630,
+    "time_utc": "2026-08-12 03:00:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "412128f3",
+        "callsign": "IZG3026",
+        "flight": "ZO3026",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 22500,
+        "track": 269,
+        "speed": 379,
+        "lat": 35.444,
+        "lon": 49.943,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41213227",
+        "callsign": "IRA3496",
+        "flight": "IR3496",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 0,
+        "lat": 35.685,
+        "lon": 51.327,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41211404",
+        "callsign": "SMI7346",
+        "flight": "IS7346",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 261,
+        "speed": 402,
+        "lat": 35.574,
+        "lon": 53.314,
+        "airline": "Aero Sami",
+        "country": "Mexico"
+      },
+      {
+        "id": "4121269c",
+        "callsign": "IRM1101",
+        "flight": "W51101",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 25925,
+        "track": 79,
+        "speed": 480,
+        "lat": 35.292,
+        "lon": 52.962,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
