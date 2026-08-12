@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784682028,
-    "time_utc": "2026-07-22 01:00:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784682342,
     "time_utc": "2026-07-22 01:05:42 UTC",
     "count": 0,
@@ -454727,6 +454721,58 @@
         "lat": 37.159,
         "lon": 48.577,
         "airline": "Iran Air Tours",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786496723,
+    "time_utc": "2026-08-12 01:05:23 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "412091c6",
+        "callsign": "IRZ8257",
+        "flight": "IRZ8257",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 116,
+        "speed": 495,
+        "lat": 37.671,
+        "lon": 45.309,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4120d776",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 303,
+        "speed": 439,
+        "lat": 37.541,
+        "lon": 47.997,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4120ebe3",
+        "callsign": "TKN3120",
+        "flight": "TKN3120",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 5125,
+        "track": 261,
+        "speed": 174,
+        "lat": 35.693,
+        "lon": 51.252,
+        "airline": "Kish Air",
         "country": "IRAN"
       }
     ]
