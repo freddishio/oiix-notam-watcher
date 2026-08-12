@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784757932,
-    "time_utc": "2026-07-22 22:05:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784758226,
-    "time_utc": "2026-07-22 22:10:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784758523,
     "time_utc": "2026-07-22 22:15:23 UTC",
     "count": 0,
@@ -462247,6 +462235,73 @@
         "lon": 51.682,
         "airline": "Mahan Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786572630,
+    "time_utc": "2026-08-12 22:10:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41244cb4",
+        "callsign": "MRJ4806",
+        "flight": "MRJ4806",
+        "type": "A321",
+        "reg": "EP-SSN",
+        "category": "Commercial",
+        "alt": 15950,
+        "track": 135,
+        "speed": 362,
+        "lat": 35.436,
+        "lon": 50.916,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4124320b",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 108,
+        "speed": 18,
+        "lat": 35.419,
+        "lon": 51.136,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41235e63",
+        "callsign": "IRM056",
+        "flight": "W556",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 11000,
+        "track": 279,
+        "speed": 263,
+        "lat": 35.334,
+        "lon": 51.693,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4124891c",
+        "callsign": "EPVAR",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-VAR",
+        "category": "Commercial",
+        "alt": 24000,
+        "track": 336,
+        "speed": 321,
+        "lat": 34.16,
+        "lon": 52.113,
+        "airline": "EPV",
+        "country": "Unknown Location"
       }
     ]
   }
