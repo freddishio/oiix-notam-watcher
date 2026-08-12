@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784687739,
-    "time_utc": "2026-07-22 02:35:39 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784688024,
-    "time_utc": "2026-07-22 02:40:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784688326,
     "time_utc": "2026-07-22 02:45:26 UTC",
     "count": 0,
@@ -455338,6 +455326,103 @@
         "lat": 35.423,
         "lon": 53.805,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786502426,
+    "time_utc": "2026-08-12 02:40:26 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "41210212",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 295,
+        "speed": 398,
+        "lat": 38.798,
+        "lon": 44.508,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41210b05",
+        "callsign": "IRM116",
+        "flight": "W5116",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 286,
+        "speed": 433,
+        "lat": 38.043,
+        "lon": 46.677,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4121239f",
+        "callsign": "VRH5912",
+        "flight": "VRH5912",
+        "type": "B735",
+        "reg": "EP-VAR",
+        "category": "Commercial",
+        "alt": 11050,
+        "track": 170,
+        "speed": 275,
+        "lat": 35.503,
+        "lon": 51.173,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41211fb1",
+        "callsign": "ISP1804",
+        "flight": "ISP1804",
+        "type": "B733",
+        "reg": "EP-JIB",
+        "category": "Commercial",
+        "alt": 23100,
+        "track": 208,
+        "speed": 385,
+        "lat": 35.039,
+        "lon": 50.715,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4121269c",
+        "callsign": "IRM1101",
+        "flight": "W51101",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 0,
+        "lat": 35.413,
+        "lon": 51.165,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4120fffd",
+        "callsign": "AXV9212",
+        "flight": "AXV9212",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 279,
+        "speed": 400,
+        "lat": 35.36,
+        "lon": 51.556,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
