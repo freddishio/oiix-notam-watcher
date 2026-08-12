@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784719228,
-    "time_utc": "2026-07-22 11:20:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784719525,
     "time_utc": "2026-07-22 11:25:25 UTC",
     "count": 1,
@@ -458842,6 +458836,88 @@
         "lon": 60.03,
         "airline": "North-West",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786533925,
+    "time_utc": "2026-08-12 11:25:25 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4121d4b8",
+        "callsign": "IRB9730",
+        "flight": "B99730",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 114,
+        "speed": 526,
+        "lat": 37.937,
+        "lon": 44.605,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4121fc2c",
+        "callsign": "RDA4323",
+        "flight": "Unknown Flight",
+        "type": "IL62",
+        "reg": "EW-450TR",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 189,
+        "speed": 472,
+        "lat": 35.842,
+        "lon": 50.544,
+        "airline": "Rada Airlines",
+        "country": "Belarus"
+      },
+      {
+        "id": "412245ca",
+        "callsign": "CPN7906",
+        "flight": "IV7906",
+        "type": "B733",
+        "reg": "EP-SOL",
+        "category": "Commercial",
+        "alt": 34050,
+        "track": 260,
+        "speed": 402,
+        "lat": 35.496,
+        "lon": 52.722,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41225e50",
+        "callsign": "AXV9221",
+        "flight": "AXV9220",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 35050,
+        "track": 58,
+        "speed": 465,
+        "lat": 33.627,
+        "lon": 47.063,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41223fae",
+        "callsign": "QSM2205",
+        "flight": "QB2205",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 33950,
+        "track": 344,
+        "speed": 488,
+        "lat": 25.24,
+        "lon": 59.708,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
       }
     ]
   }
