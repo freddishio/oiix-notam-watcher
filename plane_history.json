@@ -463393,5 +463393,57 @@
         "country": "Unknown Location"
       }
     ]
+  },
+  {
+    "timestamp": 1786600828,
+    "time_utc": "2026-08-13 06:00:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4125b1a3",
+        "callsign": "KIS7184",
+        "flight": "KIS7184",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 19250,
+        "track": 73,
+        "speed": 411,
+        "lat": 36.823,
+        "lon": 53.935,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4125cb50",
+        "callsign": "IRB9771",
+        "flight": "B99771",
+        "type": "MD82",
+        "reg": "EP-MDD",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 92,
+        "speed": 470,
+        "lat": 36.587,
+        "lon": 54.878,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4125dd52",
+        "callsign": "KRU2683",
+        "flight": "KRU2683",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 29025,
+        "track": 14,
+        "speed": 452,
+        "lat": 32.772,
+        "lon": 49.446,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
