@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784816727,
-    "time_utc": "2026-07-23 14:25:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784817032,
     "time_utc": "2026-07-23 14:30:32 UTC",
     "count": 6,
@@ -464932,6 +464926,58 @@
         "lon": 52.66,
         "airline": "Mahan Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786631430,
+    "time_utc": "2026-08-13 14:30:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41275018",
+        "callsign": "IRB8000",
+        "flight": "B98000",
+        "type": "MD82",
+        "reg": "EP-MDD",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 271,
+        "speed": 370,
+        "lat": 36.627,
+        "lon": 53.849,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4127586e",
+        "callsign": "LMB2001",
+        "flight": "LMB2001",
+        "type": "MD82",
+        "reg": "EP-LAD",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 259,
+        "speed": 433,
+        "lat": 35.81,
+        "lon": 54.9,
+        "airline": "LMB",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41274272",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 93,
+        "speed": 519,
+        "lat": 36.573,
+        "lon": 55.203,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
