@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784772036,
-    "time_utc": "2026-07-23 02:00:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784772329,
     "time_utc": "2026-07-23 02:05:29 UTC",
     "count": 1,
@@ -462371,5 +462365,42 @@
     "time_utc": "2026-08-13 01:55:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786586438,
+    "time_utc": "2026-08-13 02:00:38 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41255f33",
+        "callsign": "IRM098",
+        "flight": "W598",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 5800,
+        "track": 275,
+        "speed": 271,
+        "lat": 35.447,
+        "lon": 50.887,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "412561b0",
+        "callsign": "QSM2237",
+        "flight": "QB2237",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 286,
+        "speed": 0,
+        "lat": 35.413,
+        "lon": 51.165,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
