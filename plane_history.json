@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784836234,
-    "time_utc": "2026-07-23 19:50:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784836526,
     "time_utc": "2026-07-23 19:55:26 UTC",
     "count": 0,
@@ -466128,6 +466122,88 @@
         "lat": 24.867,
         "lon": 59.825,
         "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786650926,
+    "time_utc": "2026-08-13 19:55:26 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4126ece3",
+        "callsign": "KRU2651",
+        "flight": "KRU2656",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 29025,
+        "track": 14,
+        "speed": 468,
+        "lat": 33.227,
+        "lon": 49.578,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41287db2",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 7950,
+        "track": 340,
+        "speed": 213,
+        "lat": 35.598,
+        "lon": 51.576,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41287a5d",
+        "callsign": "AXV9205",
+        "flight": "AXV9205",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 78,
+        "speed": 480,
+        "lat": 35.291,
+        "lon": 53.037,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4128902f",
+        "callsign": "SHI4367",
+        "flight": "IS4367",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 86,
+        "speed": 20,
+        "lat": 32.819,
+        "lon": 53.194,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4128b290",
+        "callsign": "INA6711",
+        "flight": "INA6711",
+        "type": "B734",
+        "reg": "EP-AOA",
+        "category": "Commercial",
+        "alt": 12250,
+        "track": 166,
+        "speed": 280,
+        "lat": 29.582,
+        "lon": 52.581,
+        "airline": "Air1air",
         "country": "IRAN"
       }
     ]
