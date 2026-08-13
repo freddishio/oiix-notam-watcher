@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784836526,
-    "time_utc": "2026-07-23 19:55:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784836833,
-    "time_utc": "2026-07-23 20:00:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784837129,
     "time_utc": "2026-07-23 20:05:29 UTC",
     "count": 3,
@@ -466204,6 +466192,58 @@
         "lat": 29.582,
         "lon": 52.581,
         "airline": "Air1air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786651245,
+    "time_utc": "2026-08-13 20:00:45 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4126ece3",
+        "callsign": "KRU2651",
+        "flight": "KRU2656",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 14,
+        "speed": 473,
+        "lat": 33.899,
+        "lon": 49.781,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41287db2",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 82,
+        "lat": 35.689,
+        "lon": 51.312,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41286f55",
+        "callsign": "SHI7317",
+        "flight": "IS7317",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 344,
+        "speed": 453,
+        "lat": 26.109,
+        "lon": 59.433,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
