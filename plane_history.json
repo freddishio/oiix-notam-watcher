@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784925633,
-    "time_utc": "2026-07-24 20:40:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784925928,
     "time_utc": "2026-07-24 20:45:28 UTC",
     "count": 3,
@@ -473017,6 +473011,88 @@
         "lon": 54.749,
         "airline": "LMB",
         "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786740323,
+    "time_utc": "2026-08-14 20:45:23 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "412cbca1",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 115,
+        "speed": 514,
+        "lat": 37.718,
+        "lon": 45.185,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "412d019e",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "A343",
+        "reg": "EP-MJD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 21,
+        "lat": 35.674,
+        "lon": 51.345,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "412d1612",
+        "callsign": "IRZ8247",
+        "flight": "IRZ8247",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 28200,
+        "track": 260,
+        "speed": 399,
+        "lat": 35.519,
+        "lon": 52.902,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "412cf3ec",
+        "callsign": "SHI4367",
+        "flight": "IS4367",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 26,
+        "speed": 453,
+        "lat": 35.076,
+        "lon": 58.93,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "412d28dd",
+        "callsign": "CPN049",
+        "flight": "IV49",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 354,
+        "speed": 510,
+        "lat": 32.605,
+        "lon": 51.886,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
       }
     ]
   }
