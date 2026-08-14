@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784856634,
-    "time_utc": "2026-07-24 01:30:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784856924,
-    "time_utc": "2026-07-24 01:35:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784857231,
     "time_utc": "2026-07-24 01:40:31 UTC",
     "count": 0,
@@ -467356,6 +467344,73 @@
         "lat": 35.418,
         "lon": 53.82,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786671325,
+    "time_utc": "2026-08-14 01:35:25 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "412997a2",
+        "callsign": "AXV7729",
+        "flight": "AXV7729",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 80,
+        "speed": 500,
+        "lat": 35.535,
+        "lon": 54.645,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41299ea9",
+        "callsign": "AXV7730",
+        "flight": "AXV7730",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 80,
+        "speed": 498,
+        "lat": 35.599,
+        "lon": 55.074,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129ae42",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 9250,
+        "track": 316,
+        "speed": 314,
+        "lat": 35.482,
+        "lon": 50.87,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129aff7",
+        "callsign": "IRM098",
+        "flight": "W598",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 106,
+        "speed": 0,
+        "lat": 35.411,
+        "lon": 51.154,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
