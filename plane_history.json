@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1784859026,
-    "time_utc": "2026-07-24 02:10:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1784859328,
-    "time_utc": "2026-07-24 02:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784859624,
     "time_utc": "2026-07-24 02:20:24 UTC",
     "count": 0,
@@ -467829,6 +467817,73 @@
         "lat": 34.389,
         "lon": 50.407,
         "airline": "ATA Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786673733,
+    "time_utc": "2026-08-14 02:15:33 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4129aff7",
+        "callsign": "IRM098",
+        "flight": "W598",
+        "type": "A343",
+        "reg": "EP-MJF",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 6,
+        "speed": 494,
+        "lat": 38.093,
+        "lon": 49.727,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129c9e0",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 145,
+        "lat": 35.68,
+        "lon": 51.305,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4128083d",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 27600,
+        "track": 188,
+        "speed": 439,
+        "lat": 36.458,
+        "lon": 51.425,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129b30f",
+        "callsign": "IZG3026",
+        "flight": "ZO3026",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 232,
+        "speed": 443,
+        "lat": 34.11,
+        "lon": 46.814,
+        "airline": "Zagros Airlines",
         "country": "IRAN"
       }
     ]
