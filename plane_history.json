@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784859624,
-    "time_utc": "2026-07-24 02:20:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784859928,
     "time_utc": "2026-07-24 02:25:28 UTC",
     "count": 0,
@@ -467937,6 +467931,88 @@
         "lon": 55.345,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786674325,
+    "time_utc": "2026-08-14 02:25:25 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4129b6d0",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 310,
+        "speed": 407,
+        "lat": 37.31,
+        "lon": 48.35,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129b55c",
+        "callsign": "SHI7354",
+        "flight": "IS7354",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 259,
+        "speed": 421,
+        "lat": 35.77,
+        "lon": 54.624,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129bc46",
+        "callsign": "TBZ5658",
+        "flight": "I35658",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 194,
+        "speed": 446,
+        "lat": 32.638,
+        "lon": 49.887,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129cc2e",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 12675,
+        "track": 271,
+        "speed": 327,
+        "lat": 35.425,
+        "lon": 50.691,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4129c9e0",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 21150,
+        "track": 178,
+        "speed": 424,
+        "lat": 34.914,
+        "lon": 51.321,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
