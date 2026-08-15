@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785001830,
-    "time_utc": "2026-07-25 17:50:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785002125,
     "time_utc": "2026-07-25 17:55:25 UTC",
     "count": 4,
@@ -483986,6 +483980,58 @@
         "lat": 35.323,
         "lon": 53.217,
         "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786816524,
+    "time_utc": "2026-08-15 17:55:24 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41308065",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 259,
+        "speed": 421,
+        "lat": 35.619,
+        "lon": 53.617,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4130b5d5",
+        "callsign": "TBN6212",
+        "flight": "TBN6212",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 79,
+        "speed": 497,
+        "lat": 35.447,
+        "lon": 54.043,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4130c765",
+        "callsign": "CPN7972",
+        "flight": "IV7972",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 4150,
+        "track": 108,
+        "speed": 189,
+        "lat": 35.409,
+        "lon": 51.18,
+        "airline": "Caspian Airlines",
         "country": "IRAN"
       }
     ]
