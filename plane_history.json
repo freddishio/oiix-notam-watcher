@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1784989527,
-    "time_utc": "2026-07-25 14:25:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1784989833,
     "time_utc": "2026-07-25 14:30:33 UTC",
     "count": 2,
@@ -480823,6 +480817,73 @@
         "lon": 54.717,
         "airline": "Aeroflot",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786804231,
+    "time_utc": "2026-08-15 14:30:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "412fd855",
+        "callsign": "IRB8029",
+        "flight": "B98029",
+        "type": "A320",
+        "reg": "EP-MDQ",
+        "category": "Commercial",
+        "alt": 6925,
+        "track": 290,
+        "speed": 224,
+        "lat": 35.64,
+        "lon": 51.493,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "412fd985",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-MDF",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 270,
+        "speed": 440,
+        "lat": 36.657,
+        "lon": 52.479,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "412f79de",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73127",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 308,
+        "speed": 439,
+        "lat": 35.848,
+        "lon": 54.139,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "412fce1c",
+        "callsign": "FDB733",
+        "flight": "FZ733",
+        "type": "B738",
+        "reg": "A6-FED",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 343,
+        "speed": 481,
+        "lat": 25.863,
+        "lon": 59.511,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
