@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785019232,
-    "time_utc": "2026-07-25 22:40:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785019525,
     "time_utc": "2026-07-25 22:45:25 UTC",
     "count": 3,
@@ -485355,5 +485349,42 @@
     "time_utc": "2026-08-15 22:40:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786833922,
+    "time_utc": "2026-08-15 22:45:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41315f80",
+        "callsign": "AXV7703",
+        "flight": "AXV7703",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 135,
+        "lat": 35.684,
+        "lon": 51.286,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "413182a0",
+        "callsign": "SHI4339",
+        "flight": "IS4339",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 9925,
+        "track": 62,
+        "speed": 283,
+        "lat": 31.538,
+        "lon": 49.169,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
