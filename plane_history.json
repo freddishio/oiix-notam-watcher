@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785023727,
-    "time_utc": "2026-07-25 23:55:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785024035,
     "time_utc": "2026-07-26 00:00:35 UTC",
     "count": 0,
@@ -485507,6 +485501,73 @@
         "lat": 35.423,
         "lon": 51.056,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786838429,
+    "time_utc": "2026-08-16 00:00:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4131a3d5",
+        "callsign": "AXV9201",
+        "flight": "AXV9201",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 46,
+        "speed": 489,
+        "lat": 33.856,
+        "lon": 47.427,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41313d22",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 6825,
+        "track": 347,
+        "speed": 233,
+        "lat": 35.38,
+        "lon": 51.385,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41314e2f",
+        "callsign": "IRM1194",
+        "flight": "W51194",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 312,
+        "speed": 479,
+        "lat": 33.55,
+        "lon": 53.852,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "413182a0",
+        "callsign": "SHI4339",
+        "flight": "IS4339",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 26,
+        "speed": 440,
+        "lat": 34.675,
+        "lon": 58.671,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
