@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785086731,
-    "time_utc": "2026-07-26 17:25:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785087030,
     "time_utc": "2026-07-26 17:30:30 UTC",
     "count": 2,
@@ -483192,6 +483186,43 @@
         "lon": 59.532,
         "airline": "flydubai",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786901133,
+    "time_utc": "2026-08-16 17:25:33 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41341e09",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 261,
+        "speed": 454,
+        "lat": 35.572,
+        "lon": 53.159,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "413430d4",
+        "callsign": "SHI7330",
+        "flight": "IS7330",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 279,
+        "speed": 443,
+        "lat": 35.361,
+        "lon": 51.514,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
       }
     ]
   }
