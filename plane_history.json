@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785090030,
-    "time_utc": "2026-07-26 18:20:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785090331,
     "time_utc": "2026-07-26 18:25:31 UTC",
     "count": 1,
@@ -483441,6 +483435,88 @@
         "speed": 485,
         "lat": 35.274,
         "lon": 52.899,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786904726,
+    "time_utc": "2026-08-16 18:25:26 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "41347816",
+        "callsign": "TBZ6619",
+        "flight": "I36619",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 303,
+        "speed": 437,
+        "lat": 37.601,
+        "lon": 47.886,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41348505",
+        "callsign": "IRM079",
+        "flight": "W579",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 24275,
+        "track": 8,
+        "speed": 427,
+        "lat": 36.296,
+        "lon": 51.395,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41348a99",
+        "callsign": "IZG4025",
+        "flight": "ZO4025",
+        "type": "A320",
+        "reg": "EP-ZAP",
+        "category": "Commercial",
+        "alt": 19300,
+        "track": 13,
+        "speed": 341,
+        "lat": 31.948,
+        "lon": 49.193,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41346337",
+        "callsign": "SHI7347",
+        "flight": "IS7347",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 100,
+        "speed": 469,
+        "lat": 35.388,
+        "lon": 51.328,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41345728",
+        "callsign": "AXV9221",
+        "flight": "AXV9221",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 79,
+        "speed": 478,
+        "lat": 35.393,
+        "lon": 53.698,
         "airline": "Ava Air",
         "country": "IRAN"
       }
