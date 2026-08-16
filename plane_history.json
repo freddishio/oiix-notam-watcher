@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785024927,
-    "time_utc": "2026-07-26 00:15:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785025225,
     "time_utc": "2026-07-26 00:20:25 UTC",
     "count": 0,
@@ -485537,6 +485531,73 @@
         "speed": 372,
         "lat": 34.928,
         "lon": 52.306,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786839622,
+    "time_utc": "2026-08-16 00:20:22 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41317765",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 118,
+        "speed": 462,
+        "lat": 37.618,
+        "lon": 45.447,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4130a9ea",
+        "callsign": "THA950",
+        "flight": "TG950",
+        "type": "B77W",
+        "reg": "HS-TKM",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 240,
+        "speed": 100,
+        "lat": 36.96,
+        "lon": 59.384,
+        "airline": "Thai Airways",
+        "country": "Thailand"
+      },
+      {
+        "id": "4131a3d5",
+        "callsign": "AXV9201",
+        "flight": "AXV9201",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 15225,
+        "track": 61,
+        "speed": 380,
+        "lat": 35.113,
+        "lon": 50.158,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41314e2f",
+        "callsign": "IRM1194",
+        "flight": "W51194",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 10100,
+        "track": 298,
+        "speed": 298,
+        "lat": 35.167,
+        "lon": 51.806,
         "airline": "Mahan Air",
         "country": "IRAN"
       }
