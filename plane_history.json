@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785089127,
-    "time_utc": "2026-07-26 18:05:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785089428,
     "time_utc": "2026-07-26 18:10:28 UTC",
     "count": 1,
@@ -483336,6 +483330,73 @@
         "lon": 47.564,
         "airline": "Ava Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786903823,
+    "time_utc": "2026-08-16 18:10:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41341e09",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 235,
+        "speed": 440,
+        "lat": 34.12,
+        "lon": 46.914,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41345728",
+        "callsign": "AXV9221",
+        "flight": "AXV9221",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 99,
+        "speed": 471,
+        "lat": 35.397,
+        "lon": 51.288,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4134677f",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-FSU",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 449,
+        "lat": 35.436,
+        "lon": 52.328,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41346e1f",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 24675,
+        "track": 104,
+        "speed": 450,
+        "lat": 29.694,
+        "lon": 51.747,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
