@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1785024624,
-    "time_utc": "2026-07-26 00:10:24 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "40da6fdd",
-        "callsign": "CPN6924",
-        "flight": "Unknown Flight",
-        "type": "MD83",
-        "reg": "EP-CPX",
-        "category": "Commercial",
-        "alt": 14900,
-        "track": 100,
-        "speed": 310,
-        "lat": 35.472,
-        "lon": 51.741,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40d9027d",
-        "callsign": "IRM090",
-        "flight": "W590",
-        "type": "A343",
-        "reg": "EP-MMT",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 109,
-        "speed": 9,
-        "lat": 35.419,
-        "lon": 51.136,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40da011c",
-        "callsign": "IRM1194",
-        "flight": "W51194",
-        "type": "A343",
-        "reg": "EP-MJF",
-        "category": "Commercial",
-        "alt": 18550,
-        "track": 303,
-        "speed": 415,
-        "lat": 34.769,
-        "lon": 52.465,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785024927,
     "time_utc": "2026-07-26 00:15:27 UTC",
     "count": 0,
@@ -485556,5 +485504,42 @@
     "time_utc": "2026-08-16 00:10:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786839324,
+    "time_utc": "2026-08-16 00:15:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4131a3d5",
+        "callsign": "AXV9201",
+        "flight": "AXV9201",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 25150,
+        "track": 64,
+        "speed": 450,
+        "lat": 34.837,
+        "lon": 49.53,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41314e2f",
+        "callsign": "IRM1194",
+        "flight": "W51194",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 15575,
+        "track": 306,
+        "speed": 372,
+        "lat": 34.928,
+        "lon": 52.306,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
