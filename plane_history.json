@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785187226,
-    "time_utc": "2026-07-27 21:20:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785187529,
     "time_utc": "2026-07-27 21:25:29 UTC",
     "count": 2,
@@ -489835,6 +489829,73 @@
         "speed": 213,
         "lat": 30.418,
         "lon": 48.233,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787001630,
+    "time_utc": "2026-08-17 21:20:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4138ddea",
+        "callsign": "CPN6911",
+        "flight": "IV6911",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 7125,
+        "track": 303,
+        "speed": 310,
+        "lat": 35.627,
+        "lon": 51.518,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4138e837",
+        "callsign": "MRJ4801",
+        "flight": "MRJ4801",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 34050,
+        "track": 260,
+        "speed": 442,
+        "lat": 35.459,
+        "lon": 52.456,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4138f6a1",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 61,
+        "speed": 520,
+        "lat": 34.083,
+        "lon": 47.802,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "413908f1",
+        "callsign": "IRZ167",
+        "flight": "IRZ167",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 11650,
+        "track": 25,
+        "speed": 306,
+        "lat": 30.744,
+        "lon": 48.43,
         "airline": "Saha Air",
         "country": "IRAN"
       }
