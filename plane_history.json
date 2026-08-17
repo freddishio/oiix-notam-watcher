@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1785110126,
-    "time_utc": "2026-07-26 23:55:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785110436,
-    "time_utc": "2026-07-27 00:00:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785110729,
     "time_utc": "2026-07-27 00:05:29 UTC",
     "count": 0,
@@ -482916,6 +482904,43 @@
         "lon": 59.749,
         "airline": "flydubai",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786924842,
+    "time_utc": "2026-08-17 00:00:42 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41352503",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 34950,
+        "track": 115,
+        "speed": 466,
+        "lat": 38.028,
+        "lon": 44.359,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "413506ea",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 115,
+        "speed": 484,
+        "lat": 37.529,
+        "lon": 45.683,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
       }
     ]
   }
