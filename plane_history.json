@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785171642,
-    "time_utc": "2026-07-27 17:00:42 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785171935,
     "time_utc": "2026-07-27 17:05:35 UTC",
     "count": 4,
@@ -489728,6 +489722,58 @@
         "lat": 31.762,
         "lon": 49.658,
         "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786986326,
+    "time_utc": "2026-08-17 17:05:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4138311c",
+        "callsign": "SHI7359",
+        "flight": "IS7359",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 27025,
+        "track": 295,
+        "speed": 393,
+        "lat": 38.582,
+        "lon": 45.08,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41383b61",
+        "callsign": "JJ25",
+        "flight": "MRJ25",
+        "type": "RJ85",
+        "reg": "EP-IGF",
+        "category": "Commercial",
+        "alt": 26000,
+        "track": 231,
+        "speed": 378,
+        "lat": 33.583,
+        "lon": 46.003,
+        "airline": "JJ2",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41381cf5",
+        "callsign": "SHI7349",
+        "flight": "IS7349",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 239,
+        "speed": 424,
+        "lat": 34.794,
+        "lon": 48.403,
+        "airline": "Sepehran Airlines",
         "country": "IRAN"
       }
     ]
