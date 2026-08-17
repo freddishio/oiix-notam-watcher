@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785122437,
-    "time_utc": "2026-07-27 03:20:37 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785122730,
     "time_utc": "2026-07-27 03:25:30 UTC",
     "count": 5,
@@ -484026,6 +484020,103 @@
         "lon": 52.899,
         "airline": "Kish Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786937124,
+    "time_utc": "2026-08-17 03:25:24 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4135cce7",
+        "callsign": "IRM4568",
+        "flight": "W54568",
+        "type": "RJ85",
+        "reg": "EP-MEI",
+        "category": "Commercial",
+        "alt": 22000,
+        "track": 260,
+        "speed": 352,
+        "lat": 35.497,
+        "lon": 52.733,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4135dca0",
+        "callsign": "CPN026",
+        "flight": "IV26",
+        "type": "MD83",
+        "reg": "EP-CPV",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 81,
+        "speed": 320,
+        "lat": 35.453,
+        "lon": 54.026,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4135d68c",
+        "callsign": "AXV9220",
+        "flight": "AXV9220",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 33925,
+        "track": 260,
+        "speed": 424,
+        "lat": 35.91,
+        "lon": 55.486,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4135d8bd",
+        "callsign": "IZG3026",
+        "flight": "ZO3026",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 238,
+        "speed": 476,
+        "lat": 34.698,
+        "lon": 48.21,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4135b213",
+        "callsign": "AXV9218",
+        "flight": "AXV9218",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 250,
+        "speed": 418,
+        "lat": 34.956,
+        "lon": 48.891,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "413537a4",
+        "callsign": "FDB1NB",
+        "flight": "FZ988",
+        "type": "B38M",
+        "reg": "A6-FMQ",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 165,
+        "speed": 475,
+        "lat": 26.743,
+        "lon": 59.658,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
