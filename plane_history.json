@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1785111031,
-    "time_utc": "2026-07-27 00:10:31 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40ddcfb3",
-        "callsign": "TBZ6620",
-        "flight": "I36620",
-        "type": "A320",
-        "reg": "EP-TAD",
-        "category": "Commercial",
-        "alt": 27675,
-        "track": 90,
-        "speed": 20,
-        "lat": 34.903,
-        "lon": 51.001,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785111323,
     "time_utc": "2026-07-27 00:15:23 UTC",
     "count": 0,
@@ -482965,5 +482943,57 @@
     "time_utc": "2026-08-17 00:10:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786925721,
+    "time_utc": "2026-08-17 00:15:21 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41352503",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPB",
+        "category": "Commercial",
+        "alt": 34950,
+        "track": 110,
+        "speed": 468,
+        "lat": 37.285,
+        "lon": 46.576,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "413506ea",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 109,
+        "speed": 481,
+        "lat": 36.86,
+        "lon": 48.079,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41357b01",
+        "callsign": "MRJ2802",
+        "flight": "MRJ2802",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 27000,
+        "track": 79,
+        "speed": 477,
+        "lat": 35.285,
+        "lon": 52.897,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
