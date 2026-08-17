@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1785117331,
-    "time_utc": "2026-07-27 01:55:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785117629,
-    "time_utc": "2026-07-27 02:00:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785117928,
     "time_utc": "2026-07-27 02:05:28 UTC",
     "count": 2,
@@ -483107,6 +483095,103 @@
         "speed": 381,
         "lat": 35.378,
         "lon": 51.454,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1786932030,
+    "time_utc": "2026-08-17 02:00:30 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "41359f3a",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 430,
+        "lat": 35.542,
+        "lon": 53.065,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "413537a4",
+        "callsign": "FDB1NB",
+        "flight": "FZ988",
+        "type": "B38M",
+        "reg": "A6-FMQ",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 125,
+        "speed": 495,
+        "lat": 36.477,
+        "lon": 53.492,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4135639d",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 35050,
+        "track": 122,
+        "speed": 456,
+        "lat": 36.679,
+        "lon": 48.491,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41359ed1",
+        "callsign": "TBZ5658",
+        "flight": "I35658",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 193,
+        "speed": 431,
+        "lat": 33.504,
+        "lon": 50.135,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4135b130",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 180,
+        "speed": 1,
+        "lat": 35.423,
+        "lon": 51.153,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4135b55a",
+        "callsign": "TKN3178",
+        "flight": "TKN3178",
+        "type": "MD82",
+        "reg": "EP-LED",
+        "category": "Commercial",
+        "alt": 22250,
+        "track": 136,
+        "speed": 458,
+        "lat": 34.938,
+        "lon": 51.941,
         "airline": "Kish Air",
         "country": "IRAN"
       }
