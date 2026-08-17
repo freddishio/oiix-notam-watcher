@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1785181228,
-    "time_utc": "2026-07-27 19:40:28 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40e18848",
-        "callsign": "CPN6943",
-        "flight": "Unknown Flight",
-        "type": "MD83",
-        "reg": "EP-CPX",
-        "category": "Commercial",
-        "alt": 29800,
-        "track": 62,
-        "speed": 436,
-        "lat": 31.739,
-        "lon": 49.61,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40e17217",
-        "callsign": "ISP1815",
-        "flight": "ISP1815",
-        "type": "B733",
-        "reg": "EP-JIA",
-        "category": "Commercial",
-        "alt": 30925,
-        "track": 87,
-        "speed": 435,
-        "lat": 32.889,
-        "lon": 53.797,
-        "airline": "JSky Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785181532,
     "time_utc": "2026-07-27 19:45:32 UTC",
     "count": 3,
@@ -489508,5 +489471,72 @@
     "time_utc": "2026-08-17 19:40:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1786995928,
+    "time_utc": "2026-08-17 19:45:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41389acf",
+        "callsign": "AXV9201",
+        "flight": "AXV9201",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 13175,
+        "track": 9,
+        "speed": 291,
+        "lat": 35.467,
+        "lon": 50.914,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41383b61",
+        "callsign": "JJ25",
+        "flight": "MRJ25",
+        "type": "RJ85",
+        "reg": "EP-IGF",
+        "category": "Commercial",
+        "alt": 10700,
+        "track": 74,
+        "speed": 256,
+        "lat": 35.512,
+        "lon": 51.361,
+        "airline": "JJ2",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41388cee",
+        "callsign": "SHI7355",
+        "flight": "IS7355",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 33025,
+        "track": 79,
+        "speed": 483,
+        "lat": 35.377,
+        "lon": 53.513,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4138c5e8",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 8650,
+        "track": 73,
+        "speed": 212,
+        "lat": 29.603,
+        "lon": 52.528,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
   }
 ]
