@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1785195326,
-    "time_utc": "2026-07-27 23:35:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785195625,
-    "time_utc": "2026-07-27 23:40:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785195924,
     "time_utc": "2026-07-27 23:45:24 UTC",
     "count": 0,
@@ -490080,6 +490068,58 @@
         "lon": 52.899,
         "airline": "TARP Aviation",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787010030,
+    "time_utc": "2026-08-17 23:40:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41391ee7",
+        "callsign": "IRZ8257",
+        "flight": "IRZ8257",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 109,
+        "speed": 479,
+        "lat": 37.282,
+        "lon": 46.52,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4138e67f",
+        "callsign": "RLA7775",
+        "flight": "RLA7775",
+        "type": "GLEX",
+        "reg": "RA-73650",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 125,
+        "speed": 528,
+        "lat": 36.383,
+        "lon": 53.656,
+        "airline": "TARP Aviation",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "4139331d",
+        "callsign": "SHI4367",
+        "flight": "IS4367",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 33075,
+        "track": 26,
+        "speed": 456,
+        "lat": 34.819,
+        "lon": 58.759,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
       }
     ]
   }
