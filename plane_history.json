@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785202531,
-    "time_utc": "2026-07-28 01:35:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785202830,
     "time_utc": "2026-07-28 01:40:30 UTC",
     "count": 4,
@@ -490411,6 +490405,43 @@
         "speed": 454,
         "lat": 35.445,
         "lon": 50.781,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787017221,
+    "time_utc": "2026-08-18 01:40:21 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4139969e",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD82",
+        "reg": "EP-ZAM",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 269,
+        "speed": 453,
+        "lat": 35.444,
+        "lon": 50.018,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4139ba29",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 18425,
+        "track": 257,
+        "speed": 385,
+        "lat": 35.473,
+        "lon": 50.05,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
