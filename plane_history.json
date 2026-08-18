@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785279630,
-    "time_utc": "2026-07-28 23:00:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785279924,
     "time_utc": "2026-07-28 23:05:24 UTC",
     "count": 2,
@@ -497579,6 +497573,28 @@
         "speed": 507,
         "lat": 36.98,
         "lon": 47.661,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787094323,
+    "time_utc": "2026-08-18 23:05:23 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "413d10fb",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 122,
+        "speed": 496,
+        "lat": 36.725,
+        "lon": 48.463,
         "airline": "Iran Air",
         "country": "IRAN"
       }
