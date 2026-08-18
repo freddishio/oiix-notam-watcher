@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785280833,
-    "time_utc": "2026-07-28 23:20:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785281133,
     "time_utc": "2026-07-28 23:25:33 UTC",
     "count": 2,
@@ -497700,6 +497694,73 @@
         "speed": 458,
         "lat": 25.22,
         "lon": 58.979,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787095526,
+    "time_utc": "2026-08-18 23:25:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "413d6df5",
+        "callsign": "IRB8005",
+        "flight": "B98005",
+        "type": "MD82",
+        "reg": "EP-MDE",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 317,
+        "speed": 430,
+        "lat": 34.459,
+        "lon": 52.846,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "413d7e13",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 259,
+        "speed": 464,
+        "lat": 35.634,
+        "lon": 53.178,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "413c1040",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMC",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 317,
+        "speed": 472,
+        "lat": 34.108,
+        "lon": 53.236,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "413d7f6d",
+        "callsign": "ABY554",
+        "flight": "G9554",
+        "type": "A320",
+        "reg": "A6-ABM",
+        "category": "Commercial",
+        "alt": 32800,
+        "track": 93,
+        "speed": 475,
+        "lat": 25.187,
+        "lon": 59.688,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
