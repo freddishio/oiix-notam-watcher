@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785288024,
-    "time_utc": "2026-07-29 01:20:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785288326,
     "time_utc": "2026-07-29 01:25:26 UTC",
     "count": 1,
@@ -497891,6 +497885,43 @@
         "lat": 24.984,
         "lon": 60.728,
         "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787102431,
+    "time_utc": "2026-08-19 01:20:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "413ddfd3",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 32050,
+        "track": 259,
+        "speed": 423,
+        "lat": 35.766,
+        "lon": 54.599,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "413d8e50",
+        "callsign": "ABY558",
+        "flight": "G9558",
+        "type": "A321",
+        "reg": "A6-ATG",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 466,
+        "lat": 25.163,
+        "lon": 60.145,
+        "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
     ]
