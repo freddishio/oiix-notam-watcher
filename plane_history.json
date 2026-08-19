@@ -1,93 +1,5 @@
 [
   {
-    "timestamp": 1785324633,
-    "time_utc": "2026-07-29 11:30:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785324925,
-    "time_utc": "2026-07-29 11:35:25 UTC",
-    "count": 5,
-    "planes": [
-      {
-        "id": "40e7df60",
-        "callsign": "AFL779",
-        "flight": "SU779",
-        "type": "B738",
-        "reg": "RA-73127",
-        "category": "Commercial",
-        "alt": 36000,
-        "track": 308,
-        "speed": 466,
-        "lat": 35.598,
-        "lon": 54.522,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      },
-      {
-        "id": "40e81ba3",
-        "callsign": "CPN037",
-        "flight": "IV37",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 9050,
-        "track": 90,
-        "speed": 70,
-        "lat": 34.903,
-        "lon": 51.001,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40e84714",
-        "callsign": "TBN7273",
-        "flight": "SUE7273",
-        "type": "A320",
-        "reg": "C5-SUA",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 199,
-        "speed": 0,
-        "lat": 35.414,
-        "lon": 51.143,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40e819ca",
-        "callsign": "TKN3291",
-        "flight": "TKN3291",
-        "type": "B733",
-        "reg": "EP-LEE",
-        "category": "Commercial",
-        "alt": 8250,
-        "track": 118,
-        "speed": 187,
-        "lat": 35.255,
-        "lon": 51.27,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40e844b4",
-        "callsign": "KIS7054",
-        "flight": "KIS7054",
-        "type": "MD82",
-        "reg": "EP-LCK",
-        "category": "Commercial",
-        "alt": 23175,
-        "track": 342,
-        "speed": 448,
-        "lat": 27.765,
-        "lon": 53.53,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785325229,
     "time_utc": "2026-07-29 11:40:29 UTC",
     "count": 2,
@@ -498453,6 +498365,28 @@
         "speed": 468,
         "lat": 26.238,
         "lon": 59.875,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787139327,
+    "time_utc": "2026-08-19 11:35:27 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "413f1b80",
+        "callsign": "FDB978",
+        "flight": "FZ978",
+        "type": "B38M",
+        "reg": "A6-FKC",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 128,
+        "speed": 497,
+        "lat": 36.724,
+        "lon": 53.068,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
