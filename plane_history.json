@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1785448526,
-    "time_utc": "2026-07-30 21:55:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785448826,
-    "time_utc": "2026-07-30 22:00:26 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40eef045",
-        "callsign": "IRB9740",
-        "flight": "B99740",
-        "type": "A310",
-        "reg": "EP-MDL",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 303,
-        "speed": 474,
-        "lat": 37.717,
-        "lon": 47.669,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "40eef935",
-        "callsign": "TBZ6651",
-        "flight": "I36651",
-        "type": "MD83",
-        "reg": "EP-TAN",
-        "category": "Commercial",
-        "alt": 29000,
-        "track": 89,
-        "speed": 452,
-        "lat": 33.563,
-        "lon": 46.559,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785449120,
     "time_utc": "2026-07-30 22:05:20 UTC",
     "count": 3,
@@ -514063,6 +514020,73 @@
         "speed": 464,
         "lat": 25.107,
         "lon": 61.101,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787263229,
+    "time_utc": "2026-08-20 22:00:29 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4145aec1",
+        "callsign": "IRA748",
+        "flight": "IR748",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 157,
+        "speed": 485,
+        "lat": 36.558,
+        "lon": 50.219,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145785d",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 3950,
+        "track": 101,
+        "speed": 19,
+        "lat": 35.674,
+        "lon": 51.334,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145a5a7",
+        "callsign": "ABY512",
+        "flight": "G9512",
+        "type": "A320",
+        "reg": "A6-AOT",
+        "category": "Commercial",
+        "alt": 31750,
+        "track": 92,
+        "speed": 450,
+        "lat": 25.232,
+        "lon": 58.691,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4145cdda",
+        "callsign": "ABY526",
+        "flight": "G9526",
+        "type": "A320",
+        "reg": "A6-AOW",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 449,
+        "lat": 25.175,
+        "lon": 59.937,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
