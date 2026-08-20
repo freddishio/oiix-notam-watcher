@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785439530,
-    "time_utc": "2026-07-30 19:25:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785439829,
     "time_utc": "2026-07-30 19:30:29 UTC",
     "count": 0,
@@ -512527,6 +512521,58 @@
         "lon": 57.714,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787254228,
+    "time_utc": "2026-08-20 19:30:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41455a26",
+        "callsign": "IRM1052",
+        "flight": "W51052",
+        "type": "RJ85",
+        "reg": "EP-MEI",
+        "category": "Commercial",
+        "alt": 21975,
+        "track": 317,
+        "speed": 372,
+        "lat": 34.193,
+        "lon": 53.143,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41454efb",
+        "callsign": "MRJ4800",
+        "flight": "MRJ4800",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 79,
+        "speed": 493,
+        "lat": 35.371,
+        "lon": 53.473,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414570b9",
+        "callsign": "IRM051",
+        "flight": "W551",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 32525,
+        "track": 125,
+        "speed": 620,
+        "lat": 33.52,
+        "lon": 53.887,
+        "airline": "Mahan Air",
+        "country": "IRAN"
       }
     ]
   }
