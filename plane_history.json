@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1785444627,
-    "time_utc": "2026-07-30 20:50:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785444925,
-    "time_utc": "2026-07-30 20:55:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785445240,
     "time_utc": "2026-07-30 21:00:40 UTC",
     "count": 0,
@@ -513474,6 +513462,103 @@
         "speed": 455,
         "lat": 25.121,
         "lon": 60.913,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787259327,
+    "time_utc": "2026-08-20 20:55:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4145b780",
+        "callsign": "SHI7331",
+        "flight": "IS7331",
+        "type": "B733",
+        "reg": "EP-FSL",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 47,
+        "speed": 478,
+        "lat": 33.765,
+        "lon": 47.308,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145ab13",
+        "callsign": "CPN6913",
+        "flight": "IV6913",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 87,
+        "speed": 830,
+        "lat": 32.881,
+        "lon": 54.598,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145af74",
+        "callsign": "LMB2082",
+        "flight": "LMB2082",
+        "type": "MD82",
+        "reg": "EP-LAD",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 86,
+        "speed": 479,
+        "lat": 32.779,
+        "lon": 52.397,
+        "airline": "LMB",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "414568ff",
+        "callsign": "ABY435",
+        "flight": "G9435",
+        "type": "A320",
+        "reg": "A6-AOH",
+        "category": "Commercial",
+        "alt": 29075,
+        "track": 92,
+        "speed": 444,
+        "lat": 25.262,
+        "lon": 57.926,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4145a768",
+        "callsign": "ABY415",
+        "flight": "G9415",
+        "type": "A320",
+        "reg": "A6-AOX",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 93,
+        "speed": 457,
+        "lat": 25.198,
+        "lon": 59.474,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41459f71",
+        "callsign": "ABY552",
+        "flight": "G9552",
+        "type": "A321",
+        "reg": "A6-ATI",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 454,
+        "lat": 25.141,
+        "lon": 60.588,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
