@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785452432,
-    "time_utc": "2026-07-30 23:00:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785452723,
     "time_utc": "2026-07-30 23:05:23 UTC",
     "count": 3,
@@ -513913,6 +513907,73 @@
         "lat": 33.651,
         "lon": 47.162,
         "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787267122,
+    "time_utc": "2026-08-20 23:05:22 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4145c217",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 109,
+        "speed": 518,
+        "lat": 37.144,
+        "lon": 47.083,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145b9bb",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 109,
+        "speed": 518,
+        "lat": 36.949,
+        "lon": 47.774,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145c9bc",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 124,
+        "speed": 504,
+        "lat": 36.712,
+        "lon": 48.483,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41463240",
+        "callsign": "TBN7277",
+        "flight": "TBN7277",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 1,
+        "lat": 35.409,
+        "lon": 51.159,
+        "airline": "Taban Airlines",
         "country": "IRAN"
       }
     ]
