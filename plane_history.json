@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785443723,
-    "time_utc": "2026-07-30 20:35:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785444032,
     "time_utc": "2026-07-30 20:40:32 UTC",
     "count": 2,
@@ -513325,6 +513319,73 @@
         "lon": 58.846,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787258430,
+    "time_utc": "2026-08-20 20:40:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41454ca5",
+        "callsign": "AXV9228",
+        "flight": "AXV9228",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 258,
+        "speed": 560,
+        "lat": 34.435,
+        "lon": 47.592,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145b78e",
+        "callsign": "QSM1321",
+        "flight": "QB1321",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 20000,
+        "track": 38,
+        "speed": 340,
+        "lat": 31.564,
+        "lon": 48.978,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145af74",
+        "callsign": "LMB2082",
+        "flight": "LMB2082",
+        "type": "MD82",
+        "reg": "EP-LAD",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 62,
+        "speed": 480,
+        "lat": 32.032,
+        "lon": 50.242,
+        "airline": "LMB",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4145ab13",
+        "callsign": "CPN6913",
+        "flight": "IV6913",
+        "type": "MD83",
+        "reg": "EP-CPX",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 84,
+        "speed": 270,
+        "lat": 32.773,
+        "lon": 52.257,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
       }
     ]
   }
