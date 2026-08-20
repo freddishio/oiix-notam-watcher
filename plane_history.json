@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785435031,
-    "time_utc": "2026-07-30 18:10:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785435332,
     "time_utc": "2026-07-30 18:15:32 UTC",
     "count": 3,
@@ -511475,6 +511469,73 @@
         "lon": 52.519,
         "airline": "Qeshm Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787249728,
+    "time_utc": "2026-08-20 18:15:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4145219b",
+        "callsign": "IRA3497",
+        "flight": "IR3497",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 259,
+        "speed": 452,
+        "lat": 35.754,
+        "lon": 54.326,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41453cdd",
+        "callsign": "TBN6212",
+        "flight": "TBN6212",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 80,
+        "speed": 509,
+        "lat": 35.638,
+        "lon": 55.589,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41454688",
+        "callsign": "QSM1249",
+        "flight": "QB1249",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 13000,
+        "track": 341,
+        "speed": 258,
+        "lat": 29.606,
+        "lon": 52.663,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145352b",
+        "callsign": "ABY562",
+        "flight": "G9562",
+        "type": "A320",
+        "reg": "A6-AOP",
+        "category": "Commercial",
+        "alt": 28500,
+        "track": 92,
+        "speed": 454,
+        "lat": 25.259,
+        "lon": 58.012,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
       }
     ]
   }
