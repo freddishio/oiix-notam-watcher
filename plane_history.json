@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785455432,
-    "time_utc": "2026-07-30 23:50:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785455733,
     "time_utc": "2026-07-30 23:55:33 UTC",
     "count": 0,
@@ -514036,6 +514030,88 @@
         "lat": 35.675,
         "lon": 51.338,
         "airline": "ATA Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787270126,
+    "time_utc": "2026-08-20 23:55:26 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "41460e16",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 109,
+        "speed": 484,
+        "lat": 37.261,
+        "lon": 46.665,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4145ecdc",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 35050,
+        "track": 109,
+        "speed": 475,
+        "lat": 37.051,
+        "lon": 47.601,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146176c",
+        "callsign": "AXV9229",
+        "flight": "AXV9229",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 80,
+        "speed": 490,
+        "lat": 35.598,
+        "lon": 55.333,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41463240",
+        "callsign": "TBN7277",
+        "flight": "TBN7277",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 199,
+        "speed": 0,
+        "lat": 35.409,
+        "lon": 51.158,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4144b568",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMC",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 317,
+        "speed": 477,
+        "lat": 33.863,
+        "lon": 53.508,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
