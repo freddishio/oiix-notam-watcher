@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785440434,
-    "time_utc": "2026-07-30 19:40:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785440727,
     "time_utc": "2026-07-30 19:45:27 UTC",
     "count": 1,
@@ -512812,6 +512806,103 @@
         "speed": 432,
         "lat": 25.274,
         "lon": 57.561,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787255127,
+    "time_utc": "2026-08-20 19:45:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "41456bf3",
+        "callsign": "AXV7731",
+        "flight": "AXV7731",
+        "type": "B735",
+        "reg": "EP-AXE",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 317,
+        "speed": 426,
+        "lat": 34.531,
+        "lon": 52.981,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41454ca5",
+        "callsign": "AXV9228",
+        "flight": "AXV9228",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 413,
+        "lat": 35.839,
+        "lon": 54.989,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41454efb",
+        "callsign": "MRJ4800",
+        "flight": "MRJ4800",
+        "type": "A319",
+        "reg": "EP-SSP",
+        "category": "Commercial",
+        "alt": 37025,
+        "track": 80,
+        "speed": 491,
+        "lat": 35.717,
+        "lon": 55.933,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41457591",
+        "callsign": "ABY454",
+        "flight": "G9454",
+        "type": "A320",
+        "reg": "A6-ANO",
+        "category": "Commercial",
+        "alt": 28225,
+        "track": 92,
+        "speed": 448,
+        "lat": 25.251,
+        "lon": 58.225,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41457a46",
+        "callsign": "SHI7317",
+        "flight": "IS7317",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 344,
+        "speed": 461,
+        "lat": 25.208,
+        "lon": 59.718,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41452a3c",
+        "callsign": "ABY448",
+        "flight": "G9448",
+        "type": "A20N",
+        "reg": "A6-ARM",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 93,
+        "speed": 360,
+        "lat": 25.143,
+        "lon": 60.511,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
