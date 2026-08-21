@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785468624,
-    "time_utc": "2026-07-31 03:30:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785468932,
     "time_utc": "2026-07-31 03:35:32 UTC",
     "count": 3,
@@ -514915,6 +514909,118 @@
         "speed": 489,
         "lat": 35.567,
         "lon": 55.049,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787283328,
+    "time_utc": "2026-08-21 03:35:28 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "4146ca82",
+        "callsign": "CPN7942",
+        "flight": "IV7942",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 32075,
+        "track": 232,
+        "speed": 424,
+        "lat": 33.78,
+        "lon": 46.3,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146d239",
+        "callsign": "IRM5058",
+        "flight": "W55058",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 238,
+        "speed": 450,
+        "lat": 34.523,
+        "lon": 47.859,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146abe7",
+        "callsign": "AXV9220",
+        "flight": "AXV9220",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 33975,
+        "track": 238,
+        "speed": 416,
+        "lat": 34.553,
+        "lon": 47.937,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146dbcc",
+        "callsign": "IRA3483",
+        "flight": "IR3483",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 22325,
+        "track": 204,
+        "speed": 419,
+        "lat": 35.001,
+        "lon": 50.663,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146cedb",
+        "callsign": "KIS7055",
+        "flight": "KIS7055",
+        "type": "MD82",
+        "reg": "EP-LCL",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 169,
+        "speed": 478,
+        "lat": 32.303,
+        "lon": 51.95,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146c459",
+        "callsign": "SHI7346",
+        "flight": "IS7346",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 414,
+        "lat": 35.534,
+        "lon": 53.012,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4146a8f9",
+        "callsign": "FDB5PS",
+        "flight": "FZ714",
+        "type": "B38M",
+        "reg": "A6-FKE",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 140,
+        "speed": 482,
+        "lat": 35.04,
+        "lon": 55.569,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
