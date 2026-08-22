@@ -527138,5 +527138,57 @@
     "time_utc": "2026-08-22 21:45:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787435426,
+    "time_utc": "2026-08-22 21:50:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "414d894d",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 14025,
+        "track": 123,
+        "speed": 317,
+        "lat": 35.528,
+        "lon": 50.753,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "414e01a1",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 6275,
+        "track": 75,
+        "speed": 201,
+        "lat": 35.324,
+        "lon": 51.285,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414dbb81",
+        "callsign": "FDB9QC",
+        "flight": "FZ967",
+        "type": "B38M",
+        "reg": "A6-FMA",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 307,
+        "speed": 429,
+        "lat": 36.559,
+        "lon": 53.026,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
