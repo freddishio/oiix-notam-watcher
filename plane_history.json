@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1785544228,
-    "time_utc": "2026-08-01 00:30:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785544521,
-    "time_utc": "2026-08-01 00:35:21 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40f3c2cb",
-        "callsign": "TKN3281",
-        "flight": "TKN3281",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 29000,
-        "track": 122,
-        "speed": 470,
-        "lat": 37.473,
-        "lon": 49.329,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40f20cdb",
-        "callsign": "IRM076",
-        "flight": "W576",
-        "type": "A346",
-        "reg": "EP-MMU",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 164,
-        "speed": 504,
-        "lat": 37.859,
-        "lon": 51.065,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785544828,
     "time_utc": "2026-08-01 00:40:28 UTC",
     "count": 1,
@@ -520795,5 +520752,42 @@
     "time_utc": "2026-08-22 00:30:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787358923,
+    "time_utc": "2026-08-22 00:35:23 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "414aae31",
+        "callsign": "TBN7213",
+        "flight": "TBN7213",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 26175,
+        "track": 186,
+        "speed": 468,
+        "lat": 34.845,
+        "lon": 59.467,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414a4a52",
+        "callsign": "JTC9725",
+        "flight": "JTC9725",
+        "type": "CRJ2",
+        "reg": "RA-73532",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 219,
+        "speed": 441,
+        "lat": 25.132,
+        "lon": 60.133,
+        "airline": "Jetica",
+        "country": "Russian Federation"
+      }
+    ]
   }
 ]
