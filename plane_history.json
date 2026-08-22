@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785546035,
-    "time_utc": "2026-08-01 01:00:35 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785546326,
     "time_utc": "2026-08-01 01:05:26 UTC",
     "count": 0,
@@ -520763,5 +520757,57 @@
     "time_utc": "2026-08-22 01:00:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787360725,
+    "time_utc": "2026-08-22 01:05:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "414a570c",
+        "callsign": "FDB2YF",
+        "flight": "FZ980",
+        "type": "B38M",
+        "reg": "A6-MAX",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 127,
+        "speed": 537,
+        "lat": 37.79,
+        "lon": 51.363,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "414ac847",
+        "callsign": "AXV9214",
+        "flight": "AXV9214",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 19,
+        "speed": 1,
+        "lat": 35.411,
+        "lon": 51.148,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4148f396",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 4875,
+        "track": 288,
+        "speed": 166,
+        "lat": 35.383,
+        "lon": 51.275,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
