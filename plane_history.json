@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1785546928,
-    "time_utc": "2026-08-01 01:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785547223,
-    "time_utc": "2026-08-01 01:20:23 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40f39c44",
-        "callsign": "CPN7903",
-        "flight": "IV7903",
-        "type": "B735",
-        "reg": "EP-KPB",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 115,
-        "speed": 456,
-        "lat": 37.742,
-        "lon": 45.125,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40f3e4d6",
-        "callsign": "AXV9204",
-        "flight": "AXV9204",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 259,
-        "speed": 431,
-        "lat": 35.824,
-        "lon": 54.999,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785547525,
     "time_utc": "2026-08-01 01:25:25 UTC",
     "count": 2,
@@ -520807,6 +520764,43 @@
         "lat": 36.866,
         "lon": 52.848,
         "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787361627,
+    "time_utc": "2026-08-22 01:20:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "414a570c",
+        "callsign": "FDB2YF",
+        "flight": "FZ980",
+        "type": "B38M",
+        "reg": "A6-MAX",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 125,
+        "speed": 520,
+        "lat": 36.434,
+        "lon": 53.567,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "414ac267",
+        "callsign": "ABY558",
+        "flight": "G9558",
+        "type": "A321",
+        "reg": "A6-ATG",
+        "category": "Commercial",
+        "alt": 33400,
+        "track": 92,
+        "speed": 457,
+        "lat": 25.237,
+        "lon": 58.589,
+        "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
     ]
