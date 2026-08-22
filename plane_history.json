@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785624026,
-    "time_utc": "2026-08-01 22:40:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785624328,
     "time_utc": "2026-08-01 22:45:28 UTC",
     "count": 4,
@@ -527218,6 +527212,43 @@
         "lon": 51.412,
         "airline": "Silk Way West Airlines",
         "country": "Azerbaijan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787438726,
+    "time_utc": "2026-08-22 22:45:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "414e2931",
+        "callsign": "ABY536",
+        "flight": "G9536",
+        "type": "A320",
+        "reg": "A6-AOO",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 466,
+        "lat": 25.188,
+        "lon": 59.68,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "414d90be",
+        "callsign": "FDB5YA",
+        "flight": "FZ990",
+        "type": "B38M",
+        "reg": "A6-FMJ",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 471,
+        "lat": 25.402,
+        "lon": 60.443,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
