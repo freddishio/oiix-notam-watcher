@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785543334,
-    "time_utc": "2026-08-01 00:15:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785543626,
     "time_utc": "2026-08-01 00:20:26 UTC",
     "count": 1,
@@ -520840,5 +520834,42 @@
     "time_utc": "2026-08-22 00:15:33 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787358022,
+    "time_utc": "2026-08-22 00:20:22 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "414a2fa1",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 17725,
+        "track": 124,
+        "speed": 385,
+        "lat": 35.54,
+        "lon": 50.737,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414a4a52",
+        "callsign": "JTC9725",
+        "flight": "JTC9725",
+        "type": "CRJ2",
+        "reg": "RA-73532",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 165,
+        "speed": 434,
+        "lat": 26.679,
+        "lon": 59.675,
+        "airline": "Jetica",
+        "country": "Russian Federation"
+      }
+    ]
   }
 ]
