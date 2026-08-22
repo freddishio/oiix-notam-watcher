@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785623431,
-    "time_utc": "2026-08-01 22:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785623727,
     "time_utc": "2026-08-01 22:35:27 UTC",
     "count": 1,
@@ -527140,6 +527134,73 @@
         "speed": 475,
         "lat": 25.275,
         "lon": 57.507,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787438125,
+    "time_utc": "2026-08-22 22:35:25 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "414df0ab",
+        "callsign": "TKN3117",
+        "flight": "TKN3117",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 29000,
+        "track": 25,
+        "speed": 453,
+        "lat": 34.457,
+        "lon": 50.028,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "414e3c22",
+        "callsign": "IRB9774",
+        "flight": "B99774",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 101,
+        "speed": 8,
+        "lat": 35.425,
+        "lon": 51.123,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "414e266f",
+        "callsign": "SHI4339",
+        "flight": "IS4339",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 87,
+        "speed": 489,
+        "lat": 32.87,
+        "lon": 53.709,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414e2931",
+        "callsign": "ABY536",
+        "flight": "G9536",
+        "type": "A320",
+        "reg": "A6-AOO",
+        "category": "Commercial",
+        "alt": 29525,
+        "track": 92,
+        "speed": 488,
+        "lat": 25.25,
+        "lon": 58.237,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
