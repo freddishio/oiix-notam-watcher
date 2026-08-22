@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785602726,
-    "time_utc": "2026-08-01 16:45:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785603027,
     "time_utc": "2026-08-01 16:50:27 UTC",
     "count": 3,
@@ -524352,6 +524346,88 @@
         "lon": 60.63,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787417139,
+    "time_utc": "2026-08-22 16:45:39 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "414d500d",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-MDF",
+        "category": "Commercial",
+        "alt": 10675,
+        "track": 131,
+        "speed": 200,
+        "lat": 38.172,
+        "lon": 46.177,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "414a049f",
+        "callsign": "NSN6690",
+        "flight": "NSN6690",
+        "type": "B734",
+        "reg": "EP-NSR",
+        "category": "Commercial",
+        "alt": 9825,
+        "track": 269,
+        "speed": 320,
+        "lat": 35.443,
+        "lon": 50.746,
+        "airline": "Nasim Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414d372d",
+        "callsign": "AXV9230",
+        "flight": "AXV9230",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 260,
+        "speed": 426,
+        "lat": 35.851,
+        "lon": 55.213,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "414d2e3e",
+        "callsign": "SHI7320",
+        "flight": "IS7320",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 231,
+        "speed": 476,
+        "lat": 33.745,
+        "lon": 46.247,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414d4a3e",
+        "callsign": "ISP1815",
+        "flight": "ISP1815",
+        "type": "B733",
+        "reg": "EP-JIA",
+        "category": "Commercial",
+        "alt": 22975,
+        "track": 42,
+        "speed": 433,
+        "lat": 31.378,
+        "lon": 49.062,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
       }
     ]
   }
