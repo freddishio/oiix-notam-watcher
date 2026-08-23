@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785695725,
-    "time_utc": "2026-08-02 18:35:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785696025,
     "time_utc": "2026-08-02 18:40:25 UTC",
     "count": 2,
@@ -534851,6 +534845,73 @@
         "lon": 51.297,
         "airline": "Qeshm Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787510421,
+    "time_utc": "2026-08-23 18:40:21 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "41514dad",
+        "callsign": "IRA3484",
+        "flight": "IR3484",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 20925,
+        "track": 198,
+        "speed": 387,
+        "lat": 30.992,
+        "lon": 49.317,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41515022",
+        "callsign": "ABY548",
+        "flight": "G9548",
+        "type": "A320",
+        "reg": "A6-ANS",
+        "category": "Commercial",
+        "alt": 34675,
+        "track": 92,
+        "speed": 480,
+        "lat": 25.245,
+        "lon": 58.366,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4151502c",
+        "callsign": "VRH6811",
+        "flight": "VRH6811",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 34075,
+        "track": 344,
+        "speed": 444,
+        "lat": 25.757,
+        "lon": 59.545,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4150566a",
+        "callsign": "FDB5YA",
+        "flight": "FZ990",
+        "type": "B38M",
+        "reg": "A6-FMU",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 472,
+        "lat": 24.932,
+        "lon": 60.762,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
