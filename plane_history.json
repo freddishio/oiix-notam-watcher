@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1785635427,
-    "time_utc": "2026-08-02 01:50:27 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "40f7ebd6",
-        "callsign": "VRH6805",
-        "flight": "VRH6805",
-        "type": "B733",
-        "reg": "EP-VAT",
-        "category": "Commercial",
-        "alt": 10425,
-        "track": 32,
-        "speed": 283,
-        "lat": 35.642,
-        "lon": 51.035,
-        "airline": "Varesh Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40f7c57d",
-        "callsign": "AZS4154",
-        "flight": "ZR4154",
-        "type": "IL76",
-        "reg": "RA-78765",
-        "category": "Commercial",
-        "alt": 26050,
-        "track": 40,
-        "speed": 402,
-        "lat": 24.806,
-        "lon": 59.845,
-        "airline": "Aviacon Zitotrans",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1785635721,
     "time_utc": "2026-08-02 01:55:21 UTC",
     "count": 6,
@@ -528019,5 +527982,57 @@
     "time_utc": "2026-08-23 01:45:30 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787449832,
+    "time_utc": "2026-08-23 01:50:32 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "414e8e09",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 261,
+        "speed": 447,
+        "lat": 35.561,
+        "lon": 53.209,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414e8d85",
+        "callsign": "FDB5JD",
+        "flight": "FZ994",
+        "type": "B38M",
+        "reg": "A6-FKA",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 125,
+        "speed": 491,
+        "lat": 36.12,
+        "lon": 54.117,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "414e9808",
+        "callsign": "KRU2558",
+        "flight": "KRU2558",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 30875,
+        "track": 137,
+        "speed": 463,
+        "lat": 33.068,
+        "lon": 51.524,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
