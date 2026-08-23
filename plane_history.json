@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785630631,
-    "time_utc": "2026-08-02 00:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785630927,
     "time_utc": "2026-08-02 00:35:27 UTC",
     "count": 1,
@@ -527463,6 +527457,43 @@
         "lon": 59.845,
         "airline": "Silk Way West Airlines",
         "country": "Azerbaijan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787445326,
+    "time_utc": "2026-08-23 00:35:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "414e1f01",
+        "callsign": "CPN7973",
+        "flight": "IV7973",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 37100,
+        "track": 109,
+        "speed": 458,
+        "lat": 37.103,
+        "lon": 47.233,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "414e2652",
+        "callsign": "VRH6843",
+        "flight": "VRH6843",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 36750,
+        "track": 122,
+        "speed": 482,
+        "lat": 36.293,
+        "lon": 49.301,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
       }
     ]
   }
