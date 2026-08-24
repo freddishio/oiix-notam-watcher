@@ -1,27 +1,5 @@
 [
   {
-    "timestamp": 1785719728,
-    "time_utc": "2026-08-03 01:15:28 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "40fb88c9",
-        "callsign": "AXV9230",
-        "flight": "AXV9230",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 259,
-        "speed": 418,
-        "lat": 35.672,
-        "lon": 53.9,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785720037,
     "time_utc": "2026-08-03 01:20:37 UTC",
     "count": 1,
@@ -533585,5 +533563,42 @@
     "time_utc": "2026-08-24 01:15:24 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787534427,
+    "time_utc": "2026-08-24 01:20:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "415256c1",
+        "callsign": "IRA3485",
+        "flight": "IR3485",
+        "type": "A306",
+        "reg": "EP-IBD",
+        "category": "Commercial",
+        "alt": 3700,
+        "track": 291,
+        "speed": 148,
+        "lat": 35.63,
+        "lon": 51.312,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41526322",
+        "callsign": "ABY558",
+        "flight": "G9558",
+        "type": "A320",
+        "reg": "A6-AOT",
+        "category": "Commercial",
+        "alt": 32050,
+        "track": 92,
+        "speed": 495,
+        "lat": 25.248,
+        "lon": 58.299,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
