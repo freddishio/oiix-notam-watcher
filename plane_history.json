@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785724229,
-    "time_utc": "2026-08-03 02:30:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785724523,
     "time_utc": "2026-08-03 02:35:23 UTC",
     "count": 1,
@@ -533656,6 +533650,118 @@
         "speed": 471,
         "lat": 25.363,
         "lon": 60.471,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787538920,
+    "time_utc": "2026-08-24 02:35:20 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "41528429",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 27950,
+        "track": 294,
+        "speed": 423,
+        "lat": 38.776,
+        "lon": 44.565,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41528f61",
+        "callsign": "CPN7902",
+        "flight": "IV7902",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34075,
+        "track": 295,
+        "speed": 431,
+        "lat": 38.319,
+        "lon": 45.771,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415235a7",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 35050,
+        "track": 115,
+        "speed": 439,
+        "lat": 36.261,
+        "lon": 49.277,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41521da0",
+        "callsign": "FDB1NB",
+        "flight": "FZ988",
+        "type": "B38M",
+        "reg": "A6-FME",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 125,
+        "speed": 483,
+        "lat": 36.046,
+        "lon": 54.245,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41528d01",
+        "callsign": "AXV9220",
+        "flight": "AXV9220",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 463,
+        "lat": 35.788,
+        "lon": 54.742,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41527175",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 255,
+        "speed": 461,
+        "lat": 34.398,
+        "lon": 47.415,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4152053f",
+        "callsign": "FDB2YF",
+        "flight": "FZ980",
+        "type": "B38M",
+        "reg": "A6-FMM",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 474,
+        "lat": 24.835,
+        "lon": 60.83,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
