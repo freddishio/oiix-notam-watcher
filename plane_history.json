@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785767124,
-    "time_utc": "2026-08-03 14:25:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785767431,
     "time_utc": "2026-08-03 14:30:31 UTC",
     "count": 6,
@@ -535212,6 +535206,43 @@
         "lon": 58.738,
         "airline": "Iran Air Tours",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787581525,
+    "time_utc": "2026-08-24 14:25:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41544332",
+        "callsign": "ABY297",
+        "flight": "G9297",
+        "type": "A320",
+        "reg": "A6-AOT",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 127,
+        "speed": 475,
+        "lat": 37.753,
+        "lon": 51.424,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4153db24",
+        "callsign": "FDB1QV",
+        "flight": "FZ716",
+        "type": "B738",
+        "reg": "A6-FGI",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 148,
+        "speed": 458,
+        "lat": 25.478,
+        "lon": 60.392,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
