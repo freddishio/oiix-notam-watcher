@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785738028,
-    "time_utc": "2026-08-03 06:20:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785738326,
     "time_utc": "2026-08-03 06:25:26 UTC",
     "count": 3,
@@ -534107,6 +534101,88 @@
         "lat": 26.137,
         "lon": 53.91,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787552724,
+    "time_utc": "2026-08-24 06:25:24 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4153010c",
+        "callsign": "SHI4358",
+        "flight": "IS4358",
+        "type": "B735",
+        "reg": "EP-FSF",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 270,
+        "speed": 451,
+        "lat": 35.444,
+        "lon": 50.682,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4152f7c1",
+        "callsign": "AXV9223",
+        "flight": "AXV9223",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 6775,
+        "track": 110,
+        "speed": 209,
+        "lat": 35.398,
+        "lon": 50.98,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415202c3",
+        "callsign": "IRM092",
+        "flight": "W592",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 36925,
+        "track": 317,
+        "speed": 471,
+        "lat": 34.045,
+        "lon": 53.308,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4152a3e4",
+        "callsign": "FDB7MC",
+        "flight": "FZ968",
+        "type": "B38M",
+        "reg": "A6-FMH",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 125,
+        "speed": 478,
+        "lat": 36.454,
+        "lon": 53.532,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4152f2cc",
+        "callsign": "IZG3043",
+        "flight": "ZO3043",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 33025,
+        "track": 79,
+        "speed": 466,
+        "lat": 35.416,
+        "lon": 53.772,
+        "airline": "Zagros Airlines",
         "country": "IRAN"
       }
     ]
