@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785810921,
-    "time_utc": "2026-08-04 02:35:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785811230,
     "time_utc": "2026-08-04 02:40:30 UTC",
     "count": 3,
@@ -536899,6 +536893,43 @@
         "lat": 33.797,
         "lon": 53.504,
         "airline": "Yazd Airways",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787625627,
+    "time_utc": "2026-08-25 02:40:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4156b306",
+        "callsign": "AXV9220",
+        "flight": "AXV9220",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 260,
+        "speed": 434,
+        "lat": 35.861,
+        "lon": 55.303,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4156be97",
+        "callsign": "IRM001",
+        "flight": "W51",
+        "type": "RJ85",
+        "reg": "EP-MOR",
+        "category": "Commercial",
+        "alt": 24650,
+        "track": 186,
+        "speed": 395,
+        "lat": 35.105,
+        "lon": 59.491,
+        "airline": "Mahan Air",
         "country": "IRAN"
       }
     ]
