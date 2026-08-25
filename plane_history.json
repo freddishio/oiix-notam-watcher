@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785853526,
-    "time_utc": "2026-08-04 14:25:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785853827,
     "time_utc": "2026-08-04 14:30:27 UTC",
     "count": 5,
@@ -540243,6 +540237,43 @@
         "lon": 60.597,
         "airline": "flydubai",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787667927,
+    "time_utc": "2026-08-25 14:25:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4158944e",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 61,
+        "speed": 485,
+        "lat": 34.042,
+        "lon": 47.673,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41588fbd",
+        "callsign": "IRZ8245",
+        "flight": "IRZ8245",
+        "type": "B733",
+        "reg": "EP-SIM",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 61,
+        "speed": 453,
+        "lat": 34.177,
+        "lon": 48.059,
+        "airline": "Saha Air",
+        "country": "IRAN"
       }
     ]
   }
