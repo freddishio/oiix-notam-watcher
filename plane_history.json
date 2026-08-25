@@ -1,78 +1,5 @@
 [
   {
-    "timestamp": 1785801927,
-    "time_utc": "2026-08-04 00:05:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785802222,
-    "time_utc": "2026-08-04 00:10:22 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "40ff1435",
-        "callsign": "MRJ4824",
-        "flight": "MRJ4824",
-        "type": "A321",
-        "reg": "EP-SSM",
-        "category": "Commercial",
-        "alt": 3225,
-        "track": 90,
-        "speed": 7,
-        "lat": 35.424,
-        "lon": 51.122,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40fdef7e",
-        "callsign": "IRM080",
-        "flight": "W580",
-        "type": "A343",
-        "reg": "EP-MJE",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 288,
-        "speed": 82,
-        "lat": 35.417,
-        "lon": 51.151,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "40ff4a48",
-        "callsign": "IZG3061",
-        "flight": "ZO3061",
-        "type": "A320",
-        "reg": "EP-ZAP",
-        "category": "Commercial",
-        "alt": 8625,
-        "track": 349,
-        "speed": 238,
-        "lat": 35.522,
-        "lon": 51.621,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "40ff44ad",
-        "callsign": "KIS6050",
-        "flight": "KIS6050",
-        "type": "MD82",
-        "reg": "EP-LCJ",
-        "category": "Commercial",
-        "alt": 8725,
-        "track": 272,
-        "speed": 218,
-        "lat": 35.335,
-        "lon": 51.628,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785802524,
     "time_utc": "2026-08-04 00:15:24 UTC",
     "count": 3,
@@ -536870,6 +536797,28 @@
         "speed": 452,
         "lat": 37.106,
         "lon": 47.213,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787616626,
+    "time_utc": "2026-08-25 00:10:26 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "41561d1c",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 109,
+        "speed": 456,
+        "lat": 36.888,
+        "lon": 47.98,
         "airline": "Caspian Airlines",
         "country": "IRAN"
       }
