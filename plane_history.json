@@ -536475,5 +536475,57 @@
     "time_utc": "2026-08-25 01:25:23 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1787621427,
+    "time_utc": "2026-08-25 01:30:27 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41569e76",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 5700,
+        "track": 242,
+        "speed": 185,
+        "lat": 35.684,
+        "lon": 51.255,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41569c37",
+        "callsign": "KRU2558",
+        "flight": "KRU2558",
+        "type": "F100",
+        "reg": "EP-MIS",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 105,
+        "speed": 1,
+        "lat": 35.679,
+        "lon": 51.333,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415649a5",
+        "callsign": "FDB5PF",
+        "flight": "Unknown Flight",
+        "type": "B738",
+        "reg": "A6-FEV",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 128,
+        "speed": 490,
+        "lat": 36.713,
+        "lon": 53.087,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
