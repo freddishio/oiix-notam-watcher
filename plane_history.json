@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785860726,
-    "time_utc": "2026-08-04 16:25:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785861047,
     "time_utc": "2026-08-04 16:30:47 UTC",
     "count": 0,
@@ -541483,6 +541477,43 @@
         "lon": 60.522,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787675434,
+    "time_utc": "2026-08-25 16:30:34 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4158cd09",
+        "callsign": "IRA769",
+        "flight": "IR769",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 286,
+        "speed": 451,
+        "lat": 38.04,
+        "lon": 46.689,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41591554",
+        "callsign": "IRB9700",
+        "flight": "B99700",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 32300,
+        "track": 303,
+        "speed": 434,
+        "lat": 37.597,
+        "lon": 47.918,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
       }
     ]
   }
