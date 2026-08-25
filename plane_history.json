@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785861047,
-    "time_utc": "2026-08-04 16:30:47 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785861332,
     "time_utc": "2026-08-04 16:35:32 UTC",
     "count": 5,
@@ -541514,6 +541508,103 @@
         "lon": 47.918,
         "airline": "Iran Air Tours",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787675727,
+    "time_utc": "2026-08-25 16:35:27 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "4158cd09",
+        "callsign": "IRA769",
+        "flight": "IR769",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 295,
+        "speed": 446,
+        "lat": 38.246,
+        "lon": 45.961,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41591554",
+        "callsign": "IRB9700",
+        "flight": "B99700",
+        "type": "A320",
+        "reg": "EP-MDS",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 290,
+        "speed": 424,
+        "lat": 37.906,
+        "lon": 47.303,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "41592a87",
+        "callsign": "SHI7349",
+        "flight": "IS7349",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 23275,
+        "track": 158,
+        "speed": 402,
+        "lat": 36.738,
+        "lon": 50.113,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415914d2",
+        "callsign": "AXV9221",
+        "flight": "AXV9221",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 61,
+        "speed": 451,
+        "lat": 34.391,
+        "lon": 48.481,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4158fc4f",
+        "callsign": "FDB2EX",
+        "flight": "FZ973",
+        "type": "B38M",
+        "reg": "A6-FMG",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 344,
+        "speed": 486,
+        "lat": 25.141,
+        "lon": 59.739,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41589dbb",
+        "callsign": "FDB1ND",
+        "flight": "FZ708",
+        "type": "B738",
+        "reg": "A6-FGA",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 148,
+        "speed": 446,
+        "lat": 25.957,
+        "lon": 60.068,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
