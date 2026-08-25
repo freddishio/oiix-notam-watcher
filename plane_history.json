@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1785886828,
-    "time_utc": "2026-08-04 23:40:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785887127,
-    "time_utc": "2026-08-04 23:45:27 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "410388e6",
-        "callsign": "IRB9740",
-        "flight": "B99740",
-        "type": "A310",
-        "reg": "EP-MDL",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 295,
-        "speed": 440,
-        "lat": 38.663,
-        "lon": 44.875,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "41031c05",
-        "callsign": "TBZ6620",
-        "flight": "I36620",
-        "type": "A320",
-        "reg": "EP-TAD",
-        "category": "Commercial",
-        "alt": 21975,
-        "track": 123,
-        "speed": 366,
-        "lat": 35.529,
-        "lon": 50.753,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785887421,
     "time_utc": "2026-08-04 23:50:21 UTC",
     "count": 5,
@@ -545141,6 +545098,43 @@
         "speed": 463,
         "lat": 35.82,
         "lon": 54.964,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787701530,
+    "time_utc": "2026-08-25 23:45:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "41591593",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 317,
+        "speed": 468,
+        "lat": 33.877,
+        "lon": 53.493,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415a79c5",
+        "callsign": "TKN3115",
+        "flight": "TKN3115",
+        "type": "MD82",
+        "reg": "EP-LED",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 259,
+        "speed": 462,
+        "lat": 35.708,
+        "lon": 54.214,
         "airline": "Kish Air",
         "country": "IRAN"
       }
