@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1785958534,
-    "time_utc": "2026-08-05 19:35:34 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785958824,
-    "time_utc": "2026-08-05 19:40:24 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "41072eed",
-        "callsign": "KRU2651",
-        "flight": "KRU2651",
-        "type": "F100",
-        "reg": "EP-AWZ",
-        "category": "Commercial",
-        "alt": 18075,
-        "track": 14,
-        "speed": 325,
-        "lat": 32.096,
-        "lon": 49.258,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785959135,
     "time_utc": "2026-08-05 19:45:35 UTC",
     "count": 2,
@@ -564247,6 +564219,43 @@
         "speed": 459,
         "lat": 25.281,
         "lon": 57.288,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787773227,
+    "time_utc": "2026-08-26 19:40:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "415e21e1",
+        "callsign": "KRU2651",
+        "flight": "KRU2651",
+        "type": "B733",
+        "reg": "EP-NFC",
+        "category": "Commercial",
+        "alt": 16675,
+        "track": 14,
+        "speed": 353,
+        "lat": 31.918,
+        "lon": 49.192,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415ddd77",
+        "callsign": "ABY552",
+        "flight": "G9552",
+        "type": "A20N",
+        "reg": "A6-ARH",
+        "category": "Commercial",
+        "alt": 30700,
+        "track": 92,
+        "speed": 110,
+        "lat": 25.259,
+        "lon": 58.01,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
