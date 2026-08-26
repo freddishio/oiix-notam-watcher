@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1785966336,
-    "time_utc": "2026-08-05 21:45:36 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785966626,
-    "time_utc": "2026-08-05 21:50:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785966933,
     "time_utc": "2026-08-05 21:55:33 UTC",
     "count": 3,
@@ -566340,6 +566328,103 @@
         "lon": 61.263,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787781032,
+    "time_utc": "2026-08-26 21:50:32 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "415e0c67",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A346",
+        "reg": "EP-MMU",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 109,
+        "speed": 470,
+        "lat": 37.269,
+        "lon": 46.639,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415e7358",
+        "callsign": "VRH5841",
+        "flight": "VRH5841",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 27900,
+        "track": 259,
+        "speed": 465,
+        "lat": 35.835,
+        "lon": 55.072,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415e6439",
+        "callsign": "AXV9219",
+        "flight": "AXV9219",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 95,
+        "speed": 498,
+        "lat": 35.33,
+        "lon": 52.048,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415e5dc6",
+        "callsign": "FDB731",
+        "flight": "FZ731",
+        "type": "B38M",
+        "reg": "A6-FKE",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 343,
+        "speed": 481,
+        "lat": 25.956,
+        "lon": 59.481,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415e608d",
+        "callsign": "ABY418",
+        "flight": "G9418",
+        "type": "A20N",
+        "reg": "A6-ARD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 93,
+        "speed": 448,
+        "lat": 25.184,
+        "lon": 59.751,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415e660d",
+        "callsign": "FJL503",
+        "flight": "9P503",
+        "type": "A320",
+        "reg": "AP-BOZ",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 468,
+        "lat": 25.141,
+        "lon": 60.595,
+        "airline": "Fly Jinnah",
+        "country": "Pakistan"
       }
     ]
   }
