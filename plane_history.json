@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785965431,
-    "time_utc": "2026-08-05 21:30:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785965732,
     "time_utc": "2026-08-05 21:35:32 UTC",
     "count": 4,
@@ -566142,6 +566136,88 @@
         "speed": 453,
         "lat": 25.127,
         "lon": 60.788,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787780120,
+    "time_utc": "2026-08-26 21:35:20 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "415e7d68",
+        "callsign": "TBZ5657",
+        "flight": "I35657",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 20700,
+        "track": 13,
+        "speed": 389,
+        "lat": 31.948,
+        "lon": 49.211,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415e608d",
+        "callsign": "ABY418",
+        "flight": "G9418",
+        "type": "A20N",
+        "reg": "A6-ARD",
+        "category": "Commercial",
+        "alt": 25900,
+        "track": 89,
+        "speed": 503,
+        "lat": 25.275,
+        "lon": 57.52,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415e660d",
+        "callsign": "FJL503",
+        "flight": "9P503",
+        "type": "A320",
+        "reg": "AP-BOZ",
+        "category": "Commercial",
+        "alt": 30800,
+        "track": 91,
+        "speed": 477,
+        "lat": 25.248,
+        "lon": 58.401,
+        "airline": "Fly Jinnah",
+        "country": "Pakistan"
+      },
+      {
+        "id": "415e662e",
+        "callsign": "ABY526",
+        "flight": "G9526",
+        "type": "A20N",
+        "reg": "A6-ARL",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 93,
+        "speed": 448,
+        "lat": 25.178,
+        "lon": 59.886,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415e55ae",
+        "callsign": "ABY467",
+        "flight": "G9467",
+        "type": "A320",
+        "reg": "A6-ABM",
+        "category": "Commercial",
+        "alt": 35025,
+        "track": 96,
+        "speed": 453,
+        "lat": 25.084,
+        "lon": 61.449,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
