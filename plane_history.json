@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785959426,
-    "time_utc": "2026-08-05 19:50:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785959724,
     "time_utc": "2026-08-05 19:55:24 UTC",
     "count": 0,
@@ -564338,6 +564332,73 @@
         "speed": 455,
         "lat": 25.2,
         "lon": 59.435,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787774123,
+    "time_utc": "2026-08-26 19:55:23 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "415e2238",
+        "callsign": "SHI7321",
+        "flight": "IS7321",
+        "type": "B733",
+        "reg": "EP-FSV",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 95,
+        "speed": 464,
+        "lat": 33.564,
+        "lon": 46.655,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415e03a4",
+        "callsign": "SHI7355",
+        "flight": "IS7355",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 100,
+        "speed": 460,
+        "lat": 35.371,
+        "lon": 51.441,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415e0e9c",
+        "callsign": "ABY548",
+        "flight": "G9548",
+        "type": "A320",
+        "reg": "A6-AQH",
+        "category": "Commercial",
+        "alt": 34100,
+        "track": 92,
+        "speed": 470,
+        "lat": 25.225,
+        "lon": 58.901,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415ddd77",
+        "callsign": "ABY552",
+        "flight": "G9552",
+        "type": "A20N",
+        "reg": "A6-ARH",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 92,
+        "speed": 447,
+        "lat": 25.168,
+        "lon": 60.115,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
