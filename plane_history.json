@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1785936023,
-    "time_utc": "2026-08-05 13:20:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785936323,
-    "time_utc": "2026-08-05 13:25:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785936644,
     "time_utc": "2026-08-05 13:30:44 UTC",
     "count": 10,
@@ -560213,6 +560201,118 @@
         "lon": 59.153,
         "airline": "Aeroflot",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787750725,
+    "time_utc": "2026-08-26 13:25:25 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "415ca874",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD83",
+        "reg": "EP-MDF",
+        "category": "Commercial",
+        "alt": 27200,
+        "track": 104,
+        "speed": 484,
+        "lat": 37.783,
+        "lon": 47.777,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "415c8eab",
+        "callsign": "TBN7273",
+        "flight": "SUE7273",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 28650,
+        "track": 301,
+        "speed": 451,
+        "lat": 36.678,
+        "lon": 49.03,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415c7d8e",
+        "callsign": "FDB71T",
+        "flight": "FZ712",
+        "type": "B738",
+        "reg": "A6-FES",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 126,
+        "speed": 485,
+        "lat": 37.906,
+        "lon": 51.172,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415c8bf2",
+        "callsign": "ABY301",
+        "flight": "G9301",
+        "type": "A320",
+        "reg": "A6-ANP",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 127,
+        "speed": 473,
+        "lat": 37.703,
+        "lon": 51.505,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415ca91b",
+        "callsign": "TDN6276",
+        "flight": "TBN6276",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 25950,
+        "track": 78,
+        "speed": 468,
+        "lat": 35.276,
+        "lon": 52.91,
+        "airline": "TDN",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "415c59d0",
+        "callsign": "IRM1061",
+        "flight": "W51061",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 24025,
+        "track": 198,
+        "speed": 378,
+        "lat": 31.672,
+        "lon": 49.579,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415ca65d",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "MD88",
+        "reg": "EP-SMB",
+        "category": "Commercial",
+        "alt": 28975,
+        "track": 54,
+        "speed": 464,
+        "lat": 31.735,
+        "lon": 49.905,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
       }
     ]
   }
