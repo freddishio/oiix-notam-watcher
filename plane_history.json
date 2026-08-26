@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1785941429,
-    "time_utc": "2026-08-05 14:50:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785941728,
     "time_utc": "2026-08-05 14:55:28 UTC",
     "count": 2,
@@ -561916,6 +561910,73 @@
         "speed": 415,
         "lat": 32.087,
         "lon": 49.535,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787755830,
+    "time_utc": "2026-08-26 14:50:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "415c5d88",
+        "callsign": "AFL521",
+        "flight": "SU521",
+        "type": "B738",
+        "reg": "RA-73103",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 307,
+        "speed": 449,
+        "lat": 36.901,
+        "lon": 52.476,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "415cbd71",
+        "callsign": "ABY297",
+        "flight": "G9297",
+        "type": "A20N",
+        "reg": "A6-ARH",
+        "category": "Commercial",
+        "alt": 36975,
+        "track": 125,
+        "speed": 470,
+        "lat": 36.337,
+        "lon": 53.736,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415cc0cc",
+        "callsign": "AXV9213",
+        "flight": "AXV9213",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 80,
+        "speed": 487,
+        "lat": 35.653,
+        "lon": 55.527,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415cebf7",
+        "callsign": "TKN3116",
+        "flight": "TKN3116",
+        "type": "MD82",
+        "reg": "EP-LED",
+        "category": "Commercial",
+        "alt": 12725,
+        "track": 210,
+        "speed": 299,
+        "lat": 31.576,
+        "lon": 49.271,
         "airline": "Kish Air",
         "country": "IRAN"
       }
