@@ -1,63 +1,5 @@
 [
   {
-    "timestamp": 1785978330,
-    "time_utc": "2026-08-06 01:05:30 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "4108182b",
-        "callsign": "KIS6050",
-        "flight": "KIS6050",
-        "type": "MD82",
-        "reg": "EP-LCJ",
-        "category": "Commercial",
-        "alt": 29000,
-        "track": 58,
-        "speed": 488,
-        "lat": 34.009,
-        "lon": 47.641,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41082e11",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "A320",
-        "reg": "EP-IEG",
-        "category": "Commercial",
-        "alt": 7725,
-        "track": 277,
-        "speed": 285,
-        "lat": 35.44,
-        "lon": 50.946,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "4108249f",
-        "callsign": "IRM093",
-        "flight": "W593",
-        "type": "A343",
-        "reg": "EP-MMT",
-        "category": "Commercial",
-        "alt": 14725,
-        "track": 120,
-        "speed": 408,
-        "lat": 35.012,
-        "lon": 51.635,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1785978627,
-    "time_utc": "2026-08-06 01:10:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1785978922,
     "time_utc": "2026-08-06 01:15:22 UTC",
     "count": 1,
@@ -567075,6 +567017,58 @@
         "speed": 483,
         "lat": 25.256,
         "lon": 58.102,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787793028,
+    "time_utc": "2026-08-27 01:10:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "415e9e9e",
+        "callsign": "IZG3051",
+        "flight": "ZO3051",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 24525,
+        "track": 151,
+        "speed": 420,
+        "lat": 36.242,
+        "lon": 50.372,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415ea98e",
+        "callsign": "FDB5PF",
+        "flight": "FZ986",
+        "type": "B738",
+        "reg": "A6-FGG",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 127,
+        "speed": 474,
+        "lat": 37.688,
+        "lon": 51.53,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "415f033d",
+        "callsign": "ABY558",
+        "flight": "G9558",
+        "type": "A320",
+        "reg": "A6-AQT",
+        "category": "Commercial",
+        "alt": 33525,
+        "track": 92,
+        "speed": 478,
+        "lat": 25.226,
+        "lon": 58.85,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
