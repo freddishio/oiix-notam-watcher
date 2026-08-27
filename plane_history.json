@@ -1,93 +1,5 @@
 [
   {
-    "timestamp": 1785980424,
-    "time_utc": "2026-08-06 01:40:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1785980722,
-    "time_utc": "2026-08-06 01:45:22 UTC",
-    "count": 5,
-    "planes": [
-      {
-        "id": "41083809",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "MD88",
-        "reg": "EP-SMB",
-        "category": "Commercial",
-        "alt": 27975,
-        "track": 193,
-        "speed": 10,
-        "lat": 33.117,
-        "lon": 50.025,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "41083c7d",
-        "callsign": "TBZ5658",
-        "flight": "I35658",
-        "type": "B735",
-        "reg": "EP-TAG",
-        "category": "Commercial",
-        "alt": 29975,
-        "track": 193,
-        "speed": 441,
-        "lat": 34.24,
-        "lon": 50.356,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "410843bd",
-        "callsign": "KRU2542",
-        "flight": "KRU2542",
-        "type": "F100",
-        "reg": "EP-MIS",
-        "category": "Commercial",
-        "alt": 6575,
-        "track": 193,
-        "speed": 185,
-        "lat": 35.682,
-        "lon": 51.221,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4108182b",
-        "callsign": "KIS6050",
-        "flight": "KIS6050",
-        "type": "MD82",
-        "reg": "EP-LCJ",
-        "category": "Commercial",
-        "alt": 5025,
-        "track": 289,
-        "speed": 216,
-        "lat": 35.382,
-        "lon": 51.277,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "4107fc8b",
-        "callsign": "AXV9204",
-        "flight": "AXV9204",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 280,
-        "speed": 438,
-        "lat": 35.383,
-        "lon": 51.333,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785981020,
     "time_utc": "2026-08-06 01:50:20 UTC",
     "count": 6,
@@ -567198,6 +567110,73 @@
         "lon": 55.304,
         "airline": "flydubai",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787795127,
+    "time_utc": "2026-08-27 01:45:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "415f3328",
+        "callsign": "IRB8006",
+        "flight": "B98006",
+        "type": "MD82",
+        "reg": "EP-MDG",
+        "category": "Commercial",
+        "alt": 7700,
+        "track": 156,
+        "speed": 200,
+        "lat": 35.63,
+        "lon": 51.224,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "415f353a",
+        "callsign": "TBZ5658",
+        "flight": "I35658",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 85,
+        "speed": 3,
+        "lat": 35.673,
+        "lon": 51.319,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415f133a",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 450,
+        "lat": 35.486,
+        "lon": 52.655,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415f1cc5",
+        "callsign": "SHI7304",
+        "flight": "IS7304",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 260,
+        "speed": 444,
+        "lat": 35.838,
+        "lon": 55.102,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
       }
     ]
   }
