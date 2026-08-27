@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786054531,
-    "time_utc": "2026-08-06 22:15:31 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786054823,
     "time_utc": "2026-08-06 22:20:23 UTC",
     "count": 1,
@@ -598253,6 +598247,88 @@
         "speed": 465,
         "lat": 25.089,
         "lon": 61.388,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787869222,
+    "time_utc": "2026-08-27 22:20:22 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "4162d01d",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 140,
+        "speed": 2,
+        "lat": 35.419,
+        "lon": 51.146,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4162b0ab",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A320",
+        "reg": "EP-ZAT",
+        "category": "Commercial",
+        "alt": 3875,
+        "track": 288,
+        "speed": 162,
+        "lat": 35.426,
+        "lon": 51.206,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4162bf71",
+        "callsign": "ABY418",
+        "flight": "G9418",
+        "type": "A320",
+        "reg": "A6-ANS",
+        "category": "Commercial",
+        "alt": 30500,
+        "track": 92,
+        "speed": 455,
+        "lat": 25.254,
+        "lon": 58.13,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4162b4f2",
+        "callsign": "ABY526",
+        "flight": "G9526",
+        "type": "A320",
+        "reg": "A6-AOU",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 92,
+        "speed": 460,
+        "lat": 25.2,
+        "lon": 59.416,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41626e94",
+        "callsign": "ABY699",
+        "flight": "G9699",
+        "type": "A20N",
+        "reg": "A6-ARH",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 93,
+        "speed": 458,
+        "lat": 25.143,
+        "lon": 60.518,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
       }
