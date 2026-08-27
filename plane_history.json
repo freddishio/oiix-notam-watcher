@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1785980127,
-    "time_utc": "2026-08-06 01:35:27 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "4107cda2",
-        "callsign": "IZG3051",
-        "flight": "ZO3051",
-        "type": "A319",
-        "reg": "EP-ZAX",
-        "category": "Commercial",
-        "alt": 35950,
-        "track": 186,
-        "speed": 481,
-        "lat": 37.799,
-        "lon": 49.685,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4107fc8b",
-        "callsign": "AXV9204",
-        "flight": "AXV9204",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 260,
-        "speed": 438,
-        "lat": 35.501,
-        "lon": 52.794,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1785980424,
     "time_utc": "2026-08-06 01:40:24 UTC",
     "count": 0,
@@ -567166,6 +567129,73 @@
         "speed": 463,
         "lat": 35.747,
         "lon": 54.756,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787794824,
+    "time_utc": "2026-08-27 01:40:24 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "415f2c7b",
+        "callsign": "TBN7281",
+        "flight": "AXV7281",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 19025,
+        "track": 312,
+        "speed": 415,
+        "lat": 35.858,
+        "lon": 50.427,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415f133a",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B733",
+        "reg": "EP-FST",
+        "category": "Commercial",
+        "alt": 32025,
+        "track": 259,
+        "speed": 452,
+        "lat": 35.588,
+        "lon": 53.409,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "415f30df",
+        "callsign": "IRM098",
+        "flight": "W598",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 4650,
+        "track": 275,
+        "speed": 212,
+        "lat": 35.433,
+        "lon": 51.079,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "415ea98e",
+        "callsign": "FDB5PF",
+        "flight": "FZ986",
+        "type": "B738",
+        "reg": "A6-FGG",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 140,
+        "speed": 459,
+        "lat": 35.305,
+        "lon": 55.304,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
