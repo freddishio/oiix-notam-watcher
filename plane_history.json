@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786065924,
-    "time_utc": "2026-08-07 01:25:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786066228,
     "time_utc": "2026-08-07 01:30:28 UTC",
     "count": 2,
@@ -598588,6 +598582,88 @@
         "lat": 33.591,
         "lon": 53.808,
         "airline": "Mahan Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787880623,
+    "time_utc": "2026-08-28 01:30:23 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "41635ea3",
+        "callsign": "TBZ5658",
+        "flight": "I35658",
+        "type": "MD83",
+        "reg": "EP-TAN",
+        "category": "Commercial",
+        "alt": 22300,
+        "track": 98,
+        "speed": 19,
+        "lat": 35.673,
+        "lon": 51.352,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41634a57",
+        "callsign": "SHI7300",
+        "flight": "IS7300",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 259,
+        "speed": 446,
+        "lat": 35.82,
+        "lon": 54.968,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4163559b",
+        "callsign": "NSN6691",
+        "flight": "NSN6691",
+        "type": "B734",
+        "reg": "EP-NSR",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 47,
+        "speed": 450,
+        "lat": 33.516,
+        "lon": 46.323,
+        "airline": "Nasim Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416193cd",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A342",
+        "reg": "EP-MJA",
+        "category": "Commercial",
+        "alt": 37025,
+        "track": 317,
+        "speed": 472,
+        "lat": 34.078,
+        "lon": 53.272,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41633b4c",
+        "callsign": "QSM2112",
+        "flight": "QB2112",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 166,
+        "speed": 464,
+        "lat": 29.355,
+        "lon": 52.641,
+        "airline": "Qeshm Air",
         "country": "IRAN"
       }
     ]
