@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1786072227,
-    "time_utc": "2026-08-07 03:10:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1786072521,
-    "time_utc": "2026-08-07 03:15:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786072822,
     "time_utc": "2026-08-07 03:20:22 UTC",
     "count": 3,
@@ -599908,6 +599896,133 @@
         "speed": 455,
         "lat": 34.502,
         "lon": 59.407,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787887222,
+    "time_utc": "2026-08-28 03:20:22 UTC",
+    "count": 8,
+    "planes": [
+      {
+        "id": "416329b3",
+        "callsign": "SHR5274",
+        "flight": "SHR5274",
+        "type": "A306",
+        "reg": "EP-HNS",
+        "category": "Commercial",
+        "alt": 21450,
+        "track": 122,
+        "speed": 10,
+        "lat": 35.834,
+        "lon": 50.184,
+        "airline": "SHR",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4163a34c",
+        "callsign": "SHR5291",
+        "flight": "SHR5291",
+        "type": "A310",
+        "reg": "EP-HNA",
+        "category": "Commercial",
+        "alt": 18000,
+        "track": 314,
+        "speed": 10,
+        "lat": 35.871,
+        "lon": 50.377,
+        "airline": "SHR",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41637c3b",
+        "callsign": "AXV9220",
+        "flight": "AXV9220",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 269,
+        "speed": 10,
+        "lat": 35.432,
+        "lon": 50.399,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41638e04",
+        "callsign": "QSM1240",
+        "flight": "QB1240",
+        "type": "RJ1H",
+        "reg": "EP-FQZ",
+        "category": "Commercial",
+        "alt": 23000,
+        "track": 166,
+        "speed": 366,
+        "lat": 33.117,
+        "lon": 53.992,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4162eeda",
+        "callsign": "FDB7MN",
+        "flight": "FZ964",
+        "type": "B38M",
+        "reg": "A6-FMP",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 186,
+        "speed": 410,
+        "lat": 33.277,
+        "lon": 59.241,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41638a6f",
+        "callsign": "ISP",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-JIB",
+        "category": "Commercial",
+        "alt": 13500,
+        "track": 165,
+        "speed": 346,
+        "lat": 31.3,
+        "lon": 48.783,
+        "airline": "JSky Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41638994",
+        "callsign": "KRU2637",
+        "flight": "KRU2637",
+        "type": "F100",
+        "reg": "EP-AWZ",
+        "category": "Commercial",
+        "alt": 29025,
+        "track": 120,
+        "speed": 463,
+        "lat": 28.299,
+        "lon": 54.356,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416366fb",
+        "callsign": "FDB732",
+        "flight": "FZ732",
+        "type": "B38M",
+        "reg": "A6-FKR",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 148,
+        "speed": 452,
+        "lat": 26.328,
+        "lon": 59.813,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
