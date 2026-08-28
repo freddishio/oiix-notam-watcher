@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786146628,
-    "time_utc": "2026-08-07 23:50:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786146927,
     "time_utc": "2026-08-07 23:55:27 UTC",
     "count": 0,
@@ -632796,6 +632790,88 @@
         "lon": 61.294,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787961323,
+    "time_utc": "2026-08-28 23:55:23 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "416737be",
+        "callsign": "QSM2280",
+        "flight": "QB2280",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 31025,
+        "track": 62,
+        "speed": 510,
+        "lat": 34.649,
+        "lon": 49.09,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4166c720",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 9600,
+        "track": 99,
+        "speed": 230,
+        "lat": 35.403,
+        "lon": 51.207,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4166cea7",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJD",
+        "category": "Commercial",
+        "alt": 4250,
+        "track": 288,
+        "speed": 157,
+        "lat": 35.395,
+        "lon": 51.229,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4166cdc2",
+        "callsign": "NSN6673",
+        "flight": "NSN6672",
+        "type": "B735",
+        "reg": "EP-NSD",
+        "category": "Commercial",
+        "alt": 29950,
+        "track": 317,
+        "speed": 10,
+        "lat": 34.521,
+        "lon": 52.753,
+        "airline": "Nasim Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41673682",
+        "callsign": "AXV7711",
+        "flight": "AXV7711",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 86,
+        "speed": 20,
+        "lat": 32.81,
+        "lon": 52.871,
+        "airline": "Ava Air",
+        "country": "IRAN"
       }
     ]
   }
