@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786146927,
-    "time_utc": "2026-08-07 23:55:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786147232,
     "time_utc": "2026-08-08 00:00:32 UTC",
     "count": 2,
@@ -632870,6 +632864,73 @@
         "speed": 20,
         "lat": 32.81,
         "lon": 52.871,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1787961630,
+    "time_utc": "2026-08-29 00:00:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "416737be",
+        "callsign": "QSM2280",
+        "flight": "QB2280",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 28625,
+        "track": 76,
+        "speed": 509,
+        "lat": 34.922,
+        "lon": 49.89,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4166c720",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 9000,
+        "track": 141,
+        "speed": 224,
+        "lat": 35.334,
+        "lon": 51.623,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4166cdc2",
+        "callsign": "NSN6673",
+        "flight": "NSN6672",
+        "type": "B735",
+        "reg": "EP-NSD",
+        "category": "Commercial",
+        "alt": 23775,
+        "track": 320,
+        "speed": 408,
+        "lat": 34.999,
+        "lon": 52.224,
+        "airline": "Nasim Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41673682",
+        "callsign": "AXV7711",
+        "flight": "AXV7711",
+        "type": "B735",
+        "reg": "EP-RBA",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 87,
+        "speed": 478,
+        "lat": 32.85,
+        "lon": 53.736,
         "airline": "Ava Air",
         "country": "IRAN"
       }
