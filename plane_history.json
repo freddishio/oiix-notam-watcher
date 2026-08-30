@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1786311030,
-    "time_utc": "2026-08-09 21:30:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1786311325,
-    "time_utc": "2026-08-09 21:35:25 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "411806bc",
-        "callsign": "MRJ4815",
-        "flight": "MRJ4815",
-        "type": "A320",
-        "reg": "EP-AJJ",
-        "category": "Commercial",
-        "alt": 34025,
-        "track": 259,
-        "speed": 448,
-        "lat": 35.866,
-        "lon": 55.288,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1786311623,
     "time_utc": "2026-08-09 21:40:23 UTC",
     "count": 1,
@@ -706415,6 +706387,88 @@
         "speed": 460,
         "lat": 27.515,
         "lon": 53.251,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788125726,
+    "time_utc": "2026-08-30 21:35:26 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "416e0942",
+        "callsign": "FDB5PG",
+        "flight": "Unknown Flight",
+        "type": "B38M",
+        "reg": "A6-FKF",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 306,
+        "speed": 422,
+        "lat": 37.566,
+        "lon": 51.382,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "416e69b5",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 31975,
+        "track": 90,
+        "speed": 40,
+        "lat": 35.48,
+        "lon": 51.412,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e4b8e",
+        "callsign": "SHI7355",
+        "flight": "IS7355",
+        "type": "B735",
+        "reg": "EP-FSA",
+        "category": "Commercial",
+        "alt": 32900,
+        "track": 81,
+        "speed": 509,
+        "lat": 35.444,
+        "lon": 53.81,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e6797",
+        "callsign": "IRA3485",
+        "flight": "IR3485",
+        "type": "A306",
+        "reg": "EP-IBA",
+        "category": "Commercial",
+        "alt": 28975,
+        "track": 14,
+        "speed": 505,
+        "lat": 33.169,
+        "lon": 49.581,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e6b64",
+        "callsign": "VRH6827",
+        "flight": "VRH6827",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 139,
+        "speed": 260,
+        "lat": 26.949,
+        "lon": 53.574,
         "airline": "Varesh Airlines",
         "country": "IRAN"
       }
