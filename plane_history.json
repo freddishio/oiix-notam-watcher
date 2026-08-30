@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786314625,
-    "time_utc": "2026-08-09 22:30:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786314924,
     "time_utc": "2026-08-09 22:35:24 UTC",
     "count": 2,
@@ -707056,6 +707050,118 @@
         "lon": 51.303,
         "airline": "Zagros Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788129028,
+    "time_utc": "2026-08-30 22:30:28 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "416e369e",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 115,
+        "speed": 522,
+        "lat": 38.038,
+        "lon": 44.327,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e3fc4",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 39025,
+        "track": 109,
+        "speed": 520,
+        "lat": 37.143,
+        "lon": 47.088,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416dec67",
+        "callsign": "FDB1676",
+        "flight": "FZ1676",
+        "type": "B38M",
+        "reg": "A6-FKB",
+        "category": "Commercial",
+        "alt": 37025,
+        "track": 166,
+        "speed": 453,
+        "lat": 36.389,
+        "lon": 54.782,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "416e803c",
+        "callsign": "QSM1252",
+        "flight": "QB1252",
+        "type": "F100",
+        "reg": "EP-FQJ",
+        "category": "Commercial",
+        "alt": 28925,
+        "track": 80,
+        "speed": 487,
+        "lat": 35.579,
+        "lon": 55.155,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e7d95",
+        "callsign": "AXV9219",
+        "flight": "AXV9219",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 45,
+        "speed": 550,
+        "lat": 35.256,
+        "lon": 50.653,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e6e70",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A320",
+        "reg": "EP-ZAP",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 340,
+        "speed": 17,
+        "lat": 35.424,
+        "lon": 51.133,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e7e04",
+        "callsign": "ABY823",
+        "flight": "G9823",
+        "type": "A21N",
+        "reg": "A6-ATF",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 93,
+        "speed": 458,
+        "lat": 25.091,
+        "lon": 61.404,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
       }
     ]
   }
