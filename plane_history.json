@@ -1,124 +1,5 @@
 [
   {
-    "timestamp": 1786314924,
-    "time_utc": "2026-08-09 22:35:24 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41182997",
-        "callsign": "QSM2237",
-        "flight": "QB2237",
-        "type": "A320",
-        "reg": "EP-FQR",
-        "category": "Commercial",
-        "alt": 30025,
-        "track": 242,
-        "speed": 491,
-        "lat": 33.506,
-        "lon": 45.861,
-        "airline": "Qeshm Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "411806bc",
-        "callsign": "MRJ4815",
-        "flight": "MRJ4815",
-        "type": "A320",
-        "reg": "EP-AJJ",
-        "category": "Commercial",
-        "alt": 31875,
-        "track": 232,
-        "speed": 468,
-        "lat": 34.0,
-        "lon": 46.643,
-        "airline": "Meraj Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1786315222,
-    "time_utc": "2026-08-09 22:40:22 UTC",
-    "count": 5,
-    "planes": [
-      {
-        "id": "41182339",
-        "callsign": "TKN3281",
-        "flight": "TKN3281",
-        "type": "B733",
-        "reg": "EP-LEE",
-        "category": "Commercial",
-        "alt": 24550,
-        "track": 151,
-        "speed": 414,
-        "lat": 36.264,
-        "lon": 50.346,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41181993",
-        "callsign": "IRB9725",
-        "flight": "B99725",
-        "type": "A320",
-        "reg": "EP-MDS",
-        "category": "Commercial",
-        "alt": 13050,
-        "track": 150,
-        "speed": 314,
-        "lat": 35.57,
-        "lon": 50.832,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "411822de",
-        "callsign": "Unknown Callsign",
-        "flight": "Unknown Flight",
-        "type": "MD88",
-        "reg": "EP-SMB",
-        "category": "Commercial",
-        "alt": 13125,
-        "track": 274,
-        "speed": 347,
-        "lat": 35.578,
-        "lon": 51.876,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "41183498",
-        "callsign": "KRU2650",
-        "flight": "KRU2650",
-        "type": "Unknown Type",
-        "reg": "Unknown Reg",
-        "category": "Commercial",
-        "alt": 28000,
-        "track": 194,
-        "speed": 451,
-        "lat": 33.186,
-        "lon": 50.02,
-        "airline": "Karun Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41182077",
-        "callsign": "CPN7989",
-        "flight": "IV7989",
-        "type": "B733",
-        "reg": "EP-SOL",
-        "category": "Commercial",
-        "alt": 33000,
-        "track": 99,
-        "speed": 469,
-        "lat": 35.386,
-        "lon": 51.342,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1786315525,
     "time_utc": "2026-08-09 22:45:25 UTC",
     "count": 0,
@@ -707227,6 +707108,73 @@
         "speed": 545,
         "lat": 35.407,
         "lon": 51.439,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788129625,
+    "time_utc": "2026-08-30 22:40:25 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "416e369e",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJA",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 108,
+        "speed": 525,
+        "lat": 37.452,
+        "lon": 45.967,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e3fc4",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 122,
+        "speed": 516,
+        "lat": 36.616,
+        "lon": 48.677,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416d76c7",
+        "callsign": "IRA4705",
+        "flight": "IR4704",
+        "type": "B742",
+        "reg": "EP-ICD",
+        "category": "Commercial",
+        "alt": 38025,
+        "track": 256,
+        "speed": 425,
+        "lat": 37.56,
+        "lon": 57.648,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e7d95",
+        "callsign": "AXV9219",
+        "flight": "AXV9219",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 95,
+        "speed": 543,
+        "lat": 35.317,
+        "lon": 52.439,
         "airline": "Ava Air",
         "country": "IRAN"
       }
