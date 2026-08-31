@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786405224,
-    "time_utc": "2026-08-10 23:40:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786405526,
     "time_utc": "2026-08-10 23:45:26 UTC",
     "count": 5,
@@ -736675,6 +736669,58 @@
         "lon": 57.18,
         "airline": "flydubai",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788219926,
+    "time_utc": "2026-08-31 23:45:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41725fdc",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 35050,
+        "track": 113,
+        "speed": 487,
+        "lat": 37.374,
+        "lon": 46.179,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41727d08",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A320",
+        "reg": "EP-ZAP",
+        "category": "Commercial",
+        "alt": 28575,
+        "track": 76,
+        "speed": 533,
+        "lat": 34.929,
+        "lon": 49.986,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41723300",
+        "callsign": "QSM2214",
+        "flight": "QB2214",
+        "type": "A306",
+        "reg": "EP-FQK",
+        "category": "Commercial",
+        "alt": 11600,
+        "track": 118,
+        "speed": 266,
+        "lat": 35.429,
+        "lon": 50.944,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
       }
     ]
   }
