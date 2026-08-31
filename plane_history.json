@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786320333,
-    "time_utc": "2026-08-10 00:05:33 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786320629,
     "time_utc": "2026-08-10 00:10:29 UTC",
     "count": 1,
@@ -708395,6 +708389,118 @@
         "lon": 58.223,
         "airline": "Air Arabia",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788135023,
+    "time_utc": "2026-08-31 00:10:23 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "416e6e43",
+        "callsign": "CPN7903",
+        "flight": "IV7903",
+        "type": "B735",
+        "reg": "EP-KPA",
+        "category": "Commercial",
+        "alt": 34950,
+        "track": 109,
+        "speed": 500,
+        "lat": 37.382,
+        "lon": 46.223,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416ec1c0",
+        "callsign": "TKN3281",
+        "flight": "TKN3281",
+        "type": "B733",
+        "reg": "EP-LEF",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 131,
+        "speed": 440,
+        "lat": 37.781,
+        "lon": 48.557,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416eb71f",
+        "callsign": "MRJ9091",
+        "flight": "MRJ9091",
+        "type": "A321",
+        "reg": "EP-SSM",
+        "category": "Commercial",
+        "alt": 7975,
+        "track": 133,
+        "speed": 220,
+        "lat": 35.278,
+        "lon": 51.122,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416d6997",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 16,
+        "lat": 35.418,
+        "lon": 51.137,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "416ea301",
+        "callsign": "VRH6809",
+        "flight": "VRH6809",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 3275,
+        "track": 288,
+        "speed": 165,
+        "lat": 35.417,
+        "lon": 51.153,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416e5fd9",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 6075,
+        "track": 331,
+        "speed": 264,
+        "lat": 35.212,
+        "lon": 51.385,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "416ec39e",
+        "callsign": "FJL747",
+        "flight": "9P747",
+        "type": "A320",
+        "reg": "AP-BOO",
+        "category": "Commercial",
+        "alt": 29575,
+        "track": 93,
+        "speed": 400,
+        "lat": 25.274,
+        "lon": 57.585,
+        "airline": "Fly Jinnah",
+        "country": "Pakistan"
       }
     ]
   }
