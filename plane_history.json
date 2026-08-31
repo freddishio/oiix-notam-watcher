@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786401932,
-    "time_utc": "2026-08-10 22:45:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786402225,
     "time_utc": "2026-08-10 22:50:25 UTC",
     "count": 2,
@@ -735771,6 +735765,118 @@
         "speed": 461,
         "lat": 25.24,
         "lon": 58.492,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788216624,
+    "time_utc": "2026-08-31 22:50:24 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "417293bd",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "RJ85",
+        "reg": "EP-MEI",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 106,
+        "speed": 20,
+        "lat": 35.685,
+        "lon": 51.334,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4171efa5",
+        "callsign": "NSN6675",
+        "flight": "NSN6674",
+        "type": "B735",
+        "reg": "EP-NSD",
+        "category": "Commercial",
+        "alt": 27975,
+        "track": 259,
+        "speed": 395,
+        "lat": 35.633,
+        "lon": 53.659,
+        "airline": "Nasim Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417137db",
+        "callsign": "IRM5112",
+        "flight": "W55112",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 25700,
+        "track": 316,
+        "speed": 399,
+        "lat": 34.788,
+        "lon": 52.474,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41727ba3",
+        "callsign": "FDB1133",
+        "flight": "FZ1133",
+        "type": "B38M",
+        "reg": "A6-FMX",
+        "category": "Commercial",
+        "alt": 27800,
+        "track": 91,
+        "speed": 445,
+        "lat": 25.272,
+        "lon": 57.618,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "417273ed",
+        "callsign": "FDB563",
+        "flight": "FZ563",
+        "type": "B38M",
+        "reg": "A6-FQD",
+        "category": "Commercial",
+        "alt": 32875,
+        "track": 92,
+        "speed": 466,
+        "lat": 25.253,
+        "lon": 58.154,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4172755b",
+        "callsign": "ABY536",
+        "flight": "G9536",
+        "type": "A320",
+        "reg": "A6-AOE",
+        "category": "Commercial",
+        "alt": 30300,
+        "track": 92,
+        "speed": 470,
+        "lat": 25.232,
+        "lon": 58.702,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "41726d28",
+        "callsign": "FDB1583",
+        "flight": "FZ1583",
+        "type": "B38M",
+        "reg": "A6-FME",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 92,
+        "speed": 464,
+        "lat": 25.211,
+        "lon": 59.185,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
