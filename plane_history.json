@@ -1,102 +1,5 @@
 [
   {
-    "timestamp": 1786503324,
-    "time_utc": "2026-08-12 02:55:24 UTC",
-    "count": 6,
-    "planes": [
-      {
-        "id": "41211404",
-        "callsign": "SMI7346",
-        "flight": "IS7346",
-        "type": "B733",
-        "reg": "EP-FSE",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 259,
-        "speed": 401,
-        "lat": 35.676,
-        "lon": 53.991,
-        "airline": "Aero Sami",
-        "country": "Mexico"
-      },
-      {
-        "id": "4120fffd",
-        "callsign": "AXV9212",
-        "flight": "AXV9212",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 233,
-        "speed": 420,
-        "lat": 35.25,
-        "lon": 49.573,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41211fb1",
-        "callsign": "ISP1804",
-        "flight": "ISP1804",
-        "type": "B733",
-        "reg": "EP-JIB",
-        "category": "Commercial",
-        "alt": 28025,
-        "track": 194,
-        "speed": 471,
-        "lat": 33.258,
-        "lon": 50.054,
-        "airline": "JSky Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "412128f3",
-        "callsign": "IZG3026",
-        "flight": "ZO3026",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 15600,
-        "track": 269,
-        "speed": 311,
-        "lat": 35.446,
-        "lon": 50.492,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4121239f",
-        "callsign": "VRH5912",
-        "flight": "VRH5912",
-        "type": "B735",
-        "reg": "EP-VAR",
-        "category": "Commercial",
-        "alt": 31050,
-        "track": 195,
-        "speed": 467,
-        "lat": 33.819,
-        "lon": 51.13,
-        "airline": "Varesh Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "4121269c",
-        "callsign": "IRM1101",
-        "flight": "W51101",
-        "type": "A342",
-        "reg": "EP-MJA",
-        "category": "Commercial",
-        "alt": 20375,
-        "track": 100,
-        "speed": 432,
-        "lat": 35.334,
-        "lon": 52.181,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1786503630,
     "time_utc": "2026-08-12 03:00:30 UTC",
     "count": 4,
@@ -757290,6 +757193,58 @@
         "speed": 20,
         "lat": 33.167,
         "lon": 52.087,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788318029,
+    "time_utc": "2026-09-02 03:00:29 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "41773adf",
+        "callsign": "IRA9001",
+        "flight": "IR9001",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 7850,
+        "track": 236,
+        "speed": 244,
+        "lat": 35.645,
+        "lon": 51.222,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41772a59",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 27450,
+        "track": 259,
+        "speed": 402,
+        "lat": 35.623,
+        "lon": 53.616,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "41773428",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 336,
+        "speed": 341,
+        "lat": 33.689,
+        "lon": 52.342,
         "airline": "Unknown Airline",
         "country": "Unknown Location"
       }
