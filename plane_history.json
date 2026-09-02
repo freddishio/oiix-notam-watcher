@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1786575328,
-    "time_utc": "2026-08-12 22:55:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1786575630,
-    "time_utc": "2026-08-12 23:00:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786575924,
     "time_utc": "2026-08-12 23:05:24 UTC",
     "count": 1,
@@ -786120,6 +786108,103 @@
         "lon": 61.213,
         "airline": "Fly Jinnah",
         "country": "Pakistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788390036,
+    "time_utc": "2026-09-02 23:00:36 UTC",
+    "count": 6,
+    "planes": [
+      {
+        "id": "417a4334",
+        "callsign": "NSN6691",
+        "flight": "NSN6691",
+        "type": "B734",
+        "reg": "EP-NSR",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 46,
+        "speed": 470,
+        "lat": 33.823,
+        "lon": 47.382,
+        "airline": "Nasim Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417a4ac1",
+        "callsign": "IRM115",
+        "flight": "W5115",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 106,
+        "speed": 16,
+        "lat": 35.419,
+        "lon": 51.139,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417abdb8",
+        "callsign": "VRH6846",
+        "flight": "VRH6846",
+        "type": "B733",
+        "reg": "EP-VAA",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 22,
+        "lat": 35.415,
+        "lon": 51.15,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ab38e",
+        "callsign": "VRH5867",
+        "flight": "VRH5867",
+        "type": "B735",
+        "reg": "EP-VAR",
+        "category": "Commercial",
+        "alt": 26025,
+        "track": 336,
+        "speed": 419,
+        "lat": 34.182,
+        "lon": 52.101,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417abdaf",
+        "callsign": "IRC861",
+        "flight": "EP861",
+        "type": "F100",
+        "reg": "EP-ATE",
+        "category": "Commercial",
+        "alt": 6350,
+        "track": 26,
+        "speed": 224,
+        "lat": 30.527,
+        "lon": 48.289,
+        "airline": "Iran Aseman Airline",
+        "country": "IRAN"
+      },
+      {
+        "id": "417aa193",
+        "callsign": "ABY536",
+        "flight": "G9536",
+        "type": "A320",
+        "reg": "A6-AOH",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 461,
+        "lat": 25.144,
+        "lon": 60.548,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
       }
     ]
   }
