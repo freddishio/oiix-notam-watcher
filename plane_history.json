@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786580128,
-    "time_utc": "2026-08-13 00:15:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786580430,
     "time_utc": "2026-08-13 00:20:30 UTC",
     "count": 2,
@@ -788149,6 +788143,118 @@
         "lat": 25.125,
         "lon": 60.847,
         "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788394825,
+    "time_utc": "2026-09-03 00:20:25 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "417ad29d",
+        "callsign": "TBN7235",
+        "flight": "TBN7235",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 295,
+        "speed": 413,
+        "lat": 38.433,
+        "lon": 45.47,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417adb19",
+        "callsign": "QSM2237",
+        "flight": "QB2237",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 232,
+        "speed": 429,
+        "lat": 33.885,
+        "lon": 46.462,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4179c8e9",
+        "callsign": "IRM056",
+        "flight": "W556",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 11025,
+        "track": 308,
+        "speed": 240,
+        "lat": 35.215,
+        "lon": 51.814,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ad634",
+        "callsign": "IRZ159",
+        "flight": "IRZ159",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 6,
+        "speed": 434,
+        "lat": 33.619,
+        "lon": 52.375,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417adcce",
+        "callsign": "VRH5913",
+        "flight": "VRH5913",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 30075,
+        "track": 348,
+        "speed": 460,
+        "lat": 31.44,
+        "lon": 52.138,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417adc2a",
+        "callsign": "FDB3009",
+        "flight": "FZ3009",
+        "type": "B38M",
+        "reg": "A6-FKM",
+        "category": "Commercial",
+        "alt": 31200,
+        "track": 101,
+        "speed": 190,
+        "lat": 25.263,
+        "lon": 57.882,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "417acea3",
+        "callsign": "FDB1345",
+        "flight": "FZ1345",
+        "type": "B38M",
+        "reg": "A6-FMJ",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 94,
+        "speed": 467,
+        "lat": 25.121,
+        "lon": 60.901,
+        "airline": "flydubai",
         "country": "United Arab Emirates"
       }
     ]
