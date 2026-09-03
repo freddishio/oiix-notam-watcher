@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786659929,
-    "time_utc": "2026-08-13 22:25:29 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786660228,
     "time_utc": "2026-08-13 22:30:28 UTC",
     "count": 2,
@@ -821742,6 +821736,58 @@
         "speed": 448,
         "lat": 25.275,
         "lon": 57.513,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788474628,
+    "time_utc": "2026-09-03 22:30:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "417ea524",
+        "callsign": "AXV9219",
+        "flight": "AXV9219",
+        "type": "A310",
+        "reg": "EP-RBD",
+        "category": "Commercial",
+        "alt": 33000,
+        "track": 47,
+        "speed": 510,
+        "lat": 33.909,
+        "lon": 47.496,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ea657",
+        "callsign": "FDB563",
+        "flight": "FZ563",
+        "type": "B38M",
+        "reg": "A6-FQE",
+        "category": "Commercial",
+        "alt": 28700,
+        "track": 91,
+        "speed": 446,
+        "lat": 25.277,
+        "lon": 57.463,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "417ea3c7",
+        "callsign": "FDB1345",
+        "flight": "FZ1345",
+        "type": "B38M",
+        "reg": "A6-FMR",
+        "category": "Commercial",
+        "alt": 31200,
+        "track": 92,
+        "speed": 470,
+        "lat": 25.251,
+        "lon": 58.224,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
