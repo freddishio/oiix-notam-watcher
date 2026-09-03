@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786582526,
-    "time_utc": "2026-08-13 00:55:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786582830,
     "time_utc": "2026-08-13 01:00:30 UTC",
     "count": 1,
@@ -788752,6 +788746,43 @@
         "speed": 486,
         "lat": 36.803,
         "lon": 54.669,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788397224,
+    "time_utc": "2026-09-03 01:00:24 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "417aa8b8",
+        "callsign": "IRB9711",
+        "flight": "B99711",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 109,
+        "speed": 547,
+        "lat": 36.856,
+        "lon": 48.101,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "417aa04b",
+        "callsign": "FDB5ZH",
+        "flight": "FZ974",
+        "type": "B38M",
+        "reg": "A6-FPC",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 166,
+        "speed": 484,
+        "lat": 36.13,
+        "lon": 54.858,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
