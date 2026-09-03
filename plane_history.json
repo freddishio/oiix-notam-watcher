@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786586124,
-    "time_utc": "2026-08-13 01:55:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786586438,
     "time_utc": "2026-08-13 02:00:38 UTC",
     "count": 2,
@@ -788922,6 +788916,88 @@
         "lat": 25.117,
         "lon": 60.975,
         "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788400831,
+    "time_utc": "2026-09-03 02:00:31 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "417b167e",
+        "callsign": "AZG427",
+        "flight": "7L427",
+        "type": "B744",
+        "reg": "4K-SW800",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 127,
+        "speed": 560,
+        "lat": 37.334,
+        "lon": 52.103,
+        "airline": "Silk Way West Airlines",
+        "country": "Azerbaijan"
+      },
+      {
+        "id": "417af9fd",
+        "callsign": "FDB3JE",
+        "flight": "FZ978",
+        "type": "B38M",
+        "reg": "A6-FKO",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 128,
+        "speed": 528,
+        "lat": 37.292,
+        "lon": 52.169,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "417b27b9",
+        "callsign": "QSM2232",
+        "flight": "QB2232",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 30975,
+        "track": 49,
+        "speed": 512,
+        "lat": 33.473,
+        "lon": 46.263,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417b22c0",
+        "callsign": "TBZ5658",
+        "flight": "I35658",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 193,
+        "speed": 457,
+        "lat": 32.873,
+        "lon": 49.956,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417aeccf",
+        "callsign": "FDB732",
+        "flight": "FZ732",
+        "type": "B738",
+        "reg": "A6-FEB",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 155,
+        "speed": 463,
+        "lat": 26.409,
+        "lon": 59.762,
+        "airline": "flydubai",
         "country": "United Arab Emirates"
       }
     ]
