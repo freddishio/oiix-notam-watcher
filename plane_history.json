@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786584320,
-    "time_utc": "2026-08-13 01:25:20 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786584630,
     "time_utc": "2026-08-13 01:30:30 UTC",
     "count": 1,
@@ -788746,6 +788740,28 @@
         "speed": 472,
         "lat": 25.22,
         "lon": 58.985,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788398725,
+    "time_utc": "2026-09-03 01:25:25 UTC",
+    "count": 1,
+    "planes": [
+      {
+        "id": "417afc62",
+        "callsign": "FDB311",
+        "flight": "FZ311",
+        "type": "B38M",
+        "reg": "A6-FKI",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 471,
+        "lat": 25.187,
+        "lon": 59.703,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
