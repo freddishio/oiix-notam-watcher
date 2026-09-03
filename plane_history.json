@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1786581326,
-    "time_utc": "2026-08-13 00:35:26 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1786581624,
-    "time_utc": "2026-08-13 00:40:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786581922,
     "time_utc": "2026-08-13 00:45:22 UTC",
     "count": 1,
@@ -788512,6 +788500,73 @@
         "lon": 60.015,
         "airline": "flydubai",
         "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788396031,
+    "time_utc": "2026-09-03 00:40:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "417aa8b8",
+        "callsign": "IRB9711",
+        "flight": "B99711",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 115,
+        "speed": 526,
+        "lat": 37.928,
+        "lon": 44.624,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ad634",
+        "callsign": "IRZ159",
+        "flight": "IRZ159",
+        "type": "B733",
+        "reg": "EP-SIJ",
+        "category": "Commercial",
+        "alt": 8300,
+        "track": 350,
+        "speed": 230,
+        "lat": 35.57,
+        "lon": 51.585,
+        "airline": "Saha Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417adffc",
+        "callsign": "MEH4151",
+        "flight": "MEH4151",
+        "type": "B734",
+        "reg": "EP-MRD",
+        "category": "Commercial",
+        "alt": 27125,
+        "track": 261,
+        "speed": 391,
+        "lat": 35.573,
+        "lon": 53.299,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "417adcce",
+        "callsign": "VRH5913",
+        "flight": "VRH5913",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 30050,
+        "track": 335,
+        "speed": 443,
+        "lat": 33.876,
+        "lon": 52.249,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
       }
     ]
   }
