@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786665923,
-    "time_utc": "2026-08-14 00:05:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786666222,
     "time_utc": "2026-08-14 00:10:22 UTC",
     "count": 1,
@@ -822762,6 +822756,43 @@
         "lat": 35.198,
         "lon": 51.547,
         "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788480326,
+    "time_utc": "2026-09-04 00:05:26 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "417eac31",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 34950,
+        "track": 109,
+        "speed": 502,
+        "lat": 36.99,
+        "lon": 47.598,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ebf41",
+        "callsign": "AXV9228",
+        "flight": "AXV9228",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 245,
+        "speed": 350,
+        "lat": 34.467,
+        "lon": 47.743,
+        "airline": "Ava Air",
         "country": "IRAN"
       }
     ]
