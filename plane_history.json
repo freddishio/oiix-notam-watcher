@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786667725,
-    "time_utc": "2026-08-14 00:35:25 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786668027,
     "time_utc": "2026-08-14 00:40:27 UTC",
     "count": 1,
@@ -823080,6 +823074,73 @@
         "speed": 458,
         "lat": 25.214,
         "lon": 59.117,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788482130,
+    "time_utc": "2026-09-04 00:35:30 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "417f1b0e",
+        "callsign": "QSM2112",
+        "flight": "QB2112",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 69,
+        "lat": 35.414,
+        "lon": 51.162,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417eac31",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 5650,
+        "track": 280,
+        "speed": 213,
+        "lat": 35.373,
+        "lon": 51.349,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417eedf0",
+        "callsign": "VRH6832",
+        "flight": "VRH6832",
+        "type": "B735",
+        "reg": "EP-VBM",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 79,
+        "speed": 528,
+        "lat": 35.384,
+        "lon": 53.567,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ef3bf",
+        "callsign": "FDB1583",
+        "flight": "FZ1583",
+        "type": "B38M",
+        "reg": "A6-FMN",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 93,
+        "speed": 472,
+        "lat": 25.179,
+        "lon": 59.84,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
