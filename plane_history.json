@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": 1786666527,
-    "time_utc": "2026-08-14 00:15:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1786666821,
-    "time_utc": "2026-08-14 00:20:21 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786667126,
     "time_utc": "2026-08-14 00:25:26 UTC",
     "count": 1,
@@ -822951,6 +822939,73 @@
         "lon": 51.154,
         "airline": "Iran Air",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788481226,
+    "time_utc": "2026-09-04 00:20:26 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "417eac31",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 34075,
+        "track": 122,
+        "speed": 494,
+        "lat": 36.009,
+        "lon": 49.862,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ebf41",
+        "callsign": "AXV9228",
+        "flight": "AXV9228",
+        "type": "B735",
+        "reg": "EP-RBC",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 231,
+        "speed": 417,
+        "lat": 33.595,
+        "lon": 46.019,
+        "airline": "Ava Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417eedf0",
+        "callsign": "VRH6832",
+        "flight": "VRH6832",
+        "type": "B735",
+        "reg": "EP-VBM",
+        "category": "Commercial",
+        "alt": 32950,
+        "track": 60,
+        "speed": 510,
+        "lat": 35.304,
+        "lon": 50.955,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "417ef3bf",
+        "callsign": "FDB1583",
+        "flight": "FZ1583",
+        "type": "B38M",
+        "reg": "A6-FMN",
+        "category": "Commercial",
+        "alt": 29050,
+        "track": 91,
+        "speed": 444,
+        "lat": 25.268,
+        "lon": 57.741,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
