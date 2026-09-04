@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1786671026,
-    "time_utc": "2026-08-14 01:30:26 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "41299ea9",
-        "callsign": "AXV7730",
-        "flight": "AXV7730",
-        "type": "B735",
-        "reg": "EP-AXE",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 84,
-        "speed": 496,
-        "lat": 35.503,
-        "lon": 54.245,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "4129ae42",
-        "callsign": "AXV9214",
-        "flight": "AXV9214",
-        "type": "A310",
-        "reg": "EP-TBH",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 16,
-        "speed": 14,
-        "lat": 35.411,
-        "lon": 51.16,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "412997a2",
-        "callsign": "AXV7729",
-        "flight": "AXV7729",
-        "type": "B735",
-        "reg": "EP-RBA",
-        "category": "Commercial",
-        "alt": 31025,
-        "track": 79,
-        "speed": 498,
-        "lat": 35.418,
-        "lon": 53.82,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1786671325,
     "time_utc": "2026-08-14 01:35:25 UTC",
     "count": 4,
@@ -823834,6 +823782,88 @@
         "speed": 475,
         "lat": 25.127,
         "lon": 60.799,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788485431,
+    "time_utc": "2026-09-04 01:30:31 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "417f34ad",
+        "callsign": "IRB9740",
+        "flight": "B99740",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 106,
+        "speed": 0,
+        "lat": 35.41,
+        "lon": 51.158,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "417f3e3c",
+        "callsign": "TKN3287",
+        "flight": "TKN3287",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 140,
+        "speed": 1,
+        "lat": 35.414,
+        "lon": 51.17,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417f1b0e",
+        "callsign": "QSM2112",
+        "flight": "QB2112",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 167,
+        "speed": 475,
+        "lat": 29.541,
+        "lon": 52.589,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "417f21e0",
+        "callsign": "ABY558",
+        "flight": "G9558",
+        "type": "A320",
+        "reg": "A6-AQP",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 470,
+        "lat": 25.201,
+        "lon": 59.402,
+        "airline": "Air Arabia",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "417f14ca",
+        "callsign": "FDB311",
+        "flight": "FZ311",
+        "type": "B38M",
+        "reg": "A6-FKH",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 93,
+        "speed": 475,
+        "lat": 25.08,
+        "lon": 61.534,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
