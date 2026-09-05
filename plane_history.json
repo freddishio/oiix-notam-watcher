@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786754724,
-    "time_utc": "2026-08-15 00:45:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786755024,
     "time_utc": "2026-08-15 00:50:24 UTC",
     "count": 2,
@@ -859332,6 +859326,58 @@
         "lat": 29.053,
         "lon": 52.727,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788569125,
+    "time_utc": "2026-09-05 00:45:25 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "418199ab",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 32175,
+        "track": 165,
+        "speed": 510,
+        "lat": 36.972,
+        "lon": 51.362,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4182cfe4",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A320",
+        "reg": "EP-MDT",
+        "category": "Commercial",
+        "alt": 3425,
+        "track": 288,
+        "speed": 148,
+        "lat": 35.43,
+        "lon": 51.222,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "418336ba",
+        "callsign": "TBN6214",
+        "flight": "TBN6214",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 25175,
+        "track": 100,
+        "speed": 476,
+        "lat": 35.404,
+        "lon": 51.725,
+        "airline": "Taban Airlines",
         "country": "IRAN"
       }
     ]
