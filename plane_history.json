@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786753828,
-    "time_utc": "2026-08-15 00:30:28 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786754127,
     "time_utc": "2026-08-15 00:35:27 UTC",
     "count": 0,
@@ -859104,6 +859098,73 @@
         "lat": 30.899,
         "lon": 52.271,
         "airline": "Varesh Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788568231,
+    "time_utc": "2026-09-05 00:30:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4182cfe4",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A320",
+        "reg": "EP-MDT",
+        "category": "Commercial",
+        "alt": 20050,
+        "track": 123,
+        "speed": 433,
+        "lat": 35.73,
+        "lon": 50.46,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "418327ae",
+        "callsign": "IRA9000",
+        "flight": "IR9000",
+        "type": "A320",
+        "reg": "EP-IEG",
+        "category": "Commercial",
+        "alt": 7925,
+        "track": 101,
+        "speed": 213,
+        "lat": 35.502,
+        "lon": 51.455,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "418303f3",
+        "callsign": "VRH6832",
+        "flight": "VRH6832",
+        "type": "B733",
+        "reg": "EP-VAK",
+        "category": "Commercial",
+        "alt": 35075,
+        "track": 79,
+        "speed": 488,
+        "lat": 35.568,
+        "lon": 54.338,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4182a26d",
+        "callsign": "TBZ6620",
+        "flight": "I36620",
+        "type": "A320",
+        "reg": "EP-TAD",
+        "category": "Commercial",
+        "alt": 7100,
+        "track": 115,
+        "speed": 206,
+        "lat": 35.328,
+        "lon": 51.212,
+        "airline": "ATA Airlines",
         "country": "IRAN"
       }
     ]
