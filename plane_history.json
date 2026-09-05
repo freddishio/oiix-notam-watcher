@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1786755327,
-    "time_utc": "2026-08-15 00:55:27 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1786755634,
     "time_utc": "2026-08-15 01:00:34 UTC",
     "count": 2,
@@ -859504,6 +859498,88 @@
         "speed": 442,
         "lat": 25.27,
         "lon": 57.68,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788570031,
+    "time_utc": "2026-09-05 01:00:31 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "418336ba",
+        "callsign": "TBN6214",
+        "flight": "TBN6214",
+        "type": "MD88",
+        "reg": "EP-TBF",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 80,
+        "speed": 520,
+        "lat": 35.495,
+        "lon": 54.307,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41834659",
+        "callsign": "QSM2281",
+        "flight": "QB2281",
+        "type": "A320",
+        "reg": "EP-FQR",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 289,
+        "speed": 40,
+        "lat": 35.414,
+        "lon": 51.164,
+        "airline": "Qeshm Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "418199ab",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMQ",
+        "category": "Commercial",
+        "alt": 8825,
+        "track": 140,
+        "speed": 228,
+        "lat": 35.399,
+        "lon": 51.582,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41831449",
+        "callsign": "VRH6810",
+        "flight": "VRH6810",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 139,
+        "speed": 442,
+        "lat": 26.648,
+        "lon": 53.51,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "41832e2a",
+        "callsign": "FDB311",
+        "flight": "FZ311",
+        "type": "B38M",
+        "reg": "A6-FQE",
+        "category": "Commercial",
+        "alt": 31925,
+        "track": 92,
+        "speed": 470,
+        "lat": 25.245,
+        "lon": 58.39,
         "airline": "flydubai",
         "country": "United Arab Emirates"
       }
