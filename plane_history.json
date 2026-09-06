@@ -1,48 +1,5 @@
 [
   {
-    "timestamp": 1786841123,
-    "time_utc": "2026-08-16 00:45:23 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1786841421,
-    "time_utc": "2026-08-16 00:50:21 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41317765",
-        "callsign": "CPN7973",
-        "flight": "IV7973",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 33575,
-        "track": 122,
-        "speed": 447,
-        "lat": 36.087,
-        "lon": 49.7,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41307fea",
-        "callsign": "IRM078",
-        "flight": "W578",
-        "type": "B772",
-        "reg": "EP-MTB",
-        "category": "Commercial",
-        "alt": 7225,
-        "track": 274,
-        "speed": 216,
-        "lat": 35.345,
-        "lon": 51.471,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1786841721,
     "time_utc": "2026-08-16 00:55:21 UTC",
     "count": 0,
@@ -881558,6 +881515,118 @@
         "lon": 52.705,
         "airline": "Sepehran Airlines",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1788655823,
+    "time_utc": "2026-09-06 00:50:23 UTC",
+    "count": 7,
+    "planes": [
+      {
+        "id": "41856dcf",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 7700,
+        "track": 272,
+        "speed": 23,
+        "lat": 35.481,
+        "lon": 51.418,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "41867869",
+        "callsign": "FDB2XP",
+        "flight": "FZ952",
+        "type": "B38M",
+        "reg": "A6-FMR",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 171,
+        "speed": 473,
+        "lat": 36.778,
+        "lon": 54.672,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4186a1f1",
+        "callsign": "FDB5ZH",
+        "flight": "FZ974",
+        "type": "B738",
+        "reg": "A6-FGD",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 166,
+        "speed": 483,
+        "lat": 36.302,
+        "lon": 54.807,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "4186e58d",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMT",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 196,
+        "speed": 0,
+        "lat": 35.412,
+        "lon": 51.148,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4186ee90",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "A320",
+        "reg": "EP-FQP",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 193,
+        "speed": 0,
+        "lat": 35.414,
+        "lon": 51.15,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "4186d8f7",
+        "callsign": "SHI4367",
+        "flight": "IS4367",
+        "type": "B733",
+        "reg": "EP-FSE",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 87,
+        "speed": 488,
+        "lat": 32.834,
+        "lon": 53.509,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4186e080",
+        "callsign": "FDB311",
+        "flight": "FZ311",
+        "type": "B38M",
+        "reg": "A6-FQA",
+        "category": "Commercial",
+        "alt": 26175,
+        "track": 91,
+        "speed": 466,
+        "lat": 25.283,
+        "lon": 57.239,
+        "airline": "flydubai",
+        "country": "United Arab Emirates"
       }
     ]
   }
