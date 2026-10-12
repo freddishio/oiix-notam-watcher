@@ -882192,5 +882192,42 @@
     "time_utc": "2026-10-12 21:35:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1791841225,
+    "time_utc": "2026-10-12 21:40:25 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "42180f5b",
+        "callsign": "SHI4304",
+        "flight": "IS4304",
+        "type": "B735",
+        "reg": "EP-FSQ",
+        "category": "Commercial",
+        "alt": 30000,
+        "track": 193,
+        "speed": 436,
+        "lat": 33.528,
+        "lon": 50.134,
+        "airline": "Sepehran Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "42180b09",
+        "callsign": "BRU718",
+        "flight": "B2718",
+        "type": "A332",
+        "reg": "EW-589PD",
+        "category": "Commercial",
+        "alt": 27125,
+        "track": 91,
+        "speed": 490,
+        "lat": 25.281,
+        "lon": 57.343,
+        "airline": "Belavia",
+        "country": "Belarus"
+      }
+    ]
   }
 ]
