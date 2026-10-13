@@ -880090,5 +880090,42 @@
     "time_utc": "2026-10-13 00:25:29 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1791851428,
+    "time_utc": "2026-10-13 00:30:28 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4218102e",
+        "callsign": "AUV2277",
+        "flight": "7Q2277",
+        "type": "A21N",
+        "reg": "UK32126",
+        "category": "Commercial",
+        "alt": 37975,
+        "track": 173,
+        "speed": 680,
+        "lat": 29.208,
+        "lon": 52.41,
+        "airline": "Asia Union Airlines",
+        "country": "Uzbekistan"
+      },
+      {
+        "id": "4218620d",
+        "callsign": "TBN7211",
+        "flight": "TBN7211",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 118,
+        "speed": 472,
+        "lat": 28.055,
+        "lon": 61.878,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
   }
 ]
