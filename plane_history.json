@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790292922,
-    "time_utc": "2026-09-24 23:35:22 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41d1cec9",
-        "callsign": "IRA768",
-        "flight": "IR768",
-        "type": "A332",
-        "reg": "EP-IJA",
-        "category": "Commercial",
-        "alt": 41000,
-        "track": 122,
-        "speed": 505,
-        "lat": 36.678,
-        "lon": 48.555,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d17f4b",
-        "callsign": "RSJ9610",
-        "flight": "RSJ9610",
-        "type": "F900",
-        "reg": "RA-09610",
-        "category": "Commercial",
-        "alt": 41000,
-        "track": 128,
-        "speed": 484,
-        "lat": 36.92,
-        "lon": 52.763,
-        "airline": "RusJet",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1790293224,
     "time_utc": "2026-09-24 23:40:24 UTC",
     "count": 2,
@@ -852501,6 +852464,58 @@
         "speed": 424,
         "lat": 35.595,
         "lon": 58.945,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792107330,
+    "time_utc": "2026-10-15 23:35:30 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "4223e56b",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A306",
+        "reg": "EP-MDU",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 108,
+        "speed": 481,
+        "lat": 37.392,
+        "lon": 46.197,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4223d440",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73158",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 166,
+        "speed": 511,
+        "lat": 35.711,
+        "lon": 54.98,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "4223a69d",
+        "callsign": "MFX324",
+        "flight": "C6324",
+        "type": "A333",
+        "reg": "UK33030",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 42,
+        "speed": 422,
+        "lat": 36.023,
+        "lon": 59.418,
         "airline": "My Freighter",
         "country": "Uzbekistan"
       }
