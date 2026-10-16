@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790377825,
-    "time_utc": "2026-09-25 23:10:25 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41d659fe",
-        "callsign": "ISP18",
-        "flight": "ISP18",
-        "type": "B733",
-        "reg": "EP-JIB",
-        "category": "Commercial",
-        "alt": 6775,
-        "track": 26,
-        "speed": 252,
-        "lat": 30.543,
-        "lon": 48.316,
-        "airline": "JSky Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d65356",
-        "callsign": "5683",
-        "flight": "I35683",
-        "type": "B735",
-        "reg": "EP-TAG",
-        "category": "Commercial",
-        "alt": 26275,
-        "track": 272,
-        "speed": 426,
-        "lat": 29.859,
-        "lon": 52.585,
-        "airline": "568",
-        "country": "Unknown Location"
-      }
-    ]
-  },
-  {
     "timestamp": 1790378127,
     "time_utc": "2026-09-25 23:15:27 UTC",
     "count": 2,
@@ -864465,6 +864428,73 @@
         "speed": 462,
         "lat": 34.324,
         "lon": 49.99,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792192228,
+    "time_utc": "2026-10-16 23:10:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4227c9ac",
+        "callsign": "PGT666",
+        "flight": "PC666",
+        "type": "A21N",
+        "reg": "TC-RBK",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 164,
+        "speed": 412,
+        "lat": 37.177,
+        "lon": 44.93,
+        "airline": "Pegasus",
+        "country": "Turkey"
+      },
+      {
+        "id": "4227b4ae",
+        "callsign": "MRJ4830",
+        "flight": "MRJ4830",
+        "type": "A321",
+        "reg": "EP-SSN",
+        "category": "Commercial",
+        "alt": 34725,
+        "track": 118,
+        "speed": 452,
+        "lat": 36.172,
+        "lon": 49.486,
+        "airline": "Meraj Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "42279e88",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 14475,
+        "track": 123,
+        "speed": 380,
+        "lat": 35.528,
+        "lon": 50.755,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "422808da",
+        "callsign": "KRU2651",
+        "flight": "KRU2651",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 25150,
+        "track": 50,
+        "speed": 455,
+        "lat": 34.849,
+        "lon": 50.424,
         "airline": "Karun Airlines",
         "country": "IRAN"
       }
