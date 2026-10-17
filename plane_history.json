@@ -1,49 +1,5 @@
 [
   {
-    "timestamp": 1790384430,
-    "time_utc": "2026-09-26 01:00:30 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "41d5fd4e",
-        "callsign": "AFL324",
-        "flight": "SU324",
-        "type": "B77W",
-        "reg": "RA-73150",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 164,
-        "speed": 506,
-        "lat": 29.714,
-        "lon": 58.764,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
-    "timestamp": 1790384722,
-    "time_utc": "2026-09-26 01:05:22 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "41d6a512",
-        "callsign": "IRAN07",
-        "flight": "Unknown Flight",
-        "type": "RJ85",
-        "reg": "EP-IGF",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 180,
-        "speed": 0,
-        "lat": 35.694,
-        "lon": 51.317,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790385025,
     "time_utc": "2026-09-26 01:10:25 UTC",
     "count": 4,
@@ -864188,6 +864144,58 @@
         "speed": 465,
         "lat": 27.867,
         "lon": 61.91,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792199124,
+    "time_utc": "2026-10-17 01:05:24 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "42280fe7",
+        "callsign": "PBD992",
+        "flight": "DP992",
+        "type": "B738",
+        "reg": "RA-73243",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 305,
+        "speed": 441,
+        "lat": 35.658,
+        "lon": 54.899,
+        "airline": "Pobeda Airlines",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "422851f2",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 26000,
+        "track": 194,
+        "speed": 439,
+        "lat": 33.044,
+        "lon": 49.983,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "42281680",
+        "callsign": "TBN7213",
+        "flight": "TBN7213",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 124,
+        "speed": 472,
+        "lat": 27.392,
+        "lon": 62.383,
         "airline": "Taban Airlines",
         "country": "IRAN"
       }
