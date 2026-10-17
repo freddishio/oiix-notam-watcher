@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790462725,
-    "time_utc": "2026-09-26 22:45:25 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41d9b6f0",
-        "callsign": "TBZ6620",
-        "flight": "I36620",
-        "type": "A320",
-        "reg": "EP-TAD",
-        "category": "Commercial",
-        "alt": 17150,
-        "track": 123,
-        "speed": 368,
-        "lat": 35.725,
-        "lon": 50.386,
-        "airline": "ATA Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d9b3ab",
-        "callsign": "VRH6847",
-        "flight": "VRH6847",
-        "type": "B733",
-        "reg": "EP-VAI",
-        "category": "Commercial",
-        "alt": 3125,
-        "track": 288,
-        "speed": 129,
-        "lat": 35.417,
-        "lon": 51.151,
-        "airline": "Varesh Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790463028,
     "time_utc": "2026-09-26 22:50:28 UTC",
     "count": 2,
@@ -876173,6 +876136,58 @@
         "speed": 446,
         "lat": 31.628,
         "lon": 52.097,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792277428,
+    "time_utc": "2026-10-17 22:50:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "422b5f6d",
+        "callsign": "MFX321",
+        "flight": "C6321",
+        "type": "A333",
+        "reg": "UK33032",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 231,
+        "speed": 462,
+        "lat": 36.351,
+        "lon": 59.838,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      },
+      {
+        "id": "422b324f",
+        "callsign": "CPN049",
+        "flight": "IV48",
+        "type": "B733",
+        "reg": "EP-DOA",
+        "category": "Commercial",
+        "alt": 26075,
+        "track": 28,
+        "speed": 434,
+        "lat": 32.993,
+        "lon": 51.98,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "422b7f18",
+        "callsign": "TBZ5684",
+        "flight": "I35684",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 31000,
+        "track": 168,
+        "speed": 446,
+        "lat": 31.018,
+        "lon": 52.242,
         "airline": "ATA Airlines",
         "country": "IRAN"
       }
