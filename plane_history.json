@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1790384132,
-    "time_utc": "2026-09-26 00:55:32 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1790384430,
     "time_utc": "2026-09-26 01:00:30 UTC",
     "count": 1,
@@ -864144,6 +864138,58 @@
         "lon": 60.357,
         "airline": "Aeroflot",
         "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792198828,
+    "time_utc": "2026-10-17 01:00:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "422851f2",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 25975,
+        "track": 194,
+        "speed": 438,
+        "lat": 33.632,
+        "lon": 50.159,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4226fb7a",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73146",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 218,
+        "speed": 465,
+        "lat": 24.984,
+        "lon": 60.003,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "42281680",
+        "callsign": "TBN7213",
+        "flight": "TBN7213",
+        "type": "A320",
+        "reg": "C5-SUA",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 140,
+        "speed": 465,
+        "lat": 27.867,
+        "lon": 61.91,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
       }
     ]
   }
