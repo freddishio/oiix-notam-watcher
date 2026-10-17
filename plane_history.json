@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1790383830,
-    "time_utc": "2026-09-26 00:50:30 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "41d633e9",
-        "callsign": "IRB9701",
-        "flight": "B99701",
-        "type": "A310",
-        "reg": "EP-MDL",
-        "category": "Commercial",
-        "alt": 7825,
-        "track": 259,
-        "speed": 21,
-        "lat": 35.533,
-        "lon": 51.419,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d616ce",
-        "callsign": "AFL320",
-        "flight": "SU320",
-        "type": "B77W",
-        "reg": "RA-73140",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 169,
-        "speed": 478,
-        "lat": 36.091,
-        "lon": 56.272,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      },
-      {
-        "id": "41d62831",
-        "callsign": "TBN7274",
-        "flight": "AXV7274",
-        "type": "A310",
-        "reg": "EP-TBH",
-        "category": "Commercial",
-        "alt": 0,
-        "track": 199,
-        "speed": 1,
-        "lat": 35.411,
-        "lon": 51.16,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790384132,
     "time_utc": "2026-09-26 00:55:32 UTC",
     "count": 0,
@@ -864142,6 +864090,58 @@
         "speed": 500,
         "lat": 26.105,
         "lon": 59.966,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792198529,
+    "time_utc": "2026-10-17 00:55:29 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "422851f2",
+        "callsign": "KRU2650",
+        "flight": "KRU2650",
+        "type": "Unknown Type",
+        "reg": "Unknown Reg",
+        "category": "Commercial",
+        "alt": 24650,
+        "track": 194,
+        "speed": 426,
+        "lat": 34.216,
+        "lon": 50.335,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4226bc8e",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "B772",
+        "reg": "EP-MTB",
+        "category": "Commercial",
+        "alt": 3475,
+        "track": 289,
+        "speed": 149,
+        "lat": 35.407,
+        "lon": 51.188,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4226fb7a",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73146",
+        "category": "Commercial",
+        "alt": 35300,
+        "track": 149,
+        "speed": 500,
+        "lat": 25.529,
+        "lon": 60.357,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
