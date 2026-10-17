@@ -1,124 +1,5 @@
 [
   {
-    "timestamp": 1790457329,
-    "time_utc": "2026-09-26 21:15:29 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "41d952d9",
-        "callsign": "AUV172",
-        "flight": "5F172",
-        "type": "A21N",
-        "reg": "UK32126",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 51,
-        "speed": 452,
-        "lat": 36.542,
-        "lon": 60.139,
-        "airline": "Asia Union Airlines",
-        "country": "Uzbekistan"
-      },
-      {
-        "id": "41d9e27b",
-        "callsign": "MEH4178",
-        "flight": "MEH4178",
-        "type": "B734",
-        "reg": "EP-MRE",
-        "category": "Commercial",
-        "alt": 29950,
-        "track": 194,
-        "speed": 457,
-        "lat": 33.466,
-        "lon": 50.118,
-        "airline": "Mehr Airways",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d9df8c",
-        "callsign": "AXV7711",
-        "flight": "AXV7711",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 34975,
-        "track": 61,
-        "speed": 485,
-        "lat": 32.392,
-        "lon": 51.0,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d9e6ed",
-        "callsign": "CPN049",
-        "flight": "IV49",
-        "type": "B735",
-        "reg": "EP-KPC",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 348,
-        "speed": 416,
-        "lat": 32.062,
-        "lon": 52.009,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1790457625,
-    "time_utc": "2026-09-26 21:20:25 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "41d9e27b",
-        "callsign": "MEH4178",
-        "flight": "MEH4178",
-        "type": "B734",
-        "reg": "EP-MRE",
-        "category": "Commercial",
-        "alt": 29975,
-        "track": 194,
-        "speed": 459,
-        "lat": 32.852,
-        "lon": 49.933,
-        "airline": "Mehr Airways",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d9df8c",
-        "callsign": "AXV7711",
-        "flight": "AXV7711",
-        "type": "A310",
-        "reg": "EP-RBD",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 63,
-        "speed": 480,
-        "lat": 32.707,
-        "lon": 51.694,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41d9e6ed",
-        "callsign": "CPN049",
-        "flight": "IV49",
-        "type": "B735",
-        "reg": "EP-KPC",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 348,
-        "speed": 417,
-        "lat": 32.622,
-        "lon": 51.875,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790457957,
     "time_utc": "2026-09-26 21:25:57 UTC",
     "count": 3,
@@ -875573,6 +875454,88 @@
         "speed": 460,
         "lat": 27.696,
         "lon": 59.376,
+        "airline": "Pobeda Airlines",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792272026,
+    "time_utc": "2026-10-17 21:20:26 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "422b4bb3",
+        "callsign": "IZG3029",
+        "flight": "ZO3029",
+        "type": "A319",
+        "reg": "EP-ZAX",
+        "category": "Commercial",
+        "alt": 32975,
+        "track": 62,
+        "speed": 447,
+        "lat": 34.538,
+        "lon": 48.874,
+        "airline": "Zagros Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "422b52d9",
+        "callsign": "MEH4179",
+        "flight": "MEH4179",
+        "type": "RJ1H",
+        "reg": "EP-MRA",
+        "category": "Commercial",
+        "alt": 21000,
+        "track": 26,
+        "speed": 403,
+        "lat": 34.489,
+        "lon": 50.059,
+        "airline": "Mehr Airways",
+        "country": "IRAN"
+      },
+      {
+        "id": "422b4527",
+        "callsign": "VRH6814",
+        "flight": "VRH6814",
+        "type": "B733",
+        "reg": "EP-VAI",
+        "category": "Commercial",
+        "alt": 15100,
+        "track": 45,
+        "speed": 389,
+        "lat": 35.317,
+        "lon": 50.744,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "422b4f92",
+        "callsign": "KRU2629",
+        "flight": "KRU2629",
+        "type": "B735",
+        "reg": "EP-NFE",
+        "category": "Commercial",
+        "alt": 34025,
+        "track": 28,
+        "speed": 461,
+        "lat": 32.969,
+        "lon": 51.977,
+        "airline": "Karun Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "422a9fca",
+        "callsign": "PBD991",
+        "flight": "DP991",
+        "type": "B738",
+        "reg": "RA-73358",
+        "category": "Commercial",
+        "alt": 37500,
+        "track": 165,
+        "speed": 460,
+        "lat": 27.06,
+        "lon": 59.565,
         "airline": "Pobeda Airlines",
         "country": "Russian Federation"
       }
