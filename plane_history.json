@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": 1790469024,
-    "time_utc": "2026-09-27 00:30:24 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
     "timestamp": 1790469325,
     "time_utc": "2026-09-27 00:35:25 UTC",
     "count": 0,
@@ -876348,6 +876342,58 @@
         "lon": 50.891,
         "airline": "My Freighter",
         "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792283429,
+    "time_utc": "2026-10-18 00:30:29 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "422bc3cb",
+        "callsign": "TBZ5608",
+        "flight": "I35608",
+        "type": "B733",
+        "reg": "EP-TAF",
+        "category": "Commercial",
+        "alt": 28000,
+        "track": 302,
+        "speed": 430,
+        "lat": 37.749,
+        "lon": 47.606,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "422a5462",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 14575,
+        "track": 141,
+        "speed": 353,
+        "lat": 35.667,
+        "lon": 51.31,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "422bcb02",
+        "callsign": "TBZ5683",
+        "flight": "I35683",
+        "type": "B735",
+        "reg": "EP-TAG",
+        "category": "Commercial",
+        "alt": 32000,
+        "track": 348,
+        "speed": 440,
+        "lat": 31.377,
+        "lon": 52.167,
+        "airline": "ATA Airlines",
+        "country": "IRAN"
       }
     ]
   }
