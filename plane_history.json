@@ -1,79 +1,5 @@
 [
   {
-    "timestamp": 1790562326,
-    "time_utc": "2026-09-28 02:25:26 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41de35e8",
-        "callsign": "CPN7902",
-        "flight": "IV7902",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 34100,
-        "track": 295,
-        "speed": 394,
-        "lat": 38.219,
-        "lon": 46.032,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41de3df1",
-        "callsign": "IZG3070",
-        "flight": "ZO3070",
-        "type": "A319",
-        "reg": "EP-ZAX",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 291,
-        "speed": 424,
-        "lat": 37.896,
-        "lon": 47.295,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1790562625,
-    "time_utc": "2026-09-28 02:30:25 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41de35e8",
-        "callsign": "CPN7902",
-        "flight": "IV7902",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 34100,
-        "track": 296,
-        "speed": 395,
-        "lat": 38.457,
-        "lon": 45.408,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41de3df1",
-        "callsign": "IZG3070",
-        "flight": "ZO3070",
-        "type": "A319",
-        "reg": "EP-ZAX",
-        "category": "Commercial",
-        "alt": 33950,
-        "track": 286,
-        "speed": 418,
-        "lat": 38.062,
-        "lon": 46.588,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790562957,
     "time_utc": "2026-09-28 02:35:57 UTC",
     "count": 2,
@@ -883211,6 +883137,73 @@
         "speed": 431,
         "lat": 29.815,
         "lon": 52.781,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792377027,
+    "time_utc": "2026-10-19 02:30:27 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "422f71d5",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 109,
+        "speed": 485,
+        "lat": 37.165,
+        "lon": 47.01,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "422fb4cd",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 24925,
+        "track": 253,
+        "speed": 412,
+        "lat": 36.698,
+        "lon": 53.36,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "422f9e8f",
+        "callsign": "IRM4572",
+        "flight": "W54572",
+        "type": "RJ1H",
+        "reg": "EP-MOI",
+        "category": "Commercial",
+        "alt": 9000,
+        "track": 322,
+        "speed": 192,
+        "lat": 33.399,
+        "lon": 46.578,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "422f56b3",
+        "callsign": "MFX3321",
+        "flight": "C63321",
+        "type": "A333",
+        "reg": "UK33031",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 213,
+        "speed": 428,
+        "lat": 29.324,
+        "lon": 52.41,
         "airline": "My Freighter",
         "country": "Uzbekistan"
       }
