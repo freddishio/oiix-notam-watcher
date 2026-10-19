@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790562957,
-    "time_utc": "2026-09-28 02:35:57 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41de35e8",
-        "callsign": "CPN7902",
-        "flight": "IV7902",
-        "type": "B735",
-        "reg": "EP-KPA",
-        "category": "Commercial",
-        "alt": 34100,
-        "track": 295,
-        "speed": 386,
-        "lat": 38.718,
-        "lon": 44.718,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41de3df1",
-        "callsign": "IZG3070",
-        "flight": "ZO3070",
-        "type": "A319",
-        "reg": "EP-ZAX",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 295,
-        "speed": 423,
-        "lat": 38.297,
-        "lon": 45.826,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790563225,
     "time_utc": "2026-09-28 02:40:25 UTC",
     "count": 2,
@@ -883256,6 +883219,88 @@
         "speed": 440,
         "lat": 30.261,
         "lon": 53.096,
+        "airline": "Asia Union Airlines",
+        "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792377625,
+    "time_utc": "2026-10-19 02:40:25 UTC",
+    "count": 5,
+    "planes": [
+      {
+        "id": "422f71d5",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 120,
+        "speed": 480,
+        "lat": 36.697,
+        "lon": 48.526,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "422fb4cd",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B733",
+        "reg": "EP-VAJ",
+        "category": "Commercial",
+        "alt": 26000,
+        "track": 197,
+        "speed": 460,
+        "lat": 35.581,
+        "lon": 52.801,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "422fb7b6",
+        "callsign": "Unknown Callsign",
+        "flight": "Unknown Flight",
+        "type": "B735",
+        "reg": "EP-VBM",
+        "category": "Commercial",
+        "alt": 25200,
+        "track": 104,
+        "speed": 480,
+        "lat": 35.354,
+        "lon": 52.267,
+        "airline": "Unknown Airline",
+        "country": "Unknown Location"
+      },
+      {
+        "id": "422f56b3",
+        "callsign": "MFX3321",
+        "flight": "C63321",
+        "type": "A333",
+        "reg": "UK33031",
+        "category": "Commercial",
+        "alt": 36000,
+        "track": 185,
+        "speed": 250,
+        "lat": 28.275,
+        "lon": 51.678,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      },
+      {
+        "id": "422f5c84",
+        "callsign": "AUV2701",
+        "flight": "7Q2701",
+        "type": "A21N",
+        "reg": "UK32126",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 211,
+        "speed": 437,
+        "lat": 29.732,
+        "lon": 52.723,
         "airline": "Asia Union Airlines",
         "country": "Uzbekistan"
       }
