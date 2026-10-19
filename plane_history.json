@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790556921,
-    "time_utc": "2026-09-28 00:55:21 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41ddb4c3",
-        "callsign": "IRB9741",
-        "flight": "B99741",
-        "type": "A320",
-        "reg": "EP-MDT",
-        "category": "Commercial",
-        "alt": 14125,
-        "track": 123,
-        "speed": 349,
-        "lat": 35.578,
-        "lon": 50.747,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "41de17ba",
-        "callsign": "IRM093",
-        "flight": "W593",
-        "type": "A343",
-        "reg": "EP-MMT",
-        "category": "Commercial",
-        "alt": 21725,
-        "track": 129,
-        "speed": 465,
-        "lat": 34.662,
-        "lon": 52.285,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790557229,
     "time_utc": "2026-09-28 01:00:29 UTC",
     "count": 2,
@@ -883836,6 +883799,58 @@
         "lon": 62.409,
         "airline": "Iran Air Tours",
         "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792371322,
+    "time_utc": "2026-10-19 00:55:22 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "422f179a",
+        "callsign": "AFL537D",
+        "flight": "SU537",
+        "type": "B738",
+        "reg": "RA-73112",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 307,
+        "speed": 428,
+        "lat": 37.436,
+        "lon": 51.938,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "422e64ed",
+        "callsign": "IRB9775",
+        "flight": "B99775",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 38000,
+        "track": 309,
+        "speed": 428,
+        "lat": 28.354,
+        "lon": 61.898,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "422ec5fb",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73142",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 148,
+        "speed": 497,
+        "lat": 26.095,
+        "lon": 59.974,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
       }
     ]
   }
