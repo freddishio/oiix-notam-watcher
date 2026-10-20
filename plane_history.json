@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790722536,
-    "time_utc": "2026-09-29 22:55:36 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41e5a7a8",
-        "callsign": "CPN024",
-        "flight": "IV24",
-        "type": "B735",
-        "reg": "EP-KPC",
-        "category": "Commercial",
-        "alt": 30000,
-        "track": 259,
-        "speed": 387,
-        "lat": 35.603,
-        "lon": 53.456,
-        "airline": "Caspian Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e5b260",
-        "callsign": "IZG4045",
-        "flight": "ZO4045",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 260,
-        "speed": 398,
-        "lat": 35.856,
-        "lon": 55.216,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790722835,
     "time_utc": "2026-09-29 23:00:35 UTC",
     "count": 3,
@@ -911776,6 +911739,73 @@
         "speed": 458,
         "lat": 34.523,
         "lon": 59.404,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792537231,
+    "time_utc": "2026-10-20 23:00:31 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "4236cf09",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A306",
+        "reg": "EP-MDM",
+        "category": "Commercial",
+        "alt": 28475,
+        "track": 123,
+        "speed": 462,
+        "lat": 36.076,
+        "lon": 49.725,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "4236b466",
+        "callsign": "VRH6847",
+        "flight": "VRH6847",
+        "type": "B733",
+        "reg": "EP-VAT",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 238,
+        "speed": 8,
+        "lat": 35.448,
+        "lon": 51.17,
+        "airline": "Varesh Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "423715e8",
+        "callsign": "TKN3169",
+        "flight": "TKN3169",
+        "type": "B733",
+        "reg": "EP-LEE",
+        "category": "Commercial",
+        "alt": 4875,
+        "track": 289,
+        "speed": 197,
+        "lat": 35.65,
+        "lon": 51.413,
+        "airline": "Kish Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "42373749",
+        "callsign": "IRA816",
+        "flight": "IR816",
+        "type": "A310",
+        "reg": "EP-IBK",
+        "category": "Commercial",
+        "alt": 34975,
+        "track": 186,
+        "speed": 458,
+        "lat": 33.891,
+        "lon": 59.315,
         "airline": "Iran Air",
         "country": "IRAN"
       }
