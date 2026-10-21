@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": 1790732128,
-    "time_utc": "2026-09-30 01:35:28 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41e631f6",
-        "callsign": "Unknown Callsign",
-        "flight": "AXV7281",
-        "type": "A310",
-        "reg": "EP-TBH",
-        "category": "Commercial",
-        "alt": 27325,
-        "track": 313,
-        "speed": 394,
-        "lat": 35.996,
-        "lon": 50.234,
-        "airline": "Unknown Airline",
-        "country": "Unknown Location"
-      },
-      {
-        "id": "41e5aafd",
-        "callsign": "PBD991",
-        "flight": "DP991",
-        "type": "B738",
-        "reg": "RA-73358",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 127,
-        "speed": 522,
-        "lat": 37.415,
-        "lon": 51.973,
-        "airline": "Pobeda Airlines",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
-    "timestamp": 1790732423,
-    "time_utc": "2026-09-30 01:40:23 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "41e5aafd",
-        "callsign": "PBD991",
-        "flight": "DP991",
-        "type": "B738",
-        "reg": "RA-73358",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 128,
-        "speed": 525,
-        "lat": 36.977,
-        "lon": 52.672,
-        "airline": "Pobeda Airlines",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1790732726,
     "time_utc": "2026-09-30 01:45:26 UTC",
     "count": 1,
@@ -911434,5 +911375,42 @@
     "time_utc": "2026-10-21 01:35:26 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1792546830,
+    "time_utc": "2026-10-21 01:40:30 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4237a51a",
+        "callsign": "TBN7281",
+        "flight": "AXV7281",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 310,
+        "speed": 476,
+        "lat": 37.294,
+        "lon": 48.379,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4236e4de",
+        "callsign": "UAE16M",
+        "flight": "EK132",
+        "type": "A388",
+        "reg": "A6-EER",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 222,
+        "speed": 200,
+        "lat": 28.331,
+        "lon": 49.977,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      }
+    ]
   }
 ]
