@@ -1,42 +1,5 @@
 [
   {
-    "timestamp": 1790729126,
-    "time_utc": "2026-09-30 00:45:26 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41e5a689",
-        "callsign": "IRA768",
-        "flight": "IR768",
-        "type": "A332",
-        "reg": "EP-IJC",
-        "category": "Commercial",
-        "alt": 26525,
-        "track": 122,
-        "speed": 497,
-        "lat": 35.872,
-        "lon": 50.109,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e60203",
-        "callsign": "PBD761",
-        "flight": "DP761",
-        "type": "B738",
-        "reg": "RA-73240",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 127,
-        "speed": 525,
-        "lat": 37.482,
-        "lon": 51.864,
-        "airline": "Pobeda Airlines",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1790729430,
     "time_utc": "2026-09-30 00:50:30 UTC",
     "count": 3,
@@ -911514,6 +911477,43 @@
         "speed": 495,
         "lat": 26.168,
         "lon": 59.916,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792543531,
+    "time_utc": "2026-10-21 00:45:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "4235d879",
+        "callsign": "IRM090",
+        "flight": "W590",
+        "type": "A343",
+        "reg": "EP-MMD",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 109,
+        "speed": 16,
+        "lat": 35.419,
+        "lon": 51.136,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4236b966",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73148",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 148,
+        "speed": 500,
+        "lat": 25.594,
+        "lon": 60.306,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
