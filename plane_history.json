@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1790729430,
-    "time_utc": "2026-09-30 00:50:30 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "41e5a689",
-        "callsign": "IRA768",
-        "flight": "IR768",
-        "type": "A332",
-        "reg": "EP-IJC",
-        "category": "Commercial",
-        "alt": 17400,
-        "track": 123,
-        "speed": 436,
-        "lat": 35.509,
-        "lon": 50.788,
-        "airline": "Iran Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e61bc1",
-        "callsign": "IZG4044",
-        "flight": "ZO4044",
-        "type": "A320",
-        "reg": "EP-ZAT",
-        "category": "Commercial",
-        "alt": 6475,
-        "track": 197,
-        "speed": 280,
-        "lat": 35.653,
-        "lon": 51.176,
-        "airline": "Zagros Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e60203",
-        "callsign": "PBD761",
-        "flight": "DP761",
-        "type": "B738",
-        "reg": "RA-73240",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 128,
-        "speed": 525,
-        "lat": 37.03,
-        "lon": 52.588,
-        "airline": "Pobeda Airlines",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1790729729,
     "time_utc": "2026-09-30 00:55:29 UTC",
     "count": 2,
@@ -911514,6 +911462,43 @@
         "speed": 500,
         "lat": 25.594,
         "lon": 60.306,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792543831,
+    "time_utc": "2026-10-21 00:50:31 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "42373af4",
+        "callsign": "AZG425",
+        "flight": "7L425",
+        "type": "B744",
+        "reg": "4K-SW008",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 180,
+        "speed": 1,
+        "lat": 33.541,
+        "lon": 48.104,
+        "airline": "Silk Way West Airlines",
+        "country": "Azerbaijan"
+      },
+      {
+        "id": "4236b966",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73148",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 218,
+        "speed": 450,
+        "lat": 25.059,
+        "lon": 60.075,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
