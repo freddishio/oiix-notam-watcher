@@ -1,72 +1,5 @@
 [
   {
-    "timestamp": 1790819425,
-    "time_utc": "2026-10-01 01:50:25 UTC",
-    "count": 4,
-    "planes": [
-      {
-        "id": "41ea4141",
-        "callsign": "TBN7281",
-        "flight": "AXV7281",
-        "type": "A310",
-        "reg": "EP-TBH",
-        "category": "Commercial",
-        "alt": 32000,
-        "track": 303,
-        "speed": 440,
-        "lat": 37.755,
-        "lon": 47.595,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e89444",
-        "callsign": "IRM076",
-        "flight": "W576",
-        "type": "A346",
-        "reg": "EP-MMG",
-        "category": "Commercial",
-        "alt": 20000,
-        "track": 188,
-        "speed": 374,
-        "lat": 36.002,
-        "lon": 51.342,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41ea3cb2",
-        "callsign": "ATS6196",
-        "flight": "IRH6196",
-        "type": "B734",
-        "reg": "EP-SAU",
-        "category": "Commercial",
-        "alt": 18575,
-        "track": 227,
-        "speed": 322,
-        "lat": 33.693,
-        "lon": 47.213,
-        "airline": "Atlas Khomein Kish",
-        "country": "IRAN"
-      },
-      {
-        "id": "41ea493a",
-        "callsign": "IRM1185",
-        "flight": "W51185",
-        "type": "A342",
-        "reg": "EP-MJA",
-        "category": "Commercial",
-        "alt": 27825,
-        "track": 130,
-        "speed": 473,
-        "lat": 34.325,
-        "lon": 52.766,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790819726,
     "time_utc": "2026-10-01 01:55:26 UTC",
     "count": 6,
@@ -927706,6 +927639,73 @@
         "speed": 523,
         "lat": 26.143,
         "lon": 59.941,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792633828,
+    "time_utc": "2026-10-22 01:50:28 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "423b6ee0",
+        "callsign": "IRA768",
+        "flight": "IR768",
+        "type": "A332",
+        "reg": "EP-IJC",
+        "category": "Commercial",
+        "alt": 39000,
+        "track": 109,
+        "speed": 469,
+        "lat": 37.335,
+        "lon": 46.398,
+        "airline": "Iran Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "423bb181",
+        "callsign": "TBN7281",
+        "flight": "AXV7281",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 286,
+        "speed": 436,
+        "lat": 37.973,
+        "lon": 46.978,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "423bc3f7",
+        "callsign": "CPN7902",
+        "flight": "IV7902",
+        "type": "B735",
+        "reg": "EP-KPC",
+        "category": "Commercial",
+        "alt": 11575,
+        "track": 314,
+        "speed": 328,
+        "lat": 35.572,
+        "lon": 50.742,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "423b08c8",
+        "callsign": "AFL324",
+        "flight": "SU324",
+        "type": "B77W",
+        "reg": "RA-73148",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 168,
+        "speed": 501,
+        "lat": 25.487,
+        "lon": 60.374,
         "airline": "Aeroflot",
         "country": "Russian Federation"
       }
