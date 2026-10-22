@@ -1,64 +1,5 @@
 [
   {
-    "timestamp": 1790896831,
-    "time_utc": "2026-10-01 23:20:31 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "41ed7bac",
-        "callsign": "IRB9701",
-        "flight": "B99701",
-        "type": "A306",
-        "reg": "EP-MDU",
-        "category": "Commercial",
-        "alt": 8825,
-        "track": 120,
-        "speed": 282,
-        "lat": 35.283,
-        "lon": 51.244,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
-    "timestamp": 1790897125,
-    "time_utc": "2026-10-01 23:25:25 UTC",
-    "count": 2,
-    "planes": [
-      {
-        "id": "41ed7d8d",
-        "callsign": "AFL320",
-        "flight": "SU320",
-        "type": "B77W",
-        "reg": "RA-73130",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 157,
-        "speed": 506,
-        "lat": 37.863,
-        "lon": 57.348,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      },
-      {
-        "id": "41ed7bac",
-        "callsign": "IRB9701",
-        "flight": "B99701",
-        "type": "A306",
-        "reg": "EP-MDU",
-        "category": "Commercial",
-        "alt": 4400,
-        "track": 289,
-        "speed": 143,
-        "lat": 35.391,
-        "lon": 51.247,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790897431,
     "time_utc": "2026-10-01 23:30:31 UTC",
     "count": 2,
@@ -931021,6 +930962,58 @@
         "speed": 386,
         "lat": 26.861,
         "lon": 58.927,
+        "airline": "Gelix Airlines",
+        "country": "Russian Federation"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792711526,
+    "time_utc": "2026-10-22 23:25:26 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "423ef4a6",
+        "callsign": "AFL320",
+        "flight": "SU320",
+        "type": "B77W",
+        "reg": "RA-73132",
+        "category": "Commercial",
+        "alt": 35000,
+        "track": 166,
+        "speed": 466,
+        "lat": 36.534,
+        "lon": 54.739,
+        "airline": "Aeroflot",
+        "country": "Russian Federation"
+      },
+      {
+        "id": "423ee3d2",
+        "callsign": "IRB9701",
+        "flight": "B99701",
+        "type": "A310",
+        "reg": "EP-MDL",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 160,
+        "speed": 6,
+        "lat": 35.419,
+        "lon": 51.134,
+        "airline": "Iran Air Tours",
+        "country": "IRAN"
+      },
+      {
+        "id": "423f494a",
+        "callsign": "GLX9816",
+        "flight": "GC9816",
+        "type": "IL76",
+        "reg": "RA-76360",
+        "category": "Commercial",
+        "alt": 30025,
+        "track": 349,
+        "speed": 391,
+        "lat": 27.36,
+        "lon": 58.823,
         "airline": "Gelix Airlines",
         "country": "Russian Federation"
       }
