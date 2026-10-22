@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1790812830,
-    "time_utc": "2026-10-01 00:00:30 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "41e9c6a0",
-        "callsign": "IRB8005",
-        "flight": "B98005",
-        "type": "A320",
-        "reg": "EP-MDQ",
-        "category": "Commercial",
-        "alt": 3775,
-        "track": 225,
-        "speed": 4,
-        "lat": 35.695,
-        "lon": 51.313,
-        "airline": "Iran Air Tours",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e87411",
-        "callsign": "IRM080",
-        "flight": "W580",
-        "type": "B772",
-        "reg": "EP-MTB",
-        "category": "Commercial",
-        "alt": 7200,
-        "track": 269,
-        "speed": 250,
-        "lat": 35.358,
-        "lon": 51.476,
-        "airline": "Mahan Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e9ed7e",
-        "callsign": "TKN3127",
-        "flight": "TKN3127",
-        "type": "B733",
-        "reg": "EP-LEF",
-        "category": "Commercial",
-        "alt": 34000,
-        "track": 6,
-        "speed": 425,
-        "lat": 33.662,
-        "lon": 52.383,
-        "airline": "Kish Air",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790813129,
     "time_utc": "2026-10-01 00:05:29 UTC",
     "count": 4,
@@ -927390,6 +927338,73 @@
         "speed": 160,
         "lat": 27.325,
         "lon": 51.264,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792627241,
+    "time_utc": "2026-10-22 00:00:41 UTC",
+    "count": 4,
+    "planes": [
+      {
+        "id": "423b4d78",
+        "callsign": "GFA019",
+        "flight": "GF19",
+        "type": "A21N",
+        "reg": "A9C-NF",
+        "category": "Commercial",
+        "alt": 33850,
+        "track": 90,
+        "speed": 100,
+        "lat": 33.541,
+        "lon": 48.104,
+        "airline": "Gulf Air",
+        "country": "Bahrain"
+      },
+      {
+        "id": "423a1c17",
+        "callsign": "IRM050",
+        "flight": "W550",
+        "type": "A343",
+        "reg": "EP-MJE",
+        "category": "Commercial",
+        "alt": 0,
+        "track": 230,
+        "speed": 7,
+        "lat": 35.419,
+        "lon": 51.139,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "4239cd5e",
+        "callsign": "IRM080",
+        "flight": "W580",
+        "type": "B772",
+        "reg": "EP-MTE",
+        "category": "Commercial",
+        "alt": 27700,
+        "track": 316,
+        "speed": 418,
+        "lat": 34.559,
+        "lon": 52.732,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "423b2c68",
+        "callsign": "MFX3320",
+        "flight": "C63320",
+        "type": "A333",
+        "reg": "UK33030",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 122,
+        "speed": 40,
+        "lat": 27.966,
+        "lon": 51.595,
         "airline": "My Freighter",
         "country": "Uzbekistan"
       }
