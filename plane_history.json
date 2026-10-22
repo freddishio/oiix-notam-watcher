@@ -1,57 +1,5 @@
 [
   {
-    "timestamp": 1790816467,
-    "time_utc": "2026-10-01 01:01:07 UTC",
-    "count": 3,
-    "planes": [
-      {
-        "id": "41ea0922",
-        "callsign": "AXV7703",
-        "flight": "AXV7703",
-        "type": "B735",
-        "reg": "EP-AXE",
-        "category": "Commercial",
-        "alt": 5550,
-        "track": 289,
-        "speed": 169,
-        "lat": 35.626,
-        "lon": 51.471,
-        "airline": "Ava Air",
-        "country": "IRAN"
-      },
-      {
-        "id": "41e9ac73",
-        "callsign": "PBD991",
-        "flight": "DP991",
-        "type": "B738",
-        "reg": "RA-73299",
-        "category": "Commercial",
-        "alt": 37000,
-        "track": 125,
-        "speed": 520,
-        "lat": 35.729,
-        "lon": 54.783,
-        "airline": "Pobeda Airlines",
-        "country": "Russian Federation"
-      },
-      {
-        "id": "41e98591",
-        "callsign": "AFL324",
-        "flight": "SU324",
-        "type": "B77W",
-        "reg": "RA-73139",
-        "category": "Commercial",
-        "alt": 35000,
-        "track": 165,
-        "speed": 533,
-        "lat": 26.625,
-        "lon": 59.692,
-        "airline": "Aeroflot",
-        "country": "Russian Federation"
-      }
-    ]
-  },
-  {
     "timestamp": 1790816730,
     "time_utc": "2026-10-01 01:05:30 UTC",
     "count": 3,
@@ -927712,6 +927660,43 @@
         "speed": 530,
         "lat": 26.768,
         "lon": 60.199,
+        "airline": "RA1",
+        "country": "Unknown Location"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792631127,
+    "time_utc": "2026-10-22 01:05:27 UTC",
+    "count": 2,
+    "planes": [
+      {
+        "id": "423b1b17",
+        "callsign": "MFX325",
+        "flight": "C6325",
+        "type": "A333",
+        "reg": "UK33032",
+        "category": "Commercial",
+        "alt": 34000,
+        "track": 196,
+        "speed": 790,
+        "lat": 27.612,
+        "lon": 51.15,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      },
+      {
+        "id": "423aee03",
+        "callsign": "RA11005",
+        "flight": "Unknown Flight",
+        "type": "GLF6",
+        "reg": "RA-11005",
+        "category": "Commercial",
+        "alt": 41000,
+        "track": 167,
+        "speed": 549,
+        "lat": 26.001,
+        "lon": 60.385,
         "airline": "RA1",
         "country": "Unknown Location"
       }
