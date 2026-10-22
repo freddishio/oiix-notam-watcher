@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": 1790817330,
-    "time_utc": "2026-10-01 01:15:30 UTC",
-    "count": 0,
-    "planes": []
-  },
-  {
-    "timestamp": 1790817626,
-    "time_utc": "2026-10-01 01:20:26 UTC",
-    "count": 1,
-    "planes": [
-      {
-        "id": "41ea4141",
-        "callsign": "TBN7281",
-        "flight": "AXV7281",
-        "type": "A310",
-        "reg": "EP-TBH",
-        "category": "Commercial",
-        "alt": 8050,
-        "track": 276,
-        "speed": 293,
-        "lat": 35.444,
-        "lon": 50.943,
-        "airline": "Taban Airlines",
-        "country": "IRAN"
-      }
-    ]
-  },
-  {
     "timestamp": 1790817923,
     "time_utc": "2026-10-01 01:25:23 UTC",
     "count": 1,
@@ -927697,6 +927669,58 @@
         "speed": 456,
         "lat": 35.398,
         "lon": 58.731,
+        "airline": "My Freighter",
+        "country": "Uzbekistan"
+      }
+    ]
+  },
+  {
+    "timestamp": 1792632032,
+    "time_utc": "2026-10-22 01:20:32 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "423bb181",
+        "callsign": "TBN7281",
+        "flight": "AXV7281",
+        "type": "A310",
+        "reg": "EP-TBH",
+        "category": "Commercial",
+        "alt": 19450,
+        "track": 314,
+        "speed": 389,
+        "lat": 35.714,
+        "lon": 50.576,
+        "airline": "Taban Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "4239d628",
+        "callsign": "IRM076",
+        "flight": "W576",
+        "type": "A346",
+        "reg": "EP-MMG",
+        "category": "Commercial",
+        "alt": 25525,
+        "track": 188,
+        "speed": 443,
+        "lat": 36.483,
+        "lon": 51.429,
+        "airline": "Mahan Air",
+        "country": "IRAN"
+      },
+      {
+        "id": "423b2c68",
+        "callsign": "MFX3320",
+        "flight": "C63320",
+        "type": "A333",
+        "reg": "UK33030",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 41,
+        "speed": 450,
+        "lat": 35.879,
+        "lon": 59.259,
         "airline": "My Freighter",
         "country": "Uzbekistan"
       }
