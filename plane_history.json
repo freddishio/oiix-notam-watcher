@@ -930831,5 +930831,57 @@
     "time_utc": "2026-10-23 00:15:27 UTC",
     "count": 0,
     "planes": []
+  },
+  {
+    "timestamp": 1792714828,
+    "time_utc": "2026-10-23 00:20:28 UTC",
+    "count": 3,
+    "planes": [
+      {
+        "id": "423f750c",
+        "callsign": "CPN7905",
+        "flight": "IV7905",
+        "type": "B735",
+        "reg": "EP-KPC",
+        "category": "Commercial",
+        "alt": 35050,
+        "track": 114,
+        "speed": 450,
+        "lat": 37.864,
+        "lon": 44.799,
+        "airline": "Caspian Airlines",
+        "country": "IRAN"
+      },
+      {
+        "id": "423ee7fa",
+        "callsign": "UAE35Q",
+        "flight": "EK52",
+        "type": "B77W",
+        "reg": "A6-EGI",
+        "category": "Commercial",
+        "alt": 37000,
+        "track": 90,
+        "speed": 494,
+        "lat": 33.541,
+        "lon": 48.104,
+        "airline": "Emirates",
+        "country": "United Arab Emirates"
+      },
+      {
+        "id": "423eac4a",
+        "callsign": "AIC156",
+        "flight": "AI156",
+        "type": "B788",
+        "reg": "VT-ANY",
+        "category": "Commercial",
+        "alt": 40975,
+        "track": 143,
+        "speed": 560,
+        "lat": 27.739,
+        "lon": 50.447,
+        "airline": "Air India",
+        "country": "India"
+      }
+    ]
   }
 ]
